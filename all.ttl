@@ -1,5 +1,177 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooreigenaar>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> """Het bedrijventerreinperceel is bevroren door de eigenaar als:
+      - wanneer de eigenaar van het perceel niet wenst te verkopen of geen marktconforme prijs vraagt, of
+      - door een onduidelijke eigendomsstructuur (bv. grond wordt door meerdere eigenaars geclaimd, eigenaarschap wordt ontkend of doorgeschoven naar een derde partij, onverdeeldheid bij erfgenamen…)."""@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "bevriezing door eigenaar"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Het bedrijventerreinperceel is bevroren door een (hangende) maatregel of beslissing van overheidsinstantie."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#narrower> <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_herzieningbestemming>, <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_juridischeprocedure>, <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_mobiliteitsproblematiek>, <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_waterproblematiek> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "bevriezing door overheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_herzieningbestemming>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Een overheidsinstantie heeft aangegeven dat ze de intentie heeft om een RUP op te stellen maar de procedure nog niet heeft gestart (opmaak MER, voorbereiding start- en procesnota, ... ). Door het uitblijven van het RUP wordt een mogelijke ontwikkeling geblokkeerd. "@l ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "herziening bestemming door overheid"@nl .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_juridischeprocedure>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Van overheidswege wordt de omgevingsvergunning geweigerd waardoor de ontwikkeling van een perceel wordt geblokkeerd of in geval er door de Raad van State vergunningen worden vernietigd of geschorst of een RUP wordt geschorst. Een andere mogelijkheid waardoor een ontwikkeling kan vertraging oplopen is de noodzaak om tot onteigening over te gaan bij eigendomsverwerving (langlopende procedures)."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "juridische procedure door overheid"@nl .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_mobiliteitsproblematiek>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Een overheidsinstantie heeft de intentie om een bepaalde ontsluiting te voorzien of andere infrastructuurwerken uit te voeren die noodzakelijk zijn voor een ontwikkeling van een bedrijvenzone.  Ook wanneer de bedrijventerreinen moeilijk bereikbaar zijn en er studiewerk moet gebeuren rond verkeersknelpunten als gevolg van mobiliteitssaturatie vooraleer er tot (verdere) ontwikkeling van terreinen kan worden overgegaan. "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "mobiliteitsproblematiek door overheid"@nl .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_waterproblematiek>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De ontwikkeling van het bedrijventerreinperceel wordt geblokkeerd omwille van de watergevoeligheid en/of overstromingsproblematiek tot zolang er geen compenserende maatregelen worden genomen om de waterproblematiek op te lossen.  Dus ook signaalgebieden (gebieden waarvoor een verscherpte watertoets geldt) waarvoor een ‘bouwvrije opgave’ geldt, worden onder deze combinatie van beperkingen opgenomen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "waterproblematiek door overheid"@nl .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/fysischNietRealiseerbaar>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Het bedrijventerreinperceel heeft een fysisch knelpunt (bv. de vorm, het reliëf, een erfdienstbaarheid…) wat onoplosbaar is, en wat dus een potentiële ontwikkeling hypothekeert. "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "fysisch niet realiseerbaar"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/herzieningbestemming>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bestemming van bedrijventerreinperceel wordt herzien. Dit is van toepassing van zodra een procedure voor het opmaken van een RUP wordt opgestart waardoor er geen omgevingsvergunning kan verleend worden."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "herziening bestemming"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/juridischeperiode>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Er is een beperking omwille van lopende juridische procedures (zoals faillissement, lopende onteigening, beroep rond vergunningen…)"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "juridische periode"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/mobiliteitsproblematiek>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> """Het bedrijventerreinperceel heeft een mobiliteitsproblematiek als: 
+      - Er kan niet gestart worden met de ontwikkeling van een perceel/groep percelen omwille van de wetgeving rond mobiliteit of beslissingsorganen die de ontsluiting (aantakking op bestaande infrastructuur) niet toelaten. Hier zal vaak moeten overgegaan worden tot een mobiliteitsstudie.
+      - En/of bevat één of enkele percelen die niet ontsloten zijn door een verharde weg"""@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "mobiliteitsproblematiek"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/reservegrond>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Het bedrijventerreinperceel is een reservegrond wanneer het in eigendom van een onderneming is en dat niet actief gebruikt wordt voor economische activiteit, maar in functie van een mogelijke uitbreiding van het bestaande bedrijf wordt bewaard "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "reserve grond"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/tesaneren>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#commente> "Deze categorie wordt toegekend wanneer het attribuut “OVAM_noodzaak = BBO_Q” in de datalaag “grond_obo_vm” van OVAM (BBO_q). De bodemdossiers van OVAM zijn hier de authentieke bron en worden tweejaarlijks opgevraagd op basis van het protocol met OVAM."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Het bedrijventerrein perceel is door de bodemdossiers van OVAM aangeduid als te saneren."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "te saneren"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/waterproblematiek>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> """Het bedrijventerreinperceel heeft een waterproblematiek als: 
+      - een (deel van) het perceel gelegen is in effectief of mogelijk overstromingsgevoelig gebied,
+      - en/of het gelegen is in zones uit de signaalgebieden waarvoor een verscherpte watertoets of bouwvrije opgave van toepassing is."""@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "waterproblematiek"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/aangeboden>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bebouwd of onbebouwd bedrijventerreinperceel dat actief wordt aangeboden"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "aangeboden"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/nietaangeboden>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "geen kennis van een actief aanbod."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "niet aangeboden"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/optie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De optie is: ‘een beding waarbij één der partijen zich verbindt om, indien de wederpartij dat wenst, met haar een bepaalde overeenkomst te sluiten.’ Het verlenen van een optie staat dan gelijk aan een onherroepelijk aanbod."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "optie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/bos>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bedrijventerreinperceel ingenomen door bos. Voor houtproductie als bescherming van het milieu, landschapselement, recreatieve rol, enz… Er is een kapvergunning nodig om te ontginnen. "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "bos"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/braakliggendegrond>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Een bedrijventerreinperceel is een braakliggende grond als het geen geen functie vervult en dat niet wordt onderhouden. Op braakliggend terrein zijn vaak veel verschillende soorten (wilde) planten te vinden, eventueel ook enkele bomen. Vaak is het terrein al geschikt gemaakt om te bebouwen, maar omdat er nog niets gebouwd is ligt ze dus braak. "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "braakliggende grond"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/economie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bedrijventerreinperceel ingericht voor economische activiteiten, horeca en complementaire dienstverlenende activiteiten"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "econonomie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/gemeenschapsvoorziening>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bedrijventerreinperceel ingericht ten dienste van de gemeenschap "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "gemeenschapsvoorziening"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/landbouw>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bedrijventerreinperceel ingericht voor actieve landbouw"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "landbouw"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/nietgekend>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De functie van het bebouwde bedrijventerreinperceel is niet gekend. Deze functie is van uitdovende aard."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "niet gekend"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/openbaardomein>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Ruimte die ten dienste staat van iedereen (algemeen belang), zonder beperking naar specifieke gemeenschappen. De openbare ruimte is principieel voor iedereen toegankelijk"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "openbaar domein"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/wonen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bedrijventerreinperceel ingericht voor wonen, afsplitsbare conciërgewoningen (geïntegreerde bedrijfshuisvesting wordt niet afgesplitst)"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "wonen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
+
 <https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/inontwikkeling>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Start van de grondverwerving is het moment waarop het beheersorgaan van de organisatie de beslissing neemt tot aankoop/onteigening van de eerste kavel."@nl ;
@@ -52,6 +224,21 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkelbare bedrijvenzone"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De verschillende beperkingen die de ontwikkeling van een bedrijventerrein perceel tegenhouden."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijventerreinperceelBeperking"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> ""@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijventerreinperceelBeschikbaarheid"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Functies van percelen in een bedrijventerrein."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bedrijventerreinperceel functie"@nl .
 
 <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
