@@ -1,5 +1,42 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/inontwikkeling>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Start van de grondverwerving is het moment waarop het beheersorgaan van de organisatie de beslissing neemt tot aankoop/onteigening van de eerste kavel."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode tussen de start van de grondverwerving tot de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+
+<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/nietontwikkelbaar>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in een toestand waarvan vrijwel met zekerheid kan worden gezegd dat zij nooit zullen worden geactiveerd als economische ruimte omdat zij grotendeels of volledig in gebruik zijn voor andere functies, belast met allerlei infrastructuren of omwille van hun ligging niet meer aangewezen zijn voor een economische ontwikkeling."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "niet ontwikkelbaar"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+
+<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/ontwikkeld>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "De uitgifte van kavels kan zowel tijdens de fase te ontwikkelen, in ontwikkelen als ontwikkeld."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode na de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkeld"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+
+<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/ontwikkelinggeblokkeerd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de toestand die gehypothekeerd wordt door één of meerdere structurele, procedurele en/of andere knelpunten/beperkingen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkeling geblokkeerd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+
+<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/teontwikkelen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode tussen de definitieve bestemming van een bedrijvenzone tot de start van de grondverwerving"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "te ontwikkelen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+
 <https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/beheerdeBedrijvenzone>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://data.vlaanderen.be/ns/bedrijventerrein#BeheerdeBedrijvenzone> ;
@@ -15,6 +52,11 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkelbare bedrijvenzone"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> .
+
+<https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De status waarin de ontwikkeling van een bedrijvenzone zich bevindt."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontwikkelingsstatus"@nl .
 
 <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
