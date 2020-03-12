@@ -1,5 +1,36 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/bebouwd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Een bebouwd perceel is een perceel met een corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#example> "een fabriekspand, een kantoorgebouw, huizen, boogloods…"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "bebouwd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/onbebouwd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Onbebouwde percelen zijn percelen zonder corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#example> "Puinopslag, grote parkeerplaats van een onderneming (niet openbaar), containeropslag, braakliggende grond, paardenweide, maisveld, zonnepanelen… "@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "onbebouwd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/niet>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Indien minder dan 50% van het perceel of gebouw in gebruik is"@nl ;
+    <http://www.w3.org/2004/02/skos/core#example> "Leegstaand gebouw, braakliggende grond"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "niet in gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/wel>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Indien minstens 50% van het perceel of gebouw in gebruik is"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "in gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> .
+
 <https://data.vlaanderen.be/id/concept/BedrijventerreinRuimtelijkeEenheidtype/aktePerceel>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Door een landmeter opgemeten percelenplan opgenomen in een notariële eigendomsakte."@nl ;
@@ -193,42 +224,84 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "wonen"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelFunctie> .
 
-<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/inontwikkeling>
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneMiddelenOpenbaardomein/geenmiddelen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Er zijn geen middelen voorzien."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "geen middelen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneMiddelenOpenbaardomein/middelenvoorzien>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Er zijn middelen voorzien."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "middelen voorzien"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/inontwikkeling>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Start van de grondverwerving is het moment waarop het beheersorgaan van de organisatie de beslissing neemt tot aankoop/onteigening van de eerste kavel."@nl ;
     <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode tussen de start van de grondverwerving tot de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/nietontwikkelbaar>
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/nietontwikkelbaar>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in een toestand waarvan vrijwel met zekerheid kan worden gezegd dat zij nooit zullen worden geactiveerd als economische ruimte omdat zij grotendeels of volledig in gebruik zijn voor andere functies, belast met allerlei infrastructuren of omwille van hun ligging niet meer aangewezen zijn voor een economische ontwikkeling."@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "niet ontwikkelbaar"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/ontwikkeld>
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/ontwikkeld>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2000/01/rdf-schema#comment> "De uitgifte van kavels kan zowel tijdens de fase te ontwikkelen, in ontwikkelen als ontwikkeld."@nl ;
     <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode na de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkeld"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/ontwikkelinggeblokkeerd>
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/ontwikkelinggeblokkeerd>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de toestand die gehypothekeerd wordt door één of meerdere structurele, procedurele en/of andere knelpunten/beperkingen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkeling geblokkeerd"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/Ontwikkelingsstatus/teontwikkelen>
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/teontwikkelen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "De bedrijvenzone bevindt zich in de periode tussen de definitieve bestemming van een bedrijvenzone tot de start van de grondverwerving"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "te ontwikkelen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/beheer>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Subsidie voor het beheer van een bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "beheer"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/brownfield>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Subsidie voor de herontwikkeling van een brownfield i.k.v. het decreet ruimtelijke economie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "brownfield"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/nieuw>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Subsidie voor de ontwikkeling van een nieuwe bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "nieuw"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/verouderd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Subsidie voor de herontwikkeling van een bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "verouderd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
 
 <https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/beheerdeBedrijvenzone>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -245,6 +318,17 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "ontwikkelbare bedrijvenzone"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De aanwezigheid van bebouwing op een ruimtelijke eenheid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijventerreinBebouwing"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> """'In gebruik' kan zowel slaan op economische als op niet-economische activiteiten, b.v. een bewoond woonhuis, een bewerkt landbouwperceel,…
+    Bedrijfsverzamelgebouwen zijn steeds 'in gebruik' en ' aangeboden'. (Zie ook de puntenlaag bedrijfsverzamelgebouwen in hoofdstuk 10.)"""@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijventerreinInGebruik"@nl .
 
 <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
@@ -266,10 +350,20 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Functies van percelen in een bedrijventerrein."@nl ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bedrijventerreinperceel functie"@nl .
 
-<https://data.vlaanderen.be/id/conceptscheme/Ontwikkelingsstatus>
+<https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De soort van middelen die voorzien zijn voor het beheer van het openbaar domein"@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijvenzoneMiddelenOpenbaardomein"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "De status waarin de ontwikkeling van een bedrijvenzone zich bevindt."@nl ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontwikkelingsstatus"@nl .
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijvenzoneOntwikkelingsstatus"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type van subsidie gegeven voor de ontwikkeling van de bedrijvenzone"@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BedrijvenzoneSubsidietype"@nl .
 
 <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
