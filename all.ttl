@@ -1,5 +1,42 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<https://data.vlaanderen.be/id/concept/Bioindicatoren>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#narrower> <https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-fytobenthos>, <https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-fytoplankton>, <https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-macro-invertebraten>, <https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-macrofyten>, <https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-visfauna> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bioindicatoren"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> .
+
+<https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-fytobenthos>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EKC-fytobenthos"@nl .
+
+<https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-fytoplankton>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EKC-fytoplankton"@nl .
+
+<https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-macro-invertebraten>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EKC-macro-invertebraten"@nl .
+
+<https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-macrofyten>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EKC-macrofyten"@nl .
+
+<https://data.vlaanderen.be/id/concept/Bioindicatoren/EKC-visfauna>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EKC-visfauna"@nl .
+
 <https://data.vlaanderen.be/id/concept/Emissietype/Diffuus>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product" ;
@@ -44,6 +81,12 @@
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Matrix> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/Matrix> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Waterbodem"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/Bioindicatoren>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "een organisme waarmee een verandering of verontreiniging van het milieu kan worden gesignaleerd. Het principe achter het gebruik van bio-indicatoren is dat de natuurlijke samenstelling van een levensgemeenschap wordt bepaald door de fysische en chemische eigenschappen van het ecosysteem."@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.vlaanderen.be/id/concept/Bioindicatoren> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bioindicatoren"@nl .
 
 <https://data.vlaanderen.be/id/conceptscheme/Emissietype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
