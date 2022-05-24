@@ -14,15 +14,47 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Geleide emissie" ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/Emissietype> .
 
+<https://data.vlaanderen.be/id/concept/Matrix>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme> ;
+    <http://www.w3.org/2004/02/skos/core#narrower> <https://data.vlaanderen.be/id/concept/Matrix/Afvalwater>, <https://data.vlaanderen.be/id/concept/Matrix/Grondwater>, <https://data.vlaanderen.be/id/concept/Matrix/Oppervlaktewater>, <https://data.vlaanderen.be/id/concept/Matrix/Waterbodem> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Matrix"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme> .
+
+<https://data.vlaanderen.be/id/concept/Matrix/Afvalwater>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Matrix> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afvalwater"@nl .
+
+<https://data.vlaanderen.be/id/concept/Matrix/Grondwater>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Matrix> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Grondwater"@nl .
+
+<https://data.vlaanderen.be/id/concept/Matrix/Oppervlaktewater>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Matrix> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Oppervlaktewater"@nl .
+
+<https://data.vlaanderen.be/id/concept/Matrix/Waterbodem>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/Matrix> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Waterbodem"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De omgeving waarin de stof gemeten wordt."@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.vlaanderen.be/id/concept/Matrix> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Matrix"@nl .
+
 <https://data.vlaanderen.be/id/conceptscheme/Emissietype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Een type emissie" ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Emissietype" .
-
-<https://data.vlaanderen.be/id/conceptscheme/Matrix>
-    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "De omgeving waarin de emissie zich voordoet." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Matrix" .
 
 <https://data.vlaanderen.be/id/conceptscheme/Observatieprocedure>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
