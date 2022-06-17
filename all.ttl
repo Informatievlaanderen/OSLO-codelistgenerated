@@ -1,5 +1,36 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<https://test.com/id/1>
-    <https://test.com/desc> "remove this file after adding a codelist" .
+<dvc:Burger>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep burgers"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Burger"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+
+<dvc:Onderneming>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep onderemingen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onderneming"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+
+<dvc:Organisatie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep organisaties"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisatie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+
+<dvc:Vereniging>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep verenigingen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vereniging"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+
+<dvcs:TargetAudience>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep waarop een publieke dienstverlening gericht is."@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Burger>, <dvc:Onderneming>, <dvc:Organisatie>, <dvc:Vereniging> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Doelgroep"@nl, "TargetAudience"@en .
 
