@@ -941,6 +941,13 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Provincie"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:GeografischToepassingsgebied> .
 
+<dvc:Rechtenverkenner>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal: Rechtenverkenner"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:PublicatieKanaal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechtenverkenner"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:PublicatieKanaal> .
+
 <dvc:Reizen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "A" ;
@@ -1003,6 +1010,13 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Toelating"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:VLoket>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal: V-loket"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:PublicatieKanaal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "V-loket"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:PublicatieKanaal> .
 
 <dvc:Verblijf>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -1275,11 +1289,38 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Employment of workers"@en, "Tewerkstelling van werknemers"@nl .
 
+<dvc:YourEurope>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal: Your Europe"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:PublicatieKanaal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Your Europe"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:PublicatieKanaal> .
+
+<dvc:YourEuropeAanbevolen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Concept tag: Your Europe aanbevolen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:ConceptTag> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Your Europe aanbevolen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:ConceptTag> .
+
+<dvc:YourEuropeVerplicht>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Concept tag: Your Europe verplicht"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:ConceptTag> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Your Europe verplicht"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:ConceptTag> .
+
 <dvcs:BevoegdBestuursniveau>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Bevoegd bestuursniveau van een publieke dienst"@nl ;
     <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Europees>, <dvc:Federaal>, <dvc:Lokaal>, <dvc:Provinciaal>, <dvc:Vlaams> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bevoegd bestuursniveau"@nl, "Competent authority level"@en .
+
+<dvcs:ConceptTag>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Concept tag voor een publieke dienst"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:YourEuropeAanbevolen>, <dvc:YourEuropeVerplicht> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Concept tag"@en, "Concept tag"@nl .
 
 <dvcs:Doelgroep>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
@@ -1292,6 +1333,17 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Gebied waarin de publieke dienstverlening beschikbaar is"@nl ;
     <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:BrusselsHoofdstedelijkGewest>, <dvc:Federaal>, <dvc:Gemeente>, <dvc:Provincie>, <dvc:Vlaanderen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Geografisch toepassingsgebied"@nl, "Spatial"@en .
+
+<dvcs:InstantieTag>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Instantie tag voor een publieke dienst"@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Instance tag"@en, "Instantie tag"@nl .
+
+<dvcs:PublicatieKanaal>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal van een publieke dienst beschrijft op welke plaaten de dienst zichtbaar zal zijn"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Rechtenverkenner>, <dvc:VLoket>, <dvc:YourEurope> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicatiekanaal"@nl, "Publication medium"@en .
 
 <dvcs:Status>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
