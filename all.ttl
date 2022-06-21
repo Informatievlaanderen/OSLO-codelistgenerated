@@ -1,20 +1,34 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<dvc:Actief>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Status actief geeft aan dat de publieke dienst van toepassing is"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Status> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Actief"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Status> .
+
+<dvc:AdviesBegeleiding>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Advies en begeleiding"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Advies en begeleiding"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
 <dvc:Bedrijf>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "J" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Starting, running and closing a business"@en, "Informatiegebieden in verband met bedrijven: Starten, exploiteren en sluiten van een bedrijf"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:BedrijfAansprakelijkheidBestuurders>, <dvc:BedrijfFusieVerkoop>, <dvc:BedrijfInsolventieLiquidatie>, <dvc:BedrijfIntellectueleEigendomsrechten>, <dvc:BedrijfKredietVerzekering>, <dvc:BedrijfOnlineBetaalFuncties>, <dvc:BedrijfOvereenkomstenrecht>, <dvc:BedrijfPersoonsgegevens>, <dvc:BedrijfRegistratieproceduresRechtsvormen>, <dvc:BedrijfTransparantie>, <dvc:BedrijfVerplaatsing> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Starten, exploiteren en sluiten van een bedrijf"@nl, "Starting, running and closing a business"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:BedrijfAansprakelijkheidBestuurders>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "J10" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Civil liability of directors of a company"@en, "Wettelijke aansprakelijkheid van bestuurders en commissarissen van een bedrijf"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Civil liability of directors"@en, "Wettelijke aansprakelijkheid van bestuurders"@nl .
 
 <dvc:BedrijfFusieVerkoop>
@@ -22,7 +36,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J9" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Bedrijfsfusies of verkoop van een bedrijf"@nl, "Mergers of companies or selling a business"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bedrijfsfusies of verkoop"@nl, "Mergers or selling"@en .
 
 <dvc:BedrijfInsolventieLiquidatie>
@@ -30,7 +44,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J7" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Insolvency proceedings and liquidation of companies"@en, "Insolventieprocedures en liquidatie van bedrijven"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Insolvency proceedings and liquidation"@en, "Insolventieprocedures en liquidatie"@nl .
 
 <dvc:BedrijfIntellectueleEigendomsrechten>
@@ -38,7 +52,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Intellectual property rights (applying for a patent, registering a trademark, a drawing or a design, getting a licence for reproduction)"@en, "Intellectuele-eigendomsrechten (octrooiaanvragen, registratie van handelsmerken, tekeningen of modellen, verwerving van licenties voor reproductie)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Intellectual property rights"@en, "Intellectuele-eigendomsrechten"@nl .
 
 <dvc:BedrijfKredietVerzekering>
@@ -46,7 +60,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J8" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Credit insurance"@en, "kredietverzekering"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Credit insurance"@en, "Kredietverzekering"@nl .
 
 <dvc:BedrijfOnlineBetaalFuncties>
@@ -54,7 +68,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Aanbieden van grensoverschrijdende onlinebetaalfuncties bij de onlineverkoop van goederen en diensten"@nl, "Offering online facilities for cross-border payments when selling goods and services online"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cross-border online payments facilities"@en, "Grensoverschrijdende onlinebetaalfuncties"@nl .
 
 <dvc:BedrijfOvereenkomstenrecht>
@@ -62,7 +76,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Rechten en verplichtingen uit hoofde van het overeenkomstenrecht, met inbegrip van verschuldigde rente wegens achterstallige betaling"@nl, "Rights and obligations arising under contract law, including late payment interests"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechten en verplichtingen overeenkomstenrecht"@nl, "Rights and obligations contract law"@en .
 
 <dvc:BedrijfPersoonsgegevens>
@@ -70,7 +84,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J11" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Regels en verplichtingen met betrekking tot de verwerking van persoonsgegevens"@nl, "Rules and obligations regarding the processing of personal data"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Processing of personal data"@en, "Verwerking van persoonsgegevens"@nl .
 
 <dvc:BedrijfRegistratieproceduresRechtsvormen>
@@ -78,7 +92,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Registering, changing the legal form of or closing a business (registration procedures and legal forms for carrying out business)"@en, "Registratie, wijziging van de rechtsvorm of sluiting van een bedrijf (registratieprocedures en rechtsvormen voor bedrijven)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Registratieprocedures en rechtsvormen"@nl, "Registration procedures and legal forms"@en .
 
 <dvc:BedrijfTransparantie>
@@ -86,7 +100,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Billijkheid en transparantie bij handelspraktijken, met inbegrip van consumentenrechten en -waarborgen in verband met de verkoop van goederen en diensten;"@nl, "Fairness and transparency in commercial practices, including consumer rights and guarantees related to selling goods and services"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Transparantie bij handelspraktijken"@nl, "Transparency in commercial practices"@en .
 
 <dvc:BedrijfVerplaatsing>
@@ -94,24 +108,24 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "J2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Moving a business to another Member State"@en, "Verplaatsing van een bedrijf naar een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Moving a business"@en, "Verplaatsing van een bedrijf"@nl .
 
 <dvc:Bedrijfsfinanciering>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "O" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Funding a business"@en, "Informatiegebieden in verband met bedrijven: Bedrijfsfinanciering"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:BedrijfsfinancieringFinancieringNationaal>, <dvc:BedrijfsfinancieringFinancieringUnie>, <dvc:BedrijfsfinancieringOndernemersInitiatieve> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bedrijfsfinanciering"@nl, "Funding a business"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:BedrijfsfinancieringFinancieringNationaal>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "O2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijfsfinanciering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Obtaining access to finance at national level"@en, "Verkrijging van toegang tot financiering op nationaal niveau"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Finance at national level"@en, "Financiering op nationaal niveau"@nl .
 
 <dvc:BedrijfsfinancieringFinancieringUnie>
@@ -119,7 +133,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "O1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijfsfinanciering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Obtaining access to finance at the Union level, including Union funding programmes and business grants"@en, "Verkrijging van toegang tot financiering op Unieniveau, met inbegrip van financieringsprogramma’s en bedrijfssubsidies van de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Finance at the Union level"@en, "Financiering op Unieniveau"@nl .
 
 <dvc:BedrijfsfinancieringOndernemersInitiatieve>
@@ -127,24 +141,24 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "O3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Bedrijfsfinanciering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Initiatives addressed to entrepreneurs (exchanges organised for new entrepreneurs, mentoring programmes, etc.)"@en, "Op ondernemers gerichte initiatieven (uitwisselingen voor nieuwe ondernemers, mentorprogramma’s enz.)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Initiatives to entrepreneurs"@en, "Op ondernemers gerichte initiatieven"@nl .
 
 <dvc:Belastingen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "L" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Taxes"@en, "Informatiegebieden in verband met bedrijven: Belastingen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:BelastingenAccijnzen>, <dvc:BelastingenBTW>, <dvc:BelastingenDouaneprocedures>, <dvc:BelastingenDouanerechten>, <dvc:BelastingenOverigeBelastingen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Belastingen"@nl, "Taxes"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:BelastingenAccijnzen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "L2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Belastingen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Accijnzen: informatie over de algemene regels, tarieven en vrijstellingen, registratie voor en betaling van accijnzen, verkrijging van teruggave"@nl, "Excise duties: information on the general rules, rates and exemptions, registration for excise tax purposes and payment of excise tax, obtaining a refund"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Accijnzen"@nl, "Excise duties"@en .
 
 <dvc:BelastingenBTW>
@@ -152,7 +166,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "L1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Belastingen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "BTW: informatie over de algemene regels, tarieven en vrijstellingen, registratie voor en betaling van btw, verkrijging van teruggave"@nl, "VAT: information on the general rules, rates and exemptions, registering for and paying VAT, obtaining a refund"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "BTW"@nl, "VAT"@en .
 
 <dvc:BelastingenDouaneprocedures>
@@ -160,7 +174,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "L4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Belastingen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Customs procedures for imports and exports under the Union Customs Code"@en, "Douaneprocedures voor invoer en uitvoer in het kader van het douanewetboek van de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Customs procedures"@en, "Douaneprocedures"@nl .
 
 <dvc:BelastingenDouanerechten>
@@ -168,7 +182,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "L3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Belastingen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Customs duties and other taxes and duties collected on imports"@en, "Douanerechten en andere belastingen en rechten op ingevoerde producten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Customs duties"@en, "Douanerechten"@nl .
 
 <dvc:BelastingenOverigeBelastingen>
@@ -176,48 +190,62 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "L5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Belastingen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Other taxes: payment, rates, tax returns"@en, "Overige belastingen: betaling, tarieven, belastingaangiften"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Other taxes"@en, "Overige belastingen"@nl .
 
 <dvc:BeschermingPersoonsgegevens>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "I" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Protection of personal data"@en, "Informatiegebieden in verband met burgers: Bescherming van persoonsgegevens"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:BeschermingPersoonsgegevensUitoefeningRechten> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bescherming van persoonsgegevens"@nl, "Protection of personal data"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:BeschermingPersoonsgegevensUitoefeningRechten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "I1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BeschermingPersoonsgegevens> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Exercising data subjects’ rights in relation to the protection of personal data"@en, "Uitoefening van de rechten van de betrokkenen met betrekking tot de bescherming van persoonsgegevens"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Exercising data subjects’ rights"@en, "Uitoefening van de rechten"@nl .
+
+<dvc:Bewijs>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Bewijs"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bewijs"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:BouwenEnWonen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Bouwen en Wonen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bouwen en Wonen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
 
 <dvc:Burger>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep burgers"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Burger"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Doelgroep> .
 
 <dvc:BurgerEnFamilieRechten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "G" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Citizens’ and family rights"@en, "Informatiegebieden in verband met burgers: Burger- en familierechten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:BurgerEnFamilieRechtenErfrechtenEnPlichten>, <dvc:BurgerEnFamilieRechtenGenderIdentiteit>, <dvc:BurgerEnFamilieRechtenKinderen>, <dvc:BurgerEnFamilieRechtenOntvoeringKinderen>, <dvc:BurgerEnFamilieRechtenPartners> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Burger- en familierechten"@nl, "Citizens’ and family rights"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:BurgerEnFamilieRechtenErfrechtenEnPlichten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "G4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BurgerEnFamilieRechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Erfrechten en -plichten in een andere lidstaat, met inbegrip van belastingregels"@nl, "Rights and obligations in relation to succession in another Member State, including tax rules"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Erfrechten en -plichten"@nl, "Rights and obligations regarding succession"@en .
 
 <dvc:BurgerEnFamilieRechtenGenderIdentiteit>
@@ -225,7 +253,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "G3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BurgerEnFamilieRechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Regels inzake erkenning van de genderidentiteit"@nl, "Rules of gender recognition"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Regels inzake genderidentiteit"@nl, "Rules of gender recognition"@en .
 
 <dvc:BurgerEnFamilieRechtenKinderen>
@@ -233,7 +261,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "G1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BurgerEnFamilieRechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Birth, custody for minor children, parental responsibilities, rules on surrogacy and adoption, including second-parent-adoption, maintenance obligations in relation to children in a cross-border family situation"@en, "Geboorte, ouderlijk gezag over minderjarige kinderen, ouderlijke verantwoordelijkheden, regels inzake draagmoederschap en adoptie, met inbegrip van stiefouderadoptie, onderhoudsverplichtingen voor kinderen in een grensoverschrijdende gezinssituatie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechten en plichten in het kader van kinderen"@nl, "Rights and obligations regarding children"@en .
 
 <dvc:BurgerEnFamilieRechtenOntvoeringKinderen>
@@ -241,7 +269,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "G5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BurgerEnFamilieRechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Rechten en regels die gelden bij grensoverschrijdende ontvoering van kinderen door een van de ouders"@nl, "Rights and rules applicable in the case of cross-border parental child abduction"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechten en regels grensoverschrijdende ontvoering kinderen"@nl, "Rights and rules for cross-border child abduction"@en .
 
 <dvc:BurgerEnFamilieRechtenPartners>
@@ -249,24 +277,31 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "G2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:BurgerEnFamilieRechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Living as a couple with different nationalities, including same-sex couples (marriage, civil or registered partnership, separation, divorce, marital property rights, the rights of cohabitants)"@en, "Samenleven van partners met verschillende nationaliteiten, met inbegrip van partners van hetzelfde geslacht (huwelijk, geregistreerd partnerschap, scheiding van tafel en bed, echtscheiding, huwelijksvermogensrechten, rechten van samenwonenden)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Living as a couple"@en, "Samenleven van partners"@nl .
+
+<dvc:BurgerEnOverheid>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Burger en Overheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Burger en Overheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
 
 <dvc:Consumentenrechten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "H" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Consumer rights"@en, "Informatiegebieden in verband met burgers: Consumentenrechten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:ConsumentenrechtenAankoop>, <dvc:ConsumentenrechtenBankrekening>, <dvc:ConsumentenrechtenBetalingen>, <dvc:ConsumentenrechtenConsumentenrechten>, <dvc:ConsumentenrechtenHuurMotorvoertuigen>, <dvc:ConsumentenrechtenNutsvoorzieningen>, <dvc:ConsumentenrechtenVeiligheid> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumentenrechten"@nl, "Consumer rights"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:ConsumentenrechtenAankoop>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "H1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Buying goods, digital content or services (including financial services) from another Member State, online or in person"@en, "Online of in persoon goederen, digitale inhoud of diensten (waaronder financiële diensten) in een andere lidstaat kopen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Aankoop van goederen, digitale inhoud of diensten"@nl, "Buying goods, digital content or services"@en .
 
 <dvc:ConsumentenrechtenBankrekening>
@@ -274,7 +309,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Een bankrekening hebben in een andere lidstaat"@nl, "Holding a bank account in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bankrekening hebben"@nl, "Holding a bank account"@en .
 
 <dvc:ConsumentenrechtenBetalingen>
@@ -282,7 +317,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Betalingen, waaronder overmakingen, en termijnen voor grensoverschrijdende betalingen"@nl, "Payments, including credit transfers, delays in cross-border payments"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Betalingen voor grensoverschrijdende betalingen"@nl, "Payments for cross-border payments"@en .
 
 <dvc:ConsumentenrechtenConsumentenrechten>
@@ -290,7 +325,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Consumentenrechten en -waarborgen bij aankoop van goederen en diensten, met inbegrip van procedures voor de beslechting van en vergoeding bij consumentengeschillen"@nl, "Consumer rights and guarantees related to buying goods and services, including procedures for consumer dispute resolution and compensation"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumentenrechten bij aankoop van goederen en diensten"@nl, "Consumer rights related to buying goods and services"@en .
 
 <dvc:ConsumentenrechtenHuurMotorvoertuigen>
@@ -298,7 +333,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H7" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Huur van motorvoertuigen"@nl, "Renting a motor vehice"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Huur van motorvoertuigen"@nl, "Renting a motor vehice"@en .
 
 <dvc:ConsumentenrechtenNutsvoorzieningen>
@@ -306,7 +341,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Aansluiting op nutsvoorzieningen, zoals gas, elektriciteit, water, verwijdering van huishoudelijk afval, telecommunicatie en internet"@nl, "Connection to utilities, such as gas, electricity, water, household waste disposal, telecoms and the internet"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Aansluiting op nutsvoorzieningen"@nl, "Connection to utilities"@en .
 
 <dvc:ConsumentenrechtenVeiligheid>
@@ -314,24 +349,31 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "H6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Consumentenrechten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Safety and security of consumer products"@en, "Veiligheid en beveiliging van consumentenproducten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Safety and security of products"@en, "Veiligheid en beveiliging van producten"@nl .
+
+<dvc:CultuurSportVrijeTijd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Cultuur, Sport en Vrije Tijd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultuur, Sport en Vrije Tijd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
 
 <dvc:Diensten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "N" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Services"@en, "Informatiegebieden in verband met bedrijven: Diensten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:DienstenErkenningBeroepskwalificaties>, <dvc:DienstenKennisgevingGrensoverschrijdendeActiviteiten>, <dvc:DienstenLicentiesVergunningen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Diensten"@nl, "Services"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:DienstenErkenningBeroepskwalificaties>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "N3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Diensten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Erkenning van beroepskwalificaties, met inbegrip van beroepsonderwijs en -opleiding"@nl, "Recognition of professional qualifications, including vocational education and training"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Erkenning van beroepskwalificaties"@nl, "Recognition of professional qualifications"@en .
 
 <dvc:DienstenKennisgevingGrensoverschrijdendeActiviteiten>
@@ -339,7 +381,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "N2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Diensten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Kennisgeving van grensoverschrijdende activiteiten aan de autoriteiten"@nl, "Notifying the authorities of cross-border activities"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kennisgeving van grensoverschrijdende activiteiten"@nl, "Notification of cross-border activities"@en .
 
 <dvc:DienstenLicentiesVergunningen>
@@ -347,41 +389,86 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "N1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Diensten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Acquiring licences, authorisations or permits with a view to starting and operating a business"@en, "Verkrijging van licenties, vergunningen en toestemming om een bedrijf te starten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Authorisations and permits"@en, "Licenties en vergunningen"@nl .
+
+<dvc:Duits>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "DE"@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Duitse taal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Taal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Duits"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Taal> .
+
+<dvc:EconomieEnWerk>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Economie en Werk"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Economie en Werk"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
+
+<dvc:Engels>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "EN"@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Engelse taal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Taal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Engels"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Taal> .
+
+<dvc:FinancieelVoordeel>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Financieel voordeel"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Financieel voordeel"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:FinancieleVerplichting>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Financiële verplichting"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Financiële verplichting"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:Frans>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "FR"@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Franse taal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Taal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Frans"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Taal> .
 
 <dvc:GezondheidVeiligheidWerk>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "Q" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Health and safety at work"@en, "Informatiegebieden in verband met bedrijven: Gezondheid en veiligheid op het werk"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:GezondheidVeiligheidWerkVerplichtingen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gezondheid en veiligheid op het werk"@nl, "Health and safety at work"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:GezondheidVeiligheidWerkVerplichtingen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "Q1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:GezondheidVeiligheidWerk> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Health and safety obligations in relation to different types of activity, including risk prevention, information and training"@en, "Verplichtingen in verband met gezondheid en veiligheid voor verschillende soorten activiteiten, waaronder risicopreventie, voorlichting en opleiding"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Health and safety obligations"@en, "Verplichtingen in verband met gezondheid en veiligheid"@nl .
 
 <dvc:Gezondheidszorg>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "F" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Healthcare"@en, "Informatiegebieden in verband met burgers: Gezondheidszorg"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:GezondheidszorgGeneesmiddelenKopen>, <dvc:GezondheidszorgMedischeBehandeling>, <dvc:GezondheidszorgNoodnummers>, <dvc:GezondheidszorgPreventieveOpenbareGezondheidsmaatregelen>, <dvc:GezondheidszorgWoonzorgcentrum>, <dvc:GezondheidszorgZiekteverzekering> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gezondheidszorg"@nl, "Healthcare"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:GezondheidszorgGeneesmiddelenKopen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "F2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Buying prescribed pharmaceutical products in a Member State other than the one where the prescription was issued, online or in person"@en, "Online of in persoon geneesmiddelen kopen in een andere lidstaat dan die waar zij door een arts zijn voorgeschreven"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Buying prescribed pharmaceutical products"@en, "Voorgeschreven geneesmiddelen kopen"@nl .
 
 <dvc:GezondheidszorgMedischeBehandeling>
@@ -389,7 +476,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "F1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Een medische behandeling ondergaan in een andere lidstaat"@nl, "Getting medical treatment in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Getting medical treatment"@en, "Medische behandeling ondergaan"@nl .
 
 <dvc:GezondheidszorgNoodnummers>
@@ -397,7 +484,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "F5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Diensten die worden verstrekt via nationale noodnummers zoals „112” en „116”"@nl, "Services provided through national emergency numbers, including ‘112’ and ‘116’ numbers"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "National emergency numbers"@en, "Nationale noodnummers"@nl .
 
 <dvc:GezondheidszorgPreventieveOpenbareGezondheidsmaatregelen>
@@ -405,7 +492,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "F4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Algemene informatie over toegangsrechten en verplichtingen om deel te nemen aan beschikbare preventieve openbare gezondheidsmaatregelen"@nl, "General information on access rights or obligations to participate in available public preventive healthcare measures"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Access rights or obligations to public preventive healthcare measures"@en, "Rechten en verplichtingen tot preventieve openbare gezondheidsmaatregelen"@nl .
 
 <dvc:GezondheidszorgWoonzorgcentrum>
@@ -413,7 +500,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "F6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Rechten en voorwaarden om naar een woonzorgcentrum te verhuizen"@nl, "Rights and conditions for moving to a residential care home"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechten en voorwaarden woonzorgcentrum"@nl, "Rights and conditions residential care home"@en .
 
 <dvc:GezondheidszorgZiekteverzekering>
@@ -421,24 +508,24 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "F3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Gezondheidszorg> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Health insurance rules applicable in the case of short-term or long-term stays in another Member State, including how to apply for a European Health Insurance Card"@en, "Regels inzake ziekteverzekering die van toepassing zijn tijdens een kort of langdurig verblijf in een andere lidstaat, met inbegrip van regels over de wijze waarop een Europese ziekteverzekeringskaart moet worden aangevraagd"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Health insurance rules"@en, "Regels inzake ziekteverzekering"@nl .
 
 <dvc:Goederen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "M" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Goods"@en, "Informatiegebieden in verband met bedrijven: Goederen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:GoederenCEMarkering>, <dvc:GoederenErkenningZonderSpecificaties>, <dvc:GoederenGevaarlijkeStoffen>, <dvc:GoederenKeurmerken>, <dvc:GoederenNormenSpecificatiesCertificering>, <dvc:GoederenProuctenMetGebreken>, <dvc:GoederenRecyclage>, <dvc:GoederenVerkoopOpAfstand>, <dvc:GoederenVoorschriftenVereisten> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Goederen"@nl, "Goods"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:GoederenCEMarkering>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "M1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Obtaining CE marking"@en, "Verkrijging van CE-markering"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "CE marking"@en, "CE-markering"@nl .
 
 <dvc:GoederenErkenningZonderSpecificaties>
@@ -446,7 +533,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Mutual recognition of products not subject to Union specifications"@en, "Wederzijdse erkenning van producten waarvoor geen EU-specificaties gelden"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Erkenning producten zonder EU-specificaties"@nl, "Recognition products without Union specifications"@en .
 
 <dvc:GoederenGevaarlijkeStoffen>
@@ -454,7 +541,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Requirements regarding classification, labelling and packaging for hazardous chemicals"@en, "Voorschriften voor de indeling, etikettering en verpakking van gevaarlijke stoffen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Packaging of hazardous chemicals"@en, "Verpakking van gevaarlijke stoffen"@nl .
 
 <dvc:GoederenKeurmerken>
@@ -462,7 +549,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M8" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Certification, labels (EMAS, energy labels, Eco-design, EU eco-label)"@en, "Certificering, keurmerken (EMAS, energielabels, ecodesign, EU-milieukeur)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Certification, labels"@en, "Certificering, keurmerken"@nl .
 
 <dvc:GoederenNormenSpecificatiesCertificering>
@@ -470,7 +557,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Identifying applicable standards, technical specifications and getting products certified"@en, "Vaststelling van toepasselijke normen, technische specificaties en productcertificering"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Normen, specificaties en certificering"@nl, "Standards, specifications and certification"@en .
 
 <dvc:GoederenProuctenMetGebreken>
@@ -478,7 +565,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M7" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Defective products: consumer rights and guarantees, after-sale responsibilities, means of redress for an injured party"@en, "Producten met gebreken: consumentenrechten en garantie, verantwoordelijkheid na verkoop, rechtsmiddelen voor benadeelde partij"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Defective products"@en, "Producten met gebreken"@nl .
 
 <dvc:GoederenRecyclage>
@@ -486,7 +573,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M9" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Recyclage en afvalbeheer"@nl, "Recycling and waste management"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Recyclage en afvalbeheer"@nl, "Recycling and waste management"@en .
 
 <dvc:GoederenVerkoopOpAfstand>
@@ -494,7 +581,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Distance/off-premises selling: information to be given to customers in advance, confirmation of the contract in writing, withdrawal from a contract, delivering of the goods, other specific obligations"@en, "Verkoop op afstand en buiten verkoopruimten: informatie die vooraf aan klanten moet worden gegeven, schriftelijke bevestiging van overeenkomsten, herroeping van overeenkomsten, aflevering van goederen, andere specifieke verplichtingen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Distance/off-premises selling"@en, "Verkoop op afstand en buiten verkoopruimten"@nl .
 
 <dvc:GoederenVoorschriftenVereisten>
@@ -502,31 +589,236 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "M2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Goederen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Product rules and requirements"@en, "Voorschriften en vereisten voor producten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Product rules and requirements"@en, "Productvoorschriften en vereisten"@nl .
+
+<dvc:InfrastructuurMateriaal>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Beschikbaar stellen van infrastructuur en materiaal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastructuur en materiaal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:MileuEnEnergie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Milieu en Energie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Milieu en Energie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
+
+<dvc:MobiliteitOpenbareWerken>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Mobiliteit en Openbare Werken"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Mobiliteit en Openbare Werken"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
+
+<dvc:Nederlands>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "NL"@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Nederlandse taal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Taal> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Nederlands"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Taal> .
 
 <dvc:Onderneming>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep onderemingen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#narrower> <dvc:OndernemingAccommodatieMaaltijden>, <dvc:OndernemingAdministatie>, <dvc:OndernemingBouwnijverheid>, <dvc:OndernemingDelfstoffen>, <dvc:OndernemingElektriciteitGas>, <dvc:OndernemingExtraterritoriaal>, <dvc:OndernemingFinancienVerzekeringen>, <dvc:OndernemingGezondheidszorg>, <dvc:OndernemingHandelEnVoertuigen>, <dvc:OndernemingHuishoudens>, <dvc:OndernemingIndustrie>, <dvc:OndernemingInformatieCommunicatie>, <dvc:OndernemingKunstAmusementRecreactie>, <dvc:OndernemingLandbouwBosbouwVisserij>, <dvc:OndernemingOnderwijs>, <dvc:OndernemingOnroerendGoed>, <dvc:OndernemingOpenbaarBestuurDefensie>, <dvc:OndernemingOverige>, <dvc:OndernemingVervoerOpslag>, <dvc:OndernemingVrijeBeroepenWetenschappelijk>, <dvc:OndernemingWater> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Onderneming"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Doelgroep> .
+
+<dvc:OndernemingAccommodatieMaaltijden>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "I" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Verschaffen van accommodatie en maaltijden (Horeca en toerisme)"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Verschaffen van accommodatie en maaltijden"@nl .
+
+<dvc:OndernemingAdministatie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "N" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Administratieve en ondersteunende diensten"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Administratieve en ondersteunende diensten"@nl .
+
+<dvc:OndernemingBouwnijverheid>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "F" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bouwnijverheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bouwnijverheid"@nl .
+
+<dvc:OndernemingDelfstoffen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "B" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Winning van delfstoffen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Winning van delfstoffen"@nl .
+
+<dvc:OndernemingElektriciteitGas>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "D" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Productie en distributie van elektriciteit, gas, stoom en gekoelde lucht"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Productie en distributie van elektriciteit, gas, stoom en gekoelde lucht"@nl .
+
+<dvc:OndernemingExtraterritoriaal>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "U" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Extraterritoriale organisaties en lichamen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Extraterritoriale organisaties en lichamen"@nl .
+
+<dvc:OndernemingFinancienVerzekeringen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "K" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Financiële activiteiten en verzekeringen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Financiële activiteiten en verzekeringen"@nl .
+
+<dvc:OndernemingGezondheidszorg>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "Q" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Menselijke gezondheidszorg en maatschappelijke dienstverlening"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Menselijke gezondheidszorg en maatschappelijke dienstverlening"@nl .
+
+<dvc:OndernemingHandelEnVoertuigen>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "G" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Groot- en detailhandel; reparatie van auto's en motorfietsen (Handel)"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Groot- en detailhandel; reparatie van auto's en motorfietsen"@nl .
+
+<dvc:OndernemingHuishoudens>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "T" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Huishoudens als werkgever; niet-gedifferentieerde productie van goederen en diensten door huishoudens voor eigen gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Huishoudens als werkgever"@nl .
+
+<dvc:OndernemingIndustrie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "C" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Industrie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Industrie"@nl .
+
+<dvc:OndernemingInformatieCommunicatie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "J" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Informatie en communicatie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Informatie en communicatie"@nl .
+
+<dvc:OndernemingKunstAmusementRecreactie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "R" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Kunst, amusement en recreatie (Culturele en creatieve sector)"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kunst, amusement en recreatie"@nl .
+
+<dvc:OndernemingLandbouwBosbouwVisserij>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "A" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Landbouw, bosbouw en visserij"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Landbouw, bosbouw en visserij"@nl .
+
+<dvc:OndernemingOnderwijs>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "P" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Onderwijs"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onderwijs"@nl .
+
+<dvc:OndernemingOnroerendGoed>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "L" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Exploitatie van en handel in onroerend goed"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Exploitatie van en handel in onroerend goed"@nl .
+
+<dvc:OndernemingOpenbaarBestuurDefensie>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "O" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Openbaar bestuur en defensie; verplichte sociale verzekeringen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Openbaar bestuur en defensie; verplichte sociale verzekeringen"@nl .
+
+<dvc:OndernemingOverige>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "S" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Overige diensten"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Overige diensten"@nl .
+
+<dvc:OndernemingVervoerOpslag>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "H" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Vervoer en opslag"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vervoer en opslag"@nl .
+
+<dvc:OndernemingVrijeBeroepenWetenschappelijk>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "M" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Vrije beroepen en wetenschappelijke en technische activiteiten"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vrije beroepen en wetenschappelijke en technische activiteiten"@nl .
+
+<dvc:OndernemingWater>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "E" ;
+    <http://www.w3.org/2004/02/skos/core#broader> <dvc:Onderneming> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Distributie van water; afval- en afvalwaterbeheer en sanering"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Distributie van water; afval- en afvalwaterbeheer en sanering"@nl .
+
+<dvc:OnderwijsEnWetenschap>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Onderwijs en Wetenschap"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onderwijs en Wetenschap"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
 
 <dvc:OnderwijsOfStage>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "E" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Education or traineeship in another Member State"@en, "Informatiegebieden in verband met burgers: Onderwijs of stage in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:OnderwijsOfStageOnderwijsstelsel>, <dvc:OnderwijsOfStageOnderzoek>, <dvc:OnderwijsOfStageStage>, <dvc:OnderwijsOfStageVrijwilligerswerk> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Education or traineeship in another Member State"@en, "Onderwijs of stage in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:OnderwijsOfStageOnderwijsstelsel>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "E1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:OnderwijsOfStage> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Education system in another Member State, including early childhood education and care, primary and secondary education, higher education and adult learning"@en, "Onderwijsstelsel in een andere lidstaat, met inbegrip van voor- en vroegschoolse educatie en opvang, basis- en secundair onderwijs, hoger onderwijs en volwassenenonderwijs;"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Education system"@en, "Onderwijsstelsel"@nl .
 
 <dvc:OnderwijsOfStageOnderzoek>
@@ -534,7 +826,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "E4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:OnderwijsOfStage> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Conducting research in another Member State as part of an education programme"@en, "Onderzoek doen in een andere lidstaat in het kader van een onderwijsprogramma"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Conducting research"@en, "Onderzoek doen"@nl .
 
 <dvc:OnderwijsOfStageStage>
@@ -542,7 +834,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "E3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:OnderwijsOfStage> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Stage lopen in een andere lidstaat"@nl, "Traineeships in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Stage lopen"@nl, "Traineeships"@en .
 
 <dvc:OnderwijsOfStageVrijwilligerswerk>
@@ -550,31 +842,31 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "E2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:OnderwijsOfStage> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Volunteering in another Member State"@en, "Vrijwilligerswerk doen in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Volunteering"@en, "Vrijwilligerswerk"@nl .
 
 <dvc:Organisatie>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep organisaties"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisatie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Doelgroep> .
 
 <dvc:Overheidsopdrachten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "P" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Public contracts"@en, "Informatiegebieden in verband met bedrijven: Overheidsopdrachten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:OverheidsopdrachtenDeelname>, <dvc:OverheidsopdrachtenMeldingOnregelmatigheden>, <dvc:OverheidsopdrachtenOnlineInschrijving> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Overheidsopdrachten"@nl, "Public contracts"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:OverheidsopdrachtenDeelname>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "P1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Overheidsopdrachten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Deelname aan openbare aanbestedingen: regels en procedures"@nl, "Participating in public tenders: rules and procedures"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Deelname aan openbare aanbestedingen"@nl, "Participating in public tenders"@en .
 
 <dvc:OverheidsopdrachtenMeldingOnregelmatigheden>
@@ -582,7 +874,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "P3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Overheidsopdrachten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Melding van onregelmatigheden in verband met aanbestedingsprocedures"@nl, "Reporting irregularities in relation to the tender process"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Melding van onregelmatigheden"@nl, "Reporting irregularities"@en .
 
 <dvc:OverheidsopdrachtenOnlineInschrijving>
@@ -590,24 +882,24 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "P2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Overheidsopdrachten> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Online-inschrijving op openbare aanbestedingen"@nl, "Submitting a bid online in response to a public call for tender"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Online-inschrijving"@nl, "Submitting a bid online"@en .
 
 <dvc:Reizen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "A" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Travel within the Union"@en, "Informatiegebieden in verband met burgers: Reizen binnen de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:ReizenDocumenten>, <dvc:ReizenElektronischeGegevens>, <dvc:ReizenGoederen>, <dvc:ReizenOndersteuningBeperkteMobiliteit>, <dvc:ReizenRechtenVerplichtingen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Reizen binnen de Unie"@nl, "Travel within the Union"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:ReizenDocumenten>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "A1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Reizen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Documenten die van EU-burgers, hun gezinsleden die geen EU-burgers zijn, alleenreizende minderjarigen en niet-EU-burgers verlangd worden wanneer zij EU-binnengrenzen overschrijden (identiteitsbewijs, visum, paspoort)"@nl, "Documents required of Union citizens, their family members who are not Union citizens, minors travelling alone and non-Union citizens when travelling across borders within the Union (ID card, visa, passport)"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Required travel documents"@en, "Verplichte reisdocumenten"@nl .
 
 <dvc:ReizenElektronischeGegevens>
@@ -615,7 +907,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "A5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Reizen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Spraaktelefonie en verzending en ontvangst van elektronische berichten en elektronische gegevens binnen de Unie."@nl, "Voice calling and sending and receiving electronic messages and electronic data within the Union"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Communicatie met elektronische berichten"@nl, "Communication with electronic messages"@en .
 
 <dvc:ReizenGoederen>
@@ -623,7 +915,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "A4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Reizen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Transport of animals, plants, alcohol, tobacco, cigarettes and other goods when travelling in the Union"@en, "Vervoer van dieren, planten, alcohol, tabak, sigaretten en andere goederen bij reizen in de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Transport of goods"@en, "Vervoer van goederen"@nl .
 
 <dvc:ReizenOndersteuningBeperkteMobiliteit>
@@ -631,7 +923,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "A3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Reizen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Assistance in case of reduced mobility when travelling in and from the Union"@en, "Ondersteuning in geval van beperkte mobiliteit bij reizen in of vanuit de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Assistance in case of reduced mobility"@en, "Ondersteuning in geval van beperkte mobiliteit"@nl .
 
 <dvc:ReizenRechtenVerplichtingen>
@@ -639,24 +931,38 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "A2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Reizen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Rechten en verplichtingen van reizigers die per vliegtuig, trein, schip of bus in of vanuit de Unie reizen en van personen die pakketreizen of gekoppelde reisarrangementen kopen"@nl, "Rights and obligations of travellers by plane, train, ship, bus in and from the Union, and of those who buy travel packages or linked travel arrangements"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Rechten en verplichtingen van reizigers"@nl, "Rights and obligations of travellers"@en .
+
+<dvc:Stopgezet>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Status stopgezet geeft aan dat de publieke dienst niet meer van toepassing is"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Status> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Stopgezet"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Status> .
+
+<dvc:Toelating>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Toelating"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Toelating"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
 
 <dvc:Verblijf>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "D" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Residence in another Member State"@en, "Informatiegebieden in verband met burgers: Verblijf in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:VerblijfKoopVerkoop>, <dvc:VerblijfNaturalisatie>, <dvc:VerblijfOverlijden>, <dvc:VerblijfVerblijfskaarten>, <dvc:VerblijfVerhuizing>, <dvc:VerblijfVerkiezingen> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Residence in another Member State"@en, "Verblijf in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:VerblijfKoopVerkoop>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "D2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Koop en verkoop van vastgoed, met inbegrip van voorwaarden en verplichtingen met betrekking tot belasting, eigendom of gebruik van dergelijk vastgoed, waaronder het gebruik ervan als tweede verblijf"@nl, "Purchasing and selling of real estate, including any conditions and obligations related to taxation, ownership, or use of such property, including its use as a secondary residence"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Koop en verkoop van vastgoed"@nl, "Purchasing and selling of immovable property"@en .
 
 <dvc:VerblijfNaturalisatie>
@@ -664,7 +970,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "D5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Conditions applicable to the naturalisation of nationals from another Member State"@en, "Voorwaarden voor de naturalisatie van onderdanen van een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Conditions for naturalisation"@en, "Voorwaarden voor naturalisatie"@nl .
 
 <dvc:VerblijfOverlijden>
@@ -672,7 +978,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "D6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Regels die gelden in geval van overlijden, met inbegrip van regels inzake de repatriëring van stoffelijke overschotten naar een andere lidstaat."@nl, "Rules applicable in the case of death, including rules on the repatriation of remains to another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Regels in geval van overlijden"@nl, "Rules applicable in the case of death"@en .
 
 <dvc:VerblijfVerblijfskaarten>
@@ -680,7 +986,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "D4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Requirements for residence cards for Union citizens and their family members, including family members who are not Union citizens"@en, "Voorschriften betreffende verblijfskaarten voor EU-burgers en hun gezinsleden, waaronder gezinsleden die geen EU-burgers zijn"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Requirements for residence cards"@en, "Voorschriften betreffende verblijfskaarten"@nl .
 
 <dvc:VerblijfVerhuizing>
@@ -688,7 +994,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "D1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Moving temporarily or permanently to another Member State"@en, "Tijdelijke of permanente verhuizing naar een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Moving temporarily or permanently"@en, "Tijdelijke of permanente verhuizing"@nl .
 
 <dvc:VerblijfVerkiezingen>
@@ -696,31 +1002,31 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "D3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Verblijf> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Deelname aan gemeentelijke verkiezingen en verkiezingen voor het Europees Parlement"@nl, "Participating in municipal elections and elections to the European Parliament"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Deelname aan verkiezingen"@nl, "Participating in elections"@en .
 
 <dvc:Vereniging>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep verenigingen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:TargetAudience> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Doelgroep> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Vereniging"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:TargetAudience> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Doelgroep> .
 
 <dvc:Voertuigen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "C" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Vehicles in the Union"@en, "Informatiegebieden in verband met burgers: Voertuigen in de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:VoertuigenKoopVerkoop>, <dvc:VoertuigenVerkeersregels>, <dvc:VoertuigenVerleningRijbewijzen>, <dvc:VoertuigenVerplaatsing>, <dvc:VoertuigenVerplichteVerzekering> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Vehicles in the Union"@en, "Voertuigen in de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:VoertuigenKoopVerkoop>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "C4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Voertuigen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Buying and selling a motor vehicle in another Member State"@en, "Koop en verkoop van motorvoertuigen in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Buying and selling a motor vehicle"@en, "Koop en verkoop van motorvoertuigen"@nl .
 
 <dvc:VoertuigenVerkeersregels>
@@ -728,7 +1034,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "C5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Voertuigen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "National traffic rules and requirements for drivers, including general rules for the use of the national road infrastructure: time-based charges (vignette), distancebased charges (toll), emission stickers"@en, "Nationale verkeersregels en voorschriften voor bestuurders, met inbegrip van algemene regels voor het gebruik van de nationale wegeninfrastructuur: tijdsgebonden heffingen (vignet), afstandsgebonden heffingen (tol), emissiestickers"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "National traffic rules and requirements for drivers"@en, "Nationale verkeersregels en voorschriften voor bestuurders"@nl .
 
 <dvc:VoertuigenVerleningRijbewijzen>
@@ -736,7 +1042,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "C2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Voertuigen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Acquiring and renewing a driving licence"@en, "Verkrijging en verlenging van rijbewijzen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Acquiring and renewing a driving licence"@en, "Verkrijging en verlenging van rijbewijzen"@nl .
 
 <dvc:VoertuigenVerplaatsing>
@@ -744,7 +1050,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "C1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Voertuigen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Taking a motor vehicle temporarily or permanently to another Member State"@en, "Tijdelijke of permanente verplaatsing van motorvoertuigen naar een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Taking a motor vehicle to another Member State"@en, "Tijdelijke of permanente verplaatsing van motorvoertuigen"@nl .
 
 <dvc:VoertuigenVerplichteVerzekering>
@@ -752,24 +1058,38 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "C3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Voertuigen> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Taking out mandatory motor vehicle insurance"@en, "Verplichte motorrijtuigenverzekering"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Mandatory motor vehicle insurance"@en, "Verplichte motorrijtuigenverzekering"@nl .
+
+<dvc:Voorwerp>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type: Voorwerp"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Type> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Voorwerp"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
+
+<dvc:WelzijnGezondheid>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema: Welzijn en Gezondheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Welzijn en Gezondheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
 
 <dvc:WerkEnPensionering>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "B" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information areas related to citizens: Work and retirement within the Union"@en, "Informatiegebieden in verband met burgers: Werk en pensionering binnen de Unie"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:WerkEnPensioneringAansprakelijkheidEnVerzekeringen>, <dvc:WerkEnPensioneringArbeidsvoorwaarden>, <dvc:WerkEnPensioneringBelastingheffing>, <dvc:WerkEnPensioneringErkenningKwalificaties>, <dvc:WerkEnPensioneringGaanWerken>, <dvc:WerkEnPensioneringGelijkeBehandeling>, <dvc:WerkEnPensioneringGezondheidEnVeiligheid>, <dvc:WerkEnPensioneringSocialezekerheidsrechten>, <dvc:WerkEnPensioneringWerkZoeken> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Werk en pensionering binnen de Unie"@nl, "Work and retirement within the Union"@en ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:WerkEnPensioneringAansprakelijkheidEnVerzekeringen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "B5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Regels inzake aansprakelijkheid en verplichte verzekeringen in verband met verblijf of werk in een andere lidstaat"@nl, "Rules on liability and mandatory insurance linked to residence or employment in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Regels inzake aansprakelijkheid en verzekeringen"@nl, "Rules on liability and insurance"@en .
 
 <dvc:WerkEnPensioneringArbeidsvoorwaarden>
@@ -777,7 +1097,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B6" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Bij wet of wettelijk instrument vastgestelde arbeidsvoorwaarden en -omstandigheden, ook voor gedetacheerde werknemers (met inbegrip van informatie over werktijden, betaald verlof, vakantierechten, rechten en verplichtingen in verband met overuren, medisch onderzoek, beëindiging van contracten en ontslag)"@nl, "Terms and conditions of employment, including for posted workers, as stipulated by law or statutory instrument (including information on working hours, paid leave, holiday entitlements, rights and obligations regarding overtime work, health checks, termination of contracts, dismissal and redundancies)"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Terms and conditions of employment"@en, "Vastgestelde arbeidsvoorwaarden en -omstandigheden"@nl .
 
 <dvc:WerkEnPensioneringBelastingheffing>
@@ -785,7 +1105,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Belastingheffing in een andere lidstaat"@nl, "Taxation in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Belastingheffing"@nl, "Taxation"@en .
 
 <dvc:WerkEnPensioneringErkenningKwalificaties>
@@ -793,7 +1113,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Erkenning van kwalificaties met het oog op werk in een andere lidstaat"@nl, "Recognition of qualifications with a view to employment in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Erkenning van kwalificaties"@nl, "Recognition of qualifications"@en .
 
 <dvc:WerkEnPensioneringGaanWerken>
@@ -801,7 +1121,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Gaan werken in een andere lidstaat"@nl, "Taking up employment in another Member State"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gaan werken"@nl, "Taking up employment"@en .
 
 <dvc:WerkEnPensioneringGelijkeBehandeling>
@@ -809,7 +1129,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B7" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Equal treatment (rules prohibiting discrimination in the workplace, rules on equal pay for men and women and on equal pay for employees on fixed-term or permanent employment contracts)"@nl, "Gelijke behandeling (regels die discriminatie op het werk verbieden, regels inzake gelijke betaling van mannen en vrouwen en inzake gelijke betaling van werknemers met contracten voor bepaalde of onbepaalde tijd);"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Equal treatment"@en, "Gelijke behandeling"@nl .
 
 <dvc:WerkEnPensioneringGezondheidEnVeiligheid>
@@ -817,7 +1137,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B8" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Health and safety obligations in relation to different types of activity"@en, "Verplichtingen in verband met gezondheid en veiligheid voor verschillende soorten activiteiten"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Health and safety obligations"@en, "Verplichtingen gezondheid en veiligheid"@nl .
 
 <dvc:WerkEnPensioneringSocialezekerheidsrechten>
@@ -825,7 +1145,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B9" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Social security rights and obligations in the Union including those related to getting pensions"@en, "Socialezekerheidsrechten en -verplichtingen in de Unie, onder meer in verband met pensioenen"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Social security rights and obligations"@en, "Socialezekerheidsrechten en -verplichtingen"@nl .
 
 <dvc:WerkEnPensioneringWerkZoeken>
@@ -833,24 +1153,24 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "B1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:WerkEnPensionering> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Seeking employment in another Member State"@en, "Werk zoeken in een andere lidstaat"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Seeking employment"@en, "Werk zoeken"@nl .
 
 <dvc:Werknemers>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "K" ;
     <http://www.w3.org/2004/02/skos/core#definition> "Areas of information related to businesses: Employees"@en, "Informatiegebieden in verband met bedrijven: Werknemers"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#narrower> <dvc:WerknemersArbeidsvoorwaarden>, <dvc:WerknemersGelijkeBehandeling>, <dvc:WerknemersPersoneelsvertegenwoordiging>, <dvc:WerknemersSocialezekerheid>, <dvc:WerknemersTewerkstelling> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Employees"@en, "Werknemers"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategory> .
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:YourEuropeCategorie> .
 
 <dvc:WerknemersArbeidsvoorwaarden>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#altLabel> "K1" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Werknemers> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Bij wet of wettelijk instrument vastgestelde arbeidsvoorwaarden (met inbegrip van werktijden, betaald verlof, vakantierechten, rechten en verplichtingen in verband met overuren, medisch onderzoek, beëindiging van contracten en ontslag)"@nl, "Terms of employment stipulated by law or statutory instrument (including working hours, paid leave, holiday entitlements, rights and obligations regarding overtime work, health checks, termination of contracts, dismissals and redundancies)"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Arbeidsvoorwaarden"@nl, "Terms of employment"@en .
 
 <dvc:WerknemersGelijkeBehandeling>
@@ -858,7 +1178,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "K4" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Werknemers> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Equal treatment (rules prohibiting discrimination in the workplace, rules on equal pay for men and women and equal pay for employees on fixed-term or under permanent employment contracts)"@en, "Gelijke behandeling (regels die discriminatie op het werk verbieden, regels inzake gelijke betaling van mannen en vrouwen en inzake gelijke betaling van werknemers met contracten voor bepaalde of onbepaalde tijd)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Equal treatment"@en, "Gelijke behandeling"@nl .
 
 <dvc:WerknemersPersoneelsvertegenwoordiging>
@@ -866,7 +1186,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "K5" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Werknemers> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Regels voor personeelsvertegenwoordiging"@nl, "Rules on staff representation"@en ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Personeelsvertegenwoordiging"@nl, "Staff representation"@en .
 
 <dvc:WerknemersSocialezekerheid>
@@ -874,7 +1194,7 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "K2" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Werknemers> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Social security rights and obligations in the Union (registering as employer, registering employees, notifying the end of contract of an employee, paying social contributions, rights and obligations related to pensions"@en, "Socialezekerheidsrechten en -verplichtingen in de Unie (aanmelding als werkgever, aanmelding van werknemers, kennisgeving van beëindiging van een arbeidsovereenkomst, betaling van sociale bijdragen, rechten en verplichtingen in verband met pensioenen)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Social security rights and obligations"@en, "Socialezekerheidsrechten en -verplichtingen"@nl .
 
 <dvc:WerknemersTewerkstelling>
@@ -882,16 +1202,40 @@
     <http://www.w3.org/2004/02/skos/core#altLabel> "K3" ;
     <http://www.w3.org/2004/02/skos/core#broader> <dvc:Werknemers> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Employment of workers in other Member States (posting of workers, rules on freedom to provide services, residency requirements for workers)"@en, "Tewerkstelling van werknemers in andere lidstaten (detachering, regels betreffende het vrij verrichten van diensten, woonplaatsvereisten voor werknemers)"@nl ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategory> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Employment of workers"@en, "Tewerkstelling van werknemers"@nl .
 
-<dvcs:TargetAudience>
+<dvcs:Doelgroep>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep waarop een publieke dienstverlening gericht is."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroep waarop een publieke dienstverlening gericht is"@nl ;
     <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Burger>, <dvc:Onderneming>, <dvc:Organisatie>, <dvc:Vereniging> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Doelgroep"@nl, "TargetAudience"@en .
 
-<dvcs:YourEuropeCategory>
+<dvcs:Status>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Status van een publieke dienst"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Actief>, <dvc:Stopgezet> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Status"@en, "Status"@nl .
+
+<dvcs:Taal>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Taal"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Duits>, <dvc:Engels>, <dvc:Frans>, <dvc:Nederlands> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Language"@en, "Taal"@nl .
+
+<dvcs:Thema>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Thema van een publieke dienst"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:BouwenEnWonen>, <dvc:BurgerEnOverheid>, <dvc:CultuurSportVrijeTijd>, <dvc:EconomieEnWerk>, <dvc:MileuEnEnergie>, <dvc:MobiliteitOpenbareWerken>, <dvc:OnderwijsEnWetenschap>, <dvc:WelzijnGezondheid> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Thema"@en, "Thema"@nl .
+
+<dvcs:Type>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type van een publieke dienst"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:AdviesBegeleiding>, <dvc:Bewijs>, <dvc:FinancieelVoordeel>, <dvc:FinancieleVerplichting>, <dvc:InfrastructuurMateriaal>, <dvc:Toelating>, <dvc:Voorwerp> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Type"@en, "Type"@nl .
+
+<dvcs:YourEuropeCategorie>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Lijst van informatiegebieden die voor burgers en bedrijven van belang zijn bij de uitoefening van hun rechten uit hoofde van de interne markt."@nl, "List of areas of information relevant for citizens and business exercising their internal market rights."@en ;
     <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Bedrijf>, <dvc:Bedrijfsfinanciering>, <dvc:Belastingen>, <dvc:BeschermingPersoonsgegevens>, <dvc:BurgerEnFamilieRechten>, <dvc:Consumentenrechten>, <dvc:Diensten>, <dvc:GezondheidVeiligheidWerk>, <dvc:Gezondheidszorg>, <dvc:Goederen>, <dvc:OnderwijsOfStage>, <dvc:Overheidsopdrachten>, <dvc:Reizen>, <dvc:Verblijf>, <dvc:Voertuigen>, <dvc:WerkEnPensionering>, <dvc:Werknemers> ;
