@@ -359,12 +359,26 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:YourEuropeCategorie> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Safety and security of products"@en, "Veiligheid en beveiliging van producten"@nl .
 
+<dvc:Create>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Snapshot type: Create"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:SnapshotType> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Create"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:SnapshotType> .
+
 <dvc:CultuurSportVrijeTijd>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Thema: Cultuur, Sport en Vrije Tijd"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:Thema> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultuur, Sport en Vrije Tijd"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Thema> .
+
+<dvc:Delete>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Snapshot type: Delete"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:SnapshotType> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Delete"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:SnapshotType> .
 
 <dvc:Derden>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -1011,6 +1025,13 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Toelating"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:Type> .
 
+<dvc:Update>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Snapshot type: update"@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <dvcs:SnapshotType> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Update"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <dvcs:SnapshotType> .
+
 <dvc:VLoket>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal: V-loket"@nl ;
@@ -1344,6 +1365,12 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Publicatiekanaal van een publieke dienst beschrijft op welke plaaten de dienst zichtbaar zal zijn"@nl ;
     <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Rechtenverkenner>, <dvc:VLoket>, <dvc:YourEurope> ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicatiekanaal"@nl, "Publication medium"@en .
+
+<dvcs:SnapshotType>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Type van een snapshot"@nl ;
+    <http://www.w3.org/2004/02/skos/core#hasTopConcept> <dvc:Create>, <dvc:Delete>, <dvc:Update> ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot Type"@en, "Snapshot Type"@nl .
 
 <dvcs:Status>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
