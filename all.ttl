@@ -1,223 +1,275 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<https://data.vlaanderen.be/id/concept/levensfase/deprecated>
-    a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "De service is nog beschikbaar maar is nog slechts beschikbaar om de overstap te vergemakkelijken naar een levensfase. Geen nieuwe aansluitingen zijn mogelijk. " ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "offline" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
-
-<https://data.vlaanderen.be/id/concept/levensfase/design>
-    a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "De service is in ontwerp/in ontwikkeling. Veranderingen kunnen dus snel en onverwacht gebeuren. " ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
-
-<https://data.vlaanderen.be/id/concept/levensfase/live>
-    a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "De service is actief. Stabiliteit wordt nagestreefd. " ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
-
-<https://data.vlaanderen.be/id/concept/levensfase/sunset>
-    a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "De service is in zijn laatste levensfase. Geen veranderingen meer verwacht, uitgezonderd van belangrijke (security) patches. " ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in uitfasering" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
-
-<https://data.vlaanderen.be/id/concept/meettechnieken/andere_meettechniek>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/andere_meettechniek>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "andere tellingen" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "andere meettechniek"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/camera>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/camera>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "camera" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "camera"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/glasvezeltelling>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/glasvezeltelling>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "glasvezeltelling" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "glasvezeltelling" ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/inductieve_lussen>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/inductieve_lussen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "inductieve lussen" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "inductieve lussen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/manuele_tellingen>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/manuele_tellingen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "manuele tellingen" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "manuele tellingen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/piëzotelling>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/piëzotelling>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "piëzotelling" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "piëzotelling"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/radartellingen>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/radartellingen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "radartellingen" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "radartellingen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/meettechnieken/rubberslang>
+<https://data.vlaanderen.be/id/concept/VkmMeettechnieken/rubberslang>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/meettechnieken> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "rubberslang" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "rubberslang"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/metadata/ID_meettoestel>
+<https://data.vlaanderen.be/id/concept/VkmMetadata/ID_meettoestel>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/metadata> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "ID van meettoestel" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "ID van meettoestel"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/metadata/locatie>
+<https://data.vlaanderen.be/id/concept/VkmMetadata/locatie>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/metadata> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "locatie" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "locatie"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/metadata/richting>
+<https://data.vlaanderen.be/id/concept/VkmMetadata/richting>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/metadata> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "richting" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "richting"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/metadata/tijdstip>
+<https://data.vlaanderen.be/id/concept/VkmMetadata/tijdstip>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/metadata> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "tijdstip" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "tijdstip"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmMetadata> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/fietser>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/fietser>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Verkeersmodaliteit fietser omvat onder andere de subklassen fietser, kinderfiets, steps, cargobike/bakfiets, éénwieler, e-bike, kayaks, enz." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "fietser" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "fietser"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/groot>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/groot>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Verkeersmodaliteit groot verkeer omvat onder andere de subklassen vrachtwagens (+3.5 ton), bus, gelede vrachtwagens, bergingsvoertuigen, enz." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "groot" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "groot"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/klein>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/klein>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Verkeersmodaliteit klein verkeer omvat onder andere de subklassen personenwagen, minibus, landbouwvoertuig, enz." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "klein" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "klein"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/medium>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/medium>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Verkeersmodaliteit medium verkeer omvat onder andere de subklassen bestelwagens, ongelede vrachtwagens, ambulance & brandweer, enz." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "medium" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "medium"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/voetganger>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/voetganger>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Verkeersmodaliteit voetganger omvat onder andere de subklasse voetganger." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "voetganger" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "voetganger"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten_subklassen/fietser>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten_subklassen/fietser>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/fietser> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/fietser> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Iets of iemand die zich op de fiets in het verkeer begeeft." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten_subklassen> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "live" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten_subklassen> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten_subklassen> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "fietser" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "fietser"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten_subklassen> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/concept/verkeersmodaliteiten_subklassen/voetganger>
+<https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten_subklassen/voetganger>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/id/concept/verkeersmodaliteiten/voetganger> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/id/concept/VkmVerkeersmodaliteiten/voetganger> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Een voetganger is een persoon die zich 'te voet' op de openbare weg verplaatst." ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten_subklassen> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten_subklassen> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "voetganger" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "voetganger"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten_subklassen> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/concept/wegcategorie/dragend_netwerk>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "dragend netwerk" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "dragend netwerk"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/concept/wegcategorie/fiets_en_wandelwegen>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "fiets en wandelwegen" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "fiets en wandelwegen"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/concept/wegcategorie/hoofdnetwerk>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "hoofdnetwerk" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "hoofdnetwerk"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/concept/wegcategorie/lokale_wegnet>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://www.w3.org/2004/02/skos/core#definition> "" ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "in ontwikkeling" ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> .
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "lokale wegnet" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "lokale wegnet"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/wegcategorie> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/conceptscheme/levensfase>
-    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor de levensfase waarin de dataservice zich bevindt." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme gebruiksstatus" .
-
-<https://data.vlaanderen.be/id/conceptscheme/meettechnieken>
+<https://data.vlaanderen.be/id/conceptscheme/VkmMeettechnieken>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor meettechnieken die ingezet worden in het domein van verkeersmetingen." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme meettechnieken" .
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme meettechnieken"@nl ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/conceptscheme/metadata>
+<https://data.vlaanderen.be/id/conceptscheme/VkmMetadata>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor metadata." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme metadata" .
+    <http://www.w3.org/2004/02/skos/core#notation> "METAdata" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "METAdata"@nl, "conceptscheme metadata" ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten>
+<https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor verkeersmodaliteiten met de onderverdeling van de hoofdklassen van vervoerstypes." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme verkeersmodaliteiten" .
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme verkeersmodaliteiten" ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/conceptscheme/verkeersmodaliteiten_subklassen>
+<https://data.vlaanderen.be/id/conceptscheme/VkmVerkeersmodaliteiten_subklassen>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor verkeersmodaliteiten_subklassen met de onderverdeling van de subklassen van vervoerstypes." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme verkeersmodaliteiten_subklassen" .
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme verkeersmodaliteiten_subklassen" ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/conceptscheme/wegcategorie>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst voor wegcategorie." ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme wegcategorie" .
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "conceptscheme wegcategorie" ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
+
+<https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is actief. Deze keuzelijst of optie kan aangeleverd worden."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "ingebruik" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "In gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
+
+<https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/uitgebruik>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is actief. De keuzelijst of optie mag aangeleverd worden maar is niet meer aangewezen om te gebruiken."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "uitgebruik" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Uit gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
+
+<https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/verwijderd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is inactief en niet meer beschikbaar voor aanlevering."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "verwijderd" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "verwijderd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
+
+<https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/VkmStatus>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De mogelijke statussen van keuzelijsten en keuzelijst-opties."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vkm keuzelijst status"@nl ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> .
 
