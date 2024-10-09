@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://data.vlaanderen.be/id/concept/MAGDAStatus/ingebruik>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is actief. Deze keuzelijst of optie kan aangeleverd worden."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "ingebruik" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "In gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/MAGDAStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/MAGDAStatus/uitgebruik>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is actief. De keuzelijst of optie mag aangeleverd worden maar is niet meer aangewezen om te gebruiken."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "uitgebruik" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Uit gebruik"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/MAGDAStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/MAGDAStatus/verwijderd>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De keuzelijst of optie is inactief en niet meer beschikbaar voor aanlevering."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "verwijderd" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "verwijderd"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus> ;
+    <https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/MAGDAStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/conceptscheme/MAGDAStatus>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De mogelijke statussen van keuzelijsten en keuzelijst-opties."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "ADMS keuzelijst status"@nl ;
+    <https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/MAGDAStatus/ingebruik> .
+
