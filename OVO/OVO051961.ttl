@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051961>
+  a org:Organization ;
+  skos:prefLabel "Dams, Ief"@nl ;
+  dct:description "IDeeworks"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051961" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-01-13"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7a0bb3bf-e342-cf3f-10b1-67358374f87a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051961/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051961> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051961/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ief@ideeworks.net" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051961>
+  a foaf:Document ;
+  rdfs:label "Document voor Dams, Ief"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051961> .

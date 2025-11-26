@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002894>
+  a org:Organization ;
+  skos:prefLabel "Waasse Landmaatschappij"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002894" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1936-12-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/92b332ec-314e-44dd-bcdd-7cb6efcac8d1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002894/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002894/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002894/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002894> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002894/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 777 25 92" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002894/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.waasselandmaatschappij.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002894/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@w-lm.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002894>
+  a foaf:Document ;
+  rdfs:label "Document voor Waasse Landmaatschappij"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002894> .

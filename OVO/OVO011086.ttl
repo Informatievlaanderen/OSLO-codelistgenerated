@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011086>
+  a org:Organization ;
+  skos:prefLabel "Karibu"@nl ;
+  skos:altLabel "Karibu"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011086" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ef0a24c0-3ee7-4766-892d-f3507621e126> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011086/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011086/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011086> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011086/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "margrietmuylaert@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011086/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3216235161" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011086>
+  a foaf:Document ;
+  rdfs:label "Document voor Karibu"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011086> .

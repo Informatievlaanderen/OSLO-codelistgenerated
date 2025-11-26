@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025761>
+  a org:Organization ;
+  skos:prefLabel "Beroep stedenbouwkundige vergunningen en verkavelingsvergunningen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025761" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/64cb7db3-8abe-b3f0-8e4e-4b523c1925f8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025761/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025761/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025761> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025761/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stedenbouw@oost-vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025761/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 267 75 70" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025761>
+  a foaf:Document ;
+  rdfs:label "Document voor Beroep stedenbouwkundige vergunningen en verkavelingsvergunningen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025761> .

@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029>
+  a org:Organization ;
+  skos:prefLabel "Diplomatiek Vertegenwoordiger van Vlaanderen in zuidelijk Afrika"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009029" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c4949475-4952-48d3-a69c-89a54f2fd723> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009029/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009029/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO009029/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO009029/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO009029/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009029> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+ 27 12 460 07 81" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+ 27 12 460 07 78" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pretoria@flanders.org.za" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.flanders.org.za> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009029/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.fdfa.be/nl/diplomatieke-vertegenwoordiging-van-vlaanderen-in-zuidelijk-afrika> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009029>
+  a foaf:Document ;
+  rdfs:label "Document voor Diplomatiek Vertegenwoordiger van Vlaanderen in zuidelijk Afrika"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009029> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052416>
+  a org:Organization ;
+  skos:prefLabel "MDW ARCHITECTURE"@nl ;
+  dct:description "Architectenbureau in Brussel."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052416" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2002-06-20"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0477867926" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2002-06-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/aceda0c9-d263-e22b-d4f2-b927acd57a20> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052416/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052416/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052416/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052416/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052416> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052416/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3224287376" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052416/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mdw@mdwarchitecture.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052416/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marie Moignot"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052416/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.mdw-architecture.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052416>
+  a foaf:Document ;
+  rdfs:label "Document voor MDW ARCHITECTURE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052416> .

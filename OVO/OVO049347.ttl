@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049347>
+  a org:Organization ;
+  skos:prefLabel "Algemeen Regeringsbeleid"@nl ;
+  dct:description "Het team Algemeen Regeringsbeleid (AR) ondersteunt de minister-president als regeringsleider, de Vlaamse Regering als college en de Vlaamse overheid als geheel bij het tot stand komen en het bewaren van een coherent regeringsbeleid. We doen dat door vanuit een sectorvrije ruimte zowel een aantal recurrente processen op te volgen als specifieke beleidsprogramma’s te coördineren, die nodig zijn om het Vlaams regeringsbeleid vorm te geven. Het kan hierbij zowel gaan om programma’s die in het regeerakkoord werden opgenomen, als beleidsprojecten en -programma’s waarvan de noodzaak tot overheidsbrede coördinatie tijdens de legislatuur (onverwacht) naar boven komt. De focus ligt hierbij steeds op de strategische beleidscoördinatie. Het team AR neemt onder meer de volgende taken op: de relaties van Vlaanderen met de federale overheid en de andere gemeenschappen en gewesten; de coördinatie van het project Regelrecht, de langetermijnvisie Duurzaamheid voor Vlaanderen, het geïntegreerd en onderbouwd beleidsgericht onderzoek, monitoring en foresight, de coördinatie van het Vlaams beleid ‘Onteigening voor het algemeen nut’ en het secretariaat van het auditcomité Vlaamse administratie en het auditcomité lokale besturen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049347" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/49b57148-6e4d-52a9-0a5e-b635bbd4e336> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049347/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049347/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049347/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049347> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049347/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sdp.dkbuza@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049347/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "algemeenregeringsbeleid.dkbuza@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049347/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0473 92 86 56" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049347>
+  a foaf:Document ;
+  rdfs:label "Document voor Algemeen Regeringsbeleid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049347> .

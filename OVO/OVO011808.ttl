@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808>
+  a org:Organization ;
+  skos:prefLabel "Koninklijke Vlaamse Bond van Postzegelverzamelaars"@nl ;
+  skos:altLabel "K.V.B.P."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011808" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0410934164" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c29e718b-1f7b-44a2-a564-6744b86f3aff> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO011808/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011808> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wilfried.verlinde@pandora.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "016 40 27 45" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "016 40 27 45" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0495 23 64 85" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "guido.lefever@skynet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0485 854831" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011808/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 337 06 94" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011808>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijke Vlaamse Bond van Postzegelverzamelaars"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011808> .

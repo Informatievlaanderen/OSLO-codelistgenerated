@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164>
+  a org:Organization ;
+  skos:prefLabel "DAB Kasteel Van Gaasbeek"@nl ;
+  skos:altLabel "Kasteel van Gaasbeek"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000164" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/066d7d5a-3327-455a-a9f5-440cdf82393b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000164/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000164/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000164/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000164/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000164/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000164> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://cjsm.vonet.be/nlapps/docs/default.asp?id=4588"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kasteelvangaasbeek@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 531 01 43" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 531 01 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000164/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kasteelvangaasbeek.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000164>
+  a foaf:Document ;
+  rdfs:label "Document voor DAB Kasteel Van Gaasbeek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000164> .

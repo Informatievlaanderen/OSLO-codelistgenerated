@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052317>
+  a org:Organization ;
+  skos:prefLabel "Autonoom Gemeentebedrijf Tongeren"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052317" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2000-02-29"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/17cbaa49-508d-461d-b4a6-9e4320527770> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052317/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052317/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052317/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052317> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052317/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@stadtongeren.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052317/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "012800000" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052317/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.tongeren.be/agb> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052317>
+  a foaf:Document ;
+  rdfs:label "Document voor Autonoom Gemeentebedrijf Tongeren"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052317> .

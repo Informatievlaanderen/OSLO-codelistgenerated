@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020801>
+  a org:Organization ;
+  skos:prefLabel "Openbare Bibliotheek Wervik"@nl ;
+  skos:altLabel "Openbare Bibliotheek Wervik"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020801" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a69a8337-729e-4db5-9820-62388b097ea9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020801/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020801/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020801/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020801/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020801> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020801/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://bib.wervik.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020801/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bibliotheek@wervik.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020801/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056 30 04 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020801/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "056 30 04 00" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020801>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare Bibliotheek Wervik"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020801> .

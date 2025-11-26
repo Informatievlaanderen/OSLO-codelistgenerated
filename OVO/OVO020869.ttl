@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020869>
+  a org:Organization ;
+  skos:prefLabel "Programmatie Cultureel Centrum Begijnhof Diest"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020869" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/75ce3279-f70a-4e53-90ea-104e435113ac> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020869/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020869/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020869/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020869> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020869/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ccdiest.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020869/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "013 32 17 93" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020869/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "013 32 39 19" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020869>
+  a foaf:Document ;
+  rdfs:label "Document voor Programmatie Cultureel Centrum Begijnhof Diest"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020869> .

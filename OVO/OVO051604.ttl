@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051604>
+  a org:Organization ;
+  skos:prefLabel "Adviezen & Vergunningen Limburg"@nl ;
+  skos:altLabel "Adviezen & Vergunningen Limburg"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051604" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-03-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8da5f697-0846-3b80-5824-65ae3629191c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051604/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051604/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051604> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051604/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "aves.lim.anb@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051604/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 81 02" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051604>
+  a foaf:Document ;
+  rdfs:label "Document voor Adviezen & Vergunningen Limburg"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051604> .

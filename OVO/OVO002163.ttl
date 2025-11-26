@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163>
+  a org:Organization ;
+  skos:prefLabel "Gemeente Lovendegem"@nl ;
+  skos:altLabel "Lovendegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002163" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1977-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/99be1fbe-9f71-4ae8-904d-fe037b5ef6a1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO002163/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002163> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "onthaal@lovendegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "communicatie@lovendegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "gemeentebestuur@lovendegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 370 70 21" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 370 70 10" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 370 70 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002163/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.lovendegem.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002163>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemeente Lovendegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002163> .

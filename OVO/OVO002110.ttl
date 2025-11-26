@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110>
+  a org:Organization ;
+  skos:prefLabel "Gemeente Ichtegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002110" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1977-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0207431332" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1977-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/835ac0c7-d832-40ce-9ac8-9e6645fac314> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO002110/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002110> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "059 34 11 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ichtegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ilse Spillier"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ilse.spillier@ichtegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.ichtegem.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002110/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "059 29 80 65" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002110>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemeente Ichtegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002110> .

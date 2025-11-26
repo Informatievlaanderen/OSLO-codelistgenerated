@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048247>
+  a org:Organization ;
+  skos:prefLabel "Cel Homologatie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048247" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7289c5d3-deb7-b18d-7f1f-ddd45209e43a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048247/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048247/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048247/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048247> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048247/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon infolijn"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048247/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://mow-contact.vlaanderen.be"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048247/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "2"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048247>
+  a foaf:Document ;
+  rdfs:label "Document voor Cel Homologatie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048247> .

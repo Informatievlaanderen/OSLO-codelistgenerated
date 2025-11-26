@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013443>
+  a org:Organization ;
+  skos:prefLabel "MUSIC PROJECTS FOR BRUSSELS,FLANDERS,BELGIUM,EUROPE,EARTH & UNIVERSE"@nl ;
+  skos:altLabel "MPFB+"@nl ;
+  dct:description "De vzw Music Projects for Brussels+ organiseert muziekprojecten in Brussel, waaronder concerten voor en door kinderen in scholen en een muzikaal re-integratieproject waarin (ex-)gedetineerden, mensen in psychische zorg of in drugs-gerelateerde ontwenningstehuizen samen een concertreeks opzetten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013443" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0836678448" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fd036554-570b-4291-b63f-575c2c171cf9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013443/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013443/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013443/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013443> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013443/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0496 10 68 29" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013443/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@mpfb.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013443/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.mpfb.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013443>
+  a foaf:Document ;
+  rdfs:label "Document voor MUSIC PROJECTS FOR BRUSSELS,FLANDERS,BELGIUM,EUROPE,EARTH & UNIVERSE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013443> .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003167>
+  a org:Organization ;
+  skos:prefLabel "team HR"@nl ;
+  skos:altLabel "team HR"@nl ;
+  dct:description "Het belangrijkste doel voor team HR is het strategisch en gericht ondersteunen van onze mensen en organisatie met speciale aandacht voor onthaal, loopbaan, leren & ontwikkelen, en psychosociaal welzijn. We bieden ondersteuning in beleid en praktijk door duurzaam in te zetten op de juiste mens op de juiste plaats, om zo de doelstellingen van het departement te bereiken. We monitoren daarbij nauwkeurig de beschikbare personeelsmiddelen en streven naar een optimale inzet."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003167" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-03-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/170c2d16-0f9e-470f-9eed-eaaa02d124e6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003167/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003167/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003167/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003167> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003167/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "80"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003167/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hr.dkbuza@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003167/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-hrm"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003167>
+  a foaf:Document ;
+  rdfs:label "Document voor team HR"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003167> .

@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Onderzoek en Bescherming"@nl ;
+  skos:altLabel "Onderzoek en Bescherming"@nl ;
+  dct:description "De afdeling onderzoek en bescherming: • inventariseert en bereidt beschermingen voor van gebouwen, landschappen, archeologische sites en varend erfgoed • ondersteunt de onroerenderfgoedsector op het terrein met wetenschappelijk onderbouwde instrumenten zoals handleidingen en onroerenderfgoedrichtplannen • beheert een omvangrijke collectie archeologische ensembles in een erkend onroerenderfgoeddepot en stelt deze ter beschikking voor onderzoek"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000602" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/849265ba-47c0-448f-8e71-61e2bef392fe> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000602/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000602/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000602/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000602/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000602/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000602> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@onroerenderfgoed.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 16 50" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 16 55" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "5"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000602/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.onroerenderfgoed.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000602>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Onderzoek en Bescherming"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000602> .

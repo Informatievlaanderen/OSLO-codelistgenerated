@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028225>
+  a org:Organization ;
+  skos:prefLabel "Gemeentelijke Basisschool - De Kleine Wereld Ravels"@nl ;
+  skos:altLabel "GBS De Kleine Wereld"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028225" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dda85b24-2a5d-fc7b-a10a-5175ae90514e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028225/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028225/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028225/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028225> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028225/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014 65 63 86" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028225/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.gbsravels.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028225/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@gbsravels.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028225>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemeentelijke Basisschool - De Kleine Wereld Ravels"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028225> .

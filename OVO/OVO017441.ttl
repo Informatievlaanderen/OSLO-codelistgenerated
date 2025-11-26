@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017441>
+  a org:Organization ;
+  skos:prefLabel "Trivial Muffins Theatre Association"@nl ;
+  skos:altLabel "TMTA"@nl ;
+  dct:description "Trivial Muffins Theatre Association is een toneelvereniging uit Leuven die zich tot doel stelt klassieke theaterstukken te brengen zoals ze bedoeld waren, met kostuums en decors die passen in de tijdsgeest van het stuk en bovendien ook in de originele taal."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017441" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0561998006" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e75b116e-8a36-4064-b8eb-203a1bdfbabd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017441/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017441/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017441/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO017441/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017441> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017441/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@trivialmuffins.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017441/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Hadrien Baudot"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017441/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.trivialmuffins.com/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017441/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32 495 84 76 98" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017441>
+  a foaf:Document ;
+  rdfs:label "Document voor Trivial Muffins Theatre Association"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017441> .

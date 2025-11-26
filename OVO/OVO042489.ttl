@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO042489>
+  a org:Organization ;
+  skos:prefLabel "Betonstructuren Brussel / B6"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO042489" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5a9c1713-dc84-867d-a1bd-a25f9f419b00> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO042489> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO042489>
+  a foaf:Document ;
+  rdfs:label "Document voor Betonstructuren Brussel / B6"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO042489> .

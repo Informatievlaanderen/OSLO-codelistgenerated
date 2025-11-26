@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050423>
+  a org:Organization ;
+  skos:prefLabel "Janssen, Marieke"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050423" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-05-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4f2c1c05-5244-18f2-9eb8-28f68dd4c061> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050423/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050423> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050423/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marieke.janssen123@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050423>
+  a foaf:Document ;
+  rdfs:label "Document voor Janssen, Marieke"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050423> .

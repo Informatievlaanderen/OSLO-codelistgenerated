@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055020>
+  a org:Organization ;
+  skos:prefLabel "Yerra Yerra vzw"@nl ;
+  skos:altLabel "YY"@nl ;
+  dct:description "De vzw Yerra Yerra omkadert de gelijknamige rockband die bestaat uit Inge Henrotay (zang), Evert Nicolai (gitaar) en Robby Mangelschots (drum)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055020" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-04-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1008719232" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-04-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/969bb21b-544b-4896-8b33-52b083b07cdc> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055020/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055020/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055020/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO055020/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055020> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055020/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "yerrayerra.band@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055020/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32475805805" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055020/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://vi.be/platform/yerrayerra> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055020/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/YerraYerramusic/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055020>
+  a foaf:Document ;
+  rdfs:label "Document voor Yerra Yerra vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055020> .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026673>
+  a org:Organization ;
+  skos:prefLabel "Ritmico"@nl ;
+  skos:altLabel "K.F. Sint - Cecilia Londerzeel Sint - Jozef"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026673" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e024889f-da59-4a0b-93ca-05da54bc36b0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026673/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026673/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026673> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026673/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ritmico.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026673/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32499776082" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026673>
+  a foaf:Document ;
+  rdfs:label "Document voor Ritmico"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026673> .

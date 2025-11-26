@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003120>
+  a org:Organization ;
+  skos:prefLabel "Permanente Ondersteuningscel"@nl ;
+  skos:altLabel "Permanente ondersteuningscel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003120" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1aec3db0-3b3e-4016-827e-786c5d4e5fbe> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003120/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003120/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003120/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003120> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003120/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://pro.g-o.be/clb/permanente-ondersteuningscel> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003120/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 790 93 13" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003120/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "poc@g-o.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003120>
+  a foaf:Document ;
+  rdfs:label "Document voor Permanente Ondersteuningscel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003120> .

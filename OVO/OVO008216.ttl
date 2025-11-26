@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008216>
+  a org:Organization ;
+  skos:prefLabel "Stad Brussel"@nl ;
+  skos:altLabel "Brussel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008216" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1921-03-30"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0207373429" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1921-03-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5c9e258f-b649-523b-1425-81ab1a6d2461> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008216/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008216/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008216/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008216> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008216/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 279 23 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008216/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 279 22 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008216/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "christian.ceux@brucity.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008216>
+  a foaf:Document ;
+  rdfs:label "Document voor Stad Brussel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008216> .

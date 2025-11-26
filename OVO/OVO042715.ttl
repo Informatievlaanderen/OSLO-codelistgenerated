@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715>
+  a org:Organization ;
+  skos:prefLabel "Pro Velo - Institut de Recherche et de Promotion du Vélo - Pro Velo - Instituut voor Onderzoek en Promotie van de Fiets"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO042715" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1992-08-08"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0449049820" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1992-08-08"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d928574c-4aa9-a8a6-2cd2-e4fc67df0437> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO042715/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO042715/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO042715/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO042715/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO042715/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO042715> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Charlotte Massagé"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "c.massage@provelo.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.provelo.org/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 502 73 55" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO042715/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@provelo.org" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO042715>
+  a foaf:Document ;
+  rdfs:label "Document voor Pro Velo - Institut de Recherche et de Promotion du Vélo - Pro Velo - Instituut voor Onderzoek en Promotie van de Fiets"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO042715> .

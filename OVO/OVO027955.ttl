@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027955>
+  a org:Organization ;
+  skos:prefLabel "Sportdienst Sint-Laureins"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027955" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4f00735b-cc3b-196f-7cf0-ef35191429da> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027955/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027955> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027955/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dienstvrijetijd@sint-laureins.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027955>
+  a foaf:Document ;
+  rdfs:label "Document voor Sportdienst Sint-Laureins"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027955> .

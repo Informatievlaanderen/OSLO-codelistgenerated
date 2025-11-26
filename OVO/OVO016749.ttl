@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016749>
+  a org:Organization ;
+  skos:prefLabel "STRANGE FRUIT VZW"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016749" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f9e15632-6337-4030-b28b-339d36353787> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO016749/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO016749/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016749> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016749/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "l.stas@east-man.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016749/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0485/16.11.98" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016749>
+  a foaf:Document ;
+  rdfs:label "Document voor STRANGE FRUIT VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016749> .

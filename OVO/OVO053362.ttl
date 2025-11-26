@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053362>
+  a org:Organization ;
+  skos:prefLabel "ASSOCIACIÓ CULTURAL D-CREAN DANSA"@nl ;
+  dct:description "De ASSOCIACIÓ CULTURAL D-CREAN DANSA organiseert het Danseu Festival. Dit is sinds 2013 een jaarlijks internationaal festival rond dans en andere bewegingskunsten. Het vindt plaats in Les Piles, een dorpje in Tarragona, Catalonië."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053362" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b37edef8-be36-d7a5-1c17-45a023a8cca9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053362/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053362/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053362/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053362> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053362/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "direccio@danseufestival.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053362/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+34605669276" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053362/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://danseufestival.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053362>
+  a foaf:Document ;
+  rdfs:label "Document voor ASSOCIACIÓ CULTURAL D-CREAN DANSA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053362> .

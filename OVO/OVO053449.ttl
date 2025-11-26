@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449>
+  a org:Organization ;
+  skos:prefLabel "Bolis Pupul"@nl ;
+  dct:description "De cv Bolis Pupul omkadert de artistieke activiteiten van de gelijknamige artiest/producer/muzikant/singer-songwriter. Bolis Pupul is de artiestennaam van Boris Zeebroek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053449" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-09-21"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1000116223" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-09-21"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/18abd5da-a104-47ed-9da7-0730aa6b0efb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO053449/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053449> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "broekzeeboris@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32485681841" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://charlotteandbolis.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jarri Van der Haegen"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jarri@disconaivete.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053449/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32474049715" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053449>
+  a foaf:Document ;
+  rdfs:label "Document voor Bolis Pupul"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053449> .

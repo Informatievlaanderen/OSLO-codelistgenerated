@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606>
+  a org:Organization ;
+  skos:prefLabel "Rumori"@nl ;
+  skos:altLabel "RU"@nl ;
+  dct:description "De vzw Rumori omkadert Matinée, een innovatief muziekplatform dat muziekevenementen organiseert in Vlaanderen en Brussel. Eén van de kerndoelen van Matinée is een brug slaan tussen het reguliere livecircuit en meer experimentele en alternatieve stromingen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049606" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-01-17"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0761692302" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-01-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ed4b0e64-403f-7843-bc7d-0b2c6bc62edb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO049606/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049606> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jef.lmbrchts@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32493667447" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jef Lambrechts"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32498133145" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "johannesmevis@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049606/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.instagram.com/matinee.bxl/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049606>
+  a foaf:Document ;
+  rdfs:label "Document voor Rumori"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049606> .

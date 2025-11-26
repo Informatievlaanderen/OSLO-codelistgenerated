@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009>
+  a org:Organization ;
+  skos:prefLabel "Museum Aan De Stroom"@nl ;
+  skos:altLabel "MAS"@nl ;
+  dct:description "Opgelet: Alle subsidies aan MAS / Museum Aan De Stroom moeten worden uitbetaald aan AG Culturele Instellingen Antwerpen/Erfgoed op het nummer BE42409758570154."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013009" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/27633c3e-5560-4175-b107-8c277fee2885> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO013009/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013009> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 338 44 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 338 44 44" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Els De Palmenaer"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mas@antwerpen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "els.depalmenaer@antwerpen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013009/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476933039" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013009>
+  a foaf:Document ;
+  rdfs:label "Document voor Museum Aan De Stroom"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013009> .

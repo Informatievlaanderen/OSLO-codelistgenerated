@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022055>
+  a org:Organization ;
+  skos:prefLabel "Brooklyn Academy Of Music"@nl ;
+  skos:altLabel "Brooklyn Academy Of Music"@nl ;
+  dct:description "De Brooklyn Academy of Music is een kunstencentrum in Brooklyn, New York City. Het organiseert progressieve en avant-gardistische voorstellingen van theater, dans, muziek, opera en film op meerdere locaties."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022055" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4d90f582-7691-44a4-b2e7-c8970d475d86> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022055/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022055/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022055/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO022055/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022055> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022055/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "cluna@bam.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022055/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+17187248075" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022055/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Clemente Luna"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022055/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.bam.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022055>
+  a foaf:Document ;
+  rdfs:label "Document voor Brooklyn Academy Of Music"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022055> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039190>
+  a org:Organization ;
+  skos:prefLabel "Caravan d'Expérience"@nl ;
+  dct:description "Caravan d'Expérience creëert een unieke spel- en ontmoetingsruimte voor kinderen en hun ouders. Ze kunnen er deelnemen aan tal van activiteiten zoals boeken lezen, zich verkleden, gezelschapspelletjes spelen, circusacrobaten worden, etc."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039190" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1a204a37-0276-0999-c13d-102733766e04> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039190/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039190/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039190/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039190/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039190> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039190/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "caravandexperience@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039190/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ann D'Haese"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039190/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "almadhaese@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039190/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474 89 82 64" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039190>
+  a foaf:Document ;
+  rdfs:label "Document voor Caravan d'Expérience"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039190> .

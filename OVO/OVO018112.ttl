@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Belang"@nl ;
+  skos:altLabel "Vlaams Belang"@nl ;
+  dct:description "Het Vlaams Belang (VB) is een radicaal-rechtse Belgische politieke partij. Ze is Vlaams-nationalistisch en rechts-conservatief."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018112" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d4f63e66-c9f4-4ee9-ad35-45c80db80928> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO018112/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018112> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "http://www.vlaamsbelang.org/contact"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vlaamsbelang.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 219 60 09" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 219 50 47" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "9"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018112/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaamsbelang.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018112>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Belang"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018112> .

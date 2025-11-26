@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333>
+  a org:Organization ;
+  skos:prefLabel "Finis Terrae"@nl ;
+  dct:description "De vzw Finis Terrae werd in 2021 opgericht op initiatief van galerie-eigenaars Yasmine Geukens en Marie-Paule De Vil ter omkadering van de grote groepstentoonstelling 'Finis Terrae. Het einde. Een Begin.' Deze tentoonstelling vond plaats op verschillende locaties in Antwerpen van eind 2022 tot begin 2023. Er namen een 50-tal kunstenaars aan deel."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050333" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-08-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ebdb828b-560d-d0fa-37ea-6098e47bbb19> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO050333/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050333> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "liencraps@icloud.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485315172" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lien Craps"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/finisterraeantwerpen/"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.de-lage-landen.com/article/finis-terrae-is-een-kunstwandeling-vol-vergaan-en-glorie/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050333/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://slowtravelantwerp.com/nl/finis-terrae/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050333>
+  a foaf:Document ;
+  rdfs:label "Document voor Finis Terrae"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050333> .

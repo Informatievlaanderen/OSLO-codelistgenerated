@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863>
+  a org:Organization ;
+  skos:prefLabel "Omgevingsmonitoring"@nl ;
+  skos:altLabel "Omgevingsmonitoring"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001863" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/962003ec-f8a5-4ef6-b7cd-fa5a4793b1ed> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO001863/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001863> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-data-en-kwaliteit"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-omgevingsmonitoring"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-onderzoek"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://regionalestatistieken.vlaanderen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "svr@kb.vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025535207" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001863/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025535808" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001863>
+  a foaf:Document ;
+  rdfs:label "Document voor Omgevingsmonitoring"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001863> .

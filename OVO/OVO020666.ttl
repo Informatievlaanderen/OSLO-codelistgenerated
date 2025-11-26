@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666>
+  a org:Organization ;
+  skos:prefLabel "Muziekcentrum De Bijloke Gent"@nl ;
+  dct:description "Muziekcentrum De Bijloke Gent is in de eerste plaats een concertzaal met een receptieve werking. De programmering omvat oude muziek, klassieke muziek, hedendaagse klassiek muziek en jazz. Daarnaast is de organisatie ook initiatiefnemer of coproducent van nieuwe muziekproducties."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020666" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0468105073" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bdedab51-fea4-4cbd-82d2-98929d40f9ff> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO020666/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020666> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 225 65 82" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Geert Riem"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@debijloke.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.bijloke.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 323 61 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474 84 23 98" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 323 61 05" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020666/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "boekhouding@debijloke.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020666>
+  a foaf:Document ;
+  rdfs:label "Document voor Muziekcentrum De Bijloke Gent"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020666> .

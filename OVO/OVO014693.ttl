@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693>
+  a org:Organization ;
+  skos:prefLabel "TiMiT"@nl ;
+  dct:description "De vzw TiMiT omkadert de artistieke activiteiten van filmregisseur en videokunstenaar Els van Riel."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014693" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0460669331" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a9658899-7f0e-485e-a09d-e9940b83a24b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014693/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014693/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014693/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014693/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014693/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014693> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mail@elsvanriel.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0478 201 239" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Elisabeth van Riel"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 513 80 96" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014693/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.elsvanriel.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014693>
+  a foaf:Document ;
+  rdfs:label "Document voor TiMiT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014693> .

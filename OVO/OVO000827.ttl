@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000827>
+  a org:Organization ;
+  skos:prefLabel "Raad voor Verkiezingsbetwistingen - Antwerpen"@nl ;
+  skos:altLabel "RvV Antwerpen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000827" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-02-10"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e541c041-4836-4fab-900d-953d3b34957a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000827/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000827/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000827> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000827/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "verkiezingsbetwistingen.antwerpen@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000827/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "032249795" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000827>
+  a foaf:Document ;
+  rdfs:label "Document voor Raad voor Verkiezingsbetwistingen - Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000827> .

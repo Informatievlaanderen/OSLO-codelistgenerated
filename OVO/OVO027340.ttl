@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027340>
+  a org:Organization ;
+  skos:prefLabel "Algemene Directie Statistiek - Statistics Belgium"@nl ;
+  skos:altLabel "Statbel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027340" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/da213f01-5ea6-f341-528f-f53df1bb0084> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027340/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027340/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027340/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027340/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027340> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027340/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0800 12 033" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027340/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "0800 120 57" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027340/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "statbel@economie.fgov.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027340/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://statbel.fgov.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027340>
+  a foaf:Document ;
+  rdfs:label "Document voor Algemene Directie Statistiek - Statistics Belgium"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027340> .

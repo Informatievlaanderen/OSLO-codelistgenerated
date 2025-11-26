@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027243>
+  a org:Organization ;
+  skos:prefLabel "Directoraat-generaal Sociaal Secretariaat"@nl ;
+  skos:altLabel "PersoPoint"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027243" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e9f95d95-2d84-a81b-920b-5e3cdbdd3053> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027243/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027243/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027243/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027243> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027243/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@persopoint.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027243/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bosa.belgium.be/nl/themas/werken-bij-de-overheid> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027243/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://persopoint.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027243>
+  a foaf:Document ;
+  rdfs:label "Document voor Directoraat-generaal Sociaal Secretariaat"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027243> .

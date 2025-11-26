@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011052>
+  a org:Organization ;
+  skos:prefLabel "Kamerkoor Muzenisse"@nl ;
+  skos:altLabel "Kamerkoor Muzenisse"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011052" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8e0d32d2-3c8a-4a08-88c6-ebfaa17d9d4d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011052/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011052/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011052> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011052/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretariaat@muzenisse.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011052/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32494541002" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011052>
+  a foaf:Document ;
+  rdfs:label "Document voor Kamerkoor Muzenisse"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011052> .

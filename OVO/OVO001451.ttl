@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001451>
+  a org:Organization ;
+  skos:prefLabel "Sport Vlaanderen Willebroek"@nl ;
+  skos:altLabel "SV Willebroek"@nl ;
+  dct:description "De watersportbaan van Sport Vlaanderen Willebroek is internationaal gerenommeerd in de kajak- en roeisport: voor vele nationale en internationale ploegen biedt het een ideale trainingsplek in aanloop naar de belangrijke kampioenschappen. Op de watersportbaan worden jaarlijks ook vele nationale en internationale kampioenschappen georganiseerd. Ook als je geen topsporter bent, vind je bij Sport Vlaanderen Willebroek een sport op jouw maat. De watersportbaan in Willebroek is de uitvalsbasis voor verschillende watersportverenigingen. Die organiseren niet alleen eigen clubtrainingen, maar je kan er ook terecht voor opleidingen en initiatielessen in roeien, kajak, mountainbiken, zeilen of windsurfen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001451" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dc87bbae-2db9-46cb-95c5-06f9bdf32b56> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001451/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001451/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001451/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001451/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001451> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001451/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.sport.vlaanderen/willebroek/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001451/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "willebroek@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001451/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 886 64 64" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001451/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 886 22 97" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001451>
+  a foaf:Document ;
+  rdfs:label "Document voor Sport Vlaanderen Willebroek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001451> .

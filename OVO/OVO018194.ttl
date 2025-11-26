@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018194>
+  a org:Organization ;
+  skos:prefLabel "Peddelsport Vlaanderen"@nl ;
+  dct:description "Peddelsport Vlaanderen vzw is een overkoepelende organisatie voor alles wat peddelsporten (kajak, kano) betreft."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018194" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0417934101" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/82f5b746-a637-4d9a-9389-81ddae272712> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018194/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018194/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018194> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018194/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.peddelsport.vlaanderen/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018194/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@peddelsport.vlaanderen" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018194>
+  a foaf:Document ;
+  rdfs:label "Document voor Peddelsport Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018194> .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054202>
+  a org:Organization ;
+  skos:prefLabel "CHIRO WAWW"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054202" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1971-09-30"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0411523290" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1971-09-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c558f186-9170-421c-8e32-6ef1efe6c56f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054202/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054202/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054202> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054202/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kurt.le.comte@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054202/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32488921568" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054202>
+  a foaf:Document ;
+  rdfs:label "Document voor CHIRO WAWW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054202> .

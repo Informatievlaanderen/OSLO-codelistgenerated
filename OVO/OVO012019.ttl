@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012019>
+  a org:Organization ;
+  skos:prefLabel "Kristelijke Werknemersbeweging Sint-Martens-Bodegem"@nl ;
+  skos:altLabel "Kristelijke Werknemersbeweging Sint-Martens-Bodegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012019" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b0e02bb8-0d4d-42d1-aa60-d8a602cfdfb4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012019> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012019>
+  a foaf:Document ;
+  rdfs:label "Document voor Kristelijke Werknemersbeweging Sint-Martens-Bodegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012019> .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143>
+  a org:Organization ;
+  skos:prefLabel "Woonbeleid"@nl ;
+  skos:altLabel "Woonbeleid"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003143" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/91f6d69c-dee0-4e36-9ab8-dbf0630b04a9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003143/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003143/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003143/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003143/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003143/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003143> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon infolijn"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/lokaal-woonbeleid> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/bouwen-wonen-en-energie/huren-en-verhuren> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "40"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003143/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/sociaal-woonbeleid> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003143>
+  a foaf:Document ;
+  rdfs:label "Document voor Woonbeleid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003143> .

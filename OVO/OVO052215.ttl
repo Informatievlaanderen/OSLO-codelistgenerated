@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052215>
+  a org:Organization ;
+  skos:prefLabel "MOSAICO DI DUE"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052215" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-12-21"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0644726435" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2015-12-21"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e43551b1-e017-815e-66b5-e6fdf0881ac3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052215> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052215>
+  a foaf:Document ;
+  rdfs:label "Document voor MOSAICO DI DUE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052215> .

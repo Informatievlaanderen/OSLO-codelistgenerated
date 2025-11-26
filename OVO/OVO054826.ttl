@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826>
+  a org:Organization ;
+  skos:prefLabel "Us by Night"@nl ;
+  dct:description "De bv Us by Night is de organisator van het gelijknamige festival dat werd opgericht door kunstenaar Rizon Parein. Us By Night is een festival voor design en creativiteit dat drie avonden duurt. Rizon Parein runt al meer dan 20 jaar zijn eigen studio als 3D-graphic designer."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054826" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-01-09"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1004462318" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-01-09"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4af58547-3c6f-48aa-8198-e640c7888631> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054826/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054826/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054826/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054826/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO054826/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054826> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rizon@usbynight.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32495519314" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Philippe Parein"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.usbynight.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054826/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://rizon.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054826>
+  a foaf:Document ;
+  rdfs:label "Document voor Us by Night"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054826> .

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027780>
+  a org:Organization ;
+  skos:prefLabel "Bond van Schutterijen Maas en Kempen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027780" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1975-11-24"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0415627083" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1975-11-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e0efddd9-5dbe-49c1-a2f2-938ac01b3dda> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027780/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027780/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027780/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027780> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027780/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretaris@maasenkempen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027780/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ivo.geebelen@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027780/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.maasenkempen.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027780>
+  a foaf:Document ;
+  rdfs:label "Document voor Bond van Schutterijen Maas en Kempen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027780> .

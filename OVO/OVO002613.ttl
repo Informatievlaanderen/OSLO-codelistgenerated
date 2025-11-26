@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002613>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Dendermonde"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002613" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0212391891" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/db8a80e6-b0d9-43fa-9332-b019ebed8353> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002613/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002613/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002613/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002613/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002613> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002613/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "052 37 85 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002613/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info.sociaalhuis@dendermonde.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002613/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "052 26 27 19" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002613/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.dendermonde.be/dienst/2737/sociaal-huis> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002613>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Dendermonde"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002613> .

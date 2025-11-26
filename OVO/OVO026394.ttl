@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026394>
+  a org:Organization ;
+  skos:prefLabel "Koninklijke Fanfare Deugd Verheft"@nl ;
+  skos:altLabel "Koninklijke Fanfare Deugd Verheft"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026394" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c33130d0-4be7-4588-b1a7-be43bc32f0de> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026394/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026394/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026394> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026394/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "christiane.cloetens@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026394/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0479 38 15 73" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026394>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijke Fanfare Deugd Verheft"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026394> .

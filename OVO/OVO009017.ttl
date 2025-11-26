@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009017>
+  a org:Organization ;
+  skos:prefLabel "Alexi Tuomarila Quartet"@nl ;
+  skos:altLabel "Alexi Tuomarila Quartet"@nl ;
+  dct:description "Het Alexi Tuomarila Quartet was de oorspronkelijke naam van een jazzensemble bestaande uit Alexi Tuomarila (piano), Nicolas Kummert (sax), Christophe Devisscher (contrabas) en Teun Verbruggen (drums). Later werd de naam van het ensemble veranderd in Drifter en kwam Axel Gilain in de plaats van Christophe Devisscher."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009017" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fecd696e-6a71-4d67-a7b3-5382559fe5dc> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009017/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009017/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009017> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009017/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://jazzinbelgium.be/nl/groepen/646/alexi-tuomarila-quartet> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009017/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://jazzinbelgium.be/nl/groepen/1477/drifter> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009017>
+  a foaf:Document ;
+  rdfs:label "Document voor Alexi Tuomarila Quartet"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009017> .

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399>
+  a org:Organization ;
+  skos:prefLabel "Simulated Paradise"@nl ;
+  skos:altLabel "SP"@nl ;
+  dct:description "Simulated Paradise is een experimenteel en laagdrempelig platform voor het stimuleren van creativiteit en beleving, een plaats waar muziek, fotografie, video, kunst en vooral conceptualiteit samen komen tot een geheel. De organisatie werd opgericht door Andras Vleminckx en Brent Dielen die samen het muziekduo Promis3 vormen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036399" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-09-07"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0733804406" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-09-07"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/951d6d1a-fb8f-d0c7-7d07-f2c0ef1b20ff> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO036399/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036399> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "andras.vleminckx@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Andras Vleminckx"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0484 69 25 59" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32484692559" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@simulatedparadise.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036399/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.simulatedparadise.com> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036399>
+  a foaf:Document ;
+  rdfs:label "Document voor Simulated Paradise"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036399> .

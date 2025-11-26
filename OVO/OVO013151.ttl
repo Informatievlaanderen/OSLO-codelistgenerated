@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013151>
+  a org:Organization ;
+  skos:prefLabel "METERS EN PETERS"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013151" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/22d7f392-985b-4e84-beae-4f7fda5bee22> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013151/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013151> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013151/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497/89.90.88" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013151>
+  a foaf:Document ;
+  rdfs:label "Document voor METERS EN PETERS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013151> .

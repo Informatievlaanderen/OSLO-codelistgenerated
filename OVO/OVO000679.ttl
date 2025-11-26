@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000679>
+  a org:Organization ;
+  skos:prefLabel "Afval- en Materialenbeheer"@nl ;
+  skos:altLabel "AMB"@nl ;
+  dct:description "De afdeling zorgt voor Vlaanderen Circulair, Vlaanderen Mooi, heffingen en subsidies, beleidsinnovatie, ketenbeheer bedrijven en lokale besturen en beschikt over een datacentrum."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000679" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5382a08d-7ea3-4f65-95df-fbea3d3e845d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000679/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000679/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000679> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000679/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "015 20 32 75" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000679/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 28 42 84" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000679>
+  a foaf:Document ;
+  rdfs:label "Document voor Afval- en Materialenbeheer"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000679> .

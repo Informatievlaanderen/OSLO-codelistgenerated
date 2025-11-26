@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038108>
+  a org:Organization ;
+  skos:prefLabel "Referendarissen DBRC K5"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038108" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/792a75ba-a3ea-508c-3b70-49d9624df527> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038108> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038108>
+  a foaf:Document ;
+  rdfs:label "Document voor Referendarissen DBRC K5"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038108> .

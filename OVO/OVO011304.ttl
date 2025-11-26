@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011304>
+  a org:Organization ;
+  skos:prefLabel "Kidskriebels vzw"@nl ;
+  dct:description "Kidskriebels vzw is een jeugdorganisatie die externe kriebelkampen (kampen zonder overnachting) organiseert. Ze focust op het aanbieden van een zinvolle vrijetijdsbesteding en kwaliteitsvolle kinderopvang voor kinderen van 3 t.e.m. 12 jaar oud."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011304" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0550390965" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bb66d2de-6a84-4256-9c75-9b553f1806c8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011304/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011304/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011304/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011304> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011304/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kelly@kidskirebels.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011304/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kidskriebels.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011304/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kelly Michielsen"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011304>
+  a foaf:Document ;
+  rdfs:label "Document voor Kidskriebels vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011304> .

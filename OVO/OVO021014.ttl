@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021014>
+  a org:Organization ;
+  skos:prefLabel "Regionale Media Info"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021014" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/da2d1694-5579-419f-8cb8-2cc55e44f3b2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021014/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021014> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021014/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@goeiedag.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021014>
+  a foaf:Document ;
+  rdfs:label "Document voor Regionale Media Info"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021014> .

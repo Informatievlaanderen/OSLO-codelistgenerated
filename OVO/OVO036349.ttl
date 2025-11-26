@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349>
+  a org:Organization ;
+  skos:prefLabel "Volemus"@nl ;
+  dct:description "Volemus is een vereniging met als doel de organisatie van activiteiten rond muziek. De organisatie omkadert onder meer het Pluto-ensemble."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036349" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-08-20"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0732703158" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-08-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1a43c536-d175-c818-0e85-53d27a65a47f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036349/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036349/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036349/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036349/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO036349/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036349> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marnix De Cat"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marnix.decat@scarlet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.volemus.art/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474 99 16 65" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036349/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://nl.pluto-ensemble.eu/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036349>
+  a foaf:Document ;
+  rdfs:label "Document voor Volemus"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036349> .

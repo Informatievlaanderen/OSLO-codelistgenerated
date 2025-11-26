@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022202>
+  a org:Organization ;
+  skos:prefLabel "California College Of The Arts"@nl ;
+  skos:altLabel "California College Of The Arts"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022202" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8a717e58-e47e-4493-ae39-40de3f265754> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022202/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022202/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022202> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022202/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@cca.edu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022202/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+1 415 703 9500" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022202>
+  a foaf:Document ;
+  rdfs:label "Document voor California College Of The Arts"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022202> .

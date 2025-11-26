@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445>
+  a org:Organization ;
+  skos:prefLabel "Vrienden van Villa Voortman"@nl ;
+  dct:description "De vzw Vrienden van Villa Voortman begeleidt en financiert de artistieke werking van Villa Voortman. Villa Voortman is een laagdrempelig ontmoetingshuis voor kwetsbare burgers in Gent, dit is mensen met psychiatrische of justitiële problemen, verslaving, stigmatisering, dakloosheid ... Via artistieke projecten wil men die mensen een nieuwe start geven."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018445" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0646755319" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c761bf4d-1308-4433-8898-a274af3ddb31> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO018445/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018445> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@villavoortman.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0471 90 54 99" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Roger De Croock"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rogerdecroock@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32495593877" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018445/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://villavoortman.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018445>
+  a foaf:Document ;
+  rdfs:label "Document voor Vrienden van Villa Voortman"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018445> .

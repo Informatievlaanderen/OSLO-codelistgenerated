@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000837>
+  a org:Organization ;
+  skos:prefLabel "Antwerpen"@nl ;
+  skos:altLabel "F.I.T. Antwerpen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000837" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2005-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/049e7829-d16f-4113-8999-6a134c050864> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000837/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000837/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000837/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000837> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000837/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "antwerpen@fitagency.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000837/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 504 88 95" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000837/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 203 55 70" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000837>
+  a foaf:Document ;
+  rdfs:label "Document voor Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000837> .

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054329>
+  a org:Organization ;
+  skos:prefLabel "Santos Figueroa, Luis"@nl ;
+  dct:description "Eénmanszaak van zanger, muzikant en producer Luis Oscar Santos Figueroa. Zijn artiestennaam is OSKI."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054329" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-10-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/50a467d5-d959-44f6-b5d1-680c87336a40> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054329/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054329/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054329/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054329> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054329/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "oscar.santos.figueroa@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054329/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32483517113" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054329/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Luis Santos"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054329>
+  a foaf:Document ;
+  rdfs:label "Document voor Santos Figueroa, Luis"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054329> .

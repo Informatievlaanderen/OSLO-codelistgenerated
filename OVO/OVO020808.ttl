@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020808>
+  a org:Organization ;
+  skos:prefLabel "Openbare Bibliotheek Willebroek"@nl ;
+  skos:altLabel "Openbare Bibliotheek Willebroek"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020808" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/47f15292-b668-4099-aed7-40d1c778075f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020808/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020808/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020808/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020808/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020808> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020808/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.willebroek.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020808/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "willebroek@bibliotheek.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020808/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 886 55 22" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020808/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 866 18 79" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020808>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare Bibliotheek Willebroek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020808> .

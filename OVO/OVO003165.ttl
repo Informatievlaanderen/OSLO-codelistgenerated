@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165>
+  a org:Organization ;
+  skos:prefLabel "Wetsmatiging"@nl ;
+  skos:altLabel "Wetsmatiging"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003165" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-03-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/11647c15-e6cc-4f0e-9815-c302eec0d333> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003165/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003165> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-wetsmatiging"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 17 12" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0499 94 29 16" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wetsmatiging@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://overheid.vlaanderen.be/regelgeving> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003165/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "80"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003165>
+  a foaf:Document ;
+  rdfs:label "Document voor Wetsmatiging"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003165> .

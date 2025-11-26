@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115>
+  a org:Organization ;
+  skos:prefLabel "Rampenfonds"@nl ;
+  skos:altLabel "Rampenfonds"@nl ;
+  dct:description "Het Rampenfonds is verantwoordelijk voor de digitalisering van de procedures van het Rampenfonds: termijnen, uitbetaling, opvolging en informatie-uitwisseling; is verantwoordelijk voor de erkenning rampen en de uitbetaling van schadebedragen aan geteisterden; zorgt voor het stroomlijnen en de opmaak van de Vlaamse regelgeving Rampenfonds op basis van bestaande federale wetgeving (regelgevingsproject); leidt nieuw personeel op."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003115" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/11303799-81b5-43d1-b803-4faa212b5e3f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003115/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003115> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-rampenfonds"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rampenfonds@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 50 10" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/schadevergoeding-vlaams-rampenfonds-aanvragen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://overheid.vlaanderen.be/rampenfonds"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003115/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "100"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003115>
+  a foaf:Document ;
+  rdfs:label "Document voor Rampenfonds"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003115> .

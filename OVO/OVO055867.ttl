@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055867>
+  a org:Organization ;
+  skos:prefLabel "Lambrechts, Chris"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055867" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2004-04-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0863676914" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2004-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2e50c310-a1df-4b04-bf83-9766c54842e2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055867/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055867/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055867> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055867/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "chris_lambrechts@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055867/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32475735973" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055867>
+  a foaf:Document ;
+  rdfs:label "Document voor Lambrechts, Chris"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055867> .

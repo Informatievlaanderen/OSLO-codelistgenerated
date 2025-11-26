@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421>
+  a org:Organization ;
+  skos:prefLabel "Kunstencentrum De Studio - Villanella"@nl ;
+  skos:altLabel "de Studio"@nl ;
+  dct:description "Kunstencentrum De Studio - Villanella realiseert artistieke projecten voor kinderen en jongeren binnen verschillende disciplines (theater, dans, muziek, literatuur, film, digitale media ...). De Studio brengt ook voorstellingen van diverse andere theatergezelschappen, makers, spelers ..."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021421" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0450094351" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7123c3f6-4dda-4b55-b716-adcdbf0d28f3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO021421/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021421> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232609610" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.destudio.com/nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@destudio.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sabine@villanella.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sabine@destudio.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021421/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sabine Stommels"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021421>
+  a foaf:Document ;
+  rdfs:label "Document voor Kunstencentrum De Studio - Villanella"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021421> .

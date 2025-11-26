@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759>
+  a org:Organization ;
+  skos:prefLabel "West-Vlaamse Televisie Regio Zuid"@nl ;
+  skos:altLabel "WTV-Zuid"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018759" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a5812df9-d1eb-48ea-9f7d-475afb4ca811> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018759/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018759/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018759/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018759/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO018759/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018759> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "redactie@focus-wtv.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "051 25 95 22" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Stephan Adriaenssens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stephan.adriaenssens@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018759/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32475554210" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018759>
+  a foaf:Document ;
+  rdfs:label "Document voor West-Vlaamse Televisie Regio Zuid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018759> .

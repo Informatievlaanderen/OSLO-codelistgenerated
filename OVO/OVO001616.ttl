@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001616>
+  a org:Organization ;
+  skos:prefLabel "Geert Bourgeois, Minister-president van de Vlaamse Regering en Vlaams minister van Buitenlands Beleid en Onroerend Erfgoed"@nl ;
+  skos:altLabel "Geert Bourgeois"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001616" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-07-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a106eb26-9f30-4a60-a0a0-b3b9cba69749> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001616/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001616/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001616/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001616> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001616/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kabinet.bourgeois@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001616/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 552 60 01" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001616/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 552 60 00" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001616>
+  a foaf:Document ;
+  rdfs:label "Document voor Geert Bourgeois, Minister-president van de Vlaamse Regering en Vlaams minister van Buitenlands Beleid en Onroerend Erfgoed"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001616> .

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887>
+  a org:Organization ;
+  skos:prefLabel "publiq"@nl ;
+  dct:description "De vzw publiq is specialist in communicatie over het publieke vrijetijdsaanbod. Via het publiq-platform vinden organisator en publiek elkaar. Lokale overheden en organisatoren leren hun publiek beter kennen en het publiek vindt beter zijn weg naar de vrijetijdsactiviteiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003887" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2001-06-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0475250609" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2001-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/baef01ea-a6d4-e4ce-7610-79aa1cb097bb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003887/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003887/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003887/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003887/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003887/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003887> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@publiq.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 551 18 70" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.publiq.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.publiq.be/vacaturebank> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003887/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.uitmetvlieg.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003887>
+  a foaf:Document ;
+  rdfs:label "Document voor publiq"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003887> .

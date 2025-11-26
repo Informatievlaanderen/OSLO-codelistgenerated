@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010907>
+  a org:Organization ;
+  skos:prefLabel "Jomiko/Luna Verde - Afdeling Luna Verde"@nl ;
+  skos:altLabel "Jomiko/Luna Verde - Afdeling Luna Verde"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010907" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b7065d0e-dbf1-4dd1-8f1b-d755be5e7fc2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010907/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010907/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010907> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010907/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "paul.vanhoof4@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010907/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3214313262" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010907>
+  a foaf:Document ;
+  rdfs:label "Document voor Jomiko/Luna Verde - Afdeling Luna Verde"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010907> .

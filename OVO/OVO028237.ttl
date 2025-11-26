@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028237>
+  a org:Organization ;
+  skos:prefLabel "GO! Freinetschool De Speelplaneet Gijzegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028237" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7010372e-a4a2-f028-634a-84fc21d859de> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028237/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028237/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028237> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028237/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "directie@bsdespeelplaneet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028237/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "053 41 62 70" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028237>
+  a foaf:Document ;
+  rdfs:label "Document voor GO! Freinetschool De Speelplaneet Gijzegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028237> .

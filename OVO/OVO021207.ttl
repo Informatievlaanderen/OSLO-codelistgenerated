@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207>
+  a org:Organization ;
+  skos:prefLabel "VOETVOLK"@nl ;
+  dct:description "Voetvolk is een dans- en performancegezelschap rond danseres/choreografe Lisbeth Gruwez en muzikant/componist Maarten Van Cauwenberghe."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021207" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0875584950" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fa81d66d-ee42-4431-bd1c-77a747d4ba6a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO021207/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021207> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0495 52 12 88" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Maarten Van Cauwenberghe"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@voetvolk.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.voetvolk.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "maarten@voetvolk.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021207/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0495 52 12 88" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021207>
+  a foaf:Document ;
+  rdfs:label "Document voor VOETVOLK"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021207> .

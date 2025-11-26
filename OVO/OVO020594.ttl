@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594>
+  a org:Organization ;
+  skos:prefLabel "LES ATELIERS CLAUS"@nl ;
+  dct:description "Les Ateliers Claus is een artistieke werkplaats waar beeldende kunstenaars atelierruimte kunnen krijgen, maar ook een concertzaal die een podium biedt aan opkomende muzikanten. De programmatie is gericht experimenteel en avant-garde."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020594" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0889040929" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/58078320-ac8a-4861-ade4-5001a7386769> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020594/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020594> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tommy@lesateliersclaus.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0473 49 34 03" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Tommy De Nys"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://lesateliersclaus.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lesateliersclaus.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020594/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 534 51 03" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020594>
+  a foaf:Document ;
+  rdfs:label "Document voor LES ATELIERS CLAUS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020594> .

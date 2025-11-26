@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555>
+  a org:Organization ;
+  skos:prefLabel "Muntuit vzw"@nl ;
+  dct:description "Muntuit vzw is specialist in gemeenschapsmunten als middel om de transitie naar een duurzame en participatieve samenleving te realiseren. Muntuit inspireert en activeert gemeenschappen (verenigingen, buurten, gemeenten,…) om met hun eigen munt aan de slag te gaan."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026555" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0672931956" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fcd2b047-b3cd-409f-b980-c1fd059931b2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026555/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026555/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026555/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026555/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026555/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026555> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sander@muntuit.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://muntuit.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hallo@muntuit.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0487 29 65 35" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026555/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sander Van Parijs"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026555>
+  a foaf:Document ;
+  rdfs:label "Document voor Muntuit vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026555> .

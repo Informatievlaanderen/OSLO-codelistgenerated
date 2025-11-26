@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012475>
+  a org:Organization ;
+  skos:prefLabel "Le Manège De Reims, Scène Nationale"@nl ;
+  skos:altLabel "Le Manège De Reims, Scène Nationale"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012475" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5bc59d5c-0974-42db-88bb-5444f4520426> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012475/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012475/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012475> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012475/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "a.routin@manegedereims.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012475/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33 6 60 49 33 81" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012475>
+  a foaf:Document ;
+  rdfs:label "Document voor Le Manège De Reims, Scène Nationale"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012475> .

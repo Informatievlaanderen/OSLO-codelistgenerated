@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO034251>
+  a org:Organization ;
+  skos:prefLabel "Seniors Flatel RVT"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO034251" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/236ae003-5df8-1ce7-d6e9-d8133e6d7c46> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO034251> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO034251>
+  a foaf:Document ;
+  rdfs:label "Document voor Seniors Flatel RVT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO034251> .

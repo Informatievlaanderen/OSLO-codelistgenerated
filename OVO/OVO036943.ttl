@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036943>
+  a org:Organization ;
+  skos:prefLabel "SmartCoop"@nl ;
+  dct:description "Smart is een coöperatie of gedeelde onderneming die duizenden autonome werkers begeleidt bij de ontwikkeling van hun activiteiten in erg uiteenlopende sectoren. Smart biedt hiertoe advies, opleidingen en tools (administratief, juridisch, fiscaal en financieel)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036943" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0668600511" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9bc07b6a-18cb-6e0c-508f-b1bd493c9b9f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036943/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036943> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036943/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://smartbe.be/nl/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036943>
+  a foaf:Document ;
+  rdfs:label "Document voor SmartCoop"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036943> .

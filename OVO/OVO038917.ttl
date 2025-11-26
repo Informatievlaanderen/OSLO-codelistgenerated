@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917>
+  a org:Organization ;
+  skos:prefLabel "Bebe Books"@nl ;
+  skos:altLabel "BB"@nl ;
+  dct:description "Bebe Books is een queer kunstcollectief uit Gent. Het collectief probeert de queer gemeenschap samen te brengen om queer kunst te bevorderen. Dit gebeurt o.a. door LGBTQIA+-events te organiseren, tentoonstellingen te cureren, fanzines en boeken te publiceren of installaties te maken."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038917" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0747496153" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/02a0be14-eabd-19a5-a5cc-35a876efd149> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038917/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038917/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038917/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038917/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO038917/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038917> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wearebebebooks@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ruud Van Moorleghem"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ruudrudyvanmoorleghem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0494 83 87 34" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038917/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bebebooks.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038917>
+  a foaf:Document ;
+  rdfs:label "Document voor Bebe Books"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038917> .

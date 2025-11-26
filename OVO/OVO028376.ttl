@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028376>
+  a org:Organization ;
+  skos:prefLabel "Gemeenschapscentrum Lochristi"@nl ;
+  skos:altLabel "GC Lochristi"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028376" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5d65e5df-cee3-2846-df7b-72d4da7c9029> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028376> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028376>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemeenschapscentrum Lochristi"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028376> .

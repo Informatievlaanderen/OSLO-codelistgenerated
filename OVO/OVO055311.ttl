@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055311>
+  a org:Organization ;
+  skos:prefLabel "Centrale voor socialistisch cultuurbeleid Barrier"@nl ;
+  skos:altLabel "C.S.C. Barrier"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055311" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1974-06-05"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0414404487" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1974-06-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9e2a1e13-084a-4d38-a360-9a93383e14e1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055311> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055311>
+  a foaf:Document ;
+  rdfs:label "Document voor Centrale voor socialistisch cultuurbeleid Barrier"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055311> .

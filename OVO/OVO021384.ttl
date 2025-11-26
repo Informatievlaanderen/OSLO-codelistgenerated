@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384>
+  a org:Organization ;
+  skos:prefLabel "Kamino-Samen jongelooflijk"@nl ;
+  skos:altLabel "Kamino"@nl ;
+  dct:description "De vzw Kamino-Samen jongelooflijk (vroegere naam: Interdiocesane Jeugddienst) is de officiële jongerendienst van de Katholieke Kerk in Vlaanderen. Deze dienst heeft in elk Vlaams bisdom een afdeling die verantwoordelijk is voor de diocesane jongerenpastoraal."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021384" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0410276940" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/83099c8b-5f6b-4a2e-9b1e-4452ff615f30> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021384/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021384/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021384/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021384/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021384/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021384> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3292357854" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kamino.be/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kamino@kamino.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sofi.van.ussel@kamino.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021384/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sofi Van Ussel"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021384>
+  a foaf:Document ;
+  rdfs:label "Document voor Kamino-Samen jongelooflijk"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021384> .

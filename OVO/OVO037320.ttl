@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO037320>
+  a org:Organization ;
+  skos:prefLabel "Poppunt (DCJM)"@nl ;
+  skos:altLabel "Popp DCJM"@nl ;
+  dct:description "Voorheen Poppunt"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO037320" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-02-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/19534d99-f2a3-ed53-acfb-a07ccc15f19d> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO037320> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO037320>
+  a foaf:Document ;
+  rdfs:label "Document voor Poppunt (DCJM)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO037320> .

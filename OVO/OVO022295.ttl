@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295>
+  a org:Organization ;
+  skos:prefLabel "CASA ROSA"@nl ;
+  skos:altLabel "G.H.L.B."@nl ;
+  dct:description "Casa Rosa is het Oost-Vlaams Regenbooghuis en is de koepelorganisatie van een 20-tal Oost-Vlaamse verenigingen voor holebi’s en transgenderpersonen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022295" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0457322336" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dcb26b25-2221-4360-b112-cec120d8d620> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO022295/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022295> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0483 32 97 26" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@casarosa.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jana@casarosa.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jana Miah"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.casarosa.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022295/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 9 269 28 12" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022295>
+  a foaf:Document ;
+  rdfs:label "Document voor CASA ROSA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022295> .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027142>
+  a org:Organization ;
+  skos:prefLabel "Bangkok"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027142" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c5ebf00f-3b8b-02ab-1976-a11b5ec20ff7> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027142/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027142/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027142/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027142/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027142> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027142/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+66 2 108 18 15" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027142/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+66 2 108 18 17" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027142/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bangkok@fitagency.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027142/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.flandersinvestmentandtrade.com/export/landen/thailand/diensten> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027142>
+  a foaf:Document ;
+  rdfs:label "Document voor Bangkok"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027142> .

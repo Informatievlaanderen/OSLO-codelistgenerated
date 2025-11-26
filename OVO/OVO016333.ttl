@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333>
+  a org:Organization ;
+  skos:prefLabel "Sogni"@nl ;
+  dct:description "De vzw Sogni werd in 2008 opgericht door Karen Houthooft met als doel het stimuleren en ondersteunen van amateurdans in Vlaanderen. De vzw organiseert dansvoorstellingen waarin amateurdansers centraal staan. De vzw Sogni omkadert ook Dansstudio KaDanz in Deinze."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016333" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0807860639" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f8fb9148-4fb0-4912-a266-a3e5028485b0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO016333/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO016333/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO016333/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO016333/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO016333/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016333> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@sogni.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0479 74 74 04" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "karen.houthooft@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kadanz.org/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016333/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32479747404" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016333>
+  a foaf:Document ;
+  rdfs:label "Document voor Sogni"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016333> .

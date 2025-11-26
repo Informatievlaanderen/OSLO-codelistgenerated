@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011261>
+  a org:Organization ;
+  skos:prefLabel "KEREMOS"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011261" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e748442b-c309-47ef-b752-8313c81fbea5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011261/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011261/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011261/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011261> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011261/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tom@keremos.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011261/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 234 11 85" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011261/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 74 98 74" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011261>
+  a foaf:Document ;
+  rdfs:label "Document voor KEREMOS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011261> .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050796>
+  a org:Organization ;
+  skos:prefLabel "The Unknown Land"@nl ;
+  skos:altLabel "TUL"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050796" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-08-12"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5358ce91-e946-772b-7f45-afb713315ab8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050796/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050796/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050796> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050796/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "peter-deruyter@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050796/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32492209645" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050796>
+  a foaf:Document ;
+  rdfs:label "Document voor The Unknown Land"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050796> .

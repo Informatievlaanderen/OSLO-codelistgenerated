@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047767>
+  a org:Organization ;
+  skos:prefLabel "Familiar Faces vzw"@nl ;
+  dct:description "Familiar Faces is een circusgezelschap waarvan de leden afstudeerden aan de Tilburgse circusacademie ACAPA. Leden zijn Hendrik Van Maele, Josse De Broeck, Felix Zech en Petra Steindl."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047767" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-05-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0696722393" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-05-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0606182e-e25b-770e-67c0-2f339dace330> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047767/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047767/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047767/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047767> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047767/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.familiar-faces.com/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047767/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hendrikvanmaele@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047767/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32456185679" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047767>
+  a foaf:Document ;
+  rdfs:label "Document voor Familiar Faces vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047767> .

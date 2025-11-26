@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593>
+  a org:Organization ;
+  skos:prefLabel "NEIN"@nl ;
+  skos:altLabel "T.A.A.C."@nl ;
+  dct:description "The Artist As Curator vzw heeft als roepnaam Nein. Het is een nomadisch artistiek platform met curator-kunstenaar en muzikant Laurens Mariën als drijvende kracht. Nein is een artist-run platform dat de grens tussen tentoonstelling, performance en festival bewandelt, zowel op het conceptuele als op het ruimtelijke niveau."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027593" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-11-21"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1b7019fb-f972-4311-a85f-9ff276440f1e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027593/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027593/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027593/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027593/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO027593/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027593> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "laurens.marien@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Anne-Marie Mels"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32495721072" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Laurens Mariën"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027593/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://laurensmarien.hotglue.me/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027593>
+  a foaf:Document ;
+  rdfs:label "Document voor NEIN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027593> .

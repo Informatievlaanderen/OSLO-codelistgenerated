@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025764>
+  a org:Organization ;
+  skos:prefLabel "Provinciaal Ruimtelijk Structuurplan"@nl ;
+  skos:altLabel "PRS"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025764" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e5171315-83f6-729b-ace1-ddb53353a5cd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025764/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025764/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO025764/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025764> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025764/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://oost-vlaanderen.be/wonen-en-leven/ruimtelijke-planning/beleidsinstrumenten/Provinciaal%20Ruimtelijke%20Structuurplanning/Provinciaal%20Ruimtelijk%20Structuurplan.html> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025764/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ruimtelijke.planning@oost-vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025764/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 267 75 61" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025764>
+  a foaf:Document ;
+  rdfs:label "Document voor Provinciaal Ruimtelijk Structuurplan"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025764> .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659>
+  a org:Organization ;
+  skos:prefLabel "Tien Ton vzw"@nl ;
+  skos:altLabel "Tien Ton"@nl ;
+  dct:description "Tien Ton vzw is een non-profit organisatie die drie groepen/artiesten (Tien Ton Vuist, Pangolin People en TIJL) ondersteunt en begeleidt."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049659" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-25"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0719430291" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-01-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/25ee471e-329d-bfec-890e-b935e700c7be> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049659/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049659/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049659/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049659/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO049659/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049659> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tientonvzw@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32468590895" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Nikki Kiekens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.youtube.com/@tientonvuist> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049659/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/tientonvuist/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049659>
+  a foaf:Document ;
+  rdfs:label "Document voor Tien Ton vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049659> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026531>
+  a org:Organization ;
+  skos:prefLabel "Mechels Vocaal Ensemble Scala Vocale"@nl ;
+  skos:altLabel "Scala Vocale"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026531" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fb5a8583-a74b-4c3d-8030-aaf5f1528603> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026531/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026531/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026531/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026531/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026531> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026531/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0477 84 06 80" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026531/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "scalavocale@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026531/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32496121094" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026531/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Bernard Sintobin"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026531>
+  a foaf:Document ;
+  rdfs:label "Document voor Mechels Vocaal Ensemble Scala Vocale"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026531> .

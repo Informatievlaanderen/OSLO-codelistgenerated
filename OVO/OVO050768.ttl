@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050768>
+  a org:Organization ;
+  skos:prefLabel "Vlaamse Raad voor Welzijn, Volksgezondheid en Gezin"@nl ;
+  skos:altLabel "Vlaamse Raad WVG"@nl ;
+  dct:description "De Vlaamse Raad WVG heeft als opdracht om akkoorden te sluiten tussen de stakeholders en de Vlaamse Regering over aspecten van het beleidsdomein Welzijn, Volksgezondheid en Gezin. De Vlaamse Raad WVG heeft ook een adviesfunctie ten aanzien van de Vlaamse Regering en het Vlaams Parlement. De Vlaamse Raad WVG is samengesteld uit vier kamers: een intersectorale kamer (sluit akkoorden en formuleert adviezen m.b.t. het beleid van 2 of 3 sectorale kamers en m.b.t. het beleid inzake welzijn en justitiehuizen); een sectorale kamer Beleid Vlaamse Sociale Bescherming en Personen met een Handicap; een sectorale kamer Gezondheid; een sectorale kamer Gezin en Jongerenwelzijn."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050768" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6413f053-1200-72c6-9f97-612de59516b7> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050768/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050768/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050768/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050768> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050768/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaamseraadwvg.be/vlarwvg> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050768/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@serv.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050768/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 20 90 111" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050768>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaamse Raad voor Welzijn, Volksgezondheid en Gezin"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050768> .

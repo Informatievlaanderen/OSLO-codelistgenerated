@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535>
+  a org:Organization ;
+  skos:prefLabel "PROJECTVERENIGING  DIJK 92"@nl ;
+  skos:altLabel "Dijk92"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003535" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0806383071" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d4ddb939-c5f8-8b2e-7b8c-03e415db3149> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003535/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003535/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003535/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003535/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003535/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003535> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "052 20 25 70" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "052 20 26 40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://dijk92.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bart.vandenbroucke@dendermonde.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003535/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@dijk92.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003535>
+  a foaf:Document ;
+  rdfs:label "Document voor PROJECTVERENIGING  DIJK 92"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003535> .

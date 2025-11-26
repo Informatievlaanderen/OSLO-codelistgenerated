@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008790>
+  a org:Organization ;
+  skos:prefLabel "A. Mary Music"@nl ;
+  skos:altLabel "AMM"@nl ;
+  dct:description "De vzw A. Mary Music omkadert Poolster Producties, een productiehuis voor musicals voor en door kinderen die worden opgevoerd op scholen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008790" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0670988293" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d9a62802-ed9e-4f8e-bddf-530346f65742> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008790/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008790/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008790/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008790> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008790/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "anne_vst@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008790/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Anne Van Steenwinkel"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008790/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.poolsterproducties.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008790>
+  a foaf:Document ;
+  rdfs:label "Document voor A. Mary Music"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008790> .

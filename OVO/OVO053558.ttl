@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053558>
+  a org:Organization ;
+  skos:prefLabel "Marketing & Evenementen"@nl ;
+  skos:altLabel "Marketing & Evenementen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053558" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/54fd9dbe-ddc4-8deb-c0fd-091c7c6eb16c> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053558> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053558>
+  a foaf:Document ;
+  rdfs:label "Document voor Marketing & Evenementen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053558> .

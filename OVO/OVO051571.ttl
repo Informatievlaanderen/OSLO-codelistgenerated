@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051571>
+  a org:Organization ;
+  skos:prefLabel "GoedBezig"@nl ;
+  dct:description "De vzw GoedBezig omkadert de artistieke activiteiten van singer-songwriter Jente Neels. Zij treedt op onder de artiestennaam JEN."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051571" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-08-28"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0772953210" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-08-28"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f32ea42b-a8e2-964d-59a6-72f83e6bf71c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051571/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051571/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051571/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051571> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051571/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32491734872" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051571/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jenteneels1@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051571/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jente Neels"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051571>
+  a foaf:Document ;
+  rdfs:label "Document voor GoedBezig"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051571> .

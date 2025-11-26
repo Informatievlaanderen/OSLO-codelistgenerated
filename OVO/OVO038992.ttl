@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038992>
+  a org:Organization ;
+  skos:prefLabel "makerlabo"@nl ;
+  dct:description "Makerlabo vzw organiseert wekelijks gratis naschoolse workshops voor jongeren tussen 12 en 18 jaar uit kansarme groepen uit de omgeving van Anderlecht met focus op digitale maaktechnieken (T-shirts ontwerpen, lasercutten, programmeren, 3D printen), alsook ateliers en vakantieactiviteiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038992" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-02-09"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0743441553" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-02-09"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/da917963-7736-16a3-685c-0a56086eb82a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038992/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038992/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038992/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038992/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038992> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038992/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "luyckfasseel.steven@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038992/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "makerlabo@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038992/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0477 41 67 41" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038992/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Steven Luyckfasseel"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038992>
+  a foaf:Document ;
+  rdfs:label "Document voor makerlabo"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038992> .

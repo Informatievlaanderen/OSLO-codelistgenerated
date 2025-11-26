@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118>
+  a org:Organization ;
+  skos:prefLabel "Heuvelheem"@nl ;
+  dct:description "Heuvelheem vzw is door het Vlaams Agentschap Personen met een Handicap vergund als zorgaanbieder."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010118" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0413210201" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/94bde960-0b0d-46fc-87cc-42dc9357bb26> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO010118/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010118> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@heuvelheem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.heuvelheem.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 383 58 70" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Valerie Broekaert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "valerie.broekaert@heuvelheem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010118/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 73 23 28" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010118>
+  a foaf:Document ;
+  rdfs:label "Document voor Heuvelheem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010118> .

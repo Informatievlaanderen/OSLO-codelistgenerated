@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO041152>
+  a org:Organization ;
+  skos:prefLabel "Diestse Poort"@nl ;
+  dct:description "Dubbel van OVO001548 Diestsepoort"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO041152" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0c2040f9-fcb2-d4c3-59ee-f82d3dc87452> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO041152> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO041152>
+  a foaf:Document ;
+  rdfs:label "Document voor Diestse Poort"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO041152> .

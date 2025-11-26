@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342>
+  a org:Organization ;
+  skos:prefLabel "BuLO Het Veer"@nl ;
+  dct:description "school voor buitengewoon lager onderwijs"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048342" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e91c9714-8eab-afa7-4a01-bd08b7b7818d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO048342/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048342> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Veerle Van Damme"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "veerle.van.damme@bulohetveer.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bulohetveer.weebly.com/contact.html> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@bulohetveer.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32490571556" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048342/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3235411688" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048342>
+  a foaf:Document ;
+  rdfs:label "Document voor BuLO Het Veer"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048342> .

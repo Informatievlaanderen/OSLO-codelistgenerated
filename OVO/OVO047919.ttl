@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047919>
+  a org:Organization ;
+  skos:prefLabel "Integrative Sanctuary of Arts"@nl ;
+  skos:altLabel "I.S.A."@nl ;
+  dct:description "De vzw ISABELLE BEERNAERT omkadert de professionele activiteiten van choreografe Isabelle Beernaert."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047919" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/12e2645b-fb06-7b55-2487-4a03ee1ed483> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047919/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047919/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047919/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047919> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047919/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://isabellebeernaert.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047919/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Isabelle Beernaert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047919/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "isabellebeernaert@me.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047919>
+  a foaf:Document ;
+  rdfs:label "Document voor Integrative Sanctuary of Arts"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047919> .

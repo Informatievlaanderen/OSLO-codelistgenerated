@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001015>
+  a org:Organization ;
+  skos:prefLabel "Inspectie Wonen Antwerpen"@nl ;
+  skos:altLabel "Inspectie WO Antwerpen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001015" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2007-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/07b7acb3-cca9-4cf2-a74d-079481f84be1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001015/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001015/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001015> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001015/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "032246102" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001015/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "032246105" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001015>
+  a foaf:Document ;
+  rdfs:label "Document voor Inspectie Wonen Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001015> .

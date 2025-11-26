@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002957>
+  a org:Organization ;
+  skos:prefLabel "Team erkenning gezondheidszorgberoepen"@nl ;
+  skos:altLabel "erkenning gezondheidszorgberoepen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002957" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b450c080-64ed-4545-b77d-10af9bdceda1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002957/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002957/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002957/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002957> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002957/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon infolijn"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002957/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "38"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002957/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mailvragen.zorgberoepen@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002957>
+  a foaf:Document ;
+  rdfs:label "Document voor Team erkenning gezondheidszorgberoepen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002957> .

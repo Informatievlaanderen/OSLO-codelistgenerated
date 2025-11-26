@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671>
+  a org:Organization ;
+  skos:prefLabel "VIANOBILE"@nl ;
+  dct:description "De vzw VIANOBILE omkadert het kunsteducatief initiatief Piano LAB dat werd opgericht door klassiek concertpianist Liebrecht Vanbeckevoort. Het doel is het creëren van een pianolaboratorium op het hoogste niveau waar jonge veelbelovende internationale pianotalenten gespecialiseerde pianostages kunnen volgen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054671" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-12-03"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0759429430" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-12-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8e45a7ee-73c1-4a5c-bda2-b8c1c4cbf2dc> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO054671/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054671> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "liebrecht@piano-lab.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Claïs Lemmens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32495997458" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32498041670" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "clais@viltmgmt.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054671/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://piano-lab.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054671>
+  a foaf:Document ;
+  rdfs:label "Document voor VIANOBILE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054671> .

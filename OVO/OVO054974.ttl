@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054974>
+  a org:Organization ;
+  skos:prefLabel "MAVIS"@nl ;
+  skos:altLabel "MAVIS"@nl ;
+  dct:description "MAVIS is een vijfstemmig vocaal ensemble dat bestaat uit Anna Pardo Canedo, Anna Nuytten, Reinhard Andries, Hans Helsen en Sander Meersmans. MAVIS legt zich niet toe op één stijl of periode, maar kiest bewust voor een dialoog tussen genres. Polyfonie, hedendaagse koormuziek en lichte muziek smelten samen tot een eigenzinnige concertbeleving."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054974" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-06-29"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0803320643" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-06-29"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3e092172-d5f9-45a9-b342-0697d22d354e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054974/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054974/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054974/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054974> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054974/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@mavismusic.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054974/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32472439932" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054974/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.mavismusic.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054974>
+  a foaf:Document ;
+  rdfs:label "Document voor MAVIS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054974> .

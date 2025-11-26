@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025582>
+  a org:Organization ;
+  skos:prefLabel "Provinciaal natuureducatief centrum De Kaaihoeve - Zwalm"@nl ;
+  skos:altLabel "PNEC De Kaaihoeve"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025582" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e5152039-28a8-4efb-7624-618149457b79> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025582/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025582/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO025582/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025582> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025582/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.dekaaihoeve.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025582/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 55 49 67 96" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025582/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dekaaihoeve@oost-vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025582>
+  a foaf:Document ;
+  rdfs:label "Document voor Provinciaal natuureducatief centrum De Kaaihoeve - Zwalm"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025582> .

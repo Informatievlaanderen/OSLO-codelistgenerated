@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059>
+  a org:Organization ;
+  skos:prefLabel "Netwerk Lokaal Sportbeleid"@nl ;
+  dct:description "De vzw Vlaams Instituut voor Sportbeheer en Recreatiebeleid heeft als roepnaam Netwerk Lokaal Sportbeleid. Doel is de bevordering van de werking en de uitbouw van de gemeentelijke, stedelijke en provinciale sportdiensten, sport- en recreatiecentra, zwembaden en sportaccommodaties."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004059" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0417039919" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3d2b5c50-18f7-7bd1-f653-311fd8a68936> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004059/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004059/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO004059/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO004059/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO004059/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004059> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 780 91 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 780 91 09" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "3"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.lokaalsportbeleid.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004059/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lokaalsportbeleid.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004059>
+  a foaf:Document ;
+  rdfs:label "Document voor Netwerk Lokaal Sportbeleid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004059> .

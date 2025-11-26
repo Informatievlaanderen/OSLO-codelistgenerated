@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047603>
+  a org:Organization ;
+  skos:prefLabel "Wolf63"@nl ;
+  dct:description "De vennootschap Wolf63 wil een actieve bijdrage leveren aan de geestelijke en lichamelijke gezondheid van de bevolking door het organiseren van evenementen en het inrichten van workshops, lessen en trainingen omtrent alle thema’s die de geestelijke en lichamelijke gezondheid kunnen beïnvloeden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047603" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-09-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0753941210" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-09-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/312dc421-0d77-146b-f2d1-53c8a7f7e156> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047603/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047603/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047603/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047603> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047603/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "san@wolf63.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047603/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sandra Winters"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047603/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32476557065" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047603>
+  a foaf:Document ;
+  rdfs:label "Document voor Wolf63"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047603> .

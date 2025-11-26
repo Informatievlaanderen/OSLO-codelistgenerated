@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039014>
+  a org:Organization ;
+  skos:prefLabel "DE VIERTORRE OOSTENDE"@nl ;
+  dct:description "De Viertorre biedt integrale, laagdrempelige opvoedingsondersteuning aan kansarme zwangere vrouwen en kansarme gezinnen met kinderen tot 6 jaar in Oostende."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039014" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2001-08-20"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0475839141" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2001-08-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f3ac7ae4-2c8a-59dd-d2e9-d037c275e696> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039014/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039014/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039014/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039014/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039014> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039014/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Griet Van Nieuwenhuyse"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039014/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "griet.vannieuwenhuyse@oostende.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039014/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "059 59 20 06" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039014/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "inloopteam@sociaalhuisoostende.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039014>
+  a foaf:Document ;
+  rdfs:label "Document voor DE VIERTORRE OOSTENDE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039014> .

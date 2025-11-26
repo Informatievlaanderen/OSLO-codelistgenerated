@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO006786>
+  a org:Organization ;
+  skos:prefLabel "Dienst Ruimtelijke ordening & wonen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO006786" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0953840a-d354-f53b-5c68-255fd3161ec4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO006786/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO006786> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO006786/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ro@glabbeek.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO006786>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst Ruimtelijke ordening & wonen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO006786> .

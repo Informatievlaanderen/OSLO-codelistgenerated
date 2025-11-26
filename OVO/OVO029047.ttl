@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO029047>
+  a org:Organization ;
+  skos:prefLabel "Laser Cladding Venture"@nl ;
+  skos:altLabel "LCV"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO029047" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-08-31"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0636737791" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2015-08-31"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/aad3cb6d-2e52-4f62-b3da-27810a86de3e> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO029047> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO029047>
+  a foaf:Document ;
+  rdfs:label "Document voor Laser Cladding Venture"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO029047> .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024584>
+  a org:Organization ;
+  skos:prefLabel "Euro-Scene Leipzig"@nl ;
+  skos:altLabel "Euro-Scene Leipzig"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024584" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d1119560-5cab-4d51-a694-8f238663bd85> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024584/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024584> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024584/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "verwaltung@euro-scene.de" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024584>
+  a foaf:Document ;
+  rdfs:label "Document voor Euro-Scene Leipzig"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024584> .

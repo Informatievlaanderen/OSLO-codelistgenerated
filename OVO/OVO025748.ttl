@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025748>
+  a org:Organization ;
+  skos:prefLabel "Advies en begeleiding"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025748" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6f8b52c2-4c22-5c0a-1962-4ac9c37d92f5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025748/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025748> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025748/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.bereikbaarwerk.be/index.php/2016/05/30/mobiscan-door-het-provinciaal-mobiliteitspunt/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025748>
+  a foaf:Document ;
+  rdfs:label "Document voor Advies en begeleiding"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025748> .

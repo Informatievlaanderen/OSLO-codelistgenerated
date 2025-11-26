@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405>
+  a org:Organization ;
+  skos:prefLabel "I Solisti del Vento VZW"@nl ;
+  skos:altLabel "I SOLISTI"@nl ;
+  dct:description "I Solisti del Vento is een blazersensemble en een muziekproductiehuis. Met I Solisti Academy zet de organisatie zich ook in voor de ontwikkeling van jong talent op blaasinsrumenten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020405" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0458503063" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1e508fb0-495e-4320-b356-4ad90af22173> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO020405/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020405> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "francis@isolisti.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Francis Pollet"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.isolisti.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@isolisti.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 800 01 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ann Andries"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476329995" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020405/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ann@isolisti.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020405>
+  a foaf:Document ;
+  rdfs:label "Document voor I Solisti del Vento VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020405> .

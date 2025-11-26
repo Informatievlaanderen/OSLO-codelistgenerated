@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636>
+  a org:Organization ;
+  skos:prefLabel "Europees Muziekfestival voor de Jeugd"@nl ;
+  dct:description "Het Europees Muziekfestival voor de Jeugd (EMJ) is een jaarlijkse internationale ontmoeting rond muziek te Neerpelt voor jongeren. De idee achter het festival is dat muziek(beoefening) grenzen verlegt, banden smeedt en de horizon verruimt."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024636" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0408435227" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f13b6c8a-f132-4a52-a48d-88c0bb4844a5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024636/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024636/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024636/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO024636/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO024636/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024636> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@emj.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3211662339" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.emj.be/home> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "011 66 50 48" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024636/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Chris Hermans"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024636>
+  a foaf:Document ;
+  rdfs:label "Document voor Europees Muziekfestival voor de Jeugd"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024636> .

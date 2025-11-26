@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700>
+  a org:Organization ;
+  skos:prefLabel "SCUM STUDIOS"@nl ;
+  dct:description "Scum Studios is een platform waar de geest en de creativiteit van jongvolwassenen zich kunnen ontwikkelen op het gebied van media, cultuur, grafisch ontwerp en illustratie, en dit door middel van workshops en technische ondersteuning."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026700" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0678823519" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4df2fd0f-6a51-4abc-bbc2-e9cdbb493c6c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026700/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026700/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026700/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026700/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026700/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026700> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0486 81 72 71" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.scumstudios.org/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@scumstudios.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Mohamed El Kasmi"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026700/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mohamed_el_kasmi@scumstudios.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026700>
+  a foaf:Document ;
+  rdfs:label "Document voor SCUM STUDIOS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026700> .

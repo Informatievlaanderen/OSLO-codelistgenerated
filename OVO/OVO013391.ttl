@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013391>
+  a org:Organization ;
+  skos:prefLabel "Museum Dr. Guislain"@nl ;
+  dct:description "Het Museum Dr. Guislain is een museum in Gent waarin de geschiedenis van de psychiatrie wordt weergegeven aan de hand van gebruiksvoorwerpen, kunst en onderzoek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013391" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0893866084" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/02344071-3db2-4488-8876-b158e91ad2f6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013391/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013391/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013391/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013391/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013391> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013391/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.museumdrguislain.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013391/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 216 35 35" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013391/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3293986950" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013391/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@museumdrguislain.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013391>
+  a foaf:Document ;
+  rdfs:label "Document voor Museum Dr. Guislain"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013391> .

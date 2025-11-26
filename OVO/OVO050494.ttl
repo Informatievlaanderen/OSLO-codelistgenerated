@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050494>
+  a org:Organization ;
+  skos:prefLabel "IZI Wonen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050494" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1922-12-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/beb91e7d-a37d-a2d0-4046-882eebe73dad> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050494/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050494/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050494/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050494> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050494/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "051 30 25 45" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050494/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.iziwonen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050494/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@iziwonen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050494>
+  a foaf:Document ;
+  rdfs:label "Document voor IZI Wonen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050494> .

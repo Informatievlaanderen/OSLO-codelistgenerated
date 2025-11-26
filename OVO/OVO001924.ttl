@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924>
+  a org:Organization ;
+  skos:prefLabel "Justitiehuis Tongeren"@nl ;
+  skos:altLabel "JH Tongeren"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001924" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f21f95da-c8b4-42c8-bd76-50997bc8d158> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001924/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001924/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001924/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001924/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO001924/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001924> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "justitiehuis.tongeren@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "012 25 09 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.departementwvg.be/justitiehuizen/tongeren> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/agentschap-justitie-en-handhaving/justitie/justitiehuizen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001924/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "012 25 09 35" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001924>
+  a foaf:Document ;
+  rdfs:label "Document voor Justitiehuis Tongeren"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001924> .

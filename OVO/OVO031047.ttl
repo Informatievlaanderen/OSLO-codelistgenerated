@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO031047>
+  a org:Organization ;
+  skos:prefLabel "Radio Papesse"@nl ;
+  dct:description "Radio Papesse is een online audioarchief gewijd aan hedendaagse kunst. Het is een plek voor de documentatie en articulatie van een kritisch discours rond de beeldende kunsten en tegelijkertijd is het een radioproject gewijd aan de productie en distributie van geluidskunst."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO031047" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-06-14"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8f0c0db8-8d2d-2d4f-c00c-c0ddf77145e4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO031047/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO031047/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO031047> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031047/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@radiopapesse.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031047/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.radiopapesse.org/en/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO031047>
+  a foaf:Document ;
+  rdfs:label "Document voor Radio Papesse"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO031047> .

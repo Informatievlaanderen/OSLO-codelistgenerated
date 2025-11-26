@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050542>
+  a org:Organization ;
+  skos:prefLabel "The Agprognostic Temple"@nl ;
+  skos:altLabel "TAT"@nl ;
+  dct:description "The Agprognostic Temple is een nomadisch kunsttentoonstellingsplatform dat in 2020 werd opgericht door kunstenaar en spiritueel filosoof Dome Wood en curator en kunstcriticus Sam Steverlynck en dat gericht is op kunst en het spirituele/metafysische."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050542" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-06-15"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e69ceb46-a4d9-d1b7-7890-b037d324ab5e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050542/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050542/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050542/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO050542/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050542> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050542/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sam.steverlynck@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050542/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32472383616" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050542/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://agprognostictemple.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050542/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sam Steverlynck"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050542>
+  a foaf:Document ;
+  rdfs:label "Document voor The Agprognostic Temple"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050542> .

@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019821>
+  a org:Organization ;
+  skos:prefLabel "BELGISCHE VALKERIJ FEDERATIE-VALKENIERS.BE VZW/A.S.B.L. - FEDERATION BELGE DE LA FAUCONNERIE"@nl ;
+  skos:altLabel "Federatie Valkeniers.be"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019821" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0829454423" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3518a763-5911-4e63-bbe8-3bfe02c410e5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019821> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019821>
+  a foaf:Document ;
+  rdfs:label "Document voor BELGISCHE VALKERIJ FEDERATIE-VALKENIERS.BE VZW/A.S.B.L. - FEDERATION BELGE DE LA FAUCONNERIE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019821> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048438>
+  a org:Organization ;
+  skos:prefLabel "Erfgoed Zuid-Dijleland"@nl ;
+  dct:description "de gemachtigd ambtenaar heeft met mail van 10 maart 2023 gevraagd om de instelling te deactiveren omdat ze geen erkenning en bijhorende subsidie heeft gekregen en bijgevolg enkel op papier bestaat."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048438" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-12-18"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0741452063" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-12-18"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1405690a-b15e-8577-ed57-c3215389ca73> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048438/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048438/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048438/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO048438/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048438> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048438/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jan.verroken@rld.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048438/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "onthaal@bertem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048438/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "016 49 99 99" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048438/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.bertem.be/bekendmakingdetail/493/projectvereniging-erfgoed-zuid-dijleland-oprichtingsakte-met-statuten> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048438>
+  a foaf:Document ;
+  rdfs:label "Document voor Erfgoed Zuid-Dijleland"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048438> .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002878>
+  a org:Organization ;
+  skos:prefLabel "Nieuw Dak"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002878" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2000-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e56d4ff6-69ab-4a5e-b715-8630c038b6d0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002878/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002878/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002878/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002878> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002878/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "089 62 90 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002878/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.nieuwdak.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002878/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@nieuwdak.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002878>
+  a foaf:Document ;
+  rdfs:label "Document voor Nieuw Dak"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002878> .

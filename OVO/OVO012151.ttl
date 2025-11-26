@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012151>
+  a org:Organization ;
+  skos:prefLabel "Kunstmuseum Bonn"@nl ;
+  skos:altLabel "Kunstmuseum Bonn"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012151" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9692b1e0-7a8b-4178-a241-c488fe9a85e7> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012151/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012151/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO012151/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012151> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012151/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kunstmuseum@bonn.de" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012151/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0049 2 28 77 62 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012151/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "0049 2 28 77 62 20" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012151>
+  a foaf:Document ;
+  rdfs:label "Document voor Kunstmuseum Bonn"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012151> .

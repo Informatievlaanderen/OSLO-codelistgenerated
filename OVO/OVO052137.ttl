@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052137>
+  a org:Organization ;
+  skos:prefLabel "North Yorkshire Council"@nl ;
+  dct:description "De North Yorkshire Council is een regionaal overheidsorgaan dat vele bevoegdheden heeft. Op het vlak van cultuur staat dit orgaan o.a. mee in voor de organisatie van The Scarborough Fair. Dit is de verzamelnaam voor een aantal culturele festivals in de stad Scarborough."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052137" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/38876721-5be5-50da-9f2b-2caca263ee6a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052137/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052137/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052137/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052137/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052137> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052137/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "julian.caddy@northyorks.gov.uk" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052137/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+443001312131" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052137/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.northyorks.gov.uk/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052137/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Twitter"@nl ;
+  rdfs:comment "https://scarboroughfair.uk/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052137>
+  a foaf:Document ;
+  rdfs:label "Document voor North Yorkshire Council"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052137> .

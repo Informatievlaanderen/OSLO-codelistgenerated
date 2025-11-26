@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890>
+  a org:Organization ;
+  skos:prefLabel "Villa Omaar"@nl ;
+  dct:description "De vzw Villa Omaar omkadert Homaar, een initiatief voor geestelijke gezondheidszorg voor jongeren. Homaar is een plek in Wetteren waar je als jongere tussen 15 en 23 jaar ruimte krijgt om te groeien. Jongeren kunnen er deelnemen aan diverse ateliers."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026890" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0662869690" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/becb00a1-42d4-4d17-85e2-02192ac06688> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO026890/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026890> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://homaar.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marieke Degryse"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marieke Degryse"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@homaar.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0470 56 10 02" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marieke@homaar.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026890/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0470 56 10 02" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026890>
+  a foaf:Document ;
+  rdfs:label "Document voor Villa Omaar"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026890> .

@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567>
+  a org:Organization ;
+  skos:prefLabel "Ethno Flanders"@nl ;
+  skos:altLabel "Ethno Flanders"@nl ;
+  dct:description "Ethno Flanders is een internationale uitwisseling rond folk en traditionele muziek voor een 60-­tal jongeren tussen 16 en 30 jaar uit de hele wereld. In workshops leren de deelnemers elkaars muziek kennen en wordt gewerkt aan een concertprogramma. Ethno Flanders wordt georganiseerd door Muziekmozaïek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024567" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8fb4093c-dc50-47d3-822a-ae85085ec5c1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024567/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024567/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024567/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO024567/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO024567/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024567> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://ethno.world/ethno/flanders/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Filip Verneert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0475 90 97 37" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "filip.verneert@muzmoz.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024567/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "flanders@ethno.world" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024567>
+  a foaf:Document ;
+  rdfs:label "Document voor Ethno Flanders"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024567> .

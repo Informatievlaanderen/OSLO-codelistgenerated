@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020599>
+  a org:Organization ;
+  skos:prefLabel "Liberas vzw"@nl ;
+  skos:altLabel "Liberaal Arcief"@nl ;
+  dct:description "Liberas, voorheen het Liberaal Archief, is het erfgoedcentrum voor de geschiedenis van het vrijheidsideaal in al zijn facetten. De organisatie is in 1982 opgericht als bewaarplaats voor de geschiedenis van het liberalisme in Vlaanderen en België. Intussen is Liberas uitgegroeid tot een archiefinstelling die zich ook richt op personen en groepen (niet-zuilgebonden) die een bijdrage lever(d)en aan het realiseren van het vrijheidsideaal."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020599" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0422884069" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6ceab9a0-92bc-48cb-ab5f-fa30164735b5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020599/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020599/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020599/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020599/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020599> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020599/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 221 75 05" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020599/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 221 12 15" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020599/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.liberas.eu/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020599/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@liberas.eu" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020599>
+  a foaf:Document ;
+  rdfs:label "Document voor Liberas vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020599> .

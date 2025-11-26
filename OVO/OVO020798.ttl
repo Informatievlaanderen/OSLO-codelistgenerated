@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020798>
+  a org:Organization ;
+  skos:prefLabel "Openbare Bibliotheek Waregem"@nl ;
+  skos:altLabel "Openbare Bibliotheek Waregem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020798" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4509255e-e9a6-4251-9863-0f9ccd62b079> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020798/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020798/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020798/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020798/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020798> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020798/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.waregem.be/bibliotheek> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020798/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "waregem@bibliotheek.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020798/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056 62 13 70" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020798/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "056 61 32 74" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020798>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare Bibliotheek Waregem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020798> .

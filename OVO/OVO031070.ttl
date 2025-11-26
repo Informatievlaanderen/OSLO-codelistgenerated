@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070>
+  a org:Organization ;
+  skos:prefLabel "DIG-IT"@nl ;
+  dct:description "DIG-IT vzw zet activiteiten op die tot doel hebben mensen vertrouwder te maken met wetenschap en techniek, digitale media, hedendaagse kunst en cultuur, en dit zowel binnen de schoolcontext als in de vrijetijdsbesteding."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO031070" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-30"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0719592619" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-01-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3e049252-fbd4-0318-ca61-fdcd9719f474> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO031070/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO031070/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO031070/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO031070/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO031070/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO031070> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497 41 31 88" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Wim Van Broeck"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "digit.brussel@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://digitbruio.cluster027.hosting.ovh.net/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031070/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wvanbroeck@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO031070>
+  a foaf:Document ;
+  rdfs:label "Document voor DIG-IT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO031070> .

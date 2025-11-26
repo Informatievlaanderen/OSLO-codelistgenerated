@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028410>
+  a org:Organization ;
+  skos:prefLabel "Natuur en Milieu Edukatief Centrum"@nl ;
+  skos:altLabel "N.E.M.E.C."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028410" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1990-10-08"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0443434609" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1990-10-08"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ac3ed652-a9a8-4a7a-a1fb-60c04c38babf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028410/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028410/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028410> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028410/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "corneel.dewindt@nemec.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028410/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0475/86.26.48" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028410>
+  a foaf:Document ;
+  rdfs:label "Document voor Natuur en Milieu Edukatief Centrum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028410> .

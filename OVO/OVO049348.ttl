@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049348>
+  a org:Organization ;
+  skos:prefLabel "team Strategische Inzichten en Analyses"@nl ;
+  dct:description "Om geïnformeerde en toekomstgerichte beleidskeuzes te kunnen maken bij de kernopdrachten van het departement, richten we ons op strategische inzichten en wetenschappelijk onderbouwde analyses van o.a. internationale indicatoren, macro-economische trends en relevante toekomst studies."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049348" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ea8212d0-f4cb-cf14-4677-a1cabcc986d2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049348/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049348/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049348/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049348> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049348/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "Peter.desmedt@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049348/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/intern/beleid-en-regelgeving/beleidsonderzoek-en-evaluatie> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049348/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "100"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049348>
+  a foaf:Document ;
+  rdfs:label "Document voor team Strategische Inzichten en Analyses"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049348> .

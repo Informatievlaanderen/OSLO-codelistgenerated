@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384>
+  a org:Organization ;
+  skos:prefLabel "Brussels City Ballet"@nl ;
+  skos:altLabel "BCB"@nl ;
+  dct:description "Brussels City Ballet (BCB) is een professioneel balletgezelschap uit Brussel dat klassieke, neoklassieke en hedendaagse balletten opvoert."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052384" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-03-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0798995433" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-03-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/76f13ed3-181c-3b02-5694-9dbbd7d38687> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052384/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052384> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32492403668" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Aki Nishio"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "heart.nishio@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://sites.google.com/view/brussels-city-ballet/home> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info.brusselscityballet@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052384/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/p/Brussels-City-Ballet-100091702037598/?locale=nl_BE"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052384>
+  a foaf:Document ;
+  rdfs:label "Document voor Brussels City Ballet"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052384> .

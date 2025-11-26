@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021239>
+  a org:Organization ;
+  skos:prefLabel "Vrije Radio Leuven"@nl ;
+  skos:altLabel "V.R.L."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021239" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/be4e6b49-e0cd-49e5-a5fe-5a440c4d0dc0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021239/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021239/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021239> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021239/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@radiomaria.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021239/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "016/414747" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021239>
+  a foaf:Document ;
+  rdfs:label "Document voor Vrije Radio Leuven"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021239> .

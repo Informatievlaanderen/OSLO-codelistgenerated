@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465>
+  a org:Organization ;
+  skos:prefLabel "ALV Procesondersteuning"@nl ;
+  skos:altLabel "POD"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000465" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6d890fcb-22e4-4a4d-9d48-ddf00f4e8c81> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000465/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000465/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000465/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000465/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000465/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000465> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://lv.vonet.be/nlapps/docs/default.asp?fid=180"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://lv.vlaanderen.be/nlapps/docs/default.asp?id=56> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marianne.dekuyper@lv.vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025527570" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000465/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025527571" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000465>
+  a foaf:Document ;
+  rdfs:label "Document voor ALV Procesondersteuning"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000465> .

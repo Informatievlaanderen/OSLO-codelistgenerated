@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO046109>
+  a org:Organization ;
+  skos:prefLabel "Dienst Ontvangkantoor"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO046109" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f4a5174a-d586-1351-d834-c1c9791d7aee> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO046109> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO046109>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst Ontvangkantoor"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO046109> .

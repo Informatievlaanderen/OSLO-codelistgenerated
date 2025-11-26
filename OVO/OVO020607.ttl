@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607>
+  a org:Organization ;
+  skos:prefLabel "LOD"@nl ;
+  dct:description "LOD is een productiehuis voor opera en muziektheater in Gent."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020607" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0436199397" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ca75f90f-2c15-4bd1-be91-a12155140743> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020607/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020607> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.lod.be/nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 266 11 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kathleen Treier"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kathleen@lod.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lod.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020607/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3292661133" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020607>
+  a foaf:Document ;
+  rdfs:label "Document voor LOD"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020607> .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012357>
+  a org:Organization ;
+  skos:prefLabel "Lampekap Collectief"@nl ;
+  skos:altLabel "Lampekap Collectief"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012357" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6e79dc63-bec0-4f19-8ab9-bcd5d0d66c22> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012357/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012357/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012357> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012357/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lampekap.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012357/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0498 29 60 97" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012357>
+  a foaf:Document ;
+  rdfs:label "Document voor Lampekap Collectief"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012357> .

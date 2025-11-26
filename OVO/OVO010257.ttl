@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257>
+  a org:Organization ;
+  skos:prefLabel "House Crying Yellow Tears"@nl ;
+  skos:altLabel "H.C.Y.T."@nl ;
+  dct:description "House Crying Yellow Tears is een multidisciplinair productiehuis voor het werk van regisseur Suze Milius en scenograaf/ theatermaker Stefan Jakiela."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010257" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0849830064" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bb72085f-9f76-495b-810d-b40da08cd308> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010257/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010257/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010257/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010257/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO010257/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010257> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "housecryingyellowtears@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0499 36 83 37" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Suze Milius"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+31681152601" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010257/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "suzemilius@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010257>
+  a foaf:Document ;
+  rdfs:label "Document voor House Crying Yellow Tears"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010257> .

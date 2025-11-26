@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022112>
+  a org:Organization ;
+  skos:prefLabel "BRUXELLES-MUSEES-EXPOSITIONS - BRUSSEL-MUSEA-TENTOONSELLINGEN"@nl ;
+  dct:description "De vzw BRUXELLES-MUSEES-EXPOSITIONS - BRUSSEL-MUSEA-TENTOONSTELLINGEN omkadert de Centrale for Contemporary Art, het kunstencentrum voor hedendaagse kunst van de stad Brussel dat is gevestigd in een voormalige elektriciteitscentrale."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022112" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0460976365" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5caf5345-ebc5-43a6-b365-56921335b831> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022112/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022112/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022112/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO022112/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022112> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022112/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "joan.vandenberghe@brucity.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022112/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://centrale.brussels/nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022112/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@centrale.brussels" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022112/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "cinzia.maroni@brucity.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022112>
+  a foaf:Document ;
+  rdfs:label "Document voor BRUXELLES-MUSEES-EXPOSITIONS - BRUSSEL-MUSEA-TENTOONSELLINGEN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022112> .

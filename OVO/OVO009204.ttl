@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009204>
+  a org:Organization ;
+  skos:prefLabel "Fundacja Dominikanski Osrodek Liturgiczny"@nl ;
+  skos:altLabel "Fundacja Dominikanski Osrodek Liturgiczny"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009204" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c647045f-128f-49d3-8d3a-026bab92fa97> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009204/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009204/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009204> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009204/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "l.serwinski@liturgia.dominikanie.pl" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009204/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+48124301934" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009204>
+  a foaf:Document ;
+  rdfs:label "Document voor Fundacja Dominikanski Osrodek Liturgiczny"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009204> .

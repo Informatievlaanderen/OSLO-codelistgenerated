@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500>
+  a org:Organization ;
+  skos:prefLabel "Commons Lab vzw"@nl ;
+  skos:altLabel "CLA"@nl ;
+  dct:description "De vzw Commons Lab (vroeger Commons Lab Antwerpen) is een socio-culturele organisatie die zich richt op de commonspraktijk. Dit draait erom dat burgercollectieven initiatieven nemen die de gemeenschap ten goede komen. Dit gaat om initiatieven rond mobiliteit en stadsontwikkeling, klimaatadaptatie, voeding, vergroening, lokale economie, kunst en cultuur, energie ..."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO031500" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2017-12-17"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0685997262" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2017-12-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/59b6c53e-144c-de14-8570-f60d706e46bd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO031500/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO031500/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO031500/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO031500/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO031500/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO031500> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Koen Wynants"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.commonslab.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32473865503" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "koen@commonslab.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO031500/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32473865503" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO031500>
+  a foaf:Document ;
+  rdfs:label "Document voor Commons Lab vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO031500> .

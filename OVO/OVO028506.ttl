@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028506>
+  a org:Organization ;
+  skos:prefLabel "MUSICLAB"@nl ;
+  skos:altLabel "Musiclab"@nl ;
+  dct:description "De organisatie Musiclab diende een subsidieaanvraag in voor een cd-opname met muziek van Vlaamse componisten voor klarinet en orkest/ensemble. Het betrof muziek die werd gecomponeerd op vraag van klarinettist Eddy Vanoosthuyse."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028506" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ed69828f-44db-7cdf-9b4a-f35f556ffb4a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028506/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028506/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028506/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028506/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028506> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028506/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "br.lievens@skynet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028506/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0477 25 63 66" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028506/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Brigitte Lievens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028506/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0477 49 78 80" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028506>
+  a foaf:Document ;
+  rdfs:label "Document voor MUSICLAB"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028506> .

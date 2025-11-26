@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020724>
+  a org:Organization ;
+  skos:prefLabel "Openbare Bibliotheek Oostende"@nl ;
+  skos:altLabel "Openbare Bibliotheek Oostende"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020724" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7360375c-64bb-400b-9427-525c80e36a42> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020724/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020724/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020724/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020724/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020724> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020724/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.oostende.be/bibliotheek> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020724/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bibliotheek@oostende.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020724/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "059 29 51 51" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020724/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "059 29 51 58" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020724>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare Bibliotheek Oostende"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020724> .

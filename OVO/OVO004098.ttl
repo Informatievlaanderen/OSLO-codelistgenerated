@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098>
+  a org:Organization ;
+  skos:prefLabel "Vlaamse Statistische Autoriteit"@nl ;
+  skos:altLabel "VSA"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004098" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-04-22"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c9177ff3-83b0-fad0-00f3-cf06bc56495b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004098/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004098/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO004098/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO004098/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO004098/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004098> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sv@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 52 07" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 52 07" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/statistiek-vlaanderen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004098/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "80"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004098>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaamse Statistische Autoriteit"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004098> .

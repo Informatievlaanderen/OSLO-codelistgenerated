@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017901>
+  a org:Organization ;
+  skos:prefLabel "Verein Zur Förderung Des Kunststandortes Köln E.V."@nl ;
+  skos:altLabel "Verein Zur Förderung Des Kunststandortes Köln E.V."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017901" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/84c97a92-3d3b-40c4-95e2-63439c18c42e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017901/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017901/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017901/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017901> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017901/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rb@temporarygallery.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017901/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+49 221 30 23 44 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017901/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+49 163 445 28 03" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017901>
+  a foaf:Document ;
+  rdfs:label "Document voor Verein Zur Förderung Des Kunststandortes Köln E.V."@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017901> .

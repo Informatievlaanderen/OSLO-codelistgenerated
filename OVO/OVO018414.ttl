@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414>
+  a org:Organization ;
+  skos:prefLabel "Rikolto België"@nl ;
+  dct:description "De vzw Rikolto België is ontstaan uit een samensmelting van Vredeseilanden en 2 andere ngo's. De vzw zet zich vooral in voor de voedselproductie in ontwikkelingslanden met de nadruk op gezonde en duurzame voeding."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018414" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0420656336" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6781c7ae-dbb6-4837-a85c-37c473bcb448> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO018414/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018414> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@rikolto.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.rikolto.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Erik Devogelaere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "erik.devogelaere@rikolto.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32496169160" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018414/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3216403211" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018414>
+  a foaf:Document ;
+  rdfs:label "Document voor Rikolto België"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018414> .

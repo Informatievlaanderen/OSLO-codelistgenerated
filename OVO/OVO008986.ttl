@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008986>
+  a org:Organization ;
+  skos:prefLabel "Akabe- en Gidsenlokaal De Dophei"@nl ;
+  skos:altLabel "Akabe- en Gidsenlokaal De Dophei"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008986" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f64c7fd6-4ec3-4b09-af03-6b788bb153a0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008986/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008986> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008986/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bestuur@dedophei.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008986>
+  a foaf:Document ;
+  rdfs:label "Document voor Akabe- en Gidsenlokaal De Dophei"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008986> .

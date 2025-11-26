@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036402>
+  a org:Organization ;
+  skos:prefLabel "Push Nationals"@nl ;
+  dct:description "platenlabel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036402" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-09-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7eb93588-b8cc-758b-8bef-3c82e5b2542f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036402/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036402/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036402> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036402/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "thomas@pushnationals.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036402/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32474970021" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036402>
+  a foaf:Document ;
+  rdfs:label "Document voor Push Nationals"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036402> .

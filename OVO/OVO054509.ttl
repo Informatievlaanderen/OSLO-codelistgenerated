@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054509>
+  a org:Organization ;
+  skos:prefLabel "FUNDACJA NA RZECZ WSPIERANIA KULTUR ALTERNATYWNYCH I EKOLOGICZNYCH"@nl ;
+  dct:description "De Fundacja Na Rzecz Wspierania Kultur Alternatywnych i Ekologicznych (Stichting ter Ondersteuning van Alternatieve en Ecologische Culturen) omkadert o.a. het DZIECINADA International Festival of Theatre for Children dat wordt georganiseerd in de stad Wroclaw in Polen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054509" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/28db366e-94cc-38a9-b393-f9110ebac1e3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054509/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054509/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054509/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054509/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054509> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054509/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wiktorczyk.wiktoria@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054509/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Wiktoria Wiktorczyk"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054509/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+48531757267" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054509/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://dziecinada.wroclaw.pl/en/home-page/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054509>
+  a foaf:Document ;
+  rdfs:label "Document voor FUNDACJA NA RZECZ WSPIERANIA KULTUR ALTERNATYWNYCH I EKOLOGICZNYCH"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054509> .

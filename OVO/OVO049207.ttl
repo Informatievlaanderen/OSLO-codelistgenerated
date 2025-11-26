@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049207>
+  a org:Organization ;
+  skos:prefLabel "Ranno, Yolanda"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049207" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2009-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/39ff2bc0-3f09-4fab-80f6-6aca3f3a7e2c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049207/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049207/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049207> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049207/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rannoyolanda@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049207/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0484/55.12.27" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049207>
+  a foaf:Document ;
+  rdfs:label "Document voor Ranno, Yolanda"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049207> .

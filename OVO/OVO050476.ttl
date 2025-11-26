@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050476>
+  a org:Organization ;
+  skos:prefLabel "Sociaal verhuurkantoor regio Tielt"@nl ;
+  skos:altLabel "SVK REGIO TIELT"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050476" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1998-12-18"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d8f86850-e7e6-8208-dd72-a94dbed67454> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050476/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050476/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050476/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050476> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050476/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "051 24 29 07" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050476/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.svkregiotielt.be/contacteer-ons> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050476/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rsvk@telenet.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050476>
+  a foaf:Document ;
+  rdfs:label "Document voor Sociaal verhuurkantoor regio Tielt"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050476> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002637>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn Melle"@nl ;
+  skos:altLabel "OCMW Melle"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002637" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1198d3d4-f6e5-4f85-a357-2809636b9541> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002637/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002637/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002637/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002637/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002637> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002637/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 252 33 27" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002637/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 252 58 09" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002637/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@ocmwmelle.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002637/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.ocmwmelle.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002637>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn Melle"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002637> .

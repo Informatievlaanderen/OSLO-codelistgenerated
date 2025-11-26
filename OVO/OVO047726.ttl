@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047726>
+  a org:Organization ;
+  skos:prefLabel "Schrijfresidentie Huis van de Dichter"@nl ;
+  skos:altLabel "SR HVDD"@nl ;
+  dct:description "schrijversresidentie in Watou"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047726" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-11-27"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0461920829" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-11-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4bf11803-072f-4320-4dd4-ad9f9228a6a8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047726/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047726/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047726/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO047726/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047726> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047726/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.huisvandedichter.be/schrijfresidentie/index.html> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047726/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@huisvandedichter.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047726/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "michael@huisvandedichter.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047726/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32495461510" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047726>
+  a foaf:Document ;
+  rdfs:label "Document voor Schrijfresidentie Huis van de Dichter"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047726> .

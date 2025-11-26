@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409>
+  a org:Organization ;
+  skos:prefLabel "Mama's Open Mic"@nl ;
+  skos:altLabel "MOM"@nl ;
+  dct:description "Mama's Open Mic is een platform voor Slam Poetry. Daarnaast is het ook een organisator van 'open mic'-evenementen waar elke artiest kan komen optreden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036409" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-06-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0697793452" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-06-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/18450647-2f69-3d60-2ec6-716bbdda6e1e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036409/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036409/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036409/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036409/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO036409/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036409> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mamasopenmic@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32498305376" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Elisabeth Severino Fernandes"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "elisabeth.severinofernandes@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036409/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/mamas.openmic/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036409>
+  a foaf:Document ;
+  rdfs:label "Document voor Mama's Open Mic"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036409> .

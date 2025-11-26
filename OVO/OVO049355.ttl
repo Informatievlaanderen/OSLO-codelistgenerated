@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049355>
+  a org:Organization ;
+  skos:prefLabel "Staf"@nl ;
+  dct:description "De Staf speelt een centrale rol in de ondersteuning van managementorganen. Daarnaast coördineert het belangrijke beleidsprocessen zoals de opmaak van beleidsnota’s, ondernemingsplannen, begrotingsdocumenten enz. De staf neemt ook ad-hoc opdrachten op zich en verzorgt de voorbereiding van personeelsvergaderingen en informatieve sessies. De staf staat met het team Secretariaat en Logistiek in voor de ondersteuning van de secretaris-generaal en het management (centrale secretariaatsfunctie, ondertekening van formele documenten, postverwerking, logistieke ondersteuning)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049355" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6ce3f874-248b-6e81-802a-9e1c14b4f937> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049355/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049355/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049355/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049355> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049355/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "80"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049355/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretariaat_sg.dkbuza@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049355/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 19 88" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049355>
+  a foaf:Document ;
+  rdfs:label "Document voor Staf"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049355> .

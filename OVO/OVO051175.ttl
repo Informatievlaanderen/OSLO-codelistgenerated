@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051175>
+  a org:Organization ;
+  skos:prefLabel "Erkende Protestantse Gemeente te Sint-Maria-Horebeke (VL - Horebeke)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051175" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1815-01-19"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0211242046" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1815-01-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b1099246-0cb0-415e-a1e5-13d5d46b809f> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051175> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051175>
+  a foaf:Document ;
+  rdfs:label "Document voor Erkende Protestantse Gemeente te Sint-Maria-Horebeke (VL - Horebeke)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051175> .

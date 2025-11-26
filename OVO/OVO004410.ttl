@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004410>
+  a org:Organization ;
+  skos:prefLabel "Basisschool De Grasmus"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004410" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1d7756ba-3f88-27dc-e5b4-d9444fc63312> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004410/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004410> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004410/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bsgo.erasmus@telenet.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004410>
+  a foaf:Document ;
+  rdfs:label "Document voor Basisschool De Grasmus"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004410> .

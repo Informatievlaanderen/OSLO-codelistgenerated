@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028270>
+  a org:Organization ;
+  skos:prefLabel "Mondomio"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028270" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-02-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4ee0efd4-7903-4dc7-9e70-5e6e3acfef3c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028270/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028270/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028270> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028270/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "nena.van.deun@mondomio.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028270/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476270118" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028270>
+  a foaf:Document ;
+  rdfs:label "Document voor Mondomio"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028270> .

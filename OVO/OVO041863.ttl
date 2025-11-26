@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO041863>
+  a org:Organization ;
+  skos:prefLabel "Cel EU-Voorzitterschap"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO041863" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2009-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5c09621d-688a-a83a-eada-1c625c5165be> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO041863> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO041863>
+  a foaf:Document ;
+  rdfs:label "Document voor Cel EU-Voorzitterschap"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO041863> .

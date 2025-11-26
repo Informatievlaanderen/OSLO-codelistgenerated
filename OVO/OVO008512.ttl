@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008512>
+  a org:Organization ;
+  skos:prefLabel "Openbare bibliotheek Kruibeke"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008512" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d850f976-7429-5af8-6cdd-7773d04ce0d0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008512/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008512/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008512> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008512/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bibliotheek@kruibeke.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008512/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 774 36 06" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008512>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare bibliotheek Kruibeke"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008512> .

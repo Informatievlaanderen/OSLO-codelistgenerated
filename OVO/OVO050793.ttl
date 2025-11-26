@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050793>
+  a org:Organization ;
+  skos:prefLabel "Blooshoofd"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050793" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2010-09-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0829021089" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2010-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/47c37a17-fa93-d2ad-beab-2870433ecc3c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050793/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050793/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050793> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050793/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@blooshoofd.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050793/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32477138134" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050793>
+  a foaf:Document ;
+  rdfs:label "Document voor Blooshoofd"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050793> .

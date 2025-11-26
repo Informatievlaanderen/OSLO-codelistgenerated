@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011389>
+  a org:Organization ;
+  skos:prefLabel "Kobenhavns Internationale Teater"@nl ;
+  skos:altLabel "Kobenhavns Internationale Teater"@nl ;
+  dct:description "Kobenhavns Internationale Teater is de drijvende kracht achter internationale, interdisciplinaire podiumkunsten in Denemarken met meer dan 50 internationale festivals, maar ook projecten, workshops, seminars en nog veel meer."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011389" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e80b8de5-7bc2-4849-b1ef-06ef1243c7af> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011389/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011389/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011389/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011389> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011389/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kv@kit.dk" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011389/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+4533151564" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011389/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.metropolis.dk/om-koebenhavns-internationale-teater/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011389>
+  a foaf:Document ;
+  rdfs:label "Document voor Kobenhavns Internationale Teater"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011389> .

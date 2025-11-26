@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870>
+  a org:Organization ;
+  skos:prefLabel "Harmonieorkest Panta Rei Leuven"@nl ;
+  dct:description "Harmonieorkest uit Leuven."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009870" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0474745516" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c6dde13f-0daa-4691-9bca-ac0052911048> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO009870/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009870> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@harmonie-pantarei.net" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0471 54 67 12" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474 67 18 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.harmonie-pantarei.net/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Katrien Levrie"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009870/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "katrien.levrie@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009870>
+  a foaf:Document ;
+  rdfs:label "Document voor Harmonieorkest Panta Rei Leuven"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009870> .

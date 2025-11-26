@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589>
+  a org:Organization ;
+  skos:prefLabel "Thema Expertise Iedereen Verdient Vakantie"@nl ;
+  skos:altLabel "Iedereen Verdient Vakantie"@nl ;
+  dct:description "Werkt aan een betaalbaar vakantieaanbod voor mensen met een laag inkomen of andere drempel - Brengt daarvoor het aanbod van toeristische ondernemers met een sociale visie binnen het bereik van die doelgroep en de sociale organisaties die zich ervoor inzetten"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001589" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2010-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/95cf2582-9314-437b-a593-6f97fa8d2fcf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO001589/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001589> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "http://www.iedereenverdientvakantie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@iedereenverdientvakantie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.vakantieparticipatie.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 504 03 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon infolijn"@nl ;
+  schema:telephone "02 504 03 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001589/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.iedereenverdientvakantie.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001589>
+  a foaf:Document ;
+  rdfs:label "Document voor Thema Expertise Iedereen Verdient Vakantie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001589> .

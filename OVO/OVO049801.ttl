@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049801>
+  a org:Organization ;
+  skos:prefLabel "Sociaal-cultureel en Bovenlokaal"@nl ;
+  dct:description "Het Team Sociaal-cultureel en Bovenlokaal volgt de sociaal-culturele en culturele sectoren beleidsmatig in het algemeen. Het team is in het bijzonder verantwoordelijk voor de uitvoering en evaluatie van het bovenlokale cultuurbeleid en het beleid rond sociaal-cultureel volwassenenwerk, amateurkunsten, het Circusdecreet en de Vlaamse Gebarentaal. Daarnaast volgt dit team – in nauwe samenwerking met het kabinet van de minister van Cultuur – de verdeling van de Lottomiddelen op."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049801" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-10-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/97f772f5-82b0-0c5d-3a48-9eb389c88f1b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049801/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049801/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049801/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049801> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049801/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sociaalcultureel@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049801/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 42 27" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049801/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/cjm> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049801>
+  a foaf:Document ;
+  rdfs:label "Document voor Sociaal-cultureel en Bovenlokaal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049801> .

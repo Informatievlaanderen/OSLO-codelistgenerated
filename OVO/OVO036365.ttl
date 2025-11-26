@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365>
+  a org:Organization ;
+  skos:prefLabel "STEIGER JAZZ vzw"@nl ;
+  dct:description "De vzw STEIGER JAZZ omkadert enkele ensembles van Kobe Boon, namelijk het jazztrio Steiger en het mòs ensemble."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036365" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-08-22"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0704701337" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-08-22"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f0b1969c-ed58-7668-39f2-63af777ed533> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO036365/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036365> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "steigerband@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kobe_boon@msn.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32479846743" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kobe Boon"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://steigermusic.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036365/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://mosensemble.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036365>
+  a foaf:Document ;
+  rdfs:label "Document voor STEIGER JAZZ vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036365> .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049848>
+  a org:Organization ;
+  skos:prefLabel "Diplomatiek Vertegenwoordiger van Vlaanderen bij OESO, UNESCO en Raad van Europa"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049848" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-10-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/178761bb-b462-9e58-b6e0-b0df18b81a86> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049848/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049848/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049848/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049848/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049848> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049848/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "paris@flanders.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049848/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33 156 89 14 31" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049848/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.fdfa.be/nl/diplomatieke-vertegenwoordiging-van-vlaanderen-bij-oeso-unesco-en-raad-van-europa> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049848/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://flandersinfrance.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049848>
+  a foaf:Document ;
+  rdfs:label "Document voor Diplomatiek Vertegenwoordiger van Vlaanderen bij OESO, UNESCO en Raad van Europa"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049848> .

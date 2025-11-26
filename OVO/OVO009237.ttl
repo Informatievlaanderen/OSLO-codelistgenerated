@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009237>
+  a org:Organization ;
+  skos:prefLabel "Galerie Art & Essai / Service Culturel"@nl ;
+  skos:altLabel "Galerie Art & Essai / Service Culturel"@nl ;
+  dct:description "Kunstgalerij in Rennes, Frankrijk."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009237" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a3ebfbfe-ccfc-422f-bf4b-631222fbbceb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009237/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009237/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009237> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009237/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://galerie-art-et-essai.univ-rennes2.fr/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009237/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "galerie-art-essai@univ-rennes2.fr" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009237>
+  a foaf:Document ;
+  rdfs:label "Document voor Galerie Art & Essai / Service Culturel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009237> .

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778>
+  a org:Organization ;
+  skos:prefLabel "a nocte temporis"@nl ;
+  skos:altLabel "a nocte"@nl ;
+  dct:description "A nocte temporis is een muziekensemble dat in 2016 werd opgericht door Reinoud Van Mechelen. Het muziekensemble, dat sindsdien is uitgegroeid tot een barokorkest, brengt muziek uit de barok en de klassieke periode."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008778" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0664715264" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b3d0bc2b-c60e-454b-a771-738364b329ec> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO008778/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008778> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://anoctetemporis.org> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@anoctetemporis.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jonas De Roover"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485309801" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "reinoudvanmechelen@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008778/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "elise@anoctetemporis.org" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008778>
+  a foaf:Document ;
+  rdfs:label "Document voor a nocte temporis"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008778> .

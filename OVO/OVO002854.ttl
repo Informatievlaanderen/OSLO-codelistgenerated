@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002854>
+  a org:Organization ;
+  skos:prefLabel "Samenwerkende Bouwmaatschappij voor goedkope Woningen te Aarschot"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002854" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1922-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e4641709-4ef9-4d0d-86ff-33e3be3019c0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002854> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002854>
+  a foaf:Document ;
+  rdfs:label "Document voor Samenwerkende Bouwmaatschappij voor goedkope Woningen te Aarschot"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002854> .

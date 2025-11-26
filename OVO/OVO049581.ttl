@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581>
+  a org:Organization ;
+  skos:prefLabel "Mellowcat"@nl ;
+  dct:description "De vzw Mellowcat omkadert The Haunted Youth, een band rond Joachim Liebens. De muziek van deze band wordt omschreven als indierock, psychpop en dreampop."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049581" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-01-29"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0762681306" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-01-29"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7996ef5f-308c-0641-4047-fe9ee1485d0b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049581/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049581/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049581/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049581/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO049581/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049581> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32495170475" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@maywayrecords.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Tony Vandenbogaerde"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tony@maywayrecords.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049581/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.thehauntedyouth.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049581>
+  a foaf:Document ;
+  rdfs:label "Document voor Mellowcat"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049581> .

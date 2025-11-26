@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050>
+  a org:Organization ;
+  skos:prefLabel "MCLX"@nl ;
+  dct:description "De vzw MCLX is een onafhankelijke concertpromotor onder leiding van Benjamin Beutels. MCLX diende een subsidieaanvraag in voor de band BLUAI."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013050" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0673563545" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/02fad650-fd07-4f62-8606-226f1265bce5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO013050/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013050> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://mclx.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ben@mclx.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bluai.band/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Patricia Van den Eynden"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32471128971" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013050/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Benjamin Beutels"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013050>
+  a foaf:Document ;
+  rdfs:label "Document voor MCLX"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013050> .

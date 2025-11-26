@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025962>
+  a org:Organization ;
+  skos:prefLabel "BAZZZ"@nl ;
+  dct:description "Bazzz is een jeugdcentrum uit Antwerpen met specifieke aandacht voor de diversiteit van de jeugd in die stad. De organisatie streeft naar zelfontwikkeling van jongeren via diverse activiteiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025962" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0681498640" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/51d467c7-5ec1-4788-a829-206e4795a540> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025962/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025962/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO025962/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO025962/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025962> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025962/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.jcbazzz.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025962/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hello@jcbazzz.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025962/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lamia Cheba"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025962/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lamia@jcbazzz.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025962>
+  a foaf:Document ;
+  rdfs:label "Document voor BAZZZ"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025962> .

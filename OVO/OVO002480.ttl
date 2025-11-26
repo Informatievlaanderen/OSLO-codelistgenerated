@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Herne"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002480" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bbecd1e9-d4bd-46d5-b743-b5ffc0bc7572> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002480/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002480/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002480/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002480/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO002480/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002480> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 397 00 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 396 32 19" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "welzijn@herne.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Patrick Sergooris"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002480/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.herne.be/welzijn> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002480>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Herne"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002480> .

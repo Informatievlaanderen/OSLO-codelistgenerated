@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010050>
+  a org:Organization ;
+  skos:prefLabel "Het Huis van Herman Teirlinck"@nl ;
+  dct:description "De vzw Het Huis van Herman Teirlinck beheert het huis in Beersel waar schrijver Herman Teirlinck ooit woonde. De vzw organiseert diverse literaire en culturele activiteiten in het huis en elders. Het huis wordt ook uitgebouwd als een residentieplek voor schrijvers en andere kunstenaars."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010050" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0680509636" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/77181bdd-13e5-4bbc-b5cb-252e8769f6eb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010050/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010050/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010050/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010050> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010050/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Hugo De Greef"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010050/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hugo.de.greef@hthuis.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010050/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.huisvanhermanteirlinck.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010050>
+  a foaf:Document ;
+  rdfs:label "Document voor Het Huis van Herman Teirlinck"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010050> .

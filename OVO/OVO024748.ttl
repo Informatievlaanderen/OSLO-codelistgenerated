@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748>
+  a org:Organization ;
+  skos:prefLabel "FASO DANSE THEATRE"@nl ;
+  skos:altLabel "FDT"@nl ;
+  dct:description "Faso Danse Théâtre is het dansgezelschap rond de Belgisch/Burkinese choreograaf Serge Aimé Coulibaly."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024748" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0561706808" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a6754625-0b5d-4369-8e89-e486732e631f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO024748/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024748> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@fasodansetheatre.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.fasodansetheatre.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0494 51 26 76" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Liesbet Martens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lies@martens.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32476432387" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024748/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "finance@fasodansetheatre.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024748>
+  a foaf:Document ;
+  rdfs:label "Document voor FASO DANSE THEATRE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024748> .

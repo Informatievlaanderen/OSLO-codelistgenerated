@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637>
+  a org:Organization ;
+  skos:prefLabel "Responsum Arti Facit Raf '95"@nl ;
+  dct:description "De vzw Responsum Arti Facit Raf '95 werd opgericht om het oeuvre van de beeldhouwer en edelsmid Raf Verjans te documenteren, te beheren en blijvend onder de publieke aandacht te houden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051637" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1994-09-08"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0453895464" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1994-09-08"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/930f0535-1def-6867-6270-1f1290a68337> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO051637/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051637> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32495301992" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@responsum.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Nadia Verjans"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "nadjaverjans@icloud.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32494368688" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051637/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://rafverjans.eu/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051637>
+  a foaf:Document ;
+  rdfs:label "Document voor Responsum Arti Facit Raf '95"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051637> .

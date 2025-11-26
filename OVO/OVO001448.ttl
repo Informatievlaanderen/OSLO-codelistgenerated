@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001448>
+  a org:Organization ;
+  skos:prefLabel "Sport Vlaanderen Nieuwpoort"@nl ;
+  skos:altLabel "SV Nieuwpoort"@nl ;
+  dct:description "Nieuwpoort ligt aan de monding van de Ijzer. Het heeft niet enkel op cultureel vlak veel te bieden - in WOI speelde de omgeving een belangrijke rol - maar de badstad is ook dé watersportstad bij uitstek. Watersportliefhebbers kunnen hier letterlijk alle kanten op: de havengeul is de perfecte startplaats om de zee te verkennen, en het spaarbekken biedt een wateroppervlak van 18Ha voor stille watersporten. Wie niet van watersport houdt, vindt in Nieuwpoort talloze wandel- en fietsroutes, tennisterreinen, en natuurlijk het grootste openluchtsportterrein van Vlaanderen: het strand."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001448" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/738edff7-0220-4dec-8e87-99105542dd01> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001448/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001448/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001448/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001448/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001448> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001448/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "nieuwpoort@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001448/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "058 23 58 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001448/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "058 23 69 33" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001448/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.sport.vlaanderen/nieuwpoort> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001448>
+  a foaf:Document ;
+  rdfs:label "Document voor Sport Vlaanderen Nieuwpoort"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001448> .

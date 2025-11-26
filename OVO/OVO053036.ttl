@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053036>
+  a org:Organization ;
+  skos:prefLabel "Blissja"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053036" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-01-19"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1004961966" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-01-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bb918c05-e97e-48f6-a5c9-771ef5e4465c> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053036> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053036>
+  a foaf:Document ;
+  rdfs:label "Document voor Blissja"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053036> .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022175>
+  a org:Organization ;
+  skos:prefLabel "Byron Bay"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022175" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/83faae8b-9d6a-40d8-84cc-cfb809dc036c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022175/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022175/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022175/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022175> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022175/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rene.verstappen@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022175/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 329 41 31" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022175/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0496 49 74 42" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022175>
+  a foaf:Document ;
+  rdfs:label "Document voor Byron Bay"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022175> .

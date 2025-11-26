@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026100>
+  a org:Organization ;
+  skos:prefLabel "De Kleine Loire"@nl ;
+  dct:description "De Kleine Loire vzw zet zich in voor het behoud van zowel het privaat als het publiek erfgoedpatrimonium (kastelen, kerken, kloosters, historische stadscentra ...) in het bekken van de Schelde en zijn bijrivieren."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026100" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d8eaaede-fd51-4667-be64-32944977927f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026100/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026100/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026100> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026100/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "daniel.pletinckx@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026100/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Daniel Pletinckx"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026100>
+  a foaf:Document ;
+  rdfs:label "Document voor De Kleine Loire"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026100> .

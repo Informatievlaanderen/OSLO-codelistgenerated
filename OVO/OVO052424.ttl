@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424>
+  a org:Organization ;
+  skos:prefLabel "Momo"@nl ;
+  dct:description "Momo vzw is de structuur rond de band La Murga Armada. De kernleden zijn Enrique Noviello, Loes Minnebo, Gregory Van Seghbroeck, Ken “Pistache” Pichal, Jan Grouwels, Angel Calvo Peres en Roel Poriau. Een Murga is een hedendaagse straatfanfare die werkt rond muziek, dans, woord en kostuum, en verbonden is met een buurt of omgeving."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052424" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-05-27"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0786595071" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-05-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c37e0297-ce54-6b6d-7cb8-c2076a5b8888> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052424/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052424/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052424/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052424/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052424/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052424> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32478668489" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Gregory Van Seghbroeck"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vzw@momovzw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.lamurgaarmada.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052424/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "gregory.vanseghbroeck@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052424>
+  a foaf:Document ;
+  rdfs:label "Document voor Momo"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052424> .

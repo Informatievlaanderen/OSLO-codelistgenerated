@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244>
+  a org:Organization ;
+  skos:prefLabel "RADAR"@nl ;
+  skos:altLabel "(vroeger: H30 Artistieke Werkplek)"@nl ;
+  dct:description "H30 is samengesmolten met Mechelen Talentenfabriek tot RADAR, hét nieuwe platform dat creatief talent ondersteunt en cultuurprojecten verbindt met kansen in de stad Mechelen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026244" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0a9ad124-f2c8-44db-ac80-4fb5b283136f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO026244/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026244> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "annelien.vandamme@mechelen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 29 80 96" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 29 40 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Annelien Van Damme"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.radarmechelen.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026244/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "radar@mechelen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026244>
+  a foaf:Document ;
+  rdfs:label "Document voor RADAR"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026244> .

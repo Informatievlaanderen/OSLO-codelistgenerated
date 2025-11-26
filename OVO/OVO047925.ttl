@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925>
+  a org:Organization ;
+  skos:prefLabel "VZW TZAL WEL ZIJN"@nl ;
+  skos:altLabel "VZW TZAL WEL ZIJN"@nl ;
+  dct:description "De VZW TZAL WEL ZIJN wil mensen in Sint-Niklaas samenbrengen om hun mentaal welzijn te bevorderen en dit via allerlei culturele activiteiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047925" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-11-10"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0757978289" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-11-10"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1e118571-0941-7a62-ba3f-707722b8de51> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047925/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047925/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047925/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO047925/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO047925/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047925> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Andy Luyckx"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "andy_luyckx@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vzwtzalwelzijn.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vzwtzalwelzijn.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047925/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0456 32 99 71" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047925>
+  a foaf:Document ;
+  rdfs:label "Document voor VZW TZAL WEL ZIJN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047925> .

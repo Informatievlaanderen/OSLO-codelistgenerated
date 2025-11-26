@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020875>
+  a org:Organization ;
+  skos:prefLabel "Programmatie Lokeren Cultureel Centrum EVA"@nl ;
+  skos:altLabel "PROLOCC"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020875" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0448940645" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/748aeed0-8abf-4589-8c62-858b56404c00> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020875/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020875/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020875/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020875> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020875/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "cultureledienst@lokeren.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020875/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 340 50 56" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020875/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 340 50 53" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020875>
+  a foaf:Document ;
+  rdfs:label "Document voor Programmatie Lokeren Cultureel Centrum EVA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020875> .

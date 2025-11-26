@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001109>
+  a org:Organization ;
+  skos:prefLabel "OSD Vlaams-Brabant en Brussel"@nl ;
+  skos:altLabel "OSD VB Bru"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001109" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d0bb3943-db25-4728-9fad-4442560301ef> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001109/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001109/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001109/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001109/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001109> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001109/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 210 63 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001109/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "regiobjb.brabantbrussel@opgroeien.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001109/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 210 63 25" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001109/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "8ste verdieping"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001109>
+  a foaf:Document ;
+  rdfs:label "Document voor OSD Vlaams-Brabant en Brussel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001109> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052870>
+  a org:Organization ;
+  skos:prefLabel "BASOM"@nl ;
+  dct:description "BASOM cv omkadert de artistieke activiteiten van stand-up comedian Mohsin Abbas."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052870" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-01-05"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0795770479" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-01-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b559478c-6b32-4034-8f1a-071579fc54b4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052870/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052870/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052870/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052870/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052870> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052870/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32470044730" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052870/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ben Baeten"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052870/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ben@media-partners.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052870/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.mohsinabbas.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052870>
+  a foaf:Document ;
+  rdfs:label "Document voor BASOM"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052870> .

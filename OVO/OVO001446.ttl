@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001446>
+  a org:Organization ;
+  skos:prefLabel "Sport Vlaanderen Hofstade"@nl ;
+  skos:altLabel "SV Hofstade"@nl ;
+  dct:description "Het centrum van Sport Vlaanderen Hofstade (Zemst) ligt midden in een natuurgebied van 172 hectare en heeft sport- en ontspanningsmogelijkheden voor alle leeftijden en interesses. De sporthal is geschikt voor de meeste indoorsporten, met een volledig uitgeruste gymnastiekhal en een polyvalente spiegelzaal. Voor liefhebbers van outdoorsporten zijn er wandelpaden, loopparcours, mountainbike- en fietsroutes in het natuurgebied. Het domein heeft ook een verlichte Finse looppiste met Fit-O-Meter, een boogschietstand, een omnisportterrein, een polyvalent grasveld, een BMX-piste, een klimmuur en een speeltuin voor de kleinsten. Sinds 2014 heeft Hofstade ook een hoogtouwenparcours met 69 klimelementen verspreid over 5 uitdagende routes. Het hoogtouwenparcours is geschikt voor iedereen vanaf 8 jaar en 1m40 groot met de armen omhoog. Kinderen onder 12 moeten vergezeld worden door een ouder. In de zomer wordt de strandzone op het domein omgetoverd tot bewaakte zwemzone. Een deel van het wateroppervlak wordt gebruikt voor watersporten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001446" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/38693bfe-2d05-426f-88c4-462ba5875b58> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001446/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001446/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001446/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001446/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001446> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001446/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hofstade@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001446/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 61 83 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001446/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.sport.vlaanderen/hofstade/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001446/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "015 61 78 94" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001446>
+  a foaf:Document ;
+  rdfs:label "Document voor Sport Vlaanderen Hofstade"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001446> .

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018781>
+  a org:Organization ;
+  skos:prefLabel "Whitechapel Art Gallery"@nl ;
+  skos:altLabel "Whitechapel Art Gallery"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018781" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f5286125-0b3b-4c14-a017-1f1011729c3e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018781/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018781/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018781/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018781> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018781/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@whitechapelgallery.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018781/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+44 20 7522 7888" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018781/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+44 20 7377 1635" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018781>
+  a foaf:Document ;
+  rdfs:label "Document voor Whitechapel Art Gallery"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018781> .

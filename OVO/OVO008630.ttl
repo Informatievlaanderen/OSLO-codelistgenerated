@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008630>
+  a org:Organization ;
+  skos:prefLabel "Team IT"@nl ;
+  skos:altLabel "IT"@nl ;
+  dct:description "TAKEN: Uitrusting van de Werkplek • IT Bestellingen • Toegangsbeheer • Licentiebeheer • IT-inventaris • Vorderingsstaten • Opvolgen IT fora VO • Interne helpdesk (30700) • Relatie HFB, HBplus Faciliteren van het digitaal delen van content • Technisch beheer & configuratie SharePoint (DMS – 600 GB Docs) • Technisch beheer websites (# 26 ) • Technisch beheer intranet • KAVO-tool / Iedereen kan zetelen / Topstukken • Webtoegankelijkheid • Webstatistics Ontwikkeling en onderhoud Elektronisch Dossierbeheer van A tot Z • Ontwikkeling en onderhoud KIOSK (online indienen en opvolgen van aanvragen) • Ontwikkeling en onderhoud OLIAD (online adviezen) • Beheer dossierbeheersysteem (AXI Casemanagement) • Beheer klantenbeheerapplicatie • Voorzien van integraties met de VO-bouwstenen (Geautomatiseerd) verzamelen / verwerken van data • Analyse, ontwikkeling en onderhoud van Java-applicaties • Registratie-applicaties (BIOS, CCINC, Sisca, Vrijetijdsmonitoring) • ULDK (online aanvragen tentenmateriaal) Ontwikkeling en onderhoud datawarehouse en rapportering • Analyse bronsystemen, brondata vertalen naar DWH-structuur, rapporten ontwerpen voor: o dossierbeheer o klantenbeheer o beleidsinformatie (oa. cultuurcentra, bibliotheken, bibliotheken Sociaal-Cultureel Werk, amateurkunsten) • Opvolging VO-rapporteringswerkgroepen Ter beschikking stellen van servercapaciteit (30 virtuele servers) • Patching • Security • Schaalbaar maken Coördineren en faciliteren • Planning • Budgettering • Leveranciersrelaties • VO-relatiesbeheer • Projectopvolging • Facturatie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008630" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c44b5780-7933-87dc-8185-93c6652612ce> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008630/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008630/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008630/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008630> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008630/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 07 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008630/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ithelp.cjm@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008630/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "informatiebeheer.cjm@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008630>
+  a foaf:Document ;
+  rdfs:label "Document voor Team IT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008630> .

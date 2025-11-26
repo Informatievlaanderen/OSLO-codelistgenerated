@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO030723>
+  a org:Organization ;
+  skos:prefLabel "Kerkfabriek Sint-Jozef en Sint-Christoffel te Assebroek (VL - Brugge)"@nl ;
+  dct:description "Bij besluit van 23 februari 2023 van de Vlaamse minister van Binnenlands Bestuur, Bestuurszaken, Inburgering en Gelijke Kansen wordt de samenvoeging van de parochie Sint-Jozef en Sint-Christoffel te Assebroek (Brugge) met de te behouden parochie O.L.Vrouw ten Hemel Opgenomen te Assebroek (Brugge), erkend."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO030723" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c6d01ca2-f508-4b5f-bf70-ac4da13d6a4e> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO030723> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO030723>
+  a foaf:Document ;
+  rdfs:label "Document voor Kerkfabriek Sint-Jozef en Sint-Christoffel te Assebroek (VL - Brugge)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO030723> .

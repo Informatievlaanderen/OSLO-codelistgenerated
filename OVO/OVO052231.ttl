@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231>
+  a org:Organization ;
+  skos:prefLabel "SPOOR 56"@nl ;
+  dct:description "De vzw Spoor 56 is een organisatie voor bijzondere jeugdzorg. De opdracht van Spoor 56 is het aanbieden van ondersteuning en begeleiden van kinderen/jongeren en hun gezinnen waar er een verontrustende opvoedingssituatie aanwezig is."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052231" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1980-04-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0420851326" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1980-04-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f61ae43e-bfc2-46c0-998e-05ca05d4ae90> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO052231/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052231> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "karolien.vandesteene@spoor56.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3252472564" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://spoor56.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Erica Apers"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "erica.apers@spoor56.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Karolien Van de Steene"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052231/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232922559" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052231>
+  a foaf:Document ;
+  rdfs:label "Document voor SPOOR 56"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052231> .

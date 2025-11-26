@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792>
+  a org:Organization ;
+  skos:prefLabel "Krapp"@nl ;
+  skos:altLabel "Krapp"@nl ;
+  dct:description "Krapp is het theatercollectief van Mats Vandroogenbroeck, Nona Demey Gallagher en Timo Sterckx. Krapp gaat op zoek naar barokke botsingen tussen feit en fictie, wetenschap en onzin, geschiedenis en groteske fantasie."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038792" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0746386591" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f6ac445e-bff4-3511-e27a-4c2094b75383> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038792/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038792/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038792/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038792/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO038792/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038792> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Mats Vandroogenbroeck"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "krappkollektief@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mats.vandroogenbroeck1@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0471 38 02 02" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038792/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://krapp.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038792>
+  a foaf:Document ;
+  rdfs:label "Document voor Krapp"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038792> .

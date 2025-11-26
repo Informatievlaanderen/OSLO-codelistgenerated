@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010505>
+  a org:Organization ;
+  skos:prefLabel "Institute Of Modern Art"@nl ;
+  skos:altLabel "Institute Of Modern Art"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010505" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1e51279f-8924-4ecb-93d0-ed2705586613> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010505/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010505/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010505> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010505/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "directors@ima.org.au" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010505/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "61 7 3252 5750" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010505>
+  a foaf:Document ;
+  rdfs:label "Document voor Institute Of Modern Art"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010505> .

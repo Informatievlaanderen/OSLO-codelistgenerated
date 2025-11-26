@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050446>
+  a org:Organization ;
+  skos:prefLabel "Me Yé"@nl ;
+  skos:altLabel "MY"@nl ;
+  dct:description "Me Yé vzw is een vereniging die semiprofessionele artiesten en amateurkunstenaars begeleidt en ondersteunt in zowel het scheppingsproces als het uitvoeringsproces van hun projecten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050446" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0777732043" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dce446ae-6d00-7405-c203-fb14ff97e8e8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050446/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050446/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050446/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050446> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050446/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kundebeats@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050446/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32474063003" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050446/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Joram Boumkwo"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050446>
+  a foaf:Document ;
+  rdfs:label "Document voor Me Yé"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050446> .

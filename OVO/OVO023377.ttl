@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377>
+  a org:Organization ;
+  skos:prefLabel "de Batterie"@nl ;
+  dct:description "De Batterie is een participatieve kunstpraktijk die langdurige artistieke projecten ontwikkelt in Vlaanderen en Brussel. Kinderen, jongeren en volwassenen uit verschillende leefwerelden en culturen werken hierbij samen met professionele kunstenaars."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO023377" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0838496704" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/577304e2-0e5f-4ab4-a909-044b31e033a6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO023377/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO023377/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO023377/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO023377/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO023377/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO023377> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "anne@debatterie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.debatterie.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Katrien Decoster"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "katrien@debatterie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023377/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0494 24 01 57" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO023377>
+  a foaf:Document ;
+  rdfs:label "Document voor de Batterie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO023377> .

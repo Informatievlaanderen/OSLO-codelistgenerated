@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017963>
+  a org:Organization ;
+  skos:prefLabel "VERGOTE SMEETS MOULINASSE, AVOCATS-ADVOCATEN"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017963" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/70b5db34-0a2d-4399-ba45-5588ee34fcd5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017963/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017963/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017963/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017963> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017963/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vsm-law.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017963/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025 36 00 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017963/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025 36 00 01" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017963>
+  a foaf:Document ;
+  rdfs:label "Document voor VERGOTE SMEETS MOULINASSE, AVOCATS-ADVOCATEN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017963> .

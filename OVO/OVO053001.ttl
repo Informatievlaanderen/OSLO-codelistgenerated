@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001>
+  a org:Organization ;
+  skos:prefLabel "ZandZand."@nl ;
+  dct:description "ZandZand. is de vzw achter Studio Sandy. Studio Sandy ontwikkelt audiovisuele creaties die maatschappelijke dynamieken capteren. De creaties komen tot stand door een interactie tussen professionelen uit de filmwereld en daarbuiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053001" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-02-10"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0648681560" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2016-02-10"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/52f03b5d-4375-48d3-8c05-197d621b5f0f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO053001/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053001> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://studiosandy.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Daan Borloo"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "daan.borloo@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0478 65 53 43" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "phelinethierens@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Phéline Thierens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@studiosandy.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053001/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32478655343" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053001>
+  a foaf:Document ;
+  rdfs:label "Document voor ZandZand."@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053001> .

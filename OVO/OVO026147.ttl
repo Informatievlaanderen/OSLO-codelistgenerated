@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147>
+  a org:Organization ;
+  skos:prefLabel "Dublin Theatre Festival"@nl ;
+  skos:altLabel "Dublin Theatre Festival"@nl ;
+  dct:description "Het Dublin Theatre Festival is het oudste gespecialiseerde theaterfestival van Europa. Het festival heeft een dubbele rol. Enerzijds is het een venster op het wereldtoneel, waarbij het internationale theaterproducties presenteert in Dublin, en anderzijds is het een voorvechter van de Ierse theaterproducties op het wereldtoneel."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026147" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7bf2bbfa-1f93-42f4-a1e6-6295189fc0ca> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026147/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026147/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026147/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026147/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026147/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026147> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+35316730621" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "fiona@dublintheatrefestival.ie" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://dublintheatrefestival.ie/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "gracebyrne@dublintheatrefestival.ie" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026147/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@dublintheatrefestival.ie" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026147>
+  a foaf:Document ;
+  rdfs:label "Document voor Dublin Theatre Festival"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026147> .

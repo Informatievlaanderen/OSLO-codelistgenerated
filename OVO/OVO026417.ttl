@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026417>
+  a org:Organization ;
+  skos:prefLabel "Koninklijke Harmonie Sint-Cecilia Bassevelde"@nl ;
+  skos:altLabel "K.H.St-Cecilia Bassevelde"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026417" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ae2ca3b0-45cf-4c56-b314-90e0c58434c2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026417/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026417> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026417/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "cecile_degraeve@hotmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026417>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijke Harmonie Sint-Cecilia Bassevelde"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026417> .

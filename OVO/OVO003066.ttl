@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003066>
+  a org:Organization ;
+  skos:prefLabel "Koninklijk Vlaams Muziekconservatorium van Antwerpen"@nl ;
+  dct:description "Het Koninklijk Conservatorium Antwerpen is een School of Arts van de AP Hogeschool Antwerpen, die ontstaan is uit een fusie tussen Artesis Hogeschool Antwerpen en Plantijn Hogeschool."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003066" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1932-07-02"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ccb88b9b-0c49-4b89-8fa3-a50ee57529c4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003066/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003066/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003066/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003066> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003066/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.ap-arts.be/koninklijk-conservatorium-antwerpen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003066/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 3 244 18 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003066/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "conservatorium@ap.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003066>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijk Vlaams Muziekconservatorium van Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003066> .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772>
+  a org:Organization ;
+  skos:prefLabel "Monokino"@nl ;
+  skos:altLabel "MK"@nl ;
+  dct:description "Monokino is een nomadisch filmplatform. Het heeft als doel cinema en andere uitingen van audiovisuele kunst te tonen, te verspreiden, te promoten en te produceren, en daarover te reflecteren en communiceren."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038772" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-02-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0693971256" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-02-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cd431e0d-29a2-0307-ce81-25ef73e6dd4c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038772/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038772/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038772/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038772/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO038772/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038772> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Godart Bakkers"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bakkers.godart@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://monokino.org/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32471498874" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038772/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@monokino.org" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038772>
+  a foaf:Document ;
+  rdfs:label "Document voor Monokino"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038772> .

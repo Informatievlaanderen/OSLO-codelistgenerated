@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096>
+  a org:Organization ;
+  skos:prefLabel "Departement Mobiliteit en Openbare Werken"@nl ;
+  skos:altLabel "DMOW"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000096" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6c90966d-f9b9-48aa-8d1d-d2dde3457d96> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO000096/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000096> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://mow.vonet.be/nlapps/docs/default.asp?fid=2"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 71 05" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "https://mow-contact.be/" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 71 02" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "2"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000096/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://mow-contact.vlaanderen.be"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000096>
+  a foaf:Document ;
+  rdfs:label "Document voor Departement Mobiliteit en Openbare Werken"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000096> .

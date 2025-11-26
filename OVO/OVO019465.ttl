@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465>
+  a org:Organization ;
+  skos:prefLabel "Brussels Jazz Orchestra"@nl ;
+  dct:description "Brussels Jazz Orchestra is een professioneel Belgisch jazzorkest met big band bezetting."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019465" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0457650750" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/add1ef8d-107f-457a-a374-8a5b53a220f0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/7>, <https://data.vlaanderen.be/id/organisatie/OVO019465/contact/8> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019465> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@brusselsjazzorchestra.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 28 91 93" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "015 55 91 37" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.brusselsjazzorchestra.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "management@brusselsjazzorchestra.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Thadeus Jolie"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "thadeus@brusselsjazzorchestra.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32 468 26 88 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019465/contact/8>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32468268891" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019465>
+  a foaf:Document ;
+  rdfs:label "Document voor Brussels Jazz Orchestra"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019465> .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Toezicht"@nl ;
+  skos:altLabel "Toezicht"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002979" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5d62c8f4-3c8c-47f6-8c51-5b30c0331459> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002979/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002979/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002979/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002979/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO002979/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002979> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon infolijn"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "toezicht.wonen@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "22"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 22 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002979/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/agentschap-wonen-vlaanderen/toezicht> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002979>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Toezicht"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002979> .

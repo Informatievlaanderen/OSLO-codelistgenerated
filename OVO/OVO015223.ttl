@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223>
+  a org:Organization ;
+  skos:prefLabel "Q'Onda ?"@nl ;
+  dct:description "Q’onda? vzw is een muziekorganisatie die optreedt als manager-programmator-promotor voor muzikanten en ensembles in de niche van geïmproviseerde muziek en jazz met veeleer een experimenteel karakter. De begeleiding van muzikanten gebeurt vanuit de entiteit met de naam The Negocito. Daarnaast zijn er het label el NEGOCITO Records en festival- en concertorganisator Citadelic."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015223" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0882678917" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dcd4f0b4-9d7e-4ddb-b940-87d38bd64ba9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015223/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015223/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO015223/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO015223/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO015223/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015223> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0479 56 73 95" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.elnegocitorecords.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@citadelic.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Pascal Verstraete"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015223/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@elnegocitorecords.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015223>
+  a foaf:Document ;
+  rdfs:label "Document voor Q'Onda ?"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015223> .

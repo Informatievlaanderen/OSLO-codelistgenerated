@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846>
+  a org:Organization ;
+  skos:prefLabel "Zonnebloemblaadjes"@nl ;
+  dct:description "De vzw Zonnebloemblaadjes is een vereniging die zich inzet voor de integratie van kinderen en jongeren met een handicap. Dit gebeurt door de organisatie van een zomerkamp."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047846" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1995-04-25"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0456037085" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1995-04-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/823966a1-17e3-9f43-c979-e67ce5754aad> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO047846/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047846> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jprosseel@skynet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jean-Pierre Rosseel"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://zonnebloemblaadjes.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@zonnebloemblaadjes.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056 51 66 16" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047846/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0471 11 12 79" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047846>
+  a foaf:Document ;
+  rdfs:label "Document voor Zonnebloemblaadjes"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047846> .

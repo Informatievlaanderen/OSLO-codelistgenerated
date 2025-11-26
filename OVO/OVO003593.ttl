@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593>
+  a org:Organization ;
+  skos:prefLabel "ZUIDWEST"@nl ;
+  skos:altLabel "OVERLEG CULTUUR"@nl ;
+  dct:description "De projectvereniging ZUIDWEST is het cultuur- en erfgoedplatform van de steden en gemeenten in Zuid-West-Vlaanderen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003593" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0479946991" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/10b0289b-c64c-2cb7-6fc2-29475b9b87d0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003593/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003593> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056 24 16 16" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@zuidwest.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.zuidwest.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Triene Vandenbussche"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "triene@zuidwest.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003593/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476018874" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003593>
+  a foaf:Document ;
+  rdfs:label "Document voor ZUIDWEST"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003593> .

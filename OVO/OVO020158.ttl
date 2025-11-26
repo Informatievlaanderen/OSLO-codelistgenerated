@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158>
+  a org:Organization ;
+  skos:prefLabel "de Nieuwe opdrachtgevers"@nl ;
+  skos:altLabel "DNO"@nl ;
+  dct:description "De vzw De Nieuwe Opdrachtgevers bemiddelt tussen kunstenaars en opdrachtgevers voor het maken van nieuwe beeldende kunstwerken."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020158" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0473063060" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/be68a371-cb68-4a3f-9478-769c26ba70b3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020158/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020158> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.denieuweopdrachtgevers.be/nl/13/contact> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3224509215" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "astrid@denieuweopdrachtgevers.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@denieuweopdrachtgevers.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Astrid Goubert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020158/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "christel@denieuweopdrachtgevers.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020158>
+  a foaf:Document ;
+  rdfs:label "Document voor de Nieuwe opdrachtgevers"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020158> .

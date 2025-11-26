@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028533>
+  a org:Organization ;
+  skos:prefLabel "Bizar-Blues"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028533" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1989-08-03"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0439546986" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1989-08-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/af1d1d3b-ee3c-4472-8bd9-10871e133044> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028533/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028533> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028533/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jan.ieven41@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028533>
+  a foaf:Document ;
+  rdfs:label "Document voor Bizar-Blues"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028533> .

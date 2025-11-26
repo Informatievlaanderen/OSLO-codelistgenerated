@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052218>
+  a org:Organization ;
+  skos:prefLabel "AG2B"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052218" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-04-18"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0801578801" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-04-18"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/689b1657-2c87-f31a-2275-d60b0a7dff23> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052218/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052218/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052218/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052218> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052218/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.berlaar.be/autonoom-gemeentebedrijf> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052218/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 410 19 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052218/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@berlaar.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052218>
+  a foaf:Document ;
+  rdfs:label "Document voor AG2B"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052218> .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016527>
+  a org:Organization ;
+  skos:prefLabel "STANDBEELD"@nl ;
+  dct:description "Standbeeld is de vzw rond de groep Statue. Statue is een zeskoppige instrumentale postrockband met invloeden uit krautrock en psychedelica."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016527" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0544680635" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cb1078a7-5099-48af-b6da-aca154c6837e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO016527/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO016527/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016527> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016527/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lennart.janssen1988@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016527/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/Statuemusic/?locale=nl_BE"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016527>
+  a foaf:Document ;
+  rdfs:label "Document voor STANDBEELD"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016527> .

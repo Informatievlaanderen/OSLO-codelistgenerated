@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000268>
+  a org:Organization ;
+  skos:prefLabel "Proces Optimalisatie En Maximale Automatisering"@nl ;
+  skos:altLabel "POEMA"@nl ;
+  dct:description "De afdeling Procesoptimalisatie en Maximale Automatisering (POEMA) zorgt voor een veilig en optimaal gebruik van de informaticamiddelen opdat er intens en veilig contact zou zijn met alle belanghebbenden. Als ondersteunende afdeling staat de afdeling in voor de maximale ondersteuning van de processen, gaande van het uittekenen ervan, over het automatiseren naar het opvolgen en beheersen van de processen. *** De afdeling POEMA bestaat uit vijf diensten: 1) Stafdienst ICT: a) Helpdesk: staat in voor de ondersteuning voor de medewerkers van het beleidsdomein Financiën en Begroting (FB) inzake informatica & logistiek. b) Netwerk en security: zorgt voor een veilige toegang en omgeving voor al onze toepassingen en bedrijfsapplicaties. 2) Dienst Systemen staat in voor het volledige beheer van de twee computercentra buiten de gebouwgebonden infrastructuur en de bijhorende inventarisatie. 3) Dienst Applicaties en Procesondersteuning is verantwoordelijk voor de analyse en ontwikkeling van nieuwe toepassingen en websites voor het beleidsdomein FB. 4) Dienst Technische Exploitatie Datacenter engageert zich voor de ontwikkeling van een data lake voor de organisatie. 5) Dienst Interne Automatisering zet zich in op het gebied van kantoorautomatisering en facility."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000268" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7a56312a-b317-4d9d-8a3e-cb8179a25124> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000268/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000268/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000268/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000268> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000268/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 430 84 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000268/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "61"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000268/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "helpdesk.ict@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000268>
+  a foaf:Document ;
+  rdfs:label "Document voor Proces Optimalisatie En Maximale Automatisering"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000268> .

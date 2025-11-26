@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013811>
+  a org:Organization ;
+  skos:prefLabel "GLoW Collective"@nl ;
+  dct:description "De vzw GLoW Collective omkadert het gelijknamige ensemble dat is ontstaan vanuit een samensmelting van het kamermuziekensemble Odysseia en Trio Lambda."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013811" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0835447142" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/80df0856-27dd-447f-9256-73e7132b9447> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013811/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013811/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013811/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013811/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013811> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013811/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 40 47 16" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013811/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Katrien Gaelens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013811/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "katrien.gaelens@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013811/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.glowcollective.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013811>
+  a foaf:Document ;
+  rdfs:label "Document voor GLoW Collective"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013811> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054385>
+  a org:Organization ;
+  skos:prefLabel "Verbroederingscommissie Evergem-Grossenkneten"@nl ;
+  dct:description "De Verbroederingscommissie Evergem-Grossenkneten heeft de opdracht om acties te organiseren in het kader van de Europese stedenband tussen Evergem en de Duitse gemeente Grossenkneten en ontmoetingen tussen burgers van Evergem en Gossenkneten te bevorderen, ondersteunen en ontwikkelen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054385" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2005-12-15"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0878040634" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2005-12-15"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/963b84d3-fa9a-4636-af4f-aa98113d7ddd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054385/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054385/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054385/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054385/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054385> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054385/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pietlol@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054385/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ronald Snauwaert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054385/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 9 357 57 07" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054385/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32468267567" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054385>
+  a foaf:Document ;
+  rdfs:label "Document voor Verbroederingscommissie Evergem-Grossenkneten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054385> .

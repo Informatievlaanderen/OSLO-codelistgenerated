@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140>
+  a org:Organization ;
+  skos:prefLabel "Doek"@nl ;
+  dct:description "DOEK werd in 2012 opgericht door kostuumontwerper, kunstenaar en social designer Lies Van Assche. De organisatie noemt zichzelf een artistiek textielplatform dat textiel inzet als middel en onderwerp voor maatschappelijke verandering. Ze biedt residenties aan ontwerpers, kunstenaars, ambachtslui, makers en onderzoekers en stelt ateliers en machines ter beschikking."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024140" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0501855333" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ef1de7b0-7fea-41e3-8a05-e9df114acf34> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO024140/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024140> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32477931865" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lies@doek-vzw.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://doek-vzw.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "liesvanassche70@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Liesbet 'Lies' Van Assche"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024140/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@doek-vzw.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024140>
+  a foaf:Document ;
+  rdfs:label "Document voor Doek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024140> .

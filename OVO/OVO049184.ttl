@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049184>
+  a org:Organization ;
+  skos:prefLabel "Strategie- en Beleidsondersteuning"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049184" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ceb57d8e-2228-3a77-bee5-d65f03447e18> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049184> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049184>
+  a foaf:Document ;
+  rdfs:label "Document voor Strategie- en Beleidsondersteuning"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049184> .

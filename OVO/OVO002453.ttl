@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002453>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Vorming"@nl ;
+  skos:altLabel "Afdeling Vorming"@nl ;
+  dct:description "De afdeling Vorming van het Agentschap Integratie en Inburgering staat onder andere in voor: de inhoud en de organisatie van de cursus Maatschappelijke Oriëntatie; de ontwikkeling van producten en diensten; het leren en ontwikkelen van medewerkers."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002453" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/107417e5-564e-4c21-a386-6e168a767d79> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002453/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002453> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002453/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "212"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002453>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Vorming"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002453> .

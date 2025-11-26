@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049800>
+  a org:Organization ;
+  skos:prefLabel "Jeugd"@nl ;
+  dct:description "Het team Jeugd staat in voor de coördinatie van de cyclus van het Vlaamse jeugd- en kinderrechtenbeleid, en voor de coördinatie van de beleidscyclus voor de jeugd(werk)sector. De voorbereiding, uitvoering en evaluatie van het Vlaamse jeugd- en kinderrechtenbeleid houdt verband met alle beleid met impact op de levens van kinderen en jongeren tot en met dertig jaar. De rechten van kinderen gelden hier als het ethisch en wettelijk kader. De coördinatie van de beleidscyclus voor de jeugd(werk)sector heeft betrekking op de erkenning en subsidiëring van het (sociaal-cultureel) jeugdwerk op het Vlaamse en het bovenlokale niveau, en op hostels en jeugdverblijven in de sector van het jeugdtoerisme. Bovendien staat dit team in voor het aansturen en evalueren van sectorale bovenbouworganisaties, het attesteren van kadervorming, en de vertegenwoordiging van het departement op relevante internationale sectorale fora. Het team zorgt eveneens voor de aansturing van Europese jeugdprogramma’s waarbij het departement optreedt op nationaal niveau."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049800" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-10-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a82ac496-52d7-5dd5-f903-4372ab7a62ba> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049800/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049800/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049800/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049800> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049800/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jeugd@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049800/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/jeugd> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049800/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 06 30" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049800>
+  a foaf:Document ;
+  rdfs:label "Document voor Jeugd"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049800> .

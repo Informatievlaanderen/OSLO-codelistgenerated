@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018219>
+  a org:Organization ;
+  skos:prefLabel "Taekwondo Vlaanderen"@nl ;
+  skos:altLabel "TKVD"@nl ;
+  dct:description "Taekwondo Vlaanderen promoot taekwondo als krijgskunst en olympische discipline. Het is de koepelorganisatie die taekwondoclubs en hun leden ondersteunt met een kwaliteitsvol aanbod met als doel een levenslange beoefening van deze krijgskunst."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018219" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0425982329" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8d5e9f76-d597-4f09-b85b-d9d8ab3cbaef> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018219/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018219/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018219/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018219> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018219/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.taekwondo.be/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018219/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "administratie@taekwondo.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018219/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 87 09 18" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018219>
+  a foaf:Document ;
+  rdfs:label "Document voor Taekwondo Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018219> .

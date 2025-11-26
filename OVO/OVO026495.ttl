@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026495>
+  a org:Organization ;
+  skos:prefLabel "Les Presses Du Réel"@nl ;
+  skos:altLabel "Les Presses Du Réel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026495" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/687a03f2-23ec-4e49-83ca-0965851ae091> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026495> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026495>
+  a foaf:Document ;
+  rdfs:label "Document voor Les Presses Du Réel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026495> .

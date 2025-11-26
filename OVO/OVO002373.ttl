@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002373>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Wommelgem"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002373" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0212185025" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5e3f3a2a-8028-4ea9-85bc-04236f6a0165> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002373/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002373/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002373/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002373/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002373> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002373/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 355 50 50" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002373/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.wommelgem.be/ocmw> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002373/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sociale.dienst@wommelgem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002373/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 353 12 53" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002373>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Wommelgem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002373> .

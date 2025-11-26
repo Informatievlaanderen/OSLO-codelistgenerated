@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015505>
+  a org:Organization ;
+  skos:prefLabel "Röda Sten Kulturförening"@nl ;
+  skos:altLabel "Röda Sten Kulturförening"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015505" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/47bf3c75-bef5-46c1-ad92-b12443eac93c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015505/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015505> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015505/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ioana.leca@gibca.se" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015505>
+  a foaf:Document ;
+  rdfs:label "Document voor Röda Sten Kulturförening"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015505> .

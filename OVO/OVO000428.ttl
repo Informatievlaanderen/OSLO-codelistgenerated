@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000428>
+  a org:Organization ;
+  skos:prefLabel "Decentrale dienst Limburg"@nl ;
+  skos:altLabel "Limburg"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000428" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9663afcc-a11e-4779-99d2-cabce03275ac> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000428/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000428/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000428/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000428> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000428/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vorming.limburg@syntravlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000428/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "011233584" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000428/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011301140" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000428>
+  a foaf:Document ;
+  rdfs:label "Document voor Decentrale dienst Limburg"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000428> .

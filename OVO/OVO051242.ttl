@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051242>
+  a org:Organization ;
+  skos:prefLabel "Pollier, Chantal"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051242" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2000-08-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0589817210" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2000-08-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ebe73504-65a0-a246-4d98-399e279ece99> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051242/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051242/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051242> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051242/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "chantal.pollier@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051242/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0473/507537" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051242>
+  a foaf:Document ;
+  rdfs:label "Document voor Pollier, Chantal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051242> .

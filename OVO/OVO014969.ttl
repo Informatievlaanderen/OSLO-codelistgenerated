@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969>
+  a org:Organization ;
+  skos:prefLabel "Pol & Freddie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014969" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0884879629" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3a97ef35-db5a-4023-bfd3-a93f29c11f36> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014969/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014969/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014969/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014969/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014969/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014969> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0487 54 48 69" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bramdodobbie@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0498 109993" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32498109993" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014969/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sanderednas@hotmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014969>
+  a foaf:Document ;
+  rdfs:label "Document voor Pol & Freddie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014969> .

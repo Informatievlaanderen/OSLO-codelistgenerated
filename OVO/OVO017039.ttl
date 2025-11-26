@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017039>
+  a org:Organization ;
+  skos:prefLabel "Texture"@nl ;
+  skos:altLabel "Texture"@nl ;
+  dct:description "Texture is een museum in Kortrijk dat de evolutie van de teelt van vlas, alsook de bewerking en de verwerking tot linnen weefsel vertelt, gekoppeld aan de ontwikkeling van de Leievallei in en rond Kortrijk."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017039" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b4745c04-c260-449f-b389-8aedcb2f40b5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017039/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017039/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017039/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO017039/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017039> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017039/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "texture@kortrijk.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017039/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3256277780" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017039/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.texturekortrijk.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017039/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 56 27 74 70" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017039>
+  a foaf:Document ;
+  rdfs:label "Document voor Texture"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017039> .

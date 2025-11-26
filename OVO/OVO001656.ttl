@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001656>
+  a org:Organization ;
+  skos:prefLabel "Dienst Onderzoek en Verificatie"@nl ;
+  skos:altLabel "Dienst Onderzoek en Verificatie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001656" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ee7e697d-b33f-43e7-aa2e-15d4f66e1c3b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001656/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001656> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001656/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 08 88" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001656>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst Onderzoek en Verificatie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001656> .

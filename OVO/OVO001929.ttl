@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929>
+  a org:Organization ;
+  skos:prefLabel "Dienstencentrum Personeelsadministratie"@nl ;
+  skos:altLabel "Dienstencentrum Personeelsadministratie"@nl ;
+  dct:description "De afdeling Dienstencentrum Personeelsadministratie staat in voor de administratieve verwerking van en adviesverlening rond de personeels- en loonadministratie en levert de eerstelijnsdienstverlening voor zowel entiteiten als klanten. De afdeling beheert de personeelsdossiers van de kabinetten van de Vlaamse Regering en voert het statuut van de Vlaamse ministers uit. In het kader van de voormelde taak biedt het administratieve ondersteuning en interne dienstverlening aan de kabinetten van de leden van de Vlaamse Regering."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001929" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/73999b66-c92f-422e-b345-6ef3c4bb3a18> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001929/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001929/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001929/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001929/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO001929/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001929> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://intranet.vonet.be/dienstencentrum-personeelsadministratie"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 60 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://overheid.vlaanderen.be/dienstencentrum-personeelsadministratie> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "http://vlimpers.vlaanderen.be"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001929/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "38"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001929>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienstencentrum Personeelsadministratie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001929> .

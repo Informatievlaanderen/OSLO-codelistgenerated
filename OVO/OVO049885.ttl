@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049885>
+  a org:Organization ;
+  skos:prefLabel "Train World"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049885" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-06-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8649abda-4efd-fbc9-bc59-78564d7214c1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049885/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049885/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049885> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049885/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kris.vlaeminck@belgiantrain.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049885/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32490664504" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049885>
+  a foaf:Document ;
+  rdfs:label "Document voor Train World"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049885> .

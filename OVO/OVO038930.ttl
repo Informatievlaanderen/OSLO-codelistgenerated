@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930>
+  a org:Organization ;
+  skos:prefLabel "Messidor"@nl ;
+  dct:description "De vzw Messidor omkadert de artistieke activiteiten van de audiovisuele kunstenaars Meggy Rustamova, Pieter Geenen, Eitan Efrat en Sirah Foighel Brutmann."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038930" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-11-07"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0712914366" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-11-07"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2e80d992-d4f9-38f8-8a6a-ff60749e0437> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO038930/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038930> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Pieter Geenen"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.messidorgroup.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@messidorgroup.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pietergeenen@silenceisgolden.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sirah@tilfar.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038930/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32485761833" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038930>
+  a foaf:Document ;
+  rdfs:label "Document voor Messidor"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038930> .

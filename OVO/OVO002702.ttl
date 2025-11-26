@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002702>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Hoeselt"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002702" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/19cd61c9-e70c-4691-8b07-4ea256b01d63> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002702/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002702/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002702/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002702/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002702> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002702/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "089 30 92 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002702/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "089 41 87 17" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002702/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ocmwhoeselt.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002702/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.hoeselt.be/nl/leven/sociale-dienst> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002702>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Hoeselt"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002702> .

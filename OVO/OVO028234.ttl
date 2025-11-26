@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028234>
+  a org:Organization ;
+  skos:prefLabel "Bu.S.O. Huize Tordale"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028234" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1995-11-27"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0457242954" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1995-11-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5340ea01-e54b-481b-b1e8-5ddbe7b07e75> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028234/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028234/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028234/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028234/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028234> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028234/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dewissel@tordale.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028234/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "laetitia.roelstraete@tordale.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028234/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "050 23 13 65" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028234/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.tordale.be/buso-de-wissel> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028234>
+  a foaf:Document ;
+  rdfs:label "Document voor Bu.S.O. Huize Tordale"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028234> .

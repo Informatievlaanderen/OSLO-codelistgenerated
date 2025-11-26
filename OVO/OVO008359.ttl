@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008359>
+  a org:Organization ;
+  skos:prefLabel "Openbare bibliotheek Berlaar"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008359" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d08cb5da-828a-51aa-8c64-ae76cfd26d6f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008359/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008359/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008359/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008359> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008359/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "berlaar@bibliotheek.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008359/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 422 61 38" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008359/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 482 45 58" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008359>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare bibliotheek Berlaar"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008359> .

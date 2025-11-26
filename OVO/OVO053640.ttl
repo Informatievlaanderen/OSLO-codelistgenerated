@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053640>
+  a org:Organization ;
+  skos:prefLabel "Malcolm Nix Bookings"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053640" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-10-05"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1000791164" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-10-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/029a3b24-489f-40c6-903e-4d7b1c7e0c2a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053640/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053640/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053640> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053640/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32474706918" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053640/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "malcolm@malcolmnix.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053640>
+  a foaf:Document ;
+  rdfs:label "Document voor Malcolm Nix Bookings"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053640> .

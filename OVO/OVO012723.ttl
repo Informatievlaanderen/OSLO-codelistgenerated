@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012723>
+  a org:Organization ;
+  skos:prefLabel "Lokaal Dienstencentrum Ruelenspark"@nl ;
+  skos:altLabel "Lokaal Dienstencentrum Ruelenspark"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012723" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c747de60-539b-4161-a565-98f5b3448caf> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012723> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012723>
+  a foaf:Document ;
+  rdfs:label "Document voor Lokaal Dienstencentrum Ruelenspark"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012723> .

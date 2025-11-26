@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012097>
+  a org:Organization ;
+  skos:prefLabel "KUNST INHUIS KUNSTUITLEEN"@nl ;
+  dct:description "Kunst in Huis werkt als een bibliotheek waar iedereen kunstwerken van hedendaagse Vlaamse en Brusselse kunstenaars kan lenen. Hiermee wil de organisatie deze kunstenaars promoten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012097" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0418464730" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/96b1b125-962b-4ff3-87a8-9057788fab9e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012097/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012097/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO012097/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO012097/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012097> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012097/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://kunstinhuis.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012097/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Caroline Van Meerbeek"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012097/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3222479710" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012097/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@kunstinhuis.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012097>
+  a foaf:Document ;
+  rdfs:label "Document voor KUNST INHUIS KUNSTUITLEEN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012097> .

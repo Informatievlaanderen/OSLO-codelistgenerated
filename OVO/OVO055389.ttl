@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055389>
+  a org:Organization ;
+  skos:prefLabel "Yuma Band"@nl ;
+  skos:altLabel "Yuma"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055389" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-03-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1007612640" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-03-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/557f6645-efe7-4792-bcc3-4c223ce22d8c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055389/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055389/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055389> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055389/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "yumaband.mgmt@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055389/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32494049558" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055389>
+  a foaf:Document ;
+  rdfs:label "Document voor Yuma Band"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055389> .

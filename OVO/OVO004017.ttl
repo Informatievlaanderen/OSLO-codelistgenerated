@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004017>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Kenniscentrum Publiek-Private Samenwerking"@nl ;
+  dct:description "Het Vlaams Kenniscentrum Publiek-Private Samenwerking is dé knooppunt- en netwerkorganisatie van en voor de Vlaamse overheid, die het PPS-beleid adviseert en inspireert, en die publiek-private samenwerkingsprojecten in Vlaanderen ondersteunt. Bij een PPS werkt een overheid samen met een of meerdere privébedrijven om een project te realiseren. Het kan gaan om het bouwen van publieke infrastructuur, zoals wegen, bruggen of tunnels, maar ook publiek vastgoed zoals scholen, bibliotheken of sportinfrastructuur."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004017" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/860ec2ca-2a35-21ca-a77c-386f880f77e6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004017/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004017/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004017> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004017/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pps@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004017/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://web.archive.org/web/20190618232819/https://overheid.vlaanderen.be/kenniscentrum-pps> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004017>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Kenniscentrum Publiek-Private Samenwerking"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004017> .

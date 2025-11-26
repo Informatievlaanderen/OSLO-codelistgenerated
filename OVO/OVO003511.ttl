@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003511>
+  a org:Organization ;
+  skos:prefLabel "FLUVIUS ZENNE-DIJLE"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003511" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0222343301" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e3f78c9d-11ca-e5c6-6037-c082257ba85e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003511/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003511/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003511/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003511> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003511/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <dedo> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003511/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://over.fluvius.be/nl/de-opdrachthoudende-verenigingen/over-iverlek> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003511/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "078 35 35 34" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003511>
+  a foaf:Document ;
+  rdfs:label "Document voor FLUVIUS ZENNE-DIJLE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003511> .

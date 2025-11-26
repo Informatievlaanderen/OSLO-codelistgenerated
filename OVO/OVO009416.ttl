@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009416>
+  a org:Organization ;
+  skos:prefLabel "Gemengd Koor Andante"@nl ;
+  skos:altLabel "Gemengd Koor Andante"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009416" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ec2f16bb-053e-4da3-a447-611149b4d563> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009416/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009416/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO009416/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO009416/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009416> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009416/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dirkrobberechts56@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009416/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 751 75 06" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009416/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hendrik.biesemans@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009416/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 751 98 26" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009416>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemengd Koor Andante"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009416> .

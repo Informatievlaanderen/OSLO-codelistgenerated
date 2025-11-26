@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038995>
+  a org:Organization ;
+  skos:prefLabel "Digitale Wolven"@nl ;
+  dct:description "Digitale Wolven laat kinderen en jongeren via workshops kennis maken met ICT en technologie."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038995" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2017-06-02"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0676536594" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2017-06-02"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6666e91c-6aa6-8e6d-e3f6-b636371c272f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038995/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038995/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038995/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038995/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038995> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038995/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Cindy Smits"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038995/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "cindy.smits@digitalewolven.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038995/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 435 68 10" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038995/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@digitalewolven.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038995>
+  a foaf:Document ;
+  rdfs:label "Document voor Digitale Wolven"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038995> .

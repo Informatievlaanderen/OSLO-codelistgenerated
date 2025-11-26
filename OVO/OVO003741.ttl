@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003741>
+  a org:Organization ;
+  skos:prefLabel "afdeling Dienstencentrum Talent"@nl ;
+  skos:altLabel "Dienstencentrum Talent"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003741" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7401cbdc-0fdb-98ac-10c1-61cee5bd2122> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003741/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003741/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003741/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003741> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003741/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "werkenvoor@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003741/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025530108" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003741/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.werkenvoorvlaanderen.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003741>
+  a foaf:Document ;
+  rdfs:label "Document voor afdeling Dienstencentrum Talent"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003741> .

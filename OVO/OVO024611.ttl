@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024611>
+  a org:Organization ;
+  skos:prefLabel "European Composers' Forum"@nl ;
+  skos:altLabel "European Composers' Forum"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024611" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9974a67b-f877-42c5-87ac-99d71fab4aec> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024611/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024611/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024611> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024611/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@composersforum.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024611/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+43 699 81 12 70 40" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024611>
+  a foaf:Document ;
+  rdfs:label "Document voor European Composers' Forum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024611> .

@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193>
+  a org:Organization ;
+  skos:prefLabel "detheatermaker"@nl ;
+  skos:altLabel "dtm"@nl ;
+  dct:description "De vzw detheatermaker is een theaterwerkplaats. Ze begeleidt, ondersteunt en omkadert het ontwikkelingsproces van jonge theatermakers en theatercollectieven."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020193" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0886878720" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e6ed92ad-9ec3-42f7-9d5f-73f64f1232e9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO020193/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020193> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://detheatermaker.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32 497 18 63 17" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "zakelijk@detheatermaker.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lotte@detheatermaker.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lotte Vrancken"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lola Bogaert"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020193/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0495 60 62 09" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020193>
+  a foaf:Document ;
+  rdfs:label "Document voor detheatermaker"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020193> .

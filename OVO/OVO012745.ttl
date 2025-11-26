@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012745>
+  a org:Organization ;
+  skos:prefLabel "LOOTGENOT"@nl ;
+  dct:description "De vzw LOOTGENOT organiseert het dunk!festival, een festival van alternatieve rockmuziek dat oorspronkelijk in Zottegem plaatsvond, maar tegenwoordig in Kunstencentrum VIERNULVIER in Gent."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012745" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0885191217" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7e0aea0c-7436-4044-9d62-3bc81fd1fecb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012745/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012745/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO012745/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO012745/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012745> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012745/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "luc@dunkfestival.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012745/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476342975" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012745/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.dunkfestival.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012745/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Luc Lievens"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012745>
+  a foaf:Document ;
+  rdfs:label "Document voor LOOTGENOT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012745> .

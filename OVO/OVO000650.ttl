@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000650>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Algemene Diensten"@nl ;
+  skos:altLabel "Algemene Diensten"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000650" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/973cd815-4120-46a0-befa-aff3c2dfaecf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000650/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000650/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000650> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000650/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025331211" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000650/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025341382" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000650>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Algemene Diensten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000650> .

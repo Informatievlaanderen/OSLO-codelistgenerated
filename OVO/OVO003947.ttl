@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003947>
+  a org:Organization ;
+  skos:prefLabel "LIVAN INFRASTRUCTURE"@nl ;
+  dct:description "De vennootschap staat in voor het ontwerp, de aanleg, de financiering en het langdurig onderhoud van een deel van de traminfrastructuur in Antwerpen, m.n. enerzijds het in dienst stellen van de oostelijke premetrokoker onder de Turnhoutsebaan en anderzijds de tramlijnuitbreiding tussen de N116a Herentalsebaan en N12 Turnhoutsebaan via Florent Pauwelslei en Ruggeveldlaan naar de P&R Wommelgem."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003947" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2012-12-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0501964607" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2012-12-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a45bdbb1-e52d-dca9-b2dd-668b2e1443f7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003947> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003947>
+  a foaf:Document ;
+  rdfs:label "Document voor LIVAN INFRASTRUCTURE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003947> .

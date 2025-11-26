@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368>
+  a org:Organization ;
+  skos:prefLabel "4 A D"@nl ;
+  dct:description "4AD is een muziekclub in Disksmuide."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019368" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0433573370" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c2182fdb-ef24-42b1-b582-84ecaf4d28f6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO019368/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019368> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@4ad.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "051 50 48 94" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "051 50 56 92" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.4ad.be/nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Thomas Denys"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0499 48 15 97" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019368/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "thomas@4ad.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019368>
+  a foaf:Document ;
+  rdfs:label "Document voor 4 A D"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019368> .

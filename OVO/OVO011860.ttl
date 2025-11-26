@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011860>
+  a org:Organization ;
+  skos:prefLabel "KORAAL"@nl ;
+  dct:description "De vzw Koraal organiseert toegankelijke jeugdactiviteiten, vakantiekampen, gezinsondersteuning en kinderopvang."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011860" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0408499464" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/588f6c0c-332d-4ce3-a176-f2146e253b81> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011860/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011860/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011860/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011860> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011860/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.koraal.site/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011860/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@koraal.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011860/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232329772" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011860>
+  a foaf:Document ;
+  rdfs:label "Document voor KORAAL"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011860> .

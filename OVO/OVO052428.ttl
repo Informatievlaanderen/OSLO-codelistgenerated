@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428>
+  a org:Organization ;
+  skos:prefLabel "noAarchitecten"@nl ;
+  dct:description "De bv noAarchitecten is een architectenbureau met vestigingen in Brussel en in Brugge."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052428" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2002-08-14"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0478184759" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2002-08-14"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dfbaee16-882f-6f3f-e2ef-b63b9554e72a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052428/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052428> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3225034382" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://noaarchitecten.net> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jitse van den Berg"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32494688504" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jitse@noaarchitecten.net" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052428/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vennoten@noaarchitecten.net" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052428>
+  a foaf:Document ;
+  rdfs:label "Document voor noAarchitecten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052428> .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144>
+  a org:Organization ;
+  skos:prefLabel "Ludion"@nl ;
+  dct:description "Ludion is een onafhankelijke uitgeverij van voornamelijk kunstboeken, alsook tentoonstellingscatalogi, museumgidsen en kunstenaarsmonografieën. Ludion publiceert ook uitgaven over design, fotografie en ambachten, zoals weven en keramiek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028144" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-02-12"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/69403b5e-09e6-4f12-ffa5-8cf5d7ac3abd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028144/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028144/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028144/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028144/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO028144/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028144> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 449 18 80" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ludion.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.ludion.be/nl/home> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Peter Ruyffelaere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028144/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "peter.ruyffelaere@ludion.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028144>
+  a foaf:Document ;
+  rdfs:label "Document voor Ludion"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028144> .

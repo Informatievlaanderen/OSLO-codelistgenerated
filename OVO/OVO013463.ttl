@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013463>
+  a org:Organization ;
+  skos:prefLabel "MUSICLAND PRODUCTIONS VZW"@nl ;
+  skos:altLabel "MLP VZW"@nl ;
+  dct:description "De vzw Musicland Productions biedt muzikale acts aan ter opluistering van feesten en evenementen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013463" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0897418363" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/21c494e4-17bb-4f7b-859f-e8be32ea398a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013463/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013463/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013463/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013463> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013463/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://musiclandproductions.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013463/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@musiclandproductions.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013463/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 34 11 39" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013463>
+  a foaf:Document ;
+  rdfs:label "Document voor MUSICLAND PRODUCTIONS VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013463> .

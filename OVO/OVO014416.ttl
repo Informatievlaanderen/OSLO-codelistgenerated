@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014416>
+  a org:Organization ;
+  skos:prefLabel "ARTISAN - ANDERLECHT SERRURERIE VANHOVE"@nl ;
+  skos:altLabel "A.A.S.V."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014416" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0434475569" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/47ce2b87-5184-4992-b328-55344221c9a1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014416> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014416>
+  a foaf:Document ;
+  rdfs:label "Document voor ARTISAN - ANDERLECHT SERRURERIE VANHOVE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014416> .

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149>
+  a org:Organization ;
+  skos:prefLabel "Centrum voor Kinderzorg en Gezinsondersteuning Kapoentje"@nl ;
+  skos:altLabel "C.K.G. KAPOENTJE"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039149" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2001-05-04"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0475254567" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2001-05-04"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5fedfceb-da46-75ea-71f0-0fb950440f25> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039149/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039149/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039149/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039149/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO039149/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039149> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "patrick.blonde@ckgkapoentje.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Patrick Blondé"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "059 25 53 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.ckgkapoentje.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039149/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ckgkapoentje.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039149>
+  a foaf:Document ;
+  rdfs:label "Document voor Centrum voor Kinderzorg en Gezinsondersteuning Kapoentje"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039149> .

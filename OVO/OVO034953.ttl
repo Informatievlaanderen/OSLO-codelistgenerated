@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO034953>
+  a org:Organization ;
+  skos:prefLabel "Vrije Basisschool - Sint-Jozef Sint-Agatha-Berchem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO034953" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9f5638e7-0b1e-63ee-136a-d49f1778a762> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO034953> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO034953>
+  a foaf:Document ;
+  rdfs:label "Document voor Vrije Basisschool - Sint-Jozef Sint-Agatha-Berchem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO034953> .

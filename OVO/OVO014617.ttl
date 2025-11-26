@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014617>
+  a org:Organization ;
+  skos:prefLabel "Babakhan Badalov"@nl ;
+  skos:altLabel "Babakhan Badalov"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014617" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a5ae77a7-679a-4ffd-baf2-9db8bb5823f2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014617/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014617/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014617> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014617/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "art_babi@yahoo.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014617/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33 64 238 24 48" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014617>
+  a foaf:Document ;
+  rdfs:label "Document voor Babakhan Badalov"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014617> .

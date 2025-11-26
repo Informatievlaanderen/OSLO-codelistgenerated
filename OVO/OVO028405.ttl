@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028405>
+  a org:Organization ;
+  skos:prefLabel "Mosso"@nl ;
+  dct:description "Mòsso vzw werd in 2014 opgericht door drie culturele professionals met ervaring in Afrika en de Caraïben. Doel van de vereniging is onderzoek verrichten naar en nadenken over hedendaagse creaties uit Afrika, de Caraïben en Latijns-Amerika en de artistieke samenwerking tussen die gebieden en Europa te ontwikkelen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028405" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-03-31"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0549843609" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2014-03-31"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c0ad5b0a-81b0-48bd-8d76-47c047981989> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028405/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028405/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028405/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028405/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028405> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028405/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mosso.brussels@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028405/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://mosso-brussels.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028405/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Estelle Lecaille"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028405/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32486361542" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028405>
+  a foaf:Document ;
+  rdfs:label "Document voor Mosso"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028405> .

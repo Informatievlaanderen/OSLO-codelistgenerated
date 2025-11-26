@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025963>
+  a org:Organization ;
+  skos:prefLabel "Be A Place - Lda"@nl ;
+  skos:altLabel "Be A Place - Lda"@nl ;
+  dct:description "Be A Place - Lda is een firma uit Portugal. Zij dient subsidieaanvragen in voor Bussola, een organisatie die o.a. het LEME Festival organiseert, een circusfestival dat vooral inzet op vernieuwend hedendaags circus en producties voor ongebruikelijke locaties."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025963" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a9f9f792-f6ff-4d09-9887-a35b528aa725> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025963/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025963/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025963> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025963/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "geral@bussola.com.pt" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025963/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bussola.com.pt/20-2/projects/cultural-projects-management/leme/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025963>
+  a foaf:Document ;
+  rdfs:label "Document voor Be A Place - Lda"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025963> .

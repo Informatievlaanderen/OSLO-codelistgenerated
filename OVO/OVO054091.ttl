@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091>
+  a org:Organization ;
+  skos:prefLabel "LD Music Agency"@nl ;
+  skos:altLabel "LDMA"@nl ;
+  dct:description "LD Music Agency is een managementbureau voor muziekartiesten. Daarnaast staat het in voor de organisatie van Brussels Jazz Alert, een project dat tot doel heeft om jong Belgisch jazztalent te promoten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054091" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-10-24"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1001559642" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-10-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d3a32eed-770c-4dcc-ba13-4e9e87012904> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO054091/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054091> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lynn@ld-musicagency.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32478669427" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lynndewitte.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lynn Dewitte"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://brusselsjazzalert.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054091/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://ld-musicagency.com/nl/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054091>
+  a foaf:Document ;
+  rdfs:label "Document voor LD Music Agency"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054091> .

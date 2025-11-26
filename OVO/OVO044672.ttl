@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO044672>
+  a org:Organization ;
+  skos:prefLabel "MOD - Team Informatica"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO044672" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5ab23f8f-5f9a-fa6d-4d9c-e9c5f37a1889> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO044672> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO044672>
+  a foaf:Document ;
+  rdfs:label "Document voor MOD - Team Informatica"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO044672> .

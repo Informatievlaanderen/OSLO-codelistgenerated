@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO056127>
+  a org:Organization ;
+  skos:prefLabel "K.S.A. Spermalie Sijsele"@nl ;
+  skos:altLabel "KSA Spermalie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO056127" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2012-12-13"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0501983314" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2012-12-13"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1cf4dc04-7577-4378-8f1a-77569c380f8c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO056127/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO056127/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO056127> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO056127/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ksa-spermalie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO056127/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32489057316" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO056127>
+  a foaf:Document ;
+  rdfs:label "Document voor K.S.A. Spermalie Sijsele"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO056127> .

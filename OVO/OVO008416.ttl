@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416>
+  a org:Organization ;
+  skos:prefLabel "Dienst Economische Migratie"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008416" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-12-07"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d96b09ad-4ef4-fd5c-5b96-4321c6002c21> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO008416/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008416> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "beroepskaarten@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "arbeidskaart.gent@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "arbeidskaart.leuven@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "arbeidskaart@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 43 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008416/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "20"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008416>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst Economische Migratie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008416> .

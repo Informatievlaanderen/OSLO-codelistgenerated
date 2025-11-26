@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025>
+  a org:Organization ;
+  skos:prefLabel "agentschap Facilitair Bedrijf"@nl ;
+  skos:altLabel "Het Facilitair Bedrijf"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000025" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/91a2a0cc-b292-42f9-a809-31e7ba07db80> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO000025/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000025> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "facilitairbedrijf@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://intranet.vonet.be/"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.vlaanderen.be/facilitairbedrijf> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025532010" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025532000" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://ict.vonet.be/nlapps/default.asp"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000025/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.facilipunt.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000025>
+  a foaf:Document ;
+  rdfs:label "Document voor agentschap Facilitair Bedrijf"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000025> .

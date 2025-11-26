@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108>
+  a org:Organization ;
+  skos:prefLabel "Vlaamse Woonraad"@nl ;
+  skos:altLabel "Vlaamse Woonraad"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000108" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fc09afb0-6b59-4205-bc00-e7edd2697683> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000108/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000108/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000108/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000108/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000108/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000108> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 83 05" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 10 39" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vlaamse.woonraad@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "40"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000108/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.vlaamsewoonraad.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000108>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaamse Woonraad"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000108> .

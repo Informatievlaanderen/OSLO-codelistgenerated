@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819>
+  a org:Organization ;
+  skos:prefLabel "Coreatelier"@nl ;
+  dct:description "De vzw Coreatelier omkadert de werking van de artistieke werkplaats Decoratelier in Molenbeek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050819" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-10-25"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0793108226" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-10-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6bd95a7c-1a73-951b-c052-7deac9d94411> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO050819/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050819> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "nele_keukelier@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485325195" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Nele Keukelier"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/DecoratelierBrussels/?_rdr"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.damagedgoods.be/nl/decoratelier> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@decoratelier.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050819/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32485023871" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050819>
+  a foaf:Document ;
+  rdfs:label "Document voor Coreatelier"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050819> .

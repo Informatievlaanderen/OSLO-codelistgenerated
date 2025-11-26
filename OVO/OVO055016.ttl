@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016>
+  a org:Organization ;
+  skos:prefLabel "L'architecture qui dégenre association sans but lucratif"@nl ;
+  skos:altLabel "L'architecture qui dégenre ASBL"@nl ;
+  dct:description "L'architecture qui dégenre is een platform met als doel de genderdimensie te integreren in architecturale projecten. De vzw organiseert feministische rondleidingen, opleidingen en workshops over gender en de stad. De vzw besteedt veel aandacht aan het 'matrimonium', dat is materieel of immaterieel erfgoed dat van vrouwen werd overgeërfd."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055016" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-06-21"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0769926711" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-06-21"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b4b61684-29d8-42bc-8bdb-46830da8c841> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055016/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055016/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055016/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO055016/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO055016/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055016> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@matrimonydays.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.architecturequidegenre.be/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Apolline Vranken"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485673760" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055016/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "a.vranken@architecturequidegenre.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055016>
+  a foaf:Document ;
+  rdfs:label "Document voor L'architecture qui dégenre association sans but lucratif"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055016> .

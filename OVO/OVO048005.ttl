@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005>
+  a org:Organization ;
+  skos:prefLabel "Happiness Belgium"@nl ;
+  dct:description "Happiness Belgium is een liefdadigheidsinstelling met als doel blijdschap en geluk te brengen in Vlaanderen. De organisatie zet onder meer projecten op voor de ontwikkeling van jonge artiesten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048005" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-10-27"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0757538128" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-10-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b8bd11f2-9f1b-5f88-206e-0c18d82b0b83> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048005/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048005/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048005/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO048005/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO048005/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048005> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Michael Geers"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "geers.michael@outlook.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://happinessbelgium.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@happinessbelgium.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048005/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0499 71 45 81" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048005>
+  a foaf:Document ;
+  rdfs:label "Document voor Happiness Belgium"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048005> .

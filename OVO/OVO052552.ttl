@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052552>
+  a org:Organization ;
+  skos:prefLabel "Region Desk APAC"@nl ;
+  skos:altLabel "Region Desk APAC"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052552" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-11-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7e79416b-f9a8-e0eb-220e-db618598e6e4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052552> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052552>
+  a foaf:Document ;
+  rdfs:label "Document voor Region Desk APAC"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052552> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000405>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Personeel"@nl ;
+  skos:altLabel "Personeel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000405" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b3f06c56-347c-4d7b-9524-d8a9e4ec074d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000405/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000405/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000405/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000405/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000405> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000405/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 209 46 62" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000405/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jan.vandenabeele@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000405/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 209 46 65" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000405/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.sport.vlaanderen> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000405>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Personeel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000405> .

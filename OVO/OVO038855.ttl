@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038855>
+  a org:Organization ;
+  skos:prefLabel "Ensembletheater Antwerpen"@nl ;
+  skos:altLabel "ENSEMBLE"@nl ;
+  dct:description "Ensembletheater Antwerpen is een in 2019 opgerichte organisatie met een vaste spelerskern van twaalf jonge, professionele acteurs, afgestudeerd aan verschillende Vlaamse en Nederlandse toneelscholen. De spelers worden ondersteund door een team van regisseurs en een productieteam."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038855" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-06-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0700954266" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/291c6a0c-cea4-3a70-1f0e-59a6eae29f30> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038855/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038855/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038855/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038855/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038855> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038855/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "simon.lemmens@ensembletheater.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038855/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Simon Lemmens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038855/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32472914498" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038855/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/ensembletheater/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038855>
+  a foaf:Document ;
+  rdfs:label "Document voor Ensembletheater Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038855> .

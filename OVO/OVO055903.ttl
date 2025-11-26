@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055903>
+  a org:Organization ;
+  skos:prefLabel "Van Guyse, Berend"@nl ;
+  dct:description "Eénmanszaak van muzikant Berend Van Guyse. Hij is drummer bij de band Marsh Harrier."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055903" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-10-25"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0736798538" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-10-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e7ed66ec-db41-43d1-822d-89fd4c11e411> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055903/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055903/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055903/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055903> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055903/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32476612491" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055903/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "berendvanguyse@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055903/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/people/Marsh-Harrier/61574968198060/#"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055903>
+  a foaf:Document ;
+  rdfs:label "Document voor Van Guyse, Berend"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055903> .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001968>
+  a org:Organization ;
+  skos:prefLabel "Beleid Steden, Brussel en vlaamse Rand"@nl ;
+  skos:altLabel "Beleid Steden, Brussel en Vlaamse Rand"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001968" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bb0489b2-9c13-475d-82cf-96909489fe8b> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001968> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001968>
+  a foaf:Document ;
+  rdfs:label "Document voor Beleid Steden, Brussel en vlaamse Rand"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001968> .

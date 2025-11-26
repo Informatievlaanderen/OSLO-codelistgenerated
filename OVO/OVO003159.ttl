@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159>
+  a org:Organization ;
+  skos:prefLabel "Communicatiebeleid"@nl ;
+  skos:altLabel "Communicatiebeleid"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003159" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-03-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/10f5603b-2960-412a-a490-e42267e0c56f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003159/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003159> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-communicatiebeleid"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "communicatie@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/communicatie"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 56 41" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://koepel.vonet.be/communicatie"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003159/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://overheid.vlaanderen.be/communicatie> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003159>
+  a foaf:Document ;
+  rdfs:label "Document voor Communicatiebeleid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003159> .

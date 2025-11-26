@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114>
+  a org:Organization ;
+  skos:prefLabel "11.11.11, Koepel van Internationale Solidariteit"@nl ;
+  skos:altLabel "11.11.11"@nl ;
+  dct:description "De vzw 11.11.11, Koepel van Internationale Solidariteit streeft naar een rechtvaardige wereld voor mens en natuur. De organisatie komt in actie tegen uitbuiting van mens en natuur. Iedereen - waar ook ter wereld - heeft recht op een menswaardig bestaan. Om echt iets te veranderen moeten macht en middelen eerlijker worden verdeeld."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052114" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1980-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0421210424" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1980-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/84f8e59e-0550-1981-6095-81c54fc995c2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052114/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052114> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@11.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3225361111" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kathelijne Houben"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kathelijne.houben@11.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32496524428" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052114/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://11.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052114>
+  a foaf:Document ;
+  rdfs:label "Document voor 11.11.11, Koepel van Internationale Solidariteit"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052114> .

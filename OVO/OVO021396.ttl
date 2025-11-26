@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021396>
+  a org:Organization ;
+  skos:prefLabel "VLAAMSE DIENST SPEELPLEINWERK"@nl ;
+  skos:altLabel "VDS"@nl ;
+  dct:description "Vlaamse Dienst Speelpleinwerk heeft als doel speelinitiatieven te helpen om op lokaal vlak een kwalitatief vrijetijdsaanbod voor kinderen te creëren. VDS biedt iedereen die actief is in het lokale speelpleinwerk een brede dienstverlening aan, waaronder vorming van animatoren."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021396" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0408339514" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3affefd1-cb7c-46ca-a963-16a37b1a57d9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021396/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021396/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021396/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021396/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021396> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021396/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vdsinfo@speelplein.net" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021396/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.speelplein.net/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021396/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3215287390" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021396/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vds@staf.speelplein.net" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021396>
+  a foaf:Document ;
+  rdfs:label "Document voor VLAAMSE DIENST SPEELPLEINWERK"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021396> .

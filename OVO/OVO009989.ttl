@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009989>
+  a org:Organization ;
+  skos:prefLabel "Herentalse Spiegelfabriek Oscar Mols-Dom"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009989" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/94d0d551-db20-47fa-931a-53c23124c72f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009989/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009989/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009989> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009989/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014/28.54.40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009989/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "014/21.32.74" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009989>
+  a foaf:Document ;
+  rdfs:label "Document voor Herentalse Spiegelfabriek Oscar Mols-Dom"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009989> .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036415>
+  a org:Organization ;
+  skos:prefLabel "ANTWERP INTERNATIONAL TRAINING CENTER ON CORPORATE OPPORTUNITIES"@nl ;
+  skos:altLabel "ANTWERP ITCCO"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036415" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2012-03-27"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0845946106" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2012-03-27"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/929344dd-3e84-cb7b-d1b2-b6bc36fa3060> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036415/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036415/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036415> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036415/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@cifal-flanders.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036415/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://cifal-flanders.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036415>
+  a foaf:Document ;
+  rdfs:label "Document voor ANTWERP INTERNATIONAL TRAINING CENTER ON CORPORATE OPPORTUNITIES"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036415> .

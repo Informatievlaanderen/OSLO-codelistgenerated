@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625>
+  a org:Organization ;
+  skos:prefLabel "DRUSTVO PEKINPAH"@nl ;
+  dct:description "Društvo Pekinpah/Pekinpah Association is een culturele organisatie uit Ljubljana in Slovenië. Društvo Pekinpah organiseert o.m. het Festival of Radical Bodies Spider, een festival dat zich focust op onconventionele en radicale producties op het gebied van hedendaagse dans en performance."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051625" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/46873844-ef6a-8156-a5c9-f1afab199190> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051625/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051625/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051625/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051625/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051625/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051625> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hello@spiderfestival.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+38640505047" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.pekinpah.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ziga Predan"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051625/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ziga.predan@pekinpah.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051625>
+  a foaf:Document ;
+  rdfs:label "Document voor DRUSTVO PEKINPAH"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051625> .

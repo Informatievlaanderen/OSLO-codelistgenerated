@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939>
+  a org:Organization ;
+  skos:prefLabel "Fondation Festival de la Cité"@nl ;
+  dct:description "Het Festival de la Cité Lausanne biedt het publiek gratis een unieke artistieke diversiteit: theater, dans, performance, klassieke muziek, jazz en actuele klanken, shows voor een jong publiek, circus, literatuur, beeldende kunst, architecturale projecten ..."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051939" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6a8f6871-8271-415a-88d4-0abd5cb33970> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051939/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051939/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051939/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051939/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051939/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051939> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "t.sigala@festivalcite.ch" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+41213110382" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Thomas Sigala"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+41767035758" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051939/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://festivalcite.ch/fr/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051939>
+  a foaf:Document ;
+  rdfs:label "Document voor Fondation Festival de la Cité"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051939> .

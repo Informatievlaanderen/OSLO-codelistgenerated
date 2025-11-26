@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327>
+  a org:Organization ;
+  skos:prefLabel "Bat Eyes"@nl ;
+  dct:description "Bat Eyes is een indierockgroep uit Gent bestaande uit Koen Wijnant (zang, gitaar), Luna De Bruyne (zang, basgitaar), Tomas Serrien (drums) en Birger Ameys (gitaar)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014327" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0824174356" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/16d99fa1-eec2-4e5f-8b4e-a2239d647ad5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO014327/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014327> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "maarten@keremos.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 234 11 85" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 225 81 47" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/bateyesmusic/"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Koen Wijnant"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32479722442" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32479722442" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014327/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bateyesmusic@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014327>
+  a foaf:Document ;
+  rdfs:label "Document voor Bat Eyes"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014327> .

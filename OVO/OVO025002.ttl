@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025002>
+  a org:Organization ;
+  skos:prefLabel "Fotofabrik Bln Bxl"@nl ;
+  skos:altLabel "Fotofabrik Bln Bxl"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025002" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/53575b3d-8ca2-444d-9282-d00a18061271> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025002/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025002> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025002/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@fotofabrikblnbxl.eu" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025002>
+  a foaf:Document ;
+  rdfs:label "Document voor Fotofabrik Bln Bxl"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025002> .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050759>
+  a org:Organization ;
+  skos:prefLabel "Dossierbeheer D"@nl ;
+  skos:altLabel "Dossierbeheer D"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050759" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-10-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e30702ee-4a3f-d807-e8a4-af618441f956> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050759> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050759>
+  a foaf:Document ;
+  rdfs:label "Document voor Dossierbeheer D"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050759> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054036>
+  a org:Organization ;
+  skos:prefLabel "Private stichting Lucien De Gheus-Druant"@nl ;
+  dct:description "De Private stichting Lucien De Gheus-Druant zet zich in voor de promotie en de ontsluiting van het werk van beeldhouder en keramist Lucien De Gheus, beheert het museumhuis Lucien De Gheus en ondersteunt kunstenaars en kunstbeleving."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054036" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2013-06-17"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0537867671" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2013-06-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a5c4e29b-290f-470f-8af6-d877f0776dbf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054036/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054036/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054036/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054036/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054036> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054036/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32475793849" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054036/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "luc.vandewynckel@outlook.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054036/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.luciendegheus.be/nl_NL/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054036/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Luc Vandewynckel"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054036>
+  a foaf:Document ;
+  rdfs:label "Document voor Private stichting Lucien De Gheus-Druant"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054036> .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054204>
+  a org:Organization ;
+  skos:prefLabel "Chiro Jeugd nu Lommel Centrum"@nl ;
+  skos:altLabel "Chiro Lommel Centrum"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054204" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-04-24"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0787340783" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-04-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/751ec996-5557-4eda-9157-d6c51755e206> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054204/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054204/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054204> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054204/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "verhuurchirojeugdnu@outlook.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054204/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32477950105" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054204>
+  a foaf:Document ;
+  rdfs:label "Document voor Chiro Jeugd nu Lommel Centrum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054204> .

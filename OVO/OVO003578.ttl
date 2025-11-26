@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003578>
+  a org:Organization ;
+  skos:prefLabel "Westvlaamse Intercommunale Vliegveld Wevelgem-Bissegem"@nl ;
+  skos:altLabel "W.I.V."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003578" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4c9a7555-49ce-8ddf-d391-aca0974408bd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003578/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003578/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003578> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003578/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056/35 14 12" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003578/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.kortrijkairport.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003578>
+  a foaf:Document ;
+  rdfs:label "Document voor Westvlaamse Intercommunale Vliegveld Wevelgem-Bissegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003578> .

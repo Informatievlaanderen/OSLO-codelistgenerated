@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002972>
+  a org:Organization ;
+  skos:prefLabel "Kerkfabriek Sint-Willibrordus te Overbroek (VL - Brecht)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002972" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0211242739" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9a3a164e-9aa7-48fb-9913-52795690b021> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002972> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002972>
+  a foaf:Document ;
+  rdfs:label "Document voor Kerkfabriek Sint-Willibrordus te Overbroek (VL - Brecht)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002972> .

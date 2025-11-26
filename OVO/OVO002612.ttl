@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002612>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Buggenhout"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002612" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0212244215" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/42acaf74-d820-4fc0-9da9-2d1a34e3317a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002612/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002612/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002612/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002612/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002612> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002612/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "socialedienst@ocmwbuggenhout.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002612/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.buggenhout.be/sociale-dienstverlening> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002612/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "052 33 95 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002612/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "052 33 96 00" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002612>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Buggenhout"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002612> .

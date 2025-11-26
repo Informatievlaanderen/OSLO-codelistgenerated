@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662>
+  a org:Organization ;
+  skos:prefLabel "CLIN D'OEIL FILM"@nl ;
+  dct:description "Clin d’Oeil Film is een Belgisch audiovisueel bedrijf opgericht en geleid door Antoine Vermeesch en Hanne Phlypo. Het bedrijf richt zich op creatieve documentaires en auteursfilms met een duidelijke voorkeur voor films met een sociaal of politiek statement van creatieve en vernieuwende filmmakers."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022662" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0822686494" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4ef65902-9972-43fc-8bdb-ee81248b88a3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022662/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022662/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022662/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO022662/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO022662/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022662> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Evelien De Graef"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "evelien@clindoeilfilms.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "010 73 03 82" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.clindoeilfilms.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022662/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@clindoeilfilms.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022662>
+  a foaf:Document ;
+  rdfs:label "Document voor CLIN D'OEIL FILM"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022662> .

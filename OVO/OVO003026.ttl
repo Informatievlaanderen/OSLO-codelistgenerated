@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003026>
+  a org:Organization ;
+  skos:prefLabel "Dienst van de gouverneurs - West-Vlaanderen"@nl ;
+  skos:altLabel "West-Vlaanderen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003026" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/db6c37a5-3f1c-4f4e-951f-b7b1f0220bed> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003026/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003026/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003026> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003026/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "050 405 707" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003026/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "binnenland.westvlaanderen@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003026>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst van de gouverneurs - West-Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003026> .

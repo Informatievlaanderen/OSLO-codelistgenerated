@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036003>
+  a org:Organization ;
+  skos:prefLabel "PATRONATO FONDO DE ARTE CONTEMPORANEO"@nl ;
+  dct:description "Het Patronato Fondo de Arte Contemporáneo (Contemporary Art Fund Board) is een burgerlijke vereniging opgericht met als doel de vervulling van de missie van het Museo Universitario Arte Contemporáneo (Universitair Museum voor Hedendaagse Kunst) van de Universidad Nacional Autónoma de México te garanderen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036003" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-07-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/68afb107-b222-265c-070d-96df81033b1d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036003/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036003/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036003/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036003/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036003> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036003/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rebeca.richter@muac.unam.mx" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036003/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Amanda De la Garza"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036003/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "amanda.delagarza@muac.unam.mx" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036003/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://patronatomuac.mx/ipost/history/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036003>
+  a foaf:Document ;
+  rdfs:label "Document voor PATRONATO FONDO DE ARTE CONTEMPORANEO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036003> .

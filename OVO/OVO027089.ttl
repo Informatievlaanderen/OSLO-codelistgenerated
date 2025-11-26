@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027089>
+  a org:Organization ;
+  skos:prefLabel "Shanghai"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027089" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c5368236-26c2-e094-3a3c-76992b6806f3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027089/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027089/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027089/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027089/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027089> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027089/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+86 21 64 37 84 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027089/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+86 21 64 37 75 74" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027089/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "shanghai@fitagency.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027089/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.flandersinvestmentandtrade.com/export/landen/china/diensten> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027089>
+  a foaf:Document ;
+  rdfs:label "Document voor Shanghai"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027089> .

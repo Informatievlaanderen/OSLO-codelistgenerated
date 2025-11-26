@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027049>
+  a org:Organization ;
+  skos:prefLabel "Vlaams-Nederlandse Scheldecommissie"@nl ;
+  skos:altLabel "VNSC"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027049" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2008-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3a2bc34a-36d7-e059-b906-b1763abd24ed> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027049/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027049/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027049/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027049> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027049/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vnsc.eu> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027049/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vnsc.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027049/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+ 31 (0)164 212 800" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027049>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams-Nederlandse Scheldecommissie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027049> .

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003737>
+  a org:Organization ;
+  skos:prefLabel "Dienstencentrum Talent"@nl ;
+  skos:altLabel "Dienstencentrum Talent"@nl ;
+  dct:description "De afdeling Dienstencentrum Talent ondersteunt de diensten van de Vlaamse overheid bij de implementatie van beleid en regelgeving van de zachte HR-processen. Daarnaast levert het dienstencentrum dienstverlening met betrekking tot in-, door- en uitstroom, leren en ontwikkelen en prestatiemanagement, alsook inzake functieclassificatie en personeelsplanning. De ultieme doelstelling is de duurzame inzetbaarheid van personeelsleden stimuleren en realiseren via een integrale benadering door het selectiecentrum en loopbaancentrum en dit steeds in partnerschap met diverse stakeholders."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003737" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2017-03-31"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d7b7fc3d-b8eb-4d49-1bf2-943bdd158d00> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003737/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003737/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003737/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003737/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003737> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003737/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "werkenvoor@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003737/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "42"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003737/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://werkenvoorvlaanderen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003737/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 01 08" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003737>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienstencentrum Talent"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003737> .

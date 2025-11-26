@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015408>
+  a org:Organization ;
+  skos:prefLabel "RESIDENTIE BRUGGENPARK"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015408" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7bab0f4c-6aa8-48db-8b6b-7c86f31e0f29> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015408/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015408/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO015408/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO015408/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015408> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015408/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ergo.animatie.bruggenpark@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015408/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 360 69 78" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015408/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 326 30 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015408/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0485 50 30 29" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015408>
+  a foaf:Document ;
+  rdfs:label "Document voor RESIDENTIE BRUGGENPARK"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015408> .

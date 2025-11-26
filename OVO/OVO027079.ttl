@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027079>
+  a org:Organization ;
+  skos:prefLabel "Warschau"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027079" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/75345d29-129b-0b2c-c918-44db09b68925> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027079/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027079/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027079/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027079/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027079> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027079/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+48 22 584 73 40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027079/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+48 22 827 81 36" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027079/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "warsaw@fitagency.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027079/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.flandersinvestmentandtrade.com/export/landen/polen/diensten> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027079>
+  a foaf:Document ;
+  rdfs:label "Document voor Warschau"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027079> .

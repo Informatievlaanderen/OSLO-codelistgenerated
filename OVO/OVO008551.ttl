@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008551>
+  a org:Organization ;
+  skos:prefLabel "Openbare bibliotheek Maasmechelen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008551" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0aef39da-cf7c-db4d-bd51-1824a07b9143> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008551/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008551/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008551/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008551> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008551/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bibliotheek@maasmechelen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008551/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "089 76 97 29" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008551/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "089 76 97 20" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008551>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare bibliotheek Maasmechelen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008551> .

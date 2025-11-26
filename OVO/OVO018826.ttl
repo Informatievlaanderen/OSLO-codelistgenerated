@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018826>
+  a org:Organization ;
+  skos:prefLabel "Wild at Heart"@nl ;
+  skos:altLabel "WAH"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018826" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f72a7c0b-705a-49f0-a5f5-f101ec4f0870> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018826/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018826> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018826/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wild.at.heart@outlook.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018826>
+  a foaf:Document ;
+  rdfs:label "Document voor Wild at Heart"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018826> .

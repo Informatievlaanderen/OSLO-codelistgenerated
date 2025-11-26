@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Agentschap voor Internationaal Ondernemen"@nl ;
+  skos:altLabel "FIT"@nl ;
+  dct:description "Het Vlaams Agentschap voor Internationaal Ondernemen, ook bekend als Flanders Investment & Trade, heeft als doel het internationaal ondernemerschap van Vlaamse bedrijven, in het bijzonder kleine en middelgrote ondernemingen, te bevorderen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000035" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2005-07-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0242401911" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2005-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c50f3bbc-c414-4233-ba58-8f01bab2216c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000035/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000035/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000035/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000035/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000035/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000035> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@fitagency.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 504 87 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.fitagency.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 504 88 99" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000035/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.flandersinvestmentandtrade.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000035>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Agentschap voor Internationaal Ondernemen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000035> .

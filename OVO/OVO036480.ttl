@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036480>
+  a org:Organization ;
+  skos:prefLabel "Beleidsintegratie & Beleving"@nl ;
+  skos:altLabel "Beleidsintegratie & Beleving"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036480" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8824eb8d-b76f-5718-ab2e-a6875540e12e> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036480> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036480>
+  a foaf:Document ;
+  rdfs:label "Document voor Beleidsintegratie & Beleving"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036480> .

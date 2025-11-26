@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103>
+  a org:Organization ;
+  skos:prefLabel "KUNSTATELIER OPPERSTRAAT"@nl ;
+  skos:altLabel "KAOS"@nl ;
+  dct:description "Kunstatelier Opperstraat - KAOS - ontwikkelt kunstprojecten met kunstenaars die al dan niet een psychische kwetsbaarheid hebben en organiseert kunstenaarsresidenties in de psychiatrie of een daaraan gerelateerde context. Het brengt kunst en psychiatrie samen en vertelt zo iets over de perceptie hierover."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012103" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0838341997" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0718de7c-607d-4231-9577-011191a8c6ee> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO012103/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012103> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vzwkaos@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 289 05 82" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497 421 322" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mike@vzwkaos.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vzwkaos.be/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012103/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Mike Michiels"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012103>
+  a foaf:Document ;
+  rdfs:label "Document voor KUNSTATELIER OPPERSTRAAT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012103> .

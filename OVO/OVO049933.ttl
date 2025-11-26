@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933>
+  a org:Organization ;
+  skos:prefLabel "Citadelic"@nl ;
+  dct:description "De vzw Citadelic is een afsplitsing van de vzw Q'Onda?. De vzw organiseert concerten binnen de niche van geïmproviseerde muziek, alsook een festival dat de naam Citadelic draagt."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049933" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-11-29"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0777792124" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-11-29"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6bc0244e-239a-8729-d3b5-c502b111b8a0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049933/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049933/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049933/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049933/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO049933/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049933> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@citadelic.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://citadelic.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Pascal Verstraete"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "roge@elnegocitorecords.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049933/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32 479 56 73 95" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049933>
+  a foaf:Document ;
+  rdfs:label "Document voor Citadelic"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049933> .

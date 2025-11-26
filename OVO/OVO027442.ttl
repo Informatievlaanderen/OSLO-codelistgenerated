@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027442>
+  a org:Organization ;
+  skos:prefLabel "Pluxee Belgium - klantendienst Vlaamse dienstencheques"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027442" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b0ece19e-87b4-67bd-e8d8-94b4fda09451> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027442/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027442/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027442/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027442/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027442> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027442/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 401 31 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027442/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://dienstencheques.vlaanderen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027442/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dienstencheques-vlaanderen.svc.be@sodexo.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027442/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://dienstencheques.vlaanderen.be/burger/contact"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027442>
+  a foaf:Document ;
+  rdfs:label "Document voor Pluxee Belgium - klantendienst Vlaamse dienstencheques"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027442> .

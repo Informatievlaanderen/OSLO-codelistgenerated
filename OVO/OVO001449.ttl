@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001449>
+  a org:Organization ;
+  skos:prefLabel "Oordegem"@nl ;
+  skos:altLabel "Sport Vlaanderen Oordegem"@nl ;
+  dct:description "Sport Vlaanderen Oordegem is de ideale uitvalsbasis voor outdoorsporters. Geen sporter die hier zijn gading niet vindt. Op de polyvalente velden kan je nagenoeg elke balsport spelen. De Fit-O-Meter is nagelnieuw, de gravelterreinen en beachvolleybalterreinen zijn mooi verzorgd, en het mountainbikeparcours biedt iedere fietsliefhebber een uitdaging. Er is ook een overdekte boogschietstand en liefhebbers van petanque kunnen hun kunsten tonen op de twee petanquevelden. De grote troef van dit sportcentrum? Dat is de uitstekende atletiekaccommodatie met Finse piste. Wie graag indoor het beste van zijn sportieve zelf geeft, die vindt in de polyvalente sporthal met drie squashboxen en de fitnesszaal een perfect alternatief."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001449" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/34be8a81-9788-4224-9d25-4b30f5645986> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001449/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001449/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001449/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001449/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001449> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001449/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "oordegem@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001449/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.sport.vlaanderen/oordegem/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001449/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "053 60 30 90" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001449/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "053 80 54 16" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001449>
+  a foaf:Document ;
+  rdfs:label "Document voor Oordegem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001449> .

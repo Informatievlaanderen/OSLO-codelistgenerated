@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001769>
+  a org:Organization ;
+  skos:prefLabel "Dienst Omgeving"@nl ;
+  skos:altLabel "Dienst Omgeving"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001769" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2017-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/953ca37a-8c6e-4247-9823-832de2fe4c4e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001769/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001769/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001769/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001769> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001769/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Danny Van Den Bossche"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001769/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "40"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001769/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "danny.vandenbossche@lv.vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001769>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienst Omgeving"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001769> .

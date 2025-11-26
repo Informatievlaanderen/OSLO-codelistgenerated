@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052079>
+  a org:Organization ;
+  skos:prefLabel "SONGO"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052079" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ecc47b93-c944-7805-50e9-c04ed6f2362f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052079/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052079/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052079> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052079/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "fanny.dupe@stereolux.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052079/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33251806080" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052079>
+  a foaf:Document ;
+  rdfs:label "Document voor SONGO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052079> .

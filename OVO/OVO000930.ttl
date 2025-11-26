@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930>
+  a org:Organization ;
+  skos:prefLabel "Stichting Vlaams cultuurhuis de brakke grond"@nl ;
+  dct:description "Het Vlaams Cultuurhuis de Brakke Grond is gevestigd in Amsterdam, Nederland, en heeft als doel het presenteren van kenmerkende ontwikkelingen op het gebied van kunst en cultuur uit Vlaanderen in Nederland en het bevorderen van de Vlaams-Nederlandse samenwerking op cultuurvlak."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000930" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1981-01-15"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0684779319" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1981-01-15"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7370d5f6-9752-4972-9d24-46cb308979ce> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000930/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000930> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@brakkegrond.nl" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+31 20 622 90 14" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+31 20 625 32 79" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://brakkegrond.nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "eva.vereecke@brakkegrond.nl" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000930/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Eva Vereecke"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000930>
+  a foaf:Document ;
+  rdfs:label "Document voor Stichting Vlaams cultuurhuis de brakke grond"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000930> .

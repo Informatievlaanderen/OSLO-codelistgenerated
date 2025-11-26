@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904>
+  a org:Organization ;
+  skos:prefLabel "Heemkunde Gouw Antwerpen"@nl ;
+  dct:description "De vzw Heemkunde Gouw Antwerpen is de koepelvereniging voor heemkundige, geschiedkundige en oudheidkundige kringen in de provincie Antwerpen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009904" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0408661097" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/09498d32-cdf6-419d-a6ce-e103ef09fc24> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009904/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009904/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO009904/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO009904/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO009904/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009904> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "warddepreter@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.heemkunde-gouwantwerpen.be/HK_Gouw_Antwerpen/Welkom.html> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@heemkunde-gouwantwerpen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ward De Preter"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009904/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 51 61 35" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009904>
+  a foaf:Document ;
+  rdfs:label "Document voor Heemkunde Gouw Antwerpen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009904> .

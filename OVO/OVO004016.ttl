@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004016>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Supercomputer Centrum"@nl ;
+  skos:altLabel "VSC"@nl ;
+  dct:description "Het Vlaams Supercomputer Centrum is een samenwerkingsverband tussen de 5 Vlaamse universiteiten. Het VSC stimuleert het gebruik van wetenschappelijk en technisch computergebruik in het Vlaamse academische en industriële landschap. Daartoe biedt het infrastructuur, opleidingen en diensten aan. Daarnaast fungeert het VSC als hefboom om het belang van wetenschappelijk en technisch computergebruik en de maatschappelijke meerwaarde ervan te promoten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004016" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/30b74420-f2c4-8b64-b256-515440f4af73> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004016/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004016/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO004016/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004016> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004016/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vscentrum.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004016/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vscentrum.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004016/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 512 91 10" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004016>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Supercomputer Centrum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004016> .

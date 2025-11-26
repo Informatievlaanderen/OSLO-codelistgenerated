@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080>
+  a org:Organization ;
+  skos:prefLabel "Medisch Pedagogisch Centrum Sint-Franciscus"@nl ;
+  dct:description "Medisch Pedagogisch Centrum Sint-Franciscus ondersteunt en begeleidt kinderen en jongeren met een licht, matig of ernstig verstandelijke beperking, al dan niet in combinatie met autisme, gedrags- en/of emotionele stoornissen, een (neuro)motorische beperking of een combinatie van meerdere beperkingen, alsook een beperkte groep minderjarigen met normale begaafdheid én gedrags- en/of emotionele stoornissen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013080" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0415850084" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/24ae01be-35fc-4646-ae86-42caa25ec53e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO013080/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013080> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Maren van Loon"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "maren.vanloon@mpc-sintfranciscus.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@mpc-sintfranciscus.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://mpc-sintfranciscus.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "053 64 66 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013080/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "053 64 66 66" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013080>
+  a foaf:Document ;
+  rdfs:label "Document voor Medisch Pedagogisch Centrum Sint-Franciscus"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013080> .

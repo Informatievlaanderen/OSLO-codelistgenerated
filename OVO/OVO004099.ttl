@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004099>
+  a org:Organization ;
+  skos:prefLabel "ILVO Plant 111"@nl ;
+  skos:altLabel "Plant 111"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004099" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2007-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1856efa1-a83f-b233-6408-ac7d40812c66> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004099/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004099/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004099> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004099/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 272 29 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004099/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "Plant@ilvo.vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004099>
+  a foaf:Document ;
+  rdfs:label "Document voor ILVO Plant 111"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004099> .

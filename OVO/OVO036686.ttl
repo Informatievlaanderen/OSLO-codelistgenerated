@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036686>
+  a org:Organization ;
+  skos:prefLabel "VZW De Verzamelaars"@nl ;
+  skos:altLabel "DV"@nl ;
+  dct:description "organisatie met als doel de ondersteuning van het artistieke maakproces van kunstenaars en kunstencollectieven"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036686" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-06-05"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0697656662" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-06-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a1434aef-8dda-7cba-39c4-fae27178bf14> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036686/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036686/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036686/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036686> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036686/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vzwdeverzamelaars@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036686/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Saar De Buysere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036686/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0486 39 37 54" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036686>
+  a foaf:Document ;
+  rdfs:label "Document voor VZW De Verzamelaars"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036686> .

@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414>
+  a org:Organization ;
+  skos:prefLabel "a2o-architecten"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028414" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2000-10-17"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0473064248" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2000-10-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/322568e5-9c2d-482e-9b26-61a47e8cdca5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028414/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028414/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028414/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028414/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO028414/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028414> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.a2o.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@a2o.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 26 03 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "011 28 55 28" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028414/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marijnv@a2o.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028414>
+  a foaf:Document ;
+  rdfs:label "Document voor a2o-architecten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028414> .

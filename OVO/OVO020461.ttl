@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461>
+  a org:Organization ;
+  skos:prefLabel "Hostel De Ploate"@nl ;
+  skos:altLabel "Hostel De Ploate"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020461" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c52697b3-b1f8-44cc-9696-730c346a6855> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020461/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020461/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020461/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020461/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020461/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020461> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "059 80 52 97" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "oostende@vjh.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Paul Biliet"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "paul.biliet@vjh.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020461/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.jeugdherbergen.be/nl/oostende> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020461>
+  a foaf:Document ;
+  rdfs:label "Document voor Hostel De Ploate"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020461> .

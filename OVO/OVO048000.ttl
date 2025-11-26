@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000>
+  a org:Organization ;
+  skos:prefLabel "Historium"@nl ;
+  dct:description "belevingsmuseum in Brugge"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048000" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-01-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0878909971" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2006-01-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9dafb5af-40b8-df63-1ffd-f30bb4982c50> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048000/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048000/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048000/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO048000/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO048000/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048000> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Stijn Boone"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stijn.boone@historium.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.historium.be/nl> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@historium.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048000/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "050 27 03 11" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048000>
+  a foaf:Document ;
+  rdfs:label "Document voor Historium"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048000> .

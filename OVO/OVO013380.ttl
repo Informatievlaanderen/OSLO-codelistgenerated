@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013380>
+  a org:Organization ;
+  skos:prefLabel "Museo Nacional De Arte"@nl ;
+  skos:altLabel "Museo Nacional De Arte"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013380" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/033ba106-1804-4b5b-a19f-c1eefe795018> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013380/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013380> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013380/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contacto@munal.inba.gob.mx" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013380>
+  a foaf:Document ;
+  rdfs:label "Document voor Museo Nacional De Arte"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013380> .

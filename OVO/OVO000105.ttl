@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105>
+  a org:Organization ;
+  skos:prefLabel "Inspectie Ruimtelijke Ordening, Woonbeleid en Onroerend Erfgoed"@nl ;
+  skos:altLabel "Inspectie RWO"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000105" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/414ac386-2b65-44a0-8c4c-ceb2d01ee09c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO000105/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000105> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://rwo.vonet.be/nlapps/docs/default.asp?fid=32"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.onroerenderfgoed.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.wonenvlaanderen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.rwo.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.ruimtevlaanderen.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "inspectie@rwo.vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025538363" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000105/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025538365" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000105>
+  a foaf:Document ;
+  rdfs:label "Document voor Inspectie Ruimtelijke Ordening, Woonbeleid en Onroerend Erfgoed"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000105> .

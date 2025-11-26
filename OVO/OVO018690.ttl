@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018690>
+  a org:Organization ;
+  skos:prefLabel "WATMARSWAS"@nl ;
+  skos:altLabel "WMW"@nl ;
+  dct:description "De vzw WATMARSWAS omkadert de artistieke activiteiten van Annelies Van Hullebusch. Zij wordt omschreven als een beeldend theatermaker. Haar voorstellingen zijn composities van objecten, kaarten, maquettes, gedichten, illustraties, tekst en audio."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018690" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0844442903" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/df26e954-d51a-48db-9680-a207079c473c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018690/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018690/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018690/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018690> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018690/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "anneliesvanhullebusch@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018690/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0498 30 62 31" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018690/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.anneliesvanhullebusch.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018690>
+  a foaf:Document ;
+  rdfs:label "Document voor WATMARSWAS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018690> .

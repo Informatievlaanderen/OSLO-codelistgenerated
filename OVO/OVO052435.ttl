@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052435>
+  a org:Organization ;
+  skos:prefLabel "WAVE32"@nl ;
+  dct:description "WAVE32 bv is een managementbedrijf en onafhankelijk plantenlabel dat jonge Belgische muziekartiesten ondersteunt in het ontwikkelen van hun carrière. Op hun roster staan sinds 2019 namen als Chuki Beats, Yung Mavu en Dina Ayada."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052435" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0719411683" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-01-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/63df3674-cbcb-b06e-b4cd-5c7defd60846> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052435/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052435/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052435/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052435/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052435> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052435/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dro32@worldwide.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052435/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/32worldwide/"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052435/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32497628425" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052435/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Dries Overmeire"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052435>
+  a foaf:Document ;
+  rdfs:label "Document voor WAVE32"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052435> .

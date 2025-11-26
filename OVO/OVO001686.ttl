@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001686>
+  a org:Organization ;
+  skos:prefLabel "Raad voor Vergunningsbetwistingen"@nl ;
+  skos:altLabel "Raad voor Vergunningsbetwistingen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001686" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-11-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7ecc27b9-29ff-4bd5-843d-aea743b9a0b8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001686/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001686> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001686/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025531775" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001686>
+  a foaf:Document ;
+  rdfs:label "Document voor Raad voor Vergunningsbetwistingen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001686> .

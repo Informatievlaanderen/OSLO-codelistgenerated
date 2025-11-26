@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019388>
+  a org:Organization ;
+  skos:prefLabel "AIRTIME"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019388" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e91fd0c6-67c7-45e4-a473-6036b9ca066b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019388/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019388/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019388> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019388/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "peter@airtime.fm" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019388/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03/3034545" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019388>
+  a foaf:Document ;
+  rdfs:label "Document voor AIRTIME"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019388> .

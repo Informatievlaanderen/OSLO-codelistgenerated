@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002640>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn van Nazareth"@nl ;
+  skos:altLabel "O.C.M.W."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002640" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9078f81f-6b5f-429e-a2b1-c6e63332e085> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002640/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002640/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002640/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002640/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002640> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002640/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "welzijn@nazareth.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002640/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.nazareth.be/welzijn> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002640/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 396 50 50" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002640/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 382 81 11" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002640>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn van Nazareth"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002640> .

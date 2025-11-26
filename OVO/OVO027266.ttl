@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266>
+  a org:Organization ;
+  skos:prefLabel "Opmetingen en Waarderingen (kadaster)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027266" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f5287b1f-b3be-8504-9a26-40398e033ac1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO027266/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027266> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 572 57 57" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://financien.belgium.be/nl/over_de_fod/structuur_en_diensten/algemene_administraties/patrimoniumdocumentatie> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 576 17 52" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "comcel.patdoc@minfin.fed.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://financien.belgium.be/nl/Contact"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027266/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "55"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027266>
+  a foaf:Document ;
+  rdfs:label "Document voor Opmetingen en Waarderingen (kadaster)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027266> .

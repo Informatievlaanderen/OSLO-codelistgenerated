@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291>
+  a org:Organization ;
+  skos:prefLabel "AGB Patrimonium Scherpenheuvel-Zichem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003291" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2005-12-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0878141691" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2005-12-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b27ae81e-a9ee-d03b-8128-d18f3e3c0004> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003291/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003291> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "013 460 658" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "013 460 650" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@scherpenheuvel-zichem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "013 39 13 13" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.scherpenheuvel-zichem.be/stad-en-bestuur/stadsbestuur/agb-patrimonium-scherpenheuvel-zichem> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003291/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kris.lemmens@denegger.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003291>
+  a foaf:Document ;
+  rdfs:label "Document voor AGB Patrimonium Scherpenheuvel-Zichem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003291> .

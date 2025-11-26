@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050463>
+  a org:Organization ;
+  skos:prefLabel "REGIONAAL SOCIAAL VERHUURKANTOOR DE WOONKOEPEL VZW"@nl ;
+  skos:altLabel "RSVK DE WOONKOEPEL VZW"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050463" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2004-12-15"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0314ef56-21b6-df87-5bde-83bc11403aab> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050463/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050463/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050463/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050463> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050463/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 569 78 99" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050463/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.dewoonkoepel.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050463/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@dewoonkoepel.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050463>
+  a foaf:Document ;
+  rdfs:label "Document voor REGIONAAL SOCIAAL VERHUURKANTOOR DE WOONKOEPEL VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050463> .

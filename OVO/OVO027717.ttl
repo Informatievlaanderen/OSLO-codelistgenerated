@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO027717>
+  a org:Organization ;
+  skos:prefLabel "Humaniora Voorzienigheid - KSD tweede graad"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO027717" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d0539275-6498-4804-6c4e-fb1ad0c259c9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027717/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027717/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO027717> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027717/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tweede.graad@ksdiest.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027717/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3213334584" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO027717>
+  a foaf:Document ;
+  rdfs:label "Document voor Humaniora Voorzienigheid - KSD tweede graad"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO027717> .

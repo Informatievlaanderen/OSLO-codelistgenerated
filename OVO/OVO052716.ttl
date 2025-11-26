@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716>
+  a org:Organization ;
+  skos:prefLabel "Kunstverein Arnsberg e.V."@nl ;
+  dct:description "Kunstverein Arnsberg e.V. beheert een museum voor hedendaagse kunst in Arnsberg, een kleinere stad in de deelstaat Noord-Rijn Westfalen in Duitsland. Kunstverein Arnsberg programmeert vooral kunstenaars die reflecteren op de relatie tussen kunst, natuur en politiek, evenals op verschillende aspecten van ons hedendaagse leven, zoals duurzaamheid, ecologie, sociologie, dagelijkse routines, architectuur, stedenbouw, wetenschap, technologie, enz."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052716" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d2140bf0-daa1-b438-cad7-b5d04ed03e90> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052716/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052716> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "doutreluingne@kunstverein-arnsberg.de" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Pauline Doutreluingne"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+4917625650172" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+490293121122" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kunstverein-arnsberg.de/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052716/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/kunstvereinarnsberg/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052716>
+  a foaf:Document ;
+  rdfs:label "Document voor Kunstverein Arnsberg e.V."@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052716> .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008638>
+  a org:Organization ;
+  skos:prefLabel "Dossierbeheer en Financiën"@nl ;
+  dct:description "Het team Dossierbeheer is verantwoordelijk voor de ondersteunende dienstverlening in het kader van het dossierbeheer voor subsidies en erkenningen. Daartoe behoren de ontvankelijkheidstoetsen en de advisering van en het toezicht op verschillende subsidielijnen. Het team staat ook in voor de uitvoering van de financiële verrichtingen met betrekking tot subsidies en erkenningen. Het team staat eveneens in voor de financiën van het departement. Dit houdt in: de opmaak, coördinatie en opvolging van de begroting. Maar ook de bewaking van een correct verloop van de financiële processen binnen het departement en het beheer van de apparaatskredieten van het departement zijn belangrijke taken voor dit team. Op vraag van andere teams of afdelingen neemt het ook de financiële verwerking van niet-subsidiedossiers op zich."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008638" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ed9a6388-f89d-475c-f05a-7e39be864f31> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008638/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008638/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008638> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008638/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 42 78" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008638/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kiosk@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008638>
+  a foaf:Document ;
+  rdfs:label "Document voor Dossierbeheer en Financiën"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008638> .

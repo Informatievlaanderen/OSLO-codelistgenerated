@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914>
+  a org:Organization ;
+  skos:prefLabel "Justitiehuis Brugge"@nl ;
+  skos:altLabel "JH Brugge"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001914" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6a8d9b59-56f0-4b51-9487-bc24bc78760d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001914/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001914/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001914/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001914/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO001914/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001914> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "050 44 24 10" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "justitiehuis.brugge@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.departementwvg.be/justitiehuizen/brugge> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/agentschap-justitie-en-handhaving/justitie/justitiehuizen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001914/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "050 44 24 24" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001914>
+  a foaf:Document ;
+  rdfs:label "Document voor Justitiehuis Brugge"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001914> .

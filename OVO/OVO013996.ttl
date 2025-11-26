@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013996>
+  a org:Organization ;
+  skos:prefLabel "Ontvangkantoor Directe Belastingen Schaarbeek 2"@nl ;
+  skos:altLabel "Ontvangkantoor Directe Belastingen Schaarbeek 2"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013996" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d96ccaa6-3704-4de1-a46b-41c1805eb219> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013996/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013996/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013996/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013996> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013996/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ontv.db.schaarbeek2@minfin.fed.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013996/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0257/715.40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013996/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "0257/960.84" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013996>
+  a foaf:Document ;
+  rdfs:label "Document voor Ontvangkantoor Directe Belastingen Schaarbeek 2"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013996> .

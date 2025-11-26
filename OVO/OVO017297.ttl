@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017297>
+  a org:Organization ;
+  skos:prefLabel "Toerisme, Transport en Ontspanning aan de Noordzee"@nl ;
+  skos:altLabel "T.T.O. - Noordzee"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017297" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0418352684" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/35fc84b9-e2b8-4903-8813-0308b9755040> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017297/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017297/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017297/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017297> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017297/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pr.ttonoordzeevzw@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017297/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32485762496" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017297/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485762496" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017297>
+  a foaf:Document ;
+  rdfs:label "Document voor Toerisme, Transport en Ontspanning aan de Noordzee"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017297> .

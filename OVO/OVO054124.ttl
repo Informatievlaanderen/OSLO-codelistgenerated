@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124>
+  a org:Organization ;
+  skos:prefLabel "ECHAFAUDAGES olé"@nl ;
+  dct:description "ECHAFAUDAGES olé is een experimenteel post-punk en noise-collectief uit Brussel. De band bestaat uit Christophe Trausch (gitaar/Fx), Robin Lisandru Couderc (contrabas/Fx/vocals) en Rob Swennen (drums/vocals)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054124" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-08-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1012736022" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-08-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/acfb14c3-1fa1-4395-88e6-7e994b4cd73e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054124/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054124/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054124/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054124/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO054124/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054124> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "echafaudages.ole@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32483597155" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Rob Swennen"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "rob.swennen214@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054124/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/people/ECHAFAUDAGES-ol%C3%A9/61551662134307/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054124>
+  a foaf:Document ;
+  rdfs:label "Document voor ECHAFAUDAGES olé"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054124> .

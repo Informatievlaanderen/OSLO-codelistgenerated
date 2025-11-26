@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028428>
+  a org:Organization ;
+  skos:prefLabel "Artistic Research Production"@nl ;
+  dct:description "Artistic Research Production is een onderzoeks- en productieplatform dat artistieke projecten en praktijken ondersteunt en ontwikkelt in nauwe samenwerking met kunstenaars en instellingen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028428" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-03-07"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0722590711" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-03-07"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/89b98e67-c5ee-4b97-9639-4940a2f7579a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028428/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028428/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028428/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028428/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028428> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028428/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "julia@arp.works" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028428/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0499 32 00 99" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028428/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <www.arp.works> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028428/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Julia Reist"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028428>
+  a foaf:Document ;
+  rdfs:label "Document voor Artistic Research Production"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028428> .

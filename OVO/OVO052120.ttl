@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120>
+  a org:Organization ;
+  skos:prefLabel "Coconuts"@nl ;
+  dct:description "De vzw Coconuts is een creatieve onderneming in Leuven voor en door jongvolwassenen met een psychosegevoeligheid die richting zoeken. De vzw biedt hen ruimte om hun plaats in de maatschappij en hun levenslust (opnieuw) te kunnen vinden aan de hand van kunst, design en sociaal ondernemerschap. De vzw brengt ook jaarlijks een magazine uit."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052120" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-01-14"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0780459723" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-01-14"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/11c4f198-821e-3f49-b652-f0a08b78014c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052120/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052120/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052120/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052120/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052120/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052120> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "anna@coconuts-space.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32472414518" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://coconuts-space.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Anna Kint"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052120/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hello@coconuts-space.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052120>
+  a foaf:Document ;
+  rdfs:label "Document voor Coconuts"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052120> .

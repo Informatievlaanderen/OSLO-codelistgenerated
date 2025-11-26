@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019430>
+  a org:Organization ;
+  skos:prefLabel "SCOUTS EN GIDSEN VLAANDEREN"@nl ;
+  dct:description "Scouts en Gidsen Vlaanderen is een jeugdbeweging met veel lokale afdelingen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019430" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0407138494" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/53faf4fd-70b7-4c0d-9f43-04b58eb083a1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019430/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019430/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019430/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019430/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019430> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019430/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@scoutsengidsenvlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019430/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.scoutsengidsenvlaanderen.be/scouts-en-gidsenleden> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019430/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/scoutsengidsenvlaanderen"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019430/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232311620" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019430>
+  a foaf:Document ;
+  rdfs:label "Document voor SCOUTS EN GIDSEN VLAANDEREN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019430> .

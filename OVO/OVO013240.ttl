@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013240>
+  a org:Organization ;
+  skos:prefLabel "Mmk Museum Für Moderne Kunst Frankfurt Am Main"@nl ;
+  skos:altLabel "Mmk Museum Für Moderne Kunst Frankfurt Am Main"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013240" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0965011d-79f9-4af8-8315-a0151bcb3beb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013240/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013240> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013240/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mmk.frankfurt@stadt-frankfurt.de" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013240>
+  a foaf:Document ;
+  rdfs:label "Document voor Mmk Museum Für Moderne Kunst Frankfurt Am Main"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013240> .

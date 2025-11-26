@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028311>
+  a org:Organization ;
+  skos:prefLabel "GRONDPLAN"@nl ;
+  skos:altLabel "GRNDPLN"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028311" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-05-17"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/34078008-9dc1-45eb-92e0-1b67d49f7305> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028311/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028311/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028311/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028311> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028311/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hans@stelplaats.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028311/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@stelplaats.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028311/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32498758296" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028311>
+  a foaf:Document ;
+  rdfs:label "Document voor GRONDPLAN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028311> .

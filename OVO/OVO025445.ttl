@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025445>
+  a org:Organization ;
+  skos:prefLabel "Provinciedomein Het Vinne Zoutleeuw"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025445" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/24662b4a-7927-7123-f487-83679800b8a9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025445/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025445/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025445> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025445/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 78 18 19" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025445/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "provinciedomein.zoutleeuw@vlaamsbrabant.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025445>
+  a foaf:Document ;
+  rdfs:label "Document voor Provinciedomein Het Vinne Zoutleeuw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025445> .

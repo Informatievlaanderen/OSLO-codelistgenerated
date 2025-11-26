@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016541>
+  a org:Organization ;
+  skos:prefLabel "SIHTASUTUS EESTI KONTSERT"@nl ;
+  skos:altLabel "State Concert Institution Eesti Kontsert"@nl ;
+  dct:description "SIHTASUTUS EESTI KONTSERT staat voor Estlandse Concertstichting. Het is een Estse staatsinstelling die jaarlijks in totaal bijna 1.300 concerten organiseert in Estland en daarbuiten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016541" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9cd5066c-52eb-401a-b4ba-56d0fa1ba258> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO016541/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO016541/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO016541/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO016541/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016541> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016541/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tiiu.valper@concert.ee" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016541/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tuuli.metsoja@concert.ee" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016541/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3725116308" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016541/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://concert.ee/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016541>
+  a foaf:Document ;
+  rdfs:label "Document voor SIHTASUTUS EESTI KONTSERT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016541> .

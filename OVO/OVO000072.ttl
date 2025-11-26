@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072>
+  a org:Organization ;
+  skos:prefLabel "Opera Ballet Vlaanderen"@nl ;
+  skos:altLabel "OBV"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000072" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1995-04-05"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0890626977" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1995-04-05"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/30b2d8fc-dc4a-4700-8606-8bf0533274cb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO000072/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000072> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@operaballet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ldemeerleer@vlaamseopera.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 232 26 61" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 202 10 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jwuyts@operaballet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0478302531" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000072/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.operaballet.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000072>
+  a foaf:Document ;
+  rdfs:label "Document voor Opera Ballet Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000072> .

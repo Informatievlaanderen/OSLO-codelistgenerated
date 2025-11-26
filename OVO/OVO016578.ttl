@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016578>
+  a org:Organization ;
+  skos:prefLabel "Stedelijke Musea Sint-Niklaas"@nl ;
+  skos:altLabel "Stedelijke Musea Sint-Niklaas"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016578" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/40802052-171f-497f-80d3-438e4c730843> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO016578/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO016578/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016578> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016578/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stedelijke.musea@sint-niklaas.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO016578/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03/778.34.50" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016578>
+  a foaf:Document ;
+  rdfs:label "Document voor Stedelijke Musea Sint-Niklaas"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016578> .

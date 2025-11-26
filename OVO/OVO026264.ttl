@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026264>
+  a org:Organization ;
+  skos:prefLabel "Het Huis Hasselt"@nl ;
+  skos:altLabel "HHH"@nl ;
+  dct:description "Het Huis Hasselt is een nomadisch platform voor podiumkunsten. Het Huis Hasselt maakt beeldende en fysieke voorstellingen voor een jong publiek en tekstuele voorstellingen voor volwassenen en middelbare scholieren. De voorstellingen worden altijd omkaderd met degelijk educatief materiaal."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026264" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0705854845" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/374d7e4a-0412-48e1-b53f-ae0f5a03bb8c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026264/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026264/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026264/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026264> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026264/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lola_bogaert@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026264/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://hethuishasselt.be/home/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026264/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lola Bogaert"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026264>
+  a foaf:Document ;
+  rdfs:label "Document voor Het Huis Hasselt"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026264> .

@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914>
+  a org:Organization ;
+  skos:prefLabel "50/Fifty"@nl ;
+  skos:altLabel "50/Fifty"@nl ;
+  dct:description "Dance Compagnie 50/Fifty is een danscompagnie voor dansers van 50+ jaar. Dit initiatief wil het veld voor hedendaagse dans voor 50-plussers in Vlaanderen verbreden en deze gemotiveerde groep dansers een podium en een stem aanbieden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025914" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8a9bfdfd-2171-45ab-8452-a2b95e0801ea> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025914/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025914/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO025914/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO025914/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO025914/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025914> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0484 14 06 40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://50fiftydance.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Solange Theys"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "fifty.50.dance@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025914/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "solange.theys@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025914>
+  a foaf:Document ;
+  rdfs:label "Document voor 50/Fifty"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025914> .

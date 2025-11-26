@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910>
+  a org:Organization ;
+  skos:prefLabel "Jonass"@nl ;
+  skos:altLabel "Jonass"@nl ;
+  dct:description "Jonass is een feitelijke vereniging voor kinderen, jongeren en jongvolwassenen met autisme en een normale of hoogbegaafdheid."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010910" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/86a377c2-fe8a-4694-9ad7-031dcd4607ce> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010910/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010910/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010910/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010910/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO010910/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010910> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Dimi Van Mol"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://jonass.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0470 03 27 81" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "informatie@jonass.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010910/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32470 03 27 81" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010910>
+  a foaf:Document ;
+  rdfs:label "Document voor Jonass"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010910> .

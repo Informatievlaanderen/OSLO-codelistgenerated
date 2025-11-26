@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014816>
+  a org:Organization ;
+  skos:prefLabel "Penitentiair Landbouwcentrum"@nl ;
+  skos:altLabel "Penitentiair Landbouwcentrum"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014816" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e016f42f-ba34-4ab2-81f0-9f3eac2dbb6d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014816/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014816/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014816> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014816/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "051 65 03 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014816/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "051 65 03 80" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014816>
+  a foaf:Document ;
+  rdfs:label "Document voor Penitentiair Landbouwcentrum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014816> .

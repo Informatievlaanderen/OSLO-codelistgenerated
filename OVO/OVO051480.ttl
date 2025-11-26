@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051480>
+  a org:Organization ;
+  skos:prefLabel "Tanssiareena ry"@nl ;
+  dct:description "Tanssiareena ry is een Finse vereniging met als doel de ontwikkeling van de hedendaagse dans te bevorderen en te ondersteunen. Daartoe organiseert Tanssiareena ry o.a. het festival voor hedendaagse dans Moving In November in Helsinki."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051480" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/985ab352-6fb9-2c9b-6998-ec8a2accda4b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051480/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051480/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051480/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051480/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051480> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051480/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kerstin@liikkeellamarraskuussa.fi" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051480/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33613886073" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051480/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kerstin Schroth"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051480/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://movinginnovember.fi/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051480>
+  a foaf:Document ;
+  rdfs:label "Document voor Tanssiareena ry"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051480> .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO043578>
+  a org:Organization ;
+  skos:prefLabel "Stafdienst - Interne Controle - Eigen Vermogen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO043578" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/563f6ea0-9ec4-bef4-a23a-bf03eefa5a7e> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO043578> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO043578>
+  a foaf:Document ;
+  rdfs:label "Document voor Stafdienst - Interne Controle - Eigen Vermogen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO043578> .

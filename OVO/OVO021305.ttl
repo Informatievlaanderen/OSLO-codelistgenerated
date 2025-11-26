@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305>
+  a org:Organization ;
+  skos:prefLabel "Danskant"@nl ;
+  skos:altLabel "V.D.C.V."@nl ;
+  dct:description "Danskant vzw is een cultuureducatieve jeugdvereniging. De vzw biedt dansopleidingen en percussieopleidingen voor kinderen en jongeren. Daarnaast zijn er opleidingen voor animatoren en docenten dans."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021305" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0410946834" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d3a380b2-f0fd-4a54-92b5-9d6c60f283c3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021305/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021305/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021305/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021305/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021305/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021305> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@danskant.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Luc Vandenheede"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 204 19 31" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.danskant.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021305/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "luc@danskant.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021305>
+  a foaf:Document ;
+  rdfs:label "Document voor Danskant"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021305> .

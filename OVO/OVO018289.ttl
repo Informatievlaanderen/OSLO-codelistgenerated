@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018289>
+  a org:Organization ;
+  skos:prefLabel "VOCAAL ENSEMBLE REFLECTION vzw"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018289" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0841712748" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a6e18e9f-80d1-4767-93c7-8ff13ab8e1b1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018289/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018289/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018289/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018289/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018289> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018289/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@reflectionvocaal.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018289/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0479 42 91 65" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018289/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32486055545" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018289/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hello@reflectionvocaal.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018289>
+  a foaf:Document ;
+  rdfs:label "Document voor VOCAAL ENSEMBLE REFLECTION vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018289> .

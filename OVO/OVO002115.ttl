@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115>
+  a org:Organization ;
+  skos:prefLabel "Gemeente Kalmthout"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002115" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1977-01-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0207540012" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1977-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ef450b97-a797-4969-9d4c-bad236af43ee> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO002115/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002115> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@kalmthout.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jeroen Van den Broek"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jeroen.vandenbroek@kalmthout.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kalmthout.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 376 49 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002115/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 620 22 04" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002115>
+  a foaf:Document ;
+  rdfs:label "Document voor Gemeente Kalmthout"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002115> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052468>
+  a org:Organization ;
+  skos:prefLabel "New York University"@nl ;
+  dct:description "New York University, de universiteit van New York, is eigenaar van het NYU Skirball Center for the Performing Arts, een theater met 850 zitplaatsen in Manhattan, New York."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052468" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a6a71cef-ae5c-a46f-b471-8a83cf08eb1d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052468/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052468/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052468/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052468/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052468> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052468/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kimberly.olstad@nyu.edu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052468/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+12129928482" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052468/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "skirball.events@nyu.edu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052468/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://nyuskirball.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052468>
+  a foaf:Document ;
+  rdfs:label "Document voor New York University"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052468> .

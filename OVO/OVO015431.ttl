@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015431>
+  a org:Organization ;
+  skos:prefLabel "Residentie Stuivenberg"@nl ;
+  skos:altLabel "Residentie Stuivenberg"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015431" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2ed01561-d41d-49ff-b512-83f1764b864c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015431/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015431/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO015431/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015431> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015431/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stuivenberg@skynet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015431/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 253 12 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015431/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 253 09 07" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015431>
+  a foaf:Document ;
+  rdfs:label "Document voor Residentie Stuivenberg"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015431> .

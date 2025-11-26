@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010771>
+  a org:Organization ;
+  skos:prefLabel "Vagevuur Open Jeugdwerk"@nl ;
+  skos:altLabel "Vagevuur"@nl ;
+  dct:description "Vagevuur is een jeugdwerkorganisatie uit Lokeren. De vzw wil de groeikansen van jongeren vergroten, met extra aandacht voor jongeren in een maatschappelijk kwetsbare situatie. Ze biedt hen o.a. experimenteerruimte via artistieke projecten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010771" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0400153803" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e098c8c9-f6d3-4b29-9634-27631f1024c1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010771/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010771/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010771/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010771/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010771> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010771/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 348 20 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010771/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 349 57 83" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010771/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vagevuurvzw.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010771/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vagevuurvzw.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010771>
+  a foaf:Document ;
+  rdfs:label "Document voor Vagevuur Open Jeugdwerk"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010771> .

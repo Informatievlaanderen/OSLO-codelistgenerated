@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022414>
+  a org:Organization ;
+  skos:prefLabel "Centrum voor Arbeidersvorming en Cultuurbeleid"@nl ;
+  skos:altLabel "Centravoc"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022414" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d78dfc3a-bf51-4ed6-b1bb-fdaf088eb356> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022414/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022414/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022414/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022414> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022414/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "centravoc@acw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022414/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 463 31 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022414/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 243 78 55" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022414>
+  a foaf:Document ;
+  rdfs:label "Document voor Centrum voor Arbeidersvorming en Cultuurbeleid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022414> .

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639>
+  a org:Organization ;
+  skos:prefLabel "Musica Gloria"@nl ;
+  dct:description "Musica Gloria is een vocaal en instrumentaal barokensemble, geleid door Beniamino Paganini (traverso, barokklavieren, maestro al cembalo en musicoloog) en Nele Vertommen (barokhobo, blokfluit en artistiek onderzoek)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049639" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-04-14"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0745948212" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-04-14"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/60e2ec58-84ad-1958-0a42-b5fa84afa1e5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049639/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049639/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049639/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049639/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO049639/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049639> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://beniaminopaganini.com/over-musica-gloria/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "beniamino.paganini@icloud.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32475452099" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Beniamino Paganini"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049639/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://musicagloria.com> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049639>
+  a foaf:Document ;
+  rdfs:label "Document voor Musica Gloria"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049639> .

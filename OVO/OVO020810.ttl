@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020810>
+  a org:Organization ;
+  skos:prefLabel "Openbare Bibliotheek Wommelgem"@nl ;
+  skos:altLabel "Openbare Bibliotheek Wommelgem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020810" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5f8f1481-2800-4936-ae31-28284aa52e55> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020810/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020810/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020810/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020810/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020810> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020810/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://wommelgem.bibliotheek.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020810/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "wommelgem@bibliotheek.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020810/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 354 28 08" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020810/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 354 00 06" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020810>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbare Bibliotheek Wommelgem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020810> .

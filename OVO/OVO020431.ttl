@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020431>
+  a org:Organization ;
+  skos:prefLabel "Jeugd- en Jongerenwerk Mechelen vzw-evap"@nl ;
+  skos:altLabel "J@M vzw-evap"@nl ;
+  dct:description "J@M vzw organiseert educatieve en recreatieve activiteiten in de vrije tijd van kinderen en tieners die maatschappelijk minder kansen krijgen om zich te ontplooien."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020431" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0445294237" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a42c97e2-cfbb-4279-a80c-d66eac5831c6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020431/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020431/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020431/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020431/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020431> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020431/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@jamvzw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020431/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.jamvzw.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020431/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "boekhouding@jamvzw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020431/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3215677246" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020431>
+  a foaf:Document ;
+  rdfs:label "Document voor Jeugd- en Jongerenwerk Mechelen vzw-evap"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020431> .

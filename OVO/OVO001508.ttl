@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001508>
+  a org:Organization ;
+  skos:prefLabel "Locaties Ruimte Vlaanderen"@nl ;
+  skos:altLabel "Locaties Ruimte Vlaanderen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001508" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2007-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/930e116e-eb79-4f41-8084-c999fdaf0b5d> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001508> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001508>
+  a foaf:Document ;
+  rdfs:label "Document voor Locaties Ruimte Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001508> .

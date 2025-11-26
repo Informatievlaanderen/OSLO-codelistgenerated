@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO023109>
+  a org:Organization ;
+  skos:prefLabel "DAILY SIN ENTERTAINMENT VZW"@nl ;
+  skos:altLabel "DSE VZW"@nl ;
+  dct:description "De vzw Daily Sin Entertainment omkadert de metalband Spoil Engine."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO023109" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0817229750" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c439995d-da45-4331-85c6-7c42746a0d24> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO023109/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO023109/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO023109> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023109/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@stevensanders.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023109/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 58 26 12" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO023109>
+  a foaf:Document ;
+  rdfs:label "Document voor DAILY SIN ENTERTAINMENT VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO023109> .

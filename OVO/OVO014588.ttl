@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014588>
+  a org:Organization ;
+  skos:prefLabel "AXEL TROCH"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014588" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0452198855" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2df1c105-759c-418e-a88d-9ddb3d5f9d75> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014588/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014588/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014588/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014588> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014588/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "axelt@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014588/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32 (0)9 367 96 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014588/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+32 (0)9 367 96 41" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014588>
+  a foaf:Document ;
+  rdfs:label "Document voor AXEL TROCH"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014588> .

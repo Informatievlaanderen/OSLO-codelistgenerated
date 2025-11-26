@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022464>
+  a org:Organization ;
+  skos:prefLabel "CHAMBER MUSIC FOR EUROPE"@nl ;
+  skos:altLabel "String Quartet Factory"@nl ;
+  dct:description "De vzw Chamber Music for Europe heeft als doel de ondersteuning van kamermuziekensembles, vooral strijkkwartetten en trio's."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022464" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0448731896" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9b826ae9-6992-4d1e-a596-77de3a6866b3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022464/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022464/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022464/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022464> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022464/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.chambermusiceurope.org/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022464/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@chambermusiceurope.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022464/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 411 52 37" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022464>
+  a foaf:Document ;
+  rdfs:label "Document voor CHAMBER MUSIC FOR EUROPE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022464> .

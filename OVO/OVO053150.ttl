@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150>
+  a org:Organization ;
+  skos:prefLabel "Toneelscholenfestival"@nl ;
+  dct:description "Het Toneelscholenfestival is een theaterfestival waar alle afstudeervoorstellingen van de Nederlandstalige toneelscholen in België (Koninklijk Conservatorium Antwerpen, RITCS Brussel, LUCA Leuven en KASK Gent) naast elkaar worden getoond."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053150" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-03-10"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0799400061" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-03-10"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/40aa815e-a63a-44e3-9834-a3280fac32ee> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053150/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053150/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053150/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053150/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO053150/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053150> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "toneelscholenfestival.twk@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32499745207" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Bavo Buys"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bavo21buys@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053150/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.toneelscholenfestival.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053150>
+  a foaf:Document ;
+  rdfs:label "Document voor Toneelscholenfestival"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053150> .

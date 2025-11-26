@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048343>
+  a org:Organization ;
+  skos:prefLabel "Kunstfelder"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048343" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-05-06"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/798589ae-f658-580c-52bd-8f184ca3b29a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048343/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048343> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048343/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "martina.marschalk@kunstfelder-ev.de" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048343>
+  a foaf:Document ;
+  rdfs:label "Document voor Kunstfelder"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048343> .

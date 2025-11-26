@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009476>
+  a org:Organization ;
+  skos:prefLabel "Dans! Dichter! Dans!"@nl ;
+  skos:altLabel "DDD"@nl ;
+  dct:description "(vroegere naam = Geruis & Weergalm) De vzw Dans! Dichter! Dans! is een muzikaal spoken word platform. De vzw stimuleert beginnende en semi-professionele spoken word artiesten om nieuw artistiek werk te ontwikkelen en te delen met een publiek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009476" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0685849485" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5ff00ff8-caa4-4956-b58c-0832b2ff06bb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009476/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009476/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO009476/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO009476/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009476> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009476/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32488868211" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009476/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tim@dansdichterdans.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009476/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Tim Thomaes"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009476/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.spokenword.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009476>
+  a foaf:Document ;
+  rdfs:label "Document voor Dans! Dichter! Dans!"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009476> .

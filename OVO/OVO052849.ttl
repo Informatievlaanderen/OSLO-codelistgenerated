@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849>
+  a org:Organization ;
+  skos:prefLabel "BRAM KERKHOFS DESIGN STUDIO"@nl ;
+  skos:altLabel "BKDS"@nl ;
+  dct:description "De bv BRAM KERKHOFS DESIGN STUDIO omkadert de artistieke activiteiten van designer Bram Kerkhofs."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052849" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2014-09-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0563669077" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2014-09-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cb7a1e7b-9d20-4373-8a12-089f2c72d24c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052849/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052849/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052849/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052849/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052849/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052849> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bramkerkhofs@yahoo.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0486 37 24 51" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Bram Kerkhofs"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bram@bram-kerkhofs.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052849/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.bram-kerkhofs.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052849>
+  a foaf:Document ;
+  rdfs:label "Document voor BRAM KERKHOFS DESIGN STUDIO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052849> .

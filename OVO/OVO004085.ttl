@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085>
+  a org:Organization ;
+  skos:prefLabel "OKRA, trefpunt 55+"@nl ;
+  skos:altLabel "OKRA"@nl ;
+  dct:description "OKRA, trefpunt 55+ is een christelijke seniorenvereniging binnen het Algemeen Christelijk Werknemersverbond in Vlaanderen. De organisatie was vroeger bekend als de Kristelijke Beweging voor Gepensioneerden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004085" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0412022346" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/26c63bdf-2dbb-f179-dba3-5a4a2d460907> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO004085/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004085> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretariaat@okra.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+3222464442" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3222464441" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.okra.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@okra.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004085/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3222466700" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004085>
+  a foaf:Document ;
+  rdfs:label "Document voor OKRA, trefpunt 55+"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004085> .

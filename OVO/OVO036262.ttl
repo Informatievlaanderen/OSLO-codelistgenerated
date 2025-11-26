@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262>
+  a org:Organization ;
+  skos:prefLabel "Route42"@nl ;
+  dct:description "Route42 is een projectvereniging met als doel de uitvoering van een transversaal en bovenlokaal cultuurbeleid. Deelnemers zijn de stad Geraardsbergen (Cultuurdienst) en de gemeenten Lierde, Herzele, Zottegem, Sint-Lievens-Houtem en Oosterzele, alsook de Autonome Gemeentebedrijven van Geraardsbergen (Cultureel Centrum en bibliotheek), Oosterzele en Herzele."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036262" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0743533605" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8c2fafb6-ccf0-7714-a53d-75fb89e7a4c2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO036262/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036262> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 364 64 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://route42.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Koen De Keukeleire"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@route42.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sandra.deroeck@zottegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036262/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "koen.dekeukeleire@zottegem.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036262>
+  a foaf:Document ;
+  rdfs:label "Document voor Route42"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036262> .

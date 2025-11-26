@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359>
+  a org:Organization ;
+  skos:prefLabel "Koninklijke Harmonie 'De Lustige Vrienden' - Oeselgem"@nl ;
+  skos:altLabel "KHDLVO"@nl ;
+  dct:description "Harmonieorkest uit Dentergem (Oeselgem)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051359" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-05-15"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0695939861" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-05-15"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c1180c13-fa2f-8e3a-78e2-57e63120319c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051359/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051359/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051359/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051359/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051359/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051359> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "geertcarton@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.delustigevrienden.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0478 09 95 95" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Geert Carton"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051359/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "delustigevrienden@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051359>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijke Harmonie 'De Lustige Vrienden' - Oeselgem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051359> .

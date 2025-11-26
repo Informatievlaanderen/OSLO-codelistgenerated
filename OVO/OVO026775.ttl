@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775>
+  a org:Organization ;
+  skos:prefLabel "Tango Alegre"@nl ;
+  dct:description "De vzw Tango Alegre heeft als doel de Argentijnse tango te verspreiden door middel van lessen, workshops, optredens, projecten, evenementen ..."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026775" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0840489261" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c5324a10-7eef-48a7-9f5b-054c2552c21f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO026775/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026775> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0494 11 90 71" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.tangoalegre.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Astrid Cerpentier"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "astrid.cerpentier@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32494 11 90 71" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026775/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@tangoalegre.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026775>
+  a foaf:Document ;
+  rdfs:label "Document voor Tango Alegre"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026775> .

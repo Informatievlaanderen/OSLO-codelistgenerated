@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052456>
+  a org:Organization ;
+  skos:prefLabel "Mergan, Kato"@nl ;
+  dct:description "Eenmanszaak van choreograaf, danser en docent Kato Mergan."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052456" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-11-18"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0737774476" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-11-18"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9ad36fe8-851d-30ed-56fc-f00e9bf7e610> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052456/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052456/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052456/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052456> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052456/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Kato Mergan"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052456/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mergankato@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052456/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32471348910" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052456>
+  a foaf:Document ;
+  rdfs:label "Document voor Mergan, Kato"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052456> .

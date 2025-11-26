@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001445>
+  a org:Organization ;
+  skos:prefLabel "Sport Vlaanderen Herentals"@nl ;
+  skos:altLabel "SV Herentals"@nl ;
+  dct:description "In de prachtige vallei van de Nete, op de flanken van de Kempische heuvelrug, vind je Sport Vlaanderen Herentals. Het moderne omnisportcentrum ligt deels in recreatiegebied, deels in natuurgebied. Omwille van zijn centrale ligging is het de ideale uitvalsbasis om de Antwerpse Kempen te ontdekken, maar je vindt er vooral een heel uitgebreid en gevarieerd aanbod van sport- en recreatiemogelijkheden en comfortabele verblijfsaccommodaties."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001445" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cfbc79bb-7fe2-4b14-917b-d405e5e3266e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001445/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001445/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001445/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001445/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001445> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001445/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "herentals@sport.vlaanderen" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001445/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014 85 95 10" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001445/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "014 85 95 26" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001445/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.sport.vlaanderen/herentals> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001445>
+  a foaf:Document ;
+  rdfs:label "Document voor Sport Vlaanderen Herentals"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001445> .

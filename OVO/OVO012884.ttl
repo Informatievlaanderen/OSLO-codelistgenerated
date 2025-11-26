@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO012884>
+  a org:Organization ;
+  skos:prefLabel "Malmö Konsthall"@nl ;
+  skos:altLabel "Malmö Konsthall"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO012884" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/21db0e26-bdec-4af7-aba5-bcd95e738ebb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO012884/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO012884/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO012884/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO012884/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO012884> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012884/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jacob.fabricius@malmo.se" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012884/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "004640341285" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012884/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "004640341285" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO012884/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info.konsthall@malmo.se" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO012884>
+  a foaf:Document ;
+  rdfs:label "Document voor Malmö Konsthall"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO012884> .

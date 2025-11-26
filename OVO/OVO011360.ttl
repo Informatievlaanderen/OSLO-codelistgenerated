@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011360>
+  a org:Organization ;
+  skos:prefLabel "KLJ-Eel - Den Bouw"@nl ;
+  skos:altLabel "KLJ-EEL"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011360" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0877747753" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/3d0198f2-40dc-454f-893f-ad0c30ae4769> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011360/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011360/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011360> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011360/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vzwkljeel@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011360/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32477455679" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011360>
+  a foaf:Document ;
+  rdfs:label "Document voor KLJ-Eel - Den Bouw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011360> .

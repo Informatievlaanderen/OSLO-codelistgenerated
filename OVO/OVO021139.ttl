@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139>
+  a org:Organization ;
+  skos:prefLabel "TUTTI FRATELLI"@nl ;
+  dct:description "Tutti Fratelli is een sociaal-artistieke werkplaats in Antwerpen. Tutti Fratelli maakt theater met personen die minder kansen kregen in hun leven (mensen in armoede, met psychische problemen of met een beperking)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021139" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0445854956" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/af0f1781-019c-4bd4-84f0-c02d31c03728> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO021139/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021139> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@tuttifratelli.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 233 22 81" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://tuttifratelli.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 99 86 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Erik Van Linden"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021139/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "erik@tuttifratelli.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021139>
+  a foaf:Document ;
+  rdfs:label "Document voor TUTTI FRATELLI"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021139> .

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Communicatie en IT"@nl ;
+  skos:altLabel "CI"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000356" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cbdccab9-c52c-43ca-aac8-9d225cb0b96d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO000356/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000356> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 31 07" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "beleidsinfo.dwvg@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 31 08" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "30"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "communicatie-informatie.dwvg@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "communicatie-it.zorg@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000356/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.departementzorg.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000356>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Communicatie en IT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000356> .

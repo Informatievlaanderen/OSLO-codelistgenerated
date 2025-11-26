@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001954>
+  a org:Organization ;
+  skos:prefLabel "Kwalificaties en Curriculum"@nl ;
+  skos:altLabel "K&C"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001954" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/66f16abe-bd28-4de8-bdbc-851b96864834> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001954/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001954/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001954/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001954/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001954> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001954/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "KenC@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001954/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kwalificatiesencurriculum.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001954/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "evc@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001954/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kenc@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001954>
+  a foaf:Document ;
+  rdfs:label "Document voor Kwalificaties en Curriculum"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001954> .

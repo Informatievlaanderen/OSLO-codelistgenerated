@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055148>
+  a org:Organization ;
+  skos:prefLabel "Shout at Cancer"@nl ;
+  dct:description "Shout at Cancer heeft als missie om een ​​stem terug te geven aan mensen die die verloren zijn. Het is een liefdadigheidsinstelling uit Londen, Verenigd Koninkrijk, die zich inzet voor de wederopbouw van levens door middel van innovatieve spraaktraining met muziek, zang en optredens na een laryngectomie – de chirurgische verwijdering van het strottenhoofd als gevolg van keelkanker."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055148" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6de35e74-00fc-fda7-7bc5-d73550c47884> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055148/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055148/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055148/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055148> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055148/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@shoutatcancer.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055148/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+447879392005" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055148/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.shoutatcancer.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055148>
+  a foaf:Document ;
+  rdfs:label "Document voor Shout at Cancer"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055148> .

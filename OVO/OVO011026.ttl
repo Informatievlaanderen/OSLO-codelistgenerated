@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011026>
+  a org:Organization ;
+  skos:prefLabel "Kader Abdolah"@nl ;
+  skos:altLabel "Kader Abdolah"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011026" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fcfe8df6-13e6-43f8-9684-da2af04e6626> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011026> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011026>
+  a foaf:Document ;
+  rdfs:label "Document voor Kader Abdolah"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011026> .

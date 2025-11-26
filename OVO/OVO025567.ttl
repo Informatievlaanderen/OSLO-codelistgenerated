@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025567>
+  a org:Organization ;
+  skos:prefLabel "Proefbank vuurwapens (Luik)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025567" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4e336cd9-047e-99f0-6456-5f98e8303a3c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025567/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO025567/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO025567/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025567> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025567/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <www.bancdepreuves.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025567/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "04 227 14 55" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025567/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "04 277 81 78" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025567>
+  a foaf:Document ;
+  rdfs:label "Document voor Proefbank vuurwapens (Luik)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025567> .

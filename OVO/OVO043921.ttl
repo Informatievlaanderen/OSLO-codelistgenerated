@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO043921>
+  a org:Organization ;
+  skos:prefLabel "Departement Onderwijs en Vorming - MOD DIC ICT"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO043921" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e8e9fc98-6d0b-3d06-37be-91e692cc3e7e> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO043921> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO043921>
+  a foaf:Document ;
+  rdfs:label "Document voor Departement Onderwijs en Vorming - MOD DIC ICT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO043921> .

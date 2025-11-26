@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048155>
+  a org:Organization ;
+  skos:prefLabel "LUSA"@nl ;
+  dct:description "De bvba Lusa omkadert de artistieke activiteiten van zangeres Leki, artiestennaam van Karoline Kamosi."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048155" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2002-12-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0479167924" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2002-12-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/84eee558-8fcc-4190-7885-4a5efa4935c0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048155/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048155/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048155> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048155/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Karoline Kamosi"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048155/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "karolinekamosi@yahoo.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048155>
+  a foaf:Document ;
+  rdfs:label "Document voor LUSA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048155> .

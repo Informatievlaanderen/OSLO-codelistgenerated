@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036378>
+  a org:Organization ;
+  skos:prefLabel "Kabinet van de Vlaams minister van Mobiliteit en Openbare Werken"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036378" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-10-02"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ec081548-4a0a-ac53-2be3-a9e39d903f1d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036378/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036378/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036378> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036378/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 552 63 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036378/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kabinet.peeters@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036378>
+  a foaf:Document ;
+  rdfs:label "Document voor Kabinet van de Vlaams minister van Mobiliteit en Openbare Werken"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036378> .

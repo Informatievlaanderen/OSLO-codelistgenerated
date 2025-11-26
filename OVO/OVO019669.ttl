@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669>
+  a org:Organization ;
+  skos:prefLabel "Pikzpalace"@nl ;
+  dct:description "Pikzpalace is een straattheatergezelschap opgericht door Greet Verhoeven en Eric Peeters."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019669" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0457232363" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4fad5f07-80a4-462b-a69e-bf74f77fcd35> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019669/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019669/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019669/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019669/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019669/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019669> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pepperz@pandora.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pikz@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32484296941" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Eric Peeters"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019669/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.pikzpalace.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019669>
+  a foaf:Document ;
+  rdfs:label "Document voor Pikzpalace"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019669> .

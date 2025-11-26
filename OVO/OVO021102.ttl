@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021102>
+  a org:Organization ;
+  skos:prefLabel "TALENCENTRUM 'LE CRAYON'"@nl ;
+  skos:altLabel "'LE CRAYON'"@nl ;
+  dct:description "Talencentrum 'Le Crayon' organiseert Franse en Engelse taalkampen en taalvakanties op maat voor 5- tot 16-jarigen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021102" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0823832876" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6951d975-c96a-4fc1-b06e-0c9bf22c3566> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021102/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021102/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021102/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021102/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021102> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021102/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lecrayon.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021102/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0497 60 58 32" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021102/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Sophie Delecluyse"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021102/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://taalkamp.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021102>
+  a foaf:Document ;
+  rdfs:label "Document voor TALENCENTRUM 'LE CRAYON'"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021102> .

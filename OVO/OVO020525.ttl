@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525>
+  a org:Organization ;
+  skos:prefLabel "JUBILEE"@nl ;
+  skos:altLabel "JUBILEE"@nl ;
+  dct:description "De vzw JUBILEE is een platform voor artistieke research en productie. De vzw omkadert de activiteiten van de kunstenaars Justin Bennett, Louise de Bethune, Katya Ev, Ciel Grommen, Vincent Meessen, Hélène Meyer, Maximiliaan Royakkers, Stijn Van Dorpe, Filip Van Dingenen, Jesse van Winden, Clémentine Vaultier en Vermeir & Heiremans."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020525" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0542475468" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c19b673f-ba71-4575-a4da-6797a364a776> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO020525/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020525> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jesse.van.winden@jubilee-art.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 378 21 88" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jesse van Winden"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@jubilee-art.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0470 65 32 78" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://jubilee-art.org/?rd_page=news&lang=en> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020525/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32488025904" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020525>
+  a foaf:Document ;
+  rdfs:label "Document voor JUBILEE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020525> .

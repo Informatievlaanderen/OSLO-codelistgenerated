@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008440>
+  a org:Organization ;
+  skos:prefLabel "Dienstencentrum Welzijn"@nl ;
+  skos:altLabel "Dienstencentrum Welzijn"@nl ;
+  dct:description "De afdeling Dienstencentrum Welzijn heeft een tweeledige opdracht: Enerzijds 1° het voorbereiden, organiseren en uitvoeren van het beleid van de vzw Sociale Dienst voor het Vlaams Overheidspersoneel, afgekort vzw Sociale Dienst of vzw SD; 2° het aanbieden van: a) een laagdrempelig aanspreekpunt voor professionele en/of persoonlijke problematieken van haar klanten; b) betrouwbare en oplossingsgerichte begeleiding zodat haar klanten beter kunnen functioneren in hun werk, privé- en sociale omgeving; c) ondersteuning en het uitwerken van oplossingen op maat bij sociale noodsituaties; 3° het ontwikkelen van een evenwichtige combinatie van activiteiten met betrekking tot de sociale dienstverlening, de individuele hulpverlening, de eindeloopbaan- en de seniorenwerking; 4° in samenwerking met andere organisatie-interne en organisatie-externe actoren, een bijdrage leveren aan het algemeen welzijn van de actieve en gepensioneerde personeelsleden van de Vlaamse overheid en hun gezinsleden, om hun totale functioneren als individu en hun sociaal functioneren, zowel binnen als buiten de werkomgeving te bevorderen. Anderzijds Een VO-brede dienstverlening ontwikkelen rond de thema’s welzijn en integriteit en daaromtrent een ondersteuningsaanbod aanbieden, zowel preventief als curatief."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008440" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d0da43ce-cae0-091c-3fe7-8674b2aff4fa> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008440/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008440/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008440> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008440/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "50"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008440/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 49 79" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008440>
+  a foaf:Document ;
+  rdfs:label "Document voor Dienstencentrum Welzijn"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008440> .

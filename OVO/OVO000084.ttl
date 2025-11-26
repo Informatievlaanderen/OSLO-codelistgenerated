@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084>
+  a org:Organization ;
+  skos:prefLabel "Instituut voor Landbouw-, Visserij- en Voedingsonderzoek"@nl ;
+  skos:altLabel "ILVO"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000084" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a91a4a05-56da-44fd-b1d4-000a00f334b3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000084/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000084> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://intranet.ilvo/default.aspx"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ilvo@ilvo.vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 272 25 01" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 272 25 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "1"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000084/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://ilvo.vlaanderen.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000084>
+  a foaf:Document ;
+  rdfs:label "Document voor Instituut voor Landbouw-, Visserij- en Voedingsonderzoek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000084> .

@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180>
+  a org:Organization ;
+  skos:prefLabel "YOUCA"@nl ;
+  dct:description "YOUCA staat voor Youth for Change and Action. Het is een organisatie voor en door jongeren die hen stimuleert om samen te werken aan een duurzame en rechtvaardige samenleving. (vroegere naam: Zuiddag)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019180" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0882057622" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c7170d16-021a-47bf-b0f9-f511e13ee90f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO019180/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019180> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.youca.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@youca.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0471 80 61 81" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 403 06 91" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Loes Verhaeghe"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0486 71 23 92" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019180/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "loes@youca.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019180>
+  a foaf:Document ;
+  rdfs:label "Document voor YOUCA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019180> .

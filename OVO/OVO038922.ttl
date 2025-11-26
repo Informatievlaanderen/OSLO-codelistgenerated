@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038922>
+  a org:Organization ;
+  skos:prefLabel "Be The Change"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038922" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-02-16"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f4111fd3-7b3f-d1f3-fc6c-93279c10b2fe> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038922/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038922/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038922> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038922/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Inge Jonckheere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038922/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "inge.jonckheere@gmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038922>
+  a foaf:Document ;
+  rdfs:label "Document voor Be The Change"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038922> .

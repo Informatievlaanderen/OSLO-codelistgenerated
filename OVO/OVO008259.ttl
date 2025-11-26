@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008259>
+  a org:Organization ;
+  skos:prefLabel "Projectvereniging de Merode"@nl ;
+  skos:altLabel "de Merode"@nl ;
+  dct:description "Projectvereniging Cultuur en Erfgoed de Merode biedt ondersteuning in cultuur en bovenlokaal cultuurbeleid, cultureel erfgoed en onroerend erfgoed voor de gemeenten die deel uitmaken van deze intergemeentelijke samenwerking: Aarschot, Herselt, Hulshout, Laakdal, Scherpenheuvel-Zichem, Tessenderlo en Westerlo."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008259" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0638866051" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c40bf55e-ce43-de38-4369-5f6c40b868df> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008259/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008259/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008259/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008259> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008259/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.cultuurenerfgoeddemerode.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008259/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "falke.lambrechts@de-merode.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008259/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Falke Lambrechts"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008259>
+  a foaf:Document ;
+  rdfs:label "Document voor Projectvereniging de Merode"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008259> .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017666>
+  a org:Organization ;
+  skos:prefLabel "Vakantie en Muziek"@nl ;
+  skos:altLabel "V.E.M."@nl ;
+  dct:description "Vakantie en Muziek vzw is een socio-culturele vereniging die actieve cultuurparticipatie en -recreatie in Vlaanderen wil promoten, het emotioneel en sociaal welbevinden wil bevorderen en mensen samen wil brengen via tal van activiteiten, in eerste instantie gericht op klassieke muziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017666" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0443638111" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0e090e97-151d-4dd9-b22d-f48cd40504e1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017666/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017666/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017666/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017666> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017666/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017666/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Lieven Aelvoet"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017666/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vem.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017666>
+  a foaf:Document ;
+  rdfs:label "Document voor Vakantie en Muziek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017666> .

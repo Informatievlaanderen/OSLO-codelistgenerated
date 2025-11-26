@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039158>
+  a org:Organization ;
+  skos:prefLabel "De Verliefde Wolk"@nl ;
+  dct:description "Het IBO (Initiatief Buitenschoolse Opvang) De Verliefde Wolk organiseert naschoolse opvang, ook tijdens de vakanties, voor kinderen tussen 2,5 en 12 jaar."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039158" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-08-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/adc1a067-16c8-3cd8-eadd-bd9ac12690da> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039158/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039158/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039158/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039158/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039158> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039158/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "annemieke.declercq@dewelvaartkapoen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039158/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0477 99 79 24" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039158/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Anne-Mieke De Clercq"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039158/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.dewelvaartkapoen.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039158>
+  a foaf:Document ;
+  rdfs:label "Document voor De Verliefde Wolk"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039158> .

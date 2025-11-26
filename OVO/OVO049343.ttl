@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049343>
+  a org:Organization ;
+  skos:prefLabel "Zendingscoördinator"@nl ;
+  dct:description "Team Zendingscöordinatie coördineert de voorbereiding van de buitenlandse zendingen van de leden van de Vlaamse Regering."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049343" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9bf9d722-ccea-a3d8-9675-097530c7232a> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049343> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049343>
+  a foaf:Document ;
+  rdfs:label "Document voor Zendingscoördinator"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049343> .

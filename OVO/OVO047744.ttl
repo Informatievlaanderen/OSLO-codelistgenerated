@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047744>
+  a org:Organization ;
+  skos:prefLabel "THE HOST Belgium"@nl ;
+  dct:description "theaterproductiehuis dat voorstellingen brengt op openluchtlocaties"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047744" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-09-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/26e2599a-983b-bd56-95c3-f0e558380df5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047744/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047744/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047744/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO047744/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047744> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047744/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.thehostbelgium.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047744/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Yannick de Kleine"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047744/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@thehostbelgium.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047744/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "yannick@thehostbelgium.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047744>
+  a foaf:Document ;
+  rdfs:label "Document voor THE HOST Belgium"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047744> .

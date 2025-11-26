@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010195>
+  a org:Organization ;
+  skos:prefLabel "Home Pacific"@nl ;
+  skos:altLabel "Home Pacific"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010195" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c99f6abb-9b74-4201-966f-e4005f88f9fa> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010195/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010195/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010195/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010195> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010195/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "home.pacific@skynet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010195/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 411 47 55" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010195/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 414 77 14" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010195>
+  a foaf:Document ;
+  rdfs:label "Document voor Home Pacific"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010195> .

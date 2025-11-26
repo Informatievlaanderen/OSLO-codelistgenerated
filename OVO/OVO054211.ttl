@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054211>
+  a org:Organization ;
+  skos:prefLabel "Zuhal Demir, Vlaams minister van Onderwijs, Justitie en Werk"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054211" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-09-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e6bd5abc-fbd3-427f-002b-888d38ce6de4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054211/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054211/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054211/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054211/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054211> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054211/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/vlaamse-regering> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054211/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 552 61 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054211/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kabinet.demir@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054211/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "http://kabinetdemir-contact.be/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054211>
+  a foaf:Document ;
+  rdfs:label "Document voor Zuhal Demir, Vlaams minister van Onderwijs, Justitie en Werk"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054211> .

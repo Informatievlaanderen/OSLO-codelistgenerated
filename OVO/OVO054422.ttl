@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054422>
+  a org:Organization ;
+  skos:prefLabel "Fred Luiten Concertorganisatie B.V."@nl ;
+  dct:description "Fred Luiten Concertorganisatie is een concertorganisatie uit Nederland die gespecialiseerd is in het organiseren van concerten van vocale barokmuziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054422" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d236719d-fe48-ae77-e5e8-684388ed8b51> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054422/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054422/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054422> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054422/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "barokvocaal@barokvocaal.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054422/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+31634137434" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054422>
+  a foaf:Document ;
+  rdfs:label "Document voor Fred Luiten Concertorganisatie B.V."@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054422> .

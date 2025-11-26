@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051344>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Centrum voor Werknemersvorming"@nl ;
+  skos:altLabel "V.C.W.V."@nl ;
+  dct:description "Vlaams Centrum voor Werknemersvorming biedt leeractiviteiten aan voor werknemers die actief zijn in de syndicale dienstverlening. De focus ligt op het verwerven en up-to-date houden van sociaaljuridische kennis. Daarnaast kunnen werknemers er ook terecht voor basistrainingen waarmee ze hun dienstverlenende vaardigheden kunnen aanscherpen. / onderdeel van het ACV"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051344" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1995-07-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0456422612" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1995-07-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0a3862e2-f809-2d4c-98b3-dcd50259bab8> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051344> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051344>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Centrum voor Werknemersvorming"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051344> .

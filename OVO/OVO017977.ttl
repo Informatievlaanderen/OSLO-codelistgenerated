@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017977>
+  a org:Organization ;
+  skos:prefLabel "Vermeren, Mayke"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017977" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f2d6a728-4b15-48f8-8815-d891c58984ab> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017977/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017977/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017977> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017977/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "e.mayke.vermeren@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017977/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0486 03 29 44" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017977>
+  a foaf:Document ;
+  rdfs:label "Document voor Vermeren, Mayke"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017977> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055207>
+  a org:Organization ;
+  skos:prefLabel "Stichting P/////AKT"@nl ;
+  dct:description "P/////AKT is een non-profit tentoonstellingsruimte voor hedendaagse kunst in Amsterdam die grootschalige solopresentaties organiseert en faciliteert, waardoor het publiek inzicht kan krijgen in de denkwereld van de kunstenaars."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055207" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d073f9c0-a253-20d1-a5a5-4740c7212b4a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055207/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055207/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055207/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO055207/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055207> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055207/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "nienke@pakt.nu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055207/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Nienke Vijlbrief"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055207/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+31654270879" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055207/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.pakt.nu/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055207>
+  a foaf:Document ;
+  rdfs:label "Document voor Stichting P/////AKT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055207> .

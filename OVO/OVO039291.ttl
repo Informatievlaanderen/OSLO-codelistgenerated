@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039291>
+  a org:Organization ;
+  skos:prefLabel "LOOK@LEO Film Financing"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039291" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2013-10-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0540857449" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2013-10-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b3a397c8-028a-cf75-adda-a6778a9bc31c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039291/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039291/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039291/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039291/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039291> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039291/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://lookatleofilmfinancing.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039291/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@lookatleofilmfinancing.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039291/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Filip Peeters"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039291/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "filippeeters@telenet.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039291>
+  a foaf:Document ;
+  rdfs:label "Document voor LOOK@LEO Film Financing"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039291> .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039314>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Tewerkstelling en Competenties"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039314" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4ab0749a-03ac-2089-f638-ee8b4a5adfe8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039314/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039314/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039314/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039314> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039314/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretariaat_TWC@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039314/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 40 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039314/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "20"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039314>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Tewerkstelling en Competenties"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039314> .

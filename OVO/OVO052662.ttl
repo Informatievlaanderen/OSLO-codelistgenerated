@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052662>
+  a org:Organization ;
+  skos:prefLabel "team Crisiscentrum Vlaamse overheid"@nl ;
+  skos:altLabel "CCVO"@nl ;
+  dct:description "Het Crisiscentrum van de Vlaamse overheid (CCVO) heeft drie grote opdrachten: - Coördineren, faciliteren en/of adviseren van een optimaal crisisbeheer bij crisissen in Vlaanderen en/of de Vlaamse overheid, en hiervoor ook de nodige permanentie verzekeren zodat een snelle opstart op elk moment mogelijk is. Het CCVO speelt daarbij de rol van intern crisiscentrum voor de Vlaamse administratie. - De Vlaamse overheid voorbereiden op toekomstige crisissen in Vlaanderen vanuit goed uitgebouwde kennisproducten en een expertise-aanbod inzake crisismanagement en bedrijfscontinuïteitsmanagement (BCM), en daardoor de crisisparaatheid van de Vlaamse overheid en bij uitbreiding van Vlaanderen versterken. - Fungeren als gemandateerde gesprekspartner voor het Nationaal Crisiscentrum (NCCN) en andere relevante partijen met het oog op een effectieve multidisciplinaire, interfederale en interregionale samenwerking op vlak van crisisbeheer, in samenspraak met de betrokken Vlaamse overheidsdiensten en bevoegde ministers. Het CCVO is ook het overkoepelend contactpunt voor de crisiscellen van de andere bestuursniveaus voor samenwerking rond crisisparaatheid."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052662" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5c4ce953-d926-dff2-1184-ef532a05e73e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052662/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052662/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052662/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052662> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052662/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ccvo@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052662/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "80"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052662/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/intern/crisis/crisiscentrum-van-de-vlaamse-overheid> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052662>
+  a foaf:Document ;
+  rdfs:label "Document voor team Crisiscentrum Vlaamse overheid"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052662> .

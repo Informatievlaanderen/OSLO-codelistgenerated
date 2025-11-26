@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245>
+  a org:Organization ;
+  skos:prefLabel "Vlaams Bouwmeester"@nl ;
+  skos:altLabel "Bouwmeester"@nl ;
+  dct:description "Het team Vlaams Bouwmeester ondersteunt en begeleidt publieke bouwheren draagt actief bij tot visievorming en reflectie, resulterend in beleidsadvies en initiatieven omtrent maatschappelijke uitdagingen (vergrijzing, klimaat, verkleuring, verdichting,…) en hun implicaties en mogelijkheden op het vlak van kwaliteitsvol ontwerpen en bouwen; zorgt voor communicatie en sensibilisering adviseert met betrekking tot knelpunten en hiaten in de regelgeving, in relatie tot architectuurkwaliteit in de brede zin; geeft kansen aan jonge ontwerpers."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000245" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f26ddbbf-d02b-4035-914c-dd265c22ffd0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000245/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000245> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://kb.vonet.be/team-vlaams-bouwmeester-0"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bouwmeester@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "20"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaamsbouwmeester.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 01 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000245/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 29 80" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000245>
+  a foaf:Document ;
+  rdfs:label "Document voor Vlaams Bouwmeester"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000245> .

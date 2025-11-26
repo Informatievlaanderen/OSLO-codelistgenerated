@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014454>
+  a org:Organization ;
+  skos:prefLabel "Assitej South Africa"@nl ;
+  skos:altLabel "Assitej South Africa"@nl ;
+  dct:description "ASSITEJ staat voor Association Internationale du Théâtre de l’Enfance et la Jeunesse. Het is dus een koepelorganisatie voor kinder- en jeugdtheater die afdelingen heeft in diverse landen, waaronder Zuid-Afrika."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014454" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fe882dda-05e8-48be-bcdb-3f5d747bf84f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014454/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014454/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014454/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014454/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014454> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014454/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@assitej.org.za" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014454/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+27 21 822 0070" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014454/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+21 86 583 8481" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014454/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://assitej.org.za/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014454>
+  a foaf:Document ;
+  rdfs:label "Document voor Assitej South Africa"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014454> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053068>
+  a org:Organization ;
+  skos:prefLabel "FONDATION WALTER ET NICOLE LEBLANC"@nl ;
+  dct:description "De Walter & Nicole Leblanc Foundation heeft tot doel de artistieke erfenis van beeldend kunstenaar Walter Leblanc te bestuderen, te behouden en te promoten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053068" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-05-09"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0882290917" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2006-05-09"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1227336d-b25d-4c77-b919-8bb655385770> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053068/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053068/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053068/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053068/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053068> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053068/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.walterleblanc.org/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053068/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@walterleblanc.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053068/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3224658378" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053068/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "archive@walterleblanc.org" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053068>
+  a foaf:Document ;
+  rdfs:label "Document voor FONDATION WALTER ET NICOLE LEBLANC"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053068> .

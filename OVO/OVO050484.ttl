@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050484>
+  a org:Organization ;
+  skos:prefLabel "Sociaal Verhuurkantoor Land van Loon"@nl ;
+  skos:altLabel "SVK Land van Loon vzw"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050484" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1999-02-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d7ed8bbc-4f33-f2b8-711a-e812d4bc188d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050484/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050484/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050484/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050484> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050484/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 89 21 98" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050484/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.svklandvanloon.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050484/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@svklandvanloon.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050484>
+  a foaf:Document ;
+  rdfs:label "Document voor Sociaal Verhuurkantoor Land van Loon"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050484> .

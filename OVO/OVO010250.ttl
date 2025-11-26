@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010250>
+  a org:Organization ;
+  skos:prefLabel "Hotel Gravensteen"@nl ;
+  skos:altLabel "Hotel Gravensteen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010250" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9ce83cfb-3d7b-4f7a-ac7c-1d38d5aa7f0c> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010250> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010250>
+  a foaf:Document ;
+  rdfs:label "Document voor Hotel Gravensteen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010250> .

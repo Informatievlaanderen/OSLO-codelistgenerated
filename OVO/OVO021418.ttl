@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021418>
+  a org:Organization ;
+  skos:prefLabel "Jeugdhuis Govio"@nl ;
+  skos:altLabel "JH Govio"@nl ;
+  dct:description "Jeugdhuis in Kalmthout."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021418" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0407642696" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c1b710b6-3898-4298-b481-94464b0da4cf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021418/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021418/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021418/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021418> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021418/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.govio.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021418/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@govio.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021418/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 666 22 24" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021418>
+  a foaf:Document ;
+  rdfs:label "Document voor Jeugdhuis Govio"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021418> .

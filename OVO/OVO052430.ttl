@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430>
+  a org:Organization ;
+  skos:prefLabel "Winterbloed"@nl ;
+  dct:description "Winterbloed cv omkadert de artistieke activiteiten van kunstenaar Brecht Vanhoutte (artiestennaam = Freddie Kruv). Hij is o.a. bezig met fotografie, geluidskunst, experimentele mediakunst en zijn grote passie: de hybride vorm van cinema."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052430" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-06-02"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0769265527" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-06-02"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d4622e77-3307-a313-0bb9-7a3fdb2da23d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052430/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052430> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "winterbloed@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32468255850" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Brecht Vanhoutte"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32468113170" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "freddiekruv@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052430/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://brechtvanhoutte.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052430>
+  a foaf:Document ;
+  rdfs:label "Document voor Winterbloed"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052430> .

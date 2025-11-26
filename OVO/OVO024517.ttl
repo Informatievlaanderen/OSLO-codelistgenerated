@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024517>
+  a org:Organization ;
+  skos:prefLabel "ERFGOEDCEL TONGEREN"@nl ;
+  skos:altLabel "ECT"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024517" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6fd043fd-3196-4f0a-8519-254fb97e8492> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024517/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024517/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024517/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024517> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024517/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "erfgoedcel@stadtongeren.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024517/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "012 45 99 67" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024517/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "012 45 99 66" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024517>
+  a foaf:Document ;
+  rdfs:label "Document voor ERFGOEDCEL TONGEREN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024517> .

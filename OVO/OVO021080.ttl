@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021080>
+  a org:Organization ;
+  skos:prefLabel "Stadsarchief Mechelen"@nl ;
+  skos:altLabel "Stadsarchief Mechelen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021080" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/335f1b50-9f04-456a-9a84-31e85aecc67b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021080/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021080/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021080/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021080> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021080/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stadsarchief@mechelen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021080/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015/20.43.46" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021080/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3215204346" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021080>
+  a foaf:Document ;
+  rdfs:label "Document voor Stadsarchief Mechelen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021080> .

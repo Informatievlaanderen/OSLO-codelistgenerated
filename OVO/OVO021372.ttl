@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021372>
+  a org:Organization ;
+  skos:prefLabel "Uit de Marge VZW"@nl ;
+  dct:description "De vzw Uit de Marge is een steunpunt en expertisecentrum voor jeugdwerk en jeugdbeleid met kinderen en jongeren in een maatschappelijk kwetsbare situatie. De vzw geeft advies, begeleiding en vorming op maat."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021372" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0434994718" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2512a066-8bd7-46d9-8dbe-1a260a45fe7a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021372/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021372/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021372/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021372/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021372> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021372/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@uitdemarge.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021372/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 414 83 01" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021372/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.uitdemarge.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021372/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3224117002" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021372>
+  a foaf:Document ;
+  rdfs:label "Document voor Uit de Marge VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021372> .

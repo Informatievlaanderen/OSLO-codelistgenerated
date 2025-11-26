@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278>
+  a org:Organization ;
+  skos:prefLabel "Tiptoe"@nl ;
+  dct:description "De vzw Tiptoe omkadert Tiptoe Company, een muziekensemble dat hedendaagse kamermuziek brengt met verrassende instrumentencombinaties (akoestische gitaar, contrabas, blokfluit, harp en cello vormen de kern)."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017278" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0552819727" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9fb57bfc-b0ad-41eb-9a52-c66faad3dad8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017278/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017278/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017278/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO017278/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO017278/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017278> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "pieterlenaerts77@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0485 36 18 45" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Pieter Lenaerts"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/TiptoeCompany/"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017278/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://databank.kunsten.be/muziek/artiesten-en-uitvoerders/ent:mce:ids:187824/tiptoe-company/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017278>
+  a foaf:Document ;
+  rdfs:label "Document voor Tiptoe"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017278> .

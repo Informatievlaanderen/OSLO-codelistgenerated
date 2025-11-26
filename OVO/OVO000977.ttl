@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000977>
+  a org:Organization ;
+  skos:prefLabel "Team Heffingen Grootverbruikers Oostende"@nl ;
+  skos:altLabel "Grootverbruikers Oostende"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000977" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/511558e6-fb0d-42dc-aca1-8d4374087e5f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000977/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000977/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000977/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000977> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000977/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vmm.be/water/heffingen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000977/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "059 56 26 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000977/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "053 72 62 72" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000977>
+  a foaf:Document ;
+  rdfs:label "Document voor Team Heffingen Grootverbruikers Oostende"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000977> .

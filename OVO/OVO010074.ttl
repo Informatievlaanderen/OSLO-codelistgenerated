@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010074>
+  a org:Organization ;
+  skos:prefLabel "HET MUZIEKHUIS"@nl ;
+  dct:description "De vzw HET MUZIEKHUIS omkadert M Studio, een instelling die opleidingen muziek en musical biedt. Daarnaast organiseert M Studio voorstellingen om de leerlingen podiumkansen te geven."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010074" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0893295863" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6dc6ca6f-78c3-4feb-b6b1-8c1e72f201cf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010074/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010074/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010074/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010074/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010074> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010074/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "audedewe@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010074/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Aude Dewerchin"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010074/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32498034300" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010074/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.mstudio.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010074>
+  a foaf:Document ;
+  rdfs:label "Document voor HET MUZIEKHUIS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010074> .

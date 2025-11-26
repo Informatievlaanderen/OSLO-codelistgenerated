@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118>
+  a org:Organization ;
+  skos:prefLabel "go BOOM"@nl ;
+  skos:altLabel "GGB"@nl ;
+  dct:description "De vzw Girls go BOOM is een collectief dat ernaar streeft om meer vrouwen op het podium te krijgen, vooral binnen de alternatieve muziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028118" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-11-23"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0667542122" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2016-11-23"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/39d0b8ba-8d14-474e-b383-b0a714526f1c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO028118/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028118> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "lindsi@girlsgoboom.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476843925" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@girlsgoboom.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32499424323" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476794305" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028118/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://girlsgoboom.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028118>
+  a foaf:Document ;
+  rdfs:label "Document voor go BOOM"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028118> .

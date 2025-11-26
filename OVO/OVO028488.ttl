@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028488>
+  a org:Organization ;
+  skos:prefLabel "THALEN & THALEN"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028488" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-19"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0880880556" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2006-04-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f64d7ebf-ac57-41d6-a1e0-eaffa09ca8cf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028488/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028488/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028488/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028488> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028488/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "thalen.thalen@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028488/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@thalen-thalen.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028488/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "087 270918" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028488>
+  a foaf:Document ;
+  rdfs:label "Document voor THALEN & THALEN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028488> .

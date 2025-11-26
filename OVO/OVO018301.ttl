@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO018301>
+  a org:Organization ;
+  skos:prefLabel "VOETBAL VLAANDEREN"@nl ;
+  skos:altLabel "VV"@nl ;
+  dct:description "Voetbal Vlaanderen is de koepelorganisatie voor voetbalclubs en minivoetbalclubs in Vlaanderen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO018301" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0808165002" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/451c1d36-778c-4d6a-b504-4d2b22017994> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO018301/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO018301/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO018301/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO018301/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO018301> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018301/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.voetbalvlaanderen.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018301/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 477 12 45" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018301/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@voetbalvlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO018301/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jeroen.vandegehuchte@voetbalvlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO018301>
+  a foaf:Document ;
+  rdfs:label "Document voor VOETBAL VLAANDEREN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO018301> .

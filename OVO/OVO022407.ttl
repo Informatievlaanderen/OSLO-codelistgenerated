@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022407>
+  a org:Organization ;
+  skos:prefLabel "Centrum Sztuki Wspolczesnej Zamek Ujazdowski"@nl ;
+  skos:altLabel "Centrum Sztuki Wspolczesnej Zamek Ujazdowski"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022407" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-06-13"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ddd4d5d7-c748-43da-a0de-5ac46c75ec4b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022407/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022407> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022407/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "fundraising@u-jazdowski.pl" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022407>
+  a foaf:Document ;
+  rdfs:label "Document voor Centrum Sztuki Wspolczesnej Zamek Ujazdowski"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022407> .

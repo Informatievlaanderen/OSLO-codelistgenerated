@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024800>
+  a org:Organization ;
+  skos:prefLabel "Femma Ledeberg Roosdaal"@nl ;
+  skos:altLabel "Femma Ledeberg Roosdaal"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024800" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/27dfd9b9-8dd8-4ad1-8e00-7486d8f5a1cf> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024800/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024800/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024800/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024800> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024800/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ria.dp@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024800/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "054 33 95 66" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024800/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "0485 35 38 51" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024800>
+  a foaf:Document ;
+  rdfs:label "Document voor Femma Ledeberg Roosdaal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024800> .

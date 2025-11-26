@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028242>
+  a org:Organization ;
+  skos:prefLabel "Categorie Gebouwgebonden Facilities"@nl ;
+  skos:altLabel "Categorie Gebouwgebonden Facilities"@nl ;
+  dct:description "De aankoopcentrale zorgt voor het afsluiten van raamovereenkomsten met betrekking tot generieke producten en diensten. De ontwikkeling van deze raamovereenkomsten gebeurt binnen de expertise-driehoek waarin de juridische, economische en technische experten nauw samenwerken."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028242" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-07-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c14691ad-a96e-d29f-35c5-8a93f86ca459> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028242/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028242> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028242/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "60"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028242>
+  a foaf:Document ;
+  rdfs:label "Document voor Categorie Gebouwgebonden Facilities"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028242> .

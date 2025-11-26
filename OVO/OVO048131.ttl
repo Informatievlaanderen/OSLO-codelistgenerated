@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048131>
+  a org:Organization ;
+  skos:prefLabel "Njord Sew For Life"@nl ;
+  dct:description "De organisatie Njord Sew For Life wil alleenstaande vrouwelijke asielzoekers ondersteunen door hen opleiding en tewerkstelling te bieden in een naaiatelier."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048131" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b8309205-d4a4-aa2d-3da3-c164d76633f4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048131/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048131/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048131/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048131> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048131/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ftouma Laayoune"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048131/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sewforlifenjord@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048131/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0498 71 50 96" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048131>
+  a foaf:Document ;
+  rdfs:label "Document voor Njord Sew For Life"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048131> .

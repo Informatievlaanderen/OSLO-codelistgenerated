@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054951>
+  a org:Organization ;
+  skos:prefLabel "Out Of Office"@nl ;
+  skos:altLabel "OOO"@nl ;
+  dct:description "De vzw Out Of Office omkadert de artistieke activiteiten van singer-songwriter Piffy, artiestennaam van Stien Bovijn."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054951" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-02-19"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1020197005" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-02-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e71c9d23-4de2-4c37-aaf2-97e91fe68b30> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054951/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054951/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054951/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054951/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054951> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054951/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dennis@alternativesociety.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054951/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32499187481" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054951/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Dennis Mariën"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054951/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.piffymusic.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054951>
+  a foaf:Document ;
+  rdfs:label "Document voor Out Of Office"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054951> .

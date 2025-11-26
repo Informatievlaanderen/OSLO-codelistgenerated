@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383>
+  a org:Organization ;
+  skos:prefLabel "Informatie- en screeningsdienst van de lokale geloofsgemeenschappen"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048383" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-05-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/7d43b562-e6db-a528-e3a4-2dace140a8a8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO048383/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048383> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 40 21" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/agentschap-binnenlands-bestuur> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "isd@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "binnenland@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/lokaal-bestuur> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048383/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "70"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048383>
+  a foaf:Document ;
+  rdfs:label "Document voor Informatie- en screeningsdienst van de lokale geloofsgemeenschappen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048383> .

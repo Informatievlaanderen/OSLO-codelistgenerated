@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776>
+  a org:Organization ;
+  skos:prefLabel "PASSA PORTA NL"@nl ;
+  dct:description "Passa Porta is een internationaal literatuurhuis in Brussel. Auteurs en vertalers kunnen er een podium of een werkplek krijgen. Passa Porta organiseert ook het Passa Porta Festival, een van de grootste meertalige literaire festivals van Europa."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014776" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0465165280" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d72aea89-5e2e-492a-81d0-f18830e19095> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO014776/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014776> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 226 04 54" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 41 88 97" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Ilke Froyen"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.passaporta.be/nl/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3222260454" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014776/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ilke.froyen@passaporta.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014776>
+  a foaf:Document ;
+  rdfs:label "Document voor PASSA PORTA NL"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014776> .

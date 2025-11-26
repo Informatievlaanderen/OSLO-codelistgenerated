@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050448>
+  a org:Organization ;
+  skos:prefLabel "Run the Road"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050448" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-06-06"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0779248906" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-06-06"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6825e91e-d3d4-dcc3-dcc7-96e494c000a3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050448/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050448> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050448/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ilkadewilde@hotmail.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050448>
+  a foaf:Document ;
+  rdfs:label "Document voor Run the Road"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050448> .

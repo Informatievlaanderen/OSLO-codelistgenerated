@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402>
+  a org:Organization ;
+  skos:prefLabel "HUMANISTISCH VERBOND"@nl ;
+  dct:description "Het Humanistisch Verbond is een sociaal-culturele organisatie die het vrije denken belangrijk vindt. De organisatie verdedigt het recht op vrije meningsuiting en zet zich in voor de wilsvrijheid en het zelfbeschikkingsrecht van het individu."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020402" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0457138036" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d781456c-7b62-4ca8-b0fc-b6923c224223> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020402/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020402/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020402/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020402/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020402/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020402> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+3232335513" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232337032" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://humanistischverbond.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "secretariaat@humanistischverbond.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020402/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://humanistischverbond.be/contact/"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020402>
+  a foaf:Document ;
+  rdfs:label "Document voor HUMANISTISCH VERBOND"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020402> .

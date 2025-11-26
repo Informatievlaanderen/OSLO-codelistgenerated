@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675>
+  a org:Organization ;
+  skos:prefLabel "ALV Interne Audit"@nl ;
+  skos:altLabel "Interne Audit"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000675" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2c9228a8-9dc6-4ca4-959f-49bf06d21085> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000675/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000675/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000675/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000675/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000675/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000675> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Intranetsite"@nl ;
+  rdfs:comment "http://lv.vonet.be/nlapps/docs/default.asp?fid=177"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://lv.vlaanderen.be/nlapps/docs/default.asp?fid=290> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "vera.debelser@lv.vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025527430" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000675/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025527401" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000675>
+  a foaf:Document ;
+  rdfs:label "Document voor ALV Interne Audit"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000675> .

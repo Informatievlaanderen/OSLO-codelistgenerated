@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001521>
+  a org:Organization ;
+  skos:prefLabel "Kabinet van de minister-president van de Vlaamse Regering"@nl ;
+  skos:altLabel "Kabinet minister-president"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001521" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2009-07-13"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9dcdcbdc-1ed2-479b-89be-5c73592c5c69> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001521/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001521/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001521/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001521> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001521/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "kabinet.peeters@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001521/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025526000" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001521/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025526001" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001521>
+  a foaf:Document ;
+  rdfs:label "Document voor Kabinet van de minister-president van de Vlaamse Regering"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001521> .

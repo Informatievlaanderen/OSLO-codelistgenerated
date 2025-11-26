@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430>
+  a org:Organization ;
+  skos:prefLabel "Viking Genootschap-Europees Studie en Onderzoekcentrum voor Noordse Oudheidkunde, Runen en Mythologie"@nl ;
+  skos:altLabel "Viking Genootschap-ESONORM"@nl ;
+  dct:description "Het Viking Genootschap is een vereniging die studie en onderzoek verricht naar de Noordse mythologie, oudheidkunde en runenkennis, in het bijzonder toegespitst op de Vikingtijd."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028430" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-03-08"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0722542211" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-03-08"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/feeb4450-2630-46a5-b470-47b545eda630> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO028430/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO028430/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO028430/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO028430/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO028430/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028430> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014 72 84 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marino Marysse"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vikinggenootschap.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@marconsult.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO028430/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.vikinggenootschap.eu/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028430>
+  a foaf:Document ;
+  rdfs:label "Document voor Viking Genootschap-Europees Studie en Onderzoekcentrum voor Noordse Oudheidkunde, Runen en Mythologie"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028430> .

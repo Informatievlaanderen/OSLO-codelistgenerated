@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838>
+  a org:Organization ;
+  skos:prefLabel "Young Fenix"@nl ;
+  skos:altLabel "YFX"@nl ;
+  dct:description "Young Fenix is een jeugdzorginstelling in Antwerpen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053838" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-06-25"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0748997178" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-06-25"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1532806d-b0db-48a9-9718-c0c22799ebab> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053838/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053838/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053838/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053838/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO053838/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053838> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@youngfenix.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.youngfenix.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0484962442" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Khalid El Hatri"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053838/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "khalid@youngfenix.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053838>
+  a foaf:Document ;
+  rdfs:label "Document voor Young Fenix"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053838> .

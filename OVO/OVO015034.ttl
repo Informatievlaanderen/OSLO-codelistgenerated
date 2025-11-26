@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015034>
+  a org:Organization ;
+  skos:prefLabel "Prezzent Shop Ka Schoten"@nl ;
+  skos:altLabel "Prezzent Shop Ka Schoten"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015034" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0a69dd9d-4663-422d-9027-5fe2e5eb9f94> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015034/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015034/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015034> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015034/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "prezzentshop@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015034/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "0492 88 53 11" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015034>
+  a foaf:Document ;
+  rdfs:label "Document voor Prezzent Shop Ka Schoten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015034> .

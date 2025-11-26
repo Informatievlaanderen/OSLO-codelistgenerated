@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013586>
+  a org:Organization ;
+  skos:prefLabel "NEDERLANDSE TAALUNIE"@nl ;
+  dct:description "De Nederlandse Taalunie is een kennis- en beleidsorganisatie voor de Nederlandse taal. Zij werd in 1980 opgericht door de Nederlandse en Belgische overheden ten behoeve van een gemeenschappelijk beleid op het gebied van de Nederlandse taal en letteren in Nederland, Vlaanderen en Suriname."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013586" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0851245274" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/11c985ae-60e6-4914-a1ec-9e68dcb52018> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013586/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013586/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013586/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013586/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013586> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013586/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@taalunie.org" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013586/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 203 66 73" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013586/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+31 70 346 95 48" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013586/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://taalunie.org/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013586>
+  a foaf:Document ;
+  rdfs:label "Document voor NEDERLANDSE TAALUNIE"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013586> .

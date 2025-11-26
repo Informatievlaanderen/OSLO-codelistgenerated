@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022209>
+  a org:Organization ;
+  skos:prefLabel "Câmara De Comércio Luso-Belga-Luxemburguesa"@nl ;
+  skos:altLabel "Câmara De Comércio Luso-Belga-Luxemburguesa"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022209" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ce75eee9-fa81-4898-a417-59d5785e7f44> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022209/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022209/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022209/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022209> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022209/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@cclbl.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022209/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+351 213 152 502" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022209/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "+ 351 213 547 738" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022209>
+  a foaf:Document ;
+  rdfs:label "Document voor Câmara De Comércio Luso-Belga-Luxemburguesa"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022209> .

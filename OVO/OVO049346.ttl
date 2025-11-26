@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049346>
+  a org:Organization ;
+  skos:prefLabel "team Parlementaire Relaties"@nl ;
+  dct:description "Het team Parlementaire Relaties voert volgende opdrachten uit: coördineert de behandeling van parlementaire vragen voor DKBUZA en FIT, en (voor sommige schriftelijke vragen) binnen het beleidsdomein Kanselarij, Bestuur, Buitenlandse Zaken en Justitie (KBBJ) of organisatiebreed in de Vlaamse overheid; bereidt regelmatig de spreekpunten voor de minister-president in het Vlaams Parlement voor, waaronder in het kader van de beleids- en begrotingstoelichting; redigeert en verzorgt kwaliteitscontrole op de ontwerpen van antwoord die aan het kabinet worden aangereikt; bereidt het overleg tussen de minister-president en de voorzitter van het Vlaams Parlement voor; zorgt voor informatiedoorstroming binnen het departement m.b.t. de relevante actualiteit van het Vlaams Parlement; coördineert het netwerk parlementaire relaties, waarin de homologen binnen de Vlaamse overheid jaarlijks actuele thema’s bespreken en goede praktijken uitwisselen; behartigt de relaties met het Vlaams Parlement en andere (internationale) stakeholders gelinkt aan de parlementaire democratie."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049346" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5d88243a-e4bc-033e-5787-3d02f1125716> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049346/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049346/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049346/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049346> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049346/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "parlementaire.vragen.dkbuza@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049346/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "100"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049346/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://overheid.vlaanderen.be/over-de-vlaamse-overheid/wegwijzer-vlaamse-regering/regering-en-parlement#parlementaire-vragen> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049346>
+  a foaf:Document ;
+  rdfs:label "Document voor team Parlementaire Relaties"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049346> .

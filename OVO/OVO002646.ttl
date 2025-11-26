@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO002646>
+  a org:Organization ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn Zomergem"@nl ;
+  skos:altLabel "OCMW Zomergem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO002646" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1968-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/599e31e2-c07e-41f7-a131-c5af23a597a9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO002646/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO002646/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO002646/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO002646/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO002646> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002646/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 218 77 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002646/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 370 82 85" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002646/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sociale.dienst@ocmwzomergem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO002646/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.ocmwzomergem.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO002646>
+  a foaf:Document ;
+  rdfs:label "Document voor Openbaar Centrum voor Maatschappelijk Welzijn Zomergem"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO002646> .

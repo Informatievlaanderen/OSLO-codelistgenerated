@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036241>
+  a org:Organization ;
+  skos:prefLabel "Right2Score"@nl ;
+  skos:altLabel "R2S"@nl ;
+  dct:description "sociale-impact-organisatie die jongeren wil ondersteunen en begeleiden door het creëren van gelijke kansen met voetbal als hefboom"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036241" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-05-03"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0695672221" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2018-05-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0b4c6f85-736b-e5fb-b4c0-3f75f48a23d5> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036241/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036241/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036241/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036241> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036241/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0492 80 16 89" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036241/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "duncan.dhondt@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036241/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Duncan D'hondt"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036241>
+  a foaf:Document ;
+  rdfs:label "Document voor Right2Score"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036241> .

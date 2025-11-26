@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648>
+  a org:Organization ;
+  skos:prefLabel "Autonoom Gemeentebedrijf Museum Leuven"@nl ;
+  skos:altLabel "AG Museum Leuven"@nl ;
+  dct:description "M Leuven heeft een dubbele werking waarbij zowel oude als hedendaagse kunst wordt getoond. De collectiebeherende werking van het museum wordt gesubsidieerd via het Cultureel-erfgoeddecreet. De hedendaagse kunstwerking wordt betoelaagd door het Kunstendecreet."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003648" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0896728376" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a0894ff2-3ae8-8e9f-d3f1-ed92889fc013> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003648/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003648> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.mleuven.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Peter Bary"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "016 27 29 71" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@mleuven.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "016 27 29 29" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003648/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "peter.bary@leuven.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003648>
+  a foaf:Document ;
+  rdfs:label "Document voor Autonoom Gemeentebedrijf Museum Leuven"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003648> .

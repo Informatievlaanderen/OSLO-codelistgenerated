@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580>
+  a org:Organization ;
+  skos:prefLabel "Euregio Jeugdorkest VZW"@nl ;
+  dct:description "Het Euregio Jeugdorkest (EJO) is een ruim 90-koppig symfonieorkest dat getalenteerde jongeren (14 tot 25 jaar) uit Vlaamse en Nederlandse muziekacademies en conservatoria de kans biedt om in orkestverband te musiceren en podiumervaring op te doen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO024580" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0444111530" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/14a95bff-4ed5-4643-a945-716023a54960> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO024580/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO024580> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "benny.casteleyn@fulladsl.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0476 963 953" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32476963953" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "benoni.casteleyn@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://euregiojeugdorkest.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO024580/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@euregiojeugdorkest.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO024580>
+  a foaf:Document ;
+  rdfs:label "Document voor Euregio Jeugdorkest VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO024580> .

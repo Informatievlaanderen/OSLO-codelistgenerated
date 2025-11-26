@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264>
+  a org:Organization ;
+  skos:prefLabel "Doof Vlaanderen"@nl ;
+  skos:altLabel "Fevlado"@nl ;
+  dct:description "Doof Vlaanderen streeft naar gelijkwaardigheid, emancipatie en ontplooiing van dove personen en hun taal, de Vlaamse Gebarentaal, in de samenleving. Dit gebeurt via lobbywerk, vorming ..."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020264" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0417058428" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4d98a107-fb54-4c4b-8a95-043a54ef970e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO020264/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020264> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@fevlado.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3292244676" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.doof.vlaanderen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 329 07 47" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 224 46 76" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020264/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@doof.vlaanderen" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020264>
+  a foaf:Document ;
+  rdfs:label "Document voor Doof Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020264> .

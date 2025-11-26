@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482>
+  a org:Organization ;
+  skos:prefLabel "de Figuranten"@nl ;
+  skos:altLabel "CAW Zuid-West-Vlaanderen / De Figuranten"@nl ;
+  dct:description "'de Figuranten' hangt af van CAW Zuid-West-Vlaanderen. De Figuranten is een theatergezelschap dat eigenzinnige voorstellingen maakt met bijzondere aandacht voor mensen in kwetsbare posities."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019482" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9ecbfb5e-0894-4232-8f5e-3f67dc2a4611> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019482/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019482> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@defiguranten.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.defiguranten.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Hein Mortier"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hein@defiguranten.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497 58 39 05" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019482/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32479970731" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019482>
+  a foaf:Document ;
+  rdfs:label "Document voor de Figuranten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019482> .

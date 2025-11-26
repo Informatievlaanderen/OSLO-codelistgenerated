@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052405>
+  a org:Organization ;
+  skos:prefLabel "Lab GAMERZ"@nl ;
+  dct:description "Lab GAMERZ is een vereniging die zich toelegt op interdisciplinaire en multimediale artistieke praktijken. Lab GAMERZ werd in 2003 opgericht door kunstenaars om digitale culturen te verkennen en te bevragen. Lab GAMERZ organiseert ook een festival genaamd Lips, dat is gericht op opkomende, interdisciplinaire, hybride en multimediale kunstpraktijken."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052405" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/dd0320a8-a79f-8680-eb6a-a86989cefef7> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052405/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052405/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052405/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052405/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052405> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052405/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@lab-gamerz.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052405/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+33613585727" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052405/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://lab-gamerz.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052405/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "magdeleine.groff@lab-gamerz.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052405>
+  a foaf:Document ;
+  rdfs:label "Document voor Lab GAMERZ"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052405> .

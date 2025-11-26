@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036591>
+  a org:Organization ;
+  skos:prefLabel "Kind en Gezin-Lijn"@nl ;
+  skos:altLabel "KG LIJN"@nl ;
+  dct:description "Voert niet-fysieke dienstverlening uit: beantwoordt vragen die worden gesteld via chat en mail of telefoon"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036591" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d71f8c50-7e18-6deb-e72a-6e3f9b4dccd9> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036591/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036591> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036591/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "078/150 100" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036591>
+  a foaf:Document ;
+  rdfs:label "Document voor Kind en Gezin-Lijn"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036591> .

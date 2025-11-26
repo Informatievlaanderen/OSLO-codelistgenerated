@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701>
+  a org:Organization ;
+  skos:prefLabel "ANIMACY"@nl ;
+  dct:description "De vzw ANIMACY organiseert sinds 2019 het Fifty Lab Music Festival in Brussel. DIt is het enige multi-genre showcasefestival in België met een line-up van opkomend nationaal en internationaal talent."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051701" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2013-09-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0538983765" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2013-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a4c63c28-fc89-fefb-b21b-cbd4529482d3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051701/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051701/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051701/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051701/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051701/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051701> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hello@fiftylab.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32476690967" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.fiftylab.eu/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hendrik@fiftylab.eu" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051701/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Hendrik Wittock"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051701>
+  a foaf:Document ;
+  rdfs:label "Document voor ANIMACY"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051701> .

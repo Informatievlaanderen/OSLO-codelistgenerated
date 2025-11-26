@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045>
+  a org:Organization ;
+  skos:prefLabel "Thaleia"@nl ;
+  skos:altLabel "Thaleia"@nl ;
+  dct:description "zangkoor uit Maldegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017045" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1008ff94-e6ce-4a85-be1b-01edcf3ad4f8> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO017045/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017045> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jacques.de.clerck@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "standaert.filip@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32486720258" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Fabienne Madeleine Moermans"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "050 71 58 53" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017045/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.koor-thaleia.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017045>
+  a foaf:Document ;
+  rdfs:label "Document voor Thaleia"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017045> .

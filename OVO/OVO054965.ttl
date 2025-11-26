@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054965>
+  a org:Organization ;
+  skos:prefLabel "Elias Van Orshaegen"@nl ;
+  dct:description "Studio Elias Van Orshaegen, opgericht in 2020, is een Belgische ontwerpstudio die zich toelegt op de kruisbestuiving tussen materiaalonderzoek, ambacht en techniek. De studio maakt functionele objecten, meubels en accessoires die zich situeren binnen het segment van ‘Collectible Design’, een niche op het snijvlak van kunst en design."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054965" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-02-20"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1006218810" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-02-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4c79acf3-d249-4a14-9771-104bc7ece114> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054965/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054965/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO054965/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO054965/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054965> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054965/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "eliasvanorshaegen@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054965/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32478804912" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054965/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.belgiumisdesign.be/designers/elias-van-orshaegen> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054965/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.eliasvo.com/about> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054965>
+  a foaf:Document ;
+  rdfs:label "Document voor Elias Van Orshaegen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054965> .

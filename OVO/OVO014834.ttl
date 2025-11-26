@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834>
+  a org:Organization ;
+  skos:prefLabel "PERPLX"@nl ;
+  dct:description "PERPLX is een circuswerkplaats in Kortrijk."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014834" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0458449912" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/a37903d4-0869-40aa-8a4b-5b4c56ec587f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO014834/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014834> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "056 23 41 78" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "056 23 41 79" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hermen@perplx.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Hermen Six"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0473965398" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.perplx.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014834/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@perplx.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014834>
+  a foaf:Document ;
+  rdfs:label "Document voor PERPLX"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014834> .

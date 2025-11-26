@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001944>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Relatiebeheer"@nl ;
+  skos:altLabel "Relatiebeheer"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001944" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/62364a65-c1f2-4296-aff0-23b68f560f1b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001944/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001944/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001944> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001944/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "025530035" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001944/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "025535542" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001944>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Relatiebeheer"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001944> .

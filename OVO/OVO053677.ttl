@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053677>
+  a org:Organization ;
+  skos:prefLabel "Internationale Gesellschaft Für Neue Musik Ignm"@nl ;
+  skos:altLabel "IGNM Bern"@nl ;
+  dct:description "Het Internationale Gesellschaft Für Neue Musik of de International Society for New Music (ISCM) is een niet-commerciële organisatie die zich ten doel stelt hedendaagse muziek te promoten, verspreiden en presenteren. Sinds de oprichting in 1922 is de ISCM actief in verschillende internationale, nationale en regionale afdelingen over de hele wereld. De Bern-afdeling van het ISCM cureert en organiseert concertprogramma's met nieuwe muziek in de stad Bern."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053677" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/cbc84f39-6c97-1173-980f-d66089e693ea> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053677/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053677/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO053677/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO053677/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053677> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053677/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mariella.ba@me.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053677/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+41796118184" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053677/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Mariella Bachmann"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053677/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://ignm-bern.com/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053677>
+  a foaf:Document ;
+  rdfs:label "Document voor Internationale Gesellschaft Für Neue Musik Ignm"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053677> .

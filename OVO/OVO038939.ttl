@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939>
+  a org:Organization ;
+  skos:prefLabel "asbl ET!KET vzw"@nl ;
+  skos:altLabel "ET!KET"@nl ;
+  dct:description "De vzw ET!KET omkadert JAKOMO, de band rond Julien Tanghe. De muziek van JAKOMO wordt omschreven als 'suave rock'."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO038939" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-09-16"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0734504091" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-09-16"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/fa4d9d4f-e23d-1263-b28f-0c35335eae54> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO038939/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO038939> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Julien Tanghe"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "julien@etiketrecords.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "etiketrecords@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0473 35 05 65" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.etiketrecords.com> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://jmokao.bandcamp.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO038939/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/jmokao/?locale=nl_BE"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO038939>
+  a foaf:Document ;
+  rdfs:label "Document voor asbl ET!KET vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO038939> .

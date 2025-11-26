@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014214>
+  a org:Organization ;
+  skos:prefLabel "Antwerp Metropolitan Pipe Band"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014214" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8f86d31c-33d1-45e8-821d-d4f8bcca65bb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014214/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014214/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014214/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014214> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014214/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "borderdline.pb@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014214/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 663 52 90" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014214/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474 58 01 39" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014214>
+  a foaf:Document ;
+  rdfs:label "Document voor Antwerp Metropolitan Pipe Band"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014214> .

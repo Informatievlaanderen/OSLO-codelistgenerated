@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000369>
+  a org:Organization ;
+  skos:prefLabel "Diensten van de Administrateur-Generaal"@nl ;
+  skos:altLabel "DAG"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000369" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/1f5641b5-3082-4783-9f1c-734f24baed9e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000369/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000369/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000369/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000369/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000369> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000369/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@opgroeien.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000369/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 31 85" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000369/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "32"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000369/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 533 13 03" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000369>
+  a foaf:Document ;
+  rdfs:label "Document voor Diensten van de Administrateur-Generaal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000369> .

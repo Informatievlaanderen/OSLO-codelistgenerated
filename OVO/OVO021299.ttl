@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299>
+  a org:Organization ;
+  skos:prefLabel "ZOMER VAN ANTWERPEN VZW"@nl ;
+  dct:description "De vzw Zomer van Antwerpen organiseert het gelijknamige Antwerpse stadsfestival. Het festival brengt een programmatie van muziek, theater, circus en film op diverse niet voor de hand liggende locaties en op plekken in open lucht."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021299" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0473116312" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8b194327-fe88-46ef-b630-ccf08d3d3bc2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO021299/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021299> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.zva.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "zomer@zva.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 224 85 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32473922894" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Koen Bollen en Kevin Vandevyvere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "mark.geurden@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021299/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "administrator@zva.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021299>
+  a foaf:Document ;
+  rdfs:label "Document voor ZOMER VAN ANTWERPEN VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021299> .

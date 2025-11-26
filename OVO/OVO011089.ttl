@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO011089>
+  a org:Organization ;
+  skos:prefLabel "KARRENMUSEUM ESSEN"@nl ;
+  dct:description "Het Karrenmuseum is een regionaal museum in de Antwerpse plaats Essen. Het museum stelt meer dan 300 karren, wagens en koetsen tentoon. De verzameling wordt er onderhouden, gerestaureerd en geïnventariseerd."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO011089" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0872101165" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bf5e2659-0257-457e-afdd-843e60b46608> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO011089/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO011089/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO011089/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO011089> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011089/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@karrenmuseum.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011089/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 667 11 42" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO011089/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.karrenmuseum.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO011089>
+  a foaf:Document ;
+  rdfs:label "Document voor KARRENMUSEUM ESSEN"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO011089> .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO040924>
+  a org:Organization ;
+  skos:prefLabel "EduGandawa Poolse Vereniging voor Cultuur en Onderwijs"@nl ;
+  skos:altLabel "EduGandawa"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO040924" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2015-12-03"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0643819682" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2015-12-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0189704b-6a35-001f-69fb-8301fc594a08> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO040924/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO040924/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO040924/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO040924> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO040924/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Justyna Szewczyk"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO040924/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "edugandawa@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO040924/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://szkola.edugandawa.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO040924>
+  a foaf:Document ;
+  rdfs:label "Document voor EduGandawa Poolse Vereniging voor Cultuur en Onderwijs"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO040924> .

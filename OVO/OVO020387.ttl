@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020387>
+  a org:Organization ;
+  skos:prefLabel "Hoofdstedelijke Openbare Bibliotheek Brussel"@nl ;
+  skos:altLabel "Hoofdstedelijke Openbare Bibliotheek Brussel"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020387" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9b7d61ca-80fd-4cc1-baf1-7571f2861ae4> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020387/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020387/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020387/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020387/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020387> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020387/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@hob.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020387/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 229 18 40" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020387/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 229 18 50" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020387/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.muntpunt.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020387>
+  a foaf:Document ;
+  rdfs:label "Document voor Hoofdstedelijke Openbare Bibliotheek Brussel"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020387> .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022338>
+  a org:Organization ;
+  skos:prefLabel "CELTIC SPIRIT DANCERS SCALDIS"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022338" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ad5edc20-70f9-4faf-9d78-dbdeff23dedb> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022338/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022338> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022338/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "etienne.baetsleer@telenet.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022338>
+  a foaf:Document ;
+  rdfs:label "Document voor CELTIC SPIRIT DANCERS SCALDIS"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022338> .

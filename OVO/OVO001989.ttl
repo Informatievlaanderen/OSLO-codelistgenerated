@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO001989>
+  a org:Organization ;
+  skos:prefLabel "Vereniging van Vlaamse Steden en Gemeenten"@nl ;
+  skos:altLabel "V.V.S.G."@nl ;
+  dct:description "De vereniging heeft tot doel de aangesloten lokale besturen te helpen bij het vervullen van hun beleidsdoelstellingen en opdrachten en hun autonomie te bevorderen en te verdedigen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO001989" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1993-09-24"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0451857573" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1993-09-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/828941f2-4b64-4a46-b209-9cb33a26cdc6> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO001989/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO001989/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO001989/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO001989/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO001989> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001989/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 211 55 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001989/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@vvsg.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001989/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 211 56 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO001989/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vvsg.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO001989>
+  a foaf:Document ;
+  rdfs:label "Document voor Vereniging van Vlaamse Steden en Gemeenten"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO001989> .

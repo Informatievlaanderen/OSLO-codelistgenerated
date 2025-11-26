@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730>
+  a org:Organization ;
+  skos:prefLabel "SOZO"@nl ;
+  skos:altLabel "SOZO"@nl ;
+  dct:description "De vzw SOZO omkadert SOSO, een collectief dat bestaat uit creatievelingen en mensen uit allerlei verschillende vakgebieden. De organisatie heeft een atelierwerking voor kunstenaars, organiseert artistieke evenementen (kunstmarkten, jam- en open mic-sessies, tentoonstellingen ...) en biedt coaching aan beginnende kunstenaars."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052730" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2023-10-03"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1000702676" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2023-10-03"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/64e713ad-5d1f-4a33-933e-09e11278551e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052730/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052730> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "opencallsoso@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32468119537" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Micha Celis"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/SOSOARTZ"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.instagram.com/soso.artz/?next=%2F> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052730/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.instagram.com/soso.artz/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052730>
+  a foaf:Document ;
+  rdfs:label "Document voor SOZO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052730> .

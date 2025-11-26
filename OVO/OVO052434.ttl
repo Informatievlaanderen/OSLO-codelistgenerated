@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434>
+  a org:Organization ;
+  skos:prefLabel "NORDMANN MUSIC"@nl ;
+  dct:description "De vzw NORDMANN MUSIC omkadert de activiteiten van de jazzrockband Nordmann, maar ook nevenprojecten van bandleden van Nordmann, zoals The Milk Factory van Edmund Lauret en de band Elias van Elias Devoldere."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO052434" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-12-06"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0666973780" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2016-12-06"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/da4384c1-58af-9971-a340-bdbcd2c1c0ac> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/6>, <https://data.vlaanderen.be/id/organisatie/OVO052434/contact/7> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO052434> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://nordmannmusic.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://vi.be/platform/themilkfactory> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.eliasmusic.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@nordmannmusic.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "elias.devoldere@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Elias Devoldere"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0486 32 65 73" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO052434/contact/7>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32486754815" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO052434>
+  a foaf:Document ;
+  rdfs:label "Document voor NORDMANN MUSIC"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO052434> .

@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO050364>
+  a org:Organization ;
+  skos:prefLabel "LabNorth"@nl ;
+  skos:altLabel "LN"@nl ;
+  dct:description "LabNorth heeft tot doel om enerzijds als intermediair op te treden tussen verschillende actoren en belanghebbenden in de Noordwijk Brussel en anderzijds een ondersteunend platform te bieden aan samenwerkingen tussen deze actoren. LabNorth wenst bij te dragen aan de verdere ontplooiing van de Noordwijk door van een monofunctionele kantoorwijk naar een diverse en levendige stadswijk in Brussel over te gaan."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO050364" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-12-16"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0778742526" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2021-12-16"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9546d00a-d5e7-8c21-5bfb-abc9aa09d80b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO050364/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO050364/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO050364/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO050364/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO050364> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050364/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "contact@labnorth.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050364/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32494261163" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050364/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dieterleyssen@51n4e.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO050364/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Dieter Leyssen"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO050364>
+  a foaf:Document ;
+  rdfs:label "Document voor LabNorth"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO050364> .

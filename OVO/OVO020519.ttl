@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519>
+  a org:Organization ;
+  skos:prefLabel "JONGERENCENTRUM BOUCKENBORGH"@nl ;
+  skos:altLabel "JC BOUCKENBORGH VZW OF JC BOBO VZW"@nl ;
+  dct:description "Jeugdcentrum in Antwerpen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO020519" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0410262785" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/691cb783-fc3b-4b83-b4c9-cd76b1008b6b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO020519/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO020519/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO020519/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO020519/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO020519/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO020519> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@bouckenborgh.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 641 84 94" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.bouckenborgh.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "yannick@bouckenborgh.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO020519/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Yannick Moyson"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO020519>
+  a foaf:Document ;
+  rdfs:label "Document voor JONGERENCENTRUM BOUCKENBORGH"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO020519> .

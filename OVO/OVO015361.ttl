@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361>
+  a org:Organization ;
+  skos:prefLabel "REGIONALE MEDIA MAATSCHAPPIJ"@nl ;
+  skos:altLabel "R.M.M."@nl ;
+  dct:description "De Regionale Media Maatschappij nv (of kortweg RMM) is de exploitatiemaatschappij van de regionale tv-omroepen Focus & WTV in West-Vlaanderen en van het audiovisuele communicatie- en productiehuis Picstory."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO015361" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0475952274" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b752041f-a7b6-4651-b99c-584d8c95f483> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO015361/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO015361> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dirk.vanhegen@rmm.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "051 25 95 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Stephan Adriaenssens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "stephan.adriaenssens@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.rmm.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015361/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "051 25 95 52" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO015361>
+  a foaf:Document ;
+  rdfs:label "Document voor REGIONALE MEDIA MAATSCHAPPIJ"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO015361> .

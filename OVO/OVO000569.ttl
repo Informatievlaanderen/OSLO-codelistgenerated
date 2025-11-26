@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000569>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Commercieel Beheer"@nl ;
+  skos:altLabel "Commercieel Beheer"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000569" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2004-06-30"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/5fa1fc4b-44f3-4eae-be76-5b2160583da0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000569/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000569/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000569/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000569> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000569/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "com@wenz.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000569/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 860 63 00" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000569/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 860 62 11" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000569>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Commercieel Beheer"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000569> .

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711>
+  a org:Organization ;
+  skos:prefLabel "VILT"@nl ;
+  dct:description "De vzw VILT is een managementkantoor dat in 2022 werd opgericht door Jasmien Dieltiens en Claïs Lemmens om muzikanten en performers te ondersteunen in hun professioneel traject en om zakelijke omkadering te bieden aan artistieke projecten."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO051711" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-02-11"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0781891957" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-02-11"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/87f7f5c0-89ac-76a5-a9ea-d4cb6ae38166> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO051711/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO051711/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO051711/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO051711/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO051711/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO051711> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "home@viltmgmt.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32498041670" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://viltmgmt.com> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Claïs Lemmens"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO051711/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "clais@viltmgmt.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO051711>
+  a foaf:Document ;
+  rdfs:label "Document voor VILT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO051711> .

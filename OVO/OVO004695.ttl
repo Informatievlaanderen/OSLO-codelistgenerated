@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004695>
+  a org:Organization ;
+  skos:prefLabel "Beleidsontwikkeling ruimte"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004695" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4829c4d7-f388-e12c-c5c9-2ab6e4bde0d1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO004695/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO004695/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004695> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004695/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@roeselare.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO004695/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "beleidsontwikkelingruimte@roeselare.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004695>
+  a foaf:Document ;
+  rdfs:label "Document voor Beleidsontwikkeling ruimte"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004695> .

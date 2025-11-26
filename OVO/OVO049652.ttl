@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049652>
+  a org:Organization ;
+  skos:prefLabel "Watering Sloot-en Caliebeek"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049652" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1972-06-01"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0214188965" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1972-06-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/de870515-d046-2b33-5079-e8a086ad4795> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049652> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049652>
+  a foaf:Document ;
+  rdfs:label "Document voor Watering Sloot-en Caliebeek"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049652> .

@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489>
+  a org:Organization ;
+  skos:prefLabel "Onderzoekseenheid Gezins- en Orthopedagogiek (KUL)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO055489" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/df538e37-7131-44c7-05c1-9db83366910c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055489/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055489/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055489/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO055489/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO055489/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO055489> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "noor.seghers@kuleuven.be"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3216324116" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32479880803" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32479880803" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055489/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bea.maes@kuleuven.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO055489>
+  a foaf:Document ;
+  rdfs:label "Document voor Onderzoekseenheid Gezins- en Orthopedagogiek (KUL)"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO055489> .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO017349>
+  a org:Organization ;
+  skos:prefLabel "TONUSO"@nl ;
+  dct:description "Tonuso zw begeleidt gezinnen die zich bevinden in een zorgwekkende leefsituatie waardoor de opvoeding van de kinderen onder spanning komt te staan of waardoor de ontwikkeling van de kinderen en jongeren in het gedrang komt."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO017349" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0449971815" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9eb09aec-d8df-4d3b-8b5d-45cf57dff36c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO017349/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO017349/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO017349/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO017349> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017349/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 521 07 68" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017349/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@tonuso.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO017349/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.tonuso.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO017349>
+  a foaf:Document ;
+  rdfs:label "Document voor TONUSO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO017349> .

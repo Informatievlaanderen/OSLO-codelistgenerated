@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032>
+  a org:Organization ;
+  skos:prefLabel "TIM vereniging zonder winstoogmerk"@nl ;
+  skos:altLabel "TIM vzw"@nl ;
+  dct:description "TIM vzw is een platform voor early-career kunstenaars, schrijvers en ontwerpers. De voornaamste activiteit is het uitgeven van het halfjaarlijkse TIM magazine waarin jonge kunstenaars in gesprek gaan met elkaar en gevestigde kunstenaars over hun praktijk en waar ze een podium vinden om nieuw werk te tonen. Daarnaast organiseert TIM vzw ook evenementen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO039032" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-02-06"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0743389291" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-02-06"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6a1bc5ea-fd9f-0fae-0b19-2fa0a4199374> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO039032/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO039032/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO039032/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO039032/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO039032/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO039032> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Elena Op 't Eynde"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "tim.discourse@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Tim Verherstraeten"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32497296473" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO039032/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://timmagazine.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO039032>
+  a foaf:Document ;
+  rdfs:label "Document voor TIM vereniging zonder winstoogmerk"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO039032> .

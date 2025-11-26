@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO004160>
+  a org:Organization ;
+  skos:prefLabel "Analytisch laboratorium"@nl ;
+  dct:description "Het team analytisch laboratorium analyseert zowel water- als vaste monsters en voert genetische, fytopathologische en in vitro analyses uit."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO004160" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/0769d5af-1f7d-b3fd-628d-bd5d17443ea8> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO004160> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO004160>
+  a foaf:Document ;
+  rdfs:label "Document voor Analytisch laboratorium"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO004160> .

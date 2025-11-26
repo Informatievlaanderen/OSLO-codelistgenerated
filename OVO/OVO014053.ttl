@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053>
+  a org:Organization ;
+  skos:prefLabel "Opgejaagd Wild"@nl ;
+  dct:description "Opgejaagd Wild is een vzw die enkele muziekgroepen rond drummer en componist Lander Gyselinck omkadert, met name het jazzensemble LABtrio, het Ragini Trio, een band die jazz combineert met Indische raga-muziek en STUFF, een band die jazz combineert met popmuziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO014053" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0556888183" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4737af45-1757-4dbf-b92c-0b13823ac479> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO014053/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO014053/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO014053/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO014053/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO014053/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO014053> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32486065747" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "+32485792808" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hendrik@rockoco.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "hendrik@rockoco.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO014053/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@landergyselinck.com" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO014053>
+  a foaf:Document ;
+  rdfs:label "Document voor Opgejaagd Wild"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO014053> .

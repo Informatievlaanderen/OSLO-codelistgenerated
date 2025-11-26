@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357>
+  a org:Organization ;
+  skos:prefLabel "Afdeling Welzijn en Samenleving"@nl ;
+  skos:altLabel "Welzijn en Samenleving"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000357" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/61d3b0e9-2aa9-40ab-8545-2c06dedc79db> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO000357/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000357> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "02 553 33 60" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 33 30" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "30"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "welzijnensamenleving@vlaanderen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.departementwvg.be/welzijn-en-samenleving> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO000357/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.departementwvg.be/lokaal-sociaal-beleid> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000357>
+  a foaf:Document ;
+  rdfs:label "Document voor Afdeling Welzijn en Samenleving"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000357> .

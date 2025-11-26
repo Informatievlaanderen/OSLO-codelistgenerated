@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036589>
+  a org:Organization ;
+  skos:prefLabel "Managementondersteuning"@nl ;
+  skos:altLabel "MGMTOND"@nl ;
+  dct:description "Bundelt de krachten rond wetenschappelijk onderzoek, rapportering en monitoring, kwaliteitsbewaking en projectmanagement"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036589" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-01-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/2ff24352-5ab8-ab24-b8ac-59388fa9d9dd> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036589/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036589> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036589/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "beleidsonderbouwing.box@opgroeien.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036589>
+  a foaf:Document ;
+  rdfs:label "Document voor Managementondersteuning"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036589> .

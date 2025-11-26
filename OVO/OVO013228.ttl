@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228>
+  a org:Organization ;
+  skos:prefLabel "Missing You"@nl ;
+  dct:description "De vzw Missing You ondersteunt kinderen, jongeren en jongvolwassenen (6 tot 30 jaar) die een naaste zijn verloren. Dit gebeurt door het bieden van ruimte en steun om met hun verliesverhaal aan de slag te gaan, via lotgenotencontact en psycho-educatie. Men brengt jonge rouwenden samen in rouwgroepen, kampen, weekends en ontmoetingsdagen."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013228" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0892290924" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/57caa86a-b03a-4875-8dea-7bac6945a97e> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013228/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013228/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013228/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO013228/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO013228/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013228> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0488249290" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <www.missingyou.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Laurine Hespel"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0474608168" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013228/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@missingyou.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013228>
+  a foaf:Document ;
+  rdfs:label "Document voor Missing You"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013228> .

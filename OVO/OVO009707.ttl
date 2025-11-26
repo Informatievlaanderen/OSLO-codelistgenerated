@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009707>
+  a org:Organization ;
+  skos:prefLabel "Greater Manchester Arts Centre Limited"@nl ;
+  skos:altLabel "Greater Manchester Arts Centre Limited"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009707" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e3097fb2-4e52-4223-94bd-60c4c943e300> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009707/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009707> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009707/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "sarah.shelley@cornerhouse.org" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009707>
+  a foaf:Document ;
+  rdfs:label "Document voor Greater Manchester Arts Centre Limited"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009707> .

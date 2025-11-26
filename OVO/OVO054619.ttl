@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO054619>
+  a org:Organization ;
+  skos:prefLabel "Hi.Brussels"@nl ;
+  skos:altLabel "Hi.B"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO054619" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2022-09-24"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0791357573" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2022-09-24"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/bfe22924-7788-4b6a-826e-d3b4ebefe0b2> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO054619/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO054619/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO054619> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054619/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@hibrussels.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO054619/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+32486985597" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO054619>
+  a foaf:Document ;
+  rdfs:label "Document voor Hi.Brussels"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO054619> .

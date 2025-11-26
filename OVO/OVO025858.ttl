@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO025858>
+  a org:Organization ;
+  skos:prefLabel "Cipal Schaubroeck"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO025858" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-10-10"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0664474051" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2016-10-10"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/36fa013b-4ea4-0195-d06a-7bc9e52ec3db> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO025858/contact/0> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO025858> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO025858/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <www.cipalschaubroeck.be> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO025858>
+  a foaf:Document ;
+  rdfs:label "Document voor Cipal Schaubroeck"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO025858> .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343>
+  a org:Organization ;
+  skos:prefLabel "Centra voor Alcohol en andere Drugproblemen Limburg"@nl ;
+  skos:altLabel "CAD LIMBURG"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO022343" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f875d2ec-8c7a-43ab-b089-d89d16e279e3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO022343/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO022343/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO022343/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO022343/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO022343/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO022343> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@cadlimburg.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "011 27 42 98" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.cadlimburg.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "dimitri.das@cadlimburg.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO022343/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Dimitri Das"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO022343>
+  a foaf:Document ;
+  rdfs:label "Document voor Centra voor Alcohol en andere Drugproblemen Limburg"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO022343> .

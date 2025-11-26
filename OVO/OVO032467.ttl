@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO032467>
+  a org:Organization ;
+  skos:prefLabel "Secundair Onderwijs voor Schoonheidszorgen \"Denise Gresiac\""@nl ;
+  skos:altLabel "DENISE GRESIAC VZW"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO032467" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1959-02-14"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0409723446" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1959-02-14"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9e49f6a9-455b-4c7a-e0c9-6eabf94e773f> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO032467> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO032467>
+  a foaf:Document ;
+  rdfs:label "Document voor Secundair Onderwijs voor Schoonheidszorgen \"Denise Gresiac\""@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO032467> .

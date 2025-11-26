@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036385>
+  a org:Organization ;
+  skos:prefLabel "FILENO"@nl ;
+  dct:description "El Bocadillo"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036385" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2016-03-07"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/f3932839-f616-45e8-195a-b7505b51df8a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO036385/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO036385/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO036385/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036385> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036385/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "fileno.sprl@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036385/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02/223.33.46" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO036385/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497/20.63.58" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036385>
+  a foaf:Document ;
+  rdfs:label "Document voor FILENO"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036385> .

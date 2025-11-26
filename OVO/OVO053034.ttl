@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO053034>
+  a org:Organization ;
+  skos:prefLabel "Koninklijke Harmonie Sint - Cecilia"@nl ;
+  dct:description "Gullegem"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO053034" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "1979-11-22"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0420357220" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "1979-11-22"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/c56b06b7-6274-3639-e7cf-e0406f086315> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO053034/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO053034/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO053034> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053034/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@ceciliagullegem.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO053034/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3256414243" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO053034>
+  a foaf:Document ;
+  rdfs:label "Document voor Koninklijke Harmonie Sint - Cecilia"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO053034> .

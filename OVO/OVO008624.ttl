@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO008624>
+  a org:Organization ;
+  skos:prefLabel "Subsidiëren en erkennen"@nl ;
+  skos:altLabel "Subsidiëren en erkennen"@nl ;
+  dct:description "De afdeling Subsidiëren en Erkennen focust zich op het decretale werk (en de aanzet daartoe met reglementen) binnen het Departement CJM in het algemeen, en voor de culturele sectoren in het bijzonder. De taakstelling omvat alle aspecten binnen het decretale werk, vertrekkende van beleidsontwikkeling over beleidsvoorbereiding en -implementatie, tot finaal de procedures van toezicht en evaluatie."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO008624" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/13a2ef28-b8ec-80cb-2798-b0451b871f8f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO008624/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO008624/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO008624/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO008624> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008624/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/cjm> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008624/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "02 553 06 63" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO008624/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "participatiedecreet@vlaanderen.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO008624>
+  a foaf:Document ;
+  rdfs:label "Document voor Subsidiëren en erkennen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO008624> .

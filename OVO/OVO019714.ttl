@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714>
+  a org:Organization ;
+  skos:prefLabel "BE OPTIMAL IN ACTION @ SPORT"@nl ;
+  skos:altLabel "B.O.A.S."@nl ;
+  dct:description "BOAS vzw is een zwemclub voor mensen met een beperking. De organisatie heeft vestigingen in Neder-Over-Heembeek, Meise, Elsene, Gent, Kortrijk, Wingene en Roeselare."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019714" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0863572588" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9d347abf-1ec7-4f78-a4f3-a01fa84aba43> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019714/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019714> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0470 11 11 58" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497 48 47 83" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Marieke Verraes"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@boasvzw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "marieke.verraes@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019714/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.boasvzw.be/> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019714>
+  a foaf:Document ;
+  rdfs:label "Document voor BE OPTIMAL IN ACTION @ SPORT"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019714> .

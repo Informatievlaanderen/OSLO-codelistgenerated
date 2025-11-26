@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO013559>
+  a org:Organization ;
+  skos:prefLabel "Natuurpunt Beheer, vereniging voor natuurbeheer en landschapszorg in Vlaanderen"@nl ;
+  skos:altLabel "Natuurpunt Beheer"@nl ;
+  dct:description "Natuurpunt beheert meer dan 29.000 hectare Vlaamse natuur in 500 verschillende natuurgebieden. Via studiewerkgroepen houdt Natuurpunt de gezondheid van de Vlaamse natuur in de gaten. Natuurpunt formuleert beleidsadviezen voor de overheid inzake natuurbeheer."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO013559" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0409423736" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6f110131-0a3f-4fb9-8e67-ce44eeb977fc> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO013559/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO013559/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO013559/contact/2> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO013559> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013559/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.natuurpunt.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013559/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "015 29 72 20" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO013559/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://www.natuurpunt.be/contact"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO013559>
+  a foaf:Document ;
+  rdfs:label "Document voor Natuurpunt Beheer, vereniging voor natuurbeheer en landschapszorg in Vlaanderen"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO013559> .

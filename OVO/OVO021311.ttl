@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311>
+  a org:Organization ;
+  skos:prefLabel "Bizon Vzw"@nl ;
+  dct:description "De vzw Bizon organiseert laagdrempelige vakantiekampen voor kinderen en jongeren in een maatschappelijk kwetsbare situatie en biedt ook vormingen aan animatoren."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021311" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0870194819" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8228abc0-88bf-4fd7-a8e0-627cbe7c1a2c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021311/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021311/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021311/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021311/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021311/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021311> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@bizonvzw.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 236 30 09" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://bizonvzw.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Jozefien Biasino"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021311/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "jozefien@bizonvzw.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021311>
+  a foaf:Document ;
+  rdfs:label "Document voor Bizon Vzw"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021311> .

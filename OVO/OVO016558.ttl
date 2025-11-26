@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO016558>
+  a org:Organization ;
+  skos:prefLabel "Stedelijk Museum De Lakenhal"@nl ;
+  skos:altLabel "Stedelijk Museum De Lakenhal"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO016558" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/54330d7b-558f-4e09-872b-46950b025d1f> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO016558> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO016558>
+  a foaf:Document ;
+  rdfs:label "Document voor Stedelijk Museum De Lakenhal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO016558> .

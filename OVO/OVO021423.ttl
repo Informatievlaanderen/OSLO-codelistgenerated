@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423>
+  a org:Organization ;
+  skos:prefLabel "CREATIEF SCHRIJVEN VZW"@nl ;
+  dct:description "Creatief Schrijven vzw is het steunpunt voor al wie graag schrijft of wil schrijven. De vzw biedt cursussen, informatie, advies, ondersteuning en begeleiding en organiseert evenementen en wedstrijden."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO021423" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0478925820" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/245b3392-1f04-4b68-8197-2af490f88c71> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO021423/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO021423/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO021423/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO021423/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO021423/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO021423> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <http://www.creatiefschrijven.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@creatiefschrijven.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "03 229 09 90" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "An Leenders"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO021423/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "an@creatiefschrijven.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO021423>
+  a foaf:Document ;
+  rdfs:label "Document voor CREATIEF SCHRIJVEN VZW"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO021423> .

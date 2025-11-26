@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380>
+  a org:Organization ;
+  skos:prefLabel "Cultuurhuis de Warande"@nl ;
+  skos:altLabel "APB de Warande"@nl ;
+  dct:description "De Warande is een provinciaal cultuurhuis in de stad Turnhout. Het omvat onder andere een schouwburg, een theater- en concertzaal, een fuifzaal en verschillende kleinere project- en podiumruimtes."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO003380" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0812230092" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/11b99dff-908e-97da-c5ee-53c3db09d20b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO003380/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003380> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0497 939395" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014 47 21 52" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.warande.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@warande.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "014 41 94 94" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO003380/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "bert.heylen@warande.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO003380>
+  a foaf:Document ;
+  rdfs:label "Document voor Cultuurhuis de Warande"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003380> .

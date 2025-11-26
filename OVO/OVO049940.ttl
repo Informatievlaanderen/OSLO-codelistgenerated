@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO049940>
+  a org:Organization ;
+  skos:prefLabel "Team Inspectie dierenwelzijn"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO049940" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2021-12-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/244e33da-9ecf-7acb-54d2-847e904e92fc> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO049940/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO049940/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO049940/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO049940/contact/3> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO049940> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049940/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "1700" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049940/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "https://www.vlaanderen.be/dierenwelzijn/contact"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049940/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.vlaanderen.be/dierenwelzijn> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO049940/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "dierenwelzijn@vlaanderen.be"@nl .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO049940>
+  a foaf:Document ;
+  rdfs:label "Document voor Team Inspectie dierenwelzijn"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO049940> .

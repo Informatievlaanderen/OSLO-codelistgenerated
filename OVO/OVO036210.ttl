@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO036210>
+  a org:Organization ;
+  skos:prefLabel "Vrije Basisschool - De Parel (kleuters, 1 en 2e leerjaar) Zutendaal"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO036210" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e074c634-b50c-a3fa-f9d3-3fd438c23982> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO036210> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO036210>
+  a foaf:Document ;
+  rdfs:label "Document voor Vrije Basisschool - De Parel (kleuters, 1 en 2e leerjaar) Zutendaal"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO036210> .

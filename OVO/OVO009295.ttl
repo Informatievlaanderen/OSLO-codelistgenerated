@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO009295>
+  a org:Organization ;
+  skos:prefLabel "Gasworks"@nl ;
+  skos:altLabel "Gasworks"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO009295" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/6fef36aa-1f7c-4620-a0b8-e1282153751a> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO009295/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO009295/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO009295> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009295/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "robertleckie@gasworks.org.uk" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO009295/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+44 207 587 5202" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO009295>
+  a foaf:Document ;
+  rdfs:label "Document voor Gasworks"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO009295> .

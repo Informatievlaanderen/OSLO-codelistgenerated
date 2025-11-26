@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO028842>
+  a org:Organization ;
+  skos:prefLabel "Kwaliteitsmanagement"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO028842" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2018-09-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d3a0d98d-145f-c09e-fafc-462fd2de5ca8> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO028842> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO028842>
+  a foaf:Document ;
+  rdfs:label "Document voor Kwaliteitsmanagement"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO028842> .

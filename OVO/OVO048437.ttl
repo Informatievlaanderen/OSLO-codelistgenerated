@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO048437>
+  a org:Organization ;
+  skos:prefLabel "Erfgoed Groene Vallei"@nl ;
+  dct:description "Raad van Bestuur nog nooit samengekomen (geen voorzitter) aangezien het een slapende projectvereniging is die nog geen enkele werking heeft. De projectvereniging ‘Erfgoed Groene Vallei’ werd opgericht om een erkennings- en subsidiëringsaanvraag te kunnen doen bij de Vlaamse overheid als Intergemeentelijke Erfgoeddienst (de voorafgaandelijke oprichting van een projectvereniging is daarbij een verplichte voorwaarde). De erkennings- en subsidiëringsaanvraag werd niet goedgekeurd, ze zullen geen nieuwe aanvraag meer kunnen indienen. Daarom zullen we de projectvereniging ‘Erfgoed Groene Vallei’ binnen korte tijd ontbinden. (info jan.verroken@rld.be)"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO048437" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2019-12-20"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0741452756" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2019-12-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/df825836-2c30-3945-6db2-5fcd8357079d> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO048437/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO048437/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO048437> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048437/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@kampenhout.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO048437/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.kampenhout.be/ioed-erfgoed-groene-vallei> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO048437>
+  a foaf:Document ;
+  rdfs:label "Document voor Erfgoed Groene Vallei"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO048437> .

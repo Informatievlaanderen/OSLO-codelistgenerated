@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639>
+  a org:Organization ;
+  skos:prefLabel "De Centrale"@nl ;
+  dct:description "De Centrale is een intercultureel muziekcentrum in Gent met o.a. een wereldmuziekschool en een concertzaal met focus op wereldmuziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO019639" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0469368647" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/83344986-cc52-4d12-a814-1a5e9cb664ae> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/5>, <https://data.vlaanderen.be/id/organisatie/OVO019639/contact/6> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO019639> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "decentrale@gent.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://decentrale.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "09 265 98 24" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 265 98 28" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Luc Baeckeland"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "luc.baeckeland@gent.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO019639/contact/6>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "09 323 65 65" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO019639>
+  a foaf:Document ;
+  rdfs:label "Document voor De Centrale"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO019639> .

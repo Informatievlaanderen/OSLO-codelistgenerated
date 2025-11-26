@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868>
+  a org:Organization ;
+  skos:prefLabel "Ferdinand Ensemble"@nl ;
+  skos:altLabel "FE"@nl ;
+  dct:description "Het Ferdinand Ensemble is een jong kamermuziekensemble met een unieke bezetting: 2 klarinetten, 2 fagotten, 2 hoorns. Het speelt diverse klassieke muziek."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO047868" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2020-11-19"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0758596814" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2020-11-19"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/b1c4531c-c526-f6ec-59a2-c8775d05c76b> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO047868/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO047868/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO047868/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO047868/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO047868/contact/4> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO047868> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Contactformulier"@nl ;
+  rdfs:comment "Eline Van den Broeck"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "eline.vandenbroeck@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "ferdinandensemble@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://ferdinand-ensemble.be/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO047868/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Gsm"@nl ;
+  schema:telephone "0496 39 76 86" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO047868>
+  a foaf:Document ;
+  rdfs:label "Document voor Ferdinand Ensemble"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO047868> .

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381>
+  a org:Organization ;
+  skos:prefLabel "IEDEREEN LEEST"@nl ;
+  skos:altLabel "IL"@nl ;
+  dct:description "Iedereen Leest coördineert campagnes en programma's rond lezen en leesbevordering, zoals Jeugdboekenmaand, Voorleesweek, Boekstart of de Leesjury."@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO010381" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "0476817950" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d9a66f61-c535-4640-843a-2f267177354c> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/4>, <https://data.vlaanderen.be/id/organisatie/OVO010381/contact/5> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO010381> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Fax"@nl ;
+  schema:faxNumber "03 204 10 09" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Intern busnummer"@nl ;
+  rdfs:comment "4"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/2>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@stichtinglezen.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/3>
+  a schema:ContactPoint ;
+  rdfs:label "Website"@nl ;
+  schema:url <https://www.iedereenleest.be> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/4>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3232041000" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO010381/contact/5>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "info@iedereenleest.be" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO010381>
+  a foaf:Document ;
+  rdfs:label "Document voor IEDEREEN LEEST"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO010381> .

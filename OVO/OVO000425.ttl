@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO000425>
+  a org:Organization ;
+  skos:prefLabel "Decentrale diensten SYNTRA"@nl ;
+  skos:altLabel "Decentrale diensten SYNTRA"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO000425" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2006-04-01"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e1c1f5c4-8785-4f79-956a-942c7a2410ab> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000425> .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO000425>
+  a foaf:Document ;
+  rdfs:label "Document voor Decentrale diensten SYNTRA"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000425> .

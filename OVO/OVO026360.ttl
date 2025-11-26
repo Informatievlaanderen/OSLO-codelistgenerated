@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO026360>
+  a org:Organization ;
+  skos:prefLabel "Kf Sint-Niklaas"@nl ;
+  skos:altLabel "Kf Sint-Niklaas"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO026360" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2025-11-26"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e472c8d2-0c09-4d94-b5c4-8407ac12d832> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO026360/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO026360/contact/1> ;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO026360> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026360/contact/0>
+  a schema:ContactPoint ;
+  rdfs:label "Email"@nl ;
+  schema:email "geert.gooovaerts@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO026360/contact/1>
+  a schema:ContactPoint ;
+  rdfs:label "Telefoon"@nl ;
+  schema:telephone "+3215754166" .
+
+<https://data.vlaanderen.be/doc/organisatie/OVO026360>
+  a foaf:Document ;
+  rdfs:label "Document voor Kf Sint-Niklaas"@nl ;
+  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO026360> .
