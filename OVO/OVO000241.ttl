@@ -24,34 +24,29 @@
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/971cdd22-521e-40f4-9f1b-7e62a13f4ca5> ;
   schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/4> ;
-  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO000241> .
+.
 
 <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/0>
   a schema:ContactPoint ;
-  rdfs:label "Email"@nl ;
-  schema:email "communicatie@vlaanderen.be" .
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:communicatie@vlaanderen.be" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/1>
   a schema:ContactPoint ;
-  rdfs:label "Fax"@nl ;
+  schema:contactType "Fax"@nl ;
   schema:faxNumber "025535579" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/2>
   a schema:ContactPoint ;
-  rdfs:label "Intranetsite"@nl ;
-  rdfs:comment "http://dar.vonet.be/nlapps/docs/default.asp?fid=299"@nl .
+  schema:contactType "Intranetsite"@nl ;
+  schema:url <http://dar.vonet.be/nlapps/docs/default.asp?fid=299> .
 
 <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/3>
   a schema:ContactPoint ;
-  rdfs:label "Telefoon"@nl ;
+  schema:contactType "Telefoon"@nl ;
   schema:telephone "025535550" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO000241/contact/4>
   a schema:ContactPoint ;
-  rdfs:label "Website"@nl ;
+  schema:contactType "Website"@nl ;
   schema:url <http://communicatie.vlaanderen.be> .
-
-<https://data.vlaanderen.be/doc/organisatie/OVO000241>
-  a foaf:Document ;
-  rdfs:label "Document voor Communicatie"@nl ;
-  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO000241> .

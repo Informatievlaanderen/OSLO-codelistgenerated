@@ -13,42 +13,30 @@
   a org:Organization ;
   skos:prefLabel "Intercommunale voor Huisvuilverwijdering voor Burcht en Omliggende Gemeenten"@nl ;
   skos:altLabel "IBOGEM"@nl ;
-  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
   adms:identifier
   [
     a adms:Identifier ;
     skos:notation "OVO003483" ;
     dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
     adms:schemaAgency "Digitaal Vlaanderen"@nl ;
-    dct:issued "2025-11-27"^^xsd:date
-  ],
-  [
-    a adms:Identifier ;
-    skos:notation "0213384063" ;
-    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
-    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
-    dct:issued "2025-11-27"^^xsd:date
+    dct:issued "2025-12-02"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/4cde42f9-235e-3e88-6196-91c658a507b3> ;
   schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/2> ;
-  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO003483> .
+.
 
 <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/0>
   a schema:ContactPoint ;
-  rdfs:label "Website"@nl ;
+  schema:contactType "Website"@nl ;
   schema:url <https://www.ibogem.be/> .
 
 <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/1>
   a schema:ContactPoint ;
-  rdfs:label "Telefoon"@nl ;
+  schema:contactType "Telefoon"@nl ;
   schema:telephone "032531664" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO003483/contact/2>
   a schema:ContactPoint ;
-  rdfs:label "Email"@nl ;
-  schema:email "info@ibogem.be" .
-
-<https://data.vlaanderen.be/doc/organisatie/OVO003483>
-  a foaf:Document ;
-  rdfs:label "Document voor Intercommunale voor Huisvuilverwijdering voor Burcht en Omliggende Gemeenten"@nl ;
-  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO003483> .
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:info@ibogem.be" .

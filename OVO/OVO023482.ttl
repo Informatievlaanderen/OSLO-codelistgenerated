@@ -20,19 +20,25 @@
     skos:notation "OVO023482" ;
     dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
     adms:schemaAgency "Digitaal Vlaanderen"@nl ;
-    dct:issued "2025-11-27"^^xsd:date
+    dct:issued "2025-12-02"^^xsd:date
   ],
   [
     a adms:Identifier ;
     skos:notation "0545920552" ;
     dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
     adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
-    dct:issued "2025-11-27"^^xsd:date
+    dct:issued "2025-12-02"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ac69d8bb-9023-4ad0-b4b3-1a47c4b4abd3> ;
-  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO023482> .
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO023482/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO023482/contact/1> ;
+.
 
-<https://data.vlaanderen.be/doc/organisatie/OVO023482>
-  a foaf:Document ;
-  rdfs:label "Document voor De Gentse Lente"@nl ;
-  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO023482> .
+<https://data.vlaanderen.be/id/organisatie/OVO023482/contact/0>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:mehdimarechal@hotmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO023482/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Telefoon"@nl ;
+  schema:telephone "+32485520777" .

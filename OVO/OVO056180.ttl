@@ -30,9 +30,15 @@
     dct:issued "2024-03-17"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/e2ea2625-0c38-4629-9257-f3453ed51322> ;
-  rdfs:isDefinedBy <https://data.vlaanderen.be/doc/organisatie/OVO056180> .
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO056180/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO056180/contact/1> ;
+.
 
-<https://data.vlaanderen.be/doc/organisatie/OVO056180>
-  a foaf:Document ;
-  rdfs:label "Document voor VZW Knoeselplein"@nl ;
-  foaf:primaryTopic <https://data.vlaanderen.be/id/organisatie/OVO056180> .
+<https://data.vlaanderen.be/id/organisatie/OVO056180/contact/0>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:coreteam@knoeselplein.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO056180/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Telefoon"@nl ;
+  schema:telephone "0485506421" .
