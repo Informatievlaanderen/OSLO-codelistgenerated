@@ -1,12 +1,48 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Identificatortype/postcode>
+<https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gebouw>
     a <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Reeks cijfers en/of letters die wordt gebruikt om een specifiek geografisch gebied te identificeren voor het effici뮴 sorteren en bezorgen van post."@nl ;
-    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype> ;
-    <http://www.w3.org/2004/02/skos/core#notation> "postcode" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "postcode"@nl ;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Een gesloten en/of overdekt, bovengronds of ondergronds bouwwerk, dat dient of bestemd is, ofwel om mensen, dieren en voorwerpen onder te brengen, ofwel om economische goederen te vervaardigen of diensten te verstrekken. Een gebouw verwijst naar gelijk welke structuur die op blijvende wijze op een terrein opgetrokken of gebouwd wordt."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "gebouw" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gebouw"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gebouweenheid>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "De kleinste eenheid binnen een gebouw die geschikt is voor woon-, bedrijfsmatige, of recreatieve doeleinden en die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde circulatieruimte. Een gebouweenheid is in functioneel opzicht zelfstandig. Daarnaast kan een gebouweenheid ook een gemeenschappelijk deel zijn."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "gebouweenheid" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gebouweenheid"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gedeelde_Circulatieruimte>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Gemeenschappelijke ruimte die gebruikt wordt voor de verplaatsing van personen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "gedeelde_circulatieruimte" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gedeelde Circulatieruimte"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gemeenschappelijk_Deel>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Het geheel van gemeenschappelijke ruimten, en bij uitbreiding, gedeelde bouwkundige structuren (= fundering, muren, gevel, liftkokers, dak �) in een gebouw."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "gemeenschappelijk_deel" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeenschappelijk Deel"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
+
+<https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gemeenschappelijke_ruimte>
+    a <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Binnenruimte die bedoeld is om door meerdere partijen gebruikt te worden. Voorbeelden zijn gedeelde circulatieruimten, keukens, sanitaire ruimten, zitruimten, kelders, zolders �."@nl ;
+    <http://www.w3.org/2004/02/skos/core#inscheme> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
+    <http://www.w3.org/2004/02/skos/core#notation> "gemeenschappelijke_ruimte" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeenschappelijke ruimte"@nl ;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
     <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
 
 <https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/drinkbaarwaterverbruiksvolume>
@@ -315,10 +351,10 @@
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType> ;
     <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> .
 
-<https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype>
+<https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype>
     a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van identificatortype"@nl ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Identificatortype"@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Afleverpunttype"@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afleverpunttype"@nl ;
     <https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/Status/ingebruik> .
 
 <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype>
