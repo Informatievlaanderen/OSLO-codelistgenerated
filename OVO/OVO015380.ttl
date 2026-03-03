@@ -13,6 +13,7 @@
   a org:Organization ;
   skos:prefLabel "Rencontres Chorégraphiques Internationales De Seine-Saint-Denis"@nl ;
   skos:altLabel "Rencontres Chorégraphiques Internationales De Seine-Saint-Denis"@nl ;
+  dct:description "Rencontres Chorégraphiques Internationales De Seine-Saint-Denis is een organisatie die een aantal dansfestivals organiseert in de gemeente Bagnolet (nabij Parijs), Frankrijk."@nl ;
   adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
   adms:identifier
   [
@@ -20,13 +21,23 @@
     skos:notation "OVO015380" ;
     dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
     adms:schemaAgency "Digitaal Vlaanderen"@nl ;
-    dct:issued "2026-02-24"^^xsd:date
+    dct:issued "2026-03-03"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9497d0da-ebba-4beb-ad77-fae0bba5d121> ;
-  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015380/contact/0> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO015380/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO015380/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO015380/contact/2> ;
 .
 
 <https://data.vlaanderen.be/id/organisatie/OVO015380/contact/0>
   a schema:ContactPoint ;
   schema:contactType "Email"@nl ;
   schema:email "mailto:admin@rencontreschoregraphiques.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015380/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Website"@nl ;
+  schema:url <https://rencontreschoregraphiques.com/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO015380/contact/2>
+  a schema:ContactPoint ;
+  schema:contactType "Contactformulier"@nl ;
+  rdfs:comment "Anita Mathieu"@nl .

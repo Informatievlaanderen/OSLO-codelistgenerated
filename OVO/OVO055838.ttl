@@ -13,6 +13,7 @@
   a org:Organization ;
   skos:prefLabel "Fête Laweit VZW"@nl ;
   skos:altLabel "FLvzw"@nl ;
+  dct:description "Fête Laweit is een 7-koppige jazz- en swingband."@nl ;
   adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
   adms:identifier
   [
@@ -30,15 +31,30 @@
     dct:issued "2024-05-30"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/9c319f7d-4b5a-44ed-a615-366b56eacc93> ;
-  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/3>, <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/4> ;
 .
 
 <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/0>
   a schema:ContactPoint ;
-  schema:contactType "Telefoon"@nl ;
-  schema:telephone "+32471423670" .
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:fetelaweit@gmail.com" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO055838/contact/1>
   a schema:ContactPoint ;
+  schema:contactType "Gsm"@nl ;
+  schema:telephone "+32471423670" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055838/contact/2>
+  a schema:ContactPoint ;
+  schema:contactType "Contactformulier"@nl ;
+  rdfs:comment "Jente Vanderrusten"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055838/contact/3>
+  a schema:ContactPoint ;
   schema:contactType "Email"@nl ;
-  schema:email "mailto:fetelaweit@gmail.com" .
+  schema:email "mailto:jente.vanderrusten@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO055838/contact/4>
+  a schema:ContactPoint ;
+  schema:contactType "Facebook"@nl ;
+  rdfs:comment "https://www.facebook.com/p/F%C3%AAte-Laweit-100083615461898/?locale=nl_BE"@nl .
