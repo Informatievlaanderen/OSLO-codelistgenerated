@@ -1,0 +1,105 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2008/01479> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0147>, <http://vocab.belgif.be/auth/nace2008/0147>;
+    skos:definition "Pluimveehouderijen, m.u.v. kippenkwekerijen"@nl, "Élevage de volailles, sauf poules"@fr;
+    skos:prefLabel "01479".
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4623>, <http://vocab.belgif.be/auth/nace2008/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<http://vocab.belgif.be/auth/nace2025/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2025/01479> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0147>, <http://vocab.belgif.be/auth/nace2025/0147>;
+    skos:definition "Pluimveehouderijen, m.u.v. kippenkwekerijen"@nl, "Élevage de volailles, sauf poules"@fr;
+    skos:prefLabel "01479".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4623>, <http://vocab.belgif.be/auth/nace2025/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<https://data.vlaanderen.be/id/onderneming/0883.695.734> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.695.734;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01500>, _:nace_2003_01300, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46231>, <http://vocab.belgif.be/auth/nace2025/01479>, <http://vocab.belgif.be/auth/nace2025/01462>, _:nace_2003_51230, _:nace_2003_01232, _:nace_2003_01243, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/46231>, <http://vocab.belgif.be/auth/nace2008/01462>, <http://vocab.belgif.be/auth/nace2008/01479>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0883.695.734;
+    reorg:legalName "MARVACO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.156.367.309>, <https://data.vlaanderen.be/id/vestiging/2.195.464.544>, <https://data.vlaanderen.be/id/vestiging/2.386.344.312>.
+<https://data.vlaanderen.be/id/vestiging/2.156.367.309> a org:Site;
+    dcterms:created "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.156.367.309.
+<https://data.vlaanderen.be/id/vestiging/2.195.464.544> a org:Site;
+    dcterms:created "01-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.195.464.544.
+<https://data.vlaanderen.be/id/vestiging/2.386.344.312> a org:Site;
+    dcterms:created "19-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.386.344.312.
+_:address_contact_0883.695.734 a locn:Address;
+    locn:thoroughfare "Keibosstraat"@nl, "Keibosstraat"@fr;
+    rdfs:label "3";
+    locn:postCode "8700";
+    adres:gemeentenaam "Tielt"@nl, "Tielt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0883.695.734 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0883.695.734.
+_:nace_2003_01232 a skos:Concept;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01232".
+_:nace_2003_01243 a skos:Concept;
+    skos:definition "Overige pluimveehouderijen"@nl, "Élevage d'autres volailles"@fr;
+    skos:prefLabel "01243".
+_:nace_2003_01300 a skos:Concept;
+    skos:definition "Gemengd bedrijf"@nl, "Culture et élevage associés"@fr;
+    skos:prefLabel "01300".
+_:nace_2003_51230 a skos:Concept;
+    skos:definition "Groothandel in levende dieren"@nl, "Commerce de gros d'animaux vivants"@fr;
+    skos:prefLabel "51230".
+_:registration_company_0883.695.734 a adms:Identifier;
+    skos:notation "0883.695.734";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.156.367.309 a adms:Identifier;
+    skos:notation "2.156.367.309";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.195.464.544 a adms:Identifier;
+    skos:notation "2.195.464.544";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.386.344.312 a adms:Identifier;
+    skos:notation "2.386.344.312";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

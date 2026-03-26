@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Entretien et réparation général d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45201".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<https://data.vlaanderen.be/id/onderneming/0874.315.933> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.315.933;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2025/47820>, _:nace_2003_50302, _:nace_2003_50200, <http://vocab.belgif.be/auth/nace2008/45201>, <http://vocab.belgif.be/auth/nace2008/45320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0874.315.933;
+    reorg:legalName "PNEUS NINOVE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.418.266>.
+<https://data.vlaanderen.be/id/vestiging/2.147.418.266> a org:Site;
+    dcterms:created "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.418.266.
+_:address_contact_0874.315.933 a locn:Address;
+    locn:thoroughfare "Ninoofse Steenweg"@nl, "Chaussée de Ninove"@fr;
+    rdfs:label "591";
+    locn:postCode "1070";
+    adres:gemeentenaam "Anderlecht"@nl, "Anderlecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.315.933 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "ninove591@gmail.com";
+    locn:address _:address_contact_0874.315.933.
+_:nace_2003_50200 a skos:Concept;
+    skos:definition "Onderhoud en reparatie van auto's"@nl, "Entretien et réparation de véhicules automobiles"@fr;
+    skos:prefLabel "50200".
+_:nace_2003_50302 a skos:Concept;
+    skos:definition "Kleinhandel in onderdelen en accessoires van auto's"@nl, "Commerce de détail de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50302".
+_:registration_company_0874.315.933 a adms:Identifier;
+    skos:notation "0874.315.933";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.418.266 a adms:Identifier;
+    skos:notation "2.147.418.266";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

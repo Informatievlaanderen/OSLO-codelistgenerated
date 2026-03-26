@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4661>, <http://vocab.belgif.be/auth/nace2008/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4661>, <http://vocab.belgif.be/auth/nace2025/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/0890.001.031> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "11-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0890.001.031;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46610>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/77320>, _:nace_2003_29322, _:nace_2003_71320, _:nace_2003_51880, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/46610>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Clercq, Frederic";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.162.944.701>.
+<https://data.vlaanderen.be/id/vestiging/2.162.944.701> a org:Site;
+    dcterms:created "11-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.162.944.701.
+_:nace_2003_29322 a skos:Concept;
+    skos:definition "Herstelling van landbouwmachines"@nl, "Réparation de matériel agricole"@fr;
+    skos:prefLabel "29322".
+_:nace_2003_51880 a skos:Concept;
+    skos:definition "Groothandel in machines, tractoren, werktuigen en toebehoren voor de landbouw"@nl, "Commerce de gros de machines, matériels et tracteurs agricoles"@fr;
+    skos:prefLabel "51880".
+_:nace_2003_71320 a skos:Concept;
+    skos:definition "Verhuur van machines en installaties voor de bouwnijverheid"@nl, "Location de machines et équipements pour la construction"@fr;
+    skos:prefLabel "71320".
+_:registration_company_0890.001.031 a adms:Identifier;
+    skos:notation "0890.001.031";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.162.944.701 a adms:Identifier;
+    skos:notation "2.162.944.701";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

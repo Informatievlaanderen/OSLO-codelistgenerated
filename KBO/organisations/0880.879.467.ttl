@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47241> a skos:Concept;
+    skos:definition "Detailhandel in brood en banketbakkerswerk in gespecialiseerde winkels (koude bakkers)"@nl, "Commerce de détail de pain et de pâtisserie en magasin spécialisé (dépôt)"@fr;
+    skos:prefLabel "47241";
+    skos:broader <http://data.europa.eu/ux2/nace2/4724>, <http://vocab.belgif.be/auth/nace2008/4724>.
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890";
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>.
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100";
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>.
+<http://vocab.belgif.be/auth/nace2025/47210> a skos:Concept;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4721>, <http://vocab.belgif.be/auth/nace2025/4721>.
+<http://vocab.belgif.be/auth/nace2025/47241> a skos:Concept;
+    skos:definition "Detailhandel in brood en banketbakkerswerk in gespecialiseerde winkels (koude bakkers)"@nl, "Commerce de détail de pain et de pâtisserie en magasin spécialisé (dépôt)"@fr;
+    skos:prefLabel "47241";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4724>, <http://vocab.belgif.be/auth/nace2025/4724>.
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>.
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>.
+<https://data.vlaanderen.be/id/onderneming/0880.879.467> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.879.467;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_52240, <http://vocab.belgif.be/auth/nace2025/47241>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47210>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/68110>, _:nace_2003_70120, _:nace_2003_52623, <http://vocab.belgif.be/auth/nace2008/47241>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/47890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0880.879.467;
+    reorg:legalName "BIJ WANNES"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.062.460>.
+<https://data.vlaanderen.be/id/vestiging/2.155.062.460> a org:Site;
+    dcterms:created "24-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.062.460.
+_:address_contact_0880.879.467 a locn:Address;
+    locn:thoroughfare "Schuurveldstraat"@nl, "Schuurveldstraat"@fr;
+    rdfs:label "33";
+    locn:postCode "2260";
+    adres:gemeentenaam "Westerlo"@nl, "Westerlo"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0880.879.467 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0880.879.467.
+_:nace_2003_52240 a skos:Concept;
+    skos:definition "Detailhandel in brood-, banketbakkerswerk en suikerwerk"@nl, "Commerce de détail de pain, pâtisserie et confiserie"@fr;
+    skos:prefLabel "52240".
+_:nace_2003_52623 a skos:Concept;
+    skos:definition "Overige markt- en straathandel"@nl, "Autres commerces de détail sur marchés et éventaires"@fr;
+    skos:prefLabel "52623".
+_:nace_2003_70120 a skos:Concept;
+    skos:definition "Handel in onroerend goed"@nl, "Marchands de biens immobiliers"@fr;
+    skos:prefLabel "70120".
+_:registration_company_0880.879.467 a adms:Identifier;
+    skos:notation "0880.879.467";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.062.460 a adms:Identifier;
+    skos:notation "2.155.062.460";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

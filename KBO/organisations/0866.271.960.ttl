@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2008/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<https://data.vlaanderen.be/id/onderneming/0866.271.960> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-07-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0866.271.960;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46341>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/47252>, _:nace_2003_51340, _:nace_2003_52250, _:nace_2003_51170, <http://vocab.belgif.be/auth/nace2008/46341>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/46349>, <http://vocab.belgif.be/auth/nace2008/46170>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0866.271.960;
+    reorg:legalName "VITIS VIN."@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.181.017.383>.
+<https://data.vlaanderen.be/id/vestiging/2.181.017.383> a org:Site;
+    dcterms:created "22-12-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.181.017.383.
+_:address_contact_0866.271.960 a locn:Address;
+    locn:thoroughfare "Antoon Catriestraat"@nl, "Antoon Catriestraat"@fr;
+    rdfs:label "18B";
+    locn:postCode "9031";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0866.271.960 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@vitisvin.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.vitisvin.be";
+    locn:address _:address_contact_0866.271.960.
+_:nace_2003_51170 a skos:Concept;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées alimentaires, en boissons et en tabac"@fr;
+    skos:prefLabel "51170".
+_:nace_2003_51340 a skos:Concept;
+    skos:definition "Groothandel in dranken"@nl, "Commerce de gros de boissons"@fr;
+    skos:prefLabel "51340".
+_:nace_2003_52250 a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+_:registration_company_0866.271.960 a adms:Identifier;
+    skos:notation "0866.271.960";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.181.017.383 a adms:Identifier;
+    skos:notation "2.181.017.383";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/0886.451.920> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "16-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0886.451.920;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/46649>, _:nace_2003_72500, _:nace_2003_45310, _:nace_2003_51872, _:nace_2003_30020, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/46699>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0886.451.920;
+    reorg:legalName "Peternet Electronics"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.032.631>.
+<https://data.vlaanderen.be/id/vestiging/2.159.032.631> a org:Site;
+    dcterms:created "30-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.032.631.
+_:address_contact_0886.451.920 a locn:Address;
+    locn:thoroughfare "Kloosterstraat"@nl, "Kloosterstraat"@fr;
+    rdfs:label "1";
+    locn:postCode "9031";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0886.451.920 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0886.451.920.
+_:nace_2003_30020 a skos:Concept;
+    skos:definition "Vervaardiging van computers en andere apparatuur voor de verwerking van informatie"@nl, "Fabrication d'ordinateurs et d'autres équipements informatiques"@fr;
+    skos:prefLabel "30020".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_51872 a skos:Concept;
+    skos:definition "Groothandel in vervoermiddelen met uitzondering van auto's, motorrijwielen en rijwielen, in meetapparaten en -instrumenten, in navigatieapparatuur en andere diverse machines en uitrusting voor de nijv"@nl, "Commerce de gros de fournitures et d'équipements divers pour l'industrie et de matériels de transport autres que les véhicules automobiles, les cycles et les motocycles"@fr;
+    skos:prefLabel "51872".
+_:nace_2003_72500 a skos:Concept;
+    skos:definition "Onderhoud en reparatie van computers en van boekhoud- en overige kantoormachines"@nl, "Entretien et réparation de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "72500".
+_:registration_company_0886.451.920 a adms:Identifier;
+    skos:notation "0886.451.920";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.032.631 a adms:Identifier;
+    skos:notation "2.159.032.631";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

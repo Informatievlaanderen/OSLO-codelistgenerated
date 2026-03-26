@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2008/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5811>, <http://vocab.belgif.be/auth/nace2008/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2025/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5811>, <http://vocab.belgif.be/auth/nace2025/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<https://data.vlaanderen.be/id/onderneming/0878.952.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "27-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0878.952.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/55203>, <http://vocab.belgif.be/auth/nace2025/58110>, _:nace_2003_55232, _:nace_2003_22110, _:nace_2003_63303, _:nace_2003_72220, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/55203>, <http://vocab.belgif.be/auth/nace2008/58110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Vleeschhauwer, Hilde";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.151.302.028>.
+<https://data.vlaanderen.be/id/vestiging/2.151.302.028> a org:Site;
+    dcterms:created "27-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.151.302.028.
+_:nace_2003_22110 a skos:Concept;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "22110".
+_:nace_2003_55232 a skos:Concept;
+    skos:definition "Verschaffen van overig logies voor kortstondig verblijf"@nl, "Autres moyens d'hébergement de courte durée"@fr;
+    skos:prefLabel "55232".
+_:nace_2003_63303 a skos:Concept;
+    skos:definition "Reisbegeleiders en gidsen, toeristische informatiediensten en dergelijke"@nl, "Guides, services d'information touristique et similaires"@fr;
+    skos:prefLabel "63303".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:registration_company_0878.952.533 a adms:Identifier;
+    skos:notation "0878.952.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.151.302.028 a adms:Identifier;
+    skos:notation "2.151.302.028";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

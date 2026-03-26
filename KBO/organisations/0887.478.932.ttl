@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/64921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6492>, <http://vocab.belgif.be/auth/nace2008/6492>;
+    skos:definition "Verstrekken van verbruikskrediet"@nl, "Octroi de crédit à la consommation"@fr;
+    skos:prefLabel "64921".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2008/77340> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7734>, <http://vocab.belgif.be/auth/nace2008/7734>;
+    skos:definition "Verhuur en lease van schepen"@nl, "Location et location-bail de matériels de transport par eau"@fr;
+    skos:prefLabel "77340".
+<http://vocab.belgif.be/auth/nace2008/77350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7735>, <http://vocab.belgif.be/auth/nace2008/7735>;
+    skos:definition "Verhuur en lease van luchtvaartuigen"@nl, "Location et location-bail de matériels de transport aérien"@fr;
+    skos:prefLabel "77350".
+<http://vocab.belgif.be/auth/nace2025/64921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6492>, <http://vocab.belgif.be/auth/nace2025/6492>;
+    skos:definition "Verstrekken van verbruikskrediet"@nl, "Octroi de crédit à la consommation"@fr;
+    skos:prefLabel "64921".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/77340> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7734>, <http://vocab.belgif.be/auth/nace2025/7734>;
+    skos:definition "Verhuur en lease van schepen"@nl, "Location et location-bail de matériels de transport par eau"@fr;
+    skos:prefLabel "77340".
+<http://vocab.belgif.be/auth/nace2025/77350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7735>, <http://vocab.belgif.be/auth/nace2025/7735>;
+    skos:definition "Verhuur en lease van luchtvaartuigen"@nl, "Location et location-bail de matériels de transport aérien"@fr;
+    skos:prefLabel "77350".
+<https://data.vlaanderen.be/id/onderneming/0887.478.932> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "23-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0887.478.932;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/64921>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77340>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/77350>, <http://vocab.belgif.be/auth/nace2025/77120>, _:nace_2003_71230, _:nace_2003_71100, _:nace_2003_71210, _:nace_2003_71220, <http://vocab.belgif.be/auth/nace2008/64921>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/77350>, <http://vocab.belgif.be/auth/nace2008/77110>, <http://vocab.belgif.be/auth/nace2008/77340>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0887.478.932;
+    reorg:legalName "CREDIT MUTUEL LEASING BENELUX"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.904.245>.
+<https://data.vlaanderen.be/id/vestiging/2.159.904.245> a org:Site;
+    dcterms:created "27-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.904.245.
+_:address_contact_0887.478.932 a locn:Address;
+    locn:thoroughfare "Koning Albert II-laan"@nl, "Boulevard du Roi Albert II"@fr;
+    rdfs:label "2";
+    locn:postCode "1000";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0887.478.932 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "benelux@cmleasing.be";
+    schema:telephone "+32.2.626.02.72";
+    schema:faxNumber "+32.2.626.02.71";
+    <http://xmlns.com/foaf/0.1/homepage> "www.creditmutuel-leasing.be";
+    locn:address _:address_contact_0887.478.932.
+_:nace_2003_71100 a skos:Concept;
+    skos:definition "Verhuur van auto's"@nl, "Location de véhicules automobiles"@fr;
+    skos:prefLabel "71100".
+_:nace_2003_71210 a skos:Concept;
+    skos:definition "Verhuur van overige transportmiddelen voor vervoer te land"@nl, "Location d'autres matériels de transport terrestre"@fr;
+    skos:prefLabel "71210".
+_:nace_2003_71220 a skos:Concept;
+    skos:definition "Verhuur van schepen"@nl, "Location de matériels de transport par eau"@fr;
+    skos:prefLabel "71220".
+_:nace_2003_71230 a skos:Concept;
+    skos:definition "Verhuur van luchtvaartuigen"@nl, "Location de matériels de transport aérien"@fr;
+    skos:prefLabel "71230".
+_:registration_company_0887.478.932 a adms:Identifier;
+    skos:notation "0887.478.932";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.904.245 a adms:Identifier;
+    skos:notation "2.159.904.245";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120";
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>.
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190";
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>.
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>.
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290";
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>.
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>.
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>.
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>.
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>.
+<https://data.vlaanderen.be/id/onderneming/0890.594.117> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "04-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0890.594.117;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_60242, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/46190>, _:nace_2003_51190, _:nace_2003_60243, _:nace_2003_45112, _:nace_2003_63406, _:nace_2003_63405, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/46190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0890.594.117;
+    reorg:legalName "DE WITTE TRANS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.165.772.844>.
+<https://data.vlaanderen.be/id/vestiging/2.165.772.844> a org:Site;
+    dcterms:created "19-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.165.772.844.
+_:address_contact_0890.594.117 a locn:Address;
+    locn:thoroughfare "Krommewege"@nl, "Krommewege"@fr;
+    rdfs:label "43";
+    locn:postCode "9990";
+    adres:gemeentenaam "Maldegem"@nl, "Maldegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0890.594.117 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@aannemingendewitte.be";
+    <http://xmlns.com/foaf/0.1/homepage> "aannemingendewitte.be";
+    locn:address _:address_contact_0890.594.117.
+_:nace_2003_45112 a skos:Concept;
+    skos:definition "Grondverzet"@nl, "Terrassements"@fr;
+    skos:prefLabel "45112".
+_:nace_2003_51190 a skos:Concept;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "51190".
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:nace_2003_60243 a skos:Concept;
+    skos:definition "Verhuur van vrachtwagens met bestuurder"@nl, "Location de camions avec conducteur"@fr;
+    skos:prefLabel "60243".
+_:nace_2003_63405 a skos:Concept;
+    skos:definition "Vervoersbemiddeling"@nl, "Intermédiaires du transport"@fr;
+    skos:prefLabel "63405".
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:registration_company_0890.594.117 a adms:Identifier;
+    skos:notation "0890.594.117";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.165.772.844 a adms:Identifier;
+    skos:notation "2.165.772.844";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

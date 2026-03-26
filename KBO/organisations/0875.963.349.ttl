@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0124>, <http://vocab.belgif.be/auth/nace2008/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2008/46319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4631>, <http://vocab.belgif.be/auth/nace2008/4631>;
+    skos:definition "Groothandel in groenten en fruit, m.u.v. consumptieaardappelen"@nl, "Commerce de gros de fruits et de légumes, sauf pommes de terre de consommation"@fr;
+    skos:prefLabel "46319".
+<http://vocab.belgif.be/auth/nace2008/46742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46742".
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0124>, <http://vocab.belgif.be/auth/nace2025/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2025/46319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4631>, <http://vocab.belgif.be/auth/nace2025/4631>;
+    skos:definition "Groothandel in groenten en fruit, m.u.v. consumptieaardappelen"@nl, "Commerce de gros de fruits et de légumes, sauf pommes de terre de consommation"@fr;
+    skos:prefLabel "46319".
+<http://vocab.belgif.be/auth/nace2025/46842> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46842".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0875.963.349> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.963.349;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01240>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46842>, <http://vocab.belgif.be/auth/nace2025/46319>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/47521>, _:nace_2003_01410, _:nace_2003_51310, _:nace_2003_51542, _:nace_2003_52461, _:nace_2003_01130, <http://vocab.belgif.be/auth/nace2008/01240>, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/46319>, <http://vocab.belgif.be/auth/nace2008/46742>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0875.963.349;
+    reorg:legalName "LKV"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.149.753.788>, <https://data.vlaanderen.be/id/vestiging/2.220.239.532>.
+<https://data.vlaanderen.be/id/vestiging/2.149.753.788> a org:Site;
+    dcterms:created "02-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.753.788.
+<https://data.vlaanderen.be/id/vestiging/2.220.239.532> a org:Site;
+    dcterms:created "09-07-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.220.239.532.
+_:address_contact_0875.963.349 a locn:Address;
+    locn:thoroughfare "Dorpsstraat"@nl, "Dorpsstraat"@fr;
+    rdfs:label "2";
+    adres:busnummer "D";
+    locn:postCode "3471";
+    adres:gemeentenaam "Kortenaken"@nl, "Kortenaken"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0875.963.349 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0875.963.349.
+_:nace_2003_01130 a skos:Concept;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_51310 a skos:Concept;
+    skos:definition "Groothandel in groenten en fruit"@nl, "Commerce de gros de fruits et légumes"@fr;
+    skos:prefLabel "51310".
+_:nace_2003_51542 a skos:Concept;
+    skos:definition "Groothandel in loodgietersmateriaal en verwarmingsinstallaties"@nl, "Commerce de gros de fournitures et équipements pour plomberie et chauffage"@fr;
+    skos:prefLabel "51542".
+_:nace_2003_52461 a skos:Concept;
+    skos:definition "Detailhandel in ijzerwaren, verf, bouwmaterialen (inclusief doe-het-zelfzaken) met een verkoopsoppervlakte van minder dan 400 m2"@nl, "Commerce de détail de quincaillerie, peintures, matériaux de construction et verre (y compris les bricocenters) avec une surface de vente jusqu'à 400 m2."@fr;
+    skos:prefLabel "52461".
+_:registration_company_0875.963.349 a adms:Identifier;
+    skos:notation "0875.963.349";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.753.788 a adms:Identifier;
+    skos:notation "2.149.753.788";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.220.239.532 a adms:Identifier;
+    skos:notation "2.220.239.532";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

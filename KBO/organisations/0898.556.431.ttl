@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2008/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<https://data.vlaanderen.be/id/onderneming/0898.556.431> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0898.556.431;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/68321>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0898.556.431;
+    reorg:legalName "BGOC (Bols group of companies)"@nl.
+_:address_contact_0898.556.431 a locn:Address;
+    locn:thoroughfare "Donkerstraat(Ove)"@nl, "Donkerstraat(Ove)"@fr;
+    rdfs:label "6A";
+    locn:postCode "9500";
+    adres:gemeentenaam "Geraardsbergen"@nl, "Geraardsbergen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0898.556.431 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0898.556.431.
+_:registration_company_0898.556.431 a adms:Identifier;
+    skos:notation "0898.556.431";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

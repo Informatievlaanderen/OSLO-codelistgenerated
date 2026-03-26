@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2008/47251> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in wijnen en geestrijke dranken in gespecialiseerde winkels"@nl, "Commerce de détail de vins et de spiritueux en magasin spécialisé"@fr;
+    skos:prefLabel "47251".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/56290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5629>, <http://vocab.belgif.be/auth/nace2008/5629>;
+    skos:definition "Overige eetgelegenheden"@nl, "Autres services de restauration"@fr;
+    skos:prefLabel "56290".
+<http://vocab.belgif.be/auth/nace2025/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2025/47251> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in wijnen en geestrijke dranken in gespecialiseerde winkels"@nl, "Commerce de détail de vins et de spiritueux en magasin spécialisé"@fr;
+    skos:prefLabel "47251".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/56220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5622>, <http://vocab.belgif.be/auth/nace2025/5622>;
+    skos:definition "Cateringdiensten op contractbasis en overige diensten in verband met maaltijden"@nl, "Activités de service contractuel de restauration et autres activités de service de restauration"@fr;
+    skos:prefLabel "56220".
+<https://data.vlaanderen.be/id/onderneming/0844.702.526> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0844.702.526;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/56210>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47251>, <http://vocab.belgif.be/auth/nace2025/56220>, <http://vocab.belgif.be/auth/nace2025/46341>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/56290>, <http://vocab.belgif.be/auth/nace2008/46341>, <http://vocab.belgif.be/auth/nace2008/47251>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Ridder, Lutgart";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.207.876.980>.
+<https://data.vlaanderen.be/id/vestiging/2.207.876.980> a org:Site;
+    dcterms:created "01-04-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.207.876.980.
+_:registration_company_0844.702.526 a adms:Identifier;
+    skos:notation "0844.702.526";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.207.876.980 a adms:Identifier;
+    skos:notation "2.207.876.980";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

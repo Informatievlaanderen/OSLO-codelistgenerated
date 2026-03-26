@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/45204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Carrosserieherstelling"@nl, "Réparations de carrosseries"@fr;
+    skos:prefLabel "45204".
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<https://data.vlaanderen.be/id/onderneming/0841.632.871> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0841.632.871;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95314>, <http://vocab.belgif.be/auth/nace2025/29320>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/46720>, <http://vocab.belgif.be/auth/nace2008/45310>, <http://vocab.belgif.be/auth/nace2008/45204>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/29320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Ryckaert, Bruno";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.204.688.452>.
+<https://data.vlaanderen.be/id/vestiging/2.204.688.452> a org:Site;
+    dcterms:created "01-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.204.688.452.
+_:registration_company_0841.632.871 a adms:Identifier;
+    skos:notation "0841.632.871";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.204.688.452 a adms:Identifier;
+    skos:notation "2.204.688.452";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

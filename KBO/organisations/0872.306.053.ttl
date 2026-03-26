@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/0872.306.053> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "09-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0872.306.053;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/003>, _:nace_2003_0141012, _:nace_2003_4511201, _:nace_2003_4523002;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "IN T VELD, W".
+_:nace_2003_0141012 a skos:Concept;
+    skos:definition "verhuur van landbouwmachines en -werktuigen met bedieningspersoneel."@nl, "la location de machines et d'équipements agricoles avec opérateur."@fr;
+    skos:prefLabel "0141012".
+_:nace_2003_4511201 a skos:Concept;
+    skos:definition "het grondverzet : graven, ophogen, egaliseren en nivelleren van bouwterreinen, graven van sleuven en geulen, verwijderen van rotsen, grondverzet met behulp van explosieven"@nl, "les travaux de terrassement: creusement, comblement, nivellement de chantiers de construction, ouverture de tranchées, dérochement, destruction à l'explosifs, etc."@fr;
+    skos:prefLabel "4511201".
+_:nace_2003_4523002 a skos:Concept;
+    skos:definition "de bouw van autowegen, straten en andere wegen en paden voor voertuigen en voetgangers (inclusief het plaatsen van vangrails)"@nl, "la constructions d'autoroutes, de routes, de rues, de chaussées et d'autres voies pour véhicules et piétons (y compris la pose de glissières de sécurité)"@fr;
+    skos:prefLabel "4523002".
+_:registration_company_0872.306.053 a adms:Identifier;
+    skos:notation "0872.306.053";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

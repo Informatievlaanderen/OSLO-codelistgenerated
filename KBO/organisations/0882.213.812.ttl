@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/47740> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4774>, <http://vocab.belgif.be/auth/nace2008/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles médicaux et orthopédiques en magasin spécialisé"@fr;
+    skos:prefLabel "47740".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/47741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen, muv corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail d'articles médicaux et orthopédiques, à l'exception de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47741".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0882.213.812> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0882.213.812;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/47741>, <http://vocab.belgif.be/auth/nace2025/46190>, _:nace_2003_74142, _:nace_2003_52320, _:nace_2003_51190, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/47740>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0882.213.812;
+    reorg:legalName "HIGEJA"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.196.082>.
+<https://data.vlaanderen.be/id/vestiging/2.155.196.082> a org:Site;
+    dcterms:created "20-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.196.082.
+_:address_contact_0882.213.812 a locn:Address;
+    locn:thoroughfare "Markt(Nieuwk)"@nl, "Markt(Nieuwk)"@fr;
+    rdfs:label "45";
+    locn:postCode "8950";
+    adres:gemeentenaam "Heuvelland"@nl, "Heuvelland"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0882.213.812 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0882.213.812.
+_:nace_2003_51190 a skos:Concept;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "51190".
+_:nace_2003_52320 a skos:Concept;
+    skos:definition "Detailhandel in medische en orthopedische artikelen"@nl, "Commerce de détail d'articles médicaux et orthopédiques"@fr;
+    skos:prefLabel "52320".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:registration_company_0882.213.812 a adms:Identifier;
+    skos:notation "0882.213.812";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.196.082 a adms:Identifier;
+    skos:notation "2.155.196.082";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/23120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2312>, <http://vocab.belgif.be/auth/nace2008/2312>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "23120".
+<http://vocab.belgif.be/auth/nace2025/23120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2312>, <http://vocab.belgif.be/auth/nace2025/2312>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "23120".
+<https://data.vlaanderen.be/id/onderneming/0883.140.161> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "24-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.140.161;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23120>, _:nace_2003_26120, <http://vocab.belgif.be/auth/nace2008/23120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0883.140.161;
+    reorg:legalName "FLEURIMO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.964.065>.
+<https://data.vlaanderen.be/id/vestiging/2.155.964.065> a org:Site;
+    dcterms:created "24-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.964.065.
+_:address_contact_0883.140.161 a locn:Address;
+    locn:thoroughfare "Avenue du Marquis(FL)"@nl, "Avenue du Marquis(FL)"@fr;
+    rdfs:label "000";
+    locn:postCode "6220";
+    adres:gemeentenaam "Fleurus"@nl, "Fleurus"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0883.140.161 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0883.140.161.
+_:nace_2003_26120 a skos:Concept;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+_:registration_company_0883.140.161 a adms:Identifier;
+    skos:notation "0883.140.161";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.964.065 a adms:Identifier;
+    skos:notation "2.155.964.065";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

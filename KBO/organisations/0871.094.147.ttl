@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1020>, <http://vocab.belgif.be/auth/nace2008/1020>;
+    skos:definition "Winning van bruinkool en vervaardiging van bruinkoolbriketten"@nl, "Extraction et agglomération du lignite"@fr;
+    skos:prefLabel "10200".
+<http://vocab.belgif.be/auth/nace2008/47230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4723>, <http://vocab.belgif.be/auth/nace2008/4723>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren in gespecialiseerde winkels"@nl, "Commerce de détail de poissons, crustacés et mollusques en magasin spécialisé"@fr;
+    skos:prefLabel "47230".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/56290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5629>, <http://vocab.belgif.be/auth/nace2008/5629>;
+    skos:definition "Overige eetgelegenheden"@nl, "Autres services de restauration"@fr;
+    skos:prefLabel "56290".
+<http://vocab.belgif.be/auth/nace2025/10200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1020>, <http://vocab.belgif.be/auth/nace2025/1020>;
+    skos:definition "Winning van bruinkool en vervaardiging van bruinkoolbriketten"@nl, "Extraction et agglomération du lignite"@fr;
+    skos:prefLabel "10200".
+<http://vocab.belgif.be/auth/nace2025/47230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4723>, <http://vocab.belgif.be/auth/nace2025/4723>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren in gespecialiseerde winkels"@nl, "Commerce de détail de poissons, crustacés et mollusques en magasin spécialisé"@fr;
+    skos:prefLabel "47230".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/56220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5622>, <http://vocab.belgif.be/auth/nace2025/5622>;
+    skos:definition "Cateringdiensten op contractbasis en overige diensten in verband met maaltijden"@nl, "Activités de service contractuel de restauration et autres activités de service de restauration"@fr;
+    skos:prefLabel "56220".
+<https://data.vlaanderen.be/id/onderneming/0871.094.147> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.094.147;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47230>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10200>, <http://vocab.belgif.be/auth/nace2025/56220>, <http://vocab.belgif.be/auth/nace2025/47252>, _:nace_2003_52250, _:nace_2003_55521, _:nace_2003_15201, _:nace_2003_52230, <http://vocab.belgif.be/auth/nace2008/47230>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/56290>, <http://vocab.belgif.be/auth/nace2008/10200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Lamon, Pieter";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.144.486.787>.
+<https://data.vlaanderen.be/id/vestiging/2.144.486.787> a org:Site;
+    dcterms:created "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.144.486.787.
+_:nace_2003_15201 a skos:Concept;
+    skos:definition "Verwerking en conservering van vis en vervaardiging van verse visproducten"@nl, "Transformation et conservation de poisson et fabrication de produits frais à base de poisson"@fr;
+    skos:prefLabel "15201".
+_:nace_2003_52230 a skos:Concept;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren"@nl, "Commerce de détail de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "52230".
+_:nace_2003_52250 a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+_:nace_2003_55521 a skos:Concept;
+    skos:definition "Catering"@nl, "Restauration collective sous contrat (catering)"@fr;
+    skos:prefLabel "55521".
+_:registration_company_0871.094.147 a adms:Identifier;
+    skos:notation "0871.094.147";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.144.486.787 a adms:Identifier;
+    skos:notation "2.144.486.787";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

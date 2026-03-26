@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8121>, <http://vocab.belgif.be/auth/nace2008/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/96910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9691>, <http://vocab.belgif.be/auth/nace2025/9691>;
+    skos:definition "Huishoudelijke persoonlijke dienstverlening"@nl, "Activités d’offre de services domestiques aux personnes"@fr;
+    skos:prefLabel "96910".
+<https://data.vlaanderen.be/id/onderneming/0888.420.525> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.420.525;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96910>, <http://vocab.belgif.be/auth/nace2008/81210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Chibici, Daniela";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.160.941.749>.
+<https://data.vlaanderen.be/id/vestiging/2.160.941.749> a org:Site;
+    dcterms:created "02-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.160.941.749.
+_:registration_company_0888.420.525 a adms:Identifier;
+    skos:notation "0888.420.525";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.160.941.749 a adms:Identifier;
+    skos:notation "2.160.941.749";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

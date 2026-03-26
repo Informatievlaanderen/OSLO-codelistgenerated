@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<https://data.vlaanderen.be/id/onderneming/0897.655.321> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "30-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0897.655.321;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/01462>, <http://vocab.belgif.be/auth/nace2008/01110>, <http://vocab.belgif.be/auth/nace2008/01462>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0897.655.321;
+    reorg:legalName "VAN DUYSE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.193.433.482>.
+<https://data.vlaanderen.be/id/vestiging/2.193.433.482> a org:Site;
+    dcterms:created "28-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.193.433.482.
+_:address_contact_0897.655.321 a locn:Address;
+    locn:thoroughfare "Landmolenstraat"@nl, "Landmolenstraat"@fr;
+    rdfs:label "85";
+    locn:postCode "9140";
+    adres:gemeentenaam "Temse"@nl, "Temse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0897.655.321 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0897.655.321.
+_:registration_company_0897.655.321 a adms:Identifier;
+    skos:notation "0897.655.321";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.193.433.482 a adms:Identifier;
+    skos:notation "2.193.433.482";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46496> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in sport- en kampeerartikelen, met uitzondering van fietsen"@nl, "Commerce de gros d'articles de sport et de camping, sauf cycles"@fr;
+    skos:prefLabel "46496".
+<http://vocab.belgif.be/auth/nace2025/46496> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in sport- en kampeerartikelen, met uitzondering van fietsen"@nl, "Commerce de gros d'articles de sport et de camping, sauf cycles"@fr;
+    skos:prefLabel "46496".
+<https://data.vlaanderen.be/id/onderneming/0861.989.015> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "03-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.989.015;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46496>, _:nace_2003_51476, <http://vocab.belgif.be/auth/nace2008/46496>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0861.989.015;
+    reorg:legalName "JOKAPI"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.135.351.763>.
+<https://data.vlaanderen.be/id/vestiging/2.135.351.763> a org:Site;
+    dcterms:created "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.135.351.763.
+_:address_contact_0861.989.015 a locn:Address;
+    locn:thoroughfare "Breughelstraat"@nl, "Breughelstraat"@fr;
+    rdfs:label "48";
+    locn:postCode "2018";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0861.989.015 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@jokapi.com";
+    schema:telephone "0032 3 218 79 61";
+    schema:faxNumber "0032 3 218 58 18";
+    <http://xmlns.com/foaf/0.1/homepage> "www.jokapi.com";
+    locn:address _:address_contact_0861.989.015.
+_:nace_2003_51476 a skos:Concept;
+    skos:definition "Groothandel in sport- en kampeerartikelen, rijwielen en onderdelen en toebehoren daarvan, spellen en speelgoed"@nl, "Commerce de gros d'articles de sport et de camping, de cycles et de leurs pièces et accessoires, de jeux et de jouets"@fr;
+    skos:prefLabel "51476".
+_:registration_company_0861.989.015 a adms:Identifier;
+    skos:notation "0861.989.015";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.135.351.763 a adms:Identifier;
+    skos:notation "2.135.351.763";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

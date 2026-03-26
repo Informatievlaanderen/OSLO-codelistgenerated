@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2008/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4754>, <http://vocab.belgif.be/auth/nace2008/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2025/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4754>, <http://vocab.belgif.be/auth/nace2025/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0890.523.940> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "03-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0890.523.940;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47540>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/46431>, _:nace_2003_51430, _:nace_2003_74142, _:nace_2003_52450, _:nace_2003_45310, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/46431>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/47540>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0890.523.940;
+    reorg:legalName "SOLMACO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.163.574.112>.
+<https://data.vlaanderen.be/id/vestiging/2.163.574.112> a org:Site;
+    dcterms:created "05-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.163.574.112.
+_:address_contact_0890.523.940 a locn:Address;
+    locn:thoroughfare "Aartstraat"@nl, "Aartstraat"@fr;
+    rdfs:label "7";
+    locn:postCode "9310";
+    adres:gemeentenaam "Aalst"@nl, "Aalst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0890.523.940 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0890.523.940.
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_51430 a skos:Concept;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers, de radio et de télévision"@fr;
+    skos:prefLabel "51430".
+_:nace_2003_52450 a skos:Concept;
+    skos:definition "Detailhandel in elektrische huishoudapparaten en in audio- en videoapparatuur"@nl, "Commerce de détail d'appareils électroménagers, de radio et de télévision"@fr;
+    skos:prefLabel "52450".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:registration_company_0890.523.940 a adms:Identifier;
+    skos:notation "0890.523.940";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.163.574.112 a adms:Identifier;
+    skos:notation "2.163.574.112";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

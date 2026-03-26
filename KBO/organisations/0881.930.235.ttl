@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0881.930.235> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "19-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.930.235;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/68110>, _:nace_2003_74151, _:nace_2003_74879, _:nace_2003_70120, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/64200>, <http://vocab.belgif.be/auth/nace2008/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0881.930.235;
+    reorg:legalName "JLT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.480.154>.
+<https://data.vlaanderen.be/id/vestiging/2.155.480.154> a org:Site;
+    dcterms:created "04-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.480.154.
+_:address_contact_0881.930.235 a locn:Address;
+    locn:thoroughfare "Acacialei"@nl, "Acacialei"@fr;
+    rdfs:label "2";
+    locn:postCode "2930";
+    adres:gemeentenaam "Brasschaat"@nl, "Brasschaat"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.930.235 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0881.930.235.
+_:nace_2003_70120 a skos:Concept;
+    skos:definition "Handel in onroerend goed"@nl, "Marchands de biens immobiliers"@fr;
+    skos:prefLabel "70120".
+_:nace_2003_74151 a skos:Concept;
+    skos:definition "Managementactiviteiten van holdings"@nl, "Activités de gestion et d'administration de holdings"@fr;
+    skos:prefLabel "74151".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0881.930.235 a adms:Identifier;
+    skos:notation "0881.930.235";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.480.154 a adms:Identifier;
+    skos:notation "2.155.480.154";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

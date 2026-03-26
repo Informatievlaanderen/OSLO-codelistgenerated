@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<http://vocab.belgif.be/auth/nace2008/69202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>;
+    skos:definition "Boekhouders en boekhouders-fiscalisten"@nl, "Activités des comptables et des comptables-fiscalistes"@fr;
+    skos:prefLabel "69202".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6920>, <http://vocab.belgif.be/auth/nace2025/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0891.417.627> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-08-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0891.417.627;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/69201>, _:nace_2003_74121, _:nace_2003_74122, _:nace_2003_74851, <http://vocab.belgif.be/auth/nace2008/69202>, <http://vocab.belgif.be/auth/nace2008/69201>, <http://vocab.belgif.be/auth/nace2008/82190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Truyen, Gwenda";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.164.348.528>.
+<https://data.vlaanderen.be/id/vestiging/2.164.348.528> a org:Site;
+    dcterms:created "02-08-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.164.348.528.
+_:nace_2003_74121 a skos:Concept;
+    skos:definition "Boekhouders"@nl, "Comptables"@fr;
+    skos:prefLabel "74121".
+_:nace_2003_74122 a skos:Concept;
+    skos:definition "Accountants"@nl, "Experts-comptables"@fr;
+    skos:prefLabel "74122".
+_:nace_2003_74851 a skos:Concept;
+    skos:definition "Secretariaten"@nl, "Secrétariats"@fr;
+    skos:prefLabel "74851".
+_:registration_company_0891.417.627 a adms:Identifier;
+    skos:notation "0891.417.627";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-08-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.164.348.528 a adms:Identifier;
+    skos:notation "2.164.348.528";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-08-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

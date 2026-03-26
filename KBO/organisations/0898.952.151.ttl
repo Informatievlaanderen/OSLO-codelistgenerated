@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4616>, <http://vocab.belgif.be/auth/nace2008/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/88109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8810>, <http://vocab.belgif.be/auth/nace2008/8810>;
+    skos:definition "Overige maatschappelijke dienstverlening zonder huisvesting voor ouderen en lichamelijk gehandicapten"@nl, "Autre action sociale sans hébergement pour personnes âgées et pour personnes avec un handicap moteur"@fr;
+    skos:prefLabel "88109".
+<http://vocab.belgif.be/auth/nace2025/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4616>, <http://vocab.belgif.be/auth/nace2025/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/88109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8810>, <http://vocab.belgif.be/auth/nace2025/8810>;
+    skos:definition "Overige maatschappelijke dienstverlening zonder huisvesting voor ouderen en lichamelijk gehandicapten"@nl, "Autre action sociale sans hébergement pour personnes âgées et pour personnes avec un handicap moteur"@fr;
+    skos:prefLabel "88109".
+<https://data.vlaanderen.be/id/onderneming/0898.952.151> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0898.952.151;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/82100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/46160>, <http://vocab.belgif.be/auth/nace2025/88109>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/46160>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/88109>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0898.952.151;
+    reorg:legalName "Sébic"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.171.813.667>.
+<https://data.vlaanderen.be/id/vestiging/2.171.813.667> a org:Site;
+    dcterms:created "15-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.813.667.
+_:address_contact_0898.952.151 a locn:Address;
+    locn:thoroughfare "Adolf Lootensstraat"@nl, "Adolf Lootensstraat"@fr;
+    rdfs:label "22";
+    adres:busnummer "A";
+    locn:postCode "9031";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0898.952.151 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0898.952.151.
+_:registration_company_0898.952.151 a adms:Identifier;
+    skos:notation "0898.952.151";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.813.667 a adms:Identifier;
+    skos:notation "2.171.813.667";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

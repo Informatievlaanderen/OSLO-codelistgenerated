@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4711>, <http://vocab.belgif.be/auth/nace2008/4711>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen overheersen (verkoopsoppervlakte < 100 m²)"@nl, "Commerce de détail en magasin non spécialisé à prédominance alimentaire (surface de vente < 100m²)"@fr;
+    skos:prefLabel "47112".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<https://data.vlaanderen.be/id/onderneming/0877.640.855> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.640.855;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47110>, _:nace_2003_52116, <http://vocab.belgif.be/auth/nace2008/47112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Perel, Anna";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.228.791>.
+<https://data.vlaanderen.be/id/vestiging/2.150.228.791> a org:Site;
+    dcterms:created "01-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.228.791.
+_:nace_2003_52116 a skos:Concept;
+    skos:definition "Overige niet-gespecialiseerde detailhandel in winkels in overwegend voedings- en genotmiddelen"@nl, "Autres commerces de détail en magasins non spécialisés à prédominance alimentaire"@fr;
+    skos:prefLabel "52116".
+_:registration_company_0877.640.855 a adms:Identifier;
+    skos:notation "0877.640.855";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.228.791 a adms:Identifier;
+    skos:notation "2.150.228.791";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

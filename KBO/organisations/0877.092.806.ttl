@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5310>, <http://vocab.belgif.be/auth/nace2008/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/70100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7010>, <http://vocab.belgif.be/auth/nace2008/7010>;
+    skos:definition "Activiteiten van hoofdkantoren"@nl, "Activités des sièges sociaux"@fr;
+    skos:prefLabel "70100".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5310>, <http://vocab.belgif.be/auth/nace2025/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/70100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7010>, <http://vocab.belgif.be/auth/nace2025/7010>;
+    skos:definition "Activiteiten van hoofdkantoren"@nl, "Activités des sièges sociaux"@fr;
+    skos:prefLabel "70100".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<https://data.vlaanderen.be/id/onderneming/0877.092.806> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.092.806;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/70100>, <http://vocab.belgif.be/auth/nace2025/53100>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/73300>, _:nace_2003_74152, _:nace_2003_51190, _:nace_2003_72100, _:nace_2003_74142, _:nace_2003_74141, _:nace_2003_64110, <http://vocab.belgif.be/auth/nace2008/53100>, <http://vocab.belgif.be/auth/nace2008/70100>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/70210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0877.092.806;
+    reorg:legalName "SIEN INVESTMENT COMPANY"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.149.940.761>.
+<https://data.vlaanderen.be/id/vestiging/2.149.940.761> a org:Site;
+    dcterms:created "12-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.940.761.
+_:address_contact_0877.092.806 a locn:Address;
+    locn:thoroughfare "Europalaan"@nl, "Europalaan"@fr;
+    rdfs:label "55";
+    locn:postCode "9800";
+    adres:gemeentenaam "Deinze"@nl, "Deinze"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0877.092.806 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0877.092.806.
+_:nace_2003_51190 a skos:Concept;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "51190".
+_:nace_2003_64110 a skos:Concept;
+    skos:definition "Nationale posterijen"@nl, "Postes nationales"@fr;
+    skos:prefLabel "64110".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:nace_2003_74141 a skos:Concept;
+    skos:definition "Public relationsbureaus"@nl, "Bureau de relations publiques"@fr;
+    skos:prefLabel "74141".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:nace_2003_74152 a skos:Concept;
+    skos:definition "Coördinatiecentra"@nl, "Centres de coordination"@fr;
+    skos:prefLabel "74152".
+_:registration_company_0877.092.806 a adms:Identifier;
+    skos:notation "0877.092.806";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.940.761 a adms:Identifier;
+    skos:notation "2.149.940.761";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

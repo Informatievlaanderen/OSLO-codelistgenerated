@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/50400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5040>, <http://vocab.belgif.be/auth/nace2008/5040>;
+    skos:definition "Handel in en onderhoud en reparatie van motorrijwielen en onderdelen en toebehoren van motorrijwielen"@nl, "Commerce, entretien et réparation de motocycles, y compris pièces et accessoires"@fr;
+    skos:prefLabel "50400".
+<http://vocab.belgif.be/auth/nace2025/50400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5040>, <http://vocab.belgif.be/auth/nace2025/5040>;
+    skos:definition "Handel in en onderhoud en reparatie van motorrijwielen en onderdelen en toebehoren van motorrijwielen"@nl, "Commerce, entretien et réparation de motocycles, y compris pièces et accessoires"@fr;
+    skos:prefLabel "50400".
+<https://data.vlaanderen.be/id/onderneming/0859.762.567> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0859.762.567;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/50400>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, _:nace_2003_61200, <http://vocab.belgif.be/auth/nace2008/50400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bertin, Frédéric";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.132.111.963>.
+<https://data.vlaanderen.be/id/vestiging/2.132.111.963> a org:Site;
+    dcterms:created "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.132.111.963.
+_:nace_2003_61200 a skos:Concept;
+    skos:definition "Binnenvaart"@nl, "Transports fluviaux"@fr;
+    skos:prefLabel "61200".
+_:registration_company_0859.762.567 a adms:Identifier;
+    skos:notation "0859.762.567";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.132.111.963 a adms:Identifier;
+    skos:notation "2.132.111.963";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

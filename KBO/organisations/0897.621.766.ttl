@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2008/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4623>, <http://vocab.belgif.be/auth/nace2008/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4623>, <http://vocab.belgif.be/auth/nace2025/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<https://data.vlaanderen.be/id/onderneming/0897.621.766> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "25-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0897.621.766;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01620>, <http://vocab.belgif.be/auth/nace2025/46231>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2008/01490>, <http://vocab.belgif.be/auth/nace2008/46231>, <http://vocab.belgif.be/auth/nace2008/01620>, <http://vocab.belgif.be/auth/nace2008/71121>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0897.621.766;
+    reorg:legalName "BIA ENGINEERING"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.171.082.209>.
+<https://data.vlaanderen.be/id/vestiging/2.171.082.209> a org:Site;
+    dcterms:created "25-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.082.209.
+_:address_contact_0897.621.766 a locn:Address;
+    locn:thoroughfare "Bilzerweg"@nl, "Bilzerweg"@fr;
+    rdfs:label "61";
+    locn:postCode "3665";
+    adres:gemeentenaam "As"@nl, "As"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0897.621.766 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0897.621.766.
+_:registration_company_0897.621.766 a adms:Identifier;
+    skos:notation "0897.621.766";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.082.209 a adms:Identifier;
+    skos:notation "2.171.082.209";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-04-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

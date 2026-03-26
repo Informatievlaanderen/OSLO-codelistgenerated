@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0890.668.846> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "07-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0890.668.846;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_72300, _:nace_2003_74142, _:nace_2003_92313, _:nace_2003_51170, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/90023>, <http://vocab.belgif.be/auth/nace2008/46170>, <http://vocab.belgif.be/auth/nace2008/63110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Peeters, Erik";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.163.576.486>.
+<https://data.vlaanderen.be/id/vestiging/2.163.576.486> a org:Site;
+    dcterms:created "07-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.163.576.486.
+_:nace_2003_51170 a skos:Concept;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées alimentaires, en boissons et en tabac"@fr;
+    skos:prefLabel "51170".
+_:nace_2003_72300 a skos:Concept;
+    skos:definition "Gegevensverwerking"@nl, "Traitement de données"@fr;
+    skos:prefLabel "72300".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:registration_company_0890.668.846 a adms:Identifier;
+    skos:notation "0890.668.846";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.163.576.486 a adms:Identifier;
+    skos:notation "2.163.576.486";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

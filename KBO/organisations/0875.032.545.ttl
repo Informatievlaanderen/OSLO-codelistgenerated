@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/53100> a skos:Concept;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100";
+    skos:broader <http://data.europa.eu/ux2/nace2/5310>, <http://vocab.belgif.be/auth/nace2008/5310>.
+<http://vocab.belgif.be/auth/nace2008/53200> a skos:Concept;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200";
+    skos:broader <http://data.europa.eu/ux2/nace2/5320>, <http://vocab.belgif.be/auth/nace2008/5320>.
+<http://vocab.belgif.be/auth/nace2025/53100> a skos:Concept;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5310>, <http://vocab.belgif.be/auth/nace2025/5310>.
+<http://vocab.belgif.be/auth/nace2025/53200> a skos:Concept;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5320>, <http://vocab.belgif.be/auth/nace2025/5320>.
+<https://data.vlaanderen.be/id/onderneming/0875.032.545> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "12-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.032.545;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_64120, <http://vocab.belgif.be/auth/nace2025/53200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/53100>, _:nace_2003_64110, <http://vocab.belgif.be/auth/nace2008/53200>, <http://vocab.belgif.be/auth/nace2008/53100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0875.032.545;
+    reorg:legalName "BAY LAT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.148.368.866>.
+<https://data.vlaanderen.be/id/vestiging/2.148.368.866> a org:Site;
+    dcterms:created "12-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.148.368.866.
+_:address_contact_0875.032.545 a locn:Address;
+    locn:thoroughfare "Leuvensesteenweg"@nl, "Leuvensesteenweg"@fr;
+    rdfs:label "53";
+    locn:postCode "1830";
+    adres:gemeentenaam "Machelen (Brab.)"@nl, "Machelen (Brab.)"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0875.032.545 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "baylat_66@hotmail.com";
+    locn:address _:address_contact_0875.032.545.
+_:nace_2003_64110 a skos:Concept;
+    skos:definition "Nationale posterijen"@nl, "Postes nationales"@fr;
+    skos:prefLabel "64110".
+_:nace_2003_64120 a skos:Concept;
+    skos:definition "Koeriers, exclusief de nationale posterijen"@nl, "Autres activités de courrier"@fr;
+    skos:prefLabel "64120".
+_:registration_company_0875.032.545 a adms:Identifier;
+    skos:notation "0875.032.545";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.148.368.866 a adms:Identifier;
+    skos:notation "2.148.368.866";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<https://data.vlaanderen.be/id/onderneming/0843.987.595> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-02-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0843.987.595;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/01110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0843.987.595;
+    reorg:legalName "AGRIPHI"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.207.202.237>.
+<https://data.vlaanderen.be/id/vestiging/2.207.202.237> a org:Site;
+    dcterms:created "01-03-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.207.202.237.
+_:address_contact_0843.987.595 a locn:Address;
+    locn:thoroughfare "Rue de la Neuve Cour"@nl, "Rue de la Neuve Cour"@fr;
+    rdfs:label "2";
+    locn:postCode "1428";
+    adres:gemeentenaam "Braine-l'Alleud"@nl, "Braine-l'Alleud"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0843.987.595 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@agriphi.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.agriphi.be";
+    locn:address _:address_contact_0843.987.595.
+_:registration_company_0843.987.595 a adms:Identifier;
+    skos:notation "0843.987.595";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-02-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.207.202.237 a adms:Identifier;
+    skos:notation "2.207.202.237";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-02-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

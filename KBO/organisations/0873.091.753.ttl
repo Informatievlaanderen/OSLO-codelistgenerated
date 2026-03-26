@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8412>, <http://vocab.belgif.be/auth/nace2008/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<http://vocab.belgif.be/auth/nace2025/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8412>, <http://vocab.belgif.be/auth/nace2025/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<https://data.vlaanderen.be/id/onderneming/0873.091.753> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/303>;
+    dcterms:created "31-03-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0873.091.753;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/84120>, _:nace_2003_75120, <http://vocab.belgif.be/auth/nace2008/84120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0873.091.753;
+    reorg:legalName "Institut pour l'Égalité des Femmes et des Hommes"@fr, "IEFH"@fr, "Instituut voor de Gelijkheid van Vrouwen en Mannen"@nl, "IGVM"@nl, "Institut für die Gleichheit von Frauen und Männern"@de;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.146.823.301>.
+<https://data.vlaanderen.be/id/vestiging/2.146.823.301> a org:Site;
+    dcterms:created "01-07-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.146.823.301.
+_:address_contact_0873.091.753 a locn:Address;
+    locn:thoroughfare "Victor Hortaplein"@nl, "Place Victor Horta"@fr;
+    rdfs:label "40";
+    locn:postCode "1060";
+    adres:gemeentenaam "Sint-Gillis (bij-Brussel)"@nl, "Saint-Gilles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0873.091.753 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@igvm.be";
+    schema:telephone "+32 2 233 44 00";
+    <http://xmlns.com/foaf/0.1/homepage> "igvm-iefh.belgium.be/";
+    locn:address _:address_contact_0873.091.753.
+_:nace_2003_75120 a skos:Concept;
+    skos:definition "Activiteiten van openbare instellingen m.b.t. gezondheidszorg, milieu, onderwijs, cultuur en andere sociale aangelegenheden"@nl, "Activités d'organismes publics relatives aux soins de santé, à l'environnement, à l'enseignement, à la culture et aux autres matières sociales"@fr;
+    skos:prefLabel "75120".
+_:registration_company_0873.091.753 a adms:Identifier;
+    skos:notation "0873.091.753";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-03-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.146.823.301 a adms:Identifier;
+    skos:notation "2.146.823.301";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-03-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

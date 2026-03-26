@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/38219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3821>, <http://vocab.belgif.be/auth/nace2008/3821>;
+    skos:definition "Overige verwerking en verwijdering van ongevaarlijk afval"@nl, "Autre traitement et élimination des déchets non dangereux"@fr;
+    skos:prefLabel "38219".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/38330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3833>, <http://vocab.belgif.be/auth/nace2025/3833>;
+    skos:definition "Andere afvalverwijdering"@nl, "Autre élimination des déchets"@fr;
+    skos:prefLabel "38330".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<https://data.vlaanderen.be/id/onderneming/0874.858.143> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "05-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.858.143;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/38330>, <http://vocab.belgif.be/auth/nace2025/77120>, _:nace_2003_60242, _:nace_2003_71210, _:nace_2003_90021, <http://vocab.belgif.be/auth/nace2008/38219>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/77120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0874.858.143;
+    reorg:legalName "BLC group"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.148.138.838>.
+<https://data.vlaanderen.be/id/vestiging/2.148.138.838> a org:Site;
+    dcterms:created "28-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.148.138.838.
+_:address_contact_0874.858.143 a locn:Address;
+    locn:thoroughfare "Klein Frankrijkstraat"@nl, "Rue Klein Frankrijk"@fr;
+    rdfs:label "21";
+    locn:postCode "9600";
+    adres:gemeentenaam "Ronse"@nl, "Ronse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.858.143 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0874.858.143.
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:nace_2003_71210 a skos:Concept;
+    skos:definition "Verhuur van overige transportmiddelen voor vervoer te land"@nl, "Location d'autres matériels de transport terrestre"@fr;
+    skos:prefLabel "71210".
+_:nace_2003_90021 a skos:Concept;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+_:registration_company_0874.858.143 a adms:Identifier;
+    skos:notation "0874.858.143";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.148.138.838 a adms:Identifier;
+    skos:notation "2.148.138.838";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

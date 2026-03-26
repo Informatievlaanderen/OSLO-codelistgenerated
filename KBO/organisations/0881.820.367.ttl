@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46492> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in kantoor- en schoolbenodigdheden"@nl, "Commerce de gros de fournitures scolaires et de bureau"@fr;
+    skos:prefLabel "46492".
+<http://vocab.belgif.be/auth/nace2025/46492> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in kantoor- en schoolbenodigdheden"@nl, "Commerce de gros de fournitures scolaires et de bureau"@fr;
+    skos:prefLabel "46492".
+<https://data.vlaanderen.be/id/onderneming/0881.820.367> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "13-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.820.367;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46492>, _:nace_2003_51475, <http://vocab.belgif.be/auth/nace2008/46492>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0881.820.367;
+    reorg:legalName "SYLVAMO FRANCE SA"@fr.
+_:address_contact_0881.820.367 a locn:Address;
+    locn:thoroughfare "Parc Ariane Bd des Chenes"@nl, "Parc Ariane Bd des Chenes"@fr;
+    rdfs:label "4";
+    locn:postCode "78280";
+    adres:gemeentenaam "GUYANCOURT"@nl, "GUYANCOURT"@fr;
+    adres:land "Frankrijk"@nl, "France"@fr.
+_:contact_0881.820.367 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "0033/139303643";
+    schema:faxNumber "0033/139303665";
+    locn:address _:address_contact_0881.820.367.
+_:nace_2003_51475 a skos:Concept;
+    skos:definition "Groothandel in papierwaren, kantoor- en schoolbehoeften"@nl, "Commerce de gros d'articles de papeterie, de fournitures de bureau et de fournitures scolaires"@fr;
+    skos:prefLabel "51475".
+_:registration_company_0881.820.367 a adms:Identifier;
+    skos:notation "0881.820.367";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

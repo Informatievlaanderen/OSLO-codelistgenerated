@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2008/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<http://vocab.belgif.be/auth/nace2008/32129> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van overige artikelen van edele metalen"@nl, "Fabrication d'autres articles en métaux précieux"@fr;
+    skos:prefLabel "32129".
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8292>, <http://vocab.belgif.be/auth/nace2008/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<http://vocab.belgif.be/auth/nace2025/32129> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van overige artikelen van edele metalen"@nl, "Fabrication d'autres articles en métaux précieux"@fr;
+    skos:prefLabel "32129".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8292>, <http://vocab.belgif.be/auth/nace2025/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<https://data.vlaanderen.be/id/onderneming/0838.172.842> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0838.172.842;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32129>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/82920>, <http://vocab.belgif.be/auth/nace2025/32124>, <http://vocab.belgif.be/auth/nace2008/82920>, <http://vocab.belgif.be/auth/nace2008/32129>, <http://vocab.belgif.be/auth/nace2008/32124>, <http://vocab.belgif.be/auth/nace2008/32123>, <http://vocab.belgif.be/auth/nace2008/46150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Puyvelde, Anouck";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.200.800.039>.
+<https://data.vlaanderen.be/id/vestiging/2.200.800.039> a org:Site;
+    dcterms:created "28-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.200.800.039.
+_:registration_company_0838.172.842 a adms:Identifier;
+    skos:notation "0838.172.842";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.200.800.039 a adms:Identifier;
+    skos:notation "2.200.800.039";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

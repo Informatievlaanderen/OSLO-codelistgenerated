@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/74901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende pesonaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres personnalités publiques"@fr;
+    skos:prefLabel "74901".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/74991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende personaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres, personnalités publiques"@fr;
+    skos:prefLabel "74991".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0880.372.295> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "01-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.372.295;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/74991>, _:nace_2003_74878, _:nace_2003_74851, <http://vocab.belgif.be/auth/nace2008/74901>, <http://vocab.belgif.be/auth/nace2008/82190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0880.372.295;
+    reorg:legalName "MOVEtheMUSIC"@nl, "MTM"@nl.
+_:address_contact_0880.372.295 a locn:Address;
+    locn:thoroughfare "Kerkstraat"@nl, "Kerkstraat"@fr;
+    rdfs:label "144";
+    locn:postCode "9050";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0880.372.295 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0880.372.295.
+_:nace_2003_74851 a skos:Concept;
+    skos:definition "Secretariaten"@nl, "Secrétariats"@fr;
+    skos:prefLabel "74851".
+_:nace_2003_74878 a skos:Concept;
+    skos:definition "Impresariaten en theateragentschappen"@nl, "Imprésarios et agences de théâtre"@fr;
+    skos:prefLabel "74878".
+_:registration_company_0880.372.295 a adms:Identifier;
+    skos:notation "0880.372.295";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

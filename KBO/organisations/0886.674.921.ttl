@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/70100> a skos:Concept;
+    skos:definition "Activiteiten van hoofdkantoren"@nl, "Activités des sièges sociaux"@fr;
+    skos:prefLabel "70100";
+    skos:broader <http://data.europa.eu/ux2/nace2/7010>, <http://vocab.belgif.be/auth/nace2008/7010>.
+<http://vocab.belgif.be/auth/nace2008/77400> a skos:Concept;
+    skos:definition "Lease van intellectuele eigendom en vergelijkbare producten, met  uitzondering van werken onder auteursrecht"@nl, "Location-bail de propriété intellectuelle et de produits similaires, à l'exception des oeuvres soumises au droit d'auteur"@fr;
+    skos:prefLabel "77400";
+    skos:broader <http://data.europa.eu/ux2/nace2/7740>, <http://vocab.belgif.be/auth/nace2008/7740>.
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110";
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>.
+<http://vocab.belgif.be/auth/nace2025/70100> a skos:Concept;
+    skos:definition "Activiteiten van hoofdkantoren"@nl, "Activités des sièges sociaux"@fr;
+    skos:prefLabel "70100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7010>, <http://vocab.belgif.be/auth/nace2025/7010>.
+<http://vocab.belgif.be/auth/nace2025/77400> a skos:Concept;
+    skos:definition "Lease van intellectuele eigendom en vergelijkbare producten, met  uitzondering van werken onder auteursrecht"@nl, "Location-bail de propriété intellectuelle et de produits similaires, à l'exception des oeuvres soumises au droit d'auteur"@fr;
+    skos:prefLabel "77400";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7740>, <http://vocab.belgif.be/auth/nace2025/7740>.
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>.
+<https://data.vlaanderen.be/id/onderneming/0886.674.921> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "24-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0886.674.921;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_74151, <http://vocab.belgif.be/auth/nace2025/70100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77400>, <http://vocab.belgif.be/auth/nace2025/82100>, _:nace_2003_74879, <http://vocab.belgif.be/auth/nace2008/70100>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/77400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0886.674.921;
+    reorg:legalName "GAMORINE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.549.602>.
+<https://data.vlaanderen.be/id/vestiging/2.159.549.602> a org:Site;
+    dcterms:created "02-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.549.602.
+_:address_contact_0886.674.921 a locn:Address;
+    locn:thoroughfare "Lammekenslaan"@nl, "Lammekenslaan"@fr;
+    rdfs:label "15";
+    locn:postCode "8300";
+    adres:gemeentenaam "Knokke-Heist"@nl, "Knokke-Heist"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0886.674.921 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0886.674.921.
+_:nace_2003_74151 a skos:Concept;
+    skos:definition "Managementactiviteiten van holdings"@nl, "Activités de gestion et d'administration de holdings"@fr;
+    skos:prefLabel "74151".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0886.674.921 a adms:Identifier;
+    skos:notation "0886.674.921";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.549.602 a adms:Identifier;
+    skos:notation "2.159.549.602";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

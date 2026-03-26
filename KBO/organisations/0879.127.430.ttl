@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2008/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7721>, <http://vocab.belgif.be/auth/nace2008/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<https://data.vlaanderen.be/id/onderneming/0879.127.430> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "03-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0879.127.430;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77210>, <http://vocab.belgif.be/auth/nace2025/77120>, _:nace_2003_71210, _:nace_2003_71406, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/77210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0879.127.430;
+    reorg:legalName "VELOBILITY"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.151.914.415>.
+<https://data.vlaanderen.be/id/vestiging/2.151.914.415> a org:Site;
+    dcterms:created "21-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.151.914.415.
+_:address_contact_0879.127.430 a locn:Address;
+    locn:thoroughfare "Schabbestraat"@nl, "Schabbestraat"@fr;
+    rdfs:label "8";
+    locn:postCode "3511";
+    adres:gemeentenaam "Hasselt"@nl, "Hasselt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0879.127.430 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0879.127.430.
+_:nace_2003_71210 a skos:Concept;
+    skos:definition "Verhuur van overige transportmiddelen voor vervoer te land"@nl, "Location d'autres matériels de transport terrestre"@fr;
+    skos:prefLabel "71210".
+_:nace_2003_71406 a skos:Concept;
+    skos:definition "Verhuur van sport- en kampeerartikelen"@nl, "Location d'articles de sport et de camping"@fr;
+    skos:prefLabel "71406".
+_:registration_company_0879.127.430 a adms:Identifier;
+    skos:notation "0879.127.430";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.151.914.415 a adms:Identifier;
+    skos:notation "2.151.914.415";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

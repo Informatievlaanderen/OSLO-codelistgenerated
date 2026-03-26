@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/64300> a skos:Concept;
+    skos:definition "Beleggingstrusts en -fondsen en vergelijkbare financiële instellingen"@nl, "Fonds de placement et entités financières similaires"@fr;
+    skos:prefLabel "64300";
+    skos:broader <http://data.europa.eu/ux2/nace2/6430>, <http://vocab.belgif.be/auth/nace2008/6430>.
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210";
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>.
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220";
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>.
+<http://vocab.belgif.be/auth/nace2008/94110> a skos:Concept;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités des organisations patronales et économiques"@fr;
+    skos:prefLabel "94110";
+    skos:broader <http://data.europa.eu/ux2/nace2/9411>, <http://vocab.belgif.be/auth/nace2008/9411>.
+<http://vocab.belgif.be/auth/nace2025/64310> a skos:Concept;
+    skos:definition "Activiteiten van geldmarkt- en niet-geldmarktbeleggingsfondsen"@nl, "Activités de fonds d’investissement sur le marché monétaire ou non monétaire"@fr;
+    skos:prefLabel "64310";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6431>, <http://vocab.belgif.be/auth/nace2025/6431>.
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>.
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>.
+<http://vocab.belgif.be/auth/nace2025/94110> a skos:Concept;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités des organisations patronales et économiques"@fr;
+    skos:prefLabel "94110";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9411>, <http://vocab.belgif.be/auth/nace2025/9411>.
+<https://data.vlaanderen.be/id/onderneming/0883.940.313> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/125>;
+    dcterms:created "03-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.940.313;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_91110, <http://vocab.belgif.be/auth/nace2025/94110>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64310>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/73300>, _:nace_2003_74142, _:nace_2003_65235, <http://vocab.belgif.be/auth/nace2008/94110>, <http://vocab.belgif.be/auth/nace2008/64300>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/70210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0883.940.313;
+    reorg:legalName "Waste Electrical & Eletronic Equipment Forum"@fr, "WEEE Forum"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.163.779.097>.
+<https://data.vlaanderen.be/id/vestiging/2.163.779.097> a org:Site;
+    dcterms:created "17-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.163.779.097.
+_:address_contact_0883.940.313 a locn:Address;
+    locn:thoroughfare "Victoria Reginaplantsoen"@nl, "Square Victoria Régina"@fr;
+    rdfs:label "1";
+    locn:postCode "1210";
+    adres:gemeentenaam "Sint-Joost-ten-Node"@nl, "Saint-Josse-ten-Noode"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0883.940.313 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0883.940.313.
+_:nace_2003_65235 a skos:Concept;
+    skos:definition "Instellingen voor collectieve belegging"@nl, "Organismes de placement collectif"@fr;
+    skos:prefLabel "65235".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:nace_2003_91110 a skos:Concept;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+_:registration_company_0883.940.313 a adms:Identifier;
+    skos:notation "0883.940.313";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.163.779.097 a adms:Identifier;
+    skos:notation "2.163.779.097";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

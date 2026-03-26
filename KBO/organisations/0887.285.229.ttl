@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/93211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9321>, <http://vocab.belgif.be/auth/nace2008/9321>;
+    skos:definition "Exploitatie van kermisattracties"@nl, "Activités foraines"@fr;
+    skos:prefLabel "93211".
+<http://vocab.belgif.be/auth/nace2025/38210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3821>, <http://vocab.belgif.be/auth/nace2025/3821>;
+    skos:definition "Terugwinning van materialen uit afval"@nl, "Récupération de matériaux provenant de déchets"@fr;
+    skos:prefLabel "38210".
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<http://vocab.belgif.be/auth/nace2025/93291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Exploitatie van snooker- en biljartenzalen"@nl, "Exploitation de salles de billard et de snooker"@fr;
+    skos:prefLabel "93291".
+<https://data.vlaanderen.be/id/onderneming/0887.285.229> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0887.285.229;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93291>, <http://vocab.belgif.be/auth/nace2025/46711>, <http://vocab.belgif.be/auth/nace2025/46720>, <http://vocab.belgif.be/auth/nace2025/38210>, _:nace_2003_92331, <http://vocab.belgif.be/auth/nace2008/93211>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0887.285.229;
+    reorg:legalName "May, Antoine";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.553.857>.
+<https://data.vlaanderen.be/id/vestiging/2.159.553.857> a org:Site;
+    dcterms:created "01-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.553.857.
+_:contact_0887.285.229 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "063/23 51 29".
+_:nace_2003_92331 a skos:Concept;
+    skos:definition "Kermisattracties"@nl, "Attractions foraines"@fr;
+    skos:prefLabel "92331".
+_:registration_company_0887.285.229 a adms:Identifier;
+    skos:notation "0887.285.229";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.553.857 a adms:Identifier;
+    skos:notation "2.159.553.857";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

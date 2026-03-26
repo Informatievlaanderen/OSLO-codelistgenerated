@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1061>, <http://vocab.belgif.be/auth/nace2008/1061>;
+    skos:definition "Vervaardiging van maalderijproducten"@nl, "Travail des grains"@fr;
+    skos:prefLabel "10610".
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6619>, <http://vocab.belgif.be/auth/nace2008/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/10610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1061>, <http://vocab.belgif.be/auth/nace2025/1061>;
+    skos:definition "Vervaardiging van maalderijproducten"@nl, "Travail des grains"@fr;
+    skos:prefLabel "10610".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6619>, <http://vocab.belgif.be/auth/nace2025/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0881.615.182> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "31-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.615.182;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/10610>, <http://vocab.belgif.be/auth/nace2025/66199>, <http://vocab.belgif.be/auth/nace2025/82990>, _:nace_2003_74879, <http://vocab.belgif.be/auth/nace2008/46170>, <http://vocab.belgif.be/auth/nace2008/66199>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/10610>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0881.615.182;
+    reorg:legalName "HeBe Belgium"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.234.684>, <https://data.vlaanderen.be/id/vestiging/2.379.383.967>.
+<https://data.vlaanderen.be/id/vestiging/2.155.234.684> a org:Site;
+    dcterms:created "14-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.234.684.
+<https://data.vlaanderen.be/id/vestiging/2.379.383.967> a org:Site;
+    dcterms:created "13-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.379.383.967.
+_:address_contact_0881.615.182 a locn:Address;
+    locn:thoroughfare "Legeweg"@nl, "Legeweg"@fr;
+    rdfs:label "135";
+    adres:busnummer "11";
+    locn:postCode "8020";
+    adres:gemeentenaam "Oostkamp"@nl, "Oostkamp"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.615.182 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0881.615.182.
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0881.615.182 a adms:Identifier;
+    skos:notation "0881.615.182";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.234.684 a adms:Identifier;
+    skos:notation "2.155.234.684";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.379.383.967 a adms:Identifier;
+    skos:notation "2.379.383.967";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5811>, <http://vocab.belgif.be/auth/nace2008/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2008/58130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5813>, <http://vocab.belgif.be/auth/nace2008/5813>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "58130".
+<http://vocab.belgif.be/auth/nace2008/58140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5814>, <http://vocab.belgif.be/auth/nace2008/5814>;
+    skos:definition "Uitgeverijen van tijdschriften"@nl, "Édition de revues et de périodiques"@fr;
+    skos:prefLabel "58140".
+<http://vocab.belgif.be/auth/nace2008/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5819>, <http://vocab.belgif.be/auth/nace2008/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2025/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5811>, <http://vocab.belgif.be/auth/nace2025/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2025/58120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5812>, <http://vocab.belgif.be/auth/nace2025/5812>;
+    skos:definition "Uitgeverijen van adresboeken en mailinglijsten"@nl, "Édition de répertoires et de fichiers d'adresses"@fr;
+    skos:prefLabel "58120".
+<http://vocab.belgif.be/auth/nace2025/58130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5813>, <http://vocab.belgif.be/auth/nace2025/5813>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "58130".
+<http://vocab.belgif.be/auth/nace2025/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5819>, <http://vocab.belgif.be/auth/nace2025/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<https://data.vlaanderen.be/id/onderneming/0884.767.880> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-11-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0884.767.880;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/58110>, _:nace_2003_22110, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/58190>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/58130>, <http://vocab.belgif.be/auth/nace2025/58120>, _:nace_2003_22130, _:nace_2003_22150, _:nace_2003_72400, _:nace_2003_22120, <http://vocab.belgif.be/auth/nace2008/58110>, <http://vocab.belgif.be/auth/nace2008/58140>, <http://vocab.belgif.be/auth/nace2008/58190>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/58130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0884.767.880;
+    reorg:legalName "LEXISNEXIS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.157.750.053>, <https://data.vlaanderen.be/id/vestiging/2.327.685.640>, <https://data.vlaanderen.be/id/vestiging/2.369.840.652>.
+<https://data.vlaanderen.be/id/vestiging/2.157.750.053> a org:Site;
+    dcterms:created "04-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.157.750.053.
+<https://data.vlaanderen.be/id/vestiging/2.327.685.640> a org:Site;
+    dcterms:created "01-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.327.685.640.
+<https://data.vlaanderen.be/id/vestiging/2.369.840.652> a org:Site;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.369.840.652.
+_:address_contact_0884.767.880 a locn:Address;
+    locn:thoroughfare "Oudenaardseheerweg"@nl, "Oudenaardseheerweg"@fr;
+    rdfs:label "129";
+    locn:postCode "9810";
+    adres:gemeentenaam "Nazareth-De Pinte"@nl, "Nazareth-De Pinte"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0884.767.880 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0884.767.880.
+_:nace_2003_22110 a skos:Concept;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "22110".
+_:nace_2003_22120 a skos:Concept;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "22120".
+_:nace_2003_22130 a skos:Concept;
+    skos:definition "Uitgeverijen van tijdschriften"@nl, "Édition de revues et périodiques"@fr;
+    skos:prefLabel "22130".
+_:nace_2003_22150 a skos:Concept;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "22150".
+_:nace_2003_72400 a skos:Concept;
+    skos:definition "Databanken"@nl, "Activités de banques de données"@fr;
+    skos:prefLabel "72400".
+_:registration_company_0884.767.880 a adms:Identifier;
+    skos:notation "0884.767.880";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.157.750.053 a adms:Identifier;
+    skos:notation "2.157.750.053";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.327.685.640 a adms:Identifier;
+    skos:notation "2.327.685.640";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.369.840.652 a adms:Identifier;
+    skos:notation "2.369.840.652";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

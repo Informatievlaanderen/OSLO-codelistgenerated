@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4661>, <http://vocab.belgif.be/auth/nace2008/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7731>, <http://vocab.belgif.be/auth/nace2008/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<http://vocab.belgif.be/auth/nace2025/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4661>, <http://vocab.belgif.be/auth/nace2025/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7731>, <http://vocab.belgif.be/auth/nace2025/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<https://data.vlaanderen.be/id/onderneming/0899.316.989> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0899.316.989;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/52210>, <http://vocab.belgif.be/auth/nace2025/77310>, <http://vocab.belgif.be/auth/nace2025/46610>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/46610>, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/77310>, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0899.316.989;
+    reorg:legalName "Xtrarent.be"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.172.604.911>.
+<https://data.vlaanderen.be/id/vestiging/2.172.604.911> a org:Site;
+    dcterms:created "14-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.172.604.911.
+_:address_contact_0899.316.989 a locn:Address;
+    locn:thoroughfare "Europark"@nl, "Europark"@fr;
+    rdfs:label "1604";
+    locn:postCode "3530";
+    adres:gemeentenaam "Houthalen-Helchteren"@nl, "Houthalen-Helchteren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0899.316.989 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0899.316.989.
+_:registration_company_0899.316.989 a adms:Identifier;
+    skos:notation "0899.316.989";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.172.604.911 a adms:Identifier;
+    skos:notation "2.172.604.911";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

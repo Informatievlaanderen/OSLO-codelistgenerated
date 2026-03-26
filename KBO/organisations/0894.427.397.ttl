@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/43310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4331>, <http://vocab.belgif.be/auth/nace2008/4331>;
+    skos:definition "Stukadoorswerk"@nl, "Travaux de plâtrerie"@fr;
+    skos:prefLabel "43310".
+<http://vocab.belgif.be/auth/nace2008/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4333>, <http://vocab.belgif.be/auth/nace2008/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/43310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4331>, <http://vocab.belgif.be/auth/nace2025/4331>;
+    skos:definition "Stukadoorswerk"@nl, "Travaux de plâtrerie"@fr;
+    skos:prefLabel "43310".
+<http://vocab.belgif.be/auth/nace2025/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<https://data.vlaanderen.be/id/onderneming/0894.427.397> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0894.427.397;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/43310>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/43331>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2008/43310>, <http://vocab.belgif.be/auth/nace2008/43331>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/43291>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/43299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0894.427.397;
+    reorg:legalName "STUKFORM"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.172.196.818>.
+<https://data.vlaanderen.be/id/vestiging/2.172.196.818> a org:Site;
+    dcterms:created "14-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.172.196.818.
+_:address_contact_0894.427.397 a locn:Address;
+    locn:thoroughfare "Heirweg"@nl, "Heirweg"@fr;
+    rdfs:label "35";
+    locn:postCode "9990";
+    adres:gemeentenaam "Maldegem"@nl, "Maldegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0894.427.397 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0894.427.397.
+_:registration_company_0894.427.397 a adms:Identifier;
+    skos:notation "0894.427.397";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.172.196.818 a adms:Identifier;
+    skos:notation "2.172.196.818";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

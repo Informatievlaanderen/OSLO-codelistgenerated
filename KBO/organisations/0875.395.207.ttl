@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/84111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8411>, <http://vocab.belgif.be/auth/nace2008/8411>;
+    skos:definition "Federale overheid"@nl, "Administration publique fédérale"@fr;
+    skos:prefLabel "84111".
+<http://vocab.belgif.be/auth/nace2008/91011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Bibliotheken,mediatheken en ludotheken"@nl, "Gestion des bibliothèques, des médiathèques et des ludothèques"@fr;
+    skos:prefLabel "91011".
+<http://vocab.belgif.be/auth/nace2025/84111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8411>, <http://vocab.belgif.be/auth/nace2025/8411>;
+    skos:definition "Federale overheid"@nl, "Administration publique fédérale"@fr;
+    skos:prefLabel "84111".
+<http://vocab.belgif.be/auth/nace2025/91110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9111>, <http://vocab.belgif.be/auth/nace2025/9111>;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+<https://data.vlaanderen.be/id/onderneming/0875.395.207> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/303>;
+    dcterms:created "31-12-1986"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.395.207;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/91110>, _:nace_2003_92510, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/84111>, <http://vocab.belgif.be/auth/nace2008/91011>, <http://vocab.belgif.be/auth/nace2008/84111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0875.395.207;
+    reorg:legalName "Royal Library of Belgium"@en, "KBR"@en, "Bibliothèque royale de Belgique"@fr, "KBR"@fr, "Koninklijke Bibliotheek van België"@nl, "KBR"@nl, "Königliche Bibliothek von Belgien"@de;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.151.935.102>.
+<https://data.vlaanderen.be/id/vestiging/2.151.935.102> a org:Site;
+    dcterms:created "02-01-1987"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.151.935.102.
+_:address_contact_0875.395.207 a locn:Address;
+    locn:thoroughfare "Keizerslaan"@nl, "Boulevard de l'Empereur"@fr;
+    rdfs:label "4";
+    locn:postCode "1000";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0875.395.207 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@kbr.be";
+    schema:telephone "+3225195311";
+    schema:faxNumber "+3225195533";
+    <http://xmlns.com/foaf/0.1/homepage> "www.kbr.be/";
+    locn:address _:address_contact_0875.395.207.
+_:nace_2003_92510 a skos:Concept;
+    skos:definition "Bibliotheken en openbare archieven"@nl, "Gestion des bibliothèques et archives publiques"@fr;
+    skos:prefLabel "92510".
+_:registration_company_0875.395.207 a adms:Identifier;
+    skos:notation "0875.395.207";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-12-1986"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.151.935.102 a adms:Identifier;
+    skos:notation "2.151.935.102";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-12-1986"^^<http://www.w3.org/2001/XMLSchema#date>.

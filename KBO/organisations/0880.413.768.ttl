@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/56101> a skos:Concept;
+    skos:definition "Restauration à service complet"@fr, "Eetgelegenheden met volledige bediening"@nl;
+    skos:prefLabel "56101";
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>.
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102";
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>.
+<http://vocab.belgif.be/auth/nace2008/56301> a skos:Concept;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301";
+    skos:broader <http://data.europa.eu/ux2/nace2/5630>, <http://vocab.belgif.be/auth/nace2008/5630>.
+<http://vocab.belgif.be/auth/nace2008/96012> a skos:Concept;
+    skos:definition "Activiteiten van wasserettes en wassalons ten behoeve van particulieren"@nl, "Activités des blanchisseries et des salons-lavoirs pour particuliers"@fr;
+    skos:prefLabel "96012";
+    skos:broader <http://data.europa.eu/ux2/nace2/9601>, <http://vocab.belgif.be/auth/nace2008/9601>.
+<http://vocab.belgif.be/auth/nace2025/56111> a skos:Concept;
+    skos:definition "Activiteiten van eetgelegenheden met volledige bediening"@nl, "Restauration à service complet"@fr;
+    skos:prefLabel "56111";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>.
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>.
+<http://vocab.belgif.be/auth/nace2025/56301> a skos:Concept;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>.
+<http://vocab.belgif.be/auth/nace2025/96102> a skos:Concept;
+    skos:definition "Activiteiten van wasserettes en wassalons ten behoeve van particulieren"@nl, "Activités des blanchisseries et des salons-lavoirs pour particuliers"@fr;
+    skos:prefLabel "96102";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9610>, <http://vocab.belgif.be/auth/nace2025/9610>.
+<https://data.vlaanderen.be/id/onderneming/0880.413.768> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.413.768;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_55302, <http://vocab.belgif.be/auth/nace2025/56112>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56111>, <http://vocab.belgif.be/auth/nace2025/56301>, <http://vocab.belgif.be/auth/nace2025/96102>, _:nace_2003_55301, _:nace_2003_93012, _:nace_2003_55401, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/56301>, <http://vocab.belgif.be/auth/nace2008/96012>, <http://vocab.belgif.be/auth/nace2008/56101>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Vanden Broucke, Miguel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.152.629.641>.
+<https://data.vlaanderen.be/id/vestiging/2.152.629.641> a org:Site;
+    dcterms:created "01-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.152.629.641.
+_:nace_2003_55301 a skos:Concept;
+    skos:definition "Restaurants van het traditionele type"@nl, "Restauration de type traditionnel"@fr;
+    skos:prefLabel "55301".
+_:nace_2003_55302 a skos:Concept;
+    skos:definition "Fastfoodzaken, snackbars, frituren en dergelijke"@nl, "Restauration de type rapide"@fr;
+    skos:prefLabel "55302".
+_:nace_2003_55401 a skos:Concept;
+    skos:definition "Cafés et bars"@fr, "Cafés"@nl;
+    skos:prefLabel "55401".
+_:nace_2003_93012 a skos:Concept;
+    skos:definition "Wasserettes, behandelen van was en reiniging van kleding ten behoeve van particulieren"@nl, "Salons-lavoirs, blanchisseries, services de nettoyage de vêtements, linges et autres textiles pour particuliers"@fr;
+    skos:prefLabel "93012".
+_:registration_company_0880.413.768 a adms:Identifier;
+    skos:notation "0880.413.768";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.152.629.641 a adms:Identifier;
+    skos:notation "2.152.629.641";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

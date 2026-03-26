@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0130>, <http://vocab.belgif.be/auth/nace2008/0130>;
+    skos:definition "Boomkwekerijen, m.u.v. bosboomkwekerijen"@nl, "Exploitation de pépinières, sauf pépinières forestières"@fr;
+    skos:prefLabel "01301".
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4722>, <http://vocab.belgif.be/auth/nace2008/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/01301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0130>, <http://vocab.belgif.be/auth/nace2025/0130>;
+    skos:definition "Boomkwekerijen, m.u.v. bosboomkwekerijen"@nl, "Exploitation de pépinières, sauf pépinières forestières"@fr;
+    skos:prefLabel "01301".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0871.084.546> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "01-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.084.546;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/01301>, _:nace_2003_01300, <http://vocab.belgif.be/auth/nace2008/47221>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/01301>, <http://vocab.belgif.be/auth/nace2008/02100>, <http://vocab.belgif.be/auth/nace2008/01500>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0871.084.546;
+    reorg:legalName "LEQUEUX CEDRIC ET MOLITOR LAURENCE ADF"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.227.248.870>, <https://data.vlaanderen.be/id/vestiging/2.360.653.762>.
+<https://data.vlaanderen.be/id/vestiging/2.227.248.870> a org:Site;
+    dcterms:created "01-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.227.248.870.
+<https://data.vlaanderen.be/id/vestiging/2.360.653.762> a org:Site;
+    dcterms:created "19-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.360.653.762.
+_:address_contact_0871.084.546 a locn:Address;
+    locn:thoroughfare "Rue des Cuves,Sibret"@nl, "Rue des Cuves,Sibret"@fr;
+    rdfs:label "5";
+    locn:postCode "6640";
+    adres:gemeentenaam "Vaux-sur-Sûre"@nl, "Vaux-sur-Sûre"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0871.084.546 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0871.084.546.
+_:nace_2003_01300 a skos:Concept;
+    skos:definition "Gemengd bedrijf"@nl, "Culture et élevage associés"@fr;
+    skos:prefLabel "01300".
+_:registration_company_0871.084.546 a adms:Identifier;
+    skos:notation "0871.084.546";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.227.248.870 a adms:Identifier;
+    skos:notation "2.227.248.870";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.360.653.762 a adms:Identifier;
+    skos:notation "2.360.653.762";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

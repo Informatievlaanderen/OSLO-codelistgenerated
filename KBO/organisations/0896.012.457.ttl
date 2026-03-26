@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47740> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4774>, <http://vocab.belgif.be/auth/nace2008/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles médicaux et orthopédiques en magasin spécialisé"@fr;
+    skos:prefLabel "47740".
+<http://vocab.belgif.be/auth/nace2008/96093> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, m.u.v. veterinaire diensten"@nl, "Services de soins pour animaux de compagnie, sauf soins vétérinaires"@fr;
+    skos:prefLabel "96093".
+<http://vocab.belgif.be/auth/nace2025/47741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen, muv corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail d'articles médicaux et orthopédiques, à l'exception de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47741".
+<http://vocab.belgif.be/auth/nace2025/96993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, muv veterinaire diensten"@nl, "Services de soins autres que vétérinaires pour animaux de compagnie"@fr;
+    skos:prefLabel "96993".
+<https://data.vlaanderen.be/id/onderneming/0896.012.457> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "13-07-1988"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0896.012.457;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96993>, <http://vocab.belgif.be/auth/nace2025/47741>, <http://vocab.belgif.be/auth/nace2008/96093>, <http://vocab.belgif.be/auth/nace2008/47740>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Mares, Annemie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.168.800.531>.
+<https://data.vlaanderen.be/id/vestiging/2.168.800.531> a org:Site;
+    dcterms:created "26-02-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.168.800.531.
+_:registration_company_0896.012.457 a adms:Identifier;
+    skos:notation "0896.012.457";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-07-1988"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.168.800.531 a adms:Identifier;
+    skos:notation "2.168.800.531";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-07-1988"^^<http://www.w3.org/2001/XMLSchema#date>.

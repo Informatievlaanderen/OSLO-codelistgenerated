@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1412>, <http://vocab.belgif.be/auth/nace2008/1412>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14120".
+<http://vocab.belgif.be/auth/nace2008/14130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1413>, <http://vocab.belgif.be/auth/nace2008/1413>;
+    skos:definition "Winning van leisteen"@nl, "Extraction d'ardoise"@fr;
+    skos:prefLabel "14130".
+<http://vocab.belgif.be/auth/nace2008/47711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in damesbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour dame en magasin spécialisé"@fr;
+    skos:prefLabel "47711".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/14230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1423>, <http://vocab.belgif.be/auth/nace2025/1423>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14230".
+<http://vocab.belgif.be/auth/nace2025/47711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in damesbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour dame en magasin spécialisé"@fr;
+    skos:prefLabel "47711".
+<https://data.vlaanderen.be/id/onderneming/0863.177.066> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-04-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0863.177.066;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47711>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/14210>, <http://vocab.belgif.be/auth/nace2025/14230>, <http://vocab.belgif.be/auth/nace2008/47711>, <http://vocab.belgif.be/auth/nace2008/14130>, <http://vocab.belgif.be/auth/nace2008/14120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Slegers, Chantal";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.197.756.912>.
+<https://data.vlaanderen.be/id/vestiging/2.197.756.912> a org:Site;
+    dcterms:created "08-04-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.197.756.912.
+_:registration_company_0863.177.066 a adms:Identifier;
+    skos:notation "0863.177.066";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.197.756.912 a adms:Identifier;
+    skos:notation "2.197.756.912";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

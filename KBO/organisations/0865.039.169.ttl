@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/74901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende pesonaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres personnalités publiques"@fr;
+    skos:prefLabel "74901".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/74991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende personaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres, personnalités publiques"@fr;
+    skos:prefLabel "74991".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0865.039.169> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0865.039.169;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74991>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_92313, _:nace_2003_74878, <http://vocab.belgif.be/auth/nace2008/74901>, <http://vocab.belgif.be/auth/nace2008/90023>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0865.039.169;
+    reorg:legalName "CHAHU COMMUNICATION"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.136.976.712>.
+<https://data.vlaanderen.be/id/vestiging/2.136.976.712> a org:Site;
+    dcterms:created "30-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.976.712.
+_:address_contact_0865.039.169 a locn:Address;
+    locn:thoroughfare "Chemin Sous-Bois"@nl, "Chemin Sous-Bois"@fr;
+    rdfs:label "2";
+    locn:postCode "4900";
+    adres:gemeentenaam "Spa"@nl, "Spa"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0865.039.169 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0865.039.169.
+_:nace_2003_74878 a skos:Concept;
+    skos:definition "Impresariaten en theateragentschappen"@nl, "Imprésarios et agences de théâtre"@fr;
+    skos:prefLabel "74878".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:registration_company_0865.039.169 a adms:Identifier;
+    skos:notation "0865.039.169";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.976.712 a adms:Identifier;
+    skos:notation "2.136.976.712";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/90012> a skos:Concept;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90012";
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>.
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023";
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>.
+<http://vocab.belgif.be/auth/nace2025/90202> a skos:Concept;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90202";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>.
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>.
+<https://data.vlaanderen.be/id/onderneming/0861.231.326> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "22-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.231.326;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_92312, <http://vocab.belgif.be/auth/nace2025/90202>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_92313, <http://vocab.belgif.be/auth/nace2008/90012>, <http://vocab.belgif.be/auth/nace2008/90023>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0861.231.326;
+    reorg:legalName "Roodvonk vzw"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.310.256.126>.
+<https://data.vlaanderen.be/id/vestiging/2.310.256.126> a org:Site;
+    dcterms:created "09-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.310.256.126.
+_:address_contact_0861.231.326 a locn:Address;
+    locn:thoroughfare "Lange Kroonstraat"@nl, "Lange Kroonstraat"@fr;
+    rdfs:label "29";
+    locn:postCode "2530";
+    adres:gemeentenaam "Boechout"@nl, "Boechout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0861.231.326 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0861.231.326.
+_:nace_2003_92312 a skos:Concept;
+    skos:definition "Productie van kunstmanifestaties en voorstellingen door artistieke ensembles"@nl, "Production de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "92312".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:registration_company_0861.231.326 a adms:Identifier;
+    skos:notation "0861.231.326";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.310.256.126 a adms:Identifier;
+    skos:notation "2.310.256.126";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

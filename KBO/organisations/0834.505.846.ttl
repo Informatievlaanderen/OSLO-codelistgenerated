@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0834.505.846> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "10-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0834.505.846;
+    schema:contactinfo _:contact_0834.505.846;
+    reorg:legalName "SARL Cookme"@nl.
+_:address_contact_0834.505.846 a locn:Address;
+    locn:thoroughfare "rue Gustave Eiffel"@nl, "rue Gustave Eiffel"@fr;
+    rdfs:label "30";
+    adres:busnummer "bis";
+    locn:postCode "74600";
+    adres:gemeentenaam "Seynod"@nl, "Seynod"@fr;
+    adres:land "Frankrijk"@nl, "France"@fr.
+_:contact_0834.505.846 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "contact@cookme.fr";
+    schema:telephone "0033 450 053799";
+    schema:faxNumber "0033 450 053799";
+    locn:address _:address_contact_0834.505.846.
+_:registration_company_0834.505.846 a adms:Identifier;
+    skos:notation "0834.505.846";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1820>, <http://vocab.belgif.be/auth/nace2008/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2008/47650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4765>, <http://vocab.belgif.be/auth/nace2008/4765>;
+    skos:definition "Detailhandel in spellen en speelgoed in gespecialiseerde winkels"@nl, "Commerce de détail de jeux et de jouets en magasin spécialisé"@fr;
+    skos:prefLabel "47650".
+<http://vocab.belgif.be/auth/nace2008/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2008/59203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5920>, <http://vocab.belgif.be/auth/nace2008/5920>;
+    skos:definition "Uitgeverijen van muziekopnamen"@nl, "Edition musicale"@fr;
+    skos:prefLabel "59203".
+<http://vocab.belgif.be/auth/nace2025/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1820>, <http://vocab.belgif.be/auth/nace2025/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2025/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4764>, <http://vocab.belgif.be/auth/nace2025/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/59203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5920>, <http://vocab.belgif.be/auth/nace2025/5920>;
+    skos:definition "Uitgeverijen van muziekopnamen"@nl, "Edition musicale"@fr;
+    skos:prefLabel "59203".
+<https://data.vlaanderen.be/id/onderneming/0888.993.023> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.993.023;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47640>, <http://vocab.belgif.be/auth/nace2025/59203>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/18200>, _:nace_2003_22330, _:nace_2003_22310, _:nace_2003_22320, _:nace_2003_22140, <http://vocab.belgif.be/auth/nace2008/18200>, <http://vocab.belgif.be/auth/nace2008/59203>, <http://vocab.belgif.be/auth/nace2008/47650>, <http://vocab.belgif.be/auth/nace2008/47716>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0888.993.023;
+    reorg:legalName "SAK PASE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.161.953.618>.
+<https://data.vlaanderen.be/id/vestiging/2.161.953.618> a org:Site;
+    dcterms:created "24-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.161.953.618.
+_:address_contact_0888.993.023 a locn:Address;
+    locn:thoroughfare "Klinketstraat"@nl, "Klinketstraat"@fr;
+    rdfs:label "15";
+    locn:postCode "2323";
+    adres:gemeentenaam "Hoogstraten"@nl, "Hoogstraten"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0888.993.023 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "martenstoon@me.com";
+    schema:telephone "+32477601026";
+    locn:address _:address_contact_0888.993.023.
+_:nace_2003_22140 a skos:Concept;
+    skos:definition "Uitgeverijen van geluidsopnamen"@nl, "Édition d'enregistrements sonores"@fr;
+    skos:prefLabel "22140".
+_:nace_2003_22310 a skos:Concept;
+    skos:definition "Reproductie van geluidsopnamen"@nl, "Reproduction d'enregistrements sonores"@fr;
+    skos:prefLabel "22310".
+_:nace_2003_22320 a skos:Concept;
+    skos:definition "Reproductie van video-opnamen"@nl, "Reproduction d'enregistrements vidéo"@fr;
+    skos:prefLabel "22320".
+_:nace_2003_22330 a skos:Concept;
+    skos:definition "Reproductie van computermedia"@nl, "Reproduction d'enregistrements informatiques"@fr;
+    skos:prefLabel "22330".
+_:registration_company_0888.993.023 a adms:Identifier;
+    skos:notation "0888.993.023";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.161.953.618 a adms:Identifier;
+    skos:notation "2.161.953.618";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

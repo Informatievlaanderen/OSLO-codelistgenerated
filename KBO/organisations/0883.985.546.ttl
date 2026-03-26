@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0119>, <http://vocab.belgif.be/auth/nace2008/0119>;
+    skos:definition "Teelt van bloemen"@nl, "Culture de fleurs"@fr;
+    skos:prefLabel "01191".
+<http://vocab.belgif.be/auth/nace2008/01301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0130>, <http://vocab.belgif.be/auth/nace2008/0130>;
+    skos:definition "Boomkwekerijen, m.u.v. bosboomkwekerijen"@nl, "Exploitation de pépinières, sauf pépinières forestières"@fr;
+    skos:prefLabel "01301".
+<http://vocab.belgif.be/auth/nace2008/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2025/01191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0119>, <http://vocab.belgif.be/auth/nace2025/0119>;
+    skos:definition "Teelt van bloemen"@nl, "Culture de fleurs"@fr;
+    skos:prefLabel "01191".
+<http://vocab.belgif.be/auth/nace2025/01301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0130>, <http://vocab.belgif.be/auth/nace2025/0130>;
+    skos:definition "Boomkwekerijen, m.u.v. bosboomkwekerijen"@nl, "Exploitation de pépinières, sauf pépinières forestières"@fr;
+    skos:prefLabel "01301".
+<http://vocab.belgif.be/auth/nace2025/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<https://data.vlaanderen.be/id/onderneming/0883.985.546> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.985.546;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01191>, <http://vocab.belgif.be/auth/nace2025/47761>, <http://vocab.belgif.be/auth/nace2025/01301>, _:nace_2003_52483, _:nace_2003_01122, _:nace_2003_01123, <http://vocab.belgif.be/auth/nace2008/01301>, <http://vocab.belgif.be/auth/nace2008/47761>, <http://vocab.belgif.be/auth/nace2008/01191>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Dardenne, Etienne";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.156.439.365>.
+<https://data.vlaanderen.be/id/vestiging/2.156.439.365> a org:Site;
+    dcterms:created "04-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.156.439.365.
+_:nace_2003_01122 a skos:Concept;
+    skos:definition "Culture de fleurs"@fr, "Bloementeelt"@nl;
+    skos:prefLabel "01122".
+_:nace_2003_01123 a skos:Concept;
+    skos:definition "Boomkwekerijen"@nl, "Pépinières"@fr;
+    skos:prefLabel "01123".
+_:nace_2003_52483 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in bloemen en planten, zaden en kunstmeststoffen"@nl, "Commerce de détail spécialisé de fleurs et de plantes, de graines et d'engrais"@fr;
+    skos:prefLabel "52483".
+_:registration_company_0883.985.546 a adms:Identifier;
+    skos:notation "0883.985.546";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.156.439.365 a adms:Identifier;
+    skos:notation "2.156.439.365";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

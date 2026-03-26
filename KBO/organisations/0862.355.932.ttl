@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<http://vocab.belgif.be/auth/nace2025/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<https://data.vlaanderen.be/id/onderneming/0862.355.932> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0862.355.932;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/94999>, _:nace_2003_91330, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/94999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0862.355.932;
+    reorg:legalName "RONDPUNT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.294.432>.
+<https://data.vlaanderen.be/id/vestiging/2.159.294.432> a org:Site;
+    dcterms:created "07-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.294.432.
+_:address_contact_0862.355.932 a locn:Address;
+    locn:thoroughfare "Uitbreidingstraat"@nl, "Uitbreidingstraat"@fr;
+    rdfs:label "518";
+    adres:busnummer "2.01";
+    locn:postCode "2600";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0862.355.932 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0862.355.932.
+_:nace_2003_91330 a skos:Concept;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Organisations associatives n.d.a."@fr;
+    skos:prefLabel "91330".
+_:registration_company_0862.355.932 a adms:Identifier;
+    skos:notation "0862.355.932";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.294.432 a adms:Identifier;
+    skos:notation "2.159.294.432";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0899.118.932> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "08-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0899.118.932;
+    schema:contactinfo _:contact_0899.118.932;
+    reorg:legalName "CHRISTIAN SMULDERS MEDICAL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.254.007.212>, <https://data.vlaanderen.be/id/vestiging/2.254.008.497>.
+<https://data.vlaanderen.be/id/vestiging/2.254.007.212> a org:Site;
+    dcterms:created "08-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.254.007.212.
+<https://data.vlaanderen.be/id/vestiging/2.254.008.497> a org:Site;
+    dcterms:created "01-09-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.254.008.497.
+_:address_contact_0899.118.932 a locn:Address;
+    locn:thoroughfare "Chaussée de Gramptinne"@nl, "Chaussée de Gramptinne"@fr;
+    rdfs:label "93a";
+    locn:postCode "5340";
+    adres:gemeentenaam "Gesves"@nl, "Gesves"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0899.118.932 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0899.118.932.
+_:registration_company_0899.118.932 a adms:Identifier;
+    skos:notation "0899.118.932";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.254.007.212 a adms:Identifier;
+    skos:notation "2.254.007.212";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.254.008.497 a adms:Identifier;
+    skos:notation "2.254.008.497";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

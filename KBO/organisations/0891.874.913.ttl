@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/74300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7430>, <http://vocab.belgif.be/auth/nace2008/7430>;
+    skos:definition "Vertalers en tolken"@nl, "Traduction et interprétation"@fr;
+    skos:prefLabel "74300".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/74301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7430>, <http://vocab.belgif.be/auth/nace2025/7430>;
+    skos:definition "Automobielinspectie en overige diagnosecentra voor auto's"@nl, "Contrôle technique automobile et autres centres de diagnostic pour véhicules automobiles"@fr;
+    skos:prefLabel "74301".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0891.874.913> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0891.874.913;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/74301>, <http://vocab.belgif.be/auth/nace2025/68203>, _:nace_2003_74852, _:nace_2003_74851, _:nace_2003_70203, <http://vocab.belgif.be/auth/nace2008/74300>, <http://vocab.belgif.be/auth/nace2008/82190>, <http://vocab.belgif.be/auth/nace2008/68203>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0891.874.913;
+    reorg:legalName "Jeanfils, Isabelle".
+_:contact_0891.874.913 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0479/663800".
+_:nace_2003_70203 a skos:Concept;
+    skos:definition "Verhuur van niet-residentiële gebouwen"@nl, "Location d'immeubles non résidentiels, y compris les salles d'exposition"@fr;
+    skos:prefLabel "70203".
+_:nace_2003_74851 a skos:Concept;
+    skos:definition "Secretariaten"@nl, "Secrétariats"@fr;
+    skos:prefLabel "74851".
+_:nace_2003_74852 a skos:Concept;
+    skos:definition "Vertaaldiensten en tolken"@nl, "Services de traduction et interprètes"@fr;
+    skos:prefLabel "74852".
+_:registration_company_0891.874.913 a adms:Identifier;
+    skos:notation "0891.874.913";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

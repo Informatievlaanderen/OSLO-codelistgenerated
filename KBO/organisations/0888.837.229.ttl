@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43333> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4333>, <http://vocab.belgif.be/auth/nace2008/4333>;
+    skos:definition "Plaatsen van behang en vloerbedekking en wandbekleding van andere materialen"@nl, "Pose de papiers peints et de revêtements de murs et de sols en d'autres matériaux"@fr;
+    skos:prefLabel "43333".
+<http://vocab.belgif.be/auth/nace2008/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4334>, <http://vocab.belgif.be/auth/nace2008/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2025/43333> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van behang en vloerbedekking en wandbekleding van andere materialen"@nl, "Pose de papiers peints et de revêtements de murs et de sols en d'autres matériaux"@fr;
+    skos:prefLabel "43333".
+<http://vocab.belgif.be/auth/nace2025/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4334>, <http://vocab.belgif.be/auth/nace2025/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<https://data.vlaanderen.be/id/onderneming/0888.837.229> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "18-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.837.229;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/43333>, <http://vocab.belgif.be/auth/nace2025/43341>, _:nace_2003_45450, _:nace_2003_45441, _:nace_2003_45433, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/43333>, <http://vocab.belgif.be/auth/nace2008/43341>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0888.837.229;
+    reorg:legalName "Tom Vanagtmael"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.164.029.715>.
+<https://data.vlaanderen.be/id/vestiging/2.164.029.715> a org:Site;
+    dcterms:created "12-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.164.029.715.
+_:address_contact_0888.837.229 a locn:Address;
+    locn:thoroughfare "Nieuwe Heikant"@nl, "Nieuwe Heikant"@fr;
+    rdfs:label "25";
+    locn:postCode "2910";
+    adres:gemeentenaam "Essen"@nl, "Essen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0888.837.229 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0888.837.229.
+_:nace_2003_45433 a skos:Concept;
+    skos:definition "Plaatsen van behang"@nl, "Pose de papiers peints"@fr;
+    skos:prefLabel "45433".
+_:nace_2003_45441 a skos:Concept;
+    skos:definition "Schilderen"@nl, "Peinture"@fr;
+    skos:prefLabel "45441".
+_:nace_2003_45450 a skos:Concept;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "45450".
+_:registration_company_0888.837.229 a adms:Identifier;
+    skos:notation "0888.837.229";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.164.029.715 a adms:Identifier;
+    skos:notation "2.164.029.715";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

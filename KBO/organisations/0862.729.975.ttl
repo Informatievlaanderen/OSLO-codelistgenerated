@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/88912> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8891>, <http://vocab.belgif.be/auth/nace2008/8891>;
+    skos:definition "Kinderopvang door onthaalmoeders"@nl, "Activités des gardiennes d'enfants"@fr;
+    skos:prefLabel "88912".
+<http://vocab.belgif.be/auth/nace2025/88912> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8891>, <http://vocab.belgif.be/auth/nace2025/8891>;
+    skos:definition "Kinderopvang door onthaalmoeders"@nl, "Activités des gardiennes d'enfants"@fr;
+    skos:prefLabel "88912".
+<https://data.vlaanderen.be/id/onderneming/0862.729.975> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0862.729.975;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/88912>, <http://vocab.belgif.be/auth/nace2008/88912>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0862.729.975;
+    reorg:legalName "DIENST VOOR OPVANGGEZINNEN MEZENNESTJE"@nl, "D.V.O. MEZENNESTJE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.045.040>, <https://data.vlaanderen.be/id/vestiging/2.230.372.666>, <https://data.vlaanderen.be/id/vestiging/2.249.636.371>, <https://data.vlaanderen.be/id/vestiging/2.328.256.554>, <https://data.vlaanderen.be/id/vestiging/2.331.714.209>, <https://data.vlaanderen.be/id/vestiging/2.366.055.276>.
+<https://data.vlaanderen.be/id/vestiging/2.155.045.040> a org:Site;
+    dcterms:created "12-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.045.040.
+<https://data.vlaanderen.be/id/vestiging/2.230.372.666> a org:Site;
+    dcterms:created "01-04-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.230.372.666.
+<https://data.vlaanderen.be/id/vestiging/2.249.636.371> a org:Site;
+    dcterms:created "15-02-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.249.636.371.
+<https://data.vlaanderen.be/id/vestiging/2.328.256.554> a org:Site;
+    dcterms:created "14-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.328.256.554.
+<https://data.vlaanderen.be/id/vestiging/2.331.714.209> a org:Site;
+    dcterms:created "02-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.331.714.209.
+<https://data.vlaanderen.be/id/vestiging/2.366.055.276> a org:Site;
+    dcterms:created "01-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.055.276.
+_:address_contact_0862.729.975 a locn:Address;
+    locn:thoroughfare "Sint-Rembertlaan"@nl, "Sint-Rembertlaan"@fr;
+    rdfs:label "33";
+    locn:postCode "8820";
+    adres:gemeentenaam "Torhout"@nl, "Torhout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0862.729.975 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "directie@mezennestje.be";
+    locn:address _:address_contact_0862.729.975.
+_:registration_company_0862.729.975 a adms:Identifier;
+    skos:notation "0862.729.975";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.045.040 a adms:Identifier;
+    skos:notation "2.155.045.040";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.230.372.666 a adms:Identifier;
+    skos:notation "2.230.372.666";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.249.636.371 a adms:Identifier;
+    skos:notation "2.249.636.371";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.328.256.554 a adms:Identifier;
+    skos:notation "2.328.256.554";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.331.714.209 a adms:Identifier;
+    skos:notation "2.331.714.209";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.055.276 a adms:Identifier;
+    skos:notation "2.366.055.276";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

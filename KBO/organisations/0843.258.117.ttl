@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3213>, <http://vocab.belgif.be/auth/nace2008/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2008/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5310>, <http://vocab.belgif.be/auth/nace2008/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2008/80100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8010>, <http://vocab.belgif.be/auth/nace2008/8010>;
+    skos:definition "Particuliere beveiliging"@nl, "Activités de sécurité privée"@fr;
+    skos:prefLabel "80100".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3213>, <http://vocab.belgif.be/auth/nace2025/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2025/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5310>, <http://vocab.belgif.be/auth/nace2025/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2025/80010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8001>, <http://vocab.belgif.be/auth/nace2025/8001>;
+    skos:definition "Opsporings- en particuliere beveiligingsdiensten"@nl, "Activités d’investigation et de sécurité privée"@fr;
+    skos:prefLabel "80010".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0843.258.117> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "31-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0843.258.117;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/80010>, <http://vocab.belgif.be/auth/nace2025/32130>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/53100>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/80100>, <http://vocab.belgif.be/auth/nace2008/32130>, <http://vocab.belgif.be/auth/nace2008/53100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dive, Dimitri";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.206.274.403>.
+<https://data.vlaanderen.be/id/vestiging/2.206.274.403> a org:Site;
+    dcterms:created "31-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.206.274.403.
+_:registration_company_0843.258.117 a adms:Identifier;
+    skos:notation "0843.258.117";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.206.274.403 a adms:Identifier;
+    skos:notation "2.206.274.403";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

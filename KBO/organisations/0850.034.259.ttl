@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/85421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8542>, <http://vocab.belgif.be/auth/nace2008/8542>;
+    skos:definition "Officieel hoger onderwijs"@nl, "Enseignement supérieur organisé par les pouvoirs publics"@fr;
+    skos:prefLabel "85421".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/85401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8540>, <http://vocab.belgif.be/auth/nace2025/8540>;
+    skos:definition "Officieel hoger onderwijs"@nl, "Enseignement supérieur organisé par les pouvoirs publics"@fr;
+    skos:prefLabel "85401".
+<https://data.vlaanderen.be/id/onderneming/0850.034.259> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/124>;
+    dcterms:created "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0850.034.259;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/85401>, _:nace_2003_80301, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2008/85421>, <http://vocab.belgif.be/auth/nace2008/62010>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0850.034.259;
+    reorg:legalName "Haute Ecole de la Communauté française en Hainaut"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.149.537.816>, <https://data.vlaanderen.be/id/vestiging/2.149.538.014>, <https://data.vlaanderen.be/id/vestiging/2.149.539.004>, <https://data.vlaanderen.be/id/vestiging/2.149.539.103>, <https://data.vlaanderen.be/id/vestiging/2.149.539.301>, <https://data.vlaanderen.be/id/vestiging/2.165.650.110>.
+<https://data.vlaanderen.be/id/vestiging/2.149.537.816> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.537.816.
+<https://data.vlaanderen.be/id/vestiging/2.149.538.014> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.538.014.
+<https://data.vlaanderen.be/id/vestiging/2.149.539.004> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.539.004.
+<https://data.vlaanderen.be/id/vestiging/2.149.539.103> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.539.103.
+<https://data.vlaanderen.be/id/vestiging/2.149.539.301> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.539.301.
+<https://data.vlaanderen.be/id/vestiging/2.165.650.110> a org:Site;
+    dcterms:created "08-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.165.650.110.
+_:address_contact_0850.034.259 a locn:Address;
+    locn:thoroughfare "Rue Pierre-Joseph Duménil"@nl, "Rue Pierre-Joseph Duménil"@fr;
+    rdfs:label "4";
+    locn:postCode "7000";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0850.034.259 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "directeur-president@heh.be";
+    schema:telephone "065 34 79 73";
+    schema:faxNumber "065 39 45 25";
+    locn:address _:address_contact_0850.034.259.
+_:nace_2003_80301 a skos:Concept;
+    skos:definition "Hoger onderwijs ingericht door de Gemeenschappen"@nl, "Enseignement supérieur communautaire"@fr;
+    skos:prefLabel "80301".
+_:registration_company_0850.034.259 a adms:Identifier;
+    skos:notation "0850.034.259";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.537.816 a adms:Identifier;
+    skos:notation "2.149.537.816";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.538.014 a adms:Identifier;
+    skos:notation "2.149.538.014";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.539.004 a adms:Identifier;
+    skos:notation "2.149.539.004";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.539.103 a adms:Identifier;
+    skos:notation "2.149.539.103";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.539.301 a adms:Identifier;
+    skos:notation "2.149.539.301";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.165.650.110 a adms:Identifier;
+    skos:notation "2.165.650.110";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1997"^^<http://www.w3.org/2001/XMLSchema#date>.

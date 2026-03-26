@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles ( > 3,5 tonnes )"@fr;
+    skos:prefLabel "45202".
+<http://vocab.belgif.be/auth/nace2008/45402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4540>, <http://vocab.belgif.be/auth/nace2008/4540>;
+    skos:definition "Detailhandel in en onderhoud en reparatie van motorfietsen en delen en toebehoren van motorfietsen"@nl, "Entretien, réparation et commerce de détail de motocycles, y compris les pièces et accessoires"@fr;
+    skos:prefLabel "45402".
+<http://vocab.belgif.be/auth/nace2008/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5911>, <http://vocab.belgif.be/auth/nace2008/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/47830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4783>, <http://vocab.belgif.be/auth/nace2025/4783>;
+    skos:definition "Detailhandel in motorrijwielen, delen en toebehoren van motorrijwielen"@nl, "Commerce de détail de motocycles et de pièces et accessoires de motocycles"@fr;
+    skos:prefLabel "47830".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<https://data.vlaanderen.be/id/onderneming/0859.962.903> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0859.962.903;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/47830>, <http://vocab.belgif.be/auth/nace2025/95312>, _:nace_2003_92113, <http://vocab.belgif.be/auth/nace2008/59113>, <http://vocab.belgif.be/auth/nace2008/45202>, <http://vocab.belgif.be/auth/nace2008/45402>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Tanghe, Roel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.248.261.050>, <https://data.vlaanderen.be/id/vestiging/2.303.258.961>.
+<https://data.vlaanderen.be/id/vestiging/2.248.261.050> a org:Site;
+    dcterms:created "04-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.248.261.050.
+<https://data.vlaanderen.be/id/vestiging/2.303.258.961> a org:Site;
+    dcterms:created "15-10-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.303.258.961.
+_:nace_2003_92113 a skos:Concept;
+    skos:definition "Productie van overige films"@nl, "Production d'autres films"@fr;
+    skos:prefLabel "92113".
+_:registration_company_0859.962.903 a adms:Identifier;
+    skos:notation "0859.962.903";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.248.261.050 a adms:Identifier;
+    skos:notation "2.248.261.050";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.303.258.961 a adms:Identifier;
+    skos:notation "2.303.258.961";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

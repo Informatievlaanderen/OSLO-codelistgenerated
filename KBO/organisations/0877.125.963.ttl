@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<https://data.vlaanderen.be/id/onderneming/0877.125.963> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.125.963;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/46494>, _:nace_2003_63406, _:nace_2003_51150, _:nace_2003_51471, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/46494>, <http://vocab.belgif.be/auth/nace2008/46150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0877.125.963;
+    reorg:legalName "WOODECO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.197.911>, <https://data.vlaanderen.be/id/vestiging/2.153.251.926>.
+<https://data.vlaanderen.be/id/vestiging/2.150.197.911> a org:Site;
+    dcterms:created "29-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.197.911.
+<https://data.vlaanderen.be/id/vestiging/2.153.251.926> a org:Site;
+    dcterms:created "03-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.153.251.926.
+_:address_contact_0877.125.963 a locn:Address;
+    locn:thoroughfare "Louizalaan"@nl, "Avenue Louise"@fr;
+    rdfs:label "240";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0877.125.963 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0877.125.963.
+_:nace_2003_51150 a skos:Concept;
+    skos:definition "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr, "Handelsbemiddeling in meubels, huishoudelijke artikelen en ijzerwaren"@nl;
+    skos:prefLabel "51150".
+_:nace_2003_51471 a skos:Concept;
+    skos:definition "Groothandel in meubels, niet-elektrische huishoudapparaten en vloerbedekking inclusief tapijten"@nl, "Commerce de gros de meubles, d'appareils ménagers non électriques et de revêtements de sol, y compris les tapis"@fr;
+    skos:prefLabel "51471".
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:registration_company_0877.125.963 a adms:Identifier;
+    skos:notation "0877.125.963";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.197.911 a adms:Identifier;
+    skos:notation "2.150.197.911";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.153.251.926 a adms:Identifier;
+    skos:notation "2.153.251.926";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

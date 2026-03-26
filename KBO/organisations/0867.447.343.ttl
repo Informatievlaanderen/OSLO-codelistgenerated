@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110";
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>.
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699";
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>.
+<http://vocab.belgif.be/auth/nace2008/90011> a skos:Concept;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90011";
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>.
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>.
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>.
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>.
+<https://data.vlaanderen.be/id/onderneming/0867.447.343> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0867.447.343;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_51872, <http://vocab.belgif.be/auth/nace2025/46649>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2025/25110>, _:nace_2003_28110, _:nace_2003_92311, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/90011>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0867.447.343;
+    reorg:legalName "MDO GROUP"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.142.385.253>.
+<https://data.vlaanderen.be/id/vestiging/2.142.385.253> a org:Site;
+    dcterms:created "09-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.142.385.253.
+_:address_contact_0867.447.343 a locn:Address;
+    locn:thoroughfare "Ballingsweg"@nl, "Ballingsweg"@fr;
+    rdfs:label "9";
+    locn:postCode "9620";
+    adres:gemeentenaam "Zottegem"@nl, "Zottegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0867.447.343 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0867.447.343.
+_:nace_2003_28110 a skos:Concept;
+    skos:definition "Vervaardiging van metalen constructiewerken en onderdelen daarvan"@nl, "Fabrication de constructions métalliques et de leurs parties"@fr;
+    skos:prefLabel "28110".
+_:nace_2003_51872 a skos:Concept;
+    skos:definition "Groothandel in vervoermiddelen met uitzondering van auto's, motorrijwielen en rijwielen, in meetapparaten en -instrumenten, in navigatieapparatuur en andere diverse machines en uitrusting voor de nijv"@nl, "Commerce de gros de fournitures et d'équipements divers pour l'industrie et de matériels de transport autres que les véhicules automobiles, les cycles et les motocycles"@fr;
+    skos:prefLabel "51872".
+_:nace_2003_92311 a skos:Concept;
+    skos:definition "Zelfstandig werkende kunstenaars en artiesten"@nl, "Artistes indépendants"@fr;
+    skos:prefLabel "92311".
+_:registration_company_0867.447.343 a adms:Identifier;
+    skos:notation "0867.447.343";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.142.385.253 a adms:Identifier;
+    skos:notation "2.142.385.253";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

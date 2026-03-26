@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/27510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2751>, <http://vocab.belgif.be/auth/nace2008/2751>;
+    skos:definition "Gieten van ijzer"@nl, "Fonderie de fonte"@fr;
+    skos:prefLabel "27510".
+<http://vocab.belgif.be/auth/nace2008/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/27510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2751>, <http://vocab.belgif.be/auth/nace2025/2751>;
+    skos:definition "Gieten van ijzer"@nl, "Fonderie de fonte"@fr;
+    skos:prefLabel "27510".
+<http://vocab.belgif.be/auth/nace2025/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0841.257.838> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-11-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0841.257.838;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46431>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/46494>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/27510>, <http://vocab.belgif.be/auth/nace2008/46431>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/46494>, <http://vocab.belgif.be/auth/nace2008/25999>, <http://vocab.belgif.be/auth/nace2008/27510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0841.257.838;
+    reorg:legalName "V-ZUG EUROPE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.204.531.074>.
+<https://data.vlaanderen.be/id/vestiging/2.204.531.074> a org:Site;
+    dcterms:created "21-11-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.204.531.074.
+_:address_contact_0841.257.838 a locn:Address;
+    locn:thoroughfare "Evolis"@nl, "Evolis"@fr;
+    rdfs:label "102";
+    locn:postCode "8530";
+    adres:gemeentenaam "Harelbeke"@nl, "Harelbeke"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0841.257.838 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0841.257.838.
+_:registration_company_0841.257.838 a adms:Identifier;
+    skos:notation "0841.257.838";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-11-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.204.531.074 a adms:Identifier;
+    skos:notation "2.204.531.074";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-11-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

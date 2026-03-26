@@ -1,0 +1,105 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5911>, <http://vocab.belgif.be/auth/nace2008/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/74105> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van decorateur-etalagisten"@nl, "Décoration d'étalage"@fr;
+    skos:prefLabel "74105".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/91011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Bibliotheken,mediatheken en ludotheken"@nl, "Gestion des bibliothèques, des médiathèques et des ludothèques"@fr;
+    skos:prefLabel "91011".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/91110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9111>, <http://vocab.belgif.be/auth/nace2025/9111>;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+<https://data.vlaanderen.be/id/onderneming/0864.872.883> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "22-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.872.883;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/91110>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2025/73110>, _:nace_2003_92113, _:nace_2003_92510, _:nace_2003_74872, _:nace_2003_74401, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/59113>, <http://vocab.belgif.be/auth/nace2008/91011>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/74105>, <http://vocab.belgif.be/auth/nace2008/82300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0864.872.883;
+    reorg:legalName "CADS INTERNATIONAL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.137.019.965>.
+<https://data.vlaanderen.be/id/vestiging/2.137.019.965> a org:Site;
+    dcterms:created "22-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.137.019.965.
+_:address_contact_0864.872.883 a locn:Address;
+    locn:thoroughfare "Chaussée de Tournai(R-C)"@nl, "Chaussée de Tournai(R-C)"@fr;
+    rdfs:label "52/1";
+    locn:postCode "7520";
+    adres:gemeentenaam "Tournai"@nl, "Tournai"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0864.872.883 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0864.872.883.
+_:nace_2003_74401 a skos:Concept;
+    skos:definition "Publiciteitsagentschappen"@nl, "Agences de publicité"@fr;
+    skos:prefLabel "74401".
+_:nace_2003_74872 a skos:Concept;
+    skos:definition "Organisatie van salons, tentoonstellingen en beurzen"@nl, "Organitation de salons, expositions et bourses"@fr;
+    skos:prefLabel "74872".
+_:nace_2003_92113 a skos:Concept;
+    skos:definition "Productie van overige films"@nl, "Production d'autres films"@fr;
+    skos:prefLabel "92113".
+_:nace_2003_92510 a skos:Concept;
+    skos:definition "Bibliotheken en openbare archieven"@nl, "Gestion des bibliothèques et archives publiques"@fr;
+    skos:prefLabel "92510".
+_:registration_company_0864.872.883 a adms:Identifier;
+    skos:notation "0864.872.883";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.137.019.965 a adms:Identifier;
+    skos:notation "2.137.019.965";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

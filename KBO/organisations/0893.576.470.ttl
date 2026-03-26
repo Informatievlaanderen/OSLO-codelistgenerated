@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4690>, <http://vocab.belgif.be/auth/nace2008/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4690>, <http://vocab.belgif.be/auth/nace2025/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0893.576.470> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0893.576.470;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46900>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47781>, _:nace_2003_51900, _:nace_2003_52630, _:nace_2003_74879, <http://vocab.belgif.be/auth/nace2008/47990>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/46900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0893.576.470;
+    reorg:legalName "Visbach, Remco";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.166.365.435>.
+<https://data.vlaanderen.be/id/vestiging/2.166.365.435> a org:Site;
+    dcterms:created "03-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.166.365.435.
+_:contact_0893.576.470 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "r.visbach@bnr-products.com";
+    schema:telephone "014 32 36 24";
+    <http://xmlns.com/foaf/0.1/homepage> "www.bnr-products.com".
+_:nace_2003_51900 a skos:Concept;
+    skos:definition "Overige groothandel"@nl, "Autres commerces de gros"@fr;
+    skos:prefLabel "51900".
+_:nace_2003_52630 a skos:Concept;
+    skos:definition "Overige detailhandel, niet in winkels"@nl, "Autres commerces de détail hors magasins"@fr;
+    skos:prefLabel "52630".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0893.576.470 a adms:Identifier;
+    skos:notation "0893.576.470";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.166.365.435 a adms:Identifier;
+    skos:notation "2.166.365.435";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

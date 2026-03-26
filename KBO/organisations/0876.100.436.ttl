@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/82910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8291>, <http://vocab.belgif.be/auth/nace2008/8291>;
+    skos:definition "Incasso- en kredietbureaus"@nl, "Activités des agences de recouvrement de factures et des sociétés d'information financière sur la clientèle"@fr;
+    skos:prefLabel "82910".
+<http://vocab.belgif.be/auth/nace2025/82910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8291>, <http://vocab.belgif.be/auth/nace2025/8291>;
+    skos:definition "Incasso- en kredietbureaus"@nl, "Activités des agences de recouvrement de factures et des sociétés d'information financière sur la clientèle"@fr;
+    skos:prefLabel "82910".
+<https://data.vlaanderen.be/id/onderneming/0876.100.436> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0876.100.436;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82910>, _:nace_2003_74873, <http://vocab.belgif.be/auth/nace2008/82910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0876.100.436;
+    reorg:legalName "Dumoulin, Didier";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.148.894.547>.
+<https://data.vlaanderen.be/id/vestiging/2.148.894.547> a org:Site;
+    dcterms:created "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.148.894.547.
+_:contact_0876.100.436 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "dumoulin.didier@skynet.be";
+    schema:telephone "0486/62.95.02".
+_:nace_2003_74873 a skos:Concept;
+    skos:definition "Incassobureaus en onderzoek naar de kredietwaardigheid"@nl, "Recouvrement de factures et évoluation de la solvabilité"@fr;
+    skos:prefLabel "74873".
+_:registration_company_0876.100.436 a adms:Identifier;
+    skos:notation "0876.100.436";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.148.894.547 a adms:Identifier;
+    skos:notation "2.148.894.547";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

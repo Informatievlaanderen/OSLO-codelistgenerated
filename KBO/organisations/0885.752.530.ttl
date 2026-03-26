@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1396>, <http://vocab.belgif.be/auth/nace2008/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2008/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4772>, <http://vocab.belgif.be/auth/nace2008/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1396>, <http://vocab.belgif.be/auth/nace2025/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2025/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<https://data.vlaanderen.be/id/onderneming/0885.752.530> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0885.752.530;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13960>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/47722>, _:nace_2003_74401, _:nace_2003_17540, _:nace_2003_52432, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/47722>, <http://vocab.belgif.be/auth/nace2008/13960>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Legast, François";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.158.014.725>, <https://data.vlaanderen.be/id/vestiging/2.277.655.218>.
+<https://data.vlaanderen.be/id/vestiging/2.158.014.725> a org:Site;
+    dcterms:created "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.158.014.725.
+<https://data.vlaanderen.be/id/vestiging/2.277.655.218> a org:Site;
+    dcterms:created "16-08-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.277.655.218.
+_:nace_2003_17540 a skos:Concept;
+    skos:definition "Vervaardiging van overige textielproducten, n.e.g."@nl, "Autres industries textiles n.d.a."@fr;
+    skos:prefLabel "17540".
+_:nace_2003_52432 a skos:Concept;
+    skos:definition "Detailhandel in lederwaren en reisartikelen"@nl, "Commerce de détail de maroquinerie et d'articles de voyage"@fr;
+    skos:prefLabel "52432".
+_:nace_2003_74401 a skos:Concept;
+    skos:definition "Publiciteitsagentschappen"@nl, "Agences de publicité"@fr;
+    skos:prefLabel "74401".
+_:registration_company_0885.752.530 a adms:Identifier;
+    skos:notation "0885.752.530";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.158.014.725 a adms:Identifier;
+    skos:notation "2.158.014.725";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.277.655.218 a adms:Identifier;
+    skos:notation "2.277.655.218";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

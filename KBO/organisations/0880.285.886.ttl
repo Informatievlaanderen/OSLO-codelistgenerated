@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2042>, <http://vocab.belgif.be/auth/nace2008/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2008/46450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4645>, <http://vocab.belgif.be/auth/nace2008/4645>;
+    skos:definition "Groothandel in parfumerieën en cosmetica"@nl, "Commerce de gros de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "46450".
+<http://vocab.belgif.be/auth/nace2008/71122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Landmeters"@nl, "Activités des géomètres"@fr;
+    skos:prefLabel "71122".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2008/74909> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Overige gespecialiseerde wetenschappelijke en technische activiteiten"@nl, "Autres activités spécialisées, scientifiques et techniques"@fr;
+    skos:prefLabel "74909".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2042>, <http://vocab.belgif.be/auth/nace2025/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2025/46450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4645>, <http://vocab.belgif.be/auth/nace2025/4645>;
+    skos:definition "Groothandel in parfumerieën en cosmetica"@nl, "Commerce de gros de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "46450".
+<http://vocab.belgif.be/auth/nace2025/71122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Landmeters"@nl, "Activités des géomètres"@fr;
+    skos:prefLabel "71122".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/74999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Overige activiteiten van vrije beroepen en andere wetenschappelijke en technische activiteiten, neg"@nl, "Autres activités des professions libérales et autres activités scientifiques et techniques, nca"@fr;
+    skos:prefLabel "74999".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0880.285.886> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.285.886;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20420>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/74999>, <http://vocab.belgif.be/auth/nace2025/46450>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/71122>, _:nace_2003_74879, _:nace_2003_24520, _:nace_2003_51450, <http://vocab.belgif.be/auth/nace2008/46450>, <http://vocab.belgif.be/auth/nace2008/74909>, <http://vocab.belgif.be/auth/nace2008/20420>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/71209>, <http://vocab.belgif.be/auth/nace2008/71122>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0880.285.886;
+    reorg:legalName "AEROCARE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.154.749.882>.
+<https://data.vlaanderen.be/id/vestiging/2.154.749.882> a org:Site;
+    dcterms:created "29-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.154.749.882.
+_:address_contact_0880.285.886 a locn:Address;
+    locn:thoroughfare "Louizalaan"@nl, "Avenue Louise"@fr;
+    rdfs:label "143";
+    adres:busnummer "4";
+    locn:postCode "1050";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0880.285.886 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0880.285.886.
+_:nace_2003_24520 a skos:Concept;
+    skos:definition "Vervaardiging van parfums en cosmetische artikelen"@nl, "Fabrication de parfums et de produits pour la toilette"@fr;
+    skos:prefLabel "24520".
+_:nace_2003_51450 a skos:Concept;
+    skos:definition "Groothandel in parfumerieën en cosmetica"@nl, "Commerce de gros de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "51450".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0880.285.886 a adms:Identifier;
+    skos:notation "0880.285.886";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.154.749.882 a adms:Identifier;
+    skos:notation "2.154.749.882";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

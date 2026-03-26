@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/52220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5222>, <http://vocab.belgif.be/auth/nace2008/5222>;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220".
+<http://vocab.belgif.be/auth/nace2008/73200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7320>, <http://vocab.belgif.be/auth/nace2008/7320>;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2025/52220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5222>, <http://vocab.belgif.be/auth/nace2025/5222>;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220".
+<http://vocab.belgif.be/auth/nace2025/73200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7320>, <http://vocab.belgif.be/auth/nace2025/7320>;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0862.374.540> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0862.374.540;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/73200>, <http://vocab.belgif.be/auth/nace2025/52220>, _:nace_2003_74855, _:nace_2003_74131, _:nace_2003_63220, <http://vocab.belgif.be/auth/nace2008/52220>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/73200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0862.374.540;
+    reorg:legalName "GDM-Guy De Maertelaere"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.144.452.838>.
+<https://data.vlaanderen.be/id/vestiging/2.144.452.838> a org:Site;
+    dcterms:created "31-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.144.452.838.
+_:address_contact_0862.374.540 a locn:Address;
+    locn:thoroughfare "Prikstraat(HEU)"@nl, "Prikstraat(HEU)"@fr;
+    rdfs:label "6";
+    locn:postCode "9070";
+    adres:gemeentenaam "Destelbergen"@nl, "Destelbergen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0862.374.540 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0862.374.540.
+_:nace_2003_63220 a skos:Concept;
+    skos:definition "Overige ondersteunende activiteiten i.v.m. het vervoer over water"@nl, "Services annexes des transports par eau"@fr;
+    skos:prefLabel "63220".
+_:nace_2003_74131 a skos:Concept;
+    skos:definition "Marktonderzoekbureaus"@nl, "Bureau d'étude de marché"@fr;
+    skos:prefLabel "74131".
+_:nace_2003_74855 a skos:Concept;
+    skos:definition "Overige activiteiten i .v.m. administratie, n.e.g."@nl, "Autres activités d'administration n.d.a."@fr;
+    skos:prefLabel "74855".
+_:registration_company_0862.374.540 a adms:Identifier;
+    skos:notation "0862.374.540";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.144.452.838 a adms:Identifier;
+    skos:notation "2.144.452.838";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

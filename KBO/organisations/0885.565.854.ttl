@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919";
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>.
+<http://vocab.belgif.be/auth/nace2008/52220> a skos:Concept;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220";
+    skos:broader <http://data.europa.eu/ux2/nace2/5222>, <http://vocab.belgif.be/auth/nace2008/5222>.
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290";
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>.
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121";
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>.
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>.
+<http://vocab.belgif.be/auth/nace2025/52220> a skos:Concept;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5222>, <http://vocab.belgif.be/auth/nace2025/5222>.
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>.
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>.
+<https://data.vlaanderen.be/id/onderneming/0885.565.854> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "11-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0885.565.854;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_63406, <http://vocab.belgif.be/auth/nace2025/52250>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2025/52220>, <http://vocab.belgif.be/auth/nace2025/71121>, _:nace_2003_45242, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/52220>, <http://vocab.belgif.be/auth/nace2008/42919>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0885.565.854;
+    reorg:legalName "Deep C Holding"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.945.223>.
+<https://data.vlaanderen.be/id/vestiging/2.159.945.223> a org:Site;
+    dcterms:created "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.945.223.
+_:address_contact_0885.565.854 a locn:Address;
+    locn:thoroughfare "Borsbeeksebrug"@nl, "Borsbeeksebrug"@fr;
+    rdfs:label "34";
+    adres:busnummer "1";
+    locn:postCode "2600";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0885.565.854 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0885.565.854.
+_:nace_2003_45242 a skos:Concept;
+    skos:definition "Overige waterbouw"@nl, "Autres travaux maritimes et fluviaux"@fr;
+    skos:prefLabel "45242".
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:registration_company_0885.565.854 a adms:Identifier;
+    skos:notation "0885.565.854";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.945.223 a adms:Identifier;
+    skos:notation "2.159.945.223";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

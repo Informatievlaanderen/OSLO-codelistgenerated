@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4616>, <http://vocab.belgif.be/auth/nace2008/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2008/47512> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in huishoudtextiel en beddengoed in gespecialiseerde winkels"@nl, "Commerce de détail de linge de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47512".
+<http://vocab.belgif.be/auth/nace2008/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4616>, <http://vocab.belgif.be/auth/nace2025/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2025/47512> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in huishoudtextiel en beddengoed in gespecialiseerde winkels"@nl, "Commerce de détail de linge de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47512".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<https://data.vlaanderen.be/id/onderneming/0866.943.834> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0866.943.834;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46160>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/47512>, <http://vocab.belgif.be/auth/nace2025/47716>, _:nace_2003_51150, _:nace_2003_52421, _:nace_2003_52330, _:nace_2003_51160, _:nace_2003_52410, <http://vocab.belgif.be/auth/nace2008/47512>, <http://vocab.belgif.be/auth/nace2008/47716>, <http://vocab.belgif.be/auth/nace2008/47750>, <http://vocab.belgif.be/auth/nace2008/46160>, <http://vocab.belgif.be/auth/nace2008/46150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Lens, Annika";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.138.898.401>.
+<https://data.vlaanderen.be/id/vestiging/2.138.898.401> a org:Site;
+    dcterms:created "26-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.138.898.401.
+_:nace_2003_51150 a skos:Concept;
+    skos:definition "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr, "Handelsbemiddeling in meubels, huishoudelijke artikelen en ijzerwaren"@nl;
+    skos:prefLabel "51150".
+_:nace_2003_51160 a skos:Concept;
+    skos:definition "Handelsbemiddeling in textiel, kleding, schoeisel en artikelen van leer"@nl, "Intermédiaires du commerce en textiles, habillement, chaussures et articles en cuir"@fr;
+    skos:prefLabel "51160".
+_:nace_2003_52330 a skos:Concept;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen"@nl, "Commerce de détail de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "52330".
+_:nace_2003_52410 a skos:Concept;
+    skos:definition "Detailhandel in textiel"@nl, "Commerce de détail de textiles"@fr;
+    skos:prefLabel "52410".
+_:nace_2003_52421 a skos:Concept;
+    skos:definition "Detailhandel in bovenkleding voor heren, dames en kinderen (algemeen assortiment)"@nl, "Commerce de détail de vêtements pour hommes, dames et enfants (assortiment général)"@fr;
+    skos:prefLabel "52421".
+_:registration_company_0866.943.834 a adms:Identifier;
+    skos:notation "0866.943.834";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.138.898.401 a adms:Identifier;
+    skos:notation "2.138.898.401";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

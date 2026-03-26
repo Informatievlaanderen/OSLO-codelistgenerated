@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>.
+<http://vocab.belgif.be/auth/nace2008/49420> a skos:Concept;
+    skos:definition "Verhuisbedrijven"@nl, "Services de déménagement"@fr;
+    skos:prefLabel "49420";
+    skos:broader <http://data.europa.eu/ux2/nace2/4942>, <http://vocab.belgif.be/auth/nace2008/4942>.
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290";
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>.
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990";
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>.
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>.
+<http://vocab.belgif.be/auth/nace2025/49420> a skos:Concept;
+    skos:definition "Verhuisbedrijven"@nl, "Services de déménagement"@fr;
+    skos:prefLabel "49420";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4942>, <http://vocab.belgif.be/auth/nace2025/4942>.
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>.
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>.
+<https://data.vlaanderen.be/id/onderneming/0881.515.907> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.515.907;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_60242, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/49420>, <http://vocab.belgif.be/auth/nace2025/82990>, _:nace_2003_60243, _:nace_2003_60241, _:nace_2003_74879, _:nace_2003_63405, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/49420>, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0881.515.907;
+    reorg:legalName "VANLUYTEN P."@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.154.638.333>.
+<https://data.vlaanderen.be/id/vestiging/2.154.638.333> a org:Site;
+    dcterms:created "22-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.154.638.333.
+_:address_contact_0881.515.907 a locn:Address;
+    locn:thoroughfare "Rozenstraat"@nl, "Rozenstraat"@fr;
+    rdfs:label "14";
+    locn:postCode "3545";
+    adres:gemeentenaam "Halen"@nl, "Halen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.515.907 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0881.515.907.
+_:nace_2003_60241 a skos:Concept;
+    skos:definition "Verhuisdiensten"@nl, "Déménagement"@fr;
+    skos:prefLabel "60241".
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:nace_2003_60243 a skos:Concept;
+    skos:definition "Verhuur van vrachtwagens met bestuurder"@nl, "Location de camions avec conducteur"@fr;
+    skos:prefLabel "60243".
+_:nace_2003_63405 a skos:Concept;
+    skos:definition "Vervoersbemiddeling"@nl, "Intermédiaires du transport"@fr;
+    skos:prefLabel "63405".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0881.515.907 a adms:Identifier;
+    skos:notation "0881.515.907";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.154.638.333 a adms:Identifier;
+    skos:notation "2.154.638.333";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

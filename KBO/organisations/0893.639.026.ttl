@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/23610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2361>, <http://vocab.belgif.be/auth/nace2008/2361>;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "23610".
+<http://vocab.belgif.be/auth/nace2008/25501> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2550>, <http://vocab.belgif.be/auth/nace2008/2550>;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "25501".
+<http://vocab.belgif.be/auth/nace2008/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4663>, <http://vocab.belgif.be/auth/nace2008/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/23610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2361>, <http://vocab.belgif.be/auth/nace2025/2361>;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "23610".
+<http://vocab.belgif.be/auth/nace2025/25401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2540>, <http://vocab.belgif.be/auth/nace2025/2540>;
+    skos:definition "Smeden van metaal"@nl, "Forgeage de métal"@fr;
+    skos:prefLabel "25401".
+<http://vocab.belgif.be/auth/nace2025/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4663>, <http://vocab.belgif.be/auth/nace2025/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0893.639.026> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0893.639.026;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/23610>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2025/46630>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/25401>, _:nace_2003_52740, _:nace_2003_51820, _:nace_2003_26610, _:nace_2003_60242, _:nace_2003_71320, _:nace_2003_28401, <http://vocab.belgif.be/auth/nace2008/95290>, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/46630>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/25501>, <http://vocab.belgif.be/auth/nace2008/23610>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0893.639.026;
+    reorg:legalName "Kristal"@nl.
+_:address_contact_0893.639.026 a locn:Address;
+    locn:thoroughfare "Hoevenstraat"@nl, "Hoevenstraat"@fr;
+    rdfs:label "175";
+    locn:postCode "3900";
+    adres:gemeentenaam "Pelt"@nl, "Pelt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0893.639.026 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "011/54.24.13";
+    schema:faxNumber "011/54.68.02";
+    locn:address _:address_contact_0893.639.026.
+_:nace_2003_26610 a skos:Concept;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "26610".
+_:nace_2003_28401 a skos:Concept;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "28401".
+_:nace_2003_51820 a skos:Concept;
+    skos:definition "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr, "Groothandel in machines voor mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl;
+    skos:prefLabel "51820".
+_:nace_2003_52740 a skos:Concept;
+    skos:definition "Overige reparaties, n.e.g."@nl, "Autres réparations n.d.a."@fr;
+    skos:prefLabel "52740".
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:nace_2003_71320 a skos:Concept;
+    skos:definition "Verhuur van machines en installaties voor de bouwnijverheid"@nl, "Location de machines et équipements pour la construction"@fr;
+    skos:prefLabel "71320".
+_:registration_company_0893.639.026 a adms:Identifier;
+    skos:notation "0893.639.026";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2620>, <http://vocab.belgif.be/auth/nace2008/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090".
+<http://vocab.belgif.be/auth/nace2008/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7733>, <http://vocab.belgif.be/auth/nace2008/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2620>, <http://vocab.belgif.be/auth/nace2025/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7733>, <http://vocab.belgif.be/auth/nace2025/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/0883.216.969> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "29-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.216.969;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77330>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/26200>, <http://vocab.belgif.be/auth/nace2025/62200>, _:nace_2003_72600, _:nace_2003_72500, _:nace_2003_72100, _:nace_2003_30020, _:nace_2003_71330, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/77330>, <http://vocab.belgif.be/auth/nace2008/26200>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Botterman, Bram";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.802.927>.
+<https://data.vlaanderen.be/id/vestiging/2.155.802.927> a org:Site;
+    dcterms:created "29-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.802.927.
+_:nace_2003_30020 a skos:Concept;
+    skos:definition "Vervaardiging van computers en andere apparatuur voor de verwerking van informatie"@nl, "Fabrication d'ordinateurs et d'autres équipements informatiques"@fr;
+    skos:prefLabel "30020".
+_:nace_2003_71330 a skos:Concept;
+    skos:definition "Verhuur van kantoormachines en computers"@nl, "Location de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "71330".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:nace_2003_72500 a skos:Concept;
+    skos:definition "Onderhoud en reparatie van computers en van boekhoud- en overige kantoormachines"@nl, "Entretien et réparation de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "72500".
+_:nace_2003_72600 a skos:Concept;
+    skos:definition "Overige activiteiten in verband met computers"@nl, "Autres activités rattachées à l'informatique"@fr;
+    skos:prefLabel "72600".
+_:registration_company_0883.216.969 a adms:Identifier;
+    skos:notation "0883.216.969";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.802.927 a adms:Identifier;
+    skos:notation "2.155.802.927";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-08-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

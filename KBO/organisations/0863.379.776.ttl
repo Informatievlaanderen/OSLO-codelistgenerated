@@ -1,0 +1,110 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/36000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3600>, <http://vocab.belgif.be/auth/nace2008/3600>;
+    skos:definition "Winning, behandeling en distributie van water"@nl, "Captage, traitement et distribution d'eau"@fr;
+    skos:prefLabel "36000".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/36000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3600>, <http://vocab.belgif.be/auth/nace2025/3600>;
+    skos:definition "Winning, behandeling en distributie van water"@nl, "Captage, traitement et distribution d'eau"@fr;
+    skos:prefLabel "36000".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<https://data.vlaanderen.be/id/onderneming/0863.379.776> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0863.379.776;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/71121>, _:nace_2003_74203, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/36000>, _:nace_2003_41000, _:nace_2003_45112, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/36000>, <http://vocab.belgif.be/auth/nace2008/43120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0863.379.776;
+    reorg:legalName "ENVIROSOIL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.137.337.392>, <https://data.vlaanderen.be/id/vestiging/2.168.712.538>, <https://data.vlaanderen.be/id/vestiging/2.255.755.685>, <https://data.vlaanderen.be/id/vestiging/2.255.756.576>, <https://data.vlaanderen.be/id/vestiging/2.273.832.527>.
+<https://data.vlaanderen.be/id/vestiging/2.137.337.392> a org:Site;
+    dcterms:created "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.137.337.392.
+<https://data.vlaanderen.be/id/vestiging/2.168.712.538> a org:Site;
+    dcterms:created "14-02-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.168.712.538.
+<https://data.vlaanderen.be/id/vestiging/2.255.755.685> a org:Site;
+    dcterms:created "01-01-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.255.755.685.
+<https://data.vlaanderen.be/id/vestiging/2.255.756.576> a org:Site;
+    dcterms:created "01-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.255.756.576.
+<https://data.vlaanderen.be/id/vestiging/2.273.832.527> a org:Site;
+    dcterms:created "15-03-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.273.832.527.
+_:address_contact_0863.379.776 a locn:Address;
+    locn:thoroughfare "Siemenslaan"@nl, "Siemenslaan"@fr;
+    rdfs:label "13";
+    locn:postCode "8020";
+    adres:gemeentenaam "Oostkamp"@nl, "Oostkamp"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0863.379.776 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0863.379.776.
+_:nace_2003_41000 a skos:Concept;
+    skos:definition "Winning, zuivering en distributie van water"@nl, "Captage, épuration et distribution d'eau"@fr;
+    skos:prefLabel "41000".
+_:nace_2003_45112 a skos:Concept;
+    skos:definition "Grondverzet"@nl, "Terrassements"@fr;
+    skos:prefLabel "45112".
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:registration_company_0863.379.776 a adms:Identifier;
+    skos:notation "0863.379.776";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.137.337.392 a adms:Identifier;
+    skos:notation "2.137.337.392";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.168.712.538 a adms:Identifier;
+    skos:notation "2.168.712.538";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.255.755.685 a adms:Identifier;
+    skos:notation "2.255.755.685";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.255.756.576 a adms:Identifier;
+    skos:notation "2.255.756.576";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.273.832.527 a adms:Identifier;
+    skos:notation "2.273.832.527";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

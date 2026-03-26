@@ -1,0 +1,285 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/14120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1412>, <http://vocab.belgif.be/auth/nace2008/1412>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14120".
+<http://vocab.belgif.be/auth/nace2008/14140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1414>, <http://vocab.belgif.be/auth/nace2008/1414>;
+    skos:definition "Vervaardiging van onderkleding"@nl, "Fabrication de vêtements de dessous"@fr;
+    skos:prefLabel "14140".
+<http://vocab.belgif.be/auth/nace2008/14200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1420>, <http://vocab.belgif.be/auth/nace2008/1420>;
+    skos:definition "Vervaardiging van artikelen van bont"@nl, "Fabrication d'articles en fourrure"@fr;
+    skos:prefLabel "14200".
+<http://vocab.belgif.be/auth/nace2008/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2008/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3240>, <http://vocab.belgif.be/auth/nace2008/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2008/41101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "41101".
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2008/46421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4642>, <http://vocab.belgif.be/auth/nace2008/4642>;
+    skos:definition "Groothandel in werkkleding"@nl, "Commerce de gros de vêtements de travail"@fr;
+    skos:prefLabel "46421".
+<http://vocab.belgif.be/auth/nace2008/46422> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4642>, <http://vocab.belgif.be/auth/nace2008/4642>;
+    skos:definition "Groothandel in onderkleding"@nl, "Commerce de gros de sous-vêtements"@fr;
+    skos:prefLabel "46422".
+<http://vocab.belgif.be/auth/nace2008/46471> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4647>, <http://vocab.belgif.be/auth/nace2008/4647>;
+    skos:definition "Groothandel in huismeubilair"@nl, "Commerce de gros de mobilier domestique"@fr;
+    skos:prefLabel "46471".
+<http://vocab.belgif.be/auth/nace2008/46480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4648>, <http://vocab.belgif.be/auth/nace2008/4648>;
+    skos:definition "Groothandel in uurwerken en sieraden"@nl, "Commerce de gros d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "46480".
+<http://vocab.belgif.be/auth/nace2008/46497> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in spellen en speelgoed"@nl, "Commerce de gros de jeux et de jouets"@fr;
+    skos:prefLabel "46497".
+<http://vocab.belgif.be/auth/nace2008/47530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4753>, <http://vocab.belgif.be/auth/nace2008/4753>;
+    skos:definition "Detailhandel in tapijten en andere vloerbedekking en wandbekleding in  gespecialiseerde winkels"@nl, "Commerce de détail de tapis, de moquettes et de revêtements de murs et de sols en magasin spécialisé"@fr;
+    skos:prefLabel "47530".
+<http://vocab.belgif.be/auth/nace2008/47650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4765>, <http://vocab.belgif.be/auth/nace2008/4765>;
+    skos:definition "Detailhandel in spellen en speelgoed in gespecialiseerde winkels"@nl, "Commerce de détail de jeux et de jouets en magasin spécialisé"@fr;
+    skos:prefLabel "47650".
+<http://vocab.belgif.be/auth/nace2008/47711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in damesbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour dame en magasin spécialisé"@fr;
+    skos:prefLabel "47711".
+<http://vocab.belgif.be/auth/nace2008/47712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in herenbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour homme en magasin spécialisé"@fr;
+    skos:prefLabel "47712".
+<http://vocab.belgif.be/auth/nace2008/47713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in baby- en kinderbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour bébé et enfant en magasin spécialisé"@fr;
+    skos:prefLabel "47713".
+<http://vocab.belgif.be/auth/nace2008/47714> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in onderkleding, lingerie en strand- en badkleding in gespecialiseerde winkels"@nl, "Commerce de détail de sous-vêtements, de lingerie et de vêtements de bain en magasin spécialisé"@fr;
+    skos:prefLabel "47714".
+<http://vocab.belgif.be/auth/nace2008/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<http://vocab.belgif.be/auth/nace2008/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2008/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4772>, <http://vocab.belgif.be/auth/nace2008/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<http://vocab.belgif.be/auth/nace2008/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4772>, <http://vocab.belgif.be/auth/nace2008/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<http://vocab.belgif.be/auth/nace2008/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4777>, <http://vocab.belgif.be/auth/nace2008/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2008/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/14220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1422>, <http://vocab.belgif.be/auth/nace2025/1422>;
+    skos:definition "Winning van klei en kaolien"@nl, "Extraction d'argiles et de kaolin"@fr;
+    skos:prefLabel "14220".
+<http://vocab.belgif.be/auth/nace2025/14230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1423>, <http://vocab.belgif.be/auth/nace2025/1423>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14230".
+<http://vocab.belgif.be/auth/nace2025/14240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1424>, <http://vocab.belgif.be/auth/nace2025/1424>;
+    skos:definition "Vervaardiging van kleding van leer en van bont"@nl, "Fabrication de vêtements en cuir et en fourrure"@fr;
+    skos:prefLabel "14240".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3240>, <http://vocab.belgif.be/auth/nace2025/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2025/46421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in werkkleding"@nl, "Commerce de gros de vêtements de travail"@fr;
+    skos:prefLabel "46421".
+<http://vocab.belgif.be/auth/nace2025/46422> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in onderkleding"@nl, "Commerce de gros de sous-vêtements"@fr;
+    skos:prefLabel "46422".
+<http://vocab.belgif.be/auth/nace2025/46471> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4647>, <http://vocab.belgif.be/auth/nace2025/4647>;
+    skos:definition "Groothandel in huismeubilair"@nl, "Commerce de gros de mobilier domestique"@fr;
+    skos:prefLabel "46471".
+<http://vocab.belgif.be/auth/nace2025/46480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4648>, <http://vocab.belgif.be/auth/nace2025/4648>;
+    skos:definition "Groothandel in uurwerken en sieraden"@nl, "Commerce de gros d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "46480".
+<http://vocab.belgif.be/auth/nace2025/46497> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in spellen en speelgoed"@nl, "Commerce de gros de jeux et de jouets"@fr;
+    skos:prefLabel "46497".
+<http://vocab.belgif.be/auth/nace2025/47530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4753>, <http://vocab.belgif.be/auth/nace2025/4753>;
+    skos:definition "Detailhandel in tapijten en andere vloerbedekking en wandbekleding in  gespecialiseerde winkels"@nl, "Commerce de détail de tapis, de moquettes et de revêtements de murs et de sols en magasin spécialisé"@fr;
+    skos:prefLabel "47530".
+<http://vocab.belgif.be/auth/nace2025/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4764>, <http://vocab.belgif.be/auth/nace2025/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/47711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in damesbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour dame en magasin spécialisé"@fr;
+    skos:prefLabel "47711".
+<http://vocab.belgif.be/auth/nace2025/47712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in herenbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour homme en magasin spécialisé"@fr;
+    skos:prefLabel "47712".
+<http://vocab.belgif.be/auth/nace2025/47713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in baby- en kinderbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour bébé et enfant en magasin spécialisé"@fr;
+    skos:prefLabel "47713".
+<http://vocab.belgif.be/auth/nace2025/47714> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in onderkleding, lingerie en strand- en badkleding in gespecialiseerde winkels"@nl, "Commerce de détail de sous-vêtements, de lingerie et de vêtements de bain en magasin spécialisé"@fr;
+    skos:prefLabel "47714".
+<http://vocab.belgif.be/auth/nace2025/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<http://vocab.belgif.be/auth/nace2025/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<http://vocab.belgif.be/auth/nace2025/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4777>, <http://vocab.belgif.be/auth/nace2025/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0837.946.772> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "14-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0837.946.772;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46480>, <http://vocab.belgif.be/auth/nace2025/46471>, <http://vocab.belgif.be/auth/nace2025/47530>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/14230>, <http://vocab.belgif.be/auth/nace2025/47721>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/46497>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/14220>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/47770>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/47640>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/47715>, <http://vocab.belgif.be/auth/nace2025/46421>, <http://vocab.belgif.be/auth/nace2025/14240>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47722>, <http://vocab.belgif.be/auth/nace2025/46422>, <http://vocab.belgif.be/auth/nace2025/47713>, <http://vocab.belgif.be/auth/nace2025/47714>, <http://vocab.belgif.be/auth/nace2025/47712>, <http://vocab.belgif.be/auth/nace2025/47711>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2025/32400>, <http://vocab.belgif.be/auth/nace2008/32400>, <http://vocab.belgif.be/auth/nace2008/47530>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/14120>, <http://vocab.belgif.be/auth/nace2008/47650>, <http://vocab.belgif.be/auth/nace2008/95290>, <http://vocab.belgif.be/auth/nace2008/46422>, <http://vocab.belgif.be/auth/nace2008/47789>, <http://vocab.belgif.be/auth/nace2008/46421>, <http://vocab.belgif.be/auth/nace2008/41101>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/47770>, <http://vocab.belgif.be/auth/nace2008/41102>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/14140>, <http://vocab.belgif.be/auth/nace2008/47714>, <http://vocab.belgif.be/auth/nace2008/47713>, <http://vocab.belgif.be/auth/nace2008/47715>, <http://vocab.belgif.be/auth/nace2008/47716>, <http://vocab.belgif.be/auth/nace2008/47712>, <http://vocab.belgif.be/auth/nace2008/14200>, <http://vocab.belgif.be/auth/nace2008/46497>, <http://vocab.belgif.be/auth/nace2008/47711>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/46471>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/46480>, <http://vocab.belgif.be/auth/nace2008/32123>, <http://vocab.belgif.be/auth/nace2008/47722>, <http://vocab.belgif.be/auth/nace2008/47721>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0837.946.772;
+    reorg:legalName "DKL-PROJECTS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.201.368.775>.
+<https://data.vlaanderen.be/id/vestiging/2.201.368.775> a org:Site;
+    dcterms:created "18-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.201.368.775.
+_:address_contact_0837.946.772 a locn:Address;
+    locn:thoroughfare "Sint-Jansstraat"@nl, "Sint-Jansstraat"@fr;
+    rdfs:label "12";
+    locn:postCode "8000";
+    adres:gemeentenaam "Brugge"@nl, "Brugge"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0837.946.772 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0837.946.772.
+_:registration_company_0837.946.772 a adms:Identifier;
+    skos:notation "0837.946.772";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.201.368.775 a adms:Identifier;
+    skos:notation "2.201.368.775";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-07-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

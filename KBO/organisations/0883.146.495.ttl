@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0883.146.495> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.146.495;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/43221>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/43211>, _:nace_2003_45310, _:nace_2003_45332, _:nace_2003_52740, _:nace_2003_45220, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/95290>, <http://vocab.belgif.be/auth/nace2008/43221>, <http://vocab.belgif.be/auth/nace2008/43910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Volders, Freddy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.725.525>.
+<https://data.vlaanderen.be/id/vestiging/2.155.725.525> a org:Site;
+    dcterms:created "01-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.725.525.
+_:nace_2003_45220 a skos:Concept;
+    skos:definition "Dakbedekking en bouw van dakconstructies"@nl, "Réalisation de charpentes et de couvertures"@fr;
+    skos:prefLabel "45220".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_45332 a skos:Concept;
+    skos:definition "Overig loodgieterswerk"@nl, "Autres travaux de plomberie"@fr;
+    skos:prefLabel "45332".
+_:nace_2003_52740 a skos:Concept;
+    skos:definition "Overige reparaties, n.e.g."@nl, "Autres réparations n.d.a."@fr;
+    skos:prefLabel "52740".
+_:registration_company_0883.146.495 a adms:Identifier;
+    skos:notation "0883.146.495";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.725.525 a adms:Identifier;
+    skos:notation "2.155.725.525";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

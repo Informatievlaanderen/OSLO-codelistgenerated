@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3250>, <http://vocab.belgif.be/auth/nace2008/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2008/47740> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4774>, <http://vocab.belgif.be/auth/nace2008/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles médicaux et orthopédiques en magasin spécialisé"@fr;
+    skos:prefLabel "47740".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3250>, <http://vocab.belgif.be/auth/nace2025/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2025/47741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen, muv corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail d'articles médicaux et orthopédiques, à l'exception de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47741".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/0892.141.167> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "19-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0892.141.167;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/29320>, <http://vocab.belgif.be/auth/nace2025/32500>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/47741>, _:nace_2003_80424, _:nace_2003_34300, _:nace_2003_50302, _:nace_2003_33102, _:nace_2003_52320, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/29320>, <http://vocab.belgif.be/auth/nace2008/47740>, <http://vocab.belgif.be/auth/nace2008/32500>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0892.141.167;
+    reorg:legalName "ALLIAGES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.165.723.057>.
+<https://data.vlaanderen.be/id/vestiging/2.165.723.057> a org:Site;
+    dcterms:created "18-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.165.723.057.
+_:address_contact_0892.141.167 a locn:Address;
+    locn:thoroughfare "Route de Grihanster"@nl, "Route de Grihanster"@fr;
+    rdfs:label "11";
+    locn:postCode "4877";
+    adres:gemeentenaam "Olne"@nl, "Olne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0892.141.167 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0892.141.167.
+_:nace_2003_33102 a skos:Concept;
+    skos:definition "Vervaardiging van niet-elektrische apparaten en instrumenten voor de geneeskunde, de tandheelkunde en de veeartsenijkunde"@nl, "Fabrication d'appareils non-électriques pour la médecine, l'art dentaire et l'art vétérinaire"@fr;
+    skos:prefLabel "33102".
+_:nace_2003_34300 a skos:Concept;
+    skos:definition "Vervaardiging van onderdelen en accessoires voor motorvoertuigen en motoren daarvan"@nl, "Fabrication de parties et accessoires pour les véhicules à moteur et pour leurs moteurs"@fr;
+    skos:prefLabel "34300".
+_:nace_2003_50302 a skos:Concept;
+    skos:definition "Kleinhandel in onderdelen en accessoires van auto's"@nl, "Commerce de détail de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50302".
+_:nace_2003_52320 a skos:Concept;
+    skos:definition "Detailhandel in medische en orthopedische artikelen"@nl, "Commerce de détail d'articles médicaux et orthopédiques"@fr;
+    skos:prefLabel "52320".
+_:nace_2003_80424 a skos:Concept;
+    skos:definition "Overige vormen van onderwijs, n.e.g."@nl, "Autres formes d'enseignement n.d.a."@fr;
+    skos:prefLabel "80424".
+_:registration_company_0892.141.167 a adms:Identifier;
+    skos:notation "0892.141.167";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.165.723.057 a adms:Identifier;
+    skos:notation "2.165.723.057";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

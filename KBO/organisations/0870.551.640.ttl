@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2025/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<http://vocab.belgif.be/auth/nace2025/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<https://data.vlaanderen.be/id/onderneming/0870.551.640> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-12-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0870.551.640;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47722>, <http://vocab.belgif.be/auth/nace2025/47715>, _:nace_2003_52630, <http://vocab.belgif.be/auth/nace2008/47990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Goverde, Annick";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.144.015.942>.
+<https://data.vlaanderen.be/id/vestiging/2.144.015.942> a org:Site;
+    dcterms:created "14-12-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.144.015.942.
+_:nace_2003_52630 a skos:Concept;
+    skos:definition "Overige detailhandel, niet in winkels"@nl, "Autres commerces de détail hors magasins"@fr;
+    skos:prefLabel "52630".
+_:registration_company_0870.551.640 a adms:Identifier;
+    skos:notation "0870.551.640";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-12-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.144.015.942 a adms:Identifier;
+    skos:notation "2.144.015.942";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-12-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

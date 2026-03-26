@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<https://data.vlaanderen.be/id/onderneming/0887.749.542> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "07-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0887.749.542;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/46720>, _:nace_2003_50301, _:nace_2003_72100, <http://vocab.belgif.be/auth/nace2008/45310>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0887.749.542;
+    reorg:legalName "Milart"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.161.199.788>, <https://data.vlaanderen.be/id/vestiging/2.249.812.654>.
+<https://data.vlaanderen.be/id/vestiging/2.161.199.788> a org:Site;
+    dcterms:created "06-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.161.199.788.
+<https://data.vlaanderen.be/id/vestiging/2.249.812.654> a org:Site;
+    dcterms:created "01-01-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.249.812.654.
+_:address_contact_0887.749.542 a locn:Address;
+    locn:thoroughfare "Neerrechemstraat(HUS)"@nl, "Neerrechemstraat(HUS)"@fr;
+    rdfs:label "30";
+    locn:postCode "9770";
+    adres:gemeentenaam "Kruisem"@nl, "Kruisem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0887.749.542 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0887.749.542.
+_:nace_2003_50301 a skos:Concept;
+    skos:definition "Groothandel in onderdelen en accessoires van auto's"@nl, "Commerce de gros de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50301".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:registration_company_0887.749.542 a adms:Identifier;
+    skos:notation "0887.749.542";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.161.199.788 a adms:Identifier;
+    skos:notation "2.161.199.788";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.249.812.654 a adms:Identifier;
+    skos:notation "2.249.812.654";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

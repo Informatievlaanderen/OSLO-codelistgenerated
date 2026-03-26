@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/28250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2825>, <http://vocab.belgif.be/auth/nace2008/2825>;
+    skos:definition "Vervaardiging van machines en apparaten voor de koeltechniek en de  klimaatregeling, voor niet-huishoudelijk gebruik"@nl, "Fabrication d'équipements aérauliques et frigorifiques industriels"@fr;
+    skos:prefLabel "28250".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/28250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2825>, <http://vocab.belgif.be/auth/nace2025/2825>;
+    skos:definition "Vervaardiging van machines en apparaten voor de koeltechniek en de  klimaatregeling, voor niet-huishoudelijk gebruik"@nl, "Fabrication d'équipements aérauliques et frigorifiques industriels"@fr;
+    skos:prefLabel "28250".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<https://data.vlaanderen.be/id/onderneming/0885.816.767> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0885.816.767;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/28250>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/47521>, _:nace_2003_45320, _:nace_2003_29230, _:nace_2003_45310, _:nace_2003_52461, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/28250>, <http://vocab.belgif.be/auth/nace2008/43291>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0885.816.767;
+    reorg:legalName "ELEKTRICITEITSWERKEN NEVEN"@nl, "E.W.N."@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.158.390.748>.
+<https://data.vlaanderen.be/id/vestiging/2.158.390.748> a org:Site;
+    dcterms:created "20-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.158.390.748.
+_:address_contact_0885.816.767 a locn:Address;
+    locn:thoroughfare "Motstraat"@nl, "Motstraat"@fr;
+    rdfs:label "92";
+    locn:postCode "3570";
+    adres:gemeentenaam "Alken"@nl, "Alken"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0885.816.767 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0885.816.767.
+_:nace_2003_29230 a skos:Concept;
+    skos:definition "Fabrication d'équipements aérauliques et frigorifiques industriels"@fr, "Vervaardiging van uitrusting voor de koeltechniek en klimaatregeling, voor niet-huishoudelijk gebruik"@nl;
+    skos:prefLabel "29230".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_45320 a skos:Concept;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+_:nace_2003_52461 a skos:Concept;
+    skos:definition "Detailhandel in ijzerwaren, verf, bouwmaterialen (inclusief doe-het-zelfzaken) met een verkoopsoppervlakte van minder dan 400 m2"@nl, "Commerce de détail de quincaillerie, peintures, matériaux de construction et verre (y compris les bricocenters) avec une surface de vente jusqu'à 400 m2."@fr;
+    skos:prefLabel "52461".
+_:registration_company_0885.816.767 a adms:Identifier;
+    skos:notation "0885.816.767";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.158.390.748 a adms:Identifier;
+    skos:notation "2.158.390.748";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

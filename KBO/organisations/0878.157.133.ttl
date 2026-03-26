@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4711>, <http://vocab.belgif.be/auth/nace2008/4711>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen overheersen (verkoopsoppervlakte tussen 100 m² en minder dan 400 m²)"@nl, "Commerce de détail en magasin non spécialisé à prédominance alimentaire (surface de vente comprise entre 100m² et moins de 400m²)"@fr;
+    skos:prefLabel "47113".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<https://data.vlaanderen.be/id/onderneming/0878.157.133> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0878.157.133;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47110>, <http://vocab.belgif.be/auth/nace2008/47113>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0878.157.133;
+    reorg:legalName "IDEAL HOMES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.278.774.478>.
+<https://data.vlaanderen.be/id/vestiging/2.278.774.478> a org:Site;
+    dcterms:created "01-09-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.278.774.478.
+_:address_contact_0878.157.133 a locn:Address;
+    locn:thoroughfare "Delwartstraat"@nl, "Rue Delwart"@fr;
+    rdfs:label "125";
+    locn:postCode "1070";
+    adres:gemeentenaam "Anderlecht"@nl, "Anderlecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0878.157.133 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0878.157.133.
+_:registration_company_0878.157.133 a adms:Identifier;
+    skos:notation "0878.157.133";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.278.774.478 a adms:Identifier;
+    skos:notation "2.278.774.478";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

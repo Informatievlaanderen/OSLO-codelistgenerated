@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4222>, <http://vocab.belgif.be/auth/nace2008/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<https://data.vlaanderen.be/id/onderneming/0879.568.977> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0879.568.977;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/42220>, _:nace_2003_72220, _:nace_2003_52487, _:nace_2003_45215, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/47410>, <http://vocab.belgif.be/auth/nace2008/42220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0879.568.977;
+    reorg:legalName "Xpert Data"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.153.596.968>, _:branch_9.001.583.370.
+<https://data.vlaanderen.be/id/vestiging/2.153.596.968> a org:Site;
+    dcterms:created "19-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.153.596.968.
+_:address_contact_0879.568.977 a locn:Address;
+    locn:thoroughfare "Oosterveldsingel"@nl, "Oosterveldsingel"@fr;
+    rdfs:label "2";
+    locn:postCode "7558PK";
+    adres:gemeentenaam "Hengelo"@nl, "Hengelo"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:branch_9.001.583.370 a org:Site;
+    dcterms:created "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_branch_9.001.583.370.
+_:contact_0879.568.977 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0879.568.977.
+_:nace_2003_45215 a skos:Concept;
+    skos:definition "Aanleg van pijpleidingen, telecommunicatieleidingen en hoogspanningsleidingen"@nl, "Réalisation de canalisations à longue distance, construction de réseaux de télécommunication, construction de lignes de transport d'énergie"@fr;
+    skos:prefLabel "45215".
+_:nace_2003_52487 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in kantoormachines en -meubelen, computers en standaardprogrammatuur en telecommunicatieapparatuur"@nl, "Commerce de détail spécialisé d'équipements de bureau, d'ordinateurs et de matériel de télécommunication"@fr;
+    skos:prefLabel "52487".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:registration_branch_9.001.583.370 a adms:Identifier;
+    skos:notation "9.001.583.370";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_company_0879.568.977 a adms:Identifier;
+    skos:notation "0879.568.977";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.153.596.968 a adms:Identifier;
+    skos:notation "2.153.596.968";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

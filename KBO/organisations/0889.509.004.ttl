@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/77299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van andere consumentenartikelen, n.e.g."@nl, "Location et location-bail d'autres biens personnels et domestiques n.c.a."@fr;
+    skos:prefLabel "77299".
+<http://vocab.belgif.be/auth/nace2008/77350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7735>, <http://vocab.belgif.be/auth/nace2008/7735>;
+    skos:definition "Verhuur en lease van luchtvaartuigen"@nl, "Location et location-bail de matériels de transport aérien"@fr;
+    skos:prefLabel "77350".
+<http://vocab.belgif.be/auth/nace2008/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8553>, <http://vocab.belgif.be/auth/nace2008/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<http://vocab.belgif.be/auth/nace2025/77229> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van andere huishoudelijke of persoonlijke artikelen, neg"@nl, "Location et location-bail d'autres biens personnels et domestiques nca"@fr;
+    skos:prefLabel "77229".
+<http://vocab.belgif.be/auth/nace2025/77350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7735>, <http://vocab.belgif.be/auth/nace2025/7735>;
+    skos:definition "Verhuur en lease van luchtvaartuigen"@nl, "Location et location-bail de matériels de transport aérien"@fr;
+    skos:prefLabel "77350".
+<http://vocab.belgif.be/auth/nace2025/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8553>, <http://vocab.belgif.be/auth/nace2025/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<https://data.vlaanderen.be/id/onderneming/0889.509.004> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "16-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0889.509.004;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77350>, <http://vocab.belgif.be/auth/nace2025/77229>, <http://vocab.belgif.be/auth/nace2025/85532>, _:nace_2003_80412, _:nace_2003_71408, <http://vocab.belgif.be/auth/nace2008/77299>, <http://vocab.belgif.be/auth/nace2008/77350>, <http://vocab.belgif.be/auth/nace2008/85532>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0889.509.004;
+    reorg:legalName "AEROPLANO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.163.150.379>.
+<https://data.vlaanderen.be/id/vestiging/2.163.150.379> a org:Site;
+    dcterms:created "16-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.163.150.379.
+_:address_contact_0889.509.004 a locn:Address;
+    locn:thoroughfare "Rue des Fusillés"@nl, "Rue des Fusillés"@fr;
+    rdfs:label "NC";
+    adres:busnummer "BS7";
+    locn:postCode "6040";
+    adres:gemeentenaam "Charleroi"@nl, "Charleroi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0889.509.004 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "denis@aeroplano.be";
+    schema:telephone "+32486242500";
+    locn:address _:address_contact_0889.509.004.
+_:nace_2003_71408 a skos:Concept;
+    skos:definition "Verhuur van overige roerende goederen voor persoonlijk of huishoudelijk gebruik, n.e.g."@nl, "Location d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "71408".
+_:nace_2003_80412 a skos:Concept;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Écoles de pilotage de bateaux et d'avions"@fr;
+    skos:prefLabel "80412".
+_:registration_company_0889.509.004 a adms:Identifier;
+    skos:notation "0889.509.004";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.163.150.379 a adms:Identifier;
+    skos:notation "2.163.150.379";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6619>, <http://vocab.belgif.be/auth/nace2008/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2025/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6619>, <http://vocab.belgif.be/auth/nace2025/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<https://data.vlaanderen.be/id/onderneming/0866.658.574> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "05-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0866.658.574;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/66199>, <http://vocab.belgif.be/auth/nace2025/68110>, _:nace_2003_67130, _:nace_2003_70120, <http://vocab.belgif.be/auth/nace2008/66199>, <http://vocab.belgif.be/auth/nace2008/68100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0866.658.574;
+    reorg:legalName "JD & D"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.138.710.240>.
+<https://data.vlaanderen.be/id/vestiging/2.138.710.240> a org:Site;
+    dcterms:created "05-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.138.710.240.
+_:address_contact_0866.658.574 a locn:Address;
+    locn:thoroughfare "Hallesesteenweg"@nl, "Chaussée de Hal"@fr;
+    rdfs:label "53";
+    adres:busnummer "5";
+    locn:postCode "1640";
+    adres:gemeentenaam "Sint-Genesius-Rode"@nl, "Sint-Genesius-Rode"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0866.658.574 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0866.658.574.
+_:nace_2003_67130 a skos:Concept;
+    skos:definition "Ondersteunende activiteiten i.v.m. financiële instellingen, n.e.g."@nl, "Autres auxiliaires financiers"@fr;
+    skos:prefLabel "67130".
+_:nace_2003_70120 a skos:Concept;
+    skos:definition "Handel in onroerend goed"@nl, "Marchands de biens immobiliers"@fr;
+    skos:prefLabel "70120".
+_:registration_company_0866.658.574 a adms:Identifier;
+    skos:notation "0866.658.574";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.138.710.240 a adms:Identifier;
+    skos:notation "2.138.710.240";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

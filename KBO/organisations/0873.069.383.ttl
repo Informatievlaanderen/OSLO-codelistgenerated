@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8292>, <http://vocab.belgif.be/auth/nace2008/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2008/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8292>, <http://vocab.belgif.be/auth/nace2025/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<https://data.vlaanderen.be/id/onderneming/0873.069.383> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "08-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0873.069.383;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82920>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2008/82920>, <http://vocab.belgif.be/auth/nace2008/88999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0873.069.383;
+    reorg:legalName "action pour la reinsertion et l'accompagnement des personnes"@fr, "A.R.D.A.P.S."@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.241.917.547>, <https://data.vlaanderen.be/id/vestiging/2.241.919.131>, <https://data.vlaanderen.be/id/vestiging/2.263.546.270>.
+<https://data.vlaanderen.be/id/vestiging/2.241.917.547> a org:Site;
+    dcterms:created "23-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.241.917.547.
+<https://data.vlaanderen.be/id/vestiging/2.241.919.131> a org:Site;
+    dcterms:created "10-03-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.241.919.131.
+<https://data.vlaanderen.be/id/vestiging/2.263.546.270> a org:Site;
+    dcterms:created "01-02-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.263.546.270.
+_:address_contact_0873.069.383 a locn:Address;
+    locn:thoroughfare "Beizegemstraat"@nl, "Rue de Beyseghem"@fr;
+    rdfs:label "121";
+    adres:busnummer "13";
+    locn:postCode "1120";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0873.069.383 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "arsdaps_asbl@yahoo.fr";
+    schema:telephone "0472673577";
+    locn:address _:address_contact_0873.069.383.
+_:registration_company_0873.069.383 a adms:Identifier;
+    skos:notation "0873.069.383";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.241.917.547 a adms:Identifier;
+    skos:notation "2.241.917.547";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.241.919.131 a adms:Identifier;
+    skos:notation "2.241.919.131";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.263.546.270 a adms:Identifier;
+    skos:notation "2.263.546.270";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

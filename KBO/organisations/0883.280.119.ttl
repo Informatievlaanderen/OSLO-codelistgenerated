@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3315>, <http://vocab.belgif.be/auth/nace2008/3315>;
+    skos:definition "Reparatie en onderhoud van schepen"@nl, "Réparation et maintenance navale"@fr;
+    skos:prefLabel "33150".
+<http://vocab.belgif.be/auth/nace2008/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4334>, <http://vocab.belgif.be/auth/nace2008/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<http://vocab.belgif.be/auth/nace2025/33150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3315>, <http://vocab.belgif.be/auth/nace2025/3315>;
+    skos:definition "Reparatie en onderhoud van schepen"@nl, "Réparation et maintenance navale"@fr;
+    skos:prefLabel "33150".
+<http://vocab.belgif.be/auth/nace2025/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4334>, <http://vocab.belgif.be/auth/nace2025/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<https://data.vlaanderen.be/id/onderneming/0883.280.119> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0883.280.119;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43341>, <http://vocab.belgif.be/auth/nace2025/33150>, _:nace_2003_35110, _:nace_2003_45441, <http://vocab.belgif.be/auth/nace2008/33150>, <http://vocab.belgif.be/auth/nace2008/43341>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Smolders, Yvan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.860.335>.
+<https://data.vlaanderen.be/id/vestiging/2.155.860.335> a org:Site;
+    dcterms:created "01-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.860.335.
+_:nace_2003_35110 a skos:Concept;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+_:nace_2003_45441 a skos:Concept;
+    skos:definition "Schilderen"@nl, "Peinture"@fr;
+    skos:prefLabel "45441".
+_:registration_company_0883.280.119 a adms:Identifier;
+    skos:notation "0883.280.119";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.860.335 a adms:Identifier;
+    skos:notation "2.155.860.335";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

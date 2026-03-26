@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/86905> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Ambulante revalidatieactiviteiten"@nl, "Activités de revalidation ambulatoire"@fr;
+    skos:prefLabel "86905".
+<http://vocab.belgif.be/auth/nace2025/86951> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8695>, <http://vocab.belgif.be/auth/nace2025/8695>;
+    skos:definition "Activiteiten op het gebied van kinesitherapie"@nl, "Activités de kinésithérapie"@fr;
+    skos:prefLabel "86951".
+<https://data.vlaanderen.be/id/onderneming/0849.337.740> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0849.337.740;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86951>, <http://vocab.belgif.be/auth/nace2008/86905>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0849.337.740;
+    reorg:legalName "Courtois, Julie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.212.909.104>.
+<https://data.vlaanderen.be/id/vestiging/2.212.909.104> a org:Site;
+    dcterms:created "01-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.212.909.104.
+_:contact_0849.337.740 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "juliecourtois08@gmail.com";
+    schema:telephone "0491/100354";
+    schema:faxNumber "04/2634086".
+_:registration_company_0849.337.740 a adms:Identifier;
+    skos:notation "0849.337.740";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.212.909.104 a adms:Identifier;
+    skos:notation "2.212.909.104";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

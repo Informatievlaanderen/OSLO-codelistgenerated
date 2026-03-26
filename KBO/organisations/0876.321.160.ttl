@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4311>, <http://vocab.belgif.be/auth/nace2008/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311".
+<http://vocab.belgif.be/auth/nace2025/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4311>, <http://vocab.belgif.be/auth/nace2025/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310".
+<https://data.vlaanderen.be/id/onderneming/0876.321.160> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "28-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0876.321.160;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/43110>, <http://vocab.belgif.be/auth/nace2025/68310>, <http://vocab.belgif.be/auth/nace2008/43110>, <http://vocab.belgif.be/auth/nace2008/68311>, <http://vocab.belgif.be/auth/nace2008/68100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0876.321.160;
+    reorg:legalName "IMMO RHODE"@fr.
+_:address_contact_0876.321.160 a locn:Address;
+    locn:thoroughfare "Louizalaan"@nl, "Avenue Louise"@fr;
+    rdfs:label "221";
+    adres:busnummer "4";
+    locn:postCode "1050";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0876.321.160 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0876.321.160.
+_:registration_company_0876.321.160 a adms:Identifier;
+    skos:notation "0876.321.160";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

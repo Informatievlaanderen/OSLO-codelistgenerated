@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2008/46423> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4642>, <http://vocab.belgif.be/auth/nace2008/4642>;
+    skos:definition "Groothandel in kleding, met uitzondering van werk- en onderkleding"@nl, "Commerce de gros de vêtements, autres que vêtements de travail et sous-vêtements"@fr;
+    skos:prefLabel "46423".
+<http://vocab.belgif.be/auth/nace2008/46425> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4642>, <http://vocab.belgif.be/auth/nace2008/4642>;
+    skos:definition "Groothandel in schoeisel"@nl, "Commerce de gros de chaussures"@fr;
+    skos:prefLabel "46425".
+<http://vocab.belgif.be/auth/nace2008/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/46423> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in kleding, met uitzondering van werk- en onderkleding"@nl, "Commerce de gros de vêtements, autres que vêtements de travail et sous-vêtements"@fr;
+    skos:prefLabel "46423".
+<http://vocab.belgif.be/auth/nace2025/46425> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in schoeisel"@nl, "Commerce de gros de chaussures"@fr;
+    skos:prefLabel "46425".
+<http://vocab.belgif.be/auth/nace2025/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<https://data.vlaanderen.be/id/onderneming/0874.692.253> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.692.253;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/25530>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46431>, <http://vocab.belgif.be/auth/nace2025/46423>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2025/46494>, <http://vocab.belgif.be/auth/nace2025/46425>, _:nace_2003_51430, _:nace_2003_51421, _:nace_2003_51422, _:nace_2003_51410, _:nace_2003_51471, _:nace_2003_51441, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/46425>, <http://vocab.belgif.be/auth/nace2008/46423>, <http://vocab.belgif.be/auth/nace2008/46412>, <http://vocab.belgif.be/auth/nace2008/46431>, <http://vocab.belgif.be/auth/nace2008/46494>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0874.692.253;
+    reorg:legalName "GLOBAL FAIR & CONSTRUCT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.148.476.853>.
+<https://data.vlaanderen.be/id/vestiging/2.148.476.853> a org:Site;
+    dcterms:created "27-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.148.476.853.
+_:address_contact_0874.692.253 a locn:Address;
+    locn:thoroughfare "Europark"@nl, "Europark"@fr;
+    rdfs:label "70";
+    locn:postCode "3620";
+    adres:gemeentenaam "Lanaken"@nl, "Lanaken"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.692.253 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0874.692.253.
+_:nace_2003_51410 a skos:Concept;
+    skos:definition "Groothandel in textiel"@nl, "Commerce de gros de textiles"@fr;
+    skos:prefLabel "51410".
+_:nace_2003_51421 a skos:Concept;
+    skos:definition "Groothandel in kleding, kledingtoebehoren en bontartikelen"@nl, "Commerce de gros d'habillement, d'accessoires d'habillement et d'articles en fourrure"@fr;
+    skos:prefLabel "51421".
+_:nace_2003_51422 a skos:Concept;
+    skos:definition "Groothandel in schoeisel"@nl, "Commerce de gros de chaussures"@fr;
+    skos:prefLabel "51422".
+_:nace_2003_51430 a skos:Concept;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers, de radio et de télévision"@fr;
+    skos:prefLabel "51430".
+_:nace_2003_51441 a skos:Concept;
+    skos:definition "Groothandel in vaat- en glaswerk"@nl, "Commerce de gros de vaisselle et de verrerie de ménage"@fr;
+    skos:prefLabel "51441".
+_:nace_2003_51471 a skos:Concept;
+    skos:definition "Groothandel in meubels, niet-elektrische huishoudapparaten en vloerbedekking inclusief tapijten"@nl, "Commerce de gros de meubles, d'appareils ménagers non électriques et de revêtements de sol, y compris les tapis"@fr;
+    skos:prefLabel "51471".
+_:registration_company_0874.692.253 a adms:Identifier;
+    skos:notation "0874.692.253";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.148.476.853 a adms:Identifier;
+    skos:notation "2.148.476.853";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

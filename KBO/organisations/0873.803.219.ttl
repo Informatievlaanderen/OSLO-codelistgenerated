@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/64910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6491>, <http://vocab.belgif.be/auth/nace2008/6491>;
+    skos:definition "Financiële lease"@nl, "Crédit-bail"@fr;
+    skos:prefLabel "64910".
+<http://vocab.belgif.be/auth/nace2008/64999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6499>, <http://vocab.belgif.be/auth/nace2008/6499>;
+    skos:definition "Overige financiële dienstverlening"@nl, "Autres activités des services financiers"@fr;
+    skos:prefLabel "64999".
+<http://vocab.belgif.be/auth/nace2008/66290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6629>, <http://vocab.belgif.be/auth/nace2008/6629>;
+    skos:definition "Overige ondersteunende activiteiten in verband met verzekeringen en pensioenfondsen"@nl, "Autres activités auxiliaires d'assurance et de caisses de retraite"@fr;
+    skos:prefLabel "66290".
+<http://vocab.belgif.be/auth/nace2008/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7733>, <http://vocab.belgif.be/auth/nace2008/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2025/64910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6491>, <http://vocab.belgif.be/auth/nace2025/6491>;
+    skos:definition "Financiële lease"@nl, "Crédit-bail"@fr;
+    skos:prefLabel "64910".
+<http://vocab.belgif.be/auth/nace2025/64999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6499>, <http://vocab.belgif.be/auth/nace2025/6499>;
+    skos:definition "Overige financiële dienstverlening"@nl, "Autres activités des services financiers"@fr;
+    skos:prefLabel "64999".
+<http://vocab.belgif.be/auth/nace2025/66290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6629>, <http://vocab.belgif.be/auth/nace2025/6629>;
+    skos:definition "Overige ondersteunende activiteiten in verband met verzekeringen en pensioenfondsen"@nl, "Autres activités auxiliaires d'assurance et de caisses de retraite"@fr;
+    skos:prefLabel "66290".
+<http://vocab.belgif.be/auth/nace2025/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7733>, <http://vocab.belgif.be/auth/nace2025/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<https://data.vlaanderen.be/id/onderneming/0873.803.219> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0873.803.219;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/77330>, _:nace_2003_71330, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64910>, <http://vocab.belgif.be/auth/nace2025/66290>, <http://vocab.belgif.be/auth/nace2025/64999>, <http://vocab.belgif.be/auth/nace2008/77330>, <http://vocab.belgif.be/auth/nace2008/64910>, <http://vocab.belgif.be/auth/nace2008/66290>, <http://vocab.belgif.be/auth/nace2008/64999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0873.803.219;
+    reorg:legalName "GRENKE LEASE"@fr, "GL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.242.181>, <https://data.vlaanderen.be/id/vestiging/2.220.219.043>, <https://data.vlaanderen.be/id/vestiging/2.255.725.694>, <https://data.vlaanderen.be/id/vestiging/2.317.197.069>.
+<https://data.vlaanderen.be/id/vestiging/2.147.242.181> a org:Site;
+    dcterms:created "03-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.242.181.
+<https://data.vlaanderen.be/id/vestiging/2.220.219.043> a org:Site;
+    dcterms:created "01-07-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.220.219.043.
+<https://data.vlaanderen.be/id/vestiging/2.255.725.694> a org:Site;
+    dcterms:created "01-07-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.255.725.694.
+<https://data.vlaanderen.be/id/vestiging/2.317.197.069> a org:Site;
+    dcterms:created "01-02-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.197.069.
+_:address_contact_0873.803.219 a locn:Address;
+    locn:thoroughfare "Ruisbroeksesteenweg"@nl, "Chaussée de Ruisbroek"@fr;
+    rdfs:label "76";
+    locn:postCode "1180";
+    adres:gemeentenaam "Ukkel"@nl, "Uccle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0873.803.219 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0873.803.219.
+_:nace_2003_71330 a skos:Concept;
+    skos:definition "Verhuur van kantoormachines en computers"@nl, "Location de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "71330".
+_:registration_company_0873.803.219 a adms:Identifier;
+    skos:notation "0873.803.219";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.242.181 a adms:Identifier;
+    skos:notation "2.147.242.181";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.220.219.043 a adms:Identifier;
+    skos:notation "2.220.219.043";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.255.725.694 a adms:Identifier;
+    skos:notation "2.255.725.694";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.197.069 a adms:Identifier;
+    skos:notation "2.317.197.069";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

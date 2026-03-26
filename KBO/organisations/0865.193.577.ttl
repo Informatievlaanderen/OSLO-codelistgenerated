@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/74901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende pesonaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres personnalités publiques"@fr;
+    skos:prefLabel "74901".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/74991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende personaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres, personnalités publiques"@fr;
+    skos:prefLabel "74991".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0865.193.577> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "07-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0865.193.577;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/74991>, <http://vocab.belgif.be/auth/nace2025/82300>, _:nace_2003_74872, _:nace_2003_74878, _:nace_2003_92340, <http://vocab.belgif.be/auth/nace2008/74901>, <http://vocab.belgif.be/auth/nace2008/82300>, <http://vocab.belgif.be/auth/nace2008/93299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0865.193.577;
+    reorg:legalName "Jiménez Valdés, Esteban";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.136.913.265>.
+<https://data.vlaanderen.be/id/vestiging/2.136.913.265> a org:Site;
+    dcterms:created "07-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.913.265.
+_:contact_0865.193.577 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0492456793".
+_:nace_2003_74872 a skos:Concept;
+    skos:definition "Organisatie van salons, tentoonstellingen en beurzen"@nl, "Organitation de salons, expositions et bourses"@fr;
+    skos:prefLabel "74872".
+_:nace_2003_74878 a skos:Concept;
+    skos:definition "Impresariaten en theateragentschappen"@nl, "Imprésarios et agences de théâtre"@fr;
+    skos:prefLabel "74878".
+_:nace_2003_92340 a skos:Concept;
+    skos:definition "Overig amusement, n.e.g."@nl, "Autres activités de spectacle et d'amusement n.d.a."@fr;
+    skos:prefLabel "92340".
+_:registration_company_0865.193.577 a adms:Identifier;
+    skos:notation "0865.193.577";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.913.265 a adms:Identifier;
+    skos:notation "2.136.913.265";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

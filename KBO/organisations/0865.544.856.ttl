@@ -1,0 +1,119 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1820>, <http://vocab.belgif.be/auth/nace2008/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2008/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2620>, <http://vocab.belgif.be/auth/nace2008/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2008/26800> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2680>, <http://vocab.belgif.be/auth/nace2008/2680>;
+    skos:definition "Vervaardiging van magnetische en optische media"@nl, "Fabrication de supports magnétiques et optiques"@fr;
+    skos:prefLabel "26800".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>;
+    skos:definition "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr, "Groothandel in computers, randapparatuur en software"@nl;
+    skos:prefLabel "46510".
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1820>, <http://vocab.belgif.be/auth/nace2025/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2025/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2620>, <http://vocab.belgif.be/auth/nace2025/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2025/26700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2670>, <http://vocab.belgif.be/auth/nace2025/2670>;
+    skos:definition "Houwen, bewerken en afwerken van bouw- en siersteen"@nl, "Taille, façonnage et finissage de pierres ornementales et de construction"@fr;
+    skos:prefLabel "26700".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/0865.544.856> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0865.544.856;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/95100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/18200>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/26200>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2025/26700>, _:nace_2003_52487, _:nace_2003_24650, _:nace_2003_45310, _:nace_2003_30020, _:nace_2003_22330, _:nace_2003_51840, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/26200>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/26800>, <http://vocab.belgif.be/auth/nace2008/47410>, <http://vocab.belgif.be/auth/nace2008/46510>, <http://vocab.belgif.be/auth/nace2008/18200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0865.544.856;
+    reorg:legalName "NELL.COM"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.137.454.683>.
+<https://data.vlaanderen.be/id/vestiging/2.137.454.683> a org:Site;
+    dcterms:created "01-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.137.454.683.
+_:address_contact_0865.544.856 a locn:Address;
+    locn:thoroughfare "Kortrijkstraat"@nl, "Kortrijkstraat"@fr;
+    rdfs:label "424";
+    locn:postCode "8560";
+    adres:gemeentenaam "Wevelgem"@nl, "Wevelgem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0865.544.856 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0865.544.856.
+_:nace_2003_22330 a skos:Concept;
+    skos:definition "Reproductie van computermedia"@nl, "Reproduction d'enregistrements informatiques"@fr;
+    skos:prefLabel "22330".
+_:nace_2003_24650 a skos:Concept;
+    skos:definition "Vervaardiging van informatiedragers waarop niet is opgenomen"@nl, "Fabrication de supports de données"@fr;
+    skos:prefLabel "24650".
+_:nace_2003_30020 a skos:Concept;
+    skos:definition "Vervaardiging van computers en andere apparatuur voor de verwerking van informatie"@nl, "Fabrication d'ordinateurs et d'autres équipements informatiques"@fr;
+    skos:prefLabel "30020".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_51840 a skos:Concept;
+    skos:definition "Groothandel in computers, randapparatuur en programmatuur"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "51840".
+_:nace_2003_52487 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in kantoormachines en -meubelen, computers en standaardprogrammatuur en telecommunicatieapparatuur"@nl, "Commerce de détail spécialisé d'équipements de bureau, d'ordinateurs et de matériel de télécommunication"@fr;
+    skos:prefLabel "52487".
+_:registration_company_0865.544.856 a adms:Identifier;
+    skos:notation "0865.544.856";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.137.454.683 a adms:Identifier;
+    skos:notation "2.137.454.683";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47762> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor in gespecialiseerde winkels"@nl, "Commerce de détail d'animaux de compagnie, d'aliments et d'accessoires pour ces animaux en magasin spécialisé"@fr;
+    skos:prefLabel "47762".
+<http://vocab.belgif.be/auth/nace2025/47762> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor in gespecialiseerde winkels"@nl, "Commerce de détail d'animaux de compagnie, d'aliments et d'accessoires pour ces animaux en magasin spécialisé"@fr;
+    skos:prefLabel "47762".
+<https://data.vlaanderen.be/id/onderneming/0838.888.860> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0838.888.860;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47762>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/47762>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0838.888.860;
+    reorg:legalName "MAXI ZOO WEST"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.202.273.251>, <https://data.vlaanderen.be/id/vestiging/2.232.777.078>, <https://data.vlaanderen.be/id/vestiging/2.232.777.969>, <https://data.vlaanderen.be/id/vestiging/2.232.778.068>, <https://data.vlaanderen.be/id/vestiging/2.232.778.167>, <https://data.vlaanderen.be/id/vestiging/2.321.563.356>, <https://data.vlaanderen.be/id/vestiging/2.344.445.359>, <https://data.vlaanderen.be/id/vestiging/2.357.621.127>, <https://data.vlaanderen.be/id/vestiging/2.378.737.928>.
+<https://data.vlaanderen.be/id/vestiging/2.202.273.251> a org:Site;
+    dcterms:created "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.202.273.251.
+<https://data.vlaanderen.be/id/vestiging/2.232.777.078> a org:Site;
+    dcterms:created "01-01-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.777.078.
+<https://data.vlaanderen.be/id/vestiging/2.232.777.969> a org:Site;
+    dcterms:created "01-01-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.777.969.
+<https://data.vlaanderen.be/id/vestiging/2.232.778.068> a org:Site;
+    dcterms:created "01-01-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.778.068.
+<https://data.vlaanderen.be/id/vestiging/2.232.778.167> a org:Site;
+    dcterms:created "01-01-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.778.167.
+<https://data.vlaanderen.be/id/vestiging/2.321.563.356> a org:Site;
+    dcterms:created "10-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.321.563.356.
+<https://data.vlaanderen.be/id/vestiging/2.344.445.359> a org:Site;
+    dcterms:created "05-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.445.359.
+<https://data.vlaanderen.be/id/vestiging/2.357.621.127> a org:Site;
+    dcterms:created "12-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.621.127.
+<https://data.vlaanderen.be/id/vestiging/2.378.737.928> a org:Site;
+    dcterms:created "03-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.737.928.
+_:address_contact_0838.888.860 a locn:Address;
+    locn:thoroughfare "Luxemburgstraat"@nl, "Luxemburgstraat"@fr;
+    rdfs:label "11";
+    locn:postCode "9140";
+    adres:gemeentenaam "Temse"@nl, "Temse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0838.888.860 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0838.888.860.
+_:registration_company_0838.888.860 a adms:Identifier;
+    skos:notation "0838.888.860";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.202.273.251 a adms:Identifier;
+    skos:notation "2.202.273.251";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.777.078 a adms:Identifier;
+    skos:notation "2.232.777.078";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.777.969 a adms:Identifier;
+    skos:notation "2.232.777.969";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.778.068 a adms:Identifier;
+    skos:notation "2.232.778.068";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.778.167 a adms:Identifier;
+    skos:notation "2.232.778.167";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.321.563.356 a adms:Identifier;
+    skos:notation "2.321.563.356";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.445.359 a adms:Identifier;
+    skos:notation "2.344.445.359";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.621.127 a adms:Identifier;
+    skos:notation "2.357.621.127";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.737.928 a adms:Identifier;
+    skos:notation "2.378.737.928";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

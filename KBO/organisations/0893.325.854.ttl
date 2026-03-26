@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5210>, <http://vocab.belgif.be/auth/nace2008/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2008/52249> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5224>, <http://vocab.belgif.be/auth/nace2008/5224>;
+    skos:definition "Overige vrachtbehandeling, exclusief in zeehavens"@nl, "Manutention autre que portuaire"@fr;
+    skos:prefLabel "52249".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5210>, <http://vocab.belgif.be/auth/nace2025/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2025/52249> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5224>, <http://vocab.belgif.be/auth/nace2025/5224>;
+    skos:definition "Overige vrachtbehandeling, exclusief in zeehavens"@nl, "Manutention autre que portuaire"@fr;
+    skos:prefLabel "52249".
+<https://data.vlaanderen.be/id/onderneming/0893.325.854> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "08-11-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0893.325.854;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52249>, <http://vocab.belgif.be/auth/nace2025/52100>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/52100>, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/52249>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0893.325.854;
+    reorg:legalName "Vega Benelux"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.167.486.774>.
+<https://data.vlaanderen.be/id/vestiging/2.167.486.774> a org:Site;
+    dcterms:created "03-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.167.486.774.
+_:address_contact_0893.325.854 a locn:Address;
+    locn:thoroughfare "Smalleheerweg"@nl, "Smalleheerweg"@fr;
+    rdfs:label "84";
+    locn:postCode "9041";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0893.325.854 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0893.325.854.
+_:registration_company_0893.325.854 a adms:Identifier;
+    skos:notation "0893.325.854";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.167.486.774 a adms:Identifier;
+    skos:notation "2.167.486.774";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/77295> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77295".
+<http://vocab.belgif.be/auth/nace2008/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7733>, <http://vocab.belgif.be/auth/nace2008/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2008/86909> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Overige menselijke gezondheidszorg, n.e.g."@nl, "Autres activités pour la santé humaine n.c.a."@fr;
+    skos:prefLabel "86909".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/77225> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77225".
+<http://vocab.belgif.be/auth/nace2025/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7733>, <http://vocab.belgif.be/auth/nace2025/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2025/86995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8699>, <http://vocab.belgif.be/auth/nace2025/8699>;
+    skos:definition "Activiteiten op het gebied van voeding"@nl, "Activités dans le domaine de l’alimentation"@fr;
+    skos:prefLabel "86995".
+<https://data.vlaanderen.be/id/onderneming/0860.482.347> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.482.347;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77330>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/86995>, <http://vocab.belgif.be/auth/nace2025/77225>, _:nace_2003_71407, _:nace_2003_85143, _:nace_2003_85146, _:nace_2003_70203, _:nace_2003_71330, <http://vocab.belgif.be/auth/nace2008/86909>, <http://vocab.belgif.be/auth/nace2008/77295>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/77330>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0860.482.347;
+    reorg:legalName "HEKLORE CENTRE DE THERAPIES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.132.808.383>.
+<https://data.vlaanderen.be/id/vestiging/2.132.808.383> a org:Site;
+    dcterms:created "01-07-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.132.808.383.
+_:address_contact_0860.482.347 a locn:Address;
+    locn:thoroughfare "Rue Ernest Cosse"@nl, "Rue Ernest Cosse"@fr;
+    rdfs:label "3";
+    locn:postCode "1490";
+    adres:gemeentenaam "Court-Saint-Etienne"@nl, "Court-Saint-Etienne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0860.482.347 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0860.482.347.
+_:nace_2003_70203 a skos:Concept;
+    skos:definition "Verhuur van niet-residentiële gebouwen"@nl, "Location d'immeubles non résidentiels, y compris les salles d'exposition"@fr;
+    skos:prefLabel "70203".
+_:nace_2003_71330 a skos:Concept;
+    skos:definition "Verhuur van kantoormachines en computers"@nl, "Location de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "71330".
+_:nace_2003_71407 a skos:Concept;
+    skos:definition "Verhuur van medisch en paramedisch materieel"@nl, "Location de matériel médical et paramédical"@fr;
+    skos:prefLabel "71407".
+_:nace_2003_85143 a skos:Concept;
+    skos:definition "Paramedische activiteiten, exclusief kinesitherapeuten"@nl, "Activités paramédicales, à l'exclusion des kinésithérapeutes"@fr;
+    skos:prefLabel "85143".
+_:nace_2003_85146 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. gezondheidszorg, n.e.g."@nl, "Autres activités relatives aux soins de santé n.d.a."@fr;
+    skos:prefLabel "85146".
+_:registration_company_0860.482.347 a adms:Identifier;
+    skos:notation "0860.482.347";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.132.808.383 a adms:Identifier;
+    skos:notation "2.132.808.383";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

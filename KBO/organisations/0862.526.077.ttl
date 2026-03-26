@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2008/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5829>, <http://vocab.belgif.be/auth/nace2008/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5829>, <http://vocab.belgif.be/auth/nace2025/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0862.526.077> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "08-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0862.526.077;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/58290>, <http://vocab.belgif.be/auth/nace2025/47521>, _:nace_2003_74142, _:nace_2003_72210, _:nace_2003_52461, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/58290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0862.526.077;
+    reorg:legalName "CNCSOFT"@en;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.135.083.034>.
+<https://data.vlaanderen.be/id/vestiging/2.135.083.034> a org:Site;
+    dcterms:created "08-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.135.083.034.
+_:address_contact_0862.526.077 a locn:Address;
+    locn:thoroughfare "Bollenbaan"@nl, "Bollenbaan"@fr;
+    rdfs:label "2A";
+    locn:postCode "2350";
+    adres:gemeentenaam "Vosselaar"@nl, "Vosselaar"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0862.526.077 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0862.526.077.
+_:nace_2003_52461 a skos:Concept;
+    skos:definition "Detailhandel in ijzerwaren, verf, bouwmaterialen (inclusief doe-het-zelfzaken) met een verkoopsoppervlakte van minder dan 400 m2"@nl, "Commerce de détail de quincaillerie, peintures, matériaux de construction et verre (y compris les bricocenters) avec une surface de vente jusqu'à 400 m2."@fr;
+    skos:prefLabel "52461".
+_:nace_2003_72210 a skos:Concept;
+    skos:definition "Uitgeverijen van programmatuur"@nl, "Edition de logiciels"@fr;
+    skos:prefLabel "72210".
+_:nace_2003_74142 a skos:Concept;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsvoering en beheer"@nl, "Autres conseils pour les affaires et le management"@fr;
+    skos:prefLabel "74142".
+_:registration_company_0862.526.077 a adms:Identifier;
+    skos:notation "0862.526.077";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.135.083.034 a adms:Identifier;
+    skos:notation "2.135.083.034";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

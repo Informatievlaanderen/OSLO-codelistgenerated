@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/80090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8009>, <http://vocab.belgif.be/auth/nace2025/8009>;
+    skos:definition "Beveiligingsactiviteiten, neg"@nl, "Activités de sécurité nca"@fr;
+    skos:prefLabel "80090".
+<https://data.vlaanderen.be/id/onderneming/0884.301.092> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "16-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0884.301.092;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/80090>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0884.301.092;
+    reorg:legalName "JADOUL SAFETY"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.162.659.441>.
+<https://data.vlaanderen.be/id/vestiging/2.162.659.441> a org:Site;
+    dcterms:created "16-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.162.659.441.
+_:address_contact_0884.301.092 a locn:Address;
+    locn:thoroughfare "Rue du Temple (G.)"@nl, "Rue du Temple (G.)"@fr;
+    rdfs:label "5";
+    locn:postCode "7011";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0884.301.092 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0884.301.092.
+_:registration_company_0884.301.092 a adms:Identifier;
+    skos:notation "0884.301.092";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.162.659.441 a adms:Identifier;
+    skos:notation "2.162.659.441";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

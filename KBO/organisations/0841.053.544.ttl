@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/28300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2830>, <http://vocab.belgif.be/auth/nace2008/2830>;
+    skos:definition "Vervaardiging van stoomketels"@nl, "Fabrication de générateurs de vapeur"@fr;
+    skos:prefLabel "28300".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4661>, <http://vocab.belgif.be/auth/nace2008/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2008/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7731>, <http://vocab.belgif.be/auth/nace2008/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/28300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2830>, <http://vocab.belgif.be/auth/nace2025/2830>;
+    skos:definition "Vervaardiging van stoomketels"@nl, "Fabrication de générateurs de vapeur"@fr;
+    skos:prefLabel "28300".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4661>, <http://vocab.belgif.be/auth/nace2025/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2025/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7731>, <http://vocab.belgif.be/auth/nace2025/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<https://data.vlaanderen.be/id/onderneming/0841.053.544> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "17-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0841.053.544;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/28300>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/77310>, <http://vocab.belgif.be/auth/nace2025/46610>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/77310>, <http://vocab.belgif.be/auth/nace2008/46610>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/28300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Sweertvaegher, Wouter";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.203.973.622>.
+<https://data.vlaanderen.be/id/vestiging/2.203.973.622> a org:Site;
+    dcterms:created "17-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.203.973.622.
+_:registration_company_0841.053.544 a adms:Identifier;
+    skos:notation "0841.053.544";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.203.973.622 a adms:Identifier;
+    skos:notation "2.203.973.622";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

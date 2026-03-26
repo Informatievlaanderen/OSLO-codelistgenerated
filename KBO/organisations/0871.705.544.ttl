@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4540>, <http://vocab.belgif.be/auth/nace2008/4540>;
+    skos:definition "Detailhandel in en onderhoud en reparatie van motorfietsen en delen en toebehoren van motorfietsen"@nl, "Entretien, réparation et commerce de détail de motocycles, y compris les pièces et accessoires"@fr;
+    skos:prefLabel "45402".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/47830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4783>, <http://vocab.belgif.be/auth/nace2025/4783>;
+    skos:definition "Detailhandel in motorrijwielen, delen en toebehoren van motorrijwielen"@nl, "Commerce de détail de motocycles et de pièces et accessoires de motocycles"@fr;
+    skos:prefLabel "47830".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0871.705.544> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.705.544;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/47830>, <http://vocab.belgif.be/auth/nace2025/52250>, _:nace_2003_50400, <http://vocab.belgif.be/auth/nace2008/45402>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/82190>, <http://vocab.belgif.be/auth/nace2008/52290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Renaut, Bernadette";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.145.071.361>.
+<https://data.vlaanderen.be/id/vestiging/2.145.071.361> a org:Site;
+    dcterms:created "08-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.145.071.361.
+_:nace_2003_50400 a skos:Concept;
+    skos:definition "Handel in en onderhoud en reparatie van motorrijwielen en onderdelen en toebehoren van motorrijwielen"@nl, "Commerce, entretien et réparation de motocycles, y compris pièces et accessoires"@fr;
+    skos:prefLabel "50400".
+_:registration_company_0871.705.544 a adms:Identifier;
+    skos:notation "0871.705.544";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.145.071.361 a adms:Identifier;
+    skos:notation "2.145.071.361";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0113>, <http://vocab.belgif.be/auth/nace2008/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2008/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0124>, <http://vocab.belgif.be/auth/nace2008/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2008/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3511>, <http://vocab.belgif.be/auth/nace2008/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2008/35120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3512>, <http://vocab.belgif.be/auth/nace2008/3512>;
+    skos:definition "Bouw en reparatie van plezier- en sportvaartuigen"@nl, "Construction et réparation de bâteaux de plaisance et de sport"@fr;
+    skos:prefLabel "35120".
+<http://vocab.belgif.be/auth/nace2008/35140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3514>, <http://vocab.belgif.be/auth/nace2008/3514>;
+    skos:definition "Handel in elektriciteit"@nl, "Commerce d'électricité"@fr;
+    skos:prefLabel "35140".
+<http://vocab.belgif.be/auth/nace2008/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3530>, <http://vocab.belgif.be/auth/nace2008/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<http://vocab.belgif.be/auth/nace2025/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0113>, <http://vocab.belgif.be/auth/nace2025/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2025/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0124>, <http://vocab.belgif.be/auth/nace2025/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2025/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3511>, <http://vocab.belgif.be/auth/nace2025/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2025/35130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3513>, <http://vocab.belgif.be/auth/nace2025/3513>;
+    skos:definition "Distributie van elektriciteit"@nl, "Distribution d'électricité"@fr;
+    skos:prefLabel "35130".
+<http://vocab.belgif.be/auth/nace2025/35150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3515>, <http://vocab.belgif.be/auth/nace2025/3515>;
+    skos:definition "Handel in elektriciteit"@nl, "Commerce d’électricité"@fr;
+    skos:prefLabel "35150".
+<http://vocab.belgif.be/auth/nace2025/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3530>, <http://vocab.belgif.be/auth/nace2025/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<https://data.vlaanderen.be/id/onderneming/0886.396.391> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0886.396.391;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01130>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01240>, <http://vocab.belgif.be/auth/nace2025/35150>, <http://vocab.belgif.be/auth/nace2025/35110>, <http://vocab.belgif.be/auth/nace2025/35300>, <http://vocab.belgif.be/auth/nace2025/35130>, _:nace_2003_40130, _:nace_2003_40120, _:nace_2003_01130, _:nace_2003_40300, _:nace_2003_40110, _:nace_2003_01121, <http://vocab.belgif.be/auth/nace2008/01130>, <http://vocab.belgif.be/auth/nace2008/35140>, <http://vocab.belgif.be/auth/nace2008/35120>, <http://vocab.belgif.be/auth/nace2008/35110>, <http://vocab.belgif.be/auth/nace2008/35300>, <http://vocab.belgif.be/auth/nace2008/01240>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0886.396.391;
+    reorg:legalName "HORTIPOWER"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.301.459>.
+<https://data.vlaanderen.be/id/vestiging/2.159.301.459> a org:Site;
+    dcterms:created "21-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.301.459.
+_:address_contact_0886.396.391 a locn:Address;
+    locn:thoroughfare "Berkelaar"@nl, "Berkelaar"@fr;
+    rdfs:label "7";
+    locn:postCode "2330";
+    adres:gemeentenaam "Merksplas"@nl, "Merksplas"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0886.396.391 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0886.396.391.
+_:nace_2003_01121 a skos:Concept;
+    skos:definition "Groenteteelt"@nl, "Culture de légumes"@fr;
+    skos:prefLabel "01121".
+_:nace_2003_01130 a skos:Concept;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+_:nace_2003_40110 a skos:Concept;
+    skos:definition "Productie van elektriciteit"@nl, "Production d'électricité"@fr;
+    skos:prefLabel "40110".
+_:nace_2003_40120 a skos:Concept;
+    skos:definition "Transmissie van elektriciteit"@nl, "Transport d'électricité"@fr;
+    skos:prefLabel "40120".
+_:nace_2003_40130 a skos:Concept;
+    skos:definition "Distributie en handel van elektriciteit"@nl, "Distribution et commerce d'électricité"@fr;
+    skos:prefLabel "40130".
+_:nace_2003_40300 a skos:Concept;
+    skos:definition "Distributie van stoom en warm water; vervaardiging van ijs, niet bestemd voor consumptie"@nl, "Production et distribution de vapeur et d'eau chaude; production de glace hydriques non destinées à la consommation"@fr;
+    skos:prefLabel "40300".
+_:registration_company_0886.396.391 a adms:Identifier;
+    skos:notation "0886.396.391";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.301.459 a adms:Identifier;
+    skos:notation "2.159.301.459";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

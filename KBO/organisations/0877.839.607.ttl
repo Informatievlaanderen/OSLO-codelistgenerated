@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2620>, <http://vocab.belgif.be/auth/nace2008/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2008/27120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2712>, <http://vocab.belgif.be/auth/nace2008/2712>;
+    skos:definition "Vervaardiging van schakel- en verdeelinrichtingen"@nl, "Fabrication de matériel de distribution et de commande électrique"@fr;
+    skos:prefLabel "27120".
+<http://vocab.belgif.be/auth/nace2008/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2899>, <http://vocab.belgif.be/auth/nace2008/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5829>, <http://vocab.belgif.be/auth/nace2008/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2025/26200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2620>, <http://vocab.belgif.be/auth/nace2025/2620>;
+    skos:definition "Vervaardiging van computers en randapparatuur"@nl, "Fabrication d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "26200".
+<http://vocab.belgif.be/auth/nace2025/27120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2712>, <http://vocab.belgif.be/auth/nace2025/2712>;
+    skos:definition "Vervaardiging van schakel- en verdeelinrichtingen"@nl, "Fabrication de matériel de distribution et de commande électrique"@fr;
+    skos:prefLabel "27120".
+<http://vocab.belgif.be/auth/nace2025/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2899>, <http://vocab.belgif.be/auth/nace2025/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5829>, <http://vocab.belgif.be/auth/nace2025/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<https://data.vlaanderen.be/id/onderneming/0877.839.607> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.839.607;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/58290>, <http://vocab.belgif.be/auth/nace2025/27120>, <http://vocab.belgif.be/auth/nace2025/26200>, <http://vocab.belgif.be/auth/nace2025/28990>, _:nace_2003_45310, _:nace_2003_30020, _:nace_2003_72210, <http://vocab.belgif.be/auth/nace2008/58290>, <http://vocab.belgif.be/auth/nace2008/28990>, <http://vocab.belgif.be/auth/nace2008/26200>, <http://vocab.belgif.be/auth/nace2008/27120>, <http://vocab.belgif.be/auth/nace2008/43211>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Conings, Rudi";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.386.565>.
+<https://data.vlaanderen.be/id/vestiging/2.150.386.565> a org:Site;
+    dcterms:created "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.386.565.
+_:nace_2003_30020 a skos:Concept;
+    skos:definition "Vervaardiging van computers en andere apparatuur voor de verwerking van informatie"@nl, "Fabrication d'ordinateurs et d'autres équipements informatiques"@fr;
+    skos:prefLabel "30020".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_72210 a skos:Concept;
+    skos:definition "Uitgeverijen van programmatuur"@nl, "Edition de logiciels"@fr;
+    skos:prefLabel "72210".
+_:registration_company_0877.839.607 a adms:Identifier;
+    skos:notation "0877.839.607";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.386.565 a adms:Identifier;
+    skos:notation "2.150.386.565";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

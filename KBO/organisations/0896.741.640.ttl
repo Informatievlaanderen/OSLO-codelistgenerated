@@ -1,0 +1,277 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "41101".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/55204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gastenkamers"@nl, "Chambres d'hôtes"@fr;
+    skos:prefLabel "55204".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311".
+<http://vocab.belgif.be/auth/nace2008/68322> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van niet-residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers non résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68322".
+<http://vocab.belgif.be/auth/nace2008/74901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende pesonaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres personnalités publiques"@fr;
+    skos:prefLabel "74901".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2008/96011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9601>, <http://vocab.belgif.be/auth/nace2008/9601>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96011".
+<http://vocab.belgif.be/auth/nace2008/96012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9601>, <http://vocab.belgif.be/auth/nace2008/9601>;
+    skos:definition "Activiteiten van wasserettes en wassalons ten behoeve van particulieren"@nl, "Activités des blanchisseries et des salons-lavoirs pour particuliers"@fr;
+    skos:prefLabel "96012".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/55204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gastenkamers"@nl, "Chambres d'hôtes"@fr;
+    skos:prefLabel "55204".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2025/74991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende personaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres, personnalités publiques"@fr;
+    skos:prefLabel "74991".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/96101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9610>, <http://vocab.belgif.be/auth/nace2025/9610>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96101".
+<http://vocab.belgif.be/auth/nace2025/96102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9610>, <http://vocab.belgif.be/auth/nace2025/9610>;
+    skos:definition "Activiteiten van wasserettes en wassalons ten behoeve van particulieren"@nl, "Activités des blanchisseries et des salons-lavoirs pour particuliers"@fr;
+    skos:prefLabel "96102".
+<https://data.vlaanderen.be/id/onderneming/0896.741.640> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0896.741.640;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96102>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/74991>, <http://vocab.belgif.be/auth/nace2025/96101>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/55204>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/68310>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2008/96012>, <http://vocab.belgif.be/auth/nace2008/68322>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/74901>, <http://vocab.belgif.be/auth/nace2008/41101>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/55204>, <http://vocab.belgif.be/auth/nace2008/77399>, <http://vocab.belgif.be/auth/nace2008/68311>, <http://vocab.belgif.be/auth/nace2008/96011>, <http://vocab.belgif.be/auth/nace2008/77110>, <http://vocab.belgif.be/auth/nace2008/43390>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0896.741.640;
+    reorg:legalName "TOM VAN HOREBEEK"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.170.330.557>, <https://data.vlaanderen.be/id/vestiging/2.171.230.776>, <https://data.vlaanderen.be/id/vestiging/2.171.231.172>, <https://data.vlaanderen.be/id/vestiging/2.171.231.469>, <https://data.vlaanderen.be/id/vestiging/2.171.231.568>, <https://data.vlaanderen.be/id/vestiging/2.171.231.964>, <https://data.vlaanderen.be/id/vestiging/2.171.233.350>, <https://data.vlaanderen.be/id/vestiging/2.171.233.746>, <https://data.vlaanderen.be/id/vestiging/2.171.233.845>, <https://data.vlaanderen.be/id/vestiging/2.228.660.617>, <https://data.vlaanderen.be/id/vestiging/2.228.660.815>, <https://data.vlaanderen.be/id/vestiging/2.250.540.847>, <https://data.vlaanderen.be/id/vestiging/2.250.541.045>, <https://data.vlaanderen.be/id/vestiging/2.250.541.144>, <https://data.vlaanderen.be/id/vestiging/2.250.541.243>, <https://data.vlaanderen.be/id/vestiging/2.250.541.342>, <https://data.vlaanderen.be/id/vestiging/2.250.541.936>.
+<https://data.vlaanderen.be/id/vestiging/2.170.330.557> a org:Site;
+    dcterms:created "01-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.170.330.557.
+<https://data.vlaanderen.be/id/vestiging/2.171.230.776> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.230.776.
+<https://data.vlaanderen.be/id/vestiging/2.171.231.172> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.231.172.
+<https://data.vlaanderen.be/id/vestiging/2.171.231.469> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.231.469.
+<https://data.vlaanderen.be/id/vestiging/2.171.231.568> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.231.568.
+<https://data.vlaanderen.be/id/vestiging/2.171.231.964> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.231.964.
+<https://data.vlaanderen.be/id/vestiging/2.171.233.350> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.233.350.
+<https://data.vlaanderen.be/id/vestiging/2.171.233.746> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.233.746.
+<https://data.vlaanderen.be/id/vestiging/2.171.233.845> a org:Site;
+    dcterms:created "01-06-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.171.233.845.
+<https://data.vlaanderen.be/id/vestiging/2.228.660.617> a org:Site;
+    dcterms:created "01-08-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.228.660.617.
+<https://data.vlaanderen.be/id/vestiging/2.228.660.815> a org:Site;
+    dcterms:created "01-08-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.228.660.815.
+<https://data.vlaanderen.be/id/vestiging/2.250.540.847> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.540.847.
+<https://data.vlaanderen.be/id/vestiging/2.250.541.045> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.541.045.
+<https://data.vlaanderen.be/id/vestiging/2.250.541.144> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.541.144.
+<https://data.vlaanderen.be/id/vestiging/2.250.541.243> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.541.243.
+<https://data.vlaanderen.be/id/vestiging/2.250.541.342> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.541.342.
+<https://data.vlaanderen.be/id/vestiging/2.250.541.936> a org:Site;
+    dcterms:created "01-09-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.250.541.936.
+_:address_contact_0896.741.640 a locn:Address;
+    locn:thoroughfare "Zwetstraat"@nl, "Zwetstraat"@fr;
+    rdfs:label "5";
+    locn:postCode "2520";
+    adres:gemeentenaam "Ranst"@nl, "Ranst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0896.741.640 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0896.741.640.
+_:registration_company_0896.741.640 a adms:Identifier;
+    skos:notation "0896.741.640";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.170.330.557 a adms:Identifier;
+    skos:notation "2.170.330.557";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.230.776 a adms:Identifier;
+    skos:notation "2.171.230.776";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.231.172 a adms:Identifier;
+    skos:notation "2.171.231.172";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.231.469 a adms:Identifier;
+    skos:notation "2.171.231.469";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.231.568 a adms:Identifier;
+    skos:notation "2.171.231.568";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.231.964 a adms:Identifier;
+    skos:notation "2.171.231.964";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.233.350 a adms:Identifier;
+    skos:notation "2.171.233.350";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.233.746 a adms:Identifier;
+    skos:notation "2.171.233.746";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.171.233.845 a adms:Identifier;
+    skos:notation "2.171.233.845";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.228.660.617 a adms:Identifier;
+    skos:notation "2.228.660.617";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.228.660.815 a adms:Identifier;
+    skos:notation "2.228.660.815";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.540.847 a adms:Identifier;
+    skos:notation "2.250.540.847";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.541.045 a adms:Identifier;
+    skos:notation "2.250.541.045";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.541.144 a adms:Identifier;
+    skos:notation "2.250.541.144";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.541.243 a adms:Identifier;
+    skos:notation "2.250.541.243";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.541.342 a adms:Identifier;
+    skos:notation "2.250.541.342";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.250.541.936 a adms:Identifier;
+    skos:notation "2.250.541.936";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

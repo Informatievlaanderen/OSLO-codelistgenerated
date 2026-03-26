@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/77291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77291".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/77221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77221".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/0881.532.931> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.532.931;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/77320>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77221>, <http://vocab.belgif.be/auth/nace2025/46831>, _:nace_2003_51532, _:nace_2003_71320, _:nace_2003_71401, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/77291>, <http://vocab.belgif.be/auth/nace2008/46731>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0881.532.931;
+    reorg:legalName "ALN LOCATION VENTE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.154.835.303>.
+<https://data.vlaanderen.be/id/vestiging/2.154.835.303> a org:Site;
+    dcterms:created "03-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.154.835.303.
+_:address_contact_0881.532.931 a locn:Address;
+    locn:thoroughfare "Hamawé,Ethe"@nl, "Hamawé,Ethe"@fr;
+    rdfs:label "1";
+    locn:postCode "6760";
+    adres:gemeentenaam "Virton"@nl, "Virton"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.532.931 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "mf@alnlocation.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.alnlocation.be";
+    locn:address _:address_contact_0881.532.931.
+_:nace_2003_51532 a skos:Concept;
+    skos:definition "Groothandel in verf, vernis en bouwmaterialen, inclusief sanitair"@nl, "Commerce de gros de peintures, vernis et matériaux de construction, y compris les appareils sanitaires"@fr;
+    skos:prefLabel "51532".
+_:nace_2003_71320 a skos:Concept;
+    skos:definition "Verhuur van machines en installaties voor de bouwnijverheid"@nl, "Location de machines et équipements pour la construction"@fr;
+    skos:prefLabel "71320".
+_:nace_2003_71401 a skos:Concept;
+    skos:definition "Verhuur van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location de machines-outils, d'outils à main et de matériel de bricolage"@fr;
+    skos:prefLabel "71401".
+_:registration_company_0881.532.931 a adms:Identifier;
+    skos:notation "0881.532.931";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.154.835.303 a adms:Identifier;
+    skos:notation "2.154.835.303";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

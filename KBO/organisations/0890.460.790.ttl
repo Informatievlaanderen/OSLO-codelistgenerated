@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4719>, <http://vocab.belgif.be/auth/nace2008/4719>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen niet overheersen (verkoopoppervlakte < 2500 m²)"@nl, "Commerce de détail en magasin non spécialisé sans prédominance alimentaire (surface de vente < 2500m²)"@fr;
+    skos:prefLabel "47191".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/0890.460.790> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "29-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0890.460.790;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, _:nace_2003_52122, <http://vocab.belgif.be/auth/nace2008/47191>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0890.460.790;
+    reorg:legalName "GURU"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.164.225.396>, <https://data.vlaanderen.be/id/vestiging/2.232.122.527>.
+<https://data.vlaanderen.be/id/vestiging/2.164.225.396> a org:Site;
+    dcterms:created "07-08-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.164.225.396.
+<https://data.vlaanderen.be/id/vestiging/2.232.122.527> a org:Site;
+    dcterms:created "25-06-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.122.527.
+_:address_contact_0890.460.790 a locn:Address;
+    locn:thoroughfare "Welgelegenstraat"@nl, "Rue du Beau Site"@fr;
+    rdfs:label "2";
+    locn:postCode "1000";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0890.460.790 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0890.460.790.
+_:nace_2003_52122 a skos:Concept;
+    skos:definition "Overige niet-gespecialiseerde detailhandel in winkels (verkoop van overwegend niet-voedingsmiddelen met verkoopsoppervlakte van mind er dan 2.500 m2)"@nl, "Autres commerces de détail en magasins non spécialisés (sans prédominance alimentaire et surface de vente inférieure à 2.500 m2)"@fr;
+    skos:prefLabel "52122".
+_:registration_company_0890.460.790 a adms:Identifier;
+    skos:notation "0890.460.790";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.164.225.396 a adms:Identifier;
+    skos:notation "2.164.225.396";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.122.527 a adms:Identifier;
+    skos:notation "2.232.122.527";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-06-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

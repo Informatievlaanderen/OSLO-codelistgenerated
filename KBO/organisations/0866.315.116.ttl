@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46492> a skos:Concept;
+    skos:definition "Groothandel in kantoor- en schoolbenodigdheden"@nl, "Commerce de gros de fournitures scolaires et de bureau"@fr;
+    skos:prefLabel "46492";
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>.
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:definition "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr, "Groothandel in computers, randapparatuur en software"@nl;
+    skos:prefLabel "46510";
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>.
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410";
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>.
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090";
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>.
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110";
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>.
+<http://vocab.belgif.be/auth/nace2025/46492> a skos:Concept;
+    skos:definition "Groothandel in kantoor- en schoolbenodigdheden"@nl, "Commerce de gros de fournitures scolaires et de bureau"@fr;
+    skos:prefLabel "46492";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>.
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>.
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>.
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>.
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>.
+<https://data.vlaanderen.be/id/onderneming/0866.315.116> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "30-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0866.315.116;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_52487, <http://vocab.belgif.be/auth/nace2025/47400>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/46492>, <http://vocab.belgif.be/auth/nace2025/46500>, _:nace_2003_74855, _:nace_2003_51475, _:nace_2003_51840, _:nace_2003_72600, <http://vocab.belgif.be/auth/nace2008/47410>, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/46510>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/46492>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0866.315.116;
+    reorg:legalName "COPPENS-HOFMAN"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.138.108.642>.
+<https://data.vlaanderen.be/id/vestiging/2.138.108.642> a org:Site;
+    dcterms:created "13-07-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.138.108.642.
+_:address_contact_0866.315.116 a locn:Address;
+    locn:thoroughfare "Leopoldlaan"@nl, "Leopoldlaan"@fr;
+    rdfs:label "84";
+    locn:postCode "9300";
+    adres:gemeentenaam "Aalst"@nl, "Aalst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0866.315.116 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0866.315.116.
+_:nace_2003_51475 a skos:Concept;
+    skos:definition "Groothandel in papierwaren, kantoor- en schoolbehoeften"@nl, "Commerce de gros d'articles de papeterie, de fournitures de bureau et de fournitures scolaires"@fr;
+    skos:prefLabel "51475".
+_:nace_2003_51840 a skos:Concept;
+    skos:definition "Groothandel in computers, randapparatuur en programmatuur"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "51840".
+_:nace_2003_52487 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in kantoormachines en -meubelen, computers en standaardprogrammatuur en telecommunicatieapparatuur"@nl, "Commerce de détail spécialisé d'équipements de bureau, d'ordinateurs et de matériel de télécommunication"@fr;
+    skos:prefLabel "52487".
+_:nace_2003_72600 a skos:Concept;
+    skos:definition "Overige activiteiten in verband met computers"@nl, "Autres activités rattachées à l'informatique"@fr;
+    skos:prefLabel "72600".
+_:nace_2003_74855 a skos:Concept;
+    skos:definition "Overige activiteiten i .v.m. administratie, n.e.g."@nl, "Autres activités d'administration n.d.a."@fr;
+    skos:prefLabel "74855".
+_:registration_company_0866.315.116 a adms:Identifier;
+    skos:notation "0866.315.116";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.138.108.642 a adms:Identifier;
+    skos:notation "2.138.108.642";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

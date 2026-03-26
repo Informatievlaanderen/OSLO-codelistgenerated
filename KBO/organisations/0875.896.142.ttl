@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4664>, <http://vocab.belgif.be/auth/nace2008/4664>;
+    skos:definition "Groothandel in machines voor de textielindustrie en in naai- en breimachines"@nl, "Commerce de gros de machines pour l'industrie textile et l'habillement"@fr;
+    skos:prefLabel "46640".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/77291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77291".
+<http://vocab.belgif.be/auth/nace2008/77295> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77295".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46648> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in machines voor de textielindustrie en in naai- en breimachines"@nl, "Commerce de gros de machines pour l'industrie textile et de machines à coudre et à tricoter"@fr;
+    skos:prefLabel "46648".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/77221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77221".
+<http://vocab.belgif.be/auth/nace2025/77225> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77225".
+<https://data.vlaanderen.be/id/onderneming/0875.896.142> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.896.142;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46648>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/46649>, <http://vocab.belgif.be/auth/nace2025/77225>, <http://vocab.belgif.be/auth/nace2025/77221>, <http://vocab.belgif.be/auth/nace2025/62200>, _:nace_2003_71407, _:nace_2003_71401, _:nace_2003_51873, _:nace_2003_72100, _:nace_2003_51810, <http://vocab.belgif.be/auth/nace2008/46640>, <http://vocab.belgif.be/auth/nace2008/77291>, <http://vocab.belgif.be/auth/nace2008/77295>, <http://vocab.belgif.be/auth/nace2008/46620>, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0875.896.142;
+    reorg:legalName "MEDIDA-SOLUTIONS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.291.393.584>.
+<https://data.vlaanderen.be/id/vestiging/2.291.393.584> a org:Site;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.291.393.584.
+_:address_contact_0875.896.142 a locn:Address;
+    locn:thoroughfare "Dreefvelden"@nl, "Dreefvelden"@fr;
+    rdfs:label "19";
+    locn:postCode "2860";
+    adres:gemeentenaam "Sint-Katelijne-Waver"@nl, "Sint-Katelijne-Waver"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0875.896.142 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0875.896.142.
+_:nace_2003_51810 a skos:Concept;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "51810".
+_:nace_2003_51873 a skos:Concept;
+    skos:definition "Groothandel in diverse machines en uitrusting voor handel en dienstverlening, n.e.g."@nl, "Commerce de gros de fournitures et d'équipements divers pour le commerce et les services n.d.a."@fr;
+    skos:prefLabel "51873".
+_:nace_2003_71401 a skos:Concept;
+    skos:definition "Verhuur van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location de machines-outils, d'outils à main et de matériel de bricolage"@fr;
+    skos:prefLabel "71401".
+_:nace_2003_71407 a skos:Concept;
+    skos:definition "Verhuur van medisch en paramedisch materieel"@nl, "Location de matériel médical et paramédical"@fr;
+    skos:prefLabel "71407".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:registration_company_0875.896.142 a adms:Identifier;
+    skos:notation "0875.896.142";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.291.393.584 a adms:Identifier;
+    skos:notation "2.291.393.584";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/13300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1330>, <http://vocab.belgif.be/auth/nace2008/1330>;
+    skos:definition "Textielveredeling"@nl, "Ennoblissement textile"@fr;
+    skos:prefLabel "13300".
+<http://vocab.belgif.be/auth/nace2008/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1396>, <http://vocab.belgif.be/auth/nace2008/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2008/20120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2012>, <http://vocab.belgif.be/auth/nace2008/2012>;
+    skos:definition "Vervaardiging van kleurstoffen en pigmenten"@nl, "Fabrication de colorants et de pigments"@fr;
+    skos:prefLabel "20120".
+<http://vocab.belgif.be/auth/nace2008/20600> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2060>, <http://vocab.belgif.be/auth/nace2008/2060>;
+    skos:definition "Vervaardiging van synthetische en kunstmatige vezels"@nl, "Fabrication de fibres artificielles ou synthétiques"@fr;
+    skos:prefLabel "20600".
+<http://vocab.belgif.be/auth/nace2008/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3299>, <http://vocab.belgif.be/auth/nace2008/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2025/13300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1330>, <http://vocab.belgif.be/auth/nace2025/1330>;
+    skos:definition "Textielveredeling"@nl, "Ennoblissement textile"@fr;
+    skos:prefLabel "13300".
+<http://vocab.belgif.be/auth/nace2025/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1396>, <http://vocab.belgif.be/auth/nace2025/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2025/20120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2012>, <http://vocab.belgif.be/auth/nace2025/2012>;
+    skos:definition "Vervaardiging van kleurstoffen en pigmenten"@nl, "Fabrication de colorants et de pigments"@fr;
+    skos:prefLabel "20120".
+<http://vocab.belgif.be/auth/nace2025/20600> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2060>, <http://vocab.belgif.be/auth/nace2025/2060>;
+    skos:definition "Vervaardiging van synthetische en kunstmatige vezels"@nl, "Fabrication de fibres artificielles ou synthétiques"@fr;
+    skos:prefLabel "20600".
+<http://vocab.belgif.be/auth/nace2025/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3299>, <http://vocab.belgif.be/auth/nace2025/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<https://data.vlaanderen.be/id/onderneming/0894.347.225> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0894.347.225;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20120>, <http://vocab.belgif.be/auth/nace2025/20600>, <http://vocab.belgif.be/auth/nace2025/32990>, <http://vocab.belgif.be/auth/nace2025/13300>, <http://vocab.belgif.be/auth/nace2025/13960>, <http://vocab.belgif.be/auth/nace2008/13960>, <http://vocab.belgif.be/auth/nace2008/20600>, <http://vocab.belgif.be/auth/nace2008/13300>, <http://vocab.belgif.be/auth/nace2008/20120>, <http://vocab.belgif.be/auth/nace2008/32990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0894.347.225;
+    reorg:legalName "SIOEN CONSOLIDATIE"@nl.
+_:address_contact_0894.347.225 a locn:Address;
+    locn:thoroughfare "Fabriekstraat"@nl, "Fabriekstraat"@fr;
+    rdfs:label "23";
+    locn:postCode "8850";
+    adres:gemeentenaam "Ardooie"@nl, "Ardooie"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0894.347.225 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "corporate@sioen.com";
+    schema:telephone "003251741589";
+    locn:address _:address_contact_0894.347.225.
+_:registration_company_0894.347.225 a adms:Identifier;
+    skos:notation "0894.347.225";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

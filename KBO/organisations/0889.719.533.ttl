@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Bewerken van diamant"@nl, "Travail du diamant"@fr;
+    skos:prefLabel "32121".
+<http://vocab.belgif.be/auth/nace2008/32122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Bewerken van edelstenen (m.u.v. diamant) en van halfedelstenen"@nl, "Travail des pierres précieuses (sauf le diamant) et des pierres semi-précieuses"@fr;
+    skos:prefLabel "32122".
+<http://vocab.belgif.be/auth/nace2008/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2008/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<http://vocab.belgif.be/auth/nace2025/32121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Bewerken van diamant"@nl, "Travail du diamant"@fr;
+    skos:prefLabel "32121".
+<http://vocab.belgif.be/auth/nace2025/32122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Bewerken van edelstenen (m.u.v. diamant) en van halfedelstenen"@nl, "Travail des pierres précieuses (sauf le diamant) et des pierres semi-précieuses"@fr;
+    skos:prefLabel "32122".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<https://data.vlaanderen.be/id/onderneming/0889.719.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "29-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0889.719.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/32121>, <http://vocab.belgif.be/auth/nace2025/32124>, <http://vocab.belgif.be/auth/nace2025/32122>, _:nace_2003_36221, _:nace_2003_36222, _:nace_2003_36223, _:nace_2003_36224, <http://vocab.belgif.be/auth/nace2008/32123>, <http://vocab.belgif.be/auth/nace2008/32124>, <http://vocab.belgif.be/auth/nace2008/32122>, <http://vocab.belgif.be/auth/nace2008/32121>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0889.719.533;
+    reorg:legalName "Duchateau, Patricia";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.162.669.240>.
+<https://data.vlaanderen.be/id/vestiging/2.162.669.240> a org:Site;
+    dcterms:created "29-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.162.669.240.
+_:contact_0889.719.533 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "+32497465430".
+_:nace_2003_36221 a skos:Concept;
+    skos:definition "Travail du diamant"@fr, "Bewerking van diamant"@nl;
+    skos:prefLabel "36221".
+_:nace_2003_36222 a skos:Concept;
+    skos:definition "Bewerking van overige edelstenen en van halfedelstenen"@nl, "Travail des autres pierres précieuses et des pierres semi-précieuses"@fr;
+    skos:prefLabel "36222".
+_:nace_2003_36223 a skos:Concept;
+    skos:definition "Vervaardiging van juwelen en sieraden"@nl, "Fabrication de bijoux et de parures"@fr;
+    skos:prefLabel "36223".
+_:nace_2003_36224 a skos:Concept;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "36224".
+_:registration_company_0889.719.533 a adms:Identifier;
+    skos:notation "0889.719.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.162.669.240 a adms:Identifier;
+    skos:notation "2.162.669.240";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

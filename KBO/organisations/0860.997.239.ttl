@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/86902> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Activiteiten van bloedtransfusiecentra en bloed- en organenbanken"@nl, "Activités des centres de collecte de sang, des banques de sang et d'organes"@fr;
+    skos:prefLabel "86902".
+<http://vocab.belgif.be/auth/nace2008/86904> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Activiteiten op het vlak van geestelijke gezondheidszorg, m.u.v. psychiatrische ziekenhuizen en verzorgingstehuizen"@nl, "Activités relatives à la santé mentale, sauf hôpitaux et maisons de soins psychiatriques"@fr;
+    skos:prefLabel "86904".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/86931> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychologie"@nl, "Activités de psychologie"@fr;
+    skos:prefLabel "86931".
+<http://vocab.belgif.be/auth/nace2025/86992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8699>, <http://vocab.belgif.be/auth/nace2025/8699>;
+    skos:definition "Activiteiten van bloedtransfusiecentra, bloedbanken, spermabanken, organenbanken en dergelijke"@nl, "Activités des centres de collecte de sang, des banques de sang, des banques de sperme, des banques d'organes et des établissements similaires"@fr;
+    skos:prefLabel "86992".
+<https://data.vlaanderen.be/id/onderneming/0860.997.239> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.997.239;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86931>, <http://vocab.belgif.be/auth/nace2025/86992>, <http://vocab.belgif.be/auth/nace2025/62200>, _:nace_2003_85145, _:nace_2003_72100, <http://vocab.belgif.be/auth/nace2008/86902>, <http://vocab.belgif.be/auth/nace2008/86904>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Verschaeve, Geert";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.133.233.304>.
+<https://data.vlaanderen.be/id/vestiging/2.133.233.304> a org:Site;
+    dcterms:created "02-07-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.133.233.304.
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:nace_2003_85145 a skos:Concept;
+    skos:definition "Bloedbanken, organenbanken en dergelijke"@nl, "Centres de collecte de sang, banques d'organes et similaires"@fr;
+    skos:prefLabel "85145".
+_:registration_company_0860.997.239 a adms:Identifier;
+    skos:notation "0860.997.239";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.133.233.304 a adms:Identifier;
+    skos:notation "2.133.233.304";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

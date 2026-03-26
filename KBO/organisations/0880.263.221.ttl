@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/46370> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4637>, <http://vocab.belgif.be/auth/nace2025/4637>;
+    skos:definition "Groothandel in koffie, thee, cacao en specerijen"@nl, "Commerce de gros de café, de thé, de cacao et d'épices"@fr;
+    skos:prefLabel "46370".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/47791> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in antiquiteiten in winkels"@nl, "Commerce de détail d'antiquités en magasin"@fr;
+    skos:prefLabel "47791".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0880.263.221> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.263.221;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47791>, <http://vocab.belgif.be/auth/nace2025/46370>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Ghysbrecht, Nathan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.383.591.985>.
+<https://data.vlaanderen.be/id/vestiging/2.383.591.985> a org:Site;
+    dcterms:created "16-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.383.591.985.
+_:registration_company_0880.263.221 a adms:Identifier;
+    skos:notation "0880.263.221";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.383.591.985 a adms:Identifier;
+    skos:notation "2.383.591.985";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

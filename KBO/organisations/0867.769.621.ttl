@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/22230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2223>, <http://vocab.belgif.be/auth/nace2008/2223>;
+    skos:definition "Boekbinden"@nl, "Reliure"@fr;
+    skos:prefLabel "22230".
+<http://vocab.belgif.be/auth/nace2008/25720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2572>, <http://vocab.belgif.be/auth/nace2008/2572>;
+    skos:definition "Vervaardiging van hang- en sluitwerk"@nl, "Fabrication de serrures et de ferrures"@fr;
+    skos:prefLabel "25720".
+<http://vocab.belgif.be/auth/nace2008/31091> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de salles à manger, de salons, de chambres à coucher et de salles de bain"@fr;
+    skos:prefLabel "31091".
+<http://vocab.belgif.be/auth/nace2008/31099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van andere meubelen, n.e.g."@nl, "Fabrication d'autres meubles n.c.a."@fr;
+    skos:prefLabel "31099".
+<http://vocab.belgif.be/auth/nace2025/22240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2224>, <http://vocab.belgif.be/auth/nace2025/2224>;
+    skos:definition "Prepress-activiteiten"@nl, "Activités de pré-presse"@fr;
+    skos:prefLabel "22240".
+<http://vocab.belgif.be/auth/nace2025/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2562>, <http://vocab.belgif.be/auth/nace2025/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2025/31004> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de meubles de salle à manger, de salon, de chambre à coucher et de salle de bain"@fr;
+    skos:prefLabel "31004".
+<http://vocab.belgif.be/auth/nace2025/31009> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van andere meubelen, neg"@nl, "Fabrication d'autres meubles nca"@fr;
+    skos:prefLabel "31009".
+<https://data.vlaanderen.be/id/onderneming/0867.769.621> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0867.769.621;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/31009>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25620>, <http://vocab.belgif.be/auth/nace2025/22240>, <http://vocab.belgif.be/auth/nace2025/31004>, _:nace_2003_36100, _:nace_2003_25230, _:nace_2003_28630, <http://vocab.belgif.be/auth/nace2008/31099>, <http://vocab.belgif.be/auth/nace2008/22230>, <http://vocab.belgif.be/auth/nace2008/31091>, <http://vocab.belgif.be/auth/nace2008/25720>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Bergé, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.139.629.760>.
+<https://data.vlaanderen.be/id/vestiging/2.139.629.760> a org:Site;
+    dcterms:created "12-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.139.629.760.
+_:nace_2003_25230 a skos:Concept;
+    skos:definition "Vervaardiging van kunststofelementen voor de bouw"@nl, "Fabrication d'éléments en matières plastiques pour la construction"@fr;
+    skos:prefLabel "25230".
+_:nace_2003_28630 a skos:Concept;
+    skos:definition "Vervaardiging van hang- en sluitwerk"@nl, "Fabrication de serrures et de ferrures"@fr;
+    skos:prefLabel "28630".
+_:nace_2003_36100 a skos:Concept;
+    skos:definition "Vervaardiging van meubels"@nl, "Fabrication de meubles"@fr;
+    skos:prefLabel "36100".
+_:registration_company_0867.769.621 a adms:Identifier;
+    skos:notation "0867.769.621";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.139.629.760 a adms:Identifier;
+    skos:notation "2.139.629.760";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

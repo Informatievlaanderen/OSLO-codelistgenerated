@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2008/96022> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Schoonheidsverzorging"@nl, "Soins de beauté"@fr;
+    skos:prefLabel "96022".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/96220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9622>, <http://vocab.belgif.be/auth/nace2025/9622>;
+    skos:definition "Schoonheidsverzorging en andere schoonheidsbehandelingen"@nl, "Soins esthétiques et autres activités de traitement esthétique"@fr;
+    skos:prefLabel "96220".
+<https://data.vlaanderen.be/id/onderneming/0879.383.192> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0879.383.192;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96220>, _:nace_2003_93022, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, _:nace_2003_52330, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2008/96022>, <http://vocab.belgif.be/auth/nace2008/47750>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0879.383.192;
+    reorg:legalName "VENTI TRE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.151.962.420>.
+<https://data.vlaanderen.be/id/vestiging/2.151.962.420> a org:Site;
+    dcterms:created "01-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.151.962.420.
+_:address_contact_0879.383.192 a locn:Address;
+    locn:thoroughfare "Chaussée de Bruxelles"@nl, "Chaussée de Bruxelles"@fr;
+    rdfs:label "251";
+    locn:postCode "1410";
+    adres:gemeentenaam "Waterloo"@nl, "Waterloo"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0879.383.192 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "02/888.51.00";
+    locn:address _:address_contact_0879.383.192.
+_:nace_2003_52330 a skos:Concept;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen"@nl, "Commerce de détail de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "52330".
+_:nace_2003_93022 a skos:Concept;
+    skos:definition "Schoonheidszorg"@nl, "Instituts de beauté"@fr;
+    skos:prefLabel "93022".
+_:registration_company_0879.383.192 a adms:Identifier;
+    skos:notation "0879.383.192";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.151.962.420 a adms:Identifier;
+    skos:notation "2.151.962.420";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/65112> a skos:Concept;
+    skos:definition "Activiteiten van gemengde verzekeringsentiteiten, overwegend leven"@nl, "Activités des entreprises d'assurances multibranches à prédominance vie"@fr;
+    skos:prefLabel "65112";
+    skos:broader <http://data.europa.eu/ux2/nace2/6511>, <http://vocab.belgif.be/auth/nace2008/6511>.
+<http://vocab.belgif.be/auth/nace2008/65122> a skos:Concept;
+    skos:definition "Spaarbanken"@nl, "Caisses d'épargne"@fr;
+    skos:prefLabel "65122";
+    skos:broader <http://data.europa.eu/ux2/nace2/6512>, <http://vocab.belgif.be/auth/nace2008/6512>.
+<http://vocab.belgif.be/auth/nace2008/66220> a skos:Concept;
+    skos:definition "Verzekeringsagenten en -makelaars"@nl, "Activités des agents et courtiers d'assurances"@fr;
+    skos:prefLabel "66220";
+    skos:broader <http://data.europa.eu/ux2/nace2/6622>, <http://vocab.belgif.be/auth/nace2008/6622>.
+<http://vocab.belgif.be/auth/nace2025/65112> a skos:Concept;
+    skos:definition "Activiteiten van gemengde verzekeringsentiteiten, overwegend leven"@nl, "Activités des entreprises d'assurances multibranches à prédominance vie"@fr;
+    skos:prefLabel "65112";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6511>, <http://vocab.belgif.be/auth/nace2025/6511>.
+<http://vocab.belgif.be/auth/nace2025/65122> a skos:Concept;
+    skos:definition "Spaarbanken"@nl, "Caisses d'épargne"@fr;
+    skos:prefLabel "65122";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6512>, <http://vocab.belgif.be/auth/nace2025/6512>.
+<http://vocab.belgif.be/auth/nace2025/66220> a skos:Concept;
+    skos:definition "Verzekeringsagenten en -makelaars"@nl, "Activités des agents et courtiers d'assurances"@fr;
+    skos:prefLabel "66220";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6622>, <http://vocab.belgif.be/auth/nace2025/6622>.
+<https://data.vlaanderen.be/id/onderneming/0867.068.548> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0867.068.548;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_66033, <http://vocab.belgif.be/auth/nace2025/65122>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/65112>, <http://vocab.belgif.be/auth/nace2025/66220>, _:nace_2003_66013, _:nace_2003_67201, <http://vocab.belgif.be/auth/nace2008/65122>, <http://vocab.belgif.be/auth/nace2008/66220>, <http://vocab.belgif.be/auth/nace2008/65112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0867.068.548;
+    reorg:legalName "CHUBB EUROPEAN GROUP SE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.139.117.343>, <https://data.vlaanderen.be/id/vestiging/2.155.099.973>, _:branch_9.001.747.478.
+<https://data.vlaanderen.be/id/vestiging/2.139.117.343> a org:Site;
+    dcterms:created "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.139.117.343.
+<https://data.vlaanderen.be/id/vestiging/2.155.099.973> a org:Site;
+    dcterms:created "08-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.099.973.
+_:address_contact_0867.068.548 a locn:Address;
+    locn:thoroughfare "place des Corolles"@nl, "place des Corolles"@fr;
+    rdfs:label "31";
+    locn:postCode "92400";
+    adres:gemeentenaam "Courbevoie"@nl, "Courbevoie"@fr;
+    adres:land "Frankrijk"@nl, "France"@fr.
+_:branch_9.001.747.478 a org:Site;
+    dcterms:created "01-01-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_branch_9.001.747.478.
+_:contact_0867.068.548 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0867.068.548.
+_:nace_2003_66013 a skos:Concept;
+    skos:definition "Gemengde verzekeringsentiteiten, overwegend leven"@nl, "Entreprises d'assurances multibranches à prédominance vie"@fr;
+    skos:prefLabel "66013".
+_:nace_2003_66033 a skos:Concept;
+    skos:definition "Gemengde verzekeringsentiteiten, overwegend niet-leven"@nl, "Entreprises d'assurances multibranches à prédominance non-vie"@fr;
+    skos:prefLabel "66033".
+_:nace_2003_67201 a skos:Concept;
+    skos:definition "Verzekeringsmakelaars en -agenten"@nl, "Agents et courtiers d'assurances"@fr;
+    skos:prefLabel "67201".
+_:registration_branch_9.001.747.478 a adms:Identifier;
+    skos:notation "9.001.747.478";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_company_0867.068.548 a adms:Identifier;
+    skos:notation "0867.068.548";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.139.117.343 a adms:Identifier;
+    skos:notation "2.139.117.343";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.099.973 a adms:Identifier;
+    skos:notation "2.155.099.973";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42911> a skos:Concept;
+    skos:definition "Baggerwerken"@nl, "Travaux de dragage"@fr;
+    skos:prefLabel "42911";
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>.
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919";
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>.
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999";
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>.
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121";
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>.
+<http://vocab.belgif.be/auth/nace2025/42911> a skos:Concept;
+    skos:definition "Baggerwerken"@nl, "Travaux de dragage"@fr;
+    skos:prefLabel "42911";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>.
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>.
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>.
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>.
+<https://data.vlaanderen.be/id/onderneming/0872.162.137> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "28-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0872.162.137;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_45241, <http://vocab.belgif.be/auth/nace2025/42911>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/43990>, _:nace_2003_45250, _:nace_2003_45242, _:nace_2003_74203, <http://vocab.belgif.be/auth/nace2008/42911>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/42919>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0872.162.137;
+    reorg:legalName "DEME OFFSHORE HOLDING"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.149.067.959>.
+<https://data.vlaanderen.be/id/vestiging/2.149.067.959> a org:Site;
+    dcterms:created "15-09-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.067.959.
+_:address_contact_0872.162.137 a locn:Address;
+    locn:thoroughfare "Scheldedijk"@nl, "Scheldedijk"@fr;
+    rdfs:label "30";
+    locn:postCode "2070";
+    adres:gemeentenaam "Beveren-Kruibeke-Zwijndrecht"@nl, "Beveren-Kruibeke-Zwijndrecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0872.162.137 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0872.162.137.
+_:nace_2003_45241 a skos:Concept;
+    skos:definition "Baggerwerken"@nl, "Travaux de dragage"@fr;
+    skos:prefLabel "45241".
+_:nace_2003_45242 a skos:Concept;
+    skos:definition "Overige waterbouw"@nl, "Autres travaux maritimes et fluviaux"@fr;
+    skos:prefLabel "45242".
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:registration_company_0872.162.137 a adms:Identifier;
+    skos:notation "0872.162.137";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.067.959 a adms:Identifier;
+    skos:notation "2.149.067.959";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

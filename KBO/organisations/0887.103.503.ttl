@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4663>, <http://vocab.belgif.be/auth/nace2008/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4663>, <http://vocab.belgif.be/auth/nace2025/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/0887.103.503> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0887.103.503;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/43990>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/46630>, <http://vocab.belgif.be/auth/nace2025/77320>, _:nace_2003_51810, _:nace_2003_51820, _:nace_2003_71320, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/46620>, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/46630>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0887.103.503;
+    reorg:legalName "CONAD"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.159.848.322>, <https://data.vlaanderen.be/id/vestiging/2.263.591.604>.
+<https://data.vlaanderen.be/id/vestiging/2.159.848.322> a org:Site;
+    dcterms:created "08-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.159.848.322.
+<https://data.vlaanderen.be/id/vestiging/2.263.591.604> a org:Site;
+    dcterms:created "26-01-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.263.591.604.
+_:address_contact_0887.103.503 a locn:Address;
+    locn:thoroughfare "Gillegomstraat"@nl, "Gillegomstraat"@fr;
+    rdfs:label "82";
+    locn:postCode "2530";
+    adres:gemeentenaam "Boechout"@nl, "Boechout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0887.103.503 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0887.103.503.
+_:nace_2003_51810 a skos:Concept;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "51810".
+_:nace_2003_51820 a skos:Concept;
+    skos:definition "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr, "Groothandel in machines voor mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl;
+    skos:prefLabel "51820".
+_:nace_2003_71320 a skos:Concept;
+    skos:definition "Verhuur van machines en installaties voor de bouwnijverheid"@nl, "Location de machines et équipements pour la construction"@fr;
+    skos:prefLabel "71320".
+_:registration_company_0887.103.503 a adms:Identifier;
+    skos:notation "0887.103.503";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.159.848.322 a adms:Identifier;
+    skos:notation "2.159.848.322";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.263.591.604 a adms:Identifier;
+    skos:notation "2.263.591.604";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

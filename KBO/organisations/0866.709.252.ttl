@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:definition "Traitement et revêtement des métaux"@fr, "Oppervlaktebehandeling van metalen"@nl;
+    skos:prefLabel "25610";
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>.
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620";
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>.
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>.
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>.
+<https://data.vlaanderen.be/id/onderneming/0866.709.252> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "10-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0866.709.252;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_28520, <http://vocab.belgif.be/auth/nace2025/25530>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25510>, _:nace_2003_28510, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/25610>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0866.709.252;
+    reorg:legalName "Peter Meulemeester"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.139.703.402>.
+<https://data.vlaanderen.be/id/vestiging/2.139.703.402> a org:Site;
+    dcterms:created "13-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.139.703.402.
+_:address_contact_0866.709.252 a locn:Address;
+    locn:thoroughfare "De Leiteweg"@nl, "De Leiteweg"@fr;
+    rdfs:label "23";
+    adres:busnummer "B";
+    locn:postCode "8020";
+    adres:gemeentenaam "Oostkamp"@nl, "Oostkamp"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0866.709.252 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0866.709.252.
+_:nace_2003_28510 a skos:Concept;
+    skos:definition "Oppervlaktebehandeling en bekleding van metaal"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "28510".
+_:nace_2003_28520 a skos:Concept;
+    skos:definition "Algemene metaalbewerking"@nl, "Opérations de mécanique générale"@fr;
+    skos:prefLabel "28520".
+_:registration_company_0866.709.252 a adms:Identifier;
+    skos:notation "0866.709.252";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.139.703.402 a adms:Identifier;
+    skos:notation "2.139.703.402";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-08-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

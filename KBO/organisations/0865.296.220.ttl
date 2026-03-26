@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3250>, <http://vocab.belgif.be/auth/nace2008/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/72190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7219>, <http://vocab.belgif.be/auth/nace2008/7219>;
+    skos:definition "Recherche-développement en autres sciences physiques et naturelles"@fr, "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk  gebied"@nl;
+    skos:prefLabel "72190".
+<http://vocab.belgif.be/auth/nace2008/77295> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77295".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3250>, <http://vocab.belgif.be/auth/nace2025/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/72109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>;
+    skos:definition "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche-développement en autres sciences physiques et naturelles"@fr;
+    skos:prefLabel "72109".
+<http://vocab.belgif.be/auth/nace2025/77225> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van medisch en paramedisch materieel"@nl, "Location et location-bail de matériel médical et paramédical"@fr;
+    skos:prefLabel "77225".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0865.296.220> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0865.296.220;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/71121>, _:nace_2003_74203, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/72109>, <http://vocab.belgif.be/auth/nace2025/32500>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/77225>, _:nace_2003_33102, _:nace_2003_74879, _:nace_2003_71407, _:nace_2003_73100, _:nace_2003_72220, _:nace_2003_33101, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/77295>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/32500>, <http://vocab.belgif.be/auth/nace2008/72190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0865.296.220;
+    reorg:legalName "Althea Belgique"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.173.313.407>.
+<https://data.vlaanderen.be/id/vestiging/2.173.313.407> a org:Site;
+    dcterms:created "07-07-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.173.313.407.
+_:address_contact_0865.296.220 a locn:Address;
+    locn:thoroughfare "Rue de l'Aéroport"@nl, "Rue de l'Aéroport"@fr;
+    rdfs:label "Bât 50";
+    locn:postCode "4460";
+    adres:gemeentenaam "Grâce-Hollogne"@nl, "Grâce-Hollogne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0865.296.220 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "josiane.sier@althea-group.com";
+    schema:telephone "+3242392313";
+    <http://xmlns.com/foaf/0.1/homepage> "www.althea-group.com";
+    locn:address _:address_contact_0865.296.220.
+_:nace_2003_33101 a skos:Concept;
+    skos:definition "Vervaardiging van elektrische apparaten voor de geneeskunde, de tandheelkunde en de veeartsenijkunde"@nl, "Fabrication d'appareils électriques pour la médecine, l'art dentaire et l'art vétérinaire"@fr;
+    skos:prefLabel "33101".
+_:nace_2003_33102 a skos:Concept;
+    skos:definition "Vervaardiging van niet-elektrische apparaten en instrumenten voor de geneeskunde, de tandheelkunde en de veeartsenijkunde"@nl, "Fabrication d'appareils non-électriques pour la médecine, l'art dentaire et l'art vétérinaire"@fr;
+    skos:prefLabel "33102".
+_:nace_2003_71407 a skos:Concept;
+    skos:definition "Verhuur van medisch en paramedisch materieel"@nl, "Location de matériel médical et paramédical"@fr;
+    skos:prefLabel "71407".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:nace_2003_73100 a skos:Concept;
+    skos:definition "Speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche et développement en sciences physiques et naturelles"@fr;
+    skos:prefLabel "73100".
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0865.296.220 a adms:Identifier;
+    skos:notation "0865.296.220";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.173.313.407 a adms:Identifier;
+    skos:notation "2.173.313.407";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-05-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

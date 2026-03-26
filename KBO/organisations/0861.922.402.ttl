@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4711>, <http://vocab.belgif.be/auth/nace2008/4711>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen overheersen (verkoopsoppervlakte < 100 m²)"@nl, "Commerce de détail en magasin non spécialisé à prédominance alimentaire (surface de vente < 100m²)"@fr;
+    skos:prefLabel "47112".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<https://data.vlaanderen.be/id/onderneming/0861.922.402> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.922.402;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47110>, _:nace_2003_52112, <http://vocab.belgif.be/auth/nace2008/47112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0861.922.402;
+    reorg:legalName "BARMI"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.166.599.225>, <https://data.vlaanderen.be/id/vestiging/2.201.836.553>, <https://data.vlaanderen.be/id/vestiging/2.253.265.557>, <https://data.vlaanderen.be/id/vestiging/2.362.772.124>.
+<https://data.vlaanderen.be/id/vestiging/2.166.599.225> a org:Site;
+    dcterms:created "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.166.599.225.
+<https://data.vlaanderen.be/id/vestiging/2.201.836.553> a org:Site;
+    dcterms:created "01-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.201.836.553.
+<https://data.vlaanderen.be/id/vestiging/2.253.265.557> a org:Site;
+    dcterms:created "15-07-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.253.265.557.
+<https://data.vlaanderen.be/id/vestiging/2.362.772.124> a org:Site;
+    dcterms:created "19-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.362.772.124.
+_:address_contact_0861.922.402 a locn:Address;
+    locn:thoroughfare "Singel"@nl, "Singel"@fr;
+    rdfs:label "5A";
+    locn:postCode "1745";
+    adres:gemeentenaam "Opwijk"@nl, "Opwijk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0861.922.402 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0861.922.402.
+_:nace_2003_52112 a skos:Concept;
+    skos:definition "Niet-gespecialiseerde detailhandel in algemene voedingsmiddelen (verkoopsoppervlakte minder dan 100 m2)"@nl, "Commerce de détail non spécialisé d'alimentation générale (surface de vente inférieure à 100 m2)"@fr;
+    skos:prefLabel "52112".
+_:registration_company_0861.922.402 a adms:Identifier;
+    skos:notation "0861.922.402";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.166.599.225 a adms:Identifier;
+    skos:notation "2.166.599.225";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.201.836.553 a adms:Identifier;
+    skos:notation "2.201.836.553";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.253.265.557 a adms:Identifier;
+    skos:notation "2.253.265.557";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.362.772.124 a adms:Identifier;
+    skos:notation "2.362.772.124";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

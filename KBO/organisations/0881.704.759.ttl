@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01461> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Fokvarkenshouderijen"@nl, "Élevage de porcs reproducteurs"@fr;
+    skos:prefLabel "01461".
+<http://vocab.belgif.be/auth/nace2008/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2025/01461> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Fokvarkenshouderijen"@nl, "Élevage de porcs reproducteurs"@fr;
+    skos:prefLabel "01461".
+<http://vocab.belgif.be/auth/nace2025/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<https://data.vlaanderen.be/id/onderneming/0881.704.759> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.704.759;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01462>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01461>, _:nace_2003_01231, <http://vocab.belgif.be/auth/nace2008/01462>, <http://vocab.belgif.be/auth/nace2008/01461>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0881.704.759;
+    reorg:legalName "MERTENS-HAL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.211.421.539>, <https://data.vlaanderen.be/id/vestiging/2.225.528.012>, <https://data.vlaanderen.be/id/vestiging/2.231.831.923>, <https://data.vlaanderen.be/id/vestiging/2.231.832.022>, <https://data.vlaanderen.be/id/vestiging/2.242.660.883>, <https://data.vlaanderen.be/id/vestiging/2.294.009.616>.
+<https://data.vlaanderen.be/id/vestiging/2.211.421.539> a org:Site;
+    dcterms:created "01-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.211.421.539.
+<https://data.vlaanderen.be/id/vestiging/2.225.528.012> a org:Site;
+    dcterms:created "01-05-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.225.528.012.
+<https://data.vlaanderen.be/id/vestiging/2.231.831.923> a org:Site;
+    dcterms:created "12-05-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.231.831.923.
+<https://data.vlaanderen.be/id/vestiging/2.231.832.022> a org:Site;
+    dcterms:created "01-07-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.231.832.022.
+<https://data.vlaanderen.be/id/vestiging/2.242.660.883> a org:Site;
+    dcterms:created "01-01-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.242.660.883.
+<https://data.vlaanderen.be/id/vestiging/2.294.009.616> a org:Site;
+    dcterms:created "30-10-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.294.009.616.
+_:address_contact_0881.704.759 a locn:Address;
+    locn:thoroughfare "Hal"@nl, "Hal"@fr;
+    rdfs:label "36";
+    locn:postCode "2322";
+    adres:gemeentenaam "Hoogstraten"@nl, "Hoogstraten"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.704.759 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0881.704.759.
+_:nace_2003_01231 a skos:Concept;
+    skos:definition "Élevage de porcs reproducteurs"@fr, "Fokvarkenshouderij"@nl;
+    skos:prefLabel "01231".
+_:registration_company_0881.704.759 a adms:Identifier;
+    skos:notation "0881.704.759";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.211.421.539 a adms:Identifier;
+    skos:notation "2.211.421.539";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.225.528.012 a adms:Identifier;
+    skos:notation "2.225.528.012";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.231.831.923 a adms:Identifier;
+    skos:notation "2.231.831.923";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.231.832.022 a adms:Identifier;
+    skos:notation "2.231.832.022";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.242.660.883 a adms:Identifier;
+    skos:notation "2.242.660.883";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.294.009.616 a adms:Identifier;
+    skos:notation "2.294.009.616";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

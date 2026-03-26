@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3530>, <http://vocab.belgif.be/auth/nace2008/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3530>, <http://vocab.belgif.be/auth/nace2025/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0882.179.366> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0882.179.366;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/35300>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_40300, _:nace_2003_93053, _:nace_2003_92313, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/35300>, <http://vocab.belgif.be/auth/nace2008/90023>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0882.179.366;
+    reorg:legalName "De Smet, Kay";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.154.751.070>.
+<https://data.vlaanderen.be/id/vestiging/2.154.751.070> a org:Site;
+    dcterms:created "01-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.154.751.070.
+_:contact_0882.179.366 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "kay@cadee.be";
+    schema:telephone "0487/33/33/31".
+_:nace_2003_40300 a skos:Concept;
+    skos:definition "Distributie van stoom en warm water; vervaardiging van ijs, niet bestemd voor consumptie"@nl, "Production et distribution de vapeur et d'eau chaude; production de glace hydriques non destinées à la consommation"@fr;
+    skos:prefLabel "40300".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:nace_2003_93053 a skos:Concept;
+    skos:definition "Overige diensten , n.e.g."@nl, "Autres services  n.d.a."@fr;
+    skos:prefLabel "93053".
+_:registration_company_0882.179.366 a adms:Identifier;
+    skos:notation "0882.179.366";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.154.751.070 a adms:Identifier;
+    skos:notation "2.154.751.070";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

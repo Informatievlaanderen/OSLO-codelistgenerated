@@ -1,0 +1,105 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/46211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in granen en zaden"@nl, "Commerce de gros de céréales et de semences"@fr;
+    skos:prefLabel "46211".
+<http://vocab.belgif.be/auth/nace2008/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/46211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in granen en zaden"@nl, "Commerce de gros de céréales et de semences"@fr;
+    skos:prefLabel "46211".
+<http://vocab.belgif.be/auth/nace2025/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0880.531.059> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "08-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.531.059;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/47761>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2025/46211>, <http://vocab.belgif.be/auth/nace2025/82990>, _:nace_2003_52483, _:nace_2003_74879, _:nace_2003_51210, _:nace_2003_01110, <http://vocab.belgif.be/auth/nace2008/46211>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/63990>, <http://vocab.belgif.be/auth/nace2008/47761>, <http://vocab.belgif.be/auth/nace2008/01110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0880.531.059;
+    reorg:legalName "VIGOR"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.154.611.708>.
+<https://data.vlaanderen.be/id/vestiging/2.154.611.708> a org:Site;
+    dcterms:created "09-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.154.611.708.
+_:address_contact_0880.531.059 a locn:Address;
+    locn:thoroughfare "Mannekenshaagstraat"@nl, "Mannekenshaagstraat"@fr;
+    rdfs:label "45";
+    locn:postCode "3545";
+    adres:gemeentenaam "Halen"@nl, "Halen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0880.531.059 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0880.531.059.
+_:nace_2003_01110 a skos:Concept;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+_:nace_2003_51210 a skos:Concept;
+    skos:definition "Groothandel in granen, zaden en diervoeders"@nl, "Commerce de gros de céréales, semences et aliments pour le bétail"@fr;
+    skos:prefLabel "51210".
+_:nace_2003_52483 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in bloemen en planten, zaden en kunstmeststoffen"@nl, "Commerce de détail spécialisé de fleurs et de plantes, de graines et d'engrais"@fr;
+    skos:prefLabel "52483".
+_:nace_2003_74879 a skos:Concept;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres services aux entreprises n.d.a"@fr;
+    skos:prefLabel "74879".
+_:registration_company_0880.531.059 a adms:Identifier;
+    skos:notation "0880.531.059";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.154.611.708 a adms:Identifier;
+    skos:notation "2.154.611.708";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-03-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

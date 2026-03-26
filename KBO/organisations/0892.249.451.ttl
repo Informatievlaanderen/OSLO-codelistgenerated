@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/86905> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Ambulante revalidatieactiviteiten"@nl, "Activités de revalidation ambulatoire"@fr;
+    skos:prefLabel "86905".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2008/93130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9313>, <http://vocab.belgif.be/auth/nace2008/9313>;
+    skos:definition "Fitnesscentra"@nl, "Activités des centres de culture physique"@fr;
+    skos:prefLabel "93130".
+<http://vocab.belgif.be/auth/nace2025/86951> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8695>, <http://vocab.belgif.be/auth/nace2025/8695>;
+    skos:definition "Activiteiten op het gebied van kinesitherapie"@nl, "Activités de kinésithérapie"@fr;
+    skos:prefLabel "86951".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9313>, <http://vocab.belgif.be/auth/nace2025/9313>;
+    skos:definition "Fitnesscentra"@nl, "Activités des centres de culture physique"@fr;
+    skos:prefLabel "93130".
+<https://data.vlaanderen.be/id/onderneming/0892.249.451> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "24-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0892.249.451;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2025/93130>, _:nace_2003_92611, _:nace_2003_92613, _:nace_2003_92612, <https://data.vlaanderen.be/id/concept/ActivitityGroup/003>, <http://vocab.belgif.be/auth/nace2008/86905>, <http://vocab.belgif.be/auth/nace2008/93130>, <http://vocab.belgif.be/auth/nace2008/93110>, _:nace_2003_85144, <http://vocab.belgif.be/auth/nace2025/86951>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Maréchal, Joël".
+_:nace_2003_85144 a skos:Concept;
+    skos:definition "Kinesitherapeuten (fysiotherapeuten)"@nl, "Kinésithérapeutes"@fr;
+    skos:prefLabel "85144".
+_:nace_2003_92611 a skos:Concept;
+    skos:definition "Beheer en exploitatie van sportcentra"@nl, "Gestion et exploitation de centres sportifs"@fr;
+    skos:prefLabel "92611".
+_:nace_2003_92612 a skos:Concept;
+    skos:definition "Exploitatie van fitnesscentra en gymnastiekzalen"@nl, "Exploitation de centres de fitness et salles de gymnastique"@fr;
+    skos:prefLabel "92612".
+_:nace_2003_92613 a skos:Concept;
+    skos:definition "Exploitatie van overige sportinstallaties en -accomodaties"@nl, "Exploitation d'autres installations sportives"@fr;
+    skos:prefLabel "92613".
+_:registration_company_0892.249.451 a adms:Identifier;
+    skos:notation "0892.249.451";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

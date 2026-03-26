@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8412>, <http://vocab.belgif.be/auth/nace2008/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<http://vocab.belgif.be/auth/nace2008/90012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90012".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8412>, <http://vocab.belgif.be/auth/nace2025/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<http://vocab.belgif.be/auth/nace2025/90202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90202".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0871.927.456> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "16-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.927.456;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/84120>, <http://vocab.belgif.be/auth/nace2025/90202>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_75120, _:nace_2003_92313, _:nace_2003_92312, <http://vocab.belgif.be/auth/nace2008/90012>, <http://vocab.belgif.be/auth/nace2008/90023>, <http://vocab.belgif.be/auth/nace2008/84120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0871.927.456;
+    reorg:legalName "STUDIECENTRUM ALS CATARS"@nl.
+_:address_contact_0871.927.456 a locn:Address;
+    locn:thoroughfare "Heiligenborre"@nl, "Heiligenborre"@fr;
+    rdfs:label "13";
+    locn:postCode "1170";
+    adres:gemeentenaam "Watermaal-Bosvoorde"@nl, "Watermael-Boitsfort"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0871.927.456 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0871.927.456.
+_:nace_2003_75120 a skos:Concept;
+    skos:definition "Activiteiten van openbare instellingen m.b.t. gezondheidszorg, milieu, onderwijs, cultuur en andere sociale aangelegenheden"@nl, "Activités d'organismes publics relatives aux soins de santé, à l'environnement, à l'enseignement, à la culture et aux autres matières sociales"@fr;
+    skos:prefLabel "75120".
+_:nace_2003_92312 a skos:Concept;
+    skos:definition "Productie van kunstmanifestaties en voorstellingen door artistieke ensembles"@nl, "Production de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "92312".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:registration_company_0871.927.456 a adms:Identifier;
+    skos:notation "0871.927.456";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

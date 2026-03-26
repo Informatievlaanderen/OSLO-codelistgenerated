@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/01199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0119>, <http://vocab.belgif.be/auth/nace2008/0119>;
+    skos:definition "Teelt van andere eenjarige gewassen, n.e.g."@nl, "Autres cultures non permanentes n.c.a."@fr;
+    skos:prefLabel "01199".
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>;
+    skos:definition "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr, "Groothandel in computers, randapparatuur en software"@nl;
+    skos:prefLabel "46510".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/01199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0119>, <http://vocab.belgif.be/auth/nace2025/0119>;
+    skos:definition "Teelt van andere eenjarige gewassen, n.e.g."@nl, "Autres cultures non permanentes n.c.a."@fr;
+    skos:prefLabel "01199".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<https://data.vlaanderen.be/id/onderneming/0861.549.248> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.549.248;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/01199>, <http://vocab.belgif.be/auth/nace2025/46500>, _:nace_2003_51840, _:nace_2003_72100, <http://vocab.belgif.be/auth/nace2008/01110>, <http://vocab.belgif.be/auth/nace2008/01199>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/46510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Baeke, Jeffrey";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.133.763.834>, <https://data.vlaanderen.be/id/vestiging/2.325.458.994>.
+<https://data.vlaanderen.be/id/vestiging/2.133.763.834> a org:Site;
+    dcterms:created "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.133.763.834.
+<https://data.vlaanderen.be/id/vestiging/2.325.458.994> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.325.458.994.
+_:nace_2003_51840 a skos:Concept;
+    skos:definition "Groothandel in computers, randapparatuur en programmatuur"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "51840".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:registration_company_0861.549.248 a adms:Identifier;
+    skos:notation "0861.549.248";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.133.763.834 a adms:Identifier;
+    skos:notation "2.133.763.834";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.325.458.994 a adms:Identifier;
+    skos:notation "2.325.458.994";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

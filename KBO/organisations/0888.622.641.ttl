@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/91011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Bibliotheken,mediatheken en ludotheken"@nl, "Gestion des bibliothèques, des médiathèques et des ludothèques"@fr;
+    skos:prefLabel "91011".
+<http://vocab.belgif.be/auth/nace2008/91012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Openbare archieven"@nl, "Gestion des archives publiques"@fr;
+    skos:prefLabel "91012".
+<http://vocab.belgif.be/auth/nace2008/91020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9102>, <http://vocab.belgif.be/auth/nace2008/9102>;
+    skos:definition "Musea"@nl, "Gestion des musées"@fr;
+    skos:prefLabel "91020".
+<http://vocab.belgif.be/auth/nace2025/91110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9111>, <http://vocab.belgif.be/auth/nace2025/9111>;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+<http://vocab.belgif.be/auth/nace2025/91120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9112>, <http://vocab.belgif.be/auth/nace2025/9112>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités d'organisations professionnelles"@fr;
+    skos:prefLabel "91120".
+<http://vocab.belgif.be/auth/nace2025/91210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9121>, <http://vocab.belgif.be/auth/nace2025/9121>;
+    skos:definition "Activiteiten van musea en collecties"@nl, "Activités des musées et collections"@fr;
+    skos:prefLabel "91210".
+<https://data.vlaanderen.be/id/onderneming/0888.622.641> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.622.641;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/91110>, <http://vocab.belgif.be/auth/nace2025/91210>, <http://vocab.belgif.be/auth/nace2025/91120>, <http://vocab.belgif.be/auth/nace2008/91011>, <http://vocab.belgif.be/auth/nace2008/91012>, <http://vocab.belgif.be/auth/nace2008/91020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Badot, Jean-Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.354.592.054>.
+<https://data.vlaanderen.be/id/vestiging/2.354.592.054> a org:Site;
+    dcterms:created "17-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.354.592.054.
+_:registration_company_0888.622.641 a adms:Identifier;
+    skos:notation "0888.622.641";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.354.592.054 a adms:Identifier;
+    skos:notation "2.354.592.054";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/11050> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1105>, <http://vocab.belgif.be/auth/nace2008/1105>;
+    skos:definition "Vervaardiging van bier"@nl, "Fabrication de bière"@fr;
+    skos:prefLabel "11050".
+<http://vocab.belgif.be/auth/nace2008/11070> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1107>, <http://vocab.belgif.be/auth/nace2008/1107>;
+    skos:definition "Vervaardiging van frisdranken; productie van mineraalwater en ander gebotteld water"@nl, "Industrie des eaux minérales et autres eaux embouteillées et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "11070".
+<http://vocab.belgif.be/auth/nace2025/11050> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1105>, <http://vocab.belgif.be/auth/nace2025/1105>;
+    skos:definition "Vervaardiging van bier"@nl, "Fabrication de bière"@fr;
+    skos:prefLabel "11050".
+<http://vocab.belgif.be/auth/nace2025/11070> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1107>, <http://vocab.belgif.be/auth/nace2025/1107>;
+    skos:definition "Vervaardiging van frisdranken; productie van mineraalwater en ander gebotteld water"@nl, "Industrie des eaux minérales et autres eaux embouteillées et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "11070".
+<https://data.vlaanderen.be/id/onderneming/0892.860.254> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0892.860.254;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/11050>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/11070>, _:nace_2003_15960, _:nace_2003_15980, <http://vocab.belgif.be/auth/nace2008/11050>, <http://vocab.belgif.be/auth/nace2008/11070>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0892.860.254;
+    reorg:legalName "SCHELDEBROUWERIJ"@nl, "SCHELDEBROUWERIJ België"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.166.063.448>.
+<https://data.vlaanderen.be/id/vestiging/2.166.063.448> a org:Site;
+    dcterms:created "17-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.166.063.448.
+_:address_contact_0892.860.254 a locn:Address;
+    locn:thoroughfare "Wenenstraat"@nl, "Wenenstraat"@fr;
+    rdfs:label "5";
+    locn:postCode "2321";
+    adres:gemeentenaam "Hoogstraten"@nl, "Hoogstraten"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0892.860.254 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0892.860.254.
+_:nace_2003_15960 a skos:Concept;
+    skos:definition "Vervaardiging van bier"@nl, "Production de la bière"@fr;
+    skos:prefLabel "15960".
+_:nace_2003_15980 a skos:Concept;
+    skos:definition "Productie van mineraalwater en frisdranken"@nl, "Industrie des eaux minérales et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "15980".
+_:registration_company_0892.860.254 a adms:Identifier;
+    skos:notation "0892.860.254";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.166.063.448 a adms:Identifier;
+    skos:notation "2.166.063.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

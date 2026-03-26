@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/46710> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4671>, <http://vocab.belgif.be/auth/nace2008/4671>;
+    skos:definition "Groothandel in vaste, vloeibare en gasvormige brandstoffen en aanverwante producten"@nl, "Commerce de gros de combustibles solides, liquides et gazeux et de produits annexes"@fr;
+    skos:prefLabel "46710".
+<http://vocab.belgif.be/auth/nace2008/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4690>, <http://vocab.belgif.be/auth/nace2008/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/46810> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4681>, <http://vocab.belgif.be/auth/nace2025/4681>;
+    skos:definition "Groothandel in vaste, vloeibare en gasvormige brandstoffen en aanverwante producten"@nl, "Commerce de gros de combustibles solides, liquides et gazeux et de produits annexes"@fr;
+    skos:prefLabel "46810".
+<http://vocab.belgif.be/auth/nace2025/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4690>, <http://vocab.belgif.be/auth/nace2025/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<https://data.vlaanderen.be/id/onderneming/0875.186.557> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "19-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.186.557;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46649>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/46810>, <http://vocab.belgif.be/auth/nace2025/46900>, _:nace_2003_51873, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/46620>, <http://vocab.belgif.be/auth/nace2008/46900>, <http://vocab.belgif.be/auth/nace2008/46710>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0875.186.557;
+    reorg:legalName "TYLCO LUBE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.509.893>.
+<https://data.vlaanderen.be/id/vestiging/2.150.509.893> a org:Site;
+    dcterms:created "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.509.893.
+_:address_contact_0875.186.557 a locn:Address;
+    locn:thoroughfare "Gentse Steenweg"@nl, "Gentse Steenweg"@fr;
+    rdfs:label "117";
+    adres:busnummer "24";
+    locn:postCode "9160";
+    adres:gemeentenaam "Lokeren"@nl, "Lokeren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0875.186.557 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sales@tylcolube.be";
+    schema:telephone "09/3286312";
+    schema:faxNumber "09/3286417";
+    <http://xmlns.com/foaf/0.1/homepage> "www.tylcolube.be";
+    locn:address _:address_contact_0875.186.557.
+_:nace_2003_51873 a skos:Concept;
+    skos:definition "Groothandel in diverse machines en uitrusting voor handel en dienstverlening, n.e.g."@nl, "Commerce de gros de fournitures et d'équipements divers pour le commerce et les services n.d.a."@fr;
+    skos:prefLabel "51873".
+_:registration_company_0875.186.557 a adms:Identifier;
+    skos:notation "0875.186.557";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.509.893 a adms:Identifier;
+    skos:notation "2.150.509.893";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

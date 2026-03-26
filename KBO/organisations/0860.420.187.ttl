@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47762> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor in gespecialiseerde winkels"@nl, "Commerce de détail d'animaux de compagnie, d'aliments et d'accessoires pour ces animaux en magasin spécialisé"@fr;
+    skos:prefLabel "47762".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/47762> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor in gespecialiseerde winkels"@nl, "Commerce de détail d'animaux de compagnie, d'aliments et d'accessoires pour ces animaux en magasin spécialisé"@fr;
+    skos:prefLabel "47762".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<https://data.vlaanderen.be/id/onderneming/0860.420.187> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "30-07-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.420.187;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/47762>, _:nace_2003_52496, _:nace_2003_55522, <http://vocab.belgif.be/auth/nace2008/47762>, <http://vocab.belgif.be/auth/nace2008/56210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0860.420.187;
+    reorg:legalName "Zwijnaardse Hondenschool De Hondenhoeve"@nl.
+_:address_contact_0860.420.187 a locn:Address;
+    locn:thoroughfare "Klossestraat"@nl, "Klossestraat"@fr;
+    rdfs:label "64";
+    locn:postCode "9052";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0860.420.187 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0860.420.187.
+_:nace_2003_52496 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor"@nl, "Commerce de détail spécialisé d'animaux de compagnie et d'aliments pour ces animaux"@fr;
+    skos:prefLabel "52496".
+_:nace_2003_55522 a skos:Concept;
+    skos:definition "Uitzendkoks en verzorgen van feesten en recepties"@nl, "Traiteurs et organisation de réceptions"@fr;
+    skos:prefLabel "55522".
+_:registration_company_0860.420.187 a adms:Identifier;
+    skos:notation "0860.420.187";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-07-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

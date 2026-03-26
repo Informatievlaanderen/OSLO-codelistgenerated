@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/56290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5629>, <http://vocab.belgif.be/auth/nace2008/5629>;
+    skos:definition "Overige eetgelegenheden"@nl, "Autres services de restauration"@fr;
+    skos:prefLabel "56290".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/56220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5622>, <http://vocab.belgif.be/auth/nace2025/5622>;
+    skos:definition "Cateringdiensten op contractbasis en overige diensten in verband met maaltijden"@nl, "Activités de service contractuel de restauration et autres activités de service de restauration"@fr;
+    skos:prefLabel "56220".
+<https://data.vlaanderen.be/id/onderneming/0860.456.217> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-09-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.456.217;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56220>, <http://vocab.belgif.be/auth/nace2025/56210>, _:nace_2003_55521, _:nace_2003_55522, <http://vocab.belgif.be/auth/nace2008/56290>, <http://vocab.belgif.be/auth/nace2008/56210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0860.456.217;
+    reorg:legalName "MASOMO"@nl.
+_:address_contact_0860.456.217 a locn:Address;
+    locn:thoroughfare "Sint-Kruisstraat"@nl, "Sint-Kruisstraat"@fr;
+    rdfs:label "56";
+    locn:postCode "8310";
+    adres:gemeentenaam "Brugge"@nl, "Brugge"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0860.456.217 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@masomo.net";
+    <http://xmlns.com/foaf/0.1/homepage> "www.masomo.net";
+    locn:address _:address_contact_0860.456.217.
+_:nace_2003_55521 a skos:Concept;
+    skos:definition "Catering"@nl, "Restauration collective sous contrat (catering)"@fr;
+    skos:prefLabel "55521".
+_:nace_2003_55522 a skos:Concept;
+    skos:definition "Uitzendkoks en verzorgen van feesten en recepties"@nl, "Traiteurs et organisation de réceptions"@fr;
+    skos:prefLabel "55522".
+_:registration_company_0860.456.217 a adms:Identifier;
+    skos:notation "0860.456.217";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-09-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

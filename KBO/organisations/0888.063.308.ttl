@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<https://data.vlaanderen.be/id/onderneming/0888.063.308> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.063.308;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47400>, _:nace_2003_52487, <http://vocab.belgif.be/auth/nace2008/47410>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0888.063.308;
+    reorg:legalName "RV TELEMATICS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.160.661.637>.
+<https://data.vlaanderen.be/id/vestiging/2.160.661.637> a org:Site;
+    dcterms:created "19-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.160.661.637.
+_:address_contact_0888.063.308 a locn:Address;
+    locn:thoroughfare "Kleine Tommestraat(OTT)"@nl, "Kleine Tommestraat(OTT)"@fr;
+    rdfs:label "12";
+    locn:postCode "3040";
+    adres:gemeentenaam "Huldenberg"@nl, "Huldenberg"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0888.063.308 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0888.063.308.
+_:nace_2003_52487 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in kantoormachines en -meubelen, computers en standaardprogrammatuur en telecommunicatieapparatuur"@nl, "Commerce de détail spécialisé d'équipements de bureau, d'ordinateurs et de matériel de télécommunication"@fr;
+    skos:prefLabel "52487".
+_:registration_company_0888.063.308 a adms:Identifier;
+    skos:notation "0888.063.308";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.160.661.637 a adms:Identifier;
+    skos:notation "2.160.661.637";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-03-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

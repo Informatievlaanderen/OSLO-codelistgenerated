@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8121>, <http://vocab.belgif.be/auth/nace2008/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/96910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9691>, <http://vocab.belgif.be/auth/nace2025/9691>;
+    skos:definition "Huishoudelijke persoonlijke dienstverlening"@nl, "Activités d’offre de services domestiques aux personnes"@fr;
+    skos:prefLabel "96910".
+<https://data.vlaanderen.be/id/onderneming/0881.680.213> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/706>;
+    dcterms:created "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.680.213;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96910>, _:nace_2003_74700, <http://vocab.belgif.be/auth/nace2008/81210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0881.680.213;
+    reorg:legalName "SECOPASS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.184.464.942>, <https://data.vlaanderen.be/id/vestiging/2.290.896.906>, <https://data.vlaanderen.be/id/vestiging/2.325.041.795>, <https://data.vlaanderen.be/id/vestiging/2.325.268.756>, <https://data.vlaanderen.be/id/vestiging/2.325.269.152>, <https://data.vlaanderen.be/id/vestiging/2.330.006.118>, <https://data.vlaanderen.be/id/vestiging/2.375.632.245>.
+<https://data.vlaanderen.be/id/vestiging/2.184.464.942> a org:Site;
+    dcterms:created "06-06-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.184.464.942.
+<https://data.vlaanderen.be/id/vestiging/2.290.896.906> a org:Site;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.290.896.906.
+<https://data.vlaanderen.be/id/vestiging/2.325.041.795> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.325.041.795.
+<https://data.vlaanderen.be/id/vestiging/2.325.268.756> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.325.268.756.
+<https://data.vlaanderen.be/id/vestiging/2.325.269.152> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.325.269.152.
+<https://data.vlaanderen.be/id/vestiging/2.330.006.118> a org:Site;
+    dcterms:created "01-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.330.006.118.
+<https://data.vlaanderen.be/id/vestiging/2.375.632.245> a org:Site;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.375.632.245.
+_:address_contact_0881.680.213 a locn:Address;
+    locn:thoroughfare "Chaussée de Bruxelles"@nl, "Chaussée de Bruxelles"@fr;
+    rdfs:label "165";
+    adres:busnummer "65";
+    locn:postCode "1410";
+    adres:gemeentenaam "Waterloo"@nl, "Waterloo"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.680.213 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sebastien.derese@secopass.be";
+    schema:telephone "069777057";
+    <http://xmlns.com/foaf/0.1/homepage> "www.secopass.be";
+    locn:address _:address_contact_0881.680.213.
+_:nace_2003_74700 a skos:Concept;
+    skos:definition "Industriële reiniging"@nl, "Nettoyage industriel"@fr;
+    skos:prefLabel "74700".
+_:registration_company_0881.680.213 a adms:Identifier;
+    skos:notation "0881.680.213";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.184.464.942 a adms:Identifier;
+    skos:notation "2.184.464.942";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.290.896.906 a adms:Identifier;
+    skos:notation "2.290.896.906";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.325.041.795 a adms:Identifier;
+    skos:notation "2.325.041.795";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.325.268.756 a adms:Identifier;
+    skos:notation "2.325.268.756";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.325.269.152 a adms:Identifier;
+    skos:notation "2.325.269.152";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.330.006.118 a adms:Identifier;
+    skos:notation "2.330.006.118";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.375.632.245 a adms:Identifier;
+    skos:notation "2.375.632.245";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/23120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2312>, <http://vocab.belgif.be/auth/nace2008/2312>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "23120".
+<http://vocab.belgif.be/auth/nace2025/23120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2312>, <http://vocab.belgif.be/auth/nace2025/2312>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "23120".
+<https://data.vlaanderen.be/id/onderneming/0872.915.074> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-03-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0872.915.074;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23120>, _:nace_2003_26120, <http://vocab.belgif.be/auth/nace2008/23120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0872.915.074;
+    reorg:legalName "de Borman, Astrid";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.146.071.847>.
+<https://data.vlaanderen.be/id/vestiging/2.146.071.847> a org:Site;
+    dcterms:created "01-03-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.146.071.847.
+_:contact_0872.915.074 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "010/61 69 39".
+_:nace_2003_26120 a skos:Concept;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+_:registration_company_0872.915.074 a adms:Identifier;
+    skos:notation "0872.915.074";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.146.071.847 a adms:Identifier;
+    skos:notation "2.146.071.847";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

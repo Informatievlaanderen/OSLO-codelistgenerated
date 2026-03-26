@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<https://data.vlaanderen.be/id/onderneming/0885.959.594> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0885.959.594;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43320>, _:nace_2003_45421, _:nace_2003_45422, <http://vocab.belgif.be/auth/nace2008/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0885.959.594;
+    reorg:legalName "MENUISERIE MARC GILSON"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.160.258.294>.
+<https://data.vlaanderen.be/id/vestiging/2.160.258.294> a org:Site;
+    dcterms:created "08-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.160.258.294.
+_:address_contact_0885.959.594 a locn:Address;
+    locn:thoroughfare "Chemin des Comognes"@nl, "Chemin des Comognes"@fr;
+    rdfs:label "10";
+    locn:postCode "5501";
+    adres:gemeentenaam "Dinant"@nl, "Dinant"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0885.959.594 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0885.959.594.
+_:nace_2003_45421 a skos:Concept;
+    skos:definition "Schrijnwerk van hout of van kunststof"@nl, "Menuiserie en bois ou en matières plastiques"@fr;
+    skos:prefLabel "45421".
+_:nace_2003_45422 a skos:Concept;
+    skos:definition "Metaalschrijnwerk"@nl, "Menuiserie métallique"@fr;
+    skos:prefLabel "45422".
+_:registration_company_0885.959.594 a adms:Identifier;
+    skos:notation "0885.959.594";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.160.258.294 a adms:Identifier;
+    skos:notation "2.160.258.294";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

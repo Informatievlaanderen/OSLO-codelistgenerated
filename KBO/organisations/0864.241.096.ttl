@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25290> a skos:Concept;
+    skos:definition "Vervaardiging van andere tanks, reservoirs en bergingsmiddelen, van metaal"@nl, "Fabrication d'autres réservoirs, citernes et conteneurs métalliques"@fr;
+    skos:prefLabel "25290";
+    skos:broader <http://data.europa.eu/ux2/nace2/2529>, <http://vocab.belgif.be/auth/nace2008/2529>.
+<http://vocab.belgif.be/auth/nace2025/25220> a skos:Concept;
+    skos:definition "Vervaardiging van verpakkingsmateriaal van kunststof"@nl, "Fabrication d'emballages en matières plastiques"@fr;
+    skos:prefLabel "25220";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2522>, <http://vocab.belgif.be/auth/nace2025/2522>.
+<https://data.vlaanderen.be/id/onderneming/0864.241.096> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "22-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.241.096;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_28210, <http://vocab.belgif.be/auth/nace2025/25220>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/25290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0864.241.096;
+    reorg:legalName "LHOEST FRERES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.136.599.006>.
+<https://data.vlaanderen.be/id/vestiging/2.136.599.006> a org:Site;
+    dcterms:created "22-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.599.006.
+_:address_contact_0864.241.096 a locn:Address;
+    locn:thoroughfare "Rue Fond-des-Tawes"@nl, "Rue Fond-des-Tawes"@fr;
+    rdfs:label "91";
+    locn:postCode "4000";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0864.241.096 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@lhoest-freres.be";
+    schema:telephone "04/240.14.07";
+    schema:faxNumber "04/240.28.08";
+    <http://xmlns.com/foaf/0.1/homepage> "www.lhoest-freres.be";
+    locn:address _:address_contact_0864.241.096.
+_:nace_2003_28210 a skos:Concept;
+    skos:definition "Vervaardiging van tanks, reservoirs en bergingsmiddelen van metaal"@nl, "Fabrication de réservoirs, citernes et conteneurs métalliques"@fr;
+    skos:prefLabel "28210".
+_:registration_company_0864.241.096 a adms:Identifier;
+    skos:notation "0864.241.096";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.599.006 a adms:Identifier;
+    skos:notation "2.136.599.006";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

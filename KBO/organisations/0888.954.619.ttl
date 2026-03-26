@@ -1,0 +1,112 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Traitement et revêtement des métaux"@fr, "Oppervlaktebehandeling van metalen"@nl;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/35220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3522>, <http://vocab.belgif.be/auth/nace2008/3522>;
+    skos:definition "Distributie van gasvormige brandstoffen via leidingen"@nl, "Distribution de combustibles gazeux par conduites"@fr;
+    skos:prefLabel "35220".
+<http://vocab.belgif.be/auth/nace2008/36000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3600>, <http://vocab.belgif.be/auth/nace2008/3600>;
+    skos:definition "Winning, behandeling en distributie van water"@nl, "Captage, traitement et distribution d'eau"@fr;
+    skos:prefLabel "36000".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/35220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3522>, <http://vocab.belgif.be/auth/nace2025/3522>;
+    skos:definition "Distributie van gasvormige brandstoffen via leidingen"@nl, "Distribution de combustibles gazeux par conduites"@fr;
+    skos:prefLabel "35220".
+<http://vocab.belgif.be/auth/nace2025/36000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3600>, <http://vocab.belgif.be/auth/nace2025/3600>;
+    skos:definition "Winning, behandeling en distributie van water"@nl, "Captage, traitement et distribution d'eau"@fr;
+    skos:prefLabel "36000".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0888.954.619> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0888.954.619;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/35220>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/36000>, <http://vocab.belgif.be/auth/nace2025/25510>, _:nace_2003_41000, _:nace_2003_01410, _:nace_2003_28510, _:nace_2003_51532, _:nace_2003_45220, _:nace_2003_40220, <http://vocab.belgif.be/auth/nace2008/36000>, <http://vocab.belgif.be/auth/nace2008/46731>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/35220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0888.954.619;
+    reorg:legalName "tri concept"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.161.995.188>.
+<https://data.vlaanderen.be/id/vestiging/2.161.995.188> a org:Site;
+    dcterms:created "23-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.161.995.188.
+_:address_contact_0888.954.619 a locn:Address;
+    locn:thoroughfare "Av des Prisonniers de Guerre"@nl, "Av des Prisonniers de Guerre"@fr;
+    rdfs:label "3";
+    adres:busnummer "C";
+    locn:postCode "1490";
+    adres:gemeentenaam "Court-Saint-Etienne"@nl, "Court-Saint-Etienne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0888.954.619 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0888.954.619.
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_28510 a skos:Concept;
+    skos:definition "Oppervlaktebehandeling en bekleding van metaal"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "28510".
+_:nace_2003_40220 a skos:Concept;
+    skos:definition "Distributie van en handel in gasvormige brandstoffen via leidingen"@nl, "Distribution et commerce de combustibles gazeux"@fr;
+    skos:prefLabel "40220".
+_:nace_2003_41000 a skos:Concept;
+    skos:definition "Winning, zuivering en distributie van water"@nl, "Captage, épuration et distribution d'eau"@fr;
+    skos:prefLabel "41000".
+_:nace_2003_45220 a skos:Concept;
+    skos:definition "Dakbedekking en bouw van dakconstructies"@nl, "Réalisation de charpentes et de couvertures"@fr;
+    skos:prefLabel "45220".
+_:nace_2003_51532 a skos:Concept;
+    skos:definition "Groothandel in verf, vernis en bouwmaterialen, inclusief sanitair"@nl, "Commerce de gros de peintures, vernis et matériaux de construction, y compris les appareils sanitaires"@fr;
+    skos:prefLabel "51532".
+_:registration_company_0888.954.619 a adms:Identifier;
+    skos:notation "0888.954.619";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.161.995.188 a adms:Identifier;
+    skos:notation "2.161.995.188";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-04-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

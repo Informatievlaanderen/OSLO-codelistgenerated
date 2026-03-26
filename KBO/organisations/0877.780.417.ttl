@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1610>, <http://vocab.belgif.be/auth/nace2008/1610>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16100".
+<http://vocab.belgif.be/auth/nace2008/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2512>, <http://vocab.belgif.be/auth/nace2008/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Traitement et revêtement des métaux"@fr, "Oppervlaktebehandeling van metalen"@nl;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/16110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1611>, <http://vocab.belgif.be/auth/nace2025/1611>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16110".
+<http://vocab.belgif.be/auth/nace2025/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2512>, <http://vocab.belgif.be/auth/nace2025/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<https://data.vlaanderen.be/id/onderneming/0877.780.417> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.780.417;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16110>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/25120>, _:nace_2003_28120, _:nace_2003_45250, _:nace_2003_20101, _:nace_2003_71340, _:nace_2003_28510, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/45203>, <http://vocab.belgif.be/auth/nace2008/25120>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/16100>, <http://vocab.belgif.be/auth/nace2008/77399>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0877.780.417;
+    reorg:legalName "RENO PRO TEC"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.589.572>.
+<https://data.vlaanderen.be/id/vestiging/2.150.589.572> a org:Site;
+    dcterms:created "22-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.589.572.
+_:address_contact_0877.780.417 a locn:Address;
+    locn:thoroughfare "Nijverheidslaan"@nl, "Nijverheidslaan"@fr;
+    rdfs:label "6H";
+    locn:postCode "9308";
+    adres:gemeentenaam "Aalst"@nl, "Aalst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0877.780.417 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0877.780.417.
+_:nace_2003_20101 a skos:Concept;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "20101".
+_:nace_2003_28120 a skos:Concept;
+    skos:definition "Vervaardiging van metalen ramen, deuren, wanden en dergelijke"@nl, "Fabrication de charpentes et menuiseries métalliques"@fr;
+    skos:prefLabel "28120".
+_:nace_2003_28510 a skos:Concept;
+    skos:definition "Oppervlaktebehandeling en bekleding van metaal"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "28510".
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:nace_2003_71340 a skos:Concept;
+    skos:definition "Verhuur van overige machines en werktuigen, n.e.g."@nl, "Location d'autres machines et équipements"@fr;
+    skos:prefLabel "71340".
+_:registration_company_0877.780.417 a adms:Identifier;
+    skos:notation "0877.780.417";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.589.572 a adms:Identifier;
+    skos:notation "2.150.589.572";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

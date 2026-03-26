@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0841.928.623> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "19-12-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0841.928.623;
+    schema:contactinfo _:contact_0841.928.623;
+    reorg:legalName "derycke en vandenberghe advocaten"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.284.009.510>.
+<https://data.vlaanderen.be/id/vestiging/2.284.009.510> a org:Site;
+    dcterms:created "01-01-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.284.009.510.
+_:address_contact_0841.928.623 a locn:Address;
+    locn:thoroughfare "Vrijheidslaan"@nl, "Vrijheidslaan"@fr;
+    rdfs:label "27";
+    locn:postCode "9000";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0841.928.623 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "wim.vandenberghe@dv-ius.be";
+    schema:telephone "09/2224107";
+    schema:faxNumber "09/2224106";
+    locn:address _:address_contact_0841.928.623.
+_:registration_company_0841.928.623 a adms:Identifier;
+    skos:notation "0841.928.623";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-12-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.284.009.510 a adms:Identifier;
+    skos:notation "2.284.009.510";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-12-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

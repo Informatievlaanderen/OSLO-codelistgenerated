@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/86904> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Activiteiten op het vlak van geestelijke gezondheidszorg, m.u.v. psychiatrische ziekenhuizen en verzorgingstehuizen"@nl, "Activités relatives à la santé mentale, sauf hôpitaux et maisons de soins psychiatriques"@fr;
+    skos:prefLabel "86904".
+<http://vocab.belgif.be/auth/nace2008/88993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Ambulante hulpverlening aan drugs- en alcoholverslaafden"@nl, "Action sociale ambulatoire pour personnes toxicodépendantes"@fr;
+    skos:prefLabel "88993".
+<http://vocab.belgif.be/auth/nace2025/86931> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychologie"@nl, "Activités de psychologie"@fr;
+    skos:prefLabel "86931".
+<http://vocab.belgif.be/auth/nace2025/88991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Activiteiten van dagcentra voor minderjarigen met een mentale handicap, met inbegrip van ambulante hulpverlening"@nl, "Activités des centres de jour pour mineurs avec un handicap mental, y compris les services ambulatoires"@fr;
+    skos:prefLabel "88991".
+<https://data.vlaanderen.be/id/onderneming/1000.010.216> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1000.010.216;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86931>, <http://vocab.belgif.be/auth/nace2025/88991>, <http://vocab.belgif.be/auth/nace2008/86904>, <http://vocab.belgif.be/auth/nace2008/88993>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Van Bael, Joyce";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.349.436.010>.
+<https://data.vlaanderen.be/id/vestiging/2.349.436.010> a org:Site;
+    dcterms:created "01-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.349.436.010.
+_:registration_company_1000.010.216 a adms:Identifier;
+    skos:notation "1000.010.216";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.349.436.010 a adms:Identifier;
+    skos:notation "2.349.436.010";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

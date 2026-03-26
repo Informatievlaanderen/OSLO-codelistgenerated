@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1820>, <http://vocab.belgif.be/auth/nace2008/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2008/77292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77292".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1820>, <http://vocab.belgif.be/auth/nace2025/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2025/77222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77222".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0870.160.274> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-11-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0870.160.274;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/18200>, <http://vocab.belgif.be/auth/nace2025/77222>, <http://vocab.belgif.be/auth/nace2025/90393>, _:nace_2003_71403, _:nace_2003_22310, _:nace_2003_92313, <http://vocab.belgif.be/auth/nace2008/77292>, <http://vocab.belgif.be/auth/nace2008/90023>, <http://vocab.belgif.be/auth/nace2008/18200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Roels, Franky";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.143.225.688>.
+<https://data.vlaanderen.be/id/vestiging/2.143.225.688> a org:Site;
+    dcterms:created "23-11-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.143.225.688.
+_:nace_2003_22310 a skos:Concept;
+    skos:definition "Reproductie van geluidsopnamen"@nl, "Reproduction d'enregistrements sonores"@fr;
+    skos:prefLabel "22310".
+_:nace_2003_71403 a skos:Concept;
+    skos:definition "Verhuur van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "71403".
+_:nace_2003_92313 a skos:Concept;
+    skos:definition "Diensten verwant aan de scheppende en uitvoerende kunst"@nl, "Services annexes à l'art dramatique et à la musique"@fr;
+    skos:prefLabel "92313".
+_:registration_company_0870.160.274 a adms:Identifier;
+    skos:notation "0870.160.274";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-11-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.143.225.688 a adms:Identifier;
+    skos:notation "2.143.225.688";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-11-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

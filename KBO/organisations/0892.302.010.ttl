@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0892.302.010> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "25-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0892.302.010;
+    schema:contactinfo _:contact_0892.302.010;
+    reorg:legalName "ZABALA INNOVATION CONSULTING"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.166.720.870>, _:branch_9.001.672.353.
+<https://data.vlaanderen.be/id/vestiging/2.166.720.870> a org:Site;
+    dcterms:created "06-12-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.166.720.870.
+_:address_contact_0892.302.010 a locn:Address;
+    locn:thoroughfare "P° SANTXIKI"@nl, "P° SANTXIKI"@fr;
+    rdfs:label "3";
+    locn:postCode "31192";
+    adres:gemeentenaam "PAMPLONA"@nl, "PAMPLONA"@fr;
+    adres:land "Spanje"@nl, "Espagne"@fr.
+_:branch_9.001.672.353 a org:Site;
+    dcterms:created "04-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_branch_9.001.672.353.
+_:contact_0892.302.010 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "jmz@aizabala.com";
+    schema:telephone "02-513-81-22";
+    schema:faxNumber "02-513-86-58";
+    locn:address _:address_contact_0892.302.010.
+_:registration_branch_9.001.672.353 a adms:Identifier;
+    skos:notation "9.001.672.353";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_company_0892.302.010 a adms:Identifier;
+    skos:notation "0892.302.010";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.166.720.870 a adms:Identifier;
+    skos:notation "2.166.720.870";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2008/49310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4931>, <http://vocab.belgif.be/auth/nace2008/4931>;
+    skos:definition "Personenvervoer te land binnen steden of voorsteden"@nl, "Transports urbains et suburbains de voyageurs"@fr;
+    skos:prefLabel "49310".
+<http://vocab.belgif.be/auth/nace2008/85592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Beroepsopleiding"@nl, "Formation professionnelle"@fr;
+    skos:prefLabel "85592".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/49310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4931>, <http://vocab.belgif.be/auth/nace2025/4931>;
+    skos:definition "Personenvervoer te land binnen steden of voorsteden"@nl, "Transports urbains et suburbains de voyageurs"@fr;
+    skos:prefLabel "49310".
+<http://vocab.belgif.be/auth/nace2025/85592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Beroepsopleiding"@nl, "Formation professionnelle"@fr;
+    skos:prefLabel "85592".
+<https://data.vlaanderen.be/id/onderneming/0874.165.780> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "18-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.165.780;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/49310>, <http://vocab.belgif.be/auth/nace2025/85592>, _:nace_2003_50103, _:nace_2003_80421, _:nace_2003_50302, <http://vocab.belgif.be/auth/nace2008/85592>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/49310>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Maertens, Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.177.944>.
+<https://data.vlaanderen.be/id/vestiging/2.147.177.944> a org:Site;
+    dcterms:created "18-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.177.944.
+_:nace_2003_50103 a skos:Concept;
+    skos:definition "Detailhandel in motorvoertuigen"@nl, "Commerce de détail de véhicules automobiles"@fr;
+    skos:prefLabel "50103".
+_:nace_2003_50302 a skos:Concept;
+    skos:definition "Kleinhandel in onderdelen en accessoires van auto's"@nl, "Commerce de détail de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50302".
+_:nace_2003_80421 a skos:Concept;
+    skos:definition "Volwassenenvorming"@nl, "Formation permanente"@fr;
+    skos:prefLabel "80421".
+_:registration_company_0874.165.780 a adms:Identifier;
+    skos:notation "0874.165.780";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.177.944 a adms:Identifier;
+    skos:notation "2.147.177.944";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

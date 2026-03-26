@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/46739> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46739".
+<http://vocab.belgif.be/auth/nace2008/46741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in ijzerwaren"@nl, "Commerce de gros de quincaillerie"@fr;
+    skos:prefLabel "46741".
+<http://vocab.belgif.be/auth/nace2008/46751> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4675>, <http://vocab.belgif.be/auth/nace2008/4675>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques industriels"@fr;
+    skos:prefLabel "46751".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/46839> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46839".
+<http://vocab.belgif.be/auth/nace2025/46841> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in ijzerwaren"@nl, "Commerce de gros de quincaillerie"@fr;
+    skos:prefLabel "46841".
+<http://vocab.belgif.be/auth/nace2025/46851> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4685>, <http://vocab.belgif.be/auth/nace2025/4685>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques à usage industriel"@fr;
+    skos:prefLabel "46851".
+<https://data.vlaanderen.be/id/onderneming/0836.551.655> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-05-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0836.551.655;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/46839>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/46851>, <http://vocab.belgif.be/auth/nace2025/46841>, <http://vocab.belgif.be/auth/nace2008/46620>, <http://vocab.belgif.be/auth/nace2008/46731>, <http://vocab.belgif.be/auth/nace2008/46140>, <http://vocab.belgif.be/auth/nace2008/46739>, <http://vocab.belgif.be/auth/nace2008/46751>, <http://vocab.belgif.be/auth/nace2008/46741>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0836.551.655;
+    reorg:legalName "Spares & Bearing Company Group"@fr, "SBC Group"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.199.342.960>.
+<https://data.vlaanderen.be/id/vestiging/2.199.342.960> a org:Site;
+    dcterms:created "26-05-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.199.342.960.
+_:address_contact_0836.551.655 a locn:Address;
+    locn:thoroughfare "Rue A-l'Eau"@nl, "Rue A-l'Eau"@fr;
+    rdfs:label "37";
+    locn:postCode "5030";
+    adres:gemeentenaam "Gembloux"@nl, "Gembloux"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0836.551.655 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0836.551.655.
+_:registration_company_0836.551.655 a adms:Identifier;
+    skos:notation "0836.551.655";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.199.342.960 a adms:Identifier;
+    skos:notation "2.199.342.960";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4623>, <http://vocab.belgif.be/auth/nace2008/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<http://vocab.belgif.be/auth/nace2008/46240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4624>, <http://vocab.belgif.be/auth/nace2008/4624>;
+    skos:definition "Groothandel in huiden, vellen en leer"@nl, "Commerce de gros de cuirs et de peaux"@fr;
+    skos:prefLabel "46240".
+<http://vocab.belgif.be/auth/nace2008/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4632>, <http://vocab.belgif.be/auth/nace2008/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/46231> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4623>, <http://vocab.belgif.be/auth/nace2025/4623>;
+    skos:definition "Groothandel in levend vee"@nl, "Commerce de gros de bétail"@fr;
+    skos:prefLabel "46231".
+<http://vocab.belgif.be/auth/nace2025/46240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4624>, <http://vocab.belgif.be/auth/nace2025/4624>;
+    skos:definition "Groothandel in huiden, vellen en leer"@nl, "Commerce de gros de cuirs et de peaux"@fr;
+    skos:prefLabel "46240".
+<http://vocab.belgif.be/auth/nace2025/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4632>, <http://vocab.belgif.be/auth/nace2025/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<https://data.vlaanderen.be/id/onderneming/0874.780.246> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.780.246;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46240>, <http://vocab.belgif.be/auth/nace2025/46231>, <http://vocab.belgif.be/auth/nace2025/46321>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2025/49410>, _:nace_2003_51321, _:nace_2003_51230, _:nace_2003_51240, <http://vocab.belgif.be/auth/nace2008/46231>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/46240>, <http://vocab.belgif.be/auth/nace2008/46321>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0874.780.246;
+    reorg:legalName "L.V.B."@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.905.147>.
+<https://data.vlaanderen.be/id/vestiging/2.147.905.147> a org:Site;
+    dcterms:created "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.905.147.
+_:address_contact_0874.780.246 a locn:Address;
+    locn:thoroughfare "Vinnestraat"@nl, "Vinnestraat"@fr;
+    rdfs:label "45";
+    adres:busnummer "A000";
+    locn:postCode "3440";
+    adres:gemeentenaam "Zoutleeuw"@nl, "Zoutleeuw"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.780.246 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0874.780.246.
+_:nace_2003_51230 a skos:Concept;
+    skos:definition "Groothandel in levende dieren"@nl, "Commerce de gros d'animaux vivants"@fr;
+    skos:prefLabel "51230".
+_:nace_2003_51240 a skos:Concept;
+    skos:definition "Groothandel in huiden, vellen en leer"@nl, "Commerce de gros de cuirs et peaux"@fr;
+    skos:prefLabel "51240".
+_:nace_2003_51321 a skos:Concept;
+    skos:definition "Groothandel in vlees en vleeswaren, exclusief vlees van gevogelte en van wild"@nl, "Commerce de gros de viande et de produits à base de viande et de charcuterie à l'exclusion de viande de volailles et de gibiers"@fr;
+    skos:prefLabel "51321".
+_:registration_company_0874.780.246 a adms:Identifier;
+    skos:notation "0874.780.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.905.147 a adms:Identifier;
+    skos:notation "2.147.905.147";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

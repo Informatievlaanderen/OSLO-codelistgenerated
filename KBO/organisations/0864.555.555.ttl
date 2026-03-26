@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1813>, <http://vocab.belgif.be/auth/nace2008/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2008/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1820>, <http://vocab.belgif.be/auth/nace2008/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/18200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1820>, <http://vocab.belgif.be/auth/nace2025/1820>;
+    skos:definition "Reproductie van opgenomen media"@nl, "Reproduction d'enregistrements"@fr;
+    skos:prefLabel "18200".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<https://data.vlaanderen.be/id/onderneming/0864.555.555> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.555.555;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/18200>, _:nace_2003_22310, _:nace_2003_22320, _:nace_2003_22240, _:nace_2003_22250, _:nace_2003_22330, <http://vocab.belgif.be/auth/nace2008/18200>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/18130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0864.555.555;
+    reorg:legalName "VISUAL EXPEDITION"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.137.478.043>.
+<https://data.vlaanderen.be/id/vestiging/2.137.478.043> a org:Site;
+    dcterms:created "25-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.137.478.043.
+_:address_contact_0864.555.555 a locn:Address;
+    locn:thoroughfare "Leuvensesteenweg"@nl, "Leuvensesteenweg"@fr;
+    rdfs:label "186";
+    locn:postCode "3200";
+    adres:gemeentenaam "Aarschot"@nl, "Aarschot"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0864.555.555 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0864.555.555.
+_:nace_2003_22240 a skos:Concept;
+    skos:definition "Prepress-activiteiten"@nl, "Activités de pré-presse"@fr;
+    skos:prefLabel "22240".
+_:nace_2003_22250 a skos:Concept;
+    skos:definition "Hulpactiviteiten in verband met drukkerijen"@nl, "Activités graphiques auxilliaires"@fr;
+    skos:prefLabel "22250".
+_:nace_2003_22310 a skos:Concept;
+    skos:definition "Reproductie van geluidsopnamen"@nl, "Reproduction d'enregistrements sonores"@fr;
+    skos:prefLabel "22310".
+_:nace_2003_22320 a skos:Concept;
+    skos:definition "Reproductie van video-opnamen"@nl, "Reproduction d'enregistrements vidéo"@fr;
+    skos:prefLabel "22320".
+_:nace_2003_22330 a skos:Concept;
+    skos:definition "Reproductie van computermedia"@nl, "Reproduction d'enregistrements informatiques"@fr;
+    skos:prefLabel "22330".
+_:registration_company_0864.555.555 a adms:Identifier;
+    skos:notation "0864.555.555";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.137.478.043 a adms:Identifier;
+    skos:notation "2.137.478.043";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

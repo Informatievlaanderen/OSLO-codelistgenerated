@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/46520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4652>, <http://vocab.belgif.be/auth/nace2008/4652>;
+    skos:definition "Groothandel in elektronische en telecommunicatieapparatuur en delen  daarvan"@nl, "Commerce de gros de composants et d'équipements électroniques et de télécommunication"@fr;
+    skos:prefLabel "46520".
+<http://vocab.belgif.be/auth/nace2008/47630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4763>, <http://vocab.belgif.be/auth/nace2008/4763>;
+    skos:definition "Detailhandel in audio- en video-opnamen in gespecialiseerde winkels"@nl, "Commerce de détail d'enregistrements musicaux et vidéo en magasin spécialisé"@fr;
+    skos:prefLabel "47630".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<https://data.vlaanderen.be/id/onderneming/0898.104.885> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0898.104.885;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46500>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/47690>, <http://vocab.belgif.be/auth/nace2008/46520>, <http://vocab.belgif.be/auth/nace2008/47630>, <http://vocab.belgif.be/auth/nace2008/46140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0898.104.885;
+    reorg:legalName "FIRN energy"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.209.999.894>.
+<https://data.vlaanderen.be/id/vestiging/2.209.999.894> a org:Site;
+    dcterms:created "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.209.999.894.
+_:address_contact_0898.104.885 a locn:Address;
+    locn:thoroughfare "Parkstraat"@nl, "Parkstraat"@fr;
+    rdfs:label "23";
+    locn:postCode "8930";
+    adres:gemeentenaam "Menen"@nl, "Menen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0898.104.885 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0898.104.885.
+_:registration_company_0898.104.885 a adms:Identifier;
+    skos:notation "0898.104.885";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.209.999.894 a adms:Identifier;
+    skos:notation "2.209.999.894";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

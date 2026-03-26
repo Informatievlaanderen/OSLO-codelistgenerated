@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/55202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Vakantieparken"@nl, "Centres et villages de vacances"@fr;
+    skos:prefLabel "55202".
+<http://vocab.belgif.be/auth/nace2008/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2025/55202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Vakantieparken"@nl, "Centres et villages de vacances"@fr;
+    skos:prefLabel "55202".
+<http://vocab.belgif.be/auth/nace2025/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<https://data.vlaanderen.be/id/onderneming/0877.879.593> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "13-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.879.593;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/55203>, _:nace_2003_55232, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/55202>, <http://vocab.belgif.be/auth/nace2008/55203>, <http://vocab.belgif.be/auth/nace2008/55202>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0877.879.593;
+    reorg:legalName "DOMAINE DE MASSEMBRE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.156.494.201>.
+<https://data.vlaanderen.be/id/vestiging/2.156.494.201> a org:Site;
+    dcterms:created "25-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.156.494.201.
+_:address_contact_0877.879.593 a locn:Address;
+    locn:thoroughfare "Massembre, Heer"@nl, "Massembre, Heer"@fr;
+    rdfs:label "84";
+    locn:postCode "5543";
+    adres:gemeentenaam "Hastière"@nl, "Hastière"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0877.879.593 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "reception@massembre.com";
+    schema:telephone "082 64 43 57";
+    schema:faxNumber "082 64 70 82";
+    <http://xmlns.com/foaf/0.1/homepage> "www.massembre.be";
+    locn:address _:address_contact_0877.879.593.
+_:nace_2003_55232 a skos:Concept;
+    skos:definition "Verschaffen van overig logies voor kortstondig verblijf"@nl, "Autres moyens d'hébergement de courte durée"@fr;
+    skos:prefLabel "55232".
+_:registration_company_0877.879.593 a adms:Identifier;
+    skos:notation "0877.879.593";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.156.494.201 a adms:Identifier;
+    skos:notation "2.156.494.201";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-12-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

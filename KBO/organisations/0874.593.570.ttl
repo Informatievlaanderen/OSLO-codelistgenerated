@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>.
+<http://vocab.belgif.be/auth/nace2008/52100> a skos:Concept;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100";
+    skos:broader <http://data.europa.eu/ux2/nace2/5210>, <http://vocab.belgif.be/auth/nace2008/5210>.
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290";
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>.
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110";
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>.
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120";
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>.
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>.
+<http://vocab.belgif.be/auth/nace2025/52100> a skos:Concept;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5210>, <http://vocab.belgif.be/auth/nace2025/5210>.
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>.
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>.
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>.
+<https://data.vlaanderen.be/id/onderneming/0874.593.570> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "21-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.593.570;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_60242, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/52100>, <http://vocab.belgif.be/auth/nace2025/77120>, _:nace_2003_63406, _:nace_2003_71100, _:nace_2003_63122, _:nace_2003_63405, _:nace_2003_71210, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/52100>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/77110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0874.593.570;
+    reorg:legalName "TRANSPORTS AXEL DUBOIS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.590.292>.
+<https://data.vlaanderen.be/id/vestiging/2.147.590.292> a org:Site;
+    dcterms:created "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.590.292.
+_:address_contact_0874.593.570 a locn:Address;
+    locn:thoroughfare "Rue des Prés(S.-J.-G.)"@nl, "Rue des Prés(S.-J.-G.)"@fr;
+    rdfs:label "41";
+    locn:postCode "1370";
+    adres:gemeentenaam "Jodoigne"@nl, "Jodoigne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.593.570 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0874.593.570.
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:nace_2003_63122 a skos:Concept;
+    skos:definition "Overige opslag"@nl, "Autre entreposage"@fr;
+    skos:prefLabel "63122".
+_:nace_2003_63405 a skos:Concept;
+    skos:definition "Vervoersbemiddeling"@nl, "Intermédiaires du transport"@fr;
+    skos:prefLabel "63405".
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:nace_2003_71100 a skos:Concept;
+    skos:definition "Verhuur van auto's"@nl, "Location de véhicules automobiles"@fr;
+    skos:prefLabel "71100".
+_:nace_2003_71210 a skos:Concept;
+    skos:definition "Verhuur van overige transportmiddelen voor vervoer te land"@nl, "Location d'autres matériels de transport terrestre"@fr;
+    skos:prefLabel "71210".
+_:registration_company_0874.593.570 a adms:Identifier;
+    skos:notation "0874.593.570";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.590.292 a adms:Identifier;
+    skos:notation "2.147.590.292";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

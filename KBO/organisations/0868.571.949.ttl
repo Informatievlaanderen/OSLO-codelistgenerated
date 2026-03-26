@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/0868.571.949> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-1978"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0868.571.949;
+    reorg:legalName "De Belva, Adelin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.140.738.629>, <https://data.vlaanderen.be/id/vestiging/2.140.738.728>.
+<https://data.vlaanderen.be/id/vestiging/2.140.738.629> a org:Site;
+    dcterms:created "01-05-1978"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.140.738.629.
+<https://data.vlaanderen.be/id/vestiging/2.140.738.728> a org:Site;
+    dcterms:created "01-01-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.140.738.728.
+_:registration_company_0868.571.949 a adms:Identifier;
+    skos:notation "0868.571.949";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-1978"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.140.738.629 a adms:Identifier;
+    skos:notation "2.140.738.629";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-1978"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.140.738.728 a adms:Identifier;
+    skos:notation "2.140.738.728";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-1978"^^<http://www.w3.org/2001/XMLSchema#date>.

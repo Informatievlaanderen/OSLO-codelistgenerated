@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/90029> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Overige ondersteunende activiteiten voor de uitvoerende kunsten"@nl, "Autres activités de soutien au spectacle vivant"@fr;
+    skos:prefLabel "90029".
+<http://vocab.belgif.be/auth/nace2025/90399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Andere ondersteunende activiteiten voor scheppende en uitvoerende kunst, neg"@nl, "Autres activités de soutien à la création artistique et aux spectacles, nca"@fr;
+    skos:prefLabel "90399".
+<https://data.vlaanderen.be/id/onderneming/0846.299.561> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0846.299.561;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/90399>, <http://vocab.belgif.be/auth/nace2008/90029>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0846.299.561;
+    reorg:legalName "RISING HORSES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.258.968.563>.
+<https://data.vlaanderen.be/id/vestiging/2.258.968.563> a org:Site;
+    dcterms:created "12-12-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.258.968.563.
+_:address_contact_0846.299.561 a locn:Address;
+    locn:thoroughfare "Kluisstraat"@nl, "Rue de l'Ermitage"@fr;
+    rdfs:label "32";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0846.299.561 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0846.299.561.
+_:registration_company_0846.299.561 a adms:Identifier;
+    skos:notation "0846.299.561";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.258.968.563 a adms:Identifier;
+    skos:notation "2.258.968.563";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

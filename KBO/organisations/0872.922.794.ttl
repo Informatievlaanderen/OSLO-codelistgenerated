@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/03220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0322>, <http://vocab.belgif.be/auth/nace2008/0322>;
+    skos:definition "Aquacultuur in zoet water"@nl, "Aquaculture en eau douce"@fr;
+    skos:prefLabel "03220".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/90011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90011".
+<http://vocab.belgif.be/auth/nace2025/03220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0322>, <http://vocab.belgif.be/auth/nace2025/0322>;
+    skos:definition "Aquacultuur in zoet water"@nl, "Aquaculture en eau douce"@fr;
+    skos:prefLabel "03220".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<https://data.vlaanderen.be/id/onderneming/0872.922.794> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0872.922.794;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/03220>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2025/73110>, _:nace_2003_92311, _:nace_2003_74401, _:nace_2003_05020, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/03220>, <http://vocab.belgif.be/auth/nace2008/90011>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0872.922.794;
+    reorg:legalName "Englebert, Pierre";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.146.078.181>.
+<https://data.vlaanderen.be/id/vestiging/2.146.078.181> a org:Site;
+    dcterms:created "01-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.146.078.181.
+_:contact_0872.922.794 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "083/63.64.76".
+_:nace_2003_05020 a skos:Concept;
+    skos:definition "Visteelt"@nl, "Aquaculture"@fr;
+    skos:prefLabel "05020".
+_:nace_2003_74401 a skos:Concept;
+    skos:definition "Publiciteitsagentschappen"@nl, "Agences de publicité"@fr;
+    skos:prefLabel "74401".
+_:nace_2003_92311 a skos:Concept;
+    skos:definition "Zelfstandig werkende kunstenaars en artiesten"@nl, "Artistes indépendants"@fr;
+    skos:prefLabel "92311".
+_:registration_company_0872.922.794 a adms:Identifier;
+    skos:notation "0872.922.794";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.146.078.181 a adms:Identifier;
+    skos:notation "2.146.078.181";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

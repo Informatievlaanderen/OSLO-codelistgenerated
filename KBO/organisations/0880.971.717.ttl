@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2711>, <http://vocab.belgif.be/auth/nace2008/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2008/45112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Grondverzet"@nl, "Terrassements"@fr;
+    skos:prefLabel "45112".
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2025/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2711>, <http://vocab.belgif.be/auth/nace2025/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<https://data.vlaanderen.be/id/onderneming/0880.971.717> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "27-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0880.971.717;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46431>, _:nace_2003_51430, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2025/27110>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/47811>, _:nace_2003_52442, <http://vocab.belgif.be/auth/nace2008/46431>, <http://vocab.belgif.be/auth/nace2008/45112>, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/47592>, <http://vocab.belgif.be/auth/nace2008/27110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0880.971.717;
+    reorg:legalName "CARBOMAT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.153.756.524>, <https://data.vlaanderen.be/id/vestiging/2.196.854.020>, <https://data.vlaanderen.be/id/vestiging/2.349.057.809>.
+<https://data.vlaanderen.be/id/vestiging/2.153.756.524> a org:Site;
+    dcterms:created "30-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.153.756.524.
+<https://data.vlaanderen.be/id/vestiging/2.196.854.020> a org:Site;
+    dcterms:created "01-01-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.196.854.020.
+<https://data.vlaanderen.be/id/vestiging/2.349.057.809> a org:Site;
+    dcterms:created "12-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.349.057.809.
+_:address_contact_0880.971.717 a locn:Address;
+    locn:thoroughfare "Roggemanskaai (Felix)"@nl, "Roggemanskaai (Felix)"@fr;
+    rdfs:label "7";
+    locn:postCode "1501";
+    adres:gemeentenaam "Halle"@nl, "Halle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0880.971.717 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0880.971.717.
+_:nace_2003_51430 a skos:Concept;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers, de radio et de télévision"@fr;
+    skos:prefLabel "51430".
+_:nace_2003_52442 a skos:Concept;
+    skos:definition "Detailhandel in artikelen voor verlichting en woninginrichting"@nl, "Commerce de détail d'appareils d'éclairage et d'équipements du foyer"@fr;
+    skos:prefLabel "52442".
+_:registration_company_0880.971.717 a adms:Identifier;
+    skos:notation "0880.971.717";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.153.756.524 a adms:Identifier;
+    skos:notation "2.153.756.524";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.196.854.020 a adms:Identifier;
+    skos:notation "2.196.854.020";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.349.057.809 a adms:Identifier;
+    skos:notation "2.349.057.809";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

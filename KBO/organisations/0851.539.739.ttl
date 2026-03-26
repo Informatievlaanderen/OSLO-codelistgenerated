@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46751> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4675>, <http://vocab.belgif.be/auth/nace2008/4675>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques industriels"@fr;
+    skos:prefLabel "46751".
+<http://vocab.belgif.be/auth/nace2025/46851> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4685>, <http://vocab.belgif.be/auth/nace2025/4685>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques à usage industriel"@fr;
+    skos:prefLabel "46851".
+<https://data.vlaanderen.be/id/onderneming/0851.539.739> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/235>;
+    dcterms:created "01-08-1996"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0851.539.739;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46851>, _:nace_2003_51550, <http://vocab.belgif.be/auth/nace2008/46751>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0851.539.739;
+    reorg:legalName "PROMEGA BENELUX BV"@nl.
+_:address_contact_0851.539.739 a locn:Address;
+    locn:thoroughfare "Schipholweg"@nl, "Schipholweg"@fr;
+    rdfs:label "103";
+    locn:postCode "2316 XC";
+    adres:gemeentenaam "LEIDEN"@nl, "LEIDEN"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:contact_0851.539.739 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0851.539.739.
+_:nace_2003_51550 a skos:Concept;
+    skos:definition "Groothandel in chemische producten"@nl, "Commerce de gros de produits chimiques"@fr;
+    skos:prefLabel "51550".
+_:registration_company_0851.539.739 a adms:Identifier;
+    skos:notation "0851.539.739";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-1996"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4540>, <http://vocab.belgif.be/auth/nace2008/4540>;
+    skos:definition "Detailhandel in en onderhoud en reparatie van motorfietsen en delen en toebehoren van motorfietsen"@nl, "Entretien, réparation et commerce de détail de motocycles, y compris les pièces et accessoires"@fr;
+    skos:prefLabel "45402".
+<http://vocab.belgif.be/auth/nace2008/47785> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fietsen in gespecialiseerde winkels"@nl, "Commerce de détail de cycles en magasin spécialisé"@fr;
+    skos:prefLabel "47785".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/47632> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in fietsen"@nl, "Commerce de détail de cycles"@fr;
+    skos:prefLabel "47632".
+<http://vocab.belgif.be/auth/nace2025/47830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4783>, <http://vocab.belgif.be/auth/nace2025/4783>;
+    skos:definition "Detailhandel in motorrijwielen, delen en toebehoren van motorrijwielen"@nl, "Commerce de détail de motocycles et de pièces et accessoires de motocycles"@fr;
+    skos:prefLabel "47830".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0839.690.990> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "22-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0839.690.990;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47632>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/47830>, <http://vocab.belgif.be/auth/nace2008/45402>, <http://vocab.belgif.be/auth/nace2008/95290>, <http://vocab.belgif.be/auth/nace2008/47785>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0839.690.990;
+    reorg:legalName "Femka"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.202.696.982>.
+<https://data.vlaanderen.be/id/vestiging/2.202.696.982> a org:Site;
+    dcterms:created "22-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.202.696.982.
+_:address_contact_0839.690.990 a locn:Address;
+    locn:thoroughfare "Kerkstraat (Nm)"@nl, "Kerkstraat (Nm)"@fr;
+    rdfs:label "14";
+    locn:postCode "2920";
+    adres:gemeentenaam "Kalmthout"@nl, "Kalmthout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0839.690.990 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@probikes.be";
+    locn:address _:address_contact_0839.690.990.
+_:registration_company_0839.690.990 a adms:Identifier;
+    skos:notation "0839.690.990";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.202.696.982 a adms:Identifier;
+    skos:notation "2.202.696.982";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

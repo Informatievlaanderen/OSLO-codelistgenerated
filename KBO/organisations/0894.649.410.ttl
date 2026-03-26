@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46771> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4677>, <http://vocab.belgif.be/auth/nace2008/4677>;
+    skos:definition "Groothandel in autosloopmateriaal"@nl, "Commerce de gros d'épaves de véhicules automobiles et de pièces réutilisables"@fr;
+    skos:prefLabel "46771".
+<http://vocab.belgif.be/auth/nace2008/46772> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4677>, <http://vocab.belgif.be/auth/nace2008/4677>;
+    skos:definition "Groothandel in ijzer- en staalschroot en in oude non-ferrometalen"@nl, "Commerce de gros de déchets et de débris métalliques et non-métalliques"@fr;
+    skos:prefLabel "46772".
+<http://vocab.belgif.be/auth/nace2008/46779> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4677>, <http://vocab.belgif.be/auth/nace2008/4677>;
+    skos:definition "Groothandel in afval en schroot, n.e.g."@nl, "Commerce de gros de déchets et débris n.c.a."@fr;
+    skos:prefLabel "46779".
+<http://vocab.belgif.be/auth/nace2025/46871> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4687>, <http://vocab.belgif.be/auth/nace2025/4687>;
+    skos:definition "Groothandel in autosloopmateriaal"@nl, "Commerce de gros d'épaves de véhicules automobiles et de pièces réutilisables"@fr;
+    skos:prefLabel "46871".
+<http://vocab.belgif.be/auth/nace2025/46872> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4687>, <http://vocab.belgif.be/auth/nace2025/4687>;
+    skos:definition "Groothandel in ijzer- en staalschroot en in oude non-ferrometalen"@nl, "Commerce de gros de déchets de fer et d'acier et de déchets métalliques non ferreux"@fr;
+    skos:prefLabel "46872".
+<http://vocab.belgif.be/auth/nace2025/46879> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4687>, <http://vocab.belgif.be/auth/nace2025/4687>;
+    skos:definition "Groothandel in afval en schroot, neg"@nl, "Commerce de gros de déchets et débris nca"@fr;
+    skos:prefLabel "46879".
+<https://data.vlaanderen.be/id/onderneming/0894.649.410> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0894.649.410;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46871>, <http://vocab.belgif.be/auth/nace2025/46872>, <http://vocab.belgif.be/auth/nace2025/46879>, <http://vocab.belgif.be/auth/nace2008/46772>, <http://vocab.belgif.be/auth/nace2008/46771>, <http://vocab.belgif.be/auth/nace2008/46779>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0894.649.410;
+    reorg:legalName "Dechamps, Paul";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.167.494.197>.
+<https://data.vlaanderen.be/id/vestiging/2.167.494.197> a org:Site;
+    dcterms:created "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.167.494.197.
+_:contact_0894.649.410 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "p.dechamps@telenet.be";
+    schema:telephone "+32477352443".
+_:registration_company_0894.649.410 a adms:Identifier;
+    skos:notation "0894.649.410";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.167.494.197 a adms:Identifier;
+    skos:notation "2.167.494.197";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2008/90042> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9004>, <http://vocab.belgif.be/auth/nace2008/9004>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90042".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/90312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9031>, <http://vocab.belgif.be/auth/nace2025/9031>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90312".
+<https://data.vlaanderen.be/id/onderneming/0889.521.474> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0889.521.474;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/90312>, <http://vocab.belgif.be/auth/nace2025/81300>, _:nace_2003_01410, _:nace_2003_63303, _:nace_2003_92322, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/90042>, <http://vocab.belgif.be/auth/nace2008/81300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0889.521.474;
+    reorg:legalName "ARSIS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.162.774.455>.
+<https://data.vlaanderen.be/id/vestiging/2.162.774.455> a org:Site;
+    dcterms:created "18-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.162.774.455.
+_:address_contact_0889.521.474 a locn:Address;
+    locn:thoroughfare "Meeuwenlei"@nl, "Meeuwenlei"@fr;
+    rdfs:label "4";
+    locn:postCode "2900";
+    adres:gemeentenaam "Schoten"@nl, "Schoten"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0889.521.474 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0889.521.474.
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_63303 a skos:Concept;
+    skos:definition "Reisbegeleiders en gidsen, toeristische informatiediensten en dergelijke"@nl, "Guides, services d'information touristique et similaires"@fr;
+    skos:prefLabel "63303".
+_:nace_2003_92322 a skos:Concept;
+    skos:definition "Beheer en exploitatie van culturele centra"@nl, "Gestion et exploitation de centres culturels"@fr;
+    skos:prefLabel "92322".
+_:registration_company_0889.521.474 a adms:Identifier;
+    skos:notation "0889.521.474";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.162.774.455 a adms:Identifier;
+    skos:notation "2.162.774.455";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

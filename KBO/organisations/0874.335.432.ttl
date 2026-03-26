@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/58290> a skos:Concept;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290";
+    skos:broader <http://data.europa.eu/ux2/nace2/5829>, <http://vocab.belgif.be/auth/nace2008/5829>.
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110";
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>.
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210";
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>.
+<http://vocab.belgif.be/auth/nace2025/58290> a skos:Concept;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5829>, <http://vocab.belgif.be/auth/nace2025/5829>.
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>.
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>.
+<https://data.vlaanderen.be/id/onderneming/0874.335.432> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/114>;
+    dcterms:created "08-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0874.335.432;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_72400, <http://vocab.belgif.be/auth/nace2025/63100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/58290>, <http://vocab.belgif.be/auth/nace2025/73300>, _:nace_2003_74141, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/58290>, <http://vocab.belgif.be/auth/nace2008/70210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0874.335.432;
+    reorg:legalName "KISANO Belgium"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.221.396.307>.
+<https://data.vlaanderen.be/id/vestiging/2.221.396.307> a org:Site;
+    dcterms:created "30-09-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.221.396.307.
+_:address_contact_0874.335.432 a locn:Address;
+    locn:thoroughfare "Van Volxemlaan"@nl, "Avenue Van Volxem"@fr;
+    rdfs:label "304";
+    adres:busnummer "A05";
+    locn:postCode "1190";
+    adres:gemeentenaam "Vorst"@nl, "Forest"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0874.335.432 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0874.335.432.
+_:nace_2003_72400 a skos:Concept;
+    skos:definition "Databanken"@nl, "Activités de banques de données"@fr;
+    skos:prefLabel "72400".
+_:nace_2003_74141 a skos:Concept;
+    skos:definition "Public relationsbureaus"@nl, "Bureau de relations publiques"@fr;
+    skos:prefLabel "74141".
+_:registration_company_0874.335.432 a adms:Identifier;
+    skos:notation "0874.335.432";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.221.396.307 a adms:Identifier;
+    skos:notation "2.221.396.307";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

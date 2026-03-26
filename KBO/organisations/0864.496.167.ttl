@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0864.496.167> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "02-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.496.167;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/81300>, _:nace_2003_01410, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47761>, _:nace_2003_52483, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/47761>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0864.496.167;
+    reorg:legalName "PETRISOT ET FILS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.137.074.207>.
+<https://data.vlaanderen.be/id/vestiging/2.137.074.207> a org:Site;
+    dcterms:created "29-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.137.074.207.
+_:address_contact_0864.496.167 a locn:Address;
+    locn:thoroughfare "Allée de Linaires(Cha)"@nl, "Allée de Linaires(Cha)"@fr;
+    rdfs:label "7";
+    locn:postCode "5650";
+    adres:gemeentenaam "Walcourt"@nl, "Walcourt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0864.496.167 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0864.496.167.
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_52483 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in bloemen en planten, zaden en kunstmeststoffen"@nl, "Commerce de détail spécialisé de fleurs et de plantes, de graines et d'engrais"@fr;
+    skos:prefLabel "52483".
+_:registration_company_0864.496.167 a adms:Identifier;
+    skos:notation "0864.496.167";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.137.074.207 a adms:Identifier;
+    skos:notation "2.137.074.207";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/69102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6910>, <http://vocab.belgif.be/auth/nace2008/6910>;
+    skos:definition "Activiteiten van notarissen"@nl, "Activités des notaires"@fr;
+    skos:prefLabel "69102".
+<http://vocab.belgif.be/auth/nace2008/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7733>, <http://vocab.belgif.be/auth/nace2008/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/69102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6910>, <http://vocab.belgif.be/auth/nace2025/6910>;
+    skos:definition "Activiteiten van notarissen"@nl, "Activités des notaires"@fr;
+    skos:prefLabel "69102".
+<http://vocab.belgif.be/auth/nace2025/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7733>, <http://vocab.belgif.be/auth/nace2025/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0845.945.611> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0845.945.611;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/77330>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/69102>, <http://vocab.belgif.be/auth/nace2008/82190>, <http://vocab.belgif.be/auth/nace2008/69102>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/77330>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0845.945.611;
+    reorg:legalName "GOEMINNE"@nl.
+_:address_contact_0845.945.611 a locn:Address;
+    locn:thoroughfare "Kruisstraat"@nl, "Rue de la Croix"@fr;
+    rdfs:label "3";
+    locn:postCode "9600";
+    adres:gemeentenaam "Ronse"@nl, "Ronse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0845.945.611 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "055/212 725";
+    schema:faxNumber "055/210 965";
+    locn:address _:address_contact_0845.945.611.
+_:registration_company_0845.945.611 a adms:Identifier;
+    skos:notation "0845.945.611";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

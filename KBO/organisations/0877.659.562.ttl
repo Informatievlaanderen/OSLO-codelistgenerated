@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2611>, <http://vocab.belgif.be/auth/nace2008/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2008/27120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2712>, <http://vocab.belgif.be/auth/nace2008/2712>;
+    skos:definition "Vervaardiging van schakel- en verdeelinrichtingen"@nl, "Fabrication de matériel de distribution et de commande électrique"@fr;
+    skos:prefLabel "27120".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2611>, <http://vocab.belgif.be/auth/nace2025/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2025/27120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2712>, <http://vocab.belgif.be/auth/nace2025/2712>;
+    skos:definition "Vervaardiging van schakel- en verdeelinrichtingen"@nl, "Fabrication de matériel de distribution et de commande électrique"@fr;
+    skos:prefLabel "27120".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<https://data.vlaanderen.be/id/onderneming/0877.659.562> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "24-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.659.562;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/27120>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/26110>, _:nace_2003_31200, _:nace_2003_74203, _:nace_2003_32100, <http://vocab.belgif.be/auth/nace2008/27120>, <http://vocab.belgif.be/auth/nace2008/26110>, <http://vocab.belgif.be/auth/nace2008/71121>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0877.659.562;
+    reorg:legalName "TECHNOLOGICS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.151.339.046>.
+<https://data.vlaanderen.be/id/vestiging/2.151.339.046> a org:Site;
+    dcterms:created "30-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.151.339.046.
+_:address_contact_0877.659.562 a locn:Address;
+    locn:thoroughfare "Hellestraat"@nl, "Hellestraat"@fr;
+    rdfs:label "7";
+    locn:postCode "2590";
+    adres:gemeentenaam "Berlaar"@nl, "Berlaar"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0877.659.562 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "alois@technologics.be";
+    schema:telephone "015250190";
+    schema:faxNumber "015252003";
+    locn:address _:address_contact_0877.659.562.
+_:nace_2003_31200 a skos:Concept;
+    skos:definition "Vervaardiging van schakel- en verdeelinrichtingen"@nl, "Fabrication de matériel de distribution et de commande électrique"@fr;
+    skos:prefLabel "31200".
+_:nace_2003_32100 a skos:Concept;
+    skos:definition "Vervaardiging van elektronische onderdelen"@nl, "Fabrication de composants électroniques"@fr;
+    skos:prefLabel "32100".
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:registration_company_0877.659.562 a adms:Identifier;
+    skos:notation "0877.659.562";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.151.339.046 a adms:Identifier;
+    skos:notation "2.151.339.046";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-11-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

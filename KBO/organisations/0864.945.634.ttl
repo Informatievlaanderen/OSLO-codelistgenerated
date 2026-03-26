@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1013>, <http://vocab.belgif.be/auth/nace2008/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2008/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4722>, <http://vocab.belgif.be/auth/nace2008/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1013>, <http://vocab.belgif.be/auth/nace2025/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<https://data.vlaanderen.be/id/onderneming/0864.945.634> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.945.634;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10130>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/56210>, _:nace_2003_15131, _:nace_2003_55522, _:nace_2003_52220, <http://vocab.belgif.be/auth/nace2008/47221>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/10130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0864.945.634;
+    reorg:legalName "Ligot, Claude";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.136.688.680>.
+<https://data.vlaanderen.be/id/vestiging/2.136.688.680> a org:Site;
+    dcterms:created "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.688.680.
+_:contact_0864.945.634 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "061/68.80.19";
+    schema:faxNumber "061/68.80.19".
+_:nace_2003_15131 a skos:Concept;
+    skos:definition "Vervaardiging van verse vleeswaren en van vleesconserven"@nl, "Préparation de produits frais à base de viande et de conserves de viande"@fr;
+    skos:prefLabel "15131".
+_:nace_2003_52220 a skos:Concept;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220".
+_:nace_2003_55522 a skos:Concept;
+    skos:definition "Uitzendkoks en verzorgen van feesten en recepties"@nl, "Traiteurs et organisation de réceptions"@fr;
+    skos:prefLabel "55522".
+_:registration_company_0864.945.634 a adms:Identifier;
+    skos:notation "0864.945.634";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.688.680 a adms:Identifier;
+    skos:notation "2.136.688.680";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

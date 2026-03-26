@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4754>, <http://vocab.belgif.be/auth/nace2008/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2008/77292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77292".
+<http://vocab.belgif.be/auth/nace2025/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4754>, <http://vocab.belgif.be/auth/nace2025/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2025/77222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77222".
+<https://data.vlaanderen.be/id/onderneming/0861.217.666> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.217.666;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77222>, <http://vocab.belgif.be/auth/nace2025/47540>, _:nace_2003_71403, _:nace_2003_52450, <http://vocab.belgif.be/auth/nace2008/77292>, <http://vocab.belgif.be/auth/nace2008/47540>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Chambaere, Karlheinz";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.133.419.087>.
+<https://data.vlaanderen.be/id/vestiging/2.133.419.087> a org:Site;
+    dcterms:created "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.133.419.087.
+_:nace_2003_52450 a skos:Concept;
+    skos:definition "Detailhandel in elektrische huishoudapparaten en in audio- en videoapparatuur"@nl, "Commerce de détail d'appareils électroménagers, de radio et de télévision"@fr;
+    skos:prefLabel "52450".
+_:nace_2003_71403 a skos:Concept;
+    skos:definition "Verhuur van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "71403".
+_:registration_company_0861.217.666 a adms:Identifier;
+    skos:notation "0861.217.666";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.133.419.087 a adms:Identifier;
+    skos:notation "2.133.419.087";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

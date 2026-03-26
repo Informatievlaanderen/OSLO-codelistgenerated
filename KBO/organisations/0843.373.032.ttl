@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46769> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4676>, <http://vocab.belgif.be/auth/nace2008/4676>;
+    skos:definition "Groothandel in andere intermediaire producten, n.e.g."@nl, "Commerce de gros d'autres produits intermédiaires n.c.a."@fr;
+    skos:prefLabel "46769".
+<http://vocab.belgif.be/auth/nace2025/46869> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4686>, <http://vocab.belgif.be/auth/nace2025/4686>;
+    skos:definition "Groothandel in andere intermediaire producten, neg"@nl, "Commerce de gros d'autres produits intermédiaires nca"@fr;
+    skos:prefLabel "46869".
+<https://data.vlaanderen.be/id/onderneming/0843.373.032> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "03-02-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0843.373.032;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46869>, <http://vocab.belgif.be/auth/nace2008/46769>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0843.373.032;
+    reorg:legalName "CABOT SWITZERLAND GMBH"@fr.
+_:address_contact_0843.373.032 a locn:Address;
+    locn:thoroughfare "MÜHLENTALSTRASSE"@nl, "MÜHLENTALSTRASSE"@fr;
+    rdfs:label "36";
+    locn:postCode "8200";
+    adres:gemeentenaam "SCHAFFHAUSEN"@nl, "SCHAFFHAUSEN"@fr;
+    adres:land "Zwitserland"@nl, "Suisse"@fr.
+_:contact_0843.373.032 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "+41 526303816";
+    locn:address _:address_contact_0843.373.032.
+_:registration_company_0843.373.032 a adms:Identifier;
+    skos:notation "0843.373.032";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

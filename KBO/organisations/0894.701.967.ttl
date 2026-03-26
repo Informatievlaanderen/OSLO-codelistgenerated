@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5811>, <http://vocab.belgif.be/auth/nace2008/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5811>, <http://vocab.belgif.be/auth/nace2025/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<https://data.vlaanderen.be/id/onderneming/0894.701.967> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "08-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0894.701.967;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/58110>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2008/58110>, <http://vocab.belgif.be/auth/nace2008/73110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0894.701.967;
+    reorg:legalName "BINFIKIR: vereniging voor Diversiteit in Kunst, Communicatie en Media"@nl, "BINFIIKIR"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.168.825.671>.
+<https://data.vlaanderen.be/id/vestiging/2.168.825.671> a org:Site;
+    dcterms:created "07-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.168.825.671.
+_:address_contact_0894.701.967 a locn:Address;
+    locn:thoroughfare "Koninginneplein"@nl, "Place de la Reine"@fr;
+    rdfs:label "20";
+    locn:postCode "1030";
+    adres:gemeentenaam "Schaarbeek"@nl, "Schaerbeek"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0894.701.967 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0894.701.967.
+_:registration_company_0894.701.967 a adms:Identifier;
+    skos:notation "0894.701.967";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.168.825.671 a adms:Identifier;
+    skos:notation "2.168.825.671";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

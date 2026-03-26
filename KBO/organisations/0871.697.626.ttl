@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0143>, <http://vocab.belgif.be/auth/nace2008/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2008/01450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0145>, <http://vocab.belgif.be/auth/nace2008/0145>;
+    skos:definition "Fokken van schapen en geiten"@nl, "Élevage d'ovins et de caprins"@fr;
+    skos:prefLabel "01450".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0143>, <http://vocab.belgif.be/auth/nace2025/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2025/01450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0145>, <http://vocab.belgif.be/auth/nace2025/0145>;
+    skos:definition "Fokken van schapen en geiten"@nl, "Élevage d'ovins et de caprins"@fr;
+    skos:prefLabel "01450".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<https://data.vlaanderen.be/id/onderneming/0871.697.626> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.697.626;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/01430>, <http://vocab.belgif.be/auth/nace2025/01450>, _:nace_2003_01220, _:nace_2003_28520, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/01450>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/01430>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Kooremans, Raf";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.145.065.225>.
+<https://data.vlaanderen.be/id/vestiging/2.145.065.225> a org:Site;
+    dcterms:created "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.145.065.225.
+_:nace_2003_01220 a skos:Concept;
+    skos:definition "Schapen-, geiten-, paarden-, ezel-, muildieren- of muilezelhouderij"@nl, "Élevage d'ovins, caprins et équidés"@fr;
+    skos:prefLabel "01220".
+_:nace_2003_28520 a skos:Concept;
+    skos:definition "Algemene metaalbewerking"@nl, "Opérations de mécanique générale"@fr;
+    skos:prefLabel "28520".
+_:registration_company_0871.697.626 a adms:Identifier;
+    skos:notation "0871.697.626";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.145.065.225 a adms:Identifier;
+    skos:notation "2.145.065.225";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

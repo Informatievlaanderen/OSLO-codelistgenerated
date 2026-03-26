@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010";
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>.
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020";
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>.
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110";
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>.
+<http://vocab.belgif.be/auth/nace2008/72190> a skos:Concept;
+    skos:definition "Recherche-développement en autres sciences physiques et naturelles"@fr, "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk  gebied"@nl;
+    skos:prefLabel "72190";
+    skos:broader <http://data.europa.eu/ux2/nace2/7219>, <http://vocab.belgif.be/auth/nace2008/7219>.
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>.
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>.
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>.
+<http://vocab.belgif.be/auth/nace2025/72109> a skos:Concept;
+    skos:definition "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche-développement en autres sciences physiques et naturelles"@fr;
+    skos:prefLabel "72109";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>.
+<https://data.vlaanderen.be/id/onderneming/0871.095.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.095.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_72100, <http://vocab.belgif.be/auth/nace2025/62200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/72109>, _:nace_2003_72300, _:nace_2003_72220, _:nace_2003_73100, _:nace_2003_72400, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/72190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0871.095.533;
+    reorg:legalName "MENTIS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.144.966.839>, <https://data.vlaanderen.be/id/vestiging/2.369.741.375>.
+<https://data.vlaanderen.be/id/vestiging/2.144.966.839> a org:Site;
+    dcterms:created "01-02-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.144.966.839.
+<https://data.vlaanderen.be/id/vestiging/2.369.741.375> a org:Site;
+    dcterms:created "01-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.369.741.375.
+_:address_contact_0871.095.533 a locn:Address;
+    locn:thoroughfare "Louizalaan"@nl, "Avenue Louise"@fr;
+    rdfs:label "367";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0871.095.533 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0871.095.533.
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:nace_2003_72300 a skos:Concept;
+    skos:definition "Gegevensverwerking"@nl, "Traitement de données"@fr;
+    skos:prefLabel "72300".
+_:nace_2003_72400 a skos:Concept;
+    skos:definition "Databanken"@nl, "Activités de banques de données"@fr;
+    skos:prefLabel "72400".
+_:nace_2003_73100 a skos:Concept;
+    skos:definition "Speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche et développement en sciences physiques et naturelles"@fr;
+    skos:prefLabel "73100".
+_:registration_company_0871.095.533 a adms:Identifier;
+    skos:notation "0871.095.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.144.966.839 a adms:Identifier;
+    skos:notation "2.144.966.839";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.369.741.375 a adms:Identifier;
+    skos:notation "2.369.741.375";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

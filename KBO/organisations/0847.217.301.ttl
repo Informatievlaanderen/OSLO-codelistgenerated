@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/0847.217.301> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0847.217.301;
+    reorg:legalName "Cornillie, Matthieu";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.210.603.076>, <https://data.vlaanderen.be/id/vestiging/2.309.394.905>, <https://data.vlaanderen.be/id/vestiging/2.309.395.004>.
+<https://data.vlaanderen.be/id/vestiging/2.210.603.076> a org:Site;
+    dcterms:created "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.210.603.076.
+<https://data.vlaanderen.be/id/vestiging/2.309.394.905> a org:Site;
+    dcterms:created "01-01-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.309.394.905.
+<https://data.vlaanderen.be/id/vestiging/2.309.395.004> a org:Site;
+    dcterms:created "01-05-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.309.395.004.
+_:registration_company_0847.217.301 a adms:Identifier;
+    skos:notation "0847.217.301";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.210.603.076 a adms:Identifier;
+    skos:notation "2.210.603.076";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.309.394.905 a adms:Identifier;
+    skos:notation "2.309.394.905";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.309.395.004 a adms:Identifier;
+    skos:notation "2.309.395.004";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-07-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

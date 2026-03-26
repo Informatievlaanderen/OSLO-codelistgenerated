@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/14199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van andere kleding en toebehoren, n.e.g."@nl, "Fabrication d'autres vêtements et accessoires n.c.a."@fr;
+    skos:prefLabel "14199".
+<http://vocab.belgif.be/auth/nace2008/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4638>, <http://vocab.belgif.be/auth/nace2008/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2008/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8122>, <http://vocab.belgif.be/auth/nace2008/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2008/96011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9601>, <http://vocab.belgif.be/auth/nace2008/9601>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96011".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/96101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9610>, <http://vocab.belgif.be/auth/nace2025/9610>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96101".
+<https://data.vlaanderen.be/id/onderneming/0849.799.182> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "22-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0849.799.182;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96101>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/46389>, <http://vocab.belgif.be/auth/nace2008/96011>, <http://vocab.belgif.be/auth/nace2008/46389>, <http://vocab.belgif.be/auth/nace2008/95290>, <http://vocab.belgif.be/auth/nace2008/81220>, <http://vocab.belgif.be/auth/nace2008/14199>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0849.799.182;
+    reorg:legalName "ECOLINE BENELUX"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.287.592.570>.
+<https://data.vlaanderen.be/id/vestiging/2.287.592.570> a org:Site;
+    dcterms:created "01-01-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.287.592.570.
+_:address_contact_0849.799.182 a locn:Address;
+    locn:thoroughfare "Trierstraat"@nl, "Rue de Trèves"@fr;
+    rdfs:label "6";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0849.799.182 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0849.799.182.
+_:registration_company_0849.799.182 a adms:Identifier;
+    skos:notation "0849.799.182";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.287.592.570 a adms:Identifier;
+    skos:notation "2.287.592.570";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-10-2012"^^<http://www.w3.org/2001/XMLSchema#date>.

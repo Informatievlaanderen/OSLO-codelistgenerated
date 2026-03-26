@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/72190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7219>, <http://vocab.belgif.be/auth/nace2008/7219>;
+    skos:definition "Recherche-développement en autres sciences physiques et naturelles"@fr, "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk  gebied"@nl;
+    skos:prefLabel "72190".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2008/86210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8621>, <http://vocab.belgif.be/auth/nace2008/8621>;
+    skos:definition "Huisartspraktijken"@nl, "Activités des médecins généralistes"@fr;
+    skos:prefLabel "86210".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/72109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>;
+    skos:definition "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche-développement en autres sciences physiques et naturelles"@fr;
+    skos:prefLabel "72109".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/86210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8621>, <http://vocab.belgif.be/auth/nace2025/8621>;
+    skos:definition "Huisartspraktijken"@nl, "Activités des médecins généralistes"@fr;
+    skos:prefLabel "86210".
+<https://data.vlaanderen.be/id/onderneming/0887.210.005> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "13-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0887.210.005;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/72109>, <http://vocab.belgif.be/auth/nace2025/86210>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2008/86210>, <http://vocab.belgif.be/auth/nace2008/72190>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/85599>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0887.210.005;
+    reorg:legalName "KERKERVELD"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.229.992.980>.
+<https://data.vlaanderen.be/id/vestiging/2.229.992.980> a org:Site;
+    dcterms:created "13-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.229.992.980.
+_:address_contact_0887.210.005 a locn:Address;
+    locn:thoroughfare "Kerkplein"@nl, "Kerkplein"@fr;
+    rdfs:label "14";
+    locn:postCode "3920";
+    adres:gemeentenaam "Lommel"@nl, "Lommel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0887.210.005 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0887.210.005.
+_:registration_company_0887.210.005 a adms:Identifier;
+    skos:notation "0887.210.005";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.229.992.980 a adms:Identifier;
+    skos:notation "2.229.992.980";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-02-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

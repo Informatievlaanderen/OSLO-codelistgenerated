@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/16291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1629>, <http://vocab.belgif.be/auth/nace2008/1629>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16291".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<https://data.vlaanderen.be/id/onderneming/0877.587.011> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0877.587.011;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16281>, _:nace_2003_20510, <http://vocab.belgif.be/auth/nace2008/16291>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Desmet, Linda";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.150.181.875>.
+<https://data.vlaanderen.be/id/vestiging/2.150.181.875> a org:Site;
+    dcterms:created "01-01-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.150.181.875.
+_:nace_2003_20510 a skos:Concept;
+    skos:definition "Fabrication d'objets divers en bois"@fr, "Vervaardiging van overige artikelen van hout"@nl;
+    skos:prefLabel "20510".
+_:registration_company_0877.587.011 a adms:Identifier;
+    skos:notation "0877.587.011";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2015"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.150.181.875 a adms:Identifier;
+    skos:notation "2.150.181.875";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2015"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1624>, <http://vocab.belgif.be/auth/nace2008/1624>;
+    skos:definition "Vervaardiging van houten emballage"@nl, "Fabrication d'emballages en bois"@fr;
+    skos:prefLabel "16240".
+<http://vocab.belgif.be/auth/nace2008/16291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1629>, <http://vocab.belgif.be/auth/nace2008/1629>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16291".
+<http://vocab.belgif.be/auth/nace2008/22290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2229>, <http://vocab.belgif.be/auth/nace2008/2229>;
+    skos:definition "Vervaardiging van andere producten van kunststof"@nl, "Fabrication d'autres articles en matières plastiques"@fr;
+    skos:prefLabel "22290".
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2025/16240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1624>, <http://vocab.belgif.be/auth/nace2025/1624>;
+    skos:definition "Vervaardiging van houten emballage"@nl, "Fabrication d'emballages en bois"@fr;
+    skos:prefLabel "16240".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<http://vocab.belgif.be/auth/nace2025/22260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2226>, <http://vocab.belgif.be/auth/nace2025/2226>;
+    skos:definition "Vervaardiging van andere producten van kunststof"@nl, "Fabrication d’autres articles en matières plastiques"@fr;
+    skos:prefLabel "22260".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<https://data.vlaanderen.be/id/onderneming/0840.438.088> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0840.438.088;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/16240>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/22260>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/16281>, <http://vocab.belgif.be/auth/nace2008/16240>, <http://vocab.belgif.be/auth/nace2008/16291>, <http://vocab.belgif.be/auth/nace2008/74109>, <http://vocab.belgif.be/auth/nace2008/22290>, <http://vocab.belgif.be/auth/nace2008/25999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0840.438.088;
+    reorg:legalName "PHANTOMCASE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.217.664.676>.
+<https://data.vlaanderen.be/id/vestiging/2.217.664.676> a org:Site;
+    dcterms:created "14-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.217.664.676.
+_:address_contact_0840.438.088 a locn:Address;
+    locn:thoroughfare "Dreefvelden"@nl, "Dreefvelden"@fr;
+    rdfs:label "31";
+    locn:postCode "2860";
+    adres:gemeentenaam "Sint-Katelijne-Waver"@nl, "Sint-Katelijne-Waver"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0840.438.088 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0840.438.088.
+_:registration_company_0840.438.088 a adms:Identifier;
+    skos:notation "0840.438.088";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.217.664.676 a adms:Identifier;
+    skos:notation "2.217.664.676";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>.

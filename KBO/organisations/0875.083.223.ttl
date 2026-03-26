@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4540>, <http://vocab.belgif.be/auth/nace2008/4540>;
+    skos:definition "Detailhandel in en onderhoud en reparatie van motorfietsen en delen en toebehoren van motorfietsen"@nl, "Entretien, réparation et commerce de détail de motocycles, y compris les pièces et accessoires"@fr;
+    skos:prefLabel "45402".
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/47830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4783>, <http://vocab.belgif.be/auth/nace2025/4783>;
+    skos:definition "Detailhandel in motorrijwielen, delen en toebehoren van motorrijwielen"@nl, "Commerce de détail de motocycles et de pièces et accessoires de motocycles"@fr;
+    skos:prefLabel "47830".
+<https://data.vlaanderen.be/id/onderneming/0875.083.223> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.083.223;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2025/46494>, <http://vocab.belgif.be/auth/nace2025/47830>, _:nace_2003_50400, _:nace_2003_51410, _:nace_2003_51471, <http://vocab.belgif.be/auth/nace2008/45402>, <http://vocab.belgif.be/auth/nace2008/46412>, <http://vocab.belgif.be/auth/nace2008/46494>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0875.083.223;
+    reorg:legalName "Goidts, Bernardus";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.147.935.336>.
+<https://data.vlaanderen.be/id/vestiging/2.147.935.336> a org:Site;
+    dcterms:created "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.147.935.336.
+_:contact_0875.083.223 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "03/485 59 59".
+_:nace_2003_50400 a skos:Concept;
+    skos:definition "Handel in en onderhoud en reparatie van motorrijwielen en onderdelen en toebehoren van motorrijwielen"@nl, "Commerce, entretien et réparation de motocycles, y compris pièces et accessoires"@fr;
+    skos:prefLabel "50400".
+_:nace_2003_51410 a skos:Concept;
+    skos:definition "Groothandel in textiel"@nl, "Commerce de gros de textiles"@fr;
+    skos:prefLabel "51410".
+_:nace_2003_51471 a skos:Concept;
+    skos:definition "Groothandel in meubels, niet-elektrische huishoudapparaten en vloerbedekking inclusief tapijten"@nl, "Commerce de gros de meubles, d'appareils ménagers non électriques et de revêtements de sol, y compris les tapis"@fr;
+    skos:prefLabel "51471".
+_:registration_company_0875.083.223 a adms:Identifier;
+    skos:notation "0875.083.223";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.147.935.336 a adms:Identifier;
+    skos:notation "2.147.935.336";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

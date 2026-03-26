@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/49420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4942>, <http://vocab.belgif.be/auth/nace2008/4942>;
+    skos:definition "Verhuisbedrijven"@nl, "Services de déménagement"@fr;
+    skos:prefLabel "49420".
+<http://vocab.belgif.be/auth/nace2008/52249> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5224>, <http://vocab.belgif.be/auth/nace2008/5224>;
+    skos:definition "Overige vrachtbehandeling, exclusief in zeehavens"@nl, "Manutention autre que portuaire"@fr;
+    skos:prefLabel "52249".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/49420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4942>, <http://vocab.belgif.be/auth/nace2025/4942>;
+    skos:definition "Verhuisbedrijven"@nl, "Services de déménagement"@fr;
+    skos:prefLabel "49420".
+<http://vocab.belgif.be/auth/nace2025/52249> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5224>, <http://vocab.belgif.be/auth/nace2025/5224>;
+    skos:definition "Overige vrachtbehandeling, exclusief in zeehavens"@nl, "Manutention autre que portuaire"@fr;
+    skos:prefLabel "52249".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<https://data.vlaanderen.be/id/onderneming/0875.625.235> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "18-08-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0875.625.235;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/52249>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/49420>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2025/43211>, _:nace_2003_60241, _:nace_2003_63112, _:nace_2003_45340, _:nace_2003_45310, _:nace_2003_63406, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/43299>, <http://vocab.belgif.be/auth/nace2008/52249>, <http://vocab.belgif.be/auth/nace2008/49420>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0875.625.235;
+    reorg:legalName "Jeanmart, Eric";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.148.477.249>.
+<https://data.vlaanderen.be/id/vestiging/2.148.477.249> a org:Site;
+    dcterms:created "18-08-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.148.477.249.
+_:contact_0875.625.235 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "081/81.16.51".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_45340 a skos:Concept;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d'installation"@fr;
+    skos:prefLabel "45340".
+_:nace_2003_60241 a skos:Concept;
+    skos:definition "Verhuisdiensten"@nl, "Déménagement"@fr;
+    skos:prefLabel "60241".
+_:nace_2003_63112 a skos:Concept;
+    skos:definition "Overige vrachtbehandeling"@nl, "Autre manutention"@fr;
+    skos:prefLabel "63112".
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:registration_company_0875.625.235 a adms:Identifier;
+    skos:notation "0875.625.235";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-08-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.148.477.249 a adms:Identifier;
+    skos:notation "2.148.477.249";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-08-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

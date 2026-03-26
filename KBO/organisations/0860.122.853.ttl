@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/31091> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de salles à manger, de salons, de chambres à coucher et de salles de bain"@fr;
+    skos:prefLabel "31091".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/47299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4729>, <http://vocab.belgif.be/auth/nace2008/4729>;
+    skos:definition "Overige detailhandel in voedingsmiddelen in gespecialiseerde winkels, n.e.g."@nl, "Autres commerces de détail alimentaires en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47299".
+<http://vocab.belgif.be/auth/nace2025/31004> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de meubles de salle à manger, de salon, de chambre à coucher et de salle de bain"@fr;
+    skos:prefLabel "31004".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<https://data.vlaanderen.be/id/onderneming/0860.122.853> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.122.853;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/31004>, _:nace_2003_52272, <http://vocab.belgif.be/auth/nace2008/47299>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/31091>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Koytavilog̀lu, Fatma";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.132.518.769>.
+<https://data.vlaanderen.be/id/vestiging/2.132.518.769> a org:Site;
+    dcterms:created "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.132.518.769.
+_:nace_2003_52272 a skos:Concept;
+    skos:definition "Overige detailhandel in voedings- en genotmiddelen in gespecialiseerde winkels, n.e.g."@nl, "Autres commerces de détail alimentaires en magasins spécialisés n.d.a."@fr;
+    skos:prefLabel "52272".
+_:registration_company_0860.122.853 a adms:Identifier;
+    skos:notation "0860.122.853";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.132.518.769 a adms:Identifier;
+    skos:notation "2.132.518.769";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

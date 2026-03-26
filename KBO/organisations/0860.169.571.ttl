@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0860.169.571> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0860.169.571;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/46180>, _:nace_2003_51180, _:nace_2003_52442, _:nace_2003_93052, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/47592>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Halet, Nathalie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.132.562.519>.
+<https://data.vlaanderen.be/id/vestiging/2.132.562.519> a org:Site;
+    dcterms:created "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.132.562.519.
+_:nace_2003_51180 a skos:Concept;
+    skos:definition "Handelsbemiddeling gespecialiseerd in overige goederen, n.e.g."@nl, "Autres intermédiaires spécialisés du commerce"@fr;
+    skos:prefLabel "51180".
+_:nace_2003_52442 a skos:Concept;
+    skos:definition "Detailhandel in artikelen voor verlichting en woninginrichting"@nl, "Commerce de détail d'appareils d'éclairage et d'équipements du foyer"@fr;
+    skos:prefLabel "52442".
+_:nace_2003_93052 a skos:Concept;
+    skos:definition "Grafologen, astrologen, helderzienden, wichelaars, spiritisten en dergelijke"@nl, "Graphologues, astrologues, voyants, radiesthésistes et similaires"@fr;
+    skos:prefLabel "93052".
+_:registration_company_0860.169.571 a adms:Identifier;
+    skos:notation "0860.169.571";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.132.562.519 a adms:Identifier;
+    skos:notation "2.132.562.519";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01461> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Fokvarkenshouderijen"@nl, "Élevage de porcs reproducteurs"@fr;
+    skos:prefLabel "01461".
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/01461> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Fokvarkenshouderijen"@nl, "Élevage de porcs reproducteurs"@fr;
+    skos:prefLabel "01461".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<https://data.vlaanderen.be/id/onderneming/0840.902.601> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0840.902.601;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01620>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01461>, <http://vocab.belgif.be/auth/nace2008/01620>, <http://vocab.belgif.be/auth/nace2008/01461>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0840.902.601;
+    reorg:legalName "Clincke, Bart";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.203.798.230>, <https://data.vlaanderen.be/id/vestiging/2.219.907.653>, <https://data.vlaanderen.be/id/vestiging/2.288.380.448>.
+<https://data.vlaanderen.be/id/vestiging/2.203.798.230> a org:Site;
+    dcterms:created "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.203.798.230.
+<https://data.vlaanderen.be/id/vestiging/2.219.907.653> a org:Site;
+    dcterms:created "01-07-2013"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.219.907.653.
+<https://data.vlaanderen.be/id/vestiging/2.288.380.448> a org:Site;
+    dcterms:created "01-01-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.288.380.448.
+_:contact_0840.902.601 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "ki.clincke@skynet.be";
+    schema:telephone "051/655419";
+    schema:faxNumber "051/658465".
+_:registration_company_0840.902.601 a adms:Identifier;
+    skos:notation "0840.902.601";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.203.798.230 a adms:Identifier;
+    skos:notation "2.203.798.230";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.219.907.653 a adms:Identifier;
+    skos:notation "2.219.907.653";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.288.380.448 a adms:Identifier;
+    skos:notation "2.288.380.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>.

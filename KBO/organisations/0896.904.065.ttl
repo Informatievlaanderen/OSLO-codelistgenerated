@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in baby- en kinderbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour bébé et enfant en magasin spécialisé"@fr;
+    skos:prefLabel "47713".
+<http://vocab.belgif.be/auth/nace2008/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4772>, <http://vocab.belgif.be/auth/nace2008/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<http://vocab.belgif.be/auth/nace2025/47713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in baby- en kinderbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour bébé et enfant en magasin spécialisé"@fr;
+    skos:prefLabel "47713".
+<http://vocab.belgif.be/auth/nace2025/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<https://data.vlaanderen.be/id/onderneming/0896.904.065> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0896.904.065;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47721>, <http://vocab.belgif.be/auth/nace2025/47713>, <http://vocab.belgif.be/auth/nace2008/47721>, <http://vocab.belgif.be/auth/nace2008/47713>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0896.904.065;
+    reorg:legalName "Detaille"@nl.
+_:address_contact_0896.904.065 a locn:Address;
+    locn:thoroughfare "Doorniksestraat(Kor)"@nl, "Doorniksestraat(Kor)"@fr;
+    rdfs:label "36";
+    locn:postCode "8500";
+    adres:gemeentenaam "Kortrijk"@nl, "Kortrijk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0896.904.065 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "cherubin@skynet.be";
+    schema:telephone "056/257644";
+    schema:faxNumber "056/211663";
+    locn:address _:address_contact_0896.904.065.
+_:registration_company_0896.904.065 a adms:Identifier;
+    skos:notation "0896.904.065";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

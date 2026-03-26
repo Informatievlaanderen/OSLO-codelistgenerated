@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2041>, <http://vocab.belgif.be/auth/nace2008/2041>;
+    skos:definition "Vervaardiging van poets- en reinigingsmiddelen"@nl, "Fabrication de produits d'entretien"@fr;
+    skos:prefLabel "20412".
+<http://vocab.belgif.be/auth/nace2008/23910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2391>, <http://vocab.belgif.be/auth/nace2008/2391>;
+    skos:definition "Vervaardiging van schuur-, slijp- en polijstmiddelen"@nl, "Fabrication de produits abrasifs"@fr;
+    skos:prefLabel "23910".
+<http://vocab.belgif.be/auth/nace2008/25991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van huishoudelijke en sanitaire artikelen van metaal"@nl, "Fabrication d'articles métalliques à usage ménager et sanitaire"@fr;
+    skos:prefLabel "25991".
+<http://vocab.belgif.be/auth/nace2008/46442> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4644>, <http://vocab.belgif.be/auth/nace2008/4644>;
+    skos:definition "Groothandel in reinigingsmiddelen"@nl, "Commerce de gros de produits d'entretien"@fr;
+    skos:prefLabel "46442".
+<http://vocab.belgif.be/auth/nace2008/46769> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4676>, <http://vocab.belgif.be/auth/nace2008/4676>;
+    skos:definition "Groothandel in andere intermediaire producten, n.e.g."@nl, "Commerce de gros d'autres produits intermédiaires n.c.a."@fr;
+    skos:prefLabel "46769".
+<http://vocab.belgif.be/auth/nace2025/20412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2041>, <http://vocab.belgif.be/auth/nace2025/2041>;
+    skos:definition "Vervaardiging van poets- en reinigingsmiddelen"@nl, "Fabrication de produits d'entretien"@fr;
+    skos:prefLabel "20412".
+<http://vocab.belgif.be/auth/nace2025/23910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2391>, <http://vocab.belgif.be/auth/nace2025/2391>;
+    skos:definition "Vervaardiging van schuur-, slijp- en polijstmiddelen"@nl, "Fabrication de produits abrasifs"@fr;
+    skos:prefLabel "23910".
+<http://vocab.belgif.be/auth/nace2025/25991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van huishoudelijke en sanitaire artikelen van metaal"@nl, "Fabrication d'articles métalliques à usage ménager et sanitaire"@fr;
+    skos:prefLabel "25991".
+<http://vocab.belgif.be/auth/nace2025/46442> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4644>, <http://vocab.belgif.be/auth/nace2025/4644>;
+    skos:definition "Groothandel in reinigingsmiddelen"@nl, "Commerce de gros de produits d'entretien"@fr;
+    skos:prefLabel "46442".
+<http://vocab.belgif.be/auth/nace2025/46869> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4686>, <http://vocab.belgif.be/auth/nace2025/4686>;
+    skos:definition "Groothandel in andere intermediaire producten, neg"@nl, "Commerce de gros d'autres produits intermédiaires nca"@fr;
+    skos:prefLabel "46869".
+<https://data.vlaanderen.be/id/onderneming/0876.548.913> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0876.548.913;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46869>, _:nace_2003_51562, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20412>, <http://vocab.belgif.be/auth/nace2025/25991>, <http://vocab.belgif.be/auth/nace2025/46442>, <http://vocab.belgif.be/auth/nace2025/23910>, _:nace_2003_28751, _:nace_2003_24512, _:nace_2003_51442, _:nace_2003_26810, <http://vocab.belgif.be/auth/nace2008/46769>, <http://vocab.belgif.be/auth/nace2008/23910>, <http://vocab.belgif.be/auth/nace2008/46442>, <http://vocab.belgif.be/auth/nace2008/25991>, <http://vocab.belgif.be/auth/nace2008/20412>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0876.548.913;
+    reorg:legalName "FLEXIFOAM"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.149.574.141>.
+<https://data.vlaanderen.be/id/vestiging/2.149.574.141> a org:Site;
+    dcterms:created "21-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.149.574.141.
+_:address_contact_0876.548.913 a locn:Address;
+    locn:thoroughfare "Hekkestraat"@nl, "Hekkestraat"@fr;
+    rdfs:label "24";
+    locn:postCode "9308";
+    adres:gemeentenaam "Aalst"@nl, "Aalst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0876.548.913 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0876.548.913.
+_:nace_2003_24512 a skos:Concept;
+    skos:definition "Vervaardiging van poets- en onderhoudsmiddelen"@nl, "Fabrication de produits d'entretien et de nettoyage"@fr;
+    skos:prefLabel "24512".
+_:nace_2003_26810 a skos:Concept;
+    skos:definition "Vervaardiging van schuur-, slijp- en polijstmiddelen"@nl, "Fabrication de produits abrasifs"@fr;
+    skos:prefLabel "26810".
+_:nace_2003_28751 a skos:Concept;
+    skos:definition "Vervaardiging van huishoudartikelen van metaal"@nl, "Fabrication d'articles de ménage"@fr;
+    skos:prefLabel "28751".
+_:nace_2003_51442 a skos:Concept;
+    skos:definition "Groothandel in behang en onderhoudsproducten"@nl, "Commerce de gros de papiers peints et de produits d'entretien"@fr;
+    skos:prefLabel "51442".
+_:nace_2003_51562 a skos:Concept;
+    skos:definition "Groothandel in overige intermediaire producten, n.e.g."@nl, "Commerce de gros d'autres produits intermédiaires n.d.a."@fr;
+    skos:prefLabel "51562".
+_:registration_company_0876.548.913 a adms:Identifier;
+    skos:notation "0876.548.913";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.149.574.141 a adms:Identifier;
+    skos:notation "2.149.574.141";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

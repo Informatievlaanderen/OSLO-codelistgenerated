@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2008/46742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46742".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/46842> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46842".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<https://data.vlaanderen.be/id/onderneming/0864.172.802> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "19-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0864.172.802;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46842>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/46494>, _:nace_2003_72220, _:nace_2003_51471, _:nace_2003_72600, _:nace_2003_51542, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/46494>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/46742>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0864.172.802;
+    reorg:legalName "FURNISHING MARKETING SYSTEM"@fr, "F.M.S"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.136.416.288>, <https://data.vlaanderen.be/id/vestiging/2.136.416.981>.
+<https://data.vlaanderen.be/id/vestiging/2.136.416.288> a org:Site;
+    dcterms:created "12-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.416.288.
+<https://data.vlaanderen.be/id/vestiging/2.136.416.981> a org:Site;
+    dcterms:created "12-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.136.416.981.
+_:address_contact_0864.172.802 a locn:Address;
+    locn:thoroughfare "Hazenstraat"@nl, "Hazenstraat"@fr;
+    rdfs:label "20";
+    locn:postCode "2440";
+    adres:gemeentenaam "Geel"@nl, "Geel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0864.172.802 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0864.172.802.
+_:nace_2003_51471 a skos:Concept;
+    skos:definition "Groothandel in meubels, niet-elektrische huishoudapparaten en vloerbedekking inclusief tapijten"@nl, "Commerce de gros de meubles, d'appareils ménagers non électriques et de revêtements de sol, y compris les tapis"@fr;
+    skos:prefLabel "51471".
+_:nace_2003_51542 a skos:Concept;
+    skos:definition "Groothandel in loodgietersmateriaal en verwarmingsinstallaties"@nl, "Commerce de gros de fournitures et équipements pour plomberie et chauffage"@fr;
+    skos:prefLabel "51542".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:nace_2003_72600 a skos:Concept;
+    skos:definition "Overige activiteiten in verband met computers"@nl, "Autres activités rattachées à l'informatique"@fr;
+    skos:prefLabel "72600".
+_:registration_company_0864.172.802 a adms:Identifier;
+    skos:notation "0864.172.802";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.416.288 a adms:Identifier;
+    skos:notation "2.136.416.288";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.136.416.981 a adms:Identifier;
+    skos:notation "2.136.416.981";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

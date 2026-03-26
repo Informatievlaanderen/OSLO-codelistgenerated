@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180";
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>.
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:definition "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr, "Groothandel in computers, randapparatuur en software"@nl;
+    skos:prefLabel "46510";
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>.
+<http://vocab.belgif.be/auth/nace2008/61200> a skos:Concept;
+    skos:definition "Binnenvaart"@nl, "Transports fluviaux"@fr;
+    skos:prefLabel "61200";
+    skos:broader <http://data.europa.eu/ux2/nace2/6120>, <http://vocab.belgif.be/auth/nace2008/6120>.
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020";
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>.
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090";
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>.
+<http://vocab.belgif.be/auth/nace2008/73200> a skos:Concept;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200";
+    skos:broader <http://data.europa.eu/ux2/nace2/7320>, <http://vocab.belgif.be/auth/nace2008/7320>.
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>.
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>.
+<http://vocab.belgif.be/auth/nace2025/61100> a skos:Concept;
+    skos:definition "Zee- en kustvaart"@nl, "Transports maritimes et côtiers"@fr;
+    skos:prefLabel "61100";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6110>, <http://vocab.belgif.be/auth/nace2025/6110>.
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>.
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>.
+<http://vocab.belgif.be/auth/nace2025/73200> a skos:Concept;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7320>, <http://vocab.belgif.be/auth/nace2025/7320>.
+<https://data.vlaanderen.be/id/onderneming/0871.537.278> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "28-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0871.537.278;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_72220, <http://vocab.belgif.be/auth/nace2025/62200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/73200>, <http://vocab.belgif.be/auth/nace2025/61100>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2025/46180>, _:nace_2003_51840, _:nace_2003_64200, _:nace_2003_72100, _:nace_2003_72600, _:nace_2003_74131, _:nace_2003_51180, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/73200>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/61200>, <http://vocab.belgif.be/auth/nace2008/46510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0871.537.278;
+    reorg:legalName "Com2be.networks"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.146.046.905>.
+<https://data.vlaanderen.be/id/vestiging/2.146.046.905> a org:Site;
+    dcterms:created "01-03-2005"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.146.046.905.
+_:address_contact_0871.537.278 a locn:Address;
+    locn:thoroughfare "Slotlaan"@nl, "Avenue du Castel"@fr;
+    rdfs:label "62";
+    locn:postCode "1200";
+    adres:gemeentenaam "Sint-Lambrechts-Woluwe"@nl, "Woluwe-Saint-Lambert"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0871.537.278 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0871.537.278.
+_:nace_2003_51180 a skos:Concept;
+    skos:definition "Handelsbemiddeling gespecialiseerd in overige goederen, n.e.g."@nl, "Autres intermédiaires spécialisés du commerce"@fr;
+    skos:prefLabel "51180".
+_:nace_2003_51840 a skos:Concept;
+    skos:definition "Groothandel in computers, randapparatuur en programmatuur"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "51840".
+_:nace_2003_64200 a skos:Concept;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+_:nace_2003_72100 a skos:Concept;
+    skos:definition "Computeradviesbureaus"@nl, "Conseil en systèmes informatiques"@fr;
+    skos:prefLabel "72100".
+_:nace_2003_72220 a skos:Concept;
+    skos:definition "Overige advisering in verband met programmatuur en levering van programmatuur"@nl, "Autres activités de réalisation de logiciels"@fr;
+    skos:prefLabel "72220".
+_:nace_2003_72600 a skos:Concept;
+    skos:definition "Overige activiteiten in verband met computers"@nl, "Autres activités rattachées à l'informatique"@fr;
+    skos:prefLabel "72600".
+_:nace_2003_74131 a skos:Concept;
+    skos:definition "Marktonderzoekbureaus"@nl, "Bureau d'étude de marché"@fr;
+    skos:prefLabel "74131".
+_:registration_company_0871.537.278 a adms:Identifier;
+    skos:notation "0871.537.278";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.146.046.905 a adms:Identifier;
+    skos:notation "2.146.046.905";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-01-2005"^^<http://www.w3.org/2001/XMLSchema#date>.

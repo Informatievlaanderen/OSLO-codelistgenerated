@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4932>, <http://vocab.belgif.be/auth/nace2008/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2008/49390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4939>, <http://vocab.belgif.be/auth/nace2008/4939>;
+    skos:definition "Overig personenvervoer te land, n.e.g."@nl, "Autres transports terrestres de voyageurs n.c.a."@fr;
+    skos:prefLabel "49390".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2008/86903> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Ziekenvervoer"@nl, "Transport par ambulance"@fr;
+    skos:prefLabel "86903".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2025/49330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4933>, <http://vocab.belgif.be/auth/nace2025/4933>;
+    skos:definition "Diensten voor personenvervoer op aanvraag per voertuig met chauffeur"@nl, "Activités de service de transport de voyageurs sur demande par véhicule avec chauffeur"@fr;
+    skos:prefLabel "49330".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/86920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8692>, <http://vocab.belgif.be/auth/nace2025/8692>;
+    skos:definition "Patiëntenvervoer per ambulance"@nl, "Transport de patients par ambulance"@fr;
+    skos:prefLabel "86920".
+<https://data.vlaanderen.be/id/onderneming/0891.241.146> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0891.241.146;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/49330>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2025/86920>, _:nace_2003_60220, _:nace_2003_74151, _:nace_2003_60230, <http://vocab.belgif.be/auth/nace2008/77110>, <http://vocab.belgif.be/auth/nace2008/49390>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/49320>, <http://vocab.belgif.be/auth/nace2008/86903>, <http://vocab.belgif.be/auth/nace2008/64200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0891.241.146;
+    reorg:legalName "GROEP B-TRAC"@nl.
+_:address_contact_0891.241.146 a locn:Address;
+    locn:thoroughfare "Waterrijtstraat"@nl, "Waterrijtstraat"@fr;
+    rdfs:label "24";
+    locn:postCode "3920";
+    adres:gemeentenaam "Lommel"@nl, "Lommel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0891.241.146 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "011/80.98.83";
+    locn:address _:address_contact_0891.241.146.
+_:nace_2003_60220 a skos:Concept;
+    skos:definition "Exploitatie van taxi's"@nl, "Exploitation de taxis"@fr;
+    skos:prefLabel "60220".
+_:nace_2003_60230 a skos:Concept;
+    skos:definition "Overig vervoer van personen te land"@nl, "Autres transports terrestres de voyageurs"@fr;
+    skos:prefLabel "60230".
+_:nace_2003_74151 a skos:Concept;
+    skos:definition "Managementactiviteiten van holdings"@nl, "Activités de gestion et d'administration de holdings"@fr;
+    skos:prefLabel "74151".
+_:registration_company_0891.241.146 a adms:Identifier;
+    skos:notation "0891.241.146";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2007"^^<http://www.w3.org/2001/XMLSchema#date>.

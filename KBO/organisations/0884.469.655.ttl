@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1083>, <http://vocab.belgif.be/auth/nace2008/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2008/10840> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1084>, <http://vocab.belgif.be/auth/nace2008/1084>;
+    skos:definition "Vervaardiging van specerijen, sauzen en kruiderijen"@nl, "Fabrication de condiments et d'assaisonnements"@fr;
+    skos:prefLabel "10840".
+<http://vocab.belgif.be/auth/nace2008/47299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4729>, <http://vocab.belgif.be/auth/nace2008/4729>;
+    skos:definition "Overige detailhandel in voedingsmiddelen in gespecialiseerde winkels, n.e.g."@nl, "Autres commerces de détail alimentaires en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47299".
+<http://vocab.belgif.be/auth/nace2008/55100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5510>, <http://vocab.belgif.be/auth/nace2008/5510>;
+    skos:definition "Hotels"@nl, "Hôtels"@fr;
+    skos:prefLabel "55100".
+<http://vocab.belgif.be/auth/nace2025/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1083>, <http://vocab.belgif.be/auth/nace2025/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2025/10840> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1084>, <http://vocab.belgif.be/auth/nace2025/1084>;
+    skos:definition "Vervaardiging van specerijen, sauzen en kruiderijen"@nl, "Fabrication de condiments et d'assaisonnements"@fr;
+    skos:prefLabel "10840".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/55100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5510>, <http://vocab.belgif.be/auth/nace2025/5510>;
+    skos:definition "Hotels"@nl, "Hôtels"@fr;
+    skos:prefLabel "55100".
+<https://data.vlaanderen.be/id/onderneming/0884.469.655> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0884.469.655;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/55100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/10840>, <http://vocab.belgif.be/auth/nace2025/10830>, _:nace_2003_52272, _:nace_2003_55102, _:nace_2003_15870, _:nace_2003_15860, <http://vocab.belgif.be/auth/nace2008/55100>, <http://vocab.belgif.be/auth/nace2008/10830>, <http://vocab.belgif.be/auth/nace2008/47299>, <http://vocab.belgif.be/auth/nace2008/10840>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0884.469.655;
+    reorg:legalName "Het Buskruid"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.157.447.967>.
+<https://data.vlaanderen.be/id/vestiging/2.157.447.967> a org:Site;
+    dcterms:created "23-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.157.447.967.
+_:address_contact_0884.469.655 a locn:Address;
+    locn:thoroughfare "Dr. Vanderhoeydonckstraat"@nl, "Dr. Vanderhoeydonckstraat"@fr;
+    rdfs:label "64";
+    locn:postCode "3560";
+    adres:gemeentenaam "Lummen"@nl, "Lummen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0884.469.655 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0884.469.655.
+_:nace_2003_15860 a skos:Concept;
+    skos:definition "Transformation du thé et du café"@fr, "Verwerking van koffie en thee"@nl;
+    skos:prefLabel "15860".
+_:nace_2003_15870 a skos:Concept;
+    skos:definition "Vervaardiging van specerijen, sausen en kruiderijen"@nl, "Fabrication de condiments, assaisonnements et sauces"@fr;
+    skos:prefLabel "15870".
+_:nace_2003_52272 a skos:Concept;
+    skos:definition "Overige detailhandel in voedings- en genotmiddelen in gespecialiseerde winkels, n.e.g."@nl, "Autres commerces de détail alimentaires en magasins spécialisés n.d.a."@fr;
+    skos:prefLabel "52272".
+_:nace_2003_55102 a skos:Concept;
+    skos:definition "Hotels en motels, zonder restaurant"@nl, "Hôtels et motels, sans restaurant"@fr;
+    skos:prefLabel "55102".
+_:registration_company_0884.469.655 a adms:Identifier;
+    skos:notation "0884.469.655";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.157.447.967 a adms:Identifier;
+    skos:notation "2.157.447.967";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

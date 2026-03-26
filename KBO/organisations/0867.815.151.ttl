@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201";
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>.
+<http://vocab.belgif.be/auth/nace2008/43331> a skos:Concept;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331";
+    skos:broader <http://data.europa.eu/ux2/nace2/4333>, <http://vocab.belgif.be/auth/nace2008/4333>.
+<http://vocab.belgif.be/auth/nace2008/71111> a skos:Concept;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111";
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>.
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>.
+<http://vocab.belgif.be/auth/nace2025/43331> a skos:Concept;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>.
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>.
+<https://data.vlaanderen.be/id/onderneming/0867.815.151> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0867.815.151;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_45211, <http://vocab.belgif.be/auth/nace2025/41001>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/71111>, <http://vocab.belgif.be/auth/nace2025/43331>, _:nace_2003_74201, _:nace_2003_45431, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/43331>, <http://vocab.belgif.be/auth/nace2008/71111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0867.815.151;
+    reorg:legalName "VAN POUCKE & CO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.142.315.868>.
+<https://data.vlaanderen.be/id/vestiging/2.142.315.868> a org:Site;
+    dcterms:created "13-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.142.315.868.
+_:address_contact_0867.815.151 a locn:Address;
+    locn:thoroughfare "Ketterijstraat(WAT)"@nl, "Ketterijstraat(WAT)"@fr;
+    rdfs:label "42";
+    locn:postCode "9988";
+    adres:gemeentenaam "Sint-Laureins"@nl, "Sint-Laureins"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0867.815.151 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0867.815.151.
+_:nace_2003_45211 a skos:Concept;
+    skos:definition "Bouwen van individuele huizen"@nl, "Construction de maisons individuelles"@fr;
+    skos:prefLabel "45211".
+_:nace_2003_45431 a skos:Concept;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages"@fr;
+    skos:prefLabel "45431".
+_:nace_2003_74201 a skos:Concept;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+_:registration_company_0867.815.151 a adms:Identifier;
+    skos:notation "0867.815.151";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.142.315.868 a adms:Identifier;
+    skos:notation "2.142.315.868";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-10-2004"^^<http://www.w3.org/2001/XMLSchema#date>.

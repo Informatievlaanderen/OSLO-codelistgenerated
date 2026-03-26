@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/47530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4753>, <http://vocab.belgif.be/auth/nace2008/4753>;
+    skos:definition "Detailhandel in tapijten en andere vloerbedekking en wandbekleding in  gespecialiseerde winkels"@nl, "Commerce de détail de tapis, de moquettes et de revêtements de murs et de sols en magasin spécialisé"@fr;
+    skos:prefLabel "47530".
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/47530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4753>, <http://vocab.belgif.be/auth/nace2025/4753>;
+    skos:definition "Detailhandel in tapijten en andere vloerbedekking en wandbekleding in  gespecialiseerde winkels"@nl, "Commerce de détail de tapis, de moquettes et de revêtements de murs et de sols en magasin spécialisé"@fr;
+    skos:prefLabel "47530".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<https://data.vlaanderen.be/id/onderneming/0881.029.026> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0881.029.026;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47530>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/43320>, _:nace_2003_52486, _:nace_2003_45421, _:nace_2003_52442, <http://vocab.belgif.be/auth/nace2008/47530>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/47592>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0881.029.026;
+    reorg:legalName "STIJN"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.153.781.565>.
+<https://data.vlaanderen.be/id/vestiging/2.153.781.565> a org:Site;
+    dcterms:created "31-05-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.153.781.565.
+_:address_contact_0881.029.026 a locn:Address;
+    locn:thoroughfare "Brusselsestraat"@nl, "Brusselsestraat"@fr;
+    rdfs:label "11";
+    locn:postCode "1840";
+    adres:gemeentenaam "Londerzeel"@nl, "Londerzeel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0881.029.026 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0881.029.026.
+_:nace_2003_45421 a skos:Concept;
+    skos:definition "Schrijnwerk van hout of van kunststof"@nl, "Menuiserie en bois ou en matières plastiques"@fr;
+    skos:prefLabel "45421".
+_:nace_2003_52442 a skos:Concept;
+    skos:definition "Detailhandel in artikelen voor verlichting en woninginrichting"@nl, "Commerce de détail d'appareils d'éclairage et d'équipements du foyer"@fr;
+    skos:prefLabel "52442".
+_:nace_2003_52486 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in behang, vloerbedekking, vloerkleden en tapijt"@nl, "Commerce de détail spécialisé de papiers peints, de revêtements de murs et de sols"@fr;
+    skos:prefLabel "52486".
+_:registration_company_0881.029.026 a adms:Identifier;
+    skos:notation "0881.029.026";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.153.781.565 a adms:Identifier;
+    skos:notation "2.153.781.565";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-04-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

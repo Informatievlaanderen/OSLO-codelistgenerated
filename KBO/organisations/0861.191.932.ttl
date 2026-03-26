@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/37000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3700>, <http://vocab.belgif.be/auth/nace2008/3700>;
+    skos:definition "Afvalwaterafvoer"@nl, "Collecte et traitement des eaux usées"@fr;
+    skos:prefLabel "37000".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/72110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7211>, <http://vocab.belgif.be/auth/nace2008/7211>;
+    skos:definition "Speur- en ontwikkelingswerk op biotechnologisch gebied"@nl, "Recherche-développement en biotechnologie"@fr;
+    skos:prefLabel "72110".
+<http://vocab.belgif.be/auth/nace2025/37000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3700>, <http://vocab.belgif.be/auth/nace2025/3700>;
+    skos:definition "Afvalwaterafvoer"@nl, "Collecte et traitement des eaux usées"@fr;
+    skos:prefLabel "37000".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/72101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>;
+    skos:definition "Speur- en ontwikkelingswerk op biotechnologisch gebied"@nl, "Recherche-développement en biotechnologie"@fr;
+    skos:prefLabel "72101".
+<https://data.vlaanderen.be/id/onderneming/0861.191.932> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0861.191.932;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/71121>, _:nace_2003_74203, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/37000>, <http://vocab.belgif.be/auth/nace2025/72101>, _:nace_2003_90010, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/37000>, <http://vocab.belgif.be/auth/nace2008/72110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0861.191.932;
+    reorg:legalName "Global Water & Energy"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.135.049.578>, <https://data.vlaanderen.be/id/vestiging/2.174.743.364>, <https://data.vlaanderen.be/id/vestiging/2.377.144.554>, <https://data.vlaanderen.be/id/vestiging/2.377.144.653>.
+<https://data.vlaanderen.be/id/vestiging/2.135.049.578> a org:Site;
+    dcterms:created "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.135.049.578.
+<https://data.vlaanderen.be/id/vestiging/2.174.743.364> a org:Site;
+    dcterms:created "01-12-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.174.743.364.
+<https://data.vlaanderen.be/id/vestiging/2.377.144.554> a org:Site;
+    dcterms:created "01-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.144.554.
+<https://data.vlaanderen.be/id/vestiging/2.377.144.653> a org:Site;
+    dcterms:created "01-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.144.653.
+_:address_contact_0861.191.932 a locn:Address;
+    locn:thoroughfare "Koningin Astridlaan"@nl, "Koningin Astridlaan"@fr;
+    rdfs:label "29";
+    adres:busnummer "6°verdiep";
+    locn:postCode "8200";
+    adres:gemeentenaam "Brugge"@nl, "Brugge"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0861.191.932 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0861.191.932.
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:nace_2003_90010 a skos:Concept;
+    skos:definition "Collecte et traitement des eaux usées"@fr, "Afvalwaterinzameling en -behandeling"@nl;
+    skos:prefLabel "90010".
+_:registration_company_0861.191.932 a adms:Identifier;
+    skos:notation "0861.191.932";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.135.049.578 a adms:Identifier;
+    skos:notation "2.135.049.578";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.174.743.364 a adms:Identifier;
+    skos:notation "2.174.743.364";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.144.554 a adms:Identifier;
+    skos:notation "2.377.144.554";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.144.653 a adms:Identifier;
+    skos:notation "2.377.144.653";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
