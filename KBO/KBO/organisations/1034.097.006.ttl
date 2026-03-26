@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/60390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6039>, <http://vocab.belgif.be/auth/nace2025/6039>;
+    skos:definition "Andere activiteiten op het gebied van de verspreiding van inhoud"@nl, "Autres activités de distribution de contenu"@fr;
+    skos:prefLabel "60390".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<https://data.vlaanderen.be/id/onderneming/1034.097.006> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.097.006;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/60390>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/62100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Degouis, Jody";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.684.424>.
+<https://data.vlaanderen.be/id/vestiging/2.384.684.424> a org:Site;
+    dcterms:created "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.684.424.
+_:registration_company_1034.097.006 a adms:Identifier;
+    skos:notation "1034.097.006";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.684.424 a adms:Identifier;
+    skos:notation "2.384.684.424";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

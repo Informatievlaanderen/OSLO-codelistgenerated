@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<http://vocab.belgif.be/auth/nace2025/96910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9691>, <http://vocab.belgif.be/auth/nace2025/9691>;
+    skos:definition "Huishoudelijke persoonlijke dienstverlening"@nl, "Activités d’offre de services domestiques aux personnes"@fr;
+    skos:prefLabel "96910".
+<https://data.vlaanderen.be/id/onderneming/1019.937.875> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.937.875;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96910>, <http://vocab.belgif.be/auth/nace2025/81230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1019.937.875;
+    reorg:legalName "Un Beau Geste"@fr, "UBG"@fr.
+_:address_contact_1019.937.875 a locn:Address;
+    locn:thoroughfare "Rue Gilles Magnée"@nl, "Rue Gilles Magnée"@fr;
+    rdfs:label "172";
+    locn:postCode "4430";
+    adres:gemeentenaam "Ans"@nl, "Ans"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1019.937.875 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "ubg.asbl@gmail.com";
+    locn:address _:address_contact_1019.937.875.
+_:registration_company_1019.937.875 a adms:Identifier;
+    skos:notation "1019.937.875";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

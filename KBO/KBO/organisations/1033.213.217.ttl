@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2562>, <http://vocab.belgif.be/auth/nace2025/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2025/25991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van huishoudelijke en sanitaire artikelen van metaal"@nl, "Fabrication d'articles métalliques à usage ménager et sanitaire"@fr;
+    skos:prefLabel "25991".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1033.213.217> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "19-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.213.217;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/25620>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/25991>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Botte, Xavier";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.383.671.169>.
+<https://data.vlaanderen.be/id/vestiging/2.383.671.169> a org:Site;
+    dcterms:created "19-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.383.671.169.
+_:registration_company_1033.213.217 a adms:Identifier;
+    skos:notation "1033.213.217";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.383.671.169 a adms:Identifier;
+    skos:notation "2.383.671.169";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

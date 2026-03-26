@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2008/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7810>, <http://vocab.belgif.be/auth/nace2008/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2008/96021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Haarverzorging"@nl, "Coiffure"@fr;
+    skos:prefLabel "96021".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7810>, <http://vocab.belgif.be/auth/nace2025/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2025/96210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9621>, <http://vocab.belgif.be/auth/nace2025/9621>;
+    skos:definition "Kappers- en barbiersactiviteiten"@nl, "Coiffure et activités de barbier"@fr;
+    skos:prefLabel "96210".
+<https://data.vlaanderen.be/id/onderneming/1004.485.082> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "10-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1004.485.082;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96210>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/78100>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2008/96021>, <http://vocab.belgif.be/auth/nace2008/78100>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/47789>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/47750>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1004.485.082;
+    reorg:legalName "Hair Knokke"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.354.304.618>.
+<https://data.vlaanderen.be/id/vestiging/2.354.304.618> a org:Site;
+    dcterms:created "10-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.354.304.618.
+_:address_contact_1004.485.082 a locn:Address;
+    locn:thoroughfare "Kruienstraat"@nl, "Kruienstraat"@fr;
+    rdfs:label "5";
+    locn:postCode "3560";
+    adres:gemeentenaam "Lummen"@nl, "Lummen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1004.485.082 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1004.485.082.
+_:registration_company_1004.485.082 a adms:Identifier;
+    skos:notation "1004.485.082";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.354.304.618 a adms:Identifier;
+    skos:notation "2.354.304.618";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/31091> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de salles à manger, de salons, de chambres à coucher et de salles de bain"@fr;
+    skos:prefLabel "31091".
+<http://vocab.belgif.be/auth/nace2008/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5920>, <http://vocab.belgif.be/auth/nace2008/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2008/74104> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van interieurdecorateurs"@nl, "Décoration d'intérieur"@fr;
+    skos:prefLabel "74104".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2025/31004> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de meubles de salle à manger, de salon, de chambre à coucher et de salle de bain"@fr;
+    skos:prefLabel "31004".
+<http://vocab.belgif.be/auth/nace2025/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5920>, <http://vocab.belgif.be/auth/nace2025/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2025/74130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7413>, <http://vocab.belgif.be/auth/nace2025/7413>;
+    skos:definition "Interieurontwerp"@nl, "Activités de design d’intérieur"@fr;
+    skos:prefLabel "74130".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/1002.471.442> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.471.442;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74130>, <http://vocab.belgif.be/auth/nace2025/31004>, <http://vocab.belgif.be/auth/nace2025/59201>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2008/74104>, <http://vocab.belgif.be/auth/nace2008/59201>, <http://vocab.belgif.be/auth/nace2008/31091>, <http://vocab.belgif.be/auth/nace2008/90031>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Ahajji, Khalid";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.273.448>.
+<https://data.vlaanderen.be/id/vestiging/2.353.273.448> a org:Site;
+    dcterms:created "02-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.273.448.
+_:registration_company_1002.471.442 a adms:Identifier;
+    skos:notation "1002.471.442";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.273.448 a adms:Identifier;
+    skos:notation "2.353.273.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

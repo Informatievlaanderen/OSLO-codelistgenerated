@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3900>, <http://vocab.belgif.be/auth/nace2008/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2025/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3900>, <http://vocab.belgif.be/auth/nace2025/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<https://data.vlaanderen.be/id/onderneming/1007.376.870> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "15-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.376.870;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/39000>, <http://vocab.belgif.be/auth/nace2008/39000>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1007.376.870;
+    reorg:legalName "TM Abog - Norré"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.357.112.866>.
+<https://data.vlaanderen.be/id/vestiging/2.357.112.866> a org:Site;
+    dcterms:created "15-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.112.866.
+_:address_contact_1007.376.870 a locn:Address;
+    locn:thoroughfare "Vantegemstraat"@nl, "Vantegemstraat"@fr;
+    rdfs:label "19";
+    locn:postCode "9230";
+    adres:gemeentenaam "Wetteren"@nl, "Wetteren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1007.376.870 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@abog.be";
+    schema:telephone "093693922";
+    <http://xmlns.com/foaf/0.1/homepage> "www.abog.be";
+    locn:address _:address_contact_1007.376.870.
+_:registration_company_1007.376.870 a adms:Identifier;
+    skos:notation "1007.376.870";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.112.866 a adms:Identifier;
+    skos:notation "2.357.112.866";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

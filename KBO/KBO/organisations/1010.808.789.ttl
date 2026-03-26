@@ -1,0 +1,574 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/78200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7820>, <http://vocab.belgif.be/auth/nace2025/7820>;
+    skos:definition "Uitzendbureaus"@nl, "Activités des agences de travail temporaire"@fr;
+    skos:prefLabel "78200".
+<http://vocab.belgif.be/auth/nace2025/96910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9691>, <http://vocab.belgif.be/auth/nace2025/9691>;
+    skos:definition "Huishoudelijke persoonlijke dienstverlening"@nl, "Activités d’offre de services domestiques aux personnes"@fr;
+    skos:prefLabel "96910".
+<https://data.vlaanderen.be/id/onderneming/1010.808.789> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1010.808.789;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/96910>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/78200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1010.808.789;
+    reorg:legalName "DAHOME"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.361.021.966>, <https://data.vlaanderen.be/id/vestiging/2.366.442.385>, <https://data.vlaanderen.be/id/vestiging/2.366.442.484>, <https://data.vlaanderen.be/id/vestiging/2.366.442.583>, <https://data.vlaanderen.be/id/vestiging/2.366.442.682>, <https://data.vlaanderen.be/id/vestiging/2.366.442.781>, <https://data.vlaanderen.be/id/vestiging/2.366.442.880>, <https://data.vlaanderen.be/id/vestiging/2.366.442.979>, <https://data.vlaanderen.be/id/vestiging/2.366.443.078>, <https://data.vlaanderen.be/id/vestiging/2.366.443.177>, <https://data.vlaanderen.be/id/vestiging/2.366.443.276>, <https://data.vlaanderen.be/id/vestiging/2.366.443.375>, <https://data.vlaanderen.be/id/vestiging/2.366.443.474>, <https://data.vlaanderen.be/id/vestiging/2.366.443.573>, <https://data.vlaanderen.be/id/vestiging/2.366.443.672>, <https://data.vlaanderen.be/id/vestiging/2.366.443.771>, <https://data.vlaanderen.be/id/vestiging/2.366.443.870>, <https://data.vlaanderen.be/id/vestiging/2.366.443.969>, <https://data.vlaanderen.be/id/vestiging/2.366.444.068>, <https://data.vlaanderen.be/id/vestiging/2.366.444.167>, <https://data.vlaanderen.be/id/vestiging/2.366.444.266>, <https://data.vlaanderen.be/id/vestiging/2.366.444.365>, <https://data.vlaanderen.be/id/vestiging/2.366.444.662>, <https://data.vlaanderen.be/id/vestiging/2.366.444.761>, <https://data.vlaanderen.be/id/vestiging/2.366.444.860>, <https://data.vlaanderen.be/id/vestiging/2.366.444.959>, <https://data.vlaanderen.be/id/vestiging/2.366.445.058>, <https://data.vlaanderen.be/id/vestiging/2.366.445.157>, <https://data.vlaanderen.be/id/vestiging/2.366.445.256>, <https://data.vlaanderen.be/id/vestiging/2.366.445.355>, <https://data.vlaanderen.be/id/vestiging/2.366.445.454>, <https://data.vlaanderen.be/id/vestiging/2.366.445.553>, <https://data.vlaanderen.be/id/vestiging/2.366.445.652>, <https://data.vlaanderen.be/id/vestiging/2.366.445.751>, <https://data.vlaanderen.be/id/vestiging/2.366.445.850>, <https://data.vlaanderen.be/id/vestiging/2.366.445.949>, <https://data.vlaanderen.be/id/vestiging/2.366.446.048>, <https://data.vlaanderen.be/id/vestiging/2.366.446.147>, <https://data.vlaanderen.be/id/vestiging/2.366.446.246>, <https://data.vlaanderen.be/id/vestiging/2.366.446.345>, <https://data.vlaanderen.be/id/vestiging/2.366.446.444>, <https://data.vlaanderen.be/id/vestiging/2.366.446.543>, <https://data.vlaanderen.be/id/vestiging/2.366.446.642>, <https://data.vlaanderen.be/id/vestiging/2.366.446.741>, <https://data.vlaanderen.be/id/vestiging/2.366.446.840>, <https://data.vlaanderen.be/id/vestiging/2.366.446.939>, <https://data.vlaanderen.be/id/vestiging/2.366.447.038>, <https://data.vlaanderen.be/id/vestiging/2.366.447.137>, <https://data.vlaanderen.be/id/vestiging/2.366.447.236>, <https://data.vlaanderen.be/id/vestiging/2.366.447.335>, <https://data.vlaanderen.be/id/vestiging/2.366.447.434>, <https://data.vlaanderen.be/id/vestiging/2.366.447.533>, <https://data.vlaanderen.be/id/vestiging/2.366.447.632>, <https://data.vlaanderen.be/id/vestiging/2.366.447.731>, <https://data.vlaanderen.be/id/vestiging/2.366.447.830>, <https://data.vlaanderen.be/id/vestiging/2.366.447.929>, <https://data.vlaanderen.be/id/vestiging/2.366.448.028>, <https://data.vlaanderen.be/id/vestiging/2.366.448.127>, <https://data.vlaanderen.be/id/vestiging/2.366.448.226>, <https://data.vlaanderen.be/id/vestiging/2.366.448.325>, <https://data.vlaanderen.be/id/vestiging/2.366.448.424>, <https://data.vlaanderen.be/id/vestiging/2.366.448.523>, <https://data.vlaanderen.be/id/vestiging/2.366.448.622>, <https://data.vlaanderen.be/id/vestiging/2.366.448.721>, <https://data.vlaanderen.be/id/vestiging/2.366.448.820>, <https://data.vlaanderen.be/id/vestiging/2.366.448.919>.
+<https://data.vlaanderen.be/id/vestiging/2.361.021.966> a org:Site;
+    dcterms:created "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.021.966.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.385> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.385.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.484> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.484.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.583> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.583.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.682> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.682.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.781> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.781.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.880> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.880.
+<https://data.vlaanderen.be/id/vestiging/2.366.442.979> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.442.979.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.078> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.078.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.177> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.177.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.276> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.276.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.375> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.375.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.474> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.474.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.573> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.573.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.672> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.672.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.771> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.771.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.870> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.870.
+<https://data.vlaanderen.be/id/vestiging/2.366.443.969> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.443.969.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.068> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.068.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.167> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.167.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.266> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.266.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.365> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.365.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.662> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.662.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.761> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.761.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.860> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.860.
+<https://data.vlaanderen.be/id/vestiging/2.366.444.959> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.444.959.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.058> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.058.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.157> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.157.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.256> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.256.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.355> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.355.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.454> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.454.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.553> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.553.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.652> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.652.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.751> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.751.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.850> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.850.
+<https://data.vlaanderen.be/id/vestiging/2.366.445.949> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.445.949.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.048> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.048.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.147> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.147.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.246> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.246.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.345> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.345.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.444> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.444.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.543> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.543.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.642> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.642.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.741> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.741.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.840> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.840.
+<https://data.vlaanderen.be/id/vestiging/2.366.446.939> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.446.939.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.038> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.038.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.137> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.137.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.236> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.236.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.335> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.335.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.434> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.434.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.533> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.533.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.632> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.632.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.731> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.731.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.830> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.830.
+<https://data.vlaanderen.be/id/vestiging/2.366.447.929> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.447.929.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.028> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.028.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.127> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.127.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.226> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.226.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.325> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.325.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.424> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.424.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.523> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.523.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.622> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.622.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.721> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.721.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.820> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.820.
+<https://data.vlaanderen.be/id/vestiging/2.366.448.919> a org:Site;
+    dcterms:created "22-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.448.919.
+_:address_contact_1010.808.789 a locn:Address;
+    locn:thoroughfare "Galerij van de Louizapoort"@nl, "Galerie de la Porte Louise"@fr;
+    rdfs:label "203";
+    adres:busnummer "5";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1010.808.789 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1010.808.789.
+_:registration_company_1010.808.789 a adms:Identifier;
+    skos:notation "1010.808.789";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.021.966 a adms:Identifier;
+    skos:notation "2.361.021.966";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.385 a adms:Identifier;
+    skos:notation "2.366.442.385";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.484 a adms:Identifier;
+    skos:notation "2.366.442.484";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.583 a adms:Identifier;
+    skos:notation "2.366.442.583";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.682 a adms:Identifier;
+    skos:notation "2.366.442.682";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.781 a adms:Identifier;
+    skos:notation "2.366.442.781";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.880 a adms:Identifier;
+    skos:notation "2.366.442.880";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.442.979 a adms:Identifier;
+    skos:notation "2.366.442.979";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.078 a adms:Identifier;
+    skos:notation "2.366.443.078";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.177 a adms:Identifier;
+    skos:notation "2.366.443.177";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.276 a adms:Identifier;
+    skos:notation "2.366.443.276";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.375 a adms:Identifier;
+    skos:notation "2.366.443.375";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.474 a adms:Identifier;
+    skos:notation "2.366.443.474";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.573 a adms:Identifier;
+    skos:notation "2.366.443.573";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.672 a adms:Identifier;
+    skos:notation "2.366.443.672";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.771 a adms:Identifier;
+    skos:notation "2.366.443.771";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.870 a adms:Identifier;
+    skos:notation "2.366.443.870";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.443.969 a adms:Identifier;
+    skos:notation "2.366.443.969";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.068 a adms:Identifier;
+    skos:notation "2.366.444.068";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.167 a adms:Identifier;
+    skos:notation "2.366.444.167";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.266 a adms:Identifier;
+    skos:notation "2.366.444.266";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.365 a adms:Identifier;
+    skos:notation "2.366.444.365";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.662 a adms:Identifier;
+    skos:notation "2.366.444.662";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.761 a adms:Identifier;
+    skos:notation "2.366.444.761";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.860 a adms:Identifier;
+    skos:notation "2.366.444.860";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.444.959 a adms:Identifier;
+    skos:notation "2.366.444.959";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.058 a adms:Identifier;
+    skos:notation "2.366.445.058";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.157 a adms:Identifier;
+    skos:notation "2.366.445.157";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.256 a adms:Identifier;
+    skos:notation "2.366.445.256";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.355 a adms:Identifier;
+    skos:notation "2.366.445.355";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.454 a adms:Identifier;
+    skos:notation "2.366.445.454";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.553 a adms:Identifier;
+    skos:notation "2.366.445.553";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.652 a adms:Identifier;
+    skos:notation "2.366.445.652";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.751 a adms:Identifier;
+    skos:notation "2.366.445.751";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.850 a adms:Identifier;
+    skos:notation "2.366.445.850";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.445.949 a adms:Identifier;
+    skos:notation "2.366.445.949";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.048 a adms:Identifier;
+    skos:notation "2.366.446.048";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.147 a adms:Identifier;
+    skos:notation "2.366.446.147";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.246 a adms:Identifier;
+    skos:notation "2.366.446.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.345 a adms:Identifier;
+    skos:notation "2.366.446.345";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.444 a adms:Identifier;
+    skos:notation "2.366.446.444";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.543 a adms:Identifier;
+    skos:notation "2.366.446.543";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.642 a adms:Identifier;
+    skos:notation "2.366.446.642";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.741 a adms:Identifier;
+    skos:notation "2.366.446.741";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.840 a adms:Identifier;
+    skos:notation "2.366.446.840";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.446.939 a adms:Identifier;
+    skos:notation "2.366.446.939";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.038 a adms:Identifier;
+    skos:notation "2.366.447.038";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.137 a adms:Identifier;
+    skos:notation "2.366.447.137";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.236 a adms:Identifier;
+    skos:notation "2.366.447.236";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.335 a adms:Identifier;
+    skos:notation "2.366.447.335";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.434 a adms:Identifier;
+    skos:notation "2.366.447.434";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.533 a adms:Identifier;
+    skos:notation "2.366.447.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.632 a adms:Identifier;
+    skos:notation "2.366.447.632";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.731 a adms:Identifier;
+    skos:notation "2.366.447.731";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.830 a adms:Identifier;
+    skos:notation "2.366.447.830";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.447.929 a adms:Identifier;
+    skos:notation "2.366.447.929";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.028 a adms:Identifier;
+    skos:notation "2.366.448.028";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.127 a adms:Identifier;
+    skos:notation "2.366.448.127";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.226 a adms:Identifier;
+    skos:notation "2.366.448.226";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.325 a adms:Identifier;
+    skos:notation "2.366.448.325";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.424 a adms:Identifier;
+    skos:notation "2.366.448.424";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.523 a adms:Identifier;
+    skos:notation "2.366.448.523";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.622 a adms:Identifier;
+    skos:notation "2.366.448.622";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.721 a adms:Identifier;
+    skos:notation "2.366.448.721";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.820 a adms:Identifier;
+    skos:notation "2.366.448.820";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.448.919 a adms:Identifier;
+    skos:notation "2.366.448.919";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

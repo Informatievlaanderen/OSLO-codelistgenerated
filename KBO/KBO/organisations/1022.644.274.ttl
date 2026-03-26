@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/47920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4792>, <http://vocab.belgif.be/auth/nace2025/4792>;
+    skos:definition "Bemiddelingsactiviteiten voor de gespecialiseerde detailhandel"@nl, "Activités de service d’intermédiation pour le commerce de détail spécialisé"@fr;
+    skos:prefLabel "47920".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<http://vocab.belgif.be/auth/nace2025/91210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9121>, <http://vocab.belgif.be/auth/nace2025/9121>;
+    skos:definition "Activiteiten van musea en collecties"@nl, "Activités des musées et collections"@fr;
+    skos:prefLabel "91210".
+<https://data.vlaanderen.be/id/onderneming/1022.644.274> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.644.274;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/47920>, <http://vocab.belgif.be/auth/nace2025/47690>, <http://vocab.belgif.be/auth/nace2025/91210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Salden, Thor";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.372.924.361>.
+<https://data.vlaanderen.be/id/vestiging/2.372.924.361> a org:Site;
+    dcterms:created "23-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.372.924.361.
+_:registration_company_1022.644.274 a adms:Identifier;
+    skos:notation "1022.644.274";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.372.924.361 a adms:Identifier;
+    skos:notation "2.372.924.361";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

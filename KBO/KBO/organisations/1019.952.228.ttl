@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/86951> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8695>, <http://vocab.belgif.be/auth/nace2025/8695>;
+    skos:definition "Activiteiten op het gebied van kinesitherapie"@nl, "Activités de kinésithérapie"@fr;
+    skos:prefLabel "86951".
+<https://data.vlaanderen.be/id/onderneming/1019.952.228> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.952.228;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86951>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1019.952.228;
+    reorg:legalName "CZ Logo"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.370.262.504>.
+<https://data.vlaanderen.be/id/vestiging/2.370.262.504> a org:Site;
+    dcterms:created "13-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.370.262.504.
+_:address_contact_1019.952.228 a locn:Address;
+    locn:thoroughfare "Boulevard Neuf"@nl, "Boulevard Neuf"@fr;
+    rdfs:label "94";
+    locn:postCode "1495";
+    adres:gemeentenaam "Villers-la-Ville"@nl, "Villers-la-Ville"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1019.952.228 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "camille.zuliani@gmail.com";
+    locn:address _:address_contact_1019.952.228.
+_:registration_company_1019.952.228 a adms:Identifier;
+    skos:notation "1019.952.228";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.370.262.504 a adms:Identifier;
+    skos:notation "2.370.262.504";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

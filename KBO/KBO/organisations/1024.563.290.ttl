@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<https://data.vlaanderen.be/id/onderneming/1024.563.290> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.563.290;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43331>, <http://vocab.belgif.be/auth/nace2025/43120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1024.563.290;
+    reorg:legalName "Bouras, Soufiane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.749.248>.
+<https://data.vlaanderen.be/id/vestiging/2.374.749.248> a org:Site;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.749.248.
+_:contact_1024.563.290 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "bouras.soufian1@gmail.com";
+    schema:telephone "+32497721486".
+_:registration_company_1024.563.290 a adms:Identifier;
+    skos:notation "1024.563.290";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.749.248 a adms:Identifier;
+    skos:notation "2.374.749.248";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

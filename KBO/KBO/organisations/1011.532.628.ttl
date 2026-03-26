@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1011>, <http://vocab.belgif.be/auth/nace2008/1011>;
+    skos:definition "Verwerking en conservering van vlees, exclusief vlees van gevogelte"@nl, "Transformation et conservation de la viande de boucherie, à l'exclusion de la viande de volaille"@fr;
+    skos:prefLabel "10110".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/43991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Waterdichtingswerken van muren"@nl, "Travaux d'étanchéification des murs"@fr;
+    skos:prefLabel "43991".
+<http://vocab.belgif.be/auth/nace2008/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4632>, <http://vocab.belgif.be/auth/nace2008/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<http://vocab.belgif.be/auth/nace2008/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4722>, <http://vocab.belgif.be/auth/nace2008/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/10111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Activiteiten van slachthuizen"@nl, "Activités des abattoirs"@fr;
+    skos:prefLabel "10111".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/43421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Waterdichtingswerken van muren"@nl, "Travaux d'étanchéification des murs"@fr;
+    skos:prefLabel "43421".
+<http://vocab.belgif.be/auth/nace2025/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4632>, <http://vocab.belgif.be/auth/nace2025/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<https://data.vlaanderen.be/id/onderneming/1011.532.628> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "12-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1011.532.628;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/10111>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/46321>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/43421>, <http://vocab.belgif.be/auth/nace2008/10110>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/46321>, <http://vocab.belgif.be/auth/nace2008/47221>, <http://vocab.belgif.be/auth/nace2008/43991>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1011.532.628;
+    reorg:legalName "VANHOUTE SERVICE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.361.856.958>.
+<https://data.vlaanderen.be/id/vestiging/2.361.856.958> a org:Site;
+    dcterms:created "12-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.856.958.
+_:address_contact_1011.532.628 a locn:Address;
+    locn:thoroughfare "Oude Leielaan"@nl, "Oude Leielaan"@fr;
+    rdfs:label "88";
+    adres:busnummer "302";
+    locn:postCode "8930";
+    adres:gemeentenaam "Menen"@nl, "Menen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1011.532.628 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "anthony.vanhoute@outlook.fr";
+    schema:telephone "+32476521822";
+    locn:address _:address_contact_1011.532.628.
+_:registration_company_1011.532.628 a adms:Identifier;
+    skos:notation "1011.532.628";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.856.958 a adms:Identifier;
+    skos:notation "2.361.856.958";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

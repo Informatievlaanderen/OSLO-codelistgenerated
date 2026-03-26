@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47553> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in glas-, porselein- en aardewerk en in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de détail d'appareils ménagers non électriques, de vaisselle, de verrerie, de porcelaine et de poterie"@fr;
+    skos:prefLabel "47553".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<https://data.vlaanderen.be/id/onderneming/1033.900.729> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.900.729;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/47553>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/47792>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1033.900.729;
+    reorg:legalName "Bakala-Luvuvamu, Emmanuel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.598.411>.
+<https://data.vlaanderen.be/id/vestiging/2.384.598.411> a org:Site;
+    dcterms:created "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.598.411.
+_:contact_1033.900.729 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "devbak.it@gmail.com";
+    schema:telephone "+32465294130".
+_:registration_company_1033.900.729 a adms:Identifier;
+    skos:notation "1033.900.729";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.598.411 a adms:Identifier;
+    skos:notation "2.384.598.411";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

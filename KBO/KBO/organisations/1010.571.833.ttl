@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/86220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8622>, <http://vocab.belgif.be/auth/nace2008/8622>;
+    skos:definition "Praktijken van specialisten"@nl, "Activités des médecins spécialistes"@fr;
+    skos:prefLabel "86220".
+<http://vocab.belgif.be/auth/nace2025/86220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8622>, <http://vocab.belgif.be/auth/nace2025/8622>;
+    skos:definition "Praktijken van specialisten"@nl, "Activités des médecins spécialistes"@fr;
+    skos:prefLabel "86220".
+<https://data.vlaanderen.be/id/onderneming/1010.571.833> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1010.571.833;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86220>, <http://vocab.belgif.be/auth/nace2008/86220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1010.571.833;
+    reorg:legalName "Nareas"@nl.
+_:address_contact_1010.571.833 a locn:Address;
+    locn:thoroughfare "Zandstraat"@nl, "Zandstraat"@fr;
+    rdfs:label "27";
+    locn:postCode "2390";
+    adres:gemeentenaam "Malle"@nl, "Malle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1010.571.833 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@eelens.be";
+    schema:telephone "03 230 30 90";
+    locn:address _:address_contact_1010.571.833.
+_:registration_company_1010.571.833 a adms:Identifier;
+    skos:notation "1010.571.833";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

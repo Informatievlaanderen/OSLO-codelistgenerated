@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/85592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Beroepsopleiding"@nl, "Formation professionnelle"@fr;
+    skos:prefLabel "85592".
+<http://vocab.belgif.be/auth/nace2008/96040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9604>, <http://vocab.belgif.be/auth/nace2008/9604>;
+    skos:definition "Sauna's, solaria, baden enz."@nl, "Entretien corporel"@fr;
+    skos:prefLabel "96040".
+<http://vocab.belgif.be/auth/nace2025/85592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Beroepsopleiding"@nl, "Formation professionnelle"@fr;
+    skos:prefLabel "85592".
+<http://vocab.belgif.be/auth/nace2025/96230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9623>, <http://vocab.belgif.be/auth/nace2025/9623>;
+    skos:definition "Activiteiten van kuuroorden, sauna’s en stoombaden"@nl, "Activités de spa de jour, de sauna et de bain de vapeur"@fr;
+    skos:prefLabel "96230".
+<https://data.vlaanderen.be/id/onderneming/1004.527.248> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1004.527.248;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85592>, <http://vocab.belgif.be/auth/nace2025/96230>, <http://vocab.belgif.be/auth/nace2008/85592>, <http://vocab.belgif.be/auth/nace2008/96040>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Motsak, Roksolana";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.354.045.389>.
+<https://data.vlaanderen.be/id/vestiging/2.354.045.389> a org:Site;
+    dcterms:created "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.354.045.389.
+_:registration_company_1004.527.248 a adms:Identifier;
+    skos:notation "1004.527.248";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.354.045.389 a adms:Identifier;
+    skos:notation "2.354.045.389";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

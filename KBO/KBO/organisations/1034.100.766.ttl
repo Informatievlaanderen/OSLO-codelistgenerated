@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1034.100.766> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.100.766;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90393>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/93299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1034.100.766;
+    reorg:legalName "Hulsmans Events"@fr, "Hulsmans Events & Services"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.385.303.541>.
+<https://data.vlaanderen.be/id/vestiging/2.385.303.541> a org:Site;
+    dcterms:created "06-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.385.303.541.
+_:address_contact_1034.100.766 a locn:Address;
+    locn:thoroughfare "Rue de la Chavée,Forrières"@nl, "Rue de la Chavée,Forrières"@fr;
+    rdfs:label "23";
+    locn:postCode "6953";
+    adres:gemeentenaam "Nassogne"@nl, "Nassogne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1034.100.766 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "hulsmans@outlook.fr";
+    <http://xmlns.com/foaf/0.1/homepage> "www.hulsmans.be";
+    locn:address _:address_contact_1034.100.766.
+_:registration_company_1034.100.766 a adms:Identifier;
+    skos:notation "1034.100.766";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.385.303.541 a adms:Identifier;
+    skos:notation "2.385.303.541";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

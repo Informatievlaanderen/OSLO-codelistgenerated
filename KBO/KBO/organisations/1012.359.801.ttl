@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/22290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2229>, <http://vocab.belgif.be/auth/nace2008/2229>;
+    skos:definition "Vervaardiging van andere producten van kunststof"@nl, "Fabrication d'autres articles en matières plastiques"@fr;
+    skos:prefLabel "22290".
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/27900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2790>, <http://vocab.belgif.be/auth/nace2008/2790>;
+    skos:definition "Vervaardiging van andere elektrische apparatuur"@nl, "Fabrication d'autres matériels électriques"@fr;
+    skos:prefLabel "27900".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/22260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2226>, <http://vocab.belgif.be/auth/nace2025/2226>;
+    skos:definition "Vervaardiging van andere producten van kunststof"@nl, "Fabrication d’autres articles en matières plastiques"@fr;
+    skos:prefLabel "22260".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/27900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2790>, <http://vocab.belgif.be/auth/nace2025/2790>;
+    skos:definition "Vervaardiging van andere elektrische apparatuur"@nl, "Fabrication d'autres matériels électriques"@fr;
+    skos:prefLabel "27900".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<https://data.vlaanderen.be/id/onderneming/1012.359.801> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "09-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1012.359.801;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/22260>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/27900>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/46649>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/22290>, <http://vocab.belgif.be/auth/nace2008/27900>, <http://vocab.belgif.be/auth/nace2008/25999>, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/77399>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1012.359.801;
+    reorg:legalName "Saecura"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.362.740.747>.
+<https://data.vlaanderen.be/id/vestiging/2.362.740.747> a org:Site;
+    dcterms:created "30-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.362.740.747.
+_:address_contact_1012.359.801 a locn:Address;
+    locn:thoroughfare "Rue des Airelles"@nl, "Rue des Airelles"@fr;
+    rdfs:label "15";
+    adres:busnummer "1";
+    locn:postCode "4100";
+    adres:gemeentenaam "Seraing"@nl, "Seraing"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1012.359.801 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "raphael.tirone@saecura.com";
+    schema:telephone "+32494521358";
+    <http://xmlns.com/foaf/0.1/homepage> "www.saecura.com";
+    locn:address _:address_contact_1012.359.801.
+_:registration_company_1012.359.801 a adms:Identifier;
+    skos:notation "1012.359.801";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.362.740.747 a adms:Identifier;
+    skos:notation "2.362.740.747";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

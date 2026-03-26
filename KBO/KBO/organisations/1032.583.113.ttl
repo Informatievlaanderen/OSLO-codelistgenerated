@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/14100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1410>, <http://vocab.belgif.be/auth/nace2025/1410>;
+    skos:definition "Vervaardiging van gebreide en gehaakte kleding"@nl, "Fabrication d'articles à mailles"@fr;
+    skos:prefLabel "14100".
+<http://vocab.belgif.be/auth/nace2025/14291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van hoeden en petten"@nl, "Fabrication de chapeaux et de bonnets"@fr;
+    skos:prefLabel "14291".
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<https://data.vlaanderen.be/id/onderneming/1032.583.113> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "06-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1032.583.113;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/14291>, <http://vocab.belgif.be/auth/nace2025/14100>, <http://vocab.belgif.be/auth/nace2025/71111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Verkercke, Thomas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.382.878.442>.
+<https://data.vlaanderen.be/id/vestiging/2.382.878.442> a org:Site;
+    dcterms:created "06-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.382.878.442.
+_:registration_company_1032.583.113 a adms:Identifier;
+    skos:notation "1032.583.113";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.382.878.442 a adms:Identifier;
+    skos:notation "2.382.878.442";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0240>, <http://vocab.belgif.be/auth/nace2008/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2008/81290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8129>, <http://vocab.belgif.be/auth/nace2008/8129>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81290".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0240>, <http://vocab.belgif.be/auth/nace2025/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<https://data.vlaanderen.be/id/onderneming/1010.381.197> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "17-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1010.381.197;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/81230>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/02400>, <http://vocab.belgif.be/auth/nace2008/02100>, <http://vocab.belgif.be/auth/nace2008/02400>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/81290>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/85510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Massart, François";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.360.448.280>.
+<https://data.vlaanderen.be/id/vestiging/2.360.448.280> a org:Site;
+    dcterms:created "18-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.360.448.280.
+_:registration_company_1010.381.197 a adms:Identifier;
+    skos:notation "1010.381.197";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.360.448.280 a adms:Identifier;
+    skos:notation "2.360.448.280";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

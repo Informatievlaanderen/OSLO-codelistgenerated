@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43332> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4333>, <http://vocab.belgif.be/auth/nace2008/4333>;
+    skos:definition "Plaatsen van vloerbedekking en wandbekleding van hout"@nl, "Pose de revêtements en bois de sols et de murs"@fr;
+    skos:prefLabel "43332".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/43995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Restaureren van bouwwerken"@nl, "Travaux de restauration des bâtiments"@fr;
+    skos:prefLabel "43995".
+<http://vocab.belgif.be/auth/nace2008/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43332> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van vloerbedekking en wandbekleding van hout"@nl, "Pose de revêtements en bois de sols et de murs"@fr;
+    skos:prefLabel "43332".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1004.716.397> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1004.716.397;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/43332>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47522>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2008/43995>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/47522>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/43332>, <http://vocab.belgif.be/auth/nace2008/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1004.716.397;
+    reorg:legalName "Frys, Corentin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.354.102.601>.
+<https://data.vlaanderen.be/id/vestiging/2.354.102.601> a org:Site;
+    dcterms:created "16-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.354.102.601.
+_:contact_1004.716.397 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "cfmenuiserie@hotmail.com";
+    schema:telephone "+32479848861".
+_:registration_company_1004.716.397 a adms:Identifier;
+    skos:notation "1004.716.397";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.354.102.601 a adms:Identifier;
+    skos:notation "2.354.102.601";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

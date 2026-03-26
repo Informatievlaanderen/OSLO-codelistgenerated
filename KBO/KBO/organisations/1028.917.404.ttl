@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/16282> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van artikelen van kurk, riet of vlechtwerk"@nl, "Fabrication d'objets en liège, vannerie et sparterie"@fr;
+    skos:prefLabel "16282".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/86961> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8696>, <http://vocab.belgif.be/auth/nace2025/8696>;
+    skos:definition "Niet-conventionele therapeutische diensten"@nl, "Services thérapeutiques non conventionnels"@fr;
+    skos:prefLabel "86961".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<https://data.vlaanderen.be/id/onderneming/1028.917.404> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1028.917.404;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/16282>, <http://vocab.belgif.be/auth/nace2025/86961>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/63910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1028.917.404;
+    reorg:legalName "Ouedrhiri, Anna";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.379.192.541>.
+<https://data.vlaanderen.be/id/vestiging/2.379.192.541> a org:Site;
+    dcterms:created "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.379.192.541.
+_:contact_1028.917.404 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "ouedrhiri.anna@gmail.com";
+    schema:telephone "+32471673832".
+_:registration_company_1028.917.404 a adms:Identifier;
+    skos:notation "1028.917.404";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.379.192.541 a adms:Identifier;
+    skos:notation "2.379.192.541";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

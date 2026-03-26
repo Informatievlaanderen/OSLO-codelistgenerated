@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5920>, <http://vocab.belgif.be/auth/nace2008/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5920>, <http://vocab.belgif.be/auth/nace2025/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1001.306.254> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "17-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.306.254;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/59201>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2008/59201>, <http://vocab.belgif.be/auth/nace2008/90021>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/56210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.306.254;
+    reorg:legalName "Young Vision Music"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.352.211.002>.
+<https://data.vlaanderen.be/id/vestiging/2.352.211.002> a org:Site;
+    dcterms:created "17-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.352.211.002.
+_:address_contact_1001.306.254 a locn:Address;
+    locn:thoroughfare "Emeric De Bruynelaan"@nl, "Emeric De Bruynelaan"@fr;
+    rdfs:label "36";
+    locn:postCode "9940";
+    adres:gemeentenaam "Evergem"@nl, "Evergem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.306.254 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "youngestvision@gmail.com";
+    locn:address _:address_contact_1001.306.254.
+_:registration_company_1001.306.254 a adms:Identifier;
+    skos:notation "1001.306.254";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.352.211.002 a adms:Identifier;
+    skos:notation "2.352.211.002";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

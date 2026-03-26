@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1032.360.013> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1032.360.013;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1032.360.013;
+    reorg:legalName "MEREAU"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.383.136.679>.
+<https://data.vlaanderen.be/id/vestiging/2.383.136.679> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.383.136.679.
+_:address_contact_1032.360.013 a locn:Address;
+    locn:thoroughfare "Jan Palfijnstraat(Kor)"@nl, "Jan Palfijnstraat(Kor)"@fr;
+    rdfs:label "5";
+    locn:postCode "8500";
+    adres:gemeentenaam "Kortrijk"@nl, "Kortrijk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1032.360.013 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@mereau.be";
+    schema:telephone "+32473170559";
+    <http://xmlns.com/foaf/0.1/homepage> "www.mereau.be";
+    locn:address _:address_contact_1032.360.013.
+_:registration_company_1032.360.013 a adms:Identifier;
+    skos:notation "1032.360.013";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.383.136.679 a adms:Identifier;
+    skos:notation "2.383.136.679";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

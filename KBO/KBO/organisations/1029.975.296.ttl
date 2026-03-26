@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4391>, <http://vocab.belgif.be/auth/nace2025/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2025/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8121>, <http://vocab.belgif.be/auth/nace2025/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<https://data.vlaanderen.be/id/onderneming/1029.975.296> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "04-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.975.296;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43910>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/81210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1029.975.296;
+    reorg:legalName "NSK TECH"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.383.833.297>.
+<https://data.vlaanderen.be/id/vestiging/2.383.833.297> a org:Site;
+    dcterms:created "15-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.383.833.297.
+_:address_contact_1029.975.296 a locn:Address;
+    locn:thoroughfare "Théodore Verhaegenstraat"@nl, "Rue Théodore Verhaegen"@fr;
+    rdfs:label "196-202";
+    locn:postCode "1060";
+    adres:gemeentenaam "Sint-Gillis (bij-Brussel)"@nl, "Saint-Gilles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1029.975.296 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1029.975.296.
+_:registration_company_1029.975.296 a adms:Identifier;
+    skos:notation "1029.975.296";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.383.833.297 a adms:Identifier;
+    skos:notation "2.383.833.297";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

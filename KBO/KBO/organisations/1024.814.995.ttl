@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1024.814.995> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "05-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.814.995;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/62900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1024.814.995;
+    reorg:legalName "Delrez Pirghaye, Joey";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.377.020.434>.
+<https://data.vlaanderen.be/id/vestiging/2.377.020.434> a org:Site;
+    dcterms:created "01-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.020.434.
+_:contact_1024.814.995 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "jo-delrez@outlook.fr";
+    schema:telephone "+32470844931".
+_:registration_company_1024.814.995 a adms:Identifier;
+    skos:notation "1024.814.995";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.020.434 a adms:Identifier;
+    skos:notation "2.377.020.434";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

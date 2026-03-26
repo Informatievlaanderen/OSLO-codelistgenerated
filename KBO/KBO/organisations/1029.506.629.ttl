@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/20411> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2041>, <http://vocab.belgif.be/auth/nace2025/2041>;
+    skos:definition "Vervaardiging van zeep en wasmiddelen"@nl, "Fabrication de savons et de détergents"@fr;
+    skos:prefLabel "20411".
+<http://vocab.belgif.be/auth/nace2025/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3299>, <http://vocab.belgif.be/auth/nace2025/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2025/47242> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4724>, <http://vocab.belgif.be/auth/nace2025/4724>;
+    skos:definition "Detailhandel in chocolade en suikerwerk in gespecialiseerde winkels"@nl, "Commerce de détail de chocolat et de confiserie en magasin spécialisé"@fr;
+    skos:prefLabel "47242".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1029.506.629> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.506.629;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47242>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/32990>, <http://vocab.belgif.be/auth/nace2025/20411>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Vandekinderen, Britney";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.380.385.146>.
+<https://data.vlaanderen.be/id/vestiging/2.380.385.146> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.380.385.146.
+_:registration_company_1029.506.629 a adms:Identifier;
+    skos:notation "1029.506.629";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.380.385.146 a adms:Identifier;
+    skos:notation "2.380.385.146";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

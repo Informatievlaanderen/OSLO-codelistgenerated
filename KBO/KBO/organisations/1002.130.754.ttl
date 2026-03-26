@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/43991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Waterdichtingswerken van muren"@nl, "Travaux d'étanchéification des murs"@fr;
+    skos:prefLabel "43991".
+<http://vocab.belgif.be/auth/nace2008/43995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Restaureren van bouwwerken"@nl, "Travaux de restauration des bâtiments"@fr;
+    skos:prefLabel "43995".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/43421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Waterdichtingswerken van muren"@nl, "Travaux d'étanchéification des murs"@fr;
+    skos:prefLabel "43421".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<https://data.vlaanderen.be/id/onderneming/1002.130.754> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "09-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.130.754;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43410>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/43421>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/43991>, <http://vocab.belgif.be/auth/nace2008/43995>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1002.130.754;
+    reorg:legalName "KES GROUP CONSTRUCTION"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.046.289>.
+<https://data.vlaanderen.be/id/vestiging/2.353.046.289> a org:Site;
+    dcterms:created "09-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.046.289.
+_:address_contact_1002.130.754 a locn:Address;
+    locn:thoroughfare "Speelbroek"@nl, "Speelbroek"@fr;
+    rdfs:label "17";
+    locn:postCode "1850";
+    adres:gemeentenaam "Grimbergen"@nl, "Grimbergen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1002.130.754 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "kesgroup.brussels@gmail.com";
+    schema:telephone "+32467775951";
+    locn:address _:address_contact_1002.130.754.
+_:registration_company_1002.130.754 a adms:Identifier;
+    skos:notation "1002.130.754";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.046.289 a adms:Identifier;
+    skos:notation "2.353.046.289";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

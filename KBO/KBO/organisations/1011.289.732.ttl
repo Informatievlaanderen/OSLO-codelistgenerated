@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/86230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8623>, <http://vocab.belgif.be/auth/nace2025/8623>;
+    skos:definition "Tandartspraktijken"@nl, "Pratique dentaire"@fr;
+    skos:prefLabel "86230".
+<https://data.vlaanderen.be/id/onderneming/1011.289.732> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1011.289.732;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1011.289.732;
+    reorg:legalName "Dent'Smile"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.361.600.701>.
+<https://data.vlaanderen.be/id/vestiging/2.361.600.701> a org:Site;
+    dcterms:created "08-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.600.701.
+_:address_contact_1011.289.732 a locn:Address;
+    locn:thoroughfare "Rue Chermont"@nl, "Rue Chermont"@fr;
+    rdfs:label "18";
+    locn:postCode "4051";
+    adres:gemeentenaam "Chaudfontaine"@nl, "Chaudfontaine"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1011.289.732 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "carolineleulier@gmail.com";
+    schema:telephone "+32485599415";
+    locn:address _:address_contact_1011.289.732.
+_:registration_company_1011.289.732 a adms:Identifier;
+    skos:notation "1011.289.732";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.600.701 a adms:Identifier;
+    skos:notation "2.361.600.701";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

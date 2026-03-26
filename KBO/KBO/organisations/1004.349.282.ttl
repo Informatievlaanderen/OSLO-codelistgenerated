@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13940> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1394>, <http://vocab.belgif.be/auth/nace2008/1394>;
+    skos:definition "Vervaardiging van koord, bindgaren, touw en netten"@nl, "Fabrication de ficelles, de cordes et de filets"@fr;
+    skos:prefLabel "13940".
+<http://vocab.belgif.be/auth/nace2008/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1512>, <http://vocab.belgif.be/auth/nace2008/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2008/25739> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2573>, <http://vocab.belgif.be/auth/nace2008/2573>;
+    skos:definition "Vervaardiging van gereedschap, m.u.v. vormkasten en gietvormen"@nl, "Fabrication d'outillage, à l'exclusion des moules et des modèles"@fr;
+    skos:prefLabel "25739".
+<http://vocab.belgif.be/auth/nace2025/13940> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1394>, <http://vocab.belgif.be/auth/nace2025/1394>;
+    skos:definition "Vervaardiging van koord, bindgaren, touw en netten"@nl, "Fabrication de ficelles, de cordes et de filets"@fr;
+    skos:prefLabel "13940".
+<http://vocab.belgif.be/auth/nace2025/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1512>, <http://vocab.belgif.be/auth/nace2025/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2025/25639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2563>, <http://vocab.belgif.be/auth/nace2025/2563>;
+    skos:definition "Vervaardiging van gereedschap, muv vormkasten en gietvormen"@nl, "Fabrication d'outillage, à l’exception des moules et des modèles"@fr;
+    skos:prefLabel "25639".
+<https://data.vlaanderen.be/id/onderneming/1004.349.282> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1004.349.282;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25639>, <http://vocab.belgif.be/auth/nace2025/13940>, <http://vocab.belgif.be/auth/nace2025/15120>, <http://vocab.belgif.be/auth/nace2008/25739>, <http://vocab.belgif.be/auth/nace2008/15120>, <http://vocab.belgif.be/auth/nace2008/13940>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Maenhoudt, Wim";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.708.463>.
+<https://data.vlaanderen.be/id/vestiging/2.353.708.463> a org:Site;
+    dcterms:created "08-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.708.463.
+_:registration_company_1004.349.282 a adms:Identifier;
+    skos:notation "1004.349.282";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.708.463 a adms:Identifier;
+    skos:notation "2.353.708.463";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

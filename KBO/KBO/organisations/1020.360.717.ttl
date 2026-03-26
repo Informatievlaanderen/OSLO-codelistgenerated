@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/1020.360.717> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "20-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1020.360.717;
+    schema:contactinfo _:contact_1020.360.717;
+    reorg:legalName "SAS CHATEAU LA DOURNIE"@fr.
+_:address_contact_1020.360.717 a locn:Address;
+    locn:thoroughfare "LA DOURNI"@nl, "LA DOURNI"@fr;
+    rdfs:label "0";
+    locn:postCode "34360";
+    adres:gemeentenaam "ST CHINIAN"@nl, "ST CHINIAN"@fr;
+    adres:land "Frankrijk"@nl, "France"@fr.
+_:contact_1020.360.717 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "chateau.ladournie@wanadoo.fr";
+    locn:address _:address_contact_1020.360.717.
+_:registration_company_1020.360.717 a adms:Identifier;
+    skos:notation "1020.360.717";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

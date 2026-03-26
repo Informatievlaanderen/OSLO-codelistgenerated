@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1033.800.363> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "31-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.800.363;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/74120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1033.800.363;
+    reorg:legalName "Warson, Laurens";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.473.695>.
+<https://data.vlaanderen.be/id/vestiging/2.384.473.695> a org:Site;
+    dcterms:created "31-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.473.695.
+_:contact_1033.800.363 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "laurens.warson@hotmail.com";
+    schema:telephone "+32487990901".
+_:registration_company_1033.800.363 a adms:Identifier;
+    skos:notation "1033.800.363";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.473.695 a adms:Identifier;
+    skos:notation "2.384.473.695";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

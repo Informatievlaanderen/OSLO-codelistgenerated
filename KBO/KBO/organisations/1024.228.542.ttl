@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/56111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met volledige bediening"@nl, "Restauration à service complet"@fr;
+    skos:prefLabel "56111".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<https://data.vlaanderen.be/id/onderneming/1024.228.542> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.228.542;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/56111>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1024.228.542;
+    reorg:legalName "SAMBRE & MEUSE HOSPITALITY"@fr, "SMH"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.511.894>.
+<https://data.vlaanderen.be/id/vestiging/2.374.511.894> a org:Site;
+    dcterms:created "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.511.894.
+_:address_contact_1024.228.542 a locn:Address;
+    locn:thoroughfare "Rue Edmond Schmidt(GER)"@nl, "Rue Edmond Schmidt(GER)"@fr;
+    rdfs:label "2";
+    locn:postCode "6280";
+    adres:gemeentenaam "Gerpinnes"@nl, "Gerpinnes"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1024.228.542 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1024.228.542.
+_:registration_company_1024.228.542 a adms:Identifier;
+    skos:notation "1024.228.542";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.511.894 a adms:Identifier;
+    skos:notation "2.374.511.894";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93128> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9312>, <http://vocab.belgif.be/auth/nace2025/9312>;
+    skos:definition "Activiteiten van atletiekclubs"@nl, "Activités de clubs d'athlétisme"@fr;
+    skos:prefLabel "93128".
+<https://data.vlaanderen.be/id/onderneming/1027.153.982> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "02-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1027.153.982;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2025/93128>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1027.153.982;
+    reorg:legalName "HK-R20"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.377.718.537>.
+<https://data.vlaanderen.be/id/vestiging/2.377.718.537> a org:Site;
+    dcterms:created "02-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.718.537.
+_:address_contact_1027.153.982 a locn:Address;
+    locn:thoroughfare "Avenue du Charbonnage"@nl, "Avenue du Charbonnage"@fr;
+    rdfs:label "19";
+    locn:postCode "7021";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1027.153.982 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "hk@r20.be";
+    locn:address _:address_contact_1027.153.982.
+_:registration_company_1027.153.982 a adms:Identifier;
+    skos:notation "1027.153.982";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.718.537 a adms:Identifier;
+    skos:notation "2.377.718.537";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

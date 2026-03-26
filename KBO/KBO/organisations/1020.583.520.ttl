@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<https://data.vlaanderen.be/id/onderneming/1020.583.520> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1020.583.520;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/90201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1020.583.520;
+    reorg:legalName "Duarte Cardoso Matança Da Costa, Joana";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.370.573.003>.
+<https://data.vlaanderen.be/id/vestiging/2.370.573.003> a org:Site;
+    dcterms:created "03-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.370.573.003.
+_:contact_1020.583.520 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "jidcm@iscte-iul.pt";
+    schema:telephone "+351911127921".
+_:registration_company_1020.583.520 a adms:Identifier;
+    skos:notation "1020.583.520";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.370.573.003 a adms:Identifier;
+    skos:notation "2.370.573.003";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

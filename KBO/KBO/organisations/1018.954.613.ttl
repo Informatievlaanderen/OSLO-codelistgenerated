@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47762> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in huisdieren, voedsel voor huisdieren en benodigdheden daarvoor in gespecialiseerde winkels"@nl, "Commerce de détail d'animaux de compagnie, d'aliments et d'accessoires pour ces animaux en magasin spécialisé"@fr;
+    skos:prefLabel "47762".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/85401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8540>, <http://vocab.belgif.be/auth/nace2025/8540>;
+    skos:definition "Officieel hoger onderwijs"@nl, "Enseignement supérieur organisé par les pouvoirs publics"@fr;
+    skos:prefLabel "85401".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<http://vocab.belgif.be/auth/nace2025/96993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, muv veterinaire diensten"@nl, "Services de soins autres que vétérinaires pour animaux de compagnie"@fr;
+    skos:prefLabel "96993".
+<https://data.vlaanderen.be/id/onderneming/1018.954.613> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "17-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1018.954.613;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/85401>, <http://vocab.belgif.be/auth/nace2025/95316>, <http://vocab.belgif.be/auth/nace2025/96993>, <http://vocab.belgif.be/auth/nace2025/47762>, <http://vocab.belgif.be/auth/nace2025/70200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1018.954.613;
+    reorg:legalName "Hick, Jean-Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.736.040>.
+<https://data.vlaanderen.be/id/vestiging/2.368.736.040> a org:Site;
+    dcterms:created "17-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.736.040.
+_:contact_1018.954.613 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "jc_hick@hotmail.com";
+    schema:telephone "+32496852389".
+_:registration_company_1018.954.613 a adms:Identifier;
+    skos:notation "1018.954.613";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.736.040 a adms:Identifier;
+    skos:notation "2.368.736.040";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

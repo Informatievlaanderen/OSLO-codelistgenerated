@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/11010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1101>, <http://vocab.belgif.be/auth/nace2025/1101>;
+    skos:definition "Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"@nl, "Production de boissons alcooliques distillées"@fr;
+    skos:prefLabel "11010".
+<http://vocab.belgif.be/auth/nace2025/11030> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1103>, <http://vocab.belgif.be/auth/nace2025/1103>;
+    skos:definition "Vervaardiging van cider en van andere vruchtenwijnen"@nl, "Fabrication de cidre et de vins d'autres fruits"@fr;
+    skos:prefLabel "11030".
+<http://vocab.belgif.be/auth/nace2025/11040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1104>, <http://vocab.belgif.be/auth/nace2025/1104>;
+    skos:definition "Vervaardiging van andere niet-gedistilleerde gegiste dranken"@nl, "Production d'autres boissons fermentées non distillées"@fr;
+    skos:prefLabel "11040".
+<http://vocab.belgif.be/auth/nace2025/11050> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1105>, <http://vocab.belgif.be/auth/nace2025/1105>;
+    skos:definition "Vervaardiging van bier"@nl, "Fabrication de bière"@fr;
+    skos:prefLabel "11050".
+<http://vocab.belgif.be/auth/nace2025/11070> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1107>, <http://vocab.belgif.be/auth/nace2025/1107>;
+    skos:definition "Vervaardiging van frisdranken; productie van mineraalwater en ander gebotteld water"@nl, "Industrie des eaux minérales et autres eaux embouteillées et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "11070".
+<http://vocab.belgif.be/auth/nace2025/46392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4639>, <http://vocab.belgif.be/auth/nace2025/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in niet-diepgevroren voedingsmiddelen, dranken en genotmiddelen"@nl, "Commerce de gros non spécialisé de denrées non-surgelées, boissons et tabac"@fr;
+    skos:prefLabel "46392".
+<https://data.vlaanderen.be/id/onderneming/1023.254.186> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.254.186;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/11040>, <http://vocab.belgif.be/auth/nace2025/11070>, <http://vocab.belgif.be/auth/nace2025/11010>, <http://vocab.belgif.be/auth/nace2025/11050>, <http://vocab.belgif.be/auth/nace2025/46392>, <http://vocab.belgif.be/auth/nace2025/11030>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Mangabu Bamba, Kembo";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.373.406.292>.
+<https://data.vlaanderen.be/id/vestiging/2.373.406.292> a org:Site;
+    dcterms:created "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.406.292.
+_:registration_company_1023.254.186 a adms:Identifier;
+    skos:notation "1023.254.186";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.406.292 a adms:Identifier;
+    skos:notation "2.373.406.292";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

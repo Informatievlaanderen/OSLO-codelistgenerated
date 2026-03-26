@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3511>, <http://vocab.belgif.be/auth/nace2025/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2025/35120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3512>, <http://vocab.belgif.be/auth/nace2025/3512>;
+    skos:definition "Bouw en reparatie van plezier- en sportvaartuigen"@nl, "Construction et réparation de bâteaux de plaisance et de sport"@fr;
+    skos:prefLabel "35120".
+<http://vocab.belgif.be/auth/nace2025/35150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3515>, <http://vocab.belgif.be/auth/nace2025/3515>;
+    skos:definition "Handel in elektriciteit"@nl, "Commerce d’électricité"@fr;
+    skos:prefLabel "35150".
+<https://data.vlaanderen.be/id/onderneming/1027.346.596> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "08-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1027.346.596;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/35150>, <http://vocab.belgif.be/auth/nace2025/35110>, <http://vocab.belgif.be/auth/nace2025/35120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1027.346.596;
+    reorg:legalName "Communauté d'énergie citoyenne BELLINI-VIVALDI"@fr, "CEC BELLINI - VIVALDI"@fr.
+_:address_contact_1027.346.596 a locn:Address;
+    locn:thoroughfare "Londenstraat"@nl, "Rue de Londres"@fr;
+    rdfs:label "17";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1027.346.596 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sharing@wattmatters.be";
+    locn:address _:address_contact_1027.346.596.
+_:registration_company_1027.346.596 a adms:Identifier;
+    skos:notation "1027.346.596";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

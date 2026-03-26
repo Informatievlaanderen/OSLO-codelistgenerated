@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<https://data.vlaanderen.be/id/onderneming/1002.560.821> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.560.821;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/47990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Leleux, Romain";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.352.267.420>.
+<https://data.vlaanderen.be/id/vestiging/2.352.267.420> a org:Site;
+    dcterms:created "01-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.352.267.420.
+_:registration_company_1002.560.821 a adms:Identifier;
+    skos:notation "1002.560.821";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.352.267.420 a adms:Identifier;
+    skos:notation "2.352.267.420";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47622> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4762>, <http://vocab.belgif.be/auth/nace2025/4762>;
+    skos:definition "Detailhandel in kantoorbehoeften"@nl, "Commerce de détail de papeterie"@fr;
+    skos:prefLabel "47622".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/58130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5813>, <http://vocab.belgif.be/auth/nace2025/5813>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "58130".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/94120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9412>, <http://vocab.belgif.be/auth/nace2025/9412>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités des organisations professionnelles"@fr;
+    skos:prefLabel "94120".
+<https://data.vlaanderen.be/id/onderneming/1022.231.233> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "10-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.231.233;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47622>, <http://vocab.belgif.be/auth/nace2025/58130>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/94120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1022.231.233;
+    reorg:legalName "Pedisanté"@fr, "PDS"@fr.
+_:address_contact_1022.231.233 a locn:Address;
+    locn:thoroughfare "Rue Naniot"@nl, "Rue Naniot"@fr;
+    rdfs:label "103";
+    adres:busnummer "2";
+    locn:postCode "4000";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1022.231.233 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "pedisante.presidence@gmail.com";
+    <http://xmlns.com/foaf/0.1/homepage> "pedisante.be";
+    locn:address _:address_contact_1022.231.233.
+_:registration_company_1022.231.233 a adms:Identifier;
+    skos:notation "1022.231.233";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

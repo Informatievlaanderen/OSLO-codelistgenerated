@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/77293> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van vaat- en glaswerk, keuken- en tafelgerei, elektrische huishoudapparaten en andere huishoudelijke benodigdheden"@nl, "Location et location-bail de vaisselle, couverts, verrerie, articles pour la cuisine, appareils électriques et électroménagers"@fr;
+    skos:prefLabel "77293".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/77223> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van vaat- en glaswerk, keuken- en tafelgerei, elektrische huishoudapparaten en andere huishoudelijke benodigdheden"@nl, "Location et location-bail de vaisselle, couverts, verrerie, articles pour la cuisine, appareils électriques et électroménagers"@fr;
+    skos:prefLabel "77223".
+<https://data.vlaanderen.be/id/onderneming/1009.610.246> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1009.610.246;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/77223>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2008/77293>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/46349>, <http://vocab.belgif.be/auth/nace2008/46170>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1009.610.246;
+    reorg:legalName "Nox cooking & catering"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.359.774.428>.
+<https://data.vlaanderen.be/id/vestiging/2.359.774.428> a org:Site;
+    dcterms:created "23-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.359.774.428.
+_:address_contact_1009.610.246 a locn:Address;
+    locn:thoroughfare "Ommeloper"@nl, "Ommeloper"@fr;
+    rdfs:label "7";
+    locn:postCode "9990";
+    adres:gemeentenaam "Maldegem"@nl, "Maldegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1009.610.246 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1009.610.246.
+_:registration_company_1009.610.246 a adms:Identifier;
+    skos:notation "1009.610.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.359.774.428 a adms:Identifier;
+    skos:notation "2.359.774.428";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

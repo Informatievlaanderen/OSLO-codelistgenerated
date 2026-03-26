@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/23120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2312>, <http://vocab.belgif.be/auth/nace2025/2312>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "23120".
+<http://vocab.belgif.be/auth/nace2025/23150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2315>, <http://vocab.belgif.be/auth/nace2025/2315>;
+    skos:definition "Vervaardiging en bewerking van overig glas, inclusief technisch glaswerk"@nl, "Fabrication et façonnage d’autres articles en verre, y compris verre technique"@fr;
+    skos:prefLabel "23150".
+<http://vocab.belgif.be/auth/nace2025/47553> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in glas-, porselein- en aardewerk en in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de détail d'appareils ménagers non électriques, de vaisselle, de verrerie, de porcelaine et de poterie"@fr;
+    skos:prefLabel "47553".
+<https://data.vlaanderen.be/id/onderneming/1022.177.981> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.177.981;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23150>, <http://vocab.belgif.be/auth/nace2025/23120>, <http://vocab.belgif.be/auth/nace2025/47553>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Boikova, Viktoriia";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.372.928.915>.
+<https://data.vlaanderen.be/id/vestiging/2.372.928.915> a org:Site;
+    dcterms:created "15-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.372.928.915.
+_:registration_company_1022.177.981 a adms:Identifier;
+    skos:notation "1022.177.981";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.372.928.915 a adms:Identifier;
+    skos:notation "2.372.928.915";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

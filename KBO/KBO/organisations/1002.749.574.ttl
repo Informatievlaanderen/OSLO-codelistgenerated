@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/28410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2841>, <http://vocab.belgif.be/auth/nace2008/2841>;
+    skos:definition "Vervaardiging van machines voor de metaalbewerking"@nl, "Fabrication de machines de formage des métaux"@fr;
+    skos:prefLabel "28410".
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/28410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2841>, <http://vocab.belgif.be/auth/nace2025/2841>;
+    skos:definition "Vervaardiging van machines voor de metaalbewerking"@nl, "Fabrication de machines de formage des métaux"@fr;
+    skos:prefLabel "28410".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/1002.749.574> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "28-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.749.574;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/28410>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2008/25999>, <http://vocab.belgif.be/auth/nace2008/64200>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/28410>, <http://vocab.belgif.be/auth/nace2008/25620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1002.749.574;
+    reorg:legalName "Gültas Group"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.573.554>.
+<https://data.vlaanderen.be/id/vestiging/2.353.573.554> a org:Site;
+    dcterms:created "28-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.573.554.
+_:address_contact_1002.749.574 a locn:Address;
+    locn:thoroughfare "Finlandstraat"@nl, "Finlandstraat"@fr;
+    rdfs:label "4";
+    adres:busnummer "Y";
+    locn:postCode "9940";
+    adres:gemeentenaam "Evergem"@nl, "Evergem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1002.749.574 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1002.749.574.
+_:registration_company_1002.749.574 a adms:Identifier;
+    skos:notation "1002.749.574";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.573.554 a adms:Identifier;
+    skos:notation "2.353.573.554";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

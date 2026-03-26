@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/38110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3811>, <http://vocab.belgif.be/auth/nace2008/3811>;
+    skos:definition "Inzameling van ongevaarlijk afval"@nl, "Collecte des déchets non dangereux"@fr;
+    skos:prefLabel "38110".
+<http://vocab.belgif.be/auth/nace2008/38120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3812>, <http://vocab.belgif.be/auth/nace2008/3812>;
+    skos:definition "Inzameling van gevaarlijk afval"@nl, "Collecte des déchets dangereux"@fr;
+    skos:prefLabel "38120".
+<http://vocab.belgif.be/auth/nace2008/45202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles ( > 3,5 tonnes )"@fr;
+    skos:prefLabel "45202".
+<http://vocab.belgif.be/auth/nace2008/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8110>, <http://vocab.belgif.be/auth/nace2008/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/38110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3811>, <http://vocab.belgif.be/auth/nace2025/3811>;
+    skos:definition "Inzameling van ongevaarlijk afval"@nl, "Collecte des déchets non dangereux"@fr;
+    skos:prefLabel "38110".
+<http://vocab.belgif.be/auth/nace2025/38120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3812>, <http://vocab.belgif.be/auth/nace2025/3812>;
+    skos:definition "Inzameling van gevaarlijk afval"@nl, "Collecte des déchets dangereux"@fr;
+    skos:prefLabel "38120".
+<http://vocab.belgif.be/auth/nace2025/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8110>, <http://vocab.belgif.be/auth/nace2025/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<https://data.vlaanderen.be/id/onderneming/1006.427.260> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1006.427.260;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/38120>, <http://vocab.belgif.be/auth/nace2025/81100>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2025/38110>, <http://vocab.belgif.be/auth/nace2008/81100>, <http://vocab.belgif.be/auth/nace2008/38120>, <http://vocab.belgif.be/auth/nace2008/38110>, <http://vocab.belgif.be/auth/nace2008/45202>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Pădurariu, Florin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.356.074.075>.
+<https://data.vlaanderen.be/id/vestiging/2.356.074.075> a org:Site;
+    dcterms:created "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.356.074.075.
+_:registration_company_1006.427.260 a adms:Identifier;
+    skos:notation "1006.427.260";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.356.074.075 a adms:Identifier;
+    skos:notation "2.356.074.075";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2008/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3213>, <http://vocab.belgif.be/auth/nace2008/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2008/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4777>, <http://vocab.belgif.be/auth/nace2008/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/74101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Ontwerpen van textielpatronen, kleding, juwelen, meubels en decoratieartikelen"@nl, "Création de modèles pour les biens personnels et domestiques"@fr;
+    skos:prefLabel "74101".
+<http://vocab.belgif.be/auth/nace2008/74104> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van interieurdecorateurs"@nl, "Décoration d'intérieur"@fr;
+    skos:prefLabel "74104".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3213>, <http://vocab.belgif.be/auth/nace2025/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4777>, <http://vocab.belgif.be/auth/nace2025/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<http://vocab.belgif.be/auth/nace2025/74130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7413>, <http://vocab.belgif.be/auth/nace2025/7413>;
+    skos:definition "Interieurontwerp"@nl, "Activités de design d’intérieur"@fr;
+    skos:prefLabel "74130".
+<https://data.vlaanderen.be/id/onderneming/1009.572.040> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "22-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1009.572.040;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/74130>, <http://vocab.belgif.be/auth/nace2025/47770>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2025/32130>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2008/32130>, <http://vocab.belgif.be/auth/nace2008/74101>, <http://vocab.belgif.be/auth/nace2008/74104>, <http://vocab.belgif.be/auth/nace2008/47770>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/32123>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1009.572.040;
+    reorg:legalName "NAGUE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.359.778.584>.
+<https://data.vlaanderen.be/id/vestiging/2.359.778.584> a org:Site;
+    dcterms:created "22-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.359.778.584.
+_:address_contact_1009.572.040 a locn:Address;
+    locn:thoroughfare "Kanunnik Peetersstraat"@nl, "Kanunnik Peetersstraat"@fr;
+    rdfs:label "103";
+    locn:postCode "2600";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1009.572.040 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1009.572.040.
+_:registration_company_1009.572.040 a adms:Identifier;
+    skos:notation "1009.572.040";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.359.778.584 a adms:Identifier;
+    skos:notation "2.359.778.584";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

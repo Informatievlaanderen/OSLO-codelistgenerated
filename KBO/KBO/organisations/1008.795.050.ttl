@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/82400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8240>, <http://vocab.belgif.be/auth/nace2025/8240>;
+    skos:definition "Bemiddelingsactiviteiten in verband met zakelijke dienstverlening, neg"@nl, "Activités de service d’intermédiation pour des services de soutien aux entreprises nca"@fr;
+    skos:prefLabel "82400".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<https://data.vlaanderen.be/id/onderneming/1008.795.050> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "25-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1008.795.050;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/95312>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1008.795.050;
+    reorg:legalName "IMANITY"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.475.081>.
+<https://data.vlaanderen.be/id/vestiging/2.384.475.081> a org:Site;
+    dcterms:created "25-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.475.081.
+_:address_contact_1008.795.050 a locn:Address;
+    locn:thoroughfare "Keizer Karellaan"@nl, "Avenue Charles-Quint"@fr;
+    rdfs:label "106";
+    locn:postCode "1082";
+    adres:gemeentenaam "Sint-Agatha-Berchem"@nl, "Berchem-Sainte-Agathe"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1008.795.050 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1008.795.050.
+_:registration_company_1008.795.050 a adms:Identifier;
+    skos:notation "1008.795.050";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.475.081 a adms:Identifier;
+    skos:notation "2.384.475.081";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

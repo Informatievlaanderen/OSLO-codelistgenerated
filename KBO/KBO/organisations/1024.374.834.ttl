@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/25300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2530>, <http://vocab.belgif.be/auth/nace2025/2530>;
+    skos:definition "Vervaardiging van stoomketels, exclusief warmwaterketels voor centrale verwarming"@nl, "Fabrication de générateurs de vapeur, à l'exception des chaudières pour le chauffage central"@fr;
+    skos:prefLabel "25300".
+<http://vocab.belgif.be/auth/nace2025/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2561>, <http://vocab.belgif.be/auth/nace2025/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47631> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in wapens en munitie"@nl, "Commerce de détail d'armes et de munitions"@fr;
+    skos:prefLabel "47631".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<https://data.vlaanderen.be/id/onderneming/1024.374.834> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.374.834;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/25300>, <http://vocab.belgif.be/auth/nace2025/47631>, <http://vocab.belgif.be/auth/nace2025/25610>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2025/47120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1024.374.834;
+    reorg:legalName "Condroz Weapons Hunting & Sport"@fr, "CW H&S"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.687.979>.
+<https://data.vlaanderen.be/id/vestiging/2.374.687.979> a org:Site;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.687.979.
+_:address_contact_1024.374.834 a locn:Address;
+    locn:thoroughfare "Rue Henri Debehogne"@nl, "Rue Henri Debehogne"@fr;
+    rdfs:label "12";
+    locn:postCode "5330";
+    adres:gemeentenaam "Assesse"@nl, "Assesse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1024.374.834 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "m.martin@massur-invest.be";
+    schema:telephone "+32477425374";
+    locn:address _:address_contact_1024.374.834.
+_:registration_company_1024.374.834 a adms:Identifier;
+    skos:notation "1024.374.834";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.687.979 a adms:Identifier;
+    skos:notation "2.374.687.979";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

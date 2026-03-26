@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1023.166.787> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.166.787;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1023.166.787;
+    reorg:legalName "C-R-G Elektro"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.373.632.065>.
+<https://data.vlaanderen.be/id/vestiging/2.373.632.065> a org:Site;
+    dcterms:created "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.632.065.
+_:address_contact_1023.166.787 a locn:Address;
+    locn:thoroughfare "Paleisstraat(Kor)"@nl, "Paleisstraat(Kor)"@fr;
+    rdfs:label "1";
+    adres:busnummer "B042";
+    locn:postCode "8500";
+    adres:gemeentenaam "Kortrijk"@nl, "Kortrijk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1023.166.787 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1023.166.787.
+_:registration_company_1023.166.787 a adms:Identifier;
+    skos:notation "1023.166.787";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.632.065 a adms:Identifier;
+    skos:notation "2.373.632.065";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

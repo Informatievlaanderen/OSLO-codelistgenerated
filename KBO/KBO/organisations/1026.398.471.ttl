@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/23110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2311>, <http://vocab.belgif.be/auth/nace2025/2311>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "23110".
+<http://vocab.belgif.be/auth/nace2025/23150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2315>, <http://vocab.belgif.be/auth/nace2025/2315>;
+    skos:definition "Vervaardiging en bewerking van overig glas, inclusief technisch glaswerk"@nl, "Fabrication et façonnage d’autres articles en verre, y compris verre technique"@fr;
+    skos:prefLabel "23150".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<https://data.vlaanderen.be/id/onderneming/1026.398.471> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1026.398.471;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/23150>, <http://vocab.belgif.be/auth/nace2025/23110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Jacobus, Pauline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.377.210.573>.
+<https://data.vlaanderen.be/id/vestiging/2.377.210.573> a org:Site;
+    dcterms:created "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.210.573.
+_:registration_company_1026.398.471 a adms:Identifier;
+    skos:notation "1026.398.471";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.210.573 a adms:Identifier;
+    skos:notation "2.377.210.573";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<https://data.vlaanderen.be/id/onderneming/1033.872.124> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.872.124;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95316>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Krasniqi, Fation";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.642.852>.
+<https://data.vlaanderen.be/id/vestiging/2.384.642.852> a org:Site;
+    dcterms:created "02-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.642.852.
+_:registration_company_1033.872.124 a adms:Identifier;
+    skos:notation "1033.872.124";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.642.852 a adms:Identifier;
+    skos:notation "2.384.642.852";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

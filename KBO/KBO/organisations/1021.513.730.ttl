@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/77510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7751>, <http://vocab.belgif.be/auth/nace2025/7751>;
+    skos:definition "Bemiddeling in verband met verhuur en leasing van auto’s, campers en aanhangwagens"@nl, "Activités de service d’intermédiation pour la location et la location-bail de voitures, camping-cars et caravanes"@fr;
+    skos:prefLabel "77510".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<https://data.vlaanderen.be/id/onderneming/1021.513.730> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1021.513.730;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/77510>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2025/95316>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1021.513.730;
+    reorg:legalName "BS-P98"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.373.100.248>.
+<https://data.vlaanderen.be/id/vestiging/2.373.100.248> a org:Site;
+    dcterms:created "26-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.100.248.
+_:address_contact_1021.513.730 a locn:Address;
+    locn:thoroughfare "Steenweg op Ruisbroek"@nl, "Chaussée de Ruisbroek"@fr;
+    rdfs:label "257";
+    locn:postCode "1620";
+    adres:gemeentenaam "Drogenbos"@nl, "Drogenbos"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1021.513.730 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1021.513.730.
+_:registration_company_1021.513.730 a adms:Identifier;
+    skos:notation "1021.513.730";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.100.248 a adms:Identifier;
+    skos:notation "2.373.100.248";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

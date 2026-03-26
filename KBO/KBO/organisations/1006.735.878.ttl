@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in veevoeders"@nl, "Commerce de gros d'aliments pour le bétail"@fr;
+    skos:prefLabel "46212".
+<http://vocab.belgif.be/auth/nace2008/46383> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4638>, <http://vocab.belgif.be/auth/nace2008/4638>;
+    skos:definition "Groothandel in voedsel voor huisdieren"@nl, "Commerce de gros d'aliments pour animaux de compagnie"@fr;
+    skos:prefLabel "46383".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/47784> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in drogisterijartikelen en onderhoudsproducten in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de droguerie et de produits d'entretien en magasin spécialisé"@fr;
+    skos:prefLabel "47784".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/46212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in veevoeders"@nl, "Commerce de gros d'aliments pour le bétail"@fr;
+    skos:prefLabel "46212".
+<http://vocab.belgif.be/auth/nace2025/46382> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in aardappelproducten"@nl, "Commerce de gros de produits à base de pommes de terre"@fr;
+    skos:prefLabel "46382".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/47783> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in wapens en munitie in gespecialiseerde winkels"@nl, "Commerce de détail d'armes et de munitions en magasin spécialisé"@fr;
+    skos:prefLabel "47783".
+<https://data.vlaanderen.be/id/onderneming/1006.735.878> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1006.735.878;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47783>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/46382>, <http://vocab.belgif.be/auth/nace2025/46212>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47784>, <http://vocab.belgif.be/auth/nace2008/46212>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/46383>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1006.735.878;
+    reorg:legalName "Van Humbeeck, Tania";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.356.390.910>.
+<https://data.vlaanderen.be/id/vestiging/2.356.390.910> a org:Site;
+    dcterms:created "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.356.390.910.
+_:contact_1006.735.878 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "info@em-sun.be";
+    schema:telephone "+32474399835".
+_:registration_company_1006.735.878 a adms:Identifier;
+    skos:notation "1006.735.878";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.356.390.910 a adms:Identifier;
+    skos:notation "2.356.390.910";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

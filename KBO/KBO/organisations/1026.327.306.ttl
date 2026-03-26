@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/13300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1330>, <http://vocab.belgif.be/auth/nace2025/1330>;
+    skos:definition "Textielveredeling"@nl, "Ennoblissement textile"@fr;
+    skos:prefLabel "13300".
+<http://vocab.belgif.be/auth/nace2025/46421> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in werkkleding"@nl, "Commerce de gros de vêtements de travail"@fr;
+    skos:prefLabel "46421".
+<http://vocab.belgif.be/auth/nace2025/46424> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in kledingaccessoires"@nl, "Commerce de gros d'accessoires du vêtement"@fr;
+    skos:prefLabel "46424".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<https://data.vlaanderen.be/id/onderneming/1026.327.306> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1026.327.306;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/13300>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2025/46421>, <http://vocab.belgif.be/auth/nace2025/46424>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1026.327.306;
+    reorg:legalName "Alphatex"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.616.695>.
+<https://data.vlaanderen.be/id/vestiging/2.376.616.695> a org:Site;
+    dcterms:created "08-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.616.695.
+_:address_contact_1026.327.306 a locn:Address;
+    locn:thoroughfare "Koningin Astridlaan"@nl, "Koningin Astridlaan"@fr;
+    rdfs:label "53";
+    locn:postCode "2950";
+    adres:gemeentenaam "Kapellen"@nl, "Kapellen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1026.327.306 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1026.327.306.
+_:registration_company_1026.327.306 a adms:Identifier;
+    skos:notation "1026.327.306";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.616.695 a adms:Identifier;
+    skos:notation "2.376.616.695";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

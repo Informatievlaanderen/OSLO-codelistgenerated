@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4791>, <http://vocab.belgif.be/auth/nace2025/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<https://data.vlaanderen.be/id/onderneming/1025.871.307> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "30-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1025.871.307;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47910>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/62100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "El Amri, Mohamed";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.378.374.375>.
+<https://data.vlaanderen.be/id/vestiging/2.378.374.375> a org:Site;
+    dcterms:created "30-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.374.375.
+_:registration_company_1025.871.307 a adms:Identifier;
+    skos:notation "1025.871.307";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.374.375 a adms:Identifier;
+    skos:notation "2.378.374.375";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

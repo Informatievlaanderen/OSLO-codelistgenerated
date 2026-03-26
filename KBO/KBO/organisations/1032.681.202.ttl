@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<http://vocab.belgif.be/auth/nace2025/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2025/88994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Integrale jeugdhulp zonder huisvesting"@nl, "Services d'aide à la jeunesse sans hébergement"@fr;
+    skos:prefLabel "88994".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<https://data.vlaanderen.be/id/onderneming/1032.681.202> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "07-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1032.681.202;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/88994>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/94999>, <http://vocab.belgif.be/auth/nace2025/47793>, <http://vocab.belgif.be/auth/nace2025/47792>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1032.681.202;
+    reorg:legalName "Klavertje 4 Welzijnsschakel Maaseik-Kinrooi VZW"@nl.
+_:address_contact_1032.681.202 a locn:Address;
+    locn:thoroughfare "Wurfelderweg"@nl, "Wurfelderweg"@fr;
+    rdfs:label "82";
+    locn:postCode "3680";
+    adres:gemeentenaam "Maaseik"@nl, "Maaseik"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1032.681.202 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "welzijnsschakelmaaseik@gmail.com";
+    locn:address _:address_contact_1032.681.202.
+_:registration_company_1032.681.202 a adms:Identifier;
+    skos:notation "1032.681.202";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

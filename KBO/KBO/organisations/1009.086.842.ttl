@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<http://vocab.belgif.be/auth/nace2025/96992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Plaatsen van tatoeages en piercings"@nl, "Services de tatouage et de piercing"@fr;
+    skos:prefLabel "96992".
+<https://data.vlaanderen.be/id/onderneming/1009.086.842> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1009.086.842;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/96992>, <http://vocab.belgif.be/auth/nace2025/47690>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Baets, Jolien";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.382.878.541>.
+<https://data.vlaanderen.be/id/vestiging/2.382.878.541> a org:Site;
+    dcterms:created "06-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.382.878.541.
+_:registration_company_1009.086.842 a adms:Identifier;
+    skos:notation "1009.086.842";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.382.878.541 a adms:Identifier;
+    skos:notation "2.382.878.541";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

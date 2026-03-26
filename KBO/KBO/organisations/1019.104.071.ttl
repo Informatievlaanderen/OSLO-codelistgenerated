@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/49420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4942>, <http://vocab.belgif.be/auth/nace2025/4942>;
+    skos:definition "Verhuisbedrijven"@nl, "Services de déménagement"@fr;
+    skos:prefLabel "49420".
+<https://data.vlaanderen.be/id/onderneming/1019.104.071> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "20-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.104.071;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/49420>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/47789>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1019.104.071;
+    reorg:legalName "Semaire, Jordan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.915.390>.
+<https://data.vlaanderen.be/id/vestiging/2.368.915.390> a org:Site;
+    dcterms:created "20-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.915.390.
+_:contact_1019.104.071 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "jordansemaire@outlook.be";
+    schema:telephone "+32474226041".
+_:registration_company_1019.104.071 a adms:Identifier;
+    skos:notation "1019.104.071";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.915.390 a adms:Identifier;
+    skos:notation "2.368.915.390";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

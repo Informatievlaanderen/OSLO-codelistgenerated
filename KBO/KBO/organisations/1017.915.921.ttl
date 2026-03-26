@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/71122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Landmeters"@nl, "Activités des géomètres"@fr;
+    skos:prefLabel "71122".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1017.915.921> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1017.915.921;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/71122>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/71111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1017.915.921;
+    reorg:legalName "Claver"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.630.132>.
+<https://data.vlaanderen.be/id/vestiging/2.368.630.132> a org:Site;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.630.132.
+_:address_contact_1017.915.921 a locn:Address;
+    locn:thoroughfare "Borstekouterstraat(Rob)"@nl, "Borstekouterstraat(Rob)"@fr;
+    rdfs:label "50";
+    locn:postCode "9630";
+    adres:gemeentenaam "Zwalm"@nl, "Zwalm"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1017.915.921 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1017.915.921.
+_:registration_company_1017.915.921 a adms:Identifier;
+    skos:notation "1017.915.921";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.630.132 a adms:Identifier;
+    skos:notation "2.368.630.132";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

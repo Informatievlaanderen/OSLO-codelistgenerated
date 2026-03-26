@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4932>, <http://vocab.belgif.be/auth/nace2008/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2008/49390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4939>, <http://vocab.belgif.be/auth/nace2008/4939>;
+    skos:definition "Overig personenvervoer te land, n.e.g."@nl, "Autres transports terrestres de voyageurs n.c.a."@fr;
+    skos:prefLabel "49390".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2025/49330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4933>, <http://vocab.belgif.be/auth/nace2025/4933>;
+    skos:definition "Diensten voor personenvervoer op aanvraag per voertuig met chauffeur"@nl, "Activités de service de transport de voyageurs sur demande par véhicule avec chauffeur"@fr;
+    skos:prefLabel "49330".
+<https://data.vlaanderen.be/id/onderneming/1004.652.853> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1004.652.853;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49330>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2008/49320>, <http://vocab.belgif.be/auth/nace2008/49390>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1004.652.853;
+    reorg:legalName "NOHAYA"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.362.955.236>.
+<https://data.vlaanderen.be/id/vestiging/2.362.955.236> a org:Site;
+    dcterms:created "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.362.955.236.
+_:address_contact_1004.652.853 a locn:Address;
+    locn:thoroughfare "Witloofstraat"@nl, "Rue du Witloof"@fr;
+    rdfs:label "5";
+    adres:busnummer "5";
+    locn:postCode "1130";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1004.652.853 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1004.652.853.
+_:registration_company_1004.652.853 a adms:Identifier;
+    skos:notation "1004.652.853";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.362.955.236 a adms:Identifier;
+    skos:notation "2.362.955.236";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

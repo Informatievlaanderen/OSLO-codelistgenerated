@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3240>, <http://vocab.belgif.be/auth/nace2008/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5819>, <http://vocab.belgif.be/auth/nace2008/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3240>, <http://vocab.belgif.be/auth/nace2025/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5819>, <http://vocab.belgif.be/auth/nace2025/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1010.565.004> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1010.565.004;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/58190>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/32400>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/58190>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/32400>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/93299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Lammerant, Quentin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.360.543.401>.
+<https://data.vlaanderen.be/id/vestiging/2.360.543.401> a org:Site;
+    dcterms:created "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.360.543.401.
+_:registration_company_1010.565.004 a adms:Identifier;
+    skos:notation "1010.565.004";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.360.543.401 a adms:Identifier;
+    skos:notation "2.360.543.401";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

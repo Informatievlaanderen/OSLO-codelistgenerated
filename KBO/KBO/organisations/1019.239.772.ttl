@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0143>, <http://vocab.belgif.be/auth/nace2025/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1019.239.772> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "29-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.239.772;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/01430>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Mees, Karlien";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.369.062.078>.
+<https://data.vlaanderen.be/id/vestiging/2.369.062.078> a org:Site;
+    dcterms:created "29-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.369.062.078.
+_:registration_company_1019.239.772 a adms:Identifier;
+    skos:notation "1019.239.772";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.369.062.078 a adms:Identifier;
+    skos:notation "2.369.062.078";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/31001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van kantoor- en winkelmeubelen"@nl, "Fabrication de meubles de bureau et de magasin"@fr;
+    skos:prefLabel "31001".
+<http://vocab.belgif.be/auth/nace2025/31002> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van keukenmeubelen"@nl, "Fabrication de meubles de cuisine"@fr;
+    skos:prefLabel "31002".
+<http://vocab.belgif.be/auth/nace2025/31004> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de meubles de salle à manger, de salon, de chambre à coucher et de salle de bain"@fr;
+    skos:prefLabel "31004".
+<http://vocab.belgif.be/auth/nace2025/31009> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van andere meubelen, neg"@nl, "Fabrication d'autres meubles nca"@fr;
+    skos:prefLabel "31009".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<https://data.vlaanderen.be/id/onderneming/1034.194.204> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.194.204;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/31009>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/31001>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/31004>, <http://vocab.belgif.be/auth/nace2025/31002>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1034.194.204;
+    reorg:legalName "Momayi, Evala";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.385.376.884>.
+<https://data.vlaanderen.be/id/vestiging/2.385.376.884> a org:Site;
+    dcterms:created "28-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.385.376.884.
+_:contact_1034.194.204 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "evala.momayi@hotmail.com".
+_:registration_company_1034.194.204 a adms:Identifier;
+    skos:notation "1034.194.204";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.385.376.884 a adms:Identifier;
+    skos:notation "2.385.376.884";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/37000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3700>, <http://vocab.belgif.be/auth/nace2025/3700>;
+    skos:definition "Afvalwaterafvoer"@nl, "Collecte et traitement des eaux usées"@fr;
+    skos:prefLabel "37000".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/71119> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Overige activiteiten op het gebied van architectuur, neg"@nl, "Autres activités dans le domaine d'architecture, nec"@fr;
+    skos:prefLabel "71119".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<https://data.vlaanderen.be/id/onderneming/1027.172.986> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1027.172.986;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/37000>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/71119>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/77320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Wittoek, Ronald";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.377.542.551>.
+<https://data.vlaanderen.be/id/vestiging/2.377.542.551> a org:Site;
+    dcterms:created "04-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.542.551.
+_:registration_company_1027.172.986 a adms:Identifier;
+    skos:notation "1027.172.986";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.542.551 a adms:Identifier;
+    skos:notation "2.377.542.551";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

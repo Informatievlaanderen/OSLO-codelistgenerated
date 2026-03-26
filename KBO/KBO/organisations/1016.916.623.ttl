@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/52249> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5224>, <http://vocab.belgif.be/auth/nace2025/5224>;
+    skos:definition "Overige vrachtbehandeling, exclusief in zeehavens"@nl, "Manutention autre que portuaire"@fr;
+    skos:prefLabel "52249".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<https://data.vlaanderen.be/id/onderneming/1016.916.623> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1016.916.623;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2025/95314>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/52249>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Wulf, Ronaldo";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.366.795.446>.
+<https://data.vlaanderen.be/id/vestiging/2.366.795.446> a org:Site;
+    dcterms:created "02-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.795.446.
+_:registration_company_1016.916.623 a adms:Identifier;
+    skos:notation "1016.916.623";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.795.446 a adms:Identifier;
+    skos:notation "2.366.795.446";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

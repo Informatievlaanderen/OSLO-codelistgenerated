@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46433> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in foto- en filmapparatuur en in andere optische artikelen"@nl, "Commerce de gros d'appareils photographiques et cinématographiques et d'autres articles d'optique"@fr;
+    skos:prefLabel "46433".
+<http://vocab.belgif.be/auth/nace2008/47782> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fotografische en optische artikelen en in precisieinstrumenten in gespecialiseerde winkels"@nl, "Commerce de détail de matériel photographique, d'optique et de précision en magasin spécialisé"@fr;
+    skos:prefLabel "47782".
+<http://vocab.belgif.be/auth/nace2008/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5911>, <http://vocab.belgif.be/auth/nace2008/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2008/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5920>, <http://vocab.belgif.be/auth/nace2008/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2008/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2008/74209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Overige fotografische activiteiten"@nl, "Autres activités photographiques"@fr;
+    skos:prefLabel "74209".
+<http://vocab.belgif.be/auth/nace2025/46432> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in opgenomen beeld- en geluidsdragers"@nl, "Commerce de gros de supports enregistrés d'images et de sons"@fr;
+    skos:prefLabel "46432".
+<http://vocab.belgif.be/auth/nace2025/47742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47742".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/59201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5920>, <http://vocab.belgif.be/auth/nace2025/5920>;
+    skos:definition "Maken van geluidsopnamen"@nl, "Production d'enregistrements sonores"@fr;
+    skos:prefLabel "59201".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2025/74209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Overige fotografische activiteiten"@nl, "Autres activités photographiques"@fr;
+    skos:prefLabel "74209".
+<https://data.vlaanderen.be/id/onderneming/1001.526.780> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.526.780;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/59201>, <http://vocab.belgif.be/auth/nace2025/46432>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/47742>, <http://vocab.belgif.be/auth/nace2025/74209>, <http://vocab.belgif.be/auth/nace2008/59113>, <http://vocab.belgif.be/auth/nace2008/59201>, <http://vocab.belgif.be/auth/nace2008/74209>, <http://vocab.belgif.be/auth/nace2008/46433>, <http://vocab.belgif.be/auth/nace2008/47782>, <http://vocab.belgif.be/auth/nace2008/74201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.526.780;
+    reorg:legalName "Dirk Van Iseghem"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.060.264>.
+<https://data.vlaanderen.be/id/vestiging/2.351.060.264> a org:Site;
+    dcterms:created "23-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.060.264.
+_:address_contact_1001.526.780 a locn:Address;
+    locn:thoroughfare "Lode Zielenslaan"@nl, "Lode Zielenslaan"@fr;
+    rdfs:label "38";
+    adres:busnummer "3";
+    locn:postCode "2160";
+    adres:gemeentenaam "Wommelgem"@nl, "Wommelgem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.526.780 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "dirkvaniseghem@gmail.com";
+    locn:address _:address_contact_1001.526.780.
+_:registration_company_1001.526.780 a adms:Identifier;
+    skos:notation "1001.526.780";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.060.264 a adms:Identifier;
+    skos:notation "2.351.060.264";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

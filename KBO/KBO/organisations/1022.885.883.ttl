@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<https://data.vlaanderen.be/id/onderneming/1022.885.883> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.885.883;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2025/46711>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1022.885.883;
+    reorg:legalName "EVOLIS BELGIUM"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.479.727>.
+<https://data.vlaanderen.be/id/vestiging/2.374.479.727> a org:Site;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.479.727.
+_:address_contact_1022.885.883 a locn:Address;
+    locn:thoroughfare "Rotterdamstraat"@nl, "Rue de Rotterdam"@fr;
+    rdfs:label "28";
+    locn:postCode "1080";
+    adres:gemeentenaam "Sint-Jans-Molenbeek"@nl, "Molenbeek-Saint-Jean"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1022.885.883 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1022.885.883.
+_:registration_company_1022.885.883 a adms:Identifier;
+    skos:notation "1022.885.883";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.479.727 a adms:Identifier;
+    skos:notation "2.374.479.727";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

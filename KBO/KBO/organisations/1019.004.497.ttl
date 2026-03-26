@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1019.004.497> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "21-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.004.497;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/42220>, <http://vocab.belgif.be/auth/nace2025/43350>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1019.004.497;
+    reorg:legalName "GKN Group"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.370.299.423>.
+<https://data.vlaanderen.be/id/vestiging/2.370.299.423> a org:Site;
+    dcterms:created "21-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.370.299.423.
+_:address_contact_1019.004.497 a locn:Address;
+    locn:thoroughfare "Evergemsesteenweg"@nl, "Evergemsesteenweg"@fr;
+    rdfs:label "24";
+    adres:busnummer "B0101";
+    locn:postCode "9032";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1019.004.497 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1019.004.497.
+_:registration_company_1019.004.497 a adms:Identifier;
+    skos:notation "1019.004.497";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.370.299.423 a adms:Identifier;
+    skos:notation "2.370.299.423";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

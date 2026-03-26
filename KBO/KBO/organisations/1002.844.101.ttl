@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1071>, <http://vocab.belgif.be/auth/nace2008/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2008/85609> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8560>, <http://vocab.belgif.be/auth/nace2008/8560>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85609".
+<http://vocab.belgif.be/auth/nace2008/86904> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Activiteiten op het vlak van geestelijke gezondheidszorg, m.u.v. psychiatrische ziekenhuizen en verzorgingstehuizen"@nl, "Activités relatives à la santé mentale, sauf hôpitaux et maisons de soins psychiatriques"@fr;
+    skos:prefLabel "86904".
+<http://vocab.belgif.be/auth/nace2025/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1071>, <http://vocab.belgif.be/auth/nace2025/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<http://vocab.belgif.be/auth/nace2025/86931> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychologie"@nl, "Activités de psychologie"@fr;
+    skos:prefLabel "86931".
+<https://data.vlaanderen.be/id/onderneming/1002.844.101> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "30-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.844.101;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86931>, <http://vocab.belgif.be/auth/nace2025/85699>, <http://vocab.belgif.be/auth/nace2025/10712>, <http://vocab.belgif.be/auth/nace2008/10712>, <http://vocab.belgif.be/auth/nace2008/86904>, <http://vocab.belgif.be/auth/nace2008/85609>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1002.844.101;
+    reorg:legalName "Taste My Mind"@fr, "TMM"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.803.087>.
+<https://data.vlaanderen.be/id/vestiging/2.353.803.087> a org:Site;
+    dcterms:created "30-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.803.087.
+_:address_contact_1002.844.101 a locn:Address;
+    locn:thoroughfare "Rue de l'Eglise Saint-Sulpice"@nl, "Rue de l'Eglise Saint-Sulpice"@fr;
+    rdfs:label "25";
+    locn:postCode "1320";
+    adres:gemeentenaam "Beauvechain"@nl, "Beauvechain"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1002.844.101 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "huvelleanne@gmail.com";
+    schema:telephone "+32485706278";
+    locn:address _:address_contact_1002.844.101.
+_:registration_company_1002.844.101 a adms:Identifier;
+    skos:notation "1002.844.101";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.803.087 a adms:Identifier;
+    skos:notation "2.353.803.087";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

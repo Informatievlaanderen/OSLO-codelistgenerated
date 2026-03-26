@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<http://vocab.belgif.be/auth/nace2025/95320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9532>, <http://vocab.belgif.be/auth/nace2025/9532>;
+    skos:definition "Reparatie en onderhoud van motorfietsen"@nl, "Réparation et entretien de motocycles"@fr;
+    skos:prefLabel "95320".
+<https://data.vlaanderen.be/id/onderneming/1025.163.702> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1025.163.702;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/95320>, <http://vocab.belgif.be/auth/nace2025/95319>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Peetermans, Dries";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.375.457.942>.
+<https://data.vlaanderen.be/id/vestiging/2.375.457.942> a org:Site;
+    dcterms:created "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.375.457.942.
+_:registration_company_1025.163.702 a adms:Identifier;
+    skos:notation "1025.163.702";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.375.457.942 a adms:Identifier;
+    skos:notation "2.375.457.942";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

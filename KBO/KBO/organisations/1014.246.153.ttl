@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1085>, <http://vocab.belgif.be/auth/nace2008/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2008/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1089>, <http://vocab.belgif.be/auth/nace2008/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1085>, <http://vocab.belgif.be/auth/nace2025/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<https://data.vlaanderen.be/id/onderneming/1014.246.153> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1014.246.153;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/56210>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/10850>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/10890>, <http://vocab.belgif.be/auth/nace2008/47990>, <http://vocab.belgif.be/auth/nace2008/10850>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1014.246.153;
+    reorg:legalName "De Soepboerin"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.364.672.631>.
+<https://data.vlaanderen.be/id/vestiging/2.364.672.631> a org:Site;
+    dcterms:created "27-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.364.672.631.
+_:address_contact_1014.246.153 a locn:Address;
+    locn:thoroughfare "Voortjesweg"@nl, "Voortjesweg"@fr;
+    rdfs:label "22";
+    locn:postCode "2382";
+    adres:gemeentenaam "Ravels"@nl, "Ravels"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1014.246.153 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1014.246.153.
+_:registration_company_1014.246.153 a adms:Identifier;
+    skos:notation "1014.246.153";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.364.672.631 a adms:Identifier;
+    skos:notation "2.364.672.631";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

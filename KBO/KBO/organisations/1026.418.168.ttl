@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/59111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van bioscoopfilms"@nl, "Production de films cinématographiques"@fr;
+    skos:prefLabel "59111".
+<http://vocab.belgif.be/auth/nace2025/59112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van televisiefilms"@nl, "Production de films pour la télévision"@fr;
+    skos:prefLabel "59112".
+<http://vocab.belgif.be/auth/nace2025/59120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5912>, <http://vocab.belgif.be/auth/nace2025/5912>;
+    skos:definition "Activiteiten in verband met films en video- en televisieprogramma's na de productie"@nl, "Post-production de films cinématographiques, de vidéo et de programmes de télévision"@fr;
+    skos:prefLabel "59120".
+<http://vocab.belgif.be/auth/nace2025/59130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5913>, <http://vocab.belgif.be/auth/nace2025/5913>;
+    skos:definition "Distributie van films en video- en televisieprogramma's"@nl, "Distribution de films cinématographiques, de vidéo et de programmes de télévision"@fr;
+    skos:prefLabel "59130".
+<http://vocab.belgif.be/auth/nace2025/59140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5914>, <http://vocab.belgif.be/auth/nace2025/5914>;
+    skos:definition "Vertoning van films"@nl, "Projection de films cinématographiques"@fr;
+    skos:prefLabel "59140".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<https://data.vlaanderen.be/id/onderneming/1026.418.168> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1026.418.168;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59140>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/59130>, <http://vocab.belgif.be/auth/nace2025/59111>, <http://vocab.belgif.be/auth/nace2025/59112>, <http://vocab.belgif.be/auth/nace2025/59120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1026.418.168;
+    reorg:legalName "AMOJ FILMS"@fr.
+_:address_contact_1026.418.168 a locn:Address;
+    locn:thoroughfare "Luxemburgstraat"@nl, "Rue du Luxembourg"@fr;
+    rdfs:label "29";
+    locn:postCode "7700";
+    adres:gemeentenaam "Mouscron"@nl, "Mouscron"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1026.418.168 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "amojfilms@gmail.com";
+    locn:address _:address_contact_1026.418.168.
+_:registration_company_1026.418.168 a adms:Identifier;
+    skos:notation "1026.418.168";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

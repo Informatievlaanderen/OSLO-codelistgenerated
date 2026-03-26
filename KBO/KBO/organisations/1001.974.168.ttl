@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/62030> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6203>, <http://vocab.belgif.be/auth/nace2008/6203>;
+    skos:definition "Beheer van computerfaciliteiten"@nl, "Gestion d'installations informatiques"@fr;
+    skos:prefLabel "62030".
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090".
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2008/63120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6312>, <http://vocab.belgif.be/auth/nace2008/6312>;
+    skos:definition "Webportalen"@nl, "Portails Internet"@fr;
+    skos:prefLabel "63120".
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<https://data.vlaanderen.be/id/onderneming/1001.974.168> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.974.168;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/63990>, <http://vocab.belgif.be/auth/nace2008/62030>, <http://vocab.belgif.be/auth/nace2008/63120>, <http://vocab.belgif.be/auth/nace2008/64200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.974.168;
+    reorg:legalName "Tojago"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.996.612>.
+<https://data.vlaanderen.be/id/vestiging/2.351.996.612> a org:Site;
+    dcterms:created "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.996.612.
+_:address_contact_1001.974.168 a locn:Address;
+    locn:thoroughfare "August De Feyterstraat"@nl, "August De Feyterstraat"@fr;
+    rdfs:label "53";
+    locn:postCode "1740";
+    adres:gemeentenaam "Ternat"@nl, "Ternat"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.974.168 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@tojago.com";
+    schema:telephone "025827511";
+    <http://xmlns.com/foaf/0.1/homepage> "tojago.com";
+    locn:address _:address_contact_1001.974.168.
+_:registration_company_1001.974.168 a adms:Identifier;
+    skos:notation "1001.974.168";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.996.612 a adms:Identifier;
+    skos:notation "2.351.996.612";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

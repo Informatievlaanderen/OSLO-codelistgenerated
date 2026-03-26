@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/88109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8810>, <http://vocab.belgif.be/auth/nace2025/8810>;
+    skos:definition "Overige maatschappelijke dienstverlening zonder huisvesting voor ouderen en lichamelijk gehandicapten"@nl, "Autre action sociale sans hébergement pour personnes âgées et pour personnes avec un handicap moteur"@fr;
+    skos:prefLabel "88109".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/96400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9640>, <http://vocab.belgif.be/auth/nace2025/9640>;
+    skos:definition "Bemiddelingsactiviteiten op het gebied van persoonlijke dienstverlening"@nl, "Activités de service d’intermédiation pour des services aux personnes"@fr;
+    skos:prefLabel "96400".
+<http://vocab.belgif.be/auth/nace2025/96991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Contactbemiddelingsbureaus en dergelijke"@nl, "Services de rencontres"@fr;
+    skos:prefLabel "96991".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/1027.034.317> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "31-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1027.034.317;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/88109>, <http://vocab.belgif.be/auth/nace2025/96400>, <http://vocab.belgif.be/auth/nace2025/96991>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/96999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1027.034.317;
+    reorg:legalName "Amoris"@nl.
+_:address_contact_1027.034.317 a locn:Address;
+    locn:thoroughfare "Romain Rollandstraat"@nl, "Romain Rollandstraat"@fr;
+    rdfs:label "9";
+    adres:busnummer "3";
+    locn:postCode "3010";
+    adres:gemeentenaam "Leuven"@nl, "Leuven"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1027.034.317 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1027.034.317.
+_:registration_company_1027.034.317 a adms:Identifier;
+    skos:notation "1027.034.317";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

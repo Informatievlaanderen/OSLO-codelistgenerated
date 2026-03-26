@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3900>, <http://vocab.belgif.be/auth/nace2008/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2008/87304> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8730>, <http://vocab.belgif.be/auth/nace2008/8730>;
+    skos:definition "Instellingen met huisvesting voor volwassenen met een lichameijke handicap"@nl, "Activités de soins résidentiels pour adultes avec un handicap moteur"@fr;
+    skos:prefLabel "87304".
+<http://vocab.belgif.be/auth/nace2025/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3900>, <http://vocab.belgif.be/auth/nace2025/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2025/87304> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8730>, <http://vocab.belgif.be/auth/nace2025/8730>;
+    skos:definition "Instellingen met huisvesting voor volwassenen met een lichameijke handicap"@nl, "Activités de soins résidentiels pour adultes avec un handicap moteur"@fr;
+    skos:prefLabel "87304".
+<https://data.vlaanderen.be/id/onderneming/1001.733.846> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "27-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.733.846;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/39000>, <http://vocab.belgif.be/auth/nace2025/87304>, <http://vocab.belgif.be/auth/nace2008/39000>, <http://vocab.belgif.be/auth/nace2008/87304>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.733.846;
+    reorg:legalName "Roulettes et Roomies asbl"@fr.
+_:address_contact_1001.733.846 a locn:Address;
+    locn:thoroughfare "De Laubespinstraat"@nl, "Rue De Laubespin"@fr;
+    rdfs:label "94";
+    locn:postCode "1090";
+    adres:gemeentenaam "Jette"@nl, "Jette"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.733.846 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "nassim.benoussaid@gmail.com";
+    locn:address _:address_contact_1001.733.846.
+_:registration_company_1001.733.846 a adms:Identifier;
+    skos:notation "1001.733.846";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

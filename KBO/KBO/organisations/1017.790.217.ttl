@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2008/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<https://data.vlaanderen.be/id/onderneming/1017.790.217> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1017.790.217;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/71113>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2025/71111>, <http://vocab.belgif.be/auth/nace2008/71111>, <http://vocab.belgif.be/auth/nace2008/71113>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/74109>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1017.790.217;
+    reorg:legalName "MRZ ARCHITECTS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.367.661.815>.
+<https://data.vlaanderen.be/id/vestiging/2.367.661.815> a org:Site;
+    dcterms:created "21-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.367.661.815.
+_:address_contact_1017.790.217 a locn:Address;
+    locn:thoroughfare "Balotstraat (Laure)"@nl, "Balotstraat (Laure)"@fr;
+    rdfs:label "6";
+    adres:busnummer "5.3";
+    locn:postCode "1800";
+    adres:gemeentenaam "Vilvoorde"@nl, "Vilvoorde"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1017.790.217 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1017.790.217.
+_:registration_company_1017.790.217 a adms:Identifier;
+    skos:notation "1017.790.217";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.367.661.815 a adms:Identifier;
+    skos:notation "2.367.661.815";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

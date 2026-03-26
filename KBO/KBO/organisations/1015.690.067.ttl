@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8552>, <http://vocab.belgif.be/auth/nace2008/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2008/91011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Bibliotheken,mediatheken en ludotheken"@nl, "Gestion des bibliothèques, des médiathèques et des ludothèques"@fr;
+    skos:prefLabel "91011".
+<http://vocab.belgif.be/auth/nace2008/91012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Openbare archieven"@nl, "Gestion des archives publiques"@fr;
+    skos:prefLabel "91012".
+<http://vocab.belgif.be/auth/nace2008/91020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9102>, <http://vocab.belgif.be/auth/nace2008/9102>;
+    skos:definition "Musea"@nl, "Gestion des musées"@fr;
+    skos:prefLabel "91020".
+<http://vocab.belgif.be/auth/nace2008/91030> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9103>, <http://vocab.belgif.be/auth/nace2008/9103>;
+    skos:definition "Exploitatie van monumenten en dergelijke toeristenattracties"@nl, "Gestion des sites et monuments historiques et des attractions touristiques similaires"@fr;
+    skos:prefLabel "91030".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/91110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9111>, <http://vocab.belgif.be/auth/nace2025/9111>;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+<http://vocab.belgif.be/auth/nace2025/91120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9112>, <http://vocab.belgif.be/auth/nace2025/9112>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités d'organisations professionnelles"@fr;
+    skos:prefLabel "91120".
+<http://vocab.belgif.be/auth/nace2025/91210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9121>, <http://vocab.belgif.be/auth/nace2025/9121>;
+    skos:definition "Activiteiten van musea en collecties"@nl, "Activités des musées et collections"@fr;
+    skos:prefLabel "91210".
+<http://vocab.belgif.be/auth/nace2025/91220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9122>, <http://vocab.belgif.be/auth/nace2025/9122>;
+    skos:definition "Activiteiten van historische locaties en monumenten"@nl, "Activité des sites et monuments historiques"@fr;
+    skos:prefLabel "91220".
+<https://data.vlaanderen.be/id/onderneming/1015.690.067> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "07-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1015.690.067;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/91110>, <http://vocab.belgif.be/auth/nace2025/91220>, <http://vocab.belgif.be/auth/nace2025/91210>, <http://vocab.belgif.be/auth/nace2025/91120>, <http://vocab.belgif.be/auth/nace2008/85520>, <http://vocab.belgif.be/auth/nace2008/91011>, <http://vocab.belgif.be/auth/nace2008/91020>, <http://vocab.belgif.be/auth/nace2008/91012>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/91030>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Vrydaghs, Manon";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.365.546.027>.
+<https://data.vlaanderen.be/id/vestiging/2.365.546.027> a org:Site;
+    dcterms:created "07-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.546.027.
+_:registration_company_1015.690.067 a adms:Identifier;
+    skos:notation "1015.690.067";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.546.027 a adms:Identifier;
+    skos:notation "2.365.546.027";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3314>, <http://vocab.belgif.be/auth/nace2025/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2025/33190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3319>, <http://vocab.belgif.be/auth/nace2025/3319>;
+    skos:definition "Reparatie van andere apparatuur"@nl, "Réparation d'autres équipements"@fr;
+    skos:prefLabel "33190".
+<http://vocab.belgif.be/auth/nace2025/85592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Beroepsopleiding"@nl, "Formation professionnelle"@fr;
+    skos:prefLabel "85592".
+<http://vocab.belgif.be/auth/nace2025/90399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Andere ondersteunende activiteiten voor scheppende en uitvoerende kunst, neg"@nl, "Autres activités de soutien à la création artistique et aux spectacles, nca"@fr;
+    skos:prefLabel "90399".
+<http://vocab.belgif.be/auth/nace2025/91300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9130>, <http://vocab.belgif.be/auth/nace2025/9130>;
+    skos:definition "Instandhouding, restauratie en andere ondersteunende activiteiten voor cultureel erfgoed"@nl, "Conservation, restauration et autres activités de soutien pour la préservation du patrimoine culturel"@fr;
+    skos:prefLabel "91300".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/1013.334.947> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "09-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1013.334.947;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90399>, <http://vocab.belgif.be/auth/nace2025/33190>, <http://vocab.belgif.be/auth/nace2025/91300>, <http://vocab.belgif.be/auth/nace2025/85592>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/33140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1013.334.947;
+    reorg:legalName "Asbl Pixel's"@fr.
+_:address_contact_1013.334.947 a locn:Address;
+    locn:thoroughfare "Rue Alfred Dendal(B)"@nl, "Rue Alfred Dendal(B)"@fr;
+    rdfs:label "56";
+    locn:postCode "7300";
+    adres:gemeentenaam "Boussu"@nl, "Boussu"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1013.334.947 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info.asblpixels@gmail.com";
+    locn:address _:address_contact_1013.334.947.
+_:registration_company_1013.334.947 a adms:Identifier;
+    skos:notation "1013.334.947";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

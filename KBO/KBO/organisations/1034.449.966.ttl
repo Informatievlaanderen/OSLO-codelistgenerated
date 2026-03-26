@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/38210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3821>, <http://vocab.belgif.be/auth/nace2025/3821>;
+    skos:definition "Terugwinning van materialen uit afval"@nl, "Récupération de matériaux provenant de déchets"@fr;
+    skos:prefLabel "38210".
+<https://data.vlaanderen.be/id/onderneming/1034.449.966> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.449.966;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/38210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1034.449.966;
+    reorg:legalName "Lacasse, Tristan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.385.085.785>.
+<https://data.vlaanderen.be/id/vestiging/2.385.085.785> a org:Site;
+    dcterms:created "16-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.385.085.785.
+_:contact_1034.449.966 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "tristan097@hotmail.com";
+    schema:telephone "+32471053322".
+_:registration_company_1034.449.966 a adms:Identifier;
+    skos:notation "1034.449.966";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.385.085.785 a adms:Identifier;
+    skos:notation "2.385.085.785";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

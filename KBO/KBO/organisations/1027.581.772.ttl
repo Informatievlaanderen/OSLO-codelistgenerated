@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/59203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5920>, <http://vocab.belgif.be/auth/nace2025/5920>;
+    skos:definition "Uitgeverijen van muziekopnamen"@nl, "Edition musicale"@fr;
+    skos:prefLabel "59203".
+<http://vocab.belgif.be/auth/nace2025/60100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6010>, <http://vocab.belgif.be/auth/nace2025/6010>;
+    skos:definition "Vervoer per spoor"@nl, "Transports ferroviaires"@fr;
+    skos:prefLabel "60100".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<https://data.vlaanderen.be/id/onderneming/1027.581.772> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1027.581.772;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59203>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/60100>, <http://vocab.belgif.be/auth/nace2025/47690>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1027.581.772;
+    reorg:legalName "FLIPSIGHT"@nl.
+_:address_contact_1027.581.772 a locn:Address;
+    locn:thoroughfare "Fruithoflaan"@nl, "Fruithoflaan"@fr;
+    rdfs:label "100";
+    adres:busnummer "504";
+    locn:postCode "2600";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1027.581.772 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@flipsight.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.flipsight.be";
+    locn:address _:address_contact_1027.581.772.
+_:registration_company_1027.581.772 a adms:Identifier;
+    skos:notation "1027.581.772";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

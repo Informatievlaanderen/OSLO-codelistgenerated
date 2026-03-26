@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/93192> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Zelfstandig werkende sportbeoefenaars"@nl, "Activités des sportifs indépendants"@fr;
+    skos:prefLabel "93192".
+<http://vocab.belgif.be/auth/nace2025/96994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Africhten van huisdieren"@nl, "Activités de dressage pour animaux de compagnie"@fr;
+    skos:prefLabel "96994".
+<https://data.vlaanderen.be/id/onderneming/1020.735.354> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1020.735.354;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93192>, <http://vocab.belgif.be/auth/nace2025/96994>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1020.735.354;
+    reorg:legalName "M. WILKIN"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.598.206>.
+<https://data.vlaanderen.be/id/vestiging/2.374.598.206> a org:Site;
+    dcterms:created "06-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.598.206.
+_:address_contact_1020.735.354 a locn:Address;
+    locn:thoroughfare "Rue Scheuer"@nl, "Rue Scheuer"@fr;
+    rdfs:label "114";
+    adres:busnummer "33";
+    locn:postCode "6700";
+    adres:gemeentenaam "Arlon"@nl, "Arlon"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1020.735.354 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1020.735.354.
+_:registration_company_1020.735.354 a adms:Identifier;
+    skos:notation "1020.735.354";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.598.206 a adms:Identifier;
+    skos:notation "2.374.598.206";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

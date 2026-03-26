@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/16210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1621>, <http://vocab.belgif.be/auth/nace2025/1621>;
+    skos:definition "Vervaardiging van fineer en van panelen op basis van hout"@nl, "Fabrication de placage et de panneaux de bois"@fr;
+    skos:prefLabel "16210".
+<http://vocab.belgif.be/auth/nace2025/16220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1622>, <http://vocab.belgif.be/auth/nace2025/1622>;
+    skos:definition "Vervaardiging van geassembleerde parketvloeren"@nl, "Fabrication de parquets assemblés"@fr;
+    skos:prefLabel "16220".
+<http://vocab.belgif.be/auth/nace2025/16250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1625>, <http://vocab.belgif.be/auth/nace2025/1625>;
+    skos:definition "Vervaardiging van houten deuren en vensters"@nl, "Fabrication de portes et fenêtres en bois"@fr;
+    skos:prefLabel "16250".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<https://data.vlaanderen.be/id/onderneming/1023.870.830> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.870.830;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16220>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/16281>, <http://vocab.belgif.be/auth/nace2025/16250>, <http://vocab.belgif.be/auth/nace2025/16210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Roover, Louis";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.374.141.118>.
+<https://data.vlaanderen.be/id/vestiging/2.374.141.118> a org:Site;
+    dcterms:created "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.141.118.
+_:registration_company_1023.870.830 a adms:Identifier;
+    skos:notation "1023.870.830";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.141.118 a adms:Identifier;
+    skos:notation "2.374.141.118";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

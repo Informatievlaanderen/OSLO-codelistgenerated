@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/37000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3700>, <http://vocab.belgif.be/auth/nace2025/3700>;
+    skos:definition "Afvalwaterafvoer"@nl, "Collecte et traitement des eaux usées"@fr;
+    skos:prefLabel "37000".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<https://data.vlaanderen.be/id/onderneming/1021.922.516> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1021.922.516;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/81230>, <http://vocab.belgif.be/auth/nace2025/37000>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1021.922.516;
+    reorg:legalName "De Witte, Cédric";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.371.945.552>.
+<https://data.vlaanderen.be/id/vestiging/2.371.945.552> a org:Site;
+    dcterms:created "04-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.371.945.552.
+_:contact_1021.922.516 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "dewittecedric6@gmail.com";
+    schema:telephone "+32470884510".
+_:registration_company_1021.922.516 a adms:Identifier;
+    skos:notation "1021.922.516";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.371.945.552 a adms:Identifier;
+    skos:notation "2.371.945.552";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

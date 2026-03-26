@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0240>, <http://vocab.belgif.be/auth/nace2025/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/47529> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in overige bouwmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail d'autres matériaux de construction en magasin spécialisé"@fr;
+    skos:prefLabel "47529".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/1034.906.658> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.906.658;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/81300>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2025/02400>, <http://vocab.belgif.be/auth/nace2025/47529>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1034.906.658;
+    reorg:legalName "PASCAL NYSSEN"@de;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.386.006.988>.
+<https://data.vlaanderen.be/id/vestiging/2.386.006.988> a org:Site;
+    dcterms:created "27-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.386.006.988.
+_:address_contact_1034.906.658 a locn:Address;
+    locn:thoroughfare "Belven"@nl, "Belven"@fr;
+    rdfs:label "87";
+    locn:postCode "4730";
+    adres:gemeentenaam "Raeren"@nl, "Raeren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1034.906.658 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1034.906.658.
+_:registration_company_1034.906.658 a adms:Identifier;
+    skos:notation "1034.906.658";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.386.006.988 a adms:Identifier;
+    skos:notation "2.386.006.988";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

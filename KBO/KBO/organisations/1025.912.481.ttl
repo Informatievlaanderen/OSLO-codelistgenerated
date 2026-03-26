@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/1025.912.481> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1025.912.481;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/47110>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/47716>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1025.912.481;
+    reorg:legalName "Datoussaid, Qassim";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.429.922>.
+<https://data.vlaanderen.be/id/vestiging/2.376.429.922> a org:Site;
+    dcterms:created "01-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.429.922.
+_:contact_1025.912.481 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "qdmentreprise@gmail.com".
+_:registration_company_1025.912.481 a adms:Identifier;
+    skos:notation "1025.912.481";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.429.922 a adms:Identifier;
+    skos:notation "2.376.429.922";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

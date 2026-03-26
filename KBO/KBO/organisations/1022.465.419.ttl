@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/11010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1101>, <http://vocab.belgif.be/auth/nace2025/1101>;
+    skos:definition "Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"@nl, "Production de boissons alcooliques distillées"@fr;
+    skos:prefLabel "11010".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/60390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6039>, <http://vocab.belgif.be/auth/nace2025/6039>;
+    skos:definition "Andere activiteiten op het gebied van de verspreiding van inhoud"@nl, "Autres activités de distribution de contenu"@fr;
+    skos:prefLabel "60390".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/1022.465.419> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.465.419;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/60390>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/11010>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1022.465.419;
+    reorg:legalName "Claeys, Marius";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.372.527.552>, <https://data.vlaanderen.be/id/vestiging/2.373.849.227>.
+<https://data.vlaanderen.be/id/vestiging/2.372.527.552> a org:Site;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.372.527.552.
+<https://data.vlaanderen.be/id/vestiging/2.373.849.227> a org:Site;
+    dcterms:created "22-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.849.227.
+_:contact_1022.465.419 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "mariusclaeys@gmail.com";
+    schema:telephone "+32491366049".
+_:registration_company_1022.465.419 a adms:Identifier;
+    skos:notation "1022.465.419";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.372.527.552 a adms:Identifier;
+    skos:notation "2.372.527.552";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.849.227 a adms:Identifier;
+    skos:notation "2.373.849.227";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

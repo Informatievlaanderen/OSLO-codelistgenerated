@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/43310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4331>, <http://vocab.belgif.be/auth/nace2025/4331>;
+    skos:definition "Stukadoorswerk"@nl, "Travaux de plâtrerie"@fr;
+    skos:prefLabel "43310".
+<http://vocab.belgif.be/auth/nace2025/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/43422> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Chapewerken"@nl, "Pose de chapes"@fr;
+    skos:prefLabel "43422".
+<http://vocab.belgif.be/auth/nace2025/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4391>, <http://vocab.belgif.be/auth/nace2025/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<https://data.vlaanderen.be/id/onderneming/1034.725.823> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.725.823;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43310>, <http://vocab.belgif.be/auth/nace2025/43910>, <http://vocab.belgif.be/auth/nace2025/43331>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/43422>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1034.725.823;
+    reorg:legalName "DEAC RENOVATION ET CONSTRUCTION"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.386.313.133>.
+<https://data.vlaanderen.be/id/vestiging/2.386.313.133> a org:Site;
+    dcterms:created "23-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.386.313.133.
+_:address_contact_1034.725.823 a locn:Address;
+    locn:thoroughfare "Ninoofse Steenweg"@nl, "Chaussée de Ninove"@fr;
+    rdfs:label "641";
+    locn:postCode "1070";
+    adres:gemeentenaam "Anderlecht"@nl, "Anderlecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1034.725.823 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1034.725.823.
+_:registration_company_1034.725.823 a adms:Identifier;
+    skos:notation "1034.725.823";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.386.313.133 a adms:Identifier;
+    skos:notation "2.386.313.133";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<https://data.vlaanderen.be/id/onderneming/1019.863.641> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "11-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.863.641;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/14210>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13921>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1019.863.641;
+    reorg:legalName "PRESTIGE LORY"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.370.812.137>.
+<https://data.vlaanderen.be/id/vestiging/2.370.812.137> a org:Site;
+    dcterms:created "11-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.370.812.137.
+_:address_contact_1019.863.641 a locn:Address;
+    locn:thoroughfare "Rue de Dave(JB)"@nl, "Rue de Dave(JB)"@fr;
+    rdfs:label "12";
+    locn:postCode "5100";
+    adres:gemeentenaam "Namur"@nl, "Namur"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1019.863.641 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "lory2009@live.be";
+    schema:telephone "+3281303242";
+    locn:address _:address_contact_1019.863.641.
+_:registration_company_1019.863.641 a adms:Identifier;
+    skos:notation "1019.863.641";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.370.812.137 a adms:Identifier;
+    skos:notation "2.370.812.137";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

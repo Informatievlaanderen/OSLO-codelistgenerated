@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47519> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in overig textiel in gespecialiseerde winkels"@nl, "Commerce de détail d'autres textiles en magasin spécialisé"@fr;
+    skos:prefLabel "47519".
+<http://vocab.belgif.be/auth/nace2025/56220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5622>, <http://vocab.belgif.be/auth/nace2025/5622>;
+    skos:definition "Cateringdiensten op contractbasis en overige diensten in verband met maaltijden"@nl, "Activités de service contractuel de restauration et autres activités de service de restauration"@fr;
+    skos:prefLabel "56220".
+<http://vocab.belgif.be/auth/nace2025/56309> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>;
+    skos:definition "Andere drinkgelegenheden"@nl, "Autres débits de boissons"@fr;
+    skos:prefLabel "56309".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<https://data.vlaanderen.be/id/onderneming/1022.348.722> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "14-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.348.722;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/56309>, <http://vocab.belgif.be/auth/nace2025/56220>, <http://vocab.belgif.be/auth/nace2025/47519>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1022.348.722;
+    reorg:legalName "Bankizz"@fr.
+_:address_contact_1022.348.722 a locn:Address;
+    locn:thoroughfare "Rue Maurice Brancart"@nl, "Rue Maurice Brancart"@fr;
+    rdfs:label "89";
+    locn:postCode "1460";
+    adres:gemeentenaam "Ittre"@nl, "Ittre"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1022.348.722 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "bankizz@bankizzasbl.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.facebook.com/bankizz/";
+    locn:address _:address_contact_1022.348.722.
+_:registration_company_1022.348.722 a adms:Identifier;
+    skos:notation "1022.348.722";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

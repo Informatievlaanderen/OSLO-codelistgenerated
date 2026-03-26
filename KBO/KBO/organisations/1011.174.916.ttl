@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2008/52230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5223>, <http://vocab.belgif.be/auth/nace2008/5223>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren"@nl, "Commerce de détail de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "52230".
+<http://vocab.belgif.be/auth/nace2008/80200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8020>, <http://vocab.belgif.be/auth/nace2008/8020>;
+    skos:definition "Diensten in verband met beveiligingssystemen"@nl, "Activités liées aux systèmes de sécurité"@fr;
+    skos:prefLabel "80200".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<http://vocab.belgif.be/auth/nace2025/52230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5223>, <http://vocab.belgif.be/auth/nace2025/5223>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren"@nl, "Commerce de détail de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "52230".
+<http://vocab.belgif.be/auth/nace2025/80090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8009>, <http://vocab.belgif.be/auth/nace2025/8009>;
+    skos:definition "Beveiligingsactiviteiten, neg"@nl, "Activités de sécurité nca"@fr;
+    skos:prefLabel "80090".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1011.174.916> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "04-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1011.174.916;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/80090>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/52230>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/52230>, <http://vocab.belgif.be/auth/nace2008/80200>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/46190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1011.174.916;
+    reorg:legalName "DEEAS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.361.636.630>.
+<https://data.vlaanderen.be/id/vestiging/2.361.636.630> a org:Site;
+    dcterms:created "04-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.636.630.
+_:address_contact_1011.174.916 a locn:Address;
+    locn:thoroughfare "Vredebaan"@nl, "Vredebaan"@fr;
+    rdfs:label "53";
+    locn:postCode "2640";
+    adres:gemeentenaam "Mortsel"@nl, "Mortsel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1011.174.916 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1011.174.916.
+_:registration_company_1011.174.916 a adms:Identifier;
+    skos:notation "1011.174.916";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.636.630 a adms:Identifier;
+    skos:notation "2.361.636.630";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

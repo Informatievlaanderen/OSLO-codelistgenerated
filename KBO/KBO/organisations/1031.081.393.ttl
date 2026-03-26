@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/95210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9521>, <http://vocab.belgif.be/auth/nace2025/9521>;
+    skos:definition "Reparatie van consumentenelektronica"@nl, "Réparation de produits électroniques grand public"@fr;
+    skos:prefLabel "95210".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<http://vocab.belgif.be/auth/nace2025/95400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9540>, <http://vocab.belgif.be/auth/nace2025/9540>;
+    skos:definition "Bemiddelingsactiviteiten in verband met reparatie en onderhoud van computers, consumentenartikelen, motorvoertuigen en motorfietsen"@nl, "Activités de service d’intermédiation pour la réparation et l’entretien d’ordinateurs, de biens personnels et domestiques et d’automobiles et motocycles"@fr;
+    skos:prefLabel "95400".
+<https://data.vlaanderen.be/id/onderneming/1031.081.393> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1031.081.393;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95400>, <http://vocab.belgif.be/auth/nace2025/95210>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/95319>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Scaillet, Silvaney";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.382.899.129>.
+<https://data.vlaanderen.be/id/vestiging/2.382.899.129> a org:Site;
+    dcterms:created "02-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.382.899.129.
+_:registration_company_1031.081.393 a adms:Identifier;
+    skos:notation "1031.081.393";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.382.899.129 a adms:Identifier;
+    skos:notation "2.382.899.129";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

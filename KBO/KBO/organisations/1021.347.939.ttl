@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46360> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4636>, <http://vocab.belgif.be/auth/nace2008/4636>;
+    skos:definition "Groothandel in suiker, chocolade en suikerwerk"@nl, "Commerce de gros de sucre, de chocolat et de confiserie"@fr;
+    skos:prefLabel "46360".
+<http://vocab.belgif.be/auth/nace2008/47242> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4724>, <http://vocab.belgif.be/auth/nace2008/4724>;
+    skos:definition "Detailhandel in chocolade en suikerwerk in gespecialiseerde winkels"@nl, "Commerce de détail de chocolat et de confiserie en magasin spécialisé"@fr;
+    skos:prefLabel "47242".
+<http://vocab.belgif.be/auth/nace2008/47786> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in souvenirs en religieuze artikelen in gespecialiseerde winkels"@nl, "Commerce de détail de souvenirs et d'articles religieux en magasin spécialisé"@fr;
+    skos:prefLabel "47786".
+<http://vocab.belgif.be/auth/nace2008/47810> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4781>, <http://vocab.belgif.be/auth/nace2008/4781>;
+    skos:definition "Markt- en straathandel in voedings- en genotmiddelen"@nl, "Commerce de détail alimentaire sur éventaires et marchés"@fr;
+    skos:prefLabel "47810".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<https://data.vlaanderen.be/id/onderneming/1021.347.939> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1021.347.939;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/47242>, <http://vocab.belgif.be/auth/nace2008/47810>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47786>, <http://vocab.belgif.be/auth/nace2008/46360>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Hermie, Niels";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.371.531.125>.
+<https://data.vlaanderen.be/id/vestiging/2.371.531.125> a org:Site;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.371.531.125.
+_:registration_company_1021.347.939 a adms:Identifier;
+    skos:notation "1021.347.939";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.371.531.125 a adms:Identifier;
+    skos:notation "2.371.531.125";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

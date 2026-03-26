@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/25300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2530>, <http://vocab.belgif.be/auth/nace2025/2530>;
+    skos:definition "Vervaardiging van stoomketels, exclusief warmwaterketels voor centrale verwarming"@nl, "Fabrication de générateurs de vapeur, à l'exception des chaudières pour le chauffage central"@fr;
+    skos:prefLabel "25300".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/47631> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in wapens en munitie"@nl, "Commerce de détail d'armes et de munitions"@fr;
+    skos:prefLabel "47631".
+<https://data.vlaanderen.be/id/onderneming/1029.046.274> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.046.274;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2025/47631>, <http://vocab.belgif.be/auth/nace2025/25300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1029.046.274;
+    reorg:legalName "Pater, Boris";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.380.308.833>.
+<https://data.vlaanderen.be/id/vestiging/2.380.308.833> a org:Site;
+    dcterms:created "01-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.380.308.833.
+_:contact_1029.046.274 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "borispater@hotmail.com";
+    schema:telephone "+32472795390".
+_:registration_company_1029.046.274 a adms:Identifier;
+    skos:notation "1029.046.274";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.380.308.833 a adms:Identifier;
+    skos:notation "2.380.308.833";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

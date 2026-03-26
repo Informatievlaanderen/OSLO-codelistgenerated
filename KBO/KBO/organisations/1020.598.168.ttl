@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/1020.598.168> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1020.598.168;
+    reorg:legalName "Custers, Joris";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.370.579.139>.
+<https://data.vlaanderen.be/id/vestiging/2.370.579.139> a org:Site;
+    dcterms:created "04-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.370.579.139.
+_:registration_company_1020.598.168 a adms:Identifier;
+    skos:notation "1020.598.168";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.370.579.139 a adms:Identifier;
+    skos:notation "2.370.579.139";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

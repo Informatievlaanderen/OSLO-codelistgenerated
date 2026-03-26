@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1013>, <http://vocab.belgif.be/auth/nace2025/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2025/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1085>, <http://vocab.belgif.be/auth/nace2025/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2025/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/47222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees van wild en van gevogelte in gespecialiseerde winkels"@nl, "Commerce de détail de viande de gibier et de volaille en magasin spécialisé"@fr;
+    skos:prefLabel "47222".
+<https://data.vlaanderen.be/id/onderneming/1035.232.696> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1035.232.696;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10850>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/10130>, <http://vocab.belgif.be/auth/nace2025/46389>, <http://vocab.belgif.be/auth/nace2025/47222>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1035.232.696;
+    reorg:legalName "LAMRI"@fr.
+_:address_contact_1035.232.696 a locn:Address;
+    locn:thoroughfare "Rue Sauvage"@nl, "Rue Sauvage"@fr;
+    rdfs:label "1";
+    locn:postCode "4800";
+    adres:gemeentenaam "Verviers"@nl, "Verviers"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1035.232.696 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "lambottephilippe68@gmail.com";
+    schema:telephone "+32494080901";
+    locn:address _:address_contact_1035.232.696.
+_:registration_company_1035.232.696 a adms:Identifier;
+    skos:notation "1035.232.696";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

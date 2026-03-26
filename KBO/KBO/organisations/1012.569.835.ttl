@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2611>, <http://vocab.belgif.be/auth/nace2008/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2008/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3311>, <http://vocab.belgif.be/auth/nace2008/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/77291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77291".
+<http://vocab.belgif.be/auth/nace2008/90032> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Sanering en dergelijke activiteiten"@nl, "Dépollution et activités similaires"@fr;
+    skos:prefLabel "90032".
+<http://vocab.belgif.be/auth/nace2025/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2611>, <http://vocab.belgif.be/auth/nace2025/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/77221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77221".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<https://data.vlaanderen.be/id/onderneming/1012.569.835> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "19-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1012.569.835;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/77221>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/26110>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2008/33110>, <http://vocab.belgif.be/auth/nace2008/77291>, <http://vocab.belgif.be/auth/nace2008/46140>, <http://vocab.belgif.be/auth/nace2008/90032>, <http://vocab.belgif.be/auth/nace2008/26110>, <http://vocab.belgif.be/auth/nace2008/71121>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1012.569.835;
+    reorg:legalName "MS Engineering Plus"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.364.148.039>.
+<https://data.vlaanderen.be/id/vestiging/2.364.148.039> a org:Site;
+    dcterms:created "19-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.364.148.039.
+_:address_contact_1012.569.835 a locn:Address;
+    locn:thoroughfare "Eersels"@nl, "Eersels"@fr;
+    rdfs:label "16";
+    locn:postCode "2480";
+    adres:gemeentenaam "Dessel"@nl, "Dessel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1012.569.835 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1012.569.835.
+_:registration_company_1012.569.835 a adms:Identifier;
+    skos:notation "1012.569.835";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.364.148.039 a adms:Identifier;
+    skos:notation "2.364.148.039";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

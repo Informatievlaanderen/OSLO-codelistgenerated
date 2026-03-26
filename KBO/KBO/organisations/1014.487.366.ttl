@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311".
+<http://vocab.belgif.be/auth/nace2008/68312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Schatten en evalueren van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Estimation et évaluation de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68312".
+<http://vocab.belgif.be/auth/nace2008/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2025/68322> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van niet-residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers non résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68322".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1014.487.366> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1014.487.366;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/68322>, <http://vocab.belgif.be/auth/nace2025/68310>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2008/68312>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/68311>, <http://vocab.belgif.be/auth/nace2008/68321>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1014.487.366;
+    reorg:legalName "Michaux, Louis";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.364.256.521>.
+<https://data.vlaanderen.be/id/vestiging/2.364.256.521> a org:Site;
+    dcterms:created "02-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.364.256.521.
+_:contact_1014.487.366 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "louis.michaux2003@gmail.com";
+    schema:telephone "+32479543050".
+_:registration_company_1014.487.366 a adms:Identifier;
+    skos:notation "1014.487.366";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.364.256.521 a adms:Identifier;
+    skos:notation "2.364.256.521";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

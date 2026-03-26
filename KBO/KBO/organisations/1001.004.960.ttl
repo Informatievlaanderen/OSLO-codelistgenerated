@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1071>, <http://vocab.belgif.be/auth/nace2008/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2008/10820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1082>, <http://vocab.belgif.be/auth/nace2008/1082>;
+    skos:definition "Vervaardiging van cacao, chocolade en suikerwerk"@nl, "Fabrication de cacao, de chocolat et de produits de confiserie"@fr;
+    skos:prefLabel "10820".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1071>, <http://vocab.belgif.be/auth/nace2025/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2025/10820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1082>, <http://vocab.belgif.be/auth/nace2025/1082>;
+    skos:definition "Vervaardiging van cacao, chocolade en suikerwerk"@nl, "Fabrication de cacao, de chocolat et de produits de confiserie"@fr;
+    skos:prefLabel "10820".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/1001.004.960> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "10-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.004.960;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/10712>, <http://vocab.belgif.be/auth/nace2025/10820>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/10712>, <http://vocab.belgif.be/auth/nace2008/10820>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Kordane, Ghizlane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.350.356.817>.
+<https://data.vlaanderen.be/id/vestiging/2.350.356.817> a org:Site;
+    dcterms:created "10-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.350.356.817.
+_:registration_company_1001.004.960 a adms:Identifier;
+    skos:notation "1001.004.960";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.350.356.817 a adms:Identifier;
+    skos:notation "2.350.356.817";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

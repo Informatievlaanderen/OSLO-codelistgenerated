@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3213>, <http://vocab.belgif.be/auth/nace2025/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<https://data.vlaanderen.be/id/onderneming/1018.817.625> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1018.817.625;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/32130>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/18130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1018.817.625;
+    reorg:legalName "Leclercq, Sébastien";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.579.553>.
+<https://data.vlaanderen.be/id/vestiging/2.368.579.553> a org:Site;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.579.553.
+_:contact_1018.817.625 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "leclercqseb.inbox@gmail.com";
+    schema:telephone "+32473527674".
+_:registration_company_1018.817.625 a adms:Identifier;
+    skos:notation "1018.817.625";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.579.553 a adms:Identifier;
+    skos:notation "2.368.579.553";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

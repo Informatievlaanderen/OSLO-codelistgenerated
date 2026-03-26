@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<https://data.vlaanderen.be/id/onderneming/1012.119.873> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1012.119.873;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/77120>, <http://vocab.belgif.be/auth/nace2008/45203>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/73110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Maegt, Basil";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.362.100.151>.
+<https://data.vlaanderen.be/id/vestiging/2.362.100.151> a org:Site;
+    dcterms:created "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.362.100.151.
+_:registration_company_1012.119.873 a adms:Identifier;
+    skos:notation "1012.119.873";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.362.100.151 a adms:Identifier;
+    skos:notation "2.362.100.151";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

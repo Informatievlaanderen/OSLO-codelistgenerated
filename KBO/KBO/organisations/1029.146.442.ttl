@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1085>, <http://vocab.belgif.be/auth/nace2025/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2025/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1029.146.442> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "20-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.146.442;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46389>, <http://vocab.belgif.be/auth/nace2025/10850>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/56112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1029.146.442;
+    reorg:legalName "Hirwa Twagira, Solange";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.379.597.070>.
+<https://data.vlaanderen.be/id/vestiging/2.379.597.070> a org:Site;
+    dcterms:created "20-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.379.597.070.
+_:contact_1029.146.442 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "hirwa.solange@gmail.com";
+    schema:telephone "+32471802192".
+_:registration_company_1029.146.442 a adms:Identifier;
+    skos:notation "1029.146.442";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.379.597.070 a adms:Identifier;
+    skos:notation "2.379.597.070";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

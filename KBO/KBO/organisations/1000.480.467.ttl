@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8552>, <http://vocab.belgif.be/auth/nace2008/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2008/90012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90012".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/90042> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9004>, <http://vocab.belgif.be/auth/nace2008/9004>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90042".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2008/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/90202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90202".
+<http://vocab.belgif.be/auth/nace2025/90312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9031>, <http://vocab.belgif.be/auth/nace2025/9031>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90312".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<https://data.vlaanderen.be/id/onderneming/1000.480.467> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1000.480.467;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90202>, <http://vocab.belgif.be/auth/nace2025/94992>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/90312>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2008/90042>, <http://vocab.belgif.be/auth/nace2008/90021>, <http://vocab.belgif.be/auth/nace2008/94992>, <http://vocab.belgif.be/auth/nace2008/90012>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/85520>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1000.480.467;
+    reorg:legalName "Raices Ecuador-Bélgica ASBL"@fr, "REBASBL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.220.196>.
+<https://data.vlaanderen.be/id/vestiging/2.353.220.196> a org:Site;
+    dcterms:created "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.220.196.
+_:address_contact_1000.480.467 a locn:Address;
+    locn:thoroughfare "Reimond Stijnsstraat"@nl, "Rue Reimond Stijns"@fr;
+    rdfs:label "87";
+    locn:postCode "1080";
+    adres:gemeentenaam "Sint-Jans-Molenbeek"@nl, "Molenbeek-Saint-Jean"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1000.480.467 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "0488015723";
+    locn:address _:address_contact_1000.480.467.
+_:registration_company_1000.480.467 a adms:Identifier;
+    skos:notation "1000.480.467";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.220.196 a adms:Identifier;
+    skos:notation "2.353.220.196";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

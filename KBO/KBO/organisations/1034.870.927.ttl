@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4764>, <http://vocab.belgif.be/auth/nace2025/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2025/77391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van speel-, amusement-, en verkoopautomaten"@nl, "Location et location-bail de machines à sous, de machines de jeux et de machines automatiques de vente de produits"@fr;
+    skos:prefLabel "77391".
+<https://data.vlaanderen.be/id/onderneming/1034.870.927> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1034.870.927;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/47640>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47793>, <http://vocab.belgif.be/auth/nace2025/77391>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1034.870.927;
+    reorg:legalName "Games & Co"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.386.677.278>.
+<https://data.vlaanderen.be/id/vestiging/2.386.677.278> a org:Site;
+    dcterms:created "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.386.677.278.
+_:address_contact_1034.870.927 a locn:Address;
+    locn:thoroughfare "Alfons Pieterslaan"@nl, "Alfons Pieterslaan"@fr;
+    rdfs:label "8";
+    locn:postCode "8400";
+    adres:gemeentenaam "Oostende"@nl, "Oostende"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1034.870.927 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1034.870.927.
+_:registration_company_1034.870.927 a adms:Identifier;
+    skos:notation "1034.870.927";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.386.677.278 a adms:Identifier;
+    skos:notation "2.386.677.278";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

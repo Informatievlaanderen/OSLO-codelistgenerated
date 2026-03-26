@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/41002> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van kantoorgebouwen"@nl, "Construction générale d'immeubles de bureaux"@fr;
+    skos:prefLabel "41002".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<https://data.vlaanderen.be/id/onderneming/1024.270.510> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.270.510;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/41002>, <http://vocab.belgif.be/auth/nace2025/42220>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/41003>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1024.270.510;
+    reorg:legalName "Demiro Technics"@nl.
+_:address_contact_1024.270.510 a locn:Address;
+    locn:thoroughfare "Steenhovenstraat"@nl, "Steenhovenstraat"@fr;
+    rdfs:label "4";
+    locn:postCode "3530";
+    adres:gemeentenaam "Houthalen-Helchteren"@nl, "Houthalen-Helchteren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1024.270.510 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1024.270.510.
+_:registration_company_1024.270.510 a adms:Identifier;
+    skos:notation "1024.270.510";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

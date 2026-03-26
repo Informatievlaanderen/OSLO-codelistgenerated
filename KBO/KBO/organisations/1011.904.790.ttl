@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/74103> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van grafische designers"@nl, "Activités de design graphique"@fr;
+    skos:prefLabel "74103".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1011.904.790> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1011.904.790;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2008/63990>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/74103>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1011.904.790;
+    reorg:legalName "AMEMAR group"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.362.166.764>.
+<https://data.vlaanderen.be/id/vestiging/2.362.166.764> a org:Site;
+    dcterms:created "24-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.362.166.764.
+_:address_contact_1011.904.790 a locn:Address;
+    locn:thoroughfare "Frankrijklei"@nl, "Frankrijklei"@fr;
+    rdfs:label "5";
+    adres:busnummer "401";
+    locn:postCode "2000";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1011.904.790 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1011.904.790.
+_:registration_company_1011.904.790 a adms:Identifier;
+    skos:notation "1011.904.790";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.362.166.764 a adms:Identifier;
+    skos:notation "2.362.166.764";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/1022.289.532> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.289.532;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/14210>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/95290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1022.289.532;
+    reorg:legalName "Van Driessche, Isabelle";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.372.576.943>.
+<https://data.vlaanderen.be/id/vestiging/2.372.576.943> a org:Site;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.372.576.943.
+_:contact_1022.289.532 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "i.vandriessche@hotmail.com";
+    schema:telephone "+32473560162".
+_:registration_company_1022.289.532 a adms:Identifier;
+    skos:notation "1022.289.532";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.372.576.943 a adms:Identifier;
+    skos:notation "2.372.576.943";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

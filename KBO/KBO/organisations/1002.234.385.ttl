@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/42130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4213>, <http://vocab.belgif.be/auth/nace2008/4213>;
+    skos:definition "Bouw van bruggen en tunnels"@nl, "Construction de ponts et de tunnels"@fr;
+    skos:prefLabel "42130".
+<http://vocab.belgif.be/auth/nace2008/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2008/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2008/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4222>, <http://vocab.belgif.be/auth/nace2008/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/42130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4213>, <http://vocab.belgif.be/auth/nace2025/4213>;
+    skos:definition "Bouw van bruggen en tunnels"@nl, "Construction de ponts et de tunnels"@fr;
+    skos:prefLabel "42130".
+<http://vocab.belgif.be/auth/nace2025/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2025/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<https://data.vlaanderen.be/id/onderneming/1002.234.385> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1002.234.385;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42130>, <http://vocab.belgif.be/auth/nace2025/42212>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/42220>, <http://vocab.belgif.be/auth/nace2025/42219>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2008/42220>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/42130>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/42212>, <http://vocab.belgif.be/auth/nace2008/42219>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1002.234.385;
+    reorg:legalName "Tijdelijke Maatschap LIEMA - Mols Contractors"@nl, "TM Liema - Mols"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.700.860>.
+<https://data.vlaanderen.be/id/vestiging/2.351.700.860> a org:Site;
+    dcterms:created "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.700.860.
+_:address_contact_1002.234.385 a locn:Address;
+    locn:thoroughfare "Ambachtenlaan"@nl, "Ambachtenlaan"@fr;
+    rdfs:label "42";
+    locn:postCode "3300";
+    adres:gemeentenaam "Tienen"@nl, "Tienen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1002.234.385 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1002.234.385.
+_:registration_company_1002.234.385 a adms:Identifier;
+    skos:notation "1002.234.385";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.700.860 a adms:Identifier;
+    skos:notation "2.351.700.860";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

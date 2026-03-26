@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/94120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9412>, <http://vocab.belgif.be/auth/nace2025/9412>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités des organisations professionnelles"@fr;
+    skos:prefLabel "94120".
+<http://vocab.belgif.be/auth/nace2025/94993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van ziektepreventie en gezondheidsbevordering"@nl, "Associations pour la prévention de la santé"@fr;
+    skos:prefLabel "94993".
+<https://data.vlaanderen.be/id/onderneming/1009.400.707> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "15-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1009.400.707;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/94993>, <http://vocab.belgif.be/auth/nace2025/94120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1009.400.707;
+    reorg:legalName "Association de Soutien aux Kinésithérapeutes"@fr, "ASK"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.359.410.281>.
+<https://data.vlaanderen.be/id/vestiging/2.359.410.281> a org:Site;
+    dcterms:created "15-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.359.410.281.
+_:address_contact_1009.400.707 a locn:Address;
+    locn:thoroughfare "Rue du Traîneau"@nl, "Rue du Traîneau"@fr;
+    rdfs:label "28c";
+    locn:postCode "7170";
+    adres:gemeentenaam "Manage"@nl, "Manage"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1009.400.707 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@ask-kine.be";
+    schema:telephone "0497 10 58 61";
+    <http://xmlns.com/foaf/0.1/homepage> "ask-kine.be/";
+    locn:address _:address_contact_1009.400.707.
+_:registration_company_1009.400.707 a adms:Identifier;
+    skos:notation "1009.400.707";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.359.410.281 a adms:Identifier;
+    skos:notation "2.359.410.281";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

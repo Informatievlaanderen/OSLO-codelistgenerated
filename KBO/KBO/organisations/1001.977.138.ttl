@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5630>, <http://vocab.belgif.be/auth/nace2008/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2008/59140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5914>, <http://vocab.belgif.be/auth/nace2008/5914>;
+    skos:definition "Vertoning van films"@nl, "Projection de films cinématographiques"@fr;
+    skos:prefLabel "59140".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2008/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<http://vocab.belgif.be/auth/nace2008/94994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van milieu en mobiliteit"@nl, "Associations pour l'environnement et la mobilité"@fr;
+    skos:prefLabel "94994".
+<http://vocab.belgif.be/auth/nace2025/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2025/59140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5914>, <http://vocab.belgif.be/auth/nace2025/5914>;
+    skos:definition "Vertoning van films"@nl, "Projection de films cinématographiques"@fr;
+    skos:prefLabel "59140".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<http://vocab.belgif.be/auth/nace2025/94994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van milieu en mobiliteit"@nl, "Associations pour l'environnement et la mobilité"@fr;
+    skos:prefLabel "94994".
+<https://data.vlaanderen.be/id/onderneming/1001.977.138> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.977.138;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/59140>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/94994>, <http://vocab.belgif.be/auth/nace2025/56301>, <http://vocab.belgif.be/auth/nace2025/94992>, <http://vocab.belgif.be/auth/nace2008/59140>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/94992>, <http://vocab.belgif.be/auth/nace2008/56301>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/94994>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.977.138;
+    reorg:legalName "FORUM UMBERTO NOBILE"@fr, "FUN"@fr.
+_:address_contact_1001.977.138 a locn:Address;
+    locn:thoroughfare "Rue des Bas-Sarts"@nl, "Rue des Bas-Sarts"@fr;
+    rdfs:label "155";
+    locn:postCode "4100";
+    adres:gemeentenaam "Seraing"@nl, "Seraing"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.977.138 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "forumumbertonobile@gmail.com";
+    locn:address _:address_contact_1001.977.138.
+_:registration_company_1001.977.138 a adms:Identifier;
+    skos:notation "1001.977.138";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

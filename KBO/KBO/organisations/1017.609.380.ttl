@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/46392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4639>, <http://vocab.belgif.be/auth/nace2025/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in niet-diepgevroren voedingsmiddelen, dranken en genotmiddelen"@nl, "Commerce de gros non spécialisé de denrées non-surgelées, boissons et tabac"@fr;
+    skos:prefLabel "46392".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4726>, <http://vocab.belgif.be/auth/nace2025/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/64999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6499>, <http://vocab.belgif.be/auth/nace2025/6499>;
+    skos:definition "Overige financiële dienstverlening"@nl, "Autres activités des services financiers"@fr;
+    skos:prefLabel "64999".
+<https://data.vlaanderen.be/id/onderneming/1017.609.380> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1017.609.380;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47110>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/64999>, <http://vocab.belgif.be/auth/nace2025/47260>, <http://vocab.belgif.be/auth/nace2025/46392>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1017.609.380;
+    reorg:legalName "ArmMix"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.367.787.618>.
+<https://data.vlaanderen.be/id/vestiging/2.367.787.618> a org:Site;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.367.787.618.
+_:address_contact_1017.609.380 a locn:Address;
+    locn:thoroughfare "Ankerstraat"@nl, "Ankerstraat"@fr;
+    rdfs:label "95-97";
+    locn:postCode "9100";
+    adres:gemeentenaam "Sint-Niklaas"@nl, "Sint-Niklaas"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1017.609.380 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1017.609.380.
+_:registration_company_1017.609.380 a adms:Identifier;
+    skos:notation "1017.609.380";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.367.787.618 a adms:Identifier;
+    skos:notation "2.367.787.618";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

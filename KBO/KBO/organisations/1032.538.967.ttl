@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3299>, <http://vocab.belgif.be/auth/nace2025/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<https://data.vlaanderen.be/id/onderneming/1032.538.967> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1032.538.967;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32990>, <http://vocab.belgif.be/auth/nace2025/47559>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1032.538.967;
+    reorg:legalName "Malisoux, Raphaël";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.383.856.459>.
+<https://data.vlaanderen.be/id/vestiging/2.383.856.459> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.383.856.459.
+_:contact_1032.538.967 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "rmalisoux@yahoo.fr";
+    schema:telephone "+32474975119".
+_:registration_company_1032.538.967 a adms:Identifier;
+    skos:notation "1032.538.967";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.383.856.459 a adms:Identifier;
+    skos:notation "2.383.856.459";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

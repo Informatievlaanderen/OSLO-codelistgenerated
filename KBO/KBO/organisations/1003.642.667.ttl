@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/16100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1610>, <http://vocab.belgif.be/auth/nace2008/1610>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16100".
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4334>, <http://vocab.belgif.be/auth/nace2008/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2008/74103> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van grafische designers"@nl, "Activités de design graphique"@fr;
+    skos:prefLabel "74103".
+<http://vocab.belgif.be/auth/nace2025/16110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1611>, <http://vocab.belgif.be/auth/nace2025/1611>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16110".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/43341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4334>, <http://vocab.belgif.be/auth/nace2025/4334>;
+    skos:definition "Schilderen van gebouwen"@nl, "Peinture de bâtiments"@fr;
+    skos:prefLabel "43341".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/1003.642.667> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1003.642.667;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16110>, <http://vocab.belgif.be/auth/nace2025/43341>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2008/74103>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/43341>, <http://vocab.belgif.be/auth/nace2008/16100>, <http://vocab.belgif.be/auth/nace2008/47592>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van den Broeck, Kristof";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.549.404>.
+<https://data.vlaanderen.be/id/vestiging/2.353.549.404> a org:Site;
+    dcterms:created "02-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.549.404.
+_:registration_company_1003.642.667 a adms:Identifier;
+    skos:notation "1003.642.667";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.549.404 a adms:Identifier;
+    skos:notation "2.353.549.404";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

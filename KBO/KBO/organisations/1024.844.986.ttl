@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<https://data.vlaanderen.be/id/onderneming/1024.844.986> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "27-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.844.986;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85699>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/59113>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1024.844.986;
+    reorg:legalName "Tech for Commons"@fr, "TfC"@fr.
+_:address_contact_1024.844.986 a locn:Address;
+    locn:thoroughfare "François Gaystraat"@nl, "Rue François Gay"@fr;
+    rdfs:label "310";
+    adres:busnummer "10";
+    locn:postCode "1150";
+    adres:gemeentenaam "Sint-Pieters-Woluwe"@nl, "Woluwe-Saint-Pierre"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1024.844.986 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "stefmerle00@gmail.com";
+    <http://xmlns.com/foaf/0.1/homepage> "techforcommons.com";
+    locn:address _:address_contact_1024.844.986.
+_:registration_company_1024.844.986 a adms:Identifier;
+    skos:notation "1024.844.986";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

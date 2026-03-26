@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/46693> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46693".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/46643> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46643".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/1008.158.315> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1008.158.315;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/46643>, <http://vocab.belgif.be/auth/nace2025/90393>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/90023>, <http://vocab.belgif.be/auth/nace2008/33200>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/46693>, <http://vocab.belgif.be/auth/nace2008/82300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1008.158.315;
+    reorg:legalName "KHAZA CONSULTING"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.358.969.328>.
+<https://data.vlaanderen.be/id/vestiging/2.358.969.328> a org:Site;
+    dcterms:created "08-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.358.969.328.
+_:address_contact_1008.158.315 a locn:Address;
+    locn:thoroughfare "Tijllaan"@nl, "Tijllaan"@fr;
+    rdfs:label "18";
+    locn:postCode "2900";
+    adres:gemeentenaam "Schoten"@nl, "Schoten"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1008.158.315 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "saif.khaza@hotmail.com";
+    locn:address _:address_contact_1008.158.315.
+_:registration_company_1008.158.315 a adms:Identifier;
+    skos:notation "1008.158.315";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.358.969.328 a adms:Identifier;
+    skos:notation "2.358.969.328";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

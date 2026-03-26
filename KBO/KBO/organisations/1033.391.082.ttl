@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4791>, <http://vocab.belgif.be/auth/nace2025/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1033.391.082> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "22-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.391.082;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47639>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47910>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/62900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1033.391.082;
+    reorg:legalName "Aura-Gymwear SS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.711.544>.
+<https://data.vlaanderen.be/id/vestiging/2.384.711.544> a org:Site;
+    dcterms:created "22-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.711.544.
+_:address_contact_1033.391.082 a locn:Address;
+    locn:thoroughfare "Meerkolstraat(M)"@nl, "Meerkolstraat(M)"@fr;
+    rdfs:label "2";
+    locn:postCode "3630";
+    adres:gemeentenaam "Maasmechelen"@nl, "Maasmechelen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1033.391.082 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "salva.carlisi@hotmail.com";
+    locn:address _:address_contact_1033.391.082.
+_:registration_company_1033.391.082 a adms:Identifier;
+    skos:notation "1033.391.082";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.711.544 a adms:Identifier;
+    skos:notation "2.384.711.544";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

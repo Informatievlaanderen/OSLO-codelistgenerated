@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/23410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2341>, <http://vocab.belgif.be/auth/nace2025/2341>;
+    skos:definition "Vervaardiging van huishoudelijk en sieraardewerk"@nl, "Fabrication d'articles céramiques à usage domestique ou ornemental"@fr;
+    skos:prefLabel "23410".
+<http://vocab.belgif.be/auth/nace2025/47553> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in glas-, porselein- en aardewerk en in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de détail d'appareils ménagers non électriques, de vaisselle, de verrerie, de porcelaine et de poterie"@fr;
+    skos:prefLabel "47553".
+<http://vocab.belgif.be/auth/nace2025/74910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7491>, <http://vocab.belgif.be/auth/nace2025/7491>;
+    skos:definition "Bemiddeling in en het in de handel brengen van octrooien"@nl, "Activités d'intermédiation et commercialisation de brevets"@fr;
+    skos:prefLabel "74910".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1021.263.312> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1021.263.312;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23410>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/47553>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/74910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "L'Hostis, Jacqueline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.371.642.377>.
+<https://data.vlaanderen.be/id/vestiging/2.371.642.377> a org:Site;
+    dcterms:created "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.371.642.377.
+_:registration_company_1021.263.312 a adms:Identifier;
+    skos:notation "1021.263.312";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.371.642.377 a adms:Identifier;
+    skos:notation "2.371.642.377";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

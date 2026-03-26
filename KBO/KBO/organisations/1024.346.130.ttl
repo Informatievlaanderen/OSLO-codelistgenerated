@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/30920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3092>, <http://vocab.belgif.be/auth/nace2025/3092>;
+    skos:definition "Vervaardiging van fietsen en invalidenwagens"@nl, "Fabrication de bicyclettes et de véhicules pour invalides"@fr;
+    skos:prefLabel "30920".
+<http://vocab.belgif.be/auth/nace2025/46495> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in fietsen"@nl, "Commerce de gros de cycles"@fr;
+    skos:prefLabel "46495".
+<http://vocab.belgif.be/auth/nace2025/47632> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in fietsen"@nl, "Commerce de détail de cycles"@fr;
+    skos:prefLabel "47632".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1024.346.130> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/706>;
+    dcterms:created "16-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1024.346.130;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/30920>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77210>, <http://vocab.belgif.be/auth/nace2025/46495>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47632>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1024.346.130;
+    reorg:legalName "Shifti"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.378.903.917>.
+<https://data.vlaanderen.be/id/vestiging/2.378.903.917> a org:Site;
+    dcterms:created "16-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.903.917.
+_:address_contact_1024.346.130 a locn:Address;
+    locn:thoroughfare "Rue de l'Académie"@nl, "Rue de l'Académie"@fr;
+    rdfs:label "53";
+    locn:postCode "4000";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1024.346.130 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@shifti.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.shfti.be";
+    locn:address _:address_contact_1024.346.130.
+_:registration_company_1024.346.130 a adms:Identifier;
+    skos:notation "1024.346.130";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.903.917 a adms:Identifier;
+    skos:notation "2.378.903.917";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

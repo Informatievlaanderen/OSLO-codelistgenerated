@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0161>, <http://vocab.belgif.be/auth/nace2008/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5320>, <http://vocab.belgif.be/auth/nace2008/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/96021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Haarverzorging"@nl, "Coiffure"@fr;
+    skos:prefLabel "96021".
+<http://vocab.belgif.be/auth/nace2025/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0161>, <http://vocab.belgif.be/auth/nace2025/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5320>, <http://vocab.belgif.be/auth/nace2025/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/96210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9621>, <http://vocab.belgif.be/auth/nace2025/9621>;
+    skos:definition "Kappers- en barbiersactiviteiten"@nl, "Coiffure et activités de barbier"@fr;
+    skos:prefLabel "96210".
+<https://data.vlaanderen.be/id/onderneming/1005.494.971> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1005.494.971;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01610>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/96210>, <http://vocab.belgif.be/auth/nace2025/53200>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2008/01610>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/96021>, <http://vocab.belgif.be/auth/nace2008/53200>, <http://vocab.belgif.be/auth/nace2008/90021>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1005.494.971;
+    reorg:legalName "MONT BAMBOUTOS ASBL"@fr.
+_:address_contact_1005.494.971 a locn:Address;
+    locn:thoroughfare "Rue Grand-Vinâve"@nl, "Rue Grand-Vinâve"@fr;
+    rdfs:label "70";
+    locn:postCode "4101";
+    adres:gemeentenaam "Seraing"@nl, "Seraing"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1005.494.971 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1005.494.971.
+_:registration_company_1005.494.971 a adms:Identifier;
+    skos:notation "1005.494.971";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

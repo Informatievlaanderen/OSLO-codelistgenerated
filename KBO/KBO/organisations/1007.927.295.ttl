@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Gevelreiniging"@nl, "Ravalement des façades"@fr;
+    skos:prefLabel "43992".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1007.927.295> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.927.295;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/43992>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bodnaras, Alexandru";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.357.645.673>.
+<https://data.vlaanderen.be/id/vestiging/2.357.645.673> a org:Site;
+    dcterms:created "02-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.645.673.
+_:registration_company_1007.927.295 a adms:Identifier;
+    skos:notation "1007.927.295";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.645.673 a adms:Identifier;
+    skos:notation "2.357.645.673";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

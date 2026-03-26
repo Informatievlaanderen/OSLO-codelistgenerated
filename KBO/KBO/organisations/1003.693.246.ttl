@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<https://data.vlaanderen.be/id/onderneming/1003.693.246> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "20-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1003.693.246;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2008/63990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1003.693.246;
+    reorg:legalName "RICONTECH"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.336.893>.
+<https://data.vlaanderen.be/id/vestiging/2.353.336.893> a org:Site;
+    dcterms:created "20-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.336.893.
+_:address_contact_1003.693.246 a locn:Address;
+    locn:thoroughfare "Foreestelaan"@nl, "Foreestelaan"@fr;
+    rdfs:label "28";
+    locn:postCode "9000";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1003.693.246 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1003.693.246.
+_:registration_company_1003.693.246 a adms:Identifier;
+    skos:notation "1003.693.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.336.893 a adms:Identifier;
+    skos:notation "2.353.336.893";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/1005.526.348> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1005.526.348;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/25110>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2025/47521>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/77320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1005.526.348;
+    reorg:legalName "BRADICO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.355.456.047>.
+<https://data.vlaanderen.be/id/vestiging/2.355.456.047> a org:Site;
+    dcterms:created "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.355.456.047.
+_:address_contact_1005.526.348 a locn:Address;
+    locn:thoroughfare "Venlosesteenweg (Oph)"@nl, "Venlosesteenweg (Oph)"@fr;
+    rdfs:label "418";
+    locn:postCode "3640";
+    adres:gemeentenaam "Kinrooi"@nl, "Kinrooi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1005.526.348 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1005.526.348.
+_:registration_company_1005.526.348 a adms:Identifier;
+    skos:notation "1005.526.348";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.355.456.047 a adms:Identifier;
+    skos:notation "2.355.456.047";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

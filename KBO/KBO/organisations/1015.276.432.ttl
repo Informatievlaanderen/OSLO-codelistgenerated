@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1610>, <http://vocab.belgif.be/auth/nace2008/1610>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16100".
+<http://vocab.belgif.be/auth/nace2008/16210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1621>, <http://vocab.belgif.be/auth/nace2008/1621>;
+    skos:definition "Vervaardiging van fineer en van panelen op basis van hout"@nl, "Fabrication de placage et de panneaux de bois"@fr;
+    skos:prefLabel "16210".
+<http://vocab.belgif.be/auth/nace2008/46732> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46732".
+<http://vocab.belgif.be/auth/nace2008/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/16110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1611>, <http://vocab.belgif.be/auth/nace2025/1611>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16110".
+<http://vocab.belgif.be/auth/nace2025/16210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1621>, <http://vocab.belgif.be/auth/nace2025/1621>;
+    skos:definition "Vervaardiging van fineer en van panelen op basis van hout"@nl, "Fabrication de placage et de panneaux de bois"@fr;
+    skos:prefLabel "16210".
+<http://vocab.belgif.be/auth/nace2025/46832> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46832".
+<http://vocab.belgif.be/auth/nace2025/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/1015.276.432> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1015.276.432;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/46832>, <http://vocab.belgif.be/auth/nace2025/16210>, <http://vocab.belgif.be/auth/nace2025/16110>, <http://vocab.belgif.be/auth/nace2025/47522>, <http://vocab.belgif.be/auth/nace2008/16210>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/16100>, <http://vocab.belgif.be/auth/nace2008/46732>, <http://vocab.belgif.be/auth/nace2008/47522>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1015.276.432;
+    reorg:legalName "SCIERIE DE MARLAGNE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.365.879.884>.
+<https://data.vlaanderen.be/id/vestiging/2.365.879.884> a org:Site;
+    dcterms:created "18-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.879.884.
+_:address_contact_1015.276.432 a locn:Address;
+    locn:thoroughfare "Rue de Marlagne,S.-St-L."@nl, "Rue de Marlagne,S.-St-L."@fr;
+    rdfs:label "11";
+    locn:postCode "5070";
+    adres:gemeentenaam "Fosses-la-Ville"@nl, "Fosses-la-Ville"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1015.276.432 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "j.toussaint@live.be";
+    schema:telephone "+32478996643";
+    locn:address _:address_contact_1015.276.432.
+_:registration_company_1015.276.432 a adms:Identifier;
+    skos:notation "1015.276.432";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.879.884 a adms:Identifier;
+    skos:notation "2.365.879.884";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

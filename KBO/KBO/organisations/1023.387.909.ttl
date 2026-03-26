@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/29201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2920>, <http://vocab.belgif.be/auth/nace2025/2920>;
+    skos:definition "Vervaardiging van carrosserieën voor motorvoertuigen"@nl, "Fabrication de carrosseries de véhicules automobiles"@fr;
+    skos:prefLabel "29201".
+<http://vocab.belgif.be/auth/nace2025/46713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in aanhangwagens, opleggers en caravans"@nl, "Commerce de gros de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "46713".
+<http://vocab.belgif.be/auth/nace2025/77393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van caravans en motorhomes"@nl, "Location et location-bail de caravanes et de motorhomes"@fr;
+    skos:prefLabel "77393".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/77510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7751>, <http://vocab.belgif.be/auth/nace2025/7751>;
+    skos:definition "Bemiddeling in verband met verhuur en leasing van auto’s, campers en aanhangwagens"@nl, "Activités de service d’intermédiation pour la location et la location-bail de voitures, camping-cars et caravanes"@fr;
+    skos:prefLabel "77510".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1023.387.909> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.387.909;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46713>, <http://vocab.belgif.be/auth/nace2025/29201>, <http://vocab.belgif.be/auth/nace2025/77510>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/77393>, <http://vocab.belgif.be/auth/nace2025/77399>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Paeshuyse, Stefan".
+_:registration_company_1023.387.909 a adms:Identifier;
+    skos:notation "1023.387.909";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

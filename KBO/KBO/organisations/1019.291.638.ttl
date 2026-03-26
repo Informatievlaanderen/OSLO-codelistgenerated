@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/14100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1410>, <http://vocab.belgif.be/auth/nace2025/1410>;
+    skos:definition "Vervaardiging van gebreide en gehaakte kleding"@nl, "Fabrication d'articles à mailles"@fr;
+    skos:prefLabel "14100".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1512>, <http://vocab.belgif.be/auth/nace2025/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5811>, <http://vocab.belgif.be/auth/nace2025/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<https://data.vlaanderen.be/id/onderneming/1019.291.638> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1019.291.638;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/14100>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/15120>, <http://vocab.belgif.be/auth/nace2025/58110>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/14210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Van Lancker, Emma";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.369.124.535>.
+<https://data.vlaanderen.be/id/vestiging/2.369.124.535> a org:Site;
+    dcterms:created "16-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.369.124.535.
+_:registration_company_1019.291.638 a adms:Identifier;
+    skos:notation "1019.291.638";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.369.124.535 a adms:Identifier;
+    skos:notation "2.369.124.535";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/33150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3315>, <http://vocab.belgif.be/auth/nace2025/3315>;
+    skos:definition "Reparatie en onderhoud van schepen"@nl, "Réparation et maintenance navale"@fr;
+    skos:prefLabel "33150".
+<http://vocab.belgif.be/auth/nace2025/50400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5040>, <http://vocab.belgif.be/auth/nace2025/5040>;
+    skos:definition "Handel in en onderhoud en reparatie van motorrijwielen en onderdelen en toebehoren van motorrijwielen"@nl, "Commerce, entretien et réparation de motocycles, y compris pièces et accessoires"@fr;
+    skos:prefLabel "50400".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8553>, <http://vocab.belgif.be/auth/nace2025/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<http://vocab.belgif.be/auth/nace2025/93126> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9312>, <http://vocab.belgif.be/auth/nace2025/9312>;
+    skos:definition "Activiteiten van watersportclubs"@nl, "Activités de clubs de sports nautiques"@fr;
+    skos:prefLabel "93126".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1018.389.241> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1018.389.241;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/33150>, <http://vocab.belgif.be/auth/nace2025/85532>, <http://vocab.belgif.be/auth/nace2025/50400>, <http://vocab.belgif.be/auth/nace2025/93126>, <http://vocab.belgif.be/auth/nace2025/77210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1018.389.241;
+    reorg:legalName "AZIMUT BOAT"@fr.
+_:address_contact_1018.389.241 a locn:Address;
+    locn:thoroughfare "Rue Petite Coyarde"@nl, "Rue Petite Coyarde"@fr;
+    rdfs:label "6";
+    locn:postCode "1367";
+    adres:gemeentenaam "Ramillies"@nl, "Ramillies"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1018.389.241 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1018.389.241.
+_:registration_company_1018.389.241 a adms:Identifier;
+    skos:notation "1018.389.241";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

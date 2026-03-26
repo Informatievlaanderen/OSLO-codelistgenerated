@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47511> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in kledingstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de tissus d'habillement en magasin spécialisé"@fr;
+    skos:prefLabel "47511".
+<http://vocab.belgif.be/auth/nace2025/47511> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in kledingstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de tissus d'habillement en magasin spécialisé"@fr;
+    skos:prefLabel "47511".
+<https://data.vlaanderen.be/id/onderneming/1011.286.069> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "10-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1011.286.069;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47511>, <http://vocab.belgif.be/auth/nace2008/47511>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Schuler, Nathalie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.361.183.403>.
+<https://data.vlaanderen.be/id/vestiging/2.361.183.403> a org:Site;
+    dcterms:created "10-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.183.403.
+_:registration_company_1011.286.069 a adms:Identifier;
+    skos:notation "1011.286.069";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.183.403 a adms:Identifier;
+    skos:notation "2.361.183.403";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-07-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

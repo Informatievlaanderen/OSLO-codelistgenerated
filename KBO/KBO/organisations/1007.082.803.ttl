@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van hoeden en petten"@nl, "Fabrication de chapeaux et de bonnets"@fr;
+    skos:prefLabel "14191".
+<http://vocab.belgif.be/auth/nace2008/14200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1420>, <http://vocab.belgif.be/auth/nace2008/1420>;
+    skos:definition "Vervaardiging van artikelen van bont"@nl, "Fabrication d'articles en fourrure"@fr;
+    skos:prefLabel "14200".
+<http://vocab.belgif.be/auth/nace2008/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1512>, <http://vocab.belgif.be/auth/nace2008/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/14240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1424>, <http://vocab.belgif.be/auth/nace2025/1424>;
+    skos:definition "Vervaardiging van kleding van leer en van bont"@nl, "Fabrication de vêtements en cuir et en fourrure"@fr;
+    skos:prefLabel "14240".
+<http://vocab.belgif.be/auth/nace2025/14291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van hoeden en petten"@nl, "Fabrication de chapeaux et de bonnets"@fr;
+    skos:prefLabel "14291".
+<http://vocab.belgif.be/auth/nace2025/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1512>, <http://vocab.belgif.be/auth/nace2025/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/1007.082.803> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.082.803;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/15120>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/14240>, <http://vocab.belgif.be/auth/nace2025/14291>, <http://vocab.belgif.be/auth/nace2008/15120>, <http://vocab.belgif.be/auth/nace2008/14200>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/14191>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bleecke, Mijke";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.356.794.944>.
+<https://data.vlaanderen.be/id/vestiging/2.356.794.944> a org:Site;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.356.794.944.
+_:registration_company_1007.082.803 a adms:Identifier;
+    skos:notation "1007.082.803";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.356.794.944 a adms:Identifier;
+    skos:notation "2.356.794.944";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

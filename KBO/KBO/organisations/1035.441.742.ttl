@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/1035.441.742> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "12-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1035.441.742;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/62100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1035.441.742;
+    reorg:legalName "Lwa Consulting & support"@nl, "LWA"@nl.
+_:address_contact_1035.441.742 a locn:Address;
+    locn:thoroughfare "A.E. Verbiststraat"@nl, "A.E. Verbiststraat"@fr;
+    rdfs:label "30";
+    locn:postCode "3060";
+    adres:gemeentenaam "Bertem"@nl, "Bertem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1035.441.742 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "laurent.wandestrick@me.com";
+    locn:address _:address_contact_1035.441.742.
+_:registration_company_1035.441.742 a adms:Identifier;
+    skos:notation "1035.441.742";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-03-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

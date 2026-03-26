@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/60390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6039>, <http://vocab.belgif.be/auth/nace2025/6039>;
+    skos:definition "Andere activiteiten op het gebied van de verspreiding van inhoud"@nl, "Autres activités de distribution de contenu"@fr;
+    skos:prefLabel "60390".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<https://data.vlaanderen.be/id/onderneming/1033.562.120> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "18-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.562.120;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85593>, <http://vocab.belgif.be/auth/nace2025/60390>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47690>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van de Woestyne, Veronique";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.254.456>.
+<https://data.vlaanderen.be/id/vestiging/2.384.254.456> a org:Site;
+    dcterms:created "18-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.254.456.
+_:registration_company_1033.562.120 a adms:Identifier;
+    skos:notation "1033.562.120";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.254.456 a adms:Identifier;
+    skos:notation "2.384.254.456";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

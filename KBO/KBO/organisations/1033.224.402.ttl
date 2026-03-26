@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/43600> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4360>, <http://vocab.belgif.be/auth/nace2025/4360>;
+    skos:definition "Bemiddelingsactiviteiten in verband met gespecialiseerde bouwnijverheid"@nl, "Activités de service d’intermédiation pour des travaux de construction spécialisés"@fr;
+    skos:prefLabel "43600".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/1033.224.402> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1033.224.402;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/71111>, <http://vocab.belgif.be/auth/nace2025/43600>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/68121>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Heijndrickx, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.385.500.115>.
+<https://data.vlaanderen.be/id/vestiging/2.385.500.115> a org:Site;
+    dcterms:created "16-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.385.500.115.
+_:registration_company_1033.224.402 a adms:Identifier;
+    skos:notation "1033.224.402";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.385.500.115 a adms:Identifier;
+    skos:notation "2.385.500.115";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

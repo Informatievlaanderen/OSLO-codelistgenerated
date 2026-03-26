@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<http://vocab.belgif.be/auth/nace2025/95400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9540>, <http://vocab.belgif.be/auth/nace2025/9540>;
+    skos:definition "Bemiddelingsactiviteiten in verband met reparatie en onderhoud van computers, consumentenartikelen, motorvoertuigen en motorfietsen"@nl, "Activités de service d’intermédiation pour la réparation et l’entretien d’ordinateurs, de biens personnels et domestiques et d’automobiles et motocycles"@fr;
+    skos:prefLabel "95400".
+<https://data.vlaanderen.be/id/onderneming/1031.977.852> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1031.977.852;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/95316>, <http://vocab.belgif.be/auth/nace2025/95319>, <http://vocab.belgif.be/auth/nace2025/95400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1031.977.852;
+    reorg:legalName "Ksiazek, Filip";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.382.457.580>.
+<https://data.vlaanderen.be/id/vestiging/2.382.457.580> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.382.457.580.
+_:contact_1031.977.852 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "filipksiazek@gmail.com";
+    schema:telephone "+32489651537".
+_:registration_company_1031.977.852 a adms:Identifier;
+    skos:notation "1031.977.852";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.382.457.580 a adms:Identifier;
+    skos:notation "2.382.457.580";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

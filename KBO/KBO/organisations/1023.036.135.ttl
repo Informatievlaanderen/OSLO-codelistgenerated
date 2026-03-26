@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/77223> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van vaat- en glaswerk, keuken- en tafelgerei, elektrische huishoudapparaten en andere huishoudelijke benodigdheden"@nl, "Location et location-bail de vaisselle, couverts, verrerie, articles pour la cuisine, appareils électriques et électroménagers"@fr;
+    skos:prefLabel "77223".
+<http://vocab.belgif.be/auth/nace2025/77226> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van bloemen en planten"@nl, "Location et location-bail de fleurs et de plantes"@fr;
+    skos:prefLabel "77226".
+<http://vocab.belgif.be/auth/nace2025/77392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van tenten"@nl, "Location et location-bail de tentes"@fr;
+    skos:prefLabel "77392".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<https://data.vlaanderen.be/id/onderneming/1023.036.135> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "06-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.036.135;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/77226>, <http://vocab.belgif.be/auth/nace2025/77223>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/77392>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bruffaerts, Valentin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.373.152.807>.
+<https://data.vlaanderen.be/id/vestiging/2.373.152.807> a org:Site;
+    dcterms:created "06-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.152.807.
+_:registration_company_1023.036.135 a adms:Identifier;
+    skos:notation "1023.036.135";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.152.807 a adms:Identifier;
+    skos:notation "2.373.152.807";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

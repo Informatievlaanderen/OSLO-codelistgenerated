@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<https://data.vlaanderen.be/id/onderneming/1005.607.908> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1005.607.908;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/71209>, <http://vocab.belgif.be/auth/nace2008/43299>, <http://vocab.belgif.be/auth/nace2008/33200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1005.607.908;
+    reorg:legalName "ELEKTROTECHNIEK SWERTS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.355.267.985>.
+<https://data.vlaanderen.be/id/vestiging/2.355.267.985> a org:Site;
+    dcterms:created "05-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.355.267.985.
+_:address_contact_1005.607.908 a locn:Address;
+    locn:thoroughfare "Tongersesteenweg"@nl, "Tongersesteenweg"@fr;
+    rdfs:label "169";
+    locn:postCode "3730";
+    adres:gemeentenaam "Bilzen-Hoeselt"@nl, "Bilzen-Hoeselt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1005.607.908 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1005.607.908.
+_:registration_company_1005.607.908 a adms:Identifier;
+    skos:notation "1005.607.908";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.355.267.985 a adms:Identifier;
+    skos:notation "2.355.267.985";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

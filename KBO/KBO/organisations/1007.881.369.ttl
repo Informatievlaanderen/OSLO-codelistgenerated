@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/28299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2829>, <http://vocab.belgif.be/auth/nace2008/2829>;
+    skos:definition "Vervaardiging van andere machines en apparaten voor algemeen gebruik, n.e.g."@nl, "Fabrication d'autres machines d'usage général n.c.a."@fr;
+    skos:prefLabel "28299".
+<http://vocab.belgif.be/auth/nace2008/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2899>, <http://vocab.belgif.be/auth/nace2008/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/28299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2829>, <http://vocab.belgif.be/auth/nace2025/2829>;
+    skos:definition "Vervaardiging van andere machines en apparaten voor algemeen gebruik, n.e.g."@nl, "Fabrication d'autres machines d'usage général n.c.a."@fr;
+    skos:prefLabel "28299".
+<http://vocab.belgif.be/auth/nace2025/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2899>, <http://vocab.belgif.be/auth/nace2025/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/1007.881.369> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.881.369;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/28299>, <http://vocab.belgif.be/auth/nace2025/28990>, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/28990>, <http://vocab.belgif.be/auth/nace2008/28299>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van den Weghe, Lander";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.357.599.549>.
+<https://data.vlaanderen.be/id/vestiging/2.357.599.549> a org:Site;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.599.549.
+_:registration_company_1007.881.369 a adms:Identifier;
+    skos:notation "1007.881.369";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.599.549 a adms:Identifier;
+    skos:notation "2.357.599.549";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

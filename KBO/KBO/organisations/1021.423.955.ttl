@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/60310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6031>, <http://vocab.belgif.be/auth/nace2025/6031>;
+    skos:definition "Activiteiten van persagentschappen"@nl, "Activités d’agence de presse"@fr;
+    skos:prefLabel "60310".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7312>, <http://vocab.belgif.be/auth/nace2025/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/1021.423.955> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1021.423.955;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2025/73120>, <http://vocab.belgif.be/auth/nace2025/60310>, <http://vocab.belgif.be/auth/nace2025/90111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Noyelle, Luna-Marie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.371.496.184>.
+<https://data.vlaanderen.be/id/vestiging/2.371.496.184> a org:Site;
+    dcterms:created "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.371.496.184.
+_:registration_company_1021.423.955 a adms:Identifier;
+    skos:notation "1021.423.955";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.371.496.184 a adms:Identifier;
+    skos:notation "2.371.496.184";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

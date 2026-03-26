@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<http://vocab.belgif.be/auth/nace2008/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<http://vocab.belgif.be/auth/nace2008/94993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van ziektepreventie en gezondheidsbevordering"@nl, "Associations pour la prévention de la santé"@fr;
+    skos:prefLabel "94993".
+<http://vocab.belgif.be/auth/nace2008/96022> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Schoonheidsverzorging"@nl, "Soins de beauté"@fr;
+    skos:prefLabel "96022".
+<http://vocab.belgif.be/auth/nace2008/96091> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Contactbemiddelingsbureaus en dergelijke"@nl, "Services de rencontres"@fr;
+    skos:prefLabel "96091".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<http://vocab.belgif.be/auth/nace2025/94992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen en bewegingen voor volwassenen"@nl, "Associations et mouvements pour adultes"@fr;
+    skos:prefLabel "94992".
+<http://vocab.belgif.be/auth/nace2025/94993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van ziektepreventie en gezondheidsbevordering"@nl, "Associations pour la prévention de la santé"@fr;
+    skos:prefLabel "94993".
+<http://vocab.belgif.be/auth/nace2025/96220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9622>, <http://vocab.belgif.be/auth/nace2025/9622>;
+    skos:definition "Schoonheidsverzorging en andere schoonheidsbehandelingen"@nl, "Soins esthétiques et autres activités de traitement esthétique"@fr;
+    skos:prefLabel "96220".
+<http://vocab.belgif.be/auth/nace2025/96991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Contactbemiddelingsbureaus en dergelijke"@nl, "Services de rencontres"@fr;
+    skos:prefLabel "96991".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/1001.714.248> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "27-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.714.248;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/94992>, <http://vocab.belgif.be/auth/nace2025/94991>, <http://vocab.belgif.be/auth/nace2025/96220>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/94993>, <http://vocab.belgif.be/auth/nace2025/96991>, <http://vocab.belgif.be/auth/nace2008/94991>, <http://vocab.belgif.be/auth/nace2008/94992>, <http://vocab.belgif.be/auth/nace2008/96091>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/96022>, <http://vocab.belgif.be/auth/nace2008/94993>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1001.714.248;
+    reorg:legalName "TON CANCER, NOTRE COMBAT"@fr, "T.C.N.C."@fr.
+_:address_contact_1001.714.248 a locn:Address;
+    locn:thoroughfare "Boulevard Fosse-Crahay"@nl, "Boulevard Fosse-Crahay"@fr;
+    rdfs:label "260";
+    adres:busnummer "13";
+    locn:postCode "4000";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1001.714.248 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1001.714.248.
+_:registration_company_1001.714.248 a adms:Identifier;
+    skos:notation "1001.714.248";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8552>, <http://vocab.belgif.be/auth/nace2008/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2008/85609> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8560>, <http://vocab.belgif.be/auth/nace2008/8560>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85609".
+<http://vocab.belgif.be/auth/nace2008/93292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93292".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<http://vocab.belgif.be/auth/nace2025/93293> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93293".
+<https://data.vlaanderen.be/id/onderneming/1007.595.121> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.595.121;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/85699>, <http://vocab.belgif.be/auth/nace2025/93293>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2008/85520>, <http://vocab.belgif.be/auth/nace2008/85609>, <http://vocab.belgif.be/auth/nace2008/93292>, <http://vocab.belgif.be/auth/nace2008/85510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1007.595.121;
+    reorg:legalName "Vaira, Giulia";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.357.347.052>.
+<https://data.vlaanderen.be/id/vestiging/2.357.347.052> a org:Site;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.347.052.
+_:contact_1007.595.121 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "giuliavaira@hotmail.com";
+    schema:telephone "+32498812542".
+_:registration_company_1007.595.121 a adms:Identifier;
+    skos:notation "1007.595.121";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.347.052 a adms:Identifier;
+    skos:notation "2.357.347.052";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

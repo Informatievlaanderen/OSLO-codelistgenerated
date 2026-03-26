@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3299>, <http://vocab.belgif.be/auth/nace2025/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1023.152.040> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "08-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1023.152.040;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32990>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/82100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1023.152.040;
+    reorg:legalName "SIPHRA CONSULT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.373.508.143>.
+<https://data.vlaanderen.be/id/vestiging/2.373.508.143> a org:Site;
+    dcterms:created "08-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.373.508.143.
+_:address_contact_1023.152.040 a locn:Address;
+    locn:thoroughfare "Jozef Cardijnlaan"@nl, "Jozef Cardijnlaan"@fr;
+    rdfs:label "29";
+    adres:busnummer "A";
+    locn:postCode "2890";
+    adres:gemeentenaam "Puurs-Sint-Amands"@nl, "Puurs-Sint-Amands"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1023.152.040 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@siphraconsult.be";
+    locn:address _:address_contact_1023.152.040.
+_:registration_company_1023.152.040 a adms:Identifier;
+    skos:notation "1023.152.040";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.373.508.143 a adms:Identifier;
+    skos:notation "2.373.508.143";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-05-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

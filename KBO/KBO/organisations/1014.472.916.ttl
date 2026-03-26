@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5911>, <http://vocab.belgif.be/auth/nace2008/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/59113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5911>, <http://vocab.belgif.be/auth/nace2025/5911>;
+    skos:definition "Productie van films, m.u.v. bioscoop- en televisiefilms"@nl, "Production de films autres que cinématographiques et pour la télévision"@fr;
+    skos:prefLabel "59113".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<https://data.vlaanderen.be/id/onderneming/1014.472.916> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1014.472.916;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/59113>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/77399>, <http://vocab.belgif.be/auth/nace2008/59113>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1014.472.916;
+    reorg:legalName "BetterCom"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.365.533.456>.
+<https://data.vlaanderen.be/id/vestiging/2.365.533.456> a org:Site;
+    dcterms:created "01-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.533.456.
+_:address_contact_1014.472.916 a locn:Address;
+    locn:thoroughfare "Rue Cardinal Mercier"@nl, "Rue Cardinal Mercier"@fr;
+    rdfs:label "30";
+    adres:busnummer "A";
+    locn:postCode "1460";
+    adres:gemeentenaam "Ittre"@nl, "Ittre"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1014.472.916 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1014.472.916.
+_:registration_company_1014.472.916 a adms:Identifier;
+    skos:notation "1014.472.916";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.533.456 a adms:Identifier;
+    skos:notation "2.365.533.456";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

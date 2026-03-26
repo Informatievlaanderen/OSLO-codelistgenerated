@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/69101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6910>, <http://vocab.belgif.be/auth/nace2025/6910>;
+    skos:definition "Activiteiten van advocaten"@nl, "Activités des avocats"@fr;
+    skos:prefLabel "69101".
+<https://data.vlaanderen.be/id/onderneming/1030.981.524> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1030.981.524;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/69101>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1030.981.524;
+    reorg:legalName "Ardentis Advisory"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.384.993.042>.
+<https://data.vlaanderen.be/id/vestiging/2.384.993.042> a org:Site;
+    dcterms:created "01-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.384.993.042.
+_:address_contact_1030.981.524 a locn:Address;
+    locn:thoroughfare "Notelaarstraat"@nl, "Rue du Noyer"@fr;
+    rdfs:label "282";
+    adres:busnummer "33";
+    locn:postCode "1030";
+    adres:gemeentenaam "Schaarbeek"@nl, "Schaerbeek"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1030.981.524 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1030.981.524.
+_:registration_company_1030.981.524 a adms:Identifier;
+    skos:notation "1030.981.524";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.384.993.042 a adms:Identifier;
+    skos:notation "2.384.993.042";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

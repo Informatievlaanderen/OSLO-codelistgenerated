@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5320>, <http://vocab.belgif.be/auth/nace2025/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<https://data.vlaanderen.be/id/onderneming/1032.141.267> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1032.141.267;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47715>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/47110>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/53200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1032.141.267;
+    reorg:legalName "mol's toko"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.382.506.872>.
+<https://data.vlaanderen.be/id/vestiging/2.382.506.872> a org:Site;
+    dcterms:created "02-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.382.506.872.
+_:address_contact_1032.141.267 a locn:Address;
+    locn:thoroughfare "Corbiestraat"@nl, "Corbiestraat"@fr;
+    rdfs:label "57/1";
+    locn:postCode "2400";
+    adres:gemeentenaam "Mol"@nl, "Mol"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1032.141.267 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1032.141.267.
+_:registration_company_1032.141.267 a adms:Identifier;
+    skos:notation "1032.141.267";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.382.506.872 a adms:Identifier;
+    skos:notation "2.382.506.872";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

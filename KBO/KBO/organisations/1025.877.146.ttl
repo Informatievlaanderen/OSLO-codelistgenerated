@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/47529> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in overige bouwmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail d'autres matériaux de construction en magasin spécialisé"@fr;
+    skos:prefLabel "47529".
+<https://data.vlaanderen.be/id/onderneming/1025.877.146> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "22-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1025.877.146;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47529>, <http://vocab.belgif.be/auth/nace2025/43120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1025.877.146;
+    reorg:legalName "Arnould, Frédéric";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.101.013>.
+<https://data.vlaanderen.be/id/vestiging/2.376.101.013> a org:Site;
+    dcterms:created "22-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.101.013.
+_:contact_1025.877.146 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "afelec1@hotmail.com";
+    schema:telephone "+32468382252".
+_:registration_company_1025.877.146 a adms:Identifier;
+    skos:notation "1025.877.146";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.101.013 a adms:Identifier;
+    skos:notation "2.376.101.013";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-07-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

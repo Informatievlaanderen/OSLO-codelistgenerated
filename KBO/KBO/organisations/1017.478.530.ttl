@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/56101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Restauration à service complet"@fr, "Eetgelegenheden met volledige bediening"@nl;
+    skos:prefLabel "56101".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/56111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met volledige bediening"@nl, "Restauration à service complet"@fr;
+    skos:prefLabel "56111".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1017.478.530> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1017.478.530;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/56111>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2008/56101>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/93299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1017.478.530;
+    reorg:legalName "Legends & More"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.258.463>.
+<https://data.vlaanderen.be/id/vestiging/2.368.258.463> a org:Site;
+    dcterms:created "17-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.258.463.
+_:address_contact_1017.478.530 a locn:Address;
+    locn:thoroughfare "Allée Ferme du Bercuit"@nl, "Allée Ferme du Bercuit"@fr;
+    rdfs:label "36";
+    locn:postCode "1390";
+    adres:gemeentenaam "Grez-Doiceau"@nl, "Grez-Doiceau"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1017.478.530 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1017.478.530.
+_:registration_company_1017.478.530 a adms:Identifier;
+    skos:notation "1017.478.530";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.258.463 a adms:Identifier;
+    skos:notation "2.368.258.463";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Restaureren van bouwwerken"@nl, "Travaux de restauration des bâtiments"@fr;
+    skos:prefLabel "43995".
+<http://vocab.belgif.be/auth/nace2008/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4779>, <http://vocab.belgif.be/auth/nace2008/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/81290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8129>, <http://vocab.belgif.be/auth/nace2008/8129>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81290".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/1003.719.277> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1003.719.277;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47793>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/81230>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47890>, <http://vocab.belgif.be/auth/nace2008/43995>, <http://vocab.belgif.be/auth/nace2008/81290>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/47793>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Esbroeck, Davy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.120.030>.
+<https://data.vlaanderen.be/id/vestiging/2.353.120.030> a org:Site;
+    dcterms:created "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.120.030.
+_:registration_company_1003.719.277 a adms:Identifier;
+    skos:notation "1003.719.277";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.120.030 a adms:Identifier;
+    skos:notation "2.353.120.030";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

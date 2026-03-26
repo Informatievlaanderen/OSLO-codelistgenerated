@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/47210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4721>, <http://vocab.belgif.be/auth/nace2025/4721>;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210".
+<http://vocab.belgif.be/auth/nace2025/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4726>, <http://vocab.belgif.be/auth/nace2025/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2025/47621> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4762>, <http://vocab.belgif.be/auth/nace2025/4762>;
+    skos:definition "Detailhandel in kranten en andere tijdschriften"@nl, "Commerce de détail de journaux et autres publications périodiques"@fr;
+    skos:prefLabel "47621".
+<http://vocab.belgif.be/auth/nace2025/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9200>, <http://vocab.belgif.be/auth/nace2025/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<https://data.vlaanderen.be/id/onderneming/1029.062.607> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.062.607;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47621>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47260>, <http://vocab.belgif.be/auth/nace2025/92000>, <http://vocab.belgif.be/auth/nace2025/47210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1029.062.607;
+    reorg:legalName "R&S FOOD"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.380.023.870>.
+<https://data.vlaanderen.be/id/vestiging/2.380.023.870> a org:Site;
+    dcterms:created "13-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.380.023.870.
+_:address_contact_1029.062.607 a locn:Address;
+    locn:thoroughfare "Bergstraat"@nl, "Bergstraat"@fr;
+    rdfs:label "3";
+    locn:postCode "3560";
+    adres:gemeentenaam "Lummen"@nl, "Lummen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1029.062.607 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1029.062.607.
+_:registration_company_1029.062.607 a adms:Identifier;
+    skos:notation "1029.062.607";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.380.023.870 a adms:Identifier;
+    skos:notation "2.380.023.870";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

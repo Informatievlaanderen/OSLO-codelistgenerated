@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1071>, <http://vocab.belgif.be/auth/nace2008/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2008/10720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1072>, <http://vocab.belgif.be/auth/nace2008/1072>;
+    skos:definition "Vervaardiging van beschuit en biscuit en van ander houdbaar banketbakkerswerk"@nl, "Fabrication de biscuits, de biscottes et de pâtisseries de conservation"@fr;
+    skos:prefLabel "10720".
+<http://vocab.belgif.be/auth/nace2008/46391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4639>, <http://vocab.belgif.be/auth/nace2008/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in diepgevroren voedingsmiddelen"@nl, "Commerce de gros non spécialisé de denrées surgelées"@fr;
+    skos:prefLabel "46391".
+<http://vocab.belgif.be/auth/nace2008/72190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7219>, <http://vocab.belgif.be/auth/nace2008/7219>;
+    skos:definition "Recherche-développement en autres sciences physiques et naturelles"@fr, "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk  gebied"@nl;
+    skos:prefLabel "72190".
+<http://vocab.belgif.be/auth/nace2025/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1071>, <http://vocab.belgif.be/auth/nace2025/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2025/10720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1072>, <http://vocab.belgif.be/auth/nace2025/1072>;
+    skos:definition "Vervaardiging van beschuit en biscuit en van ander houdbaar banketbakkerswerk"@nl, "Fabrication de biscuits, de biscottes et de pâtisseries de conservation"@fr;
+    skos:prefLabel "10720".
+<http://vocab.belgif.be/auth/nace2025/46391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4639>, <http://vocab.belgif.be/auth/nace2025/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in diepgevroren voedingsmiddelen"@nl, "Commerce de gros non spécialisé de denrées surgelées"@fr;
+    skos:prefLabel "46391".
+<http://vocab.belgif.be/auth/nace2025/72109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>;
+    skos:definition "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche-développement en autres sciences physiques et naturelles"@fr;
+    skos:prefLabel "72109".
+<https://data.vlaanderen.be/id/onderneming/1007.127.343> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.127.343;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46391>, <http://vocab.belgif.be/auth/nace2025/72109>, <http://vocab.belgif.be/auth/nace2025/10720>, <http://vocab.belgif.be/auth/nace2025/10712>, <http://vocab.belgif.be/auth/nace2008/10712>, <http://vocab.belgif.be/auth/nace2008/72190>, <http://vocab.belgif.be/auth/nace2008/10720>, <http://vocab.belgif.be/auth/nace2008/46391>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Zhao, Yin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.356.844.038>.
+<https://data.vlaanderen.be/id/vestiging/2.356.844.038> a org:Site;
+    dcterms:created "12-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.356.844.038.
+_:registration_company_1007.127.343 a adms:Identifier;
+    skos:notation "1007.127.343";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.356.844.038 a adms:Identifier;
+    skos:notation "2.356.844.038";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-03-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

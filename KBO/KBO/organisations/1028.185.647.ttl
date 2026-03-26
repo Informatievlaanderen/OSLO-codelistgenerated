@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/51210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5121>, <http://vocab.belgif.be/auth/nace2025/5121>;
+    skos:definition "Groothandel in granen, zaden en diervoeders"@nl, "Commerce de gros de céréales, semences et aliments pour le bétail"@fr;
+    skos:prefLabel "51210".
+<http://vocab.belgif.be/auth/nace2025/66220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6622>, <http://vocab.belgif.be/auth/nace2025/6622>;
+    skos:definition "Verzekeringsagenten en -makelaars"@nl, "Activités des agents et courtiers d'assurances"@fr;
+    skos:prefLabel "66220".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8553>, <http://vocab.belgif.be/auth/nace2025/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<https://data.vlaanderen.be/id/onderneming/1028.185.647> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1028.185.647;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85532>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/51210>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/66220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Muller, Tom";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.378.467.021>.
+<https://data.vlaanderen.be/id/vestiging/2.378.467.021> a org:Site;
+    dcterms:created "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.467.021.
+_:registration_company_1028.185.647 a adms:Identifier;
+    skos:notation "1028.185.647";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.467.021 a adms:Identifier;
+    skos:notation "2.378.467.021";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

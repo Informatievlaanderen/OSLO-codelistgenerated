@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/79110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7911>, <http://vocab.belgif.be/auth/nace2025/7911>;
+    skos:definition "Reisbureaus"@nl, "Activités des agences de voyage"@fr;
+    skos:prefLabel "79110".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<https://data.vlaanderen.be/id/onderneming/1022.547.868> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "20-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1022.547.868;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/85593>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/94999>, <http://vocab.belgif.be/auth/nace2025/79110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1022.547.868;
+    reorg:legalName "Akaru"@fr.
+_:address_contact_1022.547.868 a locn:Address;
+    locn:thoroughfare "Generaal Jacqueslaan"@nl, "Boulevard Général Jacques"@fr;
+    rdfs:label "68";
+    adres:busnummer "1";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1022.547.868 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "baquedechuva@gmail.com";
+    locn:address _:address_contact_1022.547.868.
+_:registration_company_1022.547.868 a adms:Identifier;
+    skos:notation "1022.547.868";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-04-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/77330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7733>, <http://vocab.belgif.be/auth/nace2025/7733>;
+    skos:definition "Verhuur en lease van kantoormachines, inclusief computers"@nl, "Location et location-bail de machines de bureau et de matériel informatique"@fr;
+    skos:prefLabel "77330".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1018.749.527> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1018.749.527;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77330>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2025/77399>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1018.749.527;
+    reorg:legalName "MANOLEASE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.368.971.909>.
+<https://data.vlaanderen.be/id/vestiging/2.368.971.909> a org:Site;
+    dcterms:created "15-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.368.971.909.
+_:address_contact_1018.749.527 a locn:Address;
+    locn:thoroughfare "Rue du Progrès"@nl, "Rue du Progrès"@fr;
+    rdfs:label "4";
+    locn:postCode "1400";
+    adres:gemeentenaam "Nivelles"@nl, "Nivelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1018.749.527 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1018.749.527.
+_:registration_company_1018.749.527 a adms:Identifier;
+    skos:notation "1018.749.527";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.368.971.909 a adms:Identifier;
+    skos:notation "2.368.971.909";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

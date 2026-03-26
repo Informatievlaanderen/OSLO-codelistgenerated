@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47519> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in overig textiel in gespecialiseerde winkels"@nl, "Commerce de détail d'autres textiles en magasin spécialisé"@fr;
+    skos:prefLabel "47519".
+<http://vocab.belgif.be/auth/nace2008/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4764>, <http://vocab.belgif.be/auth/nace2008/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2008/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4772>, <http://vocab.belgif.be/auth/nace2008/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<http://vocab.belgif.be/auth/nace2008/47785> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fietsen in gespecialiseerde winkels"@nl, "Commerce de détail de cycles en magasin spécialisé"@fr;
+    skos:prefLabel "47785".
+<http://vocab.belgif.be/auth/nace2025/47519> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in overig textiel in gespecialiseerde winkels"@nl, "Commerce de détail d'autres textiles en magasin spécialisé"@fr;
+    skos:prefLabel "47519".
+<http://vocab.belgif.be/auth/nace2025/47632> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in fietsen"@nl, "Commerce de détail de cycles"@fr;
+    skos:prefLabel "47632".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<http://vocab.belgif.be/auth/nace2025/47721> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in schoeisel in gespecialiseerde winkels"@nl, "Commerce de détail de chaussures en magasin spécialisé"@fr;
+    skos:prefLabel "47721".
+<https://data.vlaanderen.be/id/onderneming/1007.890.277> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1007.890.277;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47721>, <http://vocab.belgif.be/auth/nace2025/47519>, <http://vocab.belgif.be/auth/nace2025/47632>, <http://vocab.belgif.be/auth/nace2025/47639>, <http://vocab.belgif.be/auth/nace2008/47721>, <http://vocab.belgif.be/auth/nace2008/47640>, <http://vocab.belgif.be/auth/nace2008/47519>, <http://vocab.belgif.be/auth/nace2008/47785>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Marievoet, Alexandra";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.357.607.962>.
+<https://data.vlaanderen.be/id/vestiging/2.357.607.962> a org:Site;
+    dcterms:created "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.357.607.962.
+_:registration_company_1007.890.277 a adms:Identifier;
+    skos:notation "1007.890.277";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.357.607.962 a adms:Identifier;
+    skos:notation "2.357.607.962";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

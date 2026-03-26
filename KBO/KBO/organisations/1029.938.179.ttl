@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<http://vocab.belgif.be/auth/nace2025/86999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8699>, <http://vocab.belgif.be/auth/nace2025/8699>;
+    skos:definition "Overige activiteiten op het gebied van menselijke gezondheidszorg, neg"@nl, "Autres activités dans le domaine de la santé humaine nca"@fr;
+    skos:prefLabel "86999".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/1029.938.179> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.938.179;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/86999>, <http://vocab.belgif.be/auth/nace2025/85699>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Delattre, Louise";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.380.360.402>.
+<https://data.vlaanderen.be/id/vestiging/2.380.360.402> a org:Site;
+    dcterms:created "14-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.380.360.402.
+_:registration_company_1029.938.179 a adms:Identifier;
+    skos:notation "1029.938.179";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.380.360.402 a adms:Identifier;
+    skos:notation "2.380.360.402";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

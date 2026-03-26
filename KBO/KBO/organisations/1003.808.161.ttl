@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3311>, <http://vocab.belgif.be/auth/nace2008/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2008/38222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3822>, <http://vocab.belgif.be/auth/nace2008/3822>;
+    skos:definition "Behandeling en verwijdering van gevaarlijk afval"@nl, "Traitement et élimination des déchets dangereux"@fr;
+    skos:prefLabel "38222".
+<http://vocab.belgif.be/auth/nace2008/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3900>, <http://vocab.belgif.be/auth/nace2008/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/38320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3832>, <http://vocab.belgif.be/auth/nace2025/3832>;
+    skos:definition "Storten of permanent opslaan"@nl, "Mise en décharge ou stockage permanent"@fr;
+    skos:prefLabel "38320".
+<http://vocab.belgif.be/auth/nace2025/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3900>, <http://vocab.belgif.be/auth/nace2025/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<https://data.vlaanderen.be/id/onderneming/1003.808.161> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "22-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1003.808.161;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/39000>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/38320>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2008/39000>, <http://vocab.belgif.be/auth/nace2008/33110>, <http://vocab.belgif.be/auth/nace2008/71209>, <http://vocab.belgif.be/auth/nace2008/77399>, <http://vocab.belgif.be/auth/nace2008/38222>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1003.808.161;
+    reorg:legalName "Protank"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.353.678.175>.
+<https://data.vlaanderen.be/id/vestiging/2.353.678.175> a org:Site;
+    dcterms:created "22-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.678.175.
+_:address_contact_1003.808.161 a locn:Address;
+    locn:thoroughfare "Viséweg"@nl, "Route de Visé"@fr;
+    rdfs:label "13";
+    locn:postCode "3790";
+    adres:gemeentenaam "Voeren"@nl, "Voeren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1003.808.161 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@protank.be";
+    locn:address _:address_contact_1003.808.161.
+_:registration_company_1003.808.161 a adms:Identifier;
+    skos:notation "1003.808.161";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.678.175 a adms:Identifier;
+    skos:notation "2.353.678.175";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

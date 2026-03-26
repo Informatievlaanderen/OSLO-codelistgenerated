@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/33130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3313>, <http://vocab.belgif.be/auth/nace2025/3313>;
+    skos:definition "Reparatie van elektronische en optische apparatuur"@nl, "Réparation de matériels électroniques et optiques"@fr;
+    skos:prefLabel "33130".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<https://data.vlaanderen.be/id/onderneming/1030.119.709> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1030.119.709;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/33130>, <http://vocab.belgif.be/auth/nace2025/47400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Goossens, Geert";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.381.399.488>.
+<https://data.vlaanderen.be/id/vestiging/2.381.399.488> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.381.399.488.
+_:registration_company_1030.119.709 a adms:Identifier;
+    skos:notation "1030.119.709";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.381.399.488 a adms:Identifier;
+    skos:notation "2.381.399.488";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

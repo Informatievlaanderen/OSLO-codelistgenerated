@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3311>, <http://vocab.belgif.be/auth/nace2008/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/45209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, n.e.g."@nl, "Entretien et réparation de véhicules automobiles n.c.a."@fr;
+    skos:prefLabel "45209".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<https://data.vlaanderen.be/id/onderneming/1001.673.567> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.673.567;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/95319>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/45209>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/33110>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Vandermeersch, Felix";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.112.229>.
+<https://data.vlaanderen.be/id/vestiging/2.351.112.229> a org:Site;
+    dcterms:created "26-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.112.229.
+_:registration_company_1001.673.567 a adms:Identifier;
+    skos:notation "1001.673.567";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.112.229 a adms:Identifier;
+    skos:notation "2.351.112.229";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

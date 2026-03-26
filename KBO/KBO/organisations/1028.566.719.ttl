@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43600> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4360>, <http://vocab.belgif.be/auth/nace2025/4360>;
+    skos:definition "Bemiddelingsactiviteiten in verband met gespecialiseerde bouwnijverheid"@nl, "Activités de service d’intermédiation pour des travaux de construction spécialisés"@fr;
+    skos:prefLabel "43600".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/1028.566.719> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1028.566.719;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/43600>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Vandekerckhove, Stéphanie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.378.821.169>.
+<https://data.vlaanderen.be/id/vestiging/2.378.821.169> a org:Site;
+    dcterms:created "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.821.169.
+_:registration_company_1028.566.719 a adms:Identifier;
+    skos:notation "1028.566.719";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.821.169 a adms:Identifier;
+    skos:notation "2.378.821.169";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

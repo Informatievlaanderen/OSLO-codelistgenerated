@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0240>, <http://vocab.belgif.be/auth/nace2025/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/96220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9622>, <http://vocab.belgif.be/auth/nace2025/9622>;
+    skos:definition "Schoonheidsverzorging en andere schoonheidsbehandelingen"@nl, "Soins esthétiques et autres activités de traitement esthétique"@fr;
+    skos:prefLabel "96220".
+<https://data.vlaanderen.be/id/onderneming/1029.561.364> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1029.561.364;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96220>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/02400>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1029.561.364;
+    reorg:legalName "De Smalle en RebElleke"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.381.328.323>.
+<https://data.vlaanderen.be/id/vestiging/2.381.328.323> a org:Site;
+    dcterms:created "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.381.328.323.
+_:address_contact_1029.561.364 a locn:Address;
+    locn:thoroughfare "Egenhovenstraat"@nl, "Egenhovenstraat"@fr;
+    rdfs:label "44";
+    locn:postCode "3060";
+    adres:gemeentenaam "Bertem"@nl, "Bertem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1029.561.364 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "treeworker.de.smalle@gmail.com";
+    locn:address _:address_contact_1029.561.364.
+_:registration_company_1029.561.364 a adms:Identifier;
+    skos:notation "1029.561.364";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.381.328.323 a adms:Identifier;
+    skos:notation "2.381.328.323";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

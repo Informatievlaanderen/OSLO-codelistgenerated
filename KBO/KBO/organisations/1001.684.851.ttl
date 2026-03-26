@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/77391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van speel-, amusement-, en verkoopautomaten"@nl, "Location et location-bail de machines à sous, de machines de jeux et de machines automatiques de vente de produits"@fr;
+    skos:prefLabel "77391".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8292>, <http://vocab.belgif.be/auth/nace2008/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2008/93292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93292".
+<http://vocab.belgif.be/auth/nace2025/77391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van speel-, amusement-, en verkoopautomaten"@nl, "Location et location-bail de machines à sous, de machines de jeux et de machines automatiques de vente de produits"@fr;
+    skos:prefLabel "77391".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8292>, <http://vocab.belgif.be/auth/nace2025/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2025/93293> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93293".
+<https://data.vlaanderen.be/id/onderneming/1001.684.851> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "24-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1001.684.851;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/82920>, <http://vocab.belgif.be/auth/nace2025/93293>, <http://vocab.belgif.be/auth/nace2025/77391>, <http://vocab.belgif.be/auth/nace2008/93292>, <http://vocab.belgif.be/auth/nace2008/77391>, <http://vocab.belgif.be/auth/nace2008/82920>, <http://vocab.belgif.be/auth/nace2008/82300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Defraye, Henk";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.308.902>.
+<https://data.vlaanderen.be/id/vestiging/2.351.308.902> a org:Site;
+    dcterms:created "24-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.308.902.
+_:registration_company_1001.684.851 a adms:Identifier;
+    skos:notation "1001.684.851";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.308.902 a adms:Identifier;
+    skos:notation "2.351.308.902";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

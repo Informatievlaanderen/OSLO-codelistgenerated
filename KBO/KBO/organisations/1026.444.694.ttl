@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<https://data.vlaanderen.be/id/onderneming/1026.444.694> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1026.444.694;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/32123>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1026.444.694;
+    reorg:legalName "Souffir, Yona";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.811.487>.
+<https://data.vlaanderen.be/id/vestiging/2.376.811.487> a org:Site;
+    dcterms:created "01-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.811.487.
+_:contact_1026.444.694 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "souffiryona38@gmail.com";
+    schema:telephone "+32492516590".
+_:registration_company_1026.444.694 a adms:Identifier;
+    skos:notation "1026.444.694";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.811.487 a adms:Identifier;
+    skos:notation "2.376.811.487";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

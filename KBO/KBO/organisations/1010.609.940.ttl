@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2611>, <http://vocab.belgif.be/auth/nace2008/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2008/26120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2612>, <http://vocab.belgif.be/auth/nace2008/2612>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+<http://vocab.belgif.be/auth/nace2008/29310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2931>, <http://vocab.belgif.be/auth/nace2008/2931>;
+    skos:definition "Vervaardiging van landbouwtractoren"@nl, "Fabrication de tracteurs agricoles"@fr;
+    skos:prefLabel "29310".
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2025/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2611>, <http://vocab.belgif.be/auth/nace2025/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2025/26120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2612>, <http://vocab.belgif.be/auth/nace2025/2612>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+<http://vocab.belgif.be/auth/nace2025/29310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2931>, <http://vocab.belgif.be/auth/nace2025/2931>;
+    skos:definition "Vervaardiging van landbouwtractoren"@nl, "Fabrication de tracteurs agricoles"@fr;
+    skos:prefLabel "29310".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<https://data.vlaanderen.be/id/onderneming/1010.609.940> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1010.609.940;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/29310>, <http://vocab.belgif.be/auth/nace2025/26120>, <http://vocab.belgif.be/auth/nace2025/29320>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/26110>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2008/45203>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/26110>, <http://vocab.belgif.be/auth/nace2008/29310>, <http://vocab.belgif.be/auth/nace2008/26120>, <http://vocab.belgif.be/auth/nace2008/29320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_1010.609.940;
+    reorg:legalName "NEW ELECTRONIC BOX"@fr.
+_:address_contact_1010.609.940 a locn:Address;
+    locn:thoroughfare "Rue de Bruxelles"@nl, "Rue de Bruxelles"@fr;
+    rdfs:label "183";
+    locn:postCode "4340";
+    adres:gemeentenaam "Awans"@nl, "Awans"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1010.609.940 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_1010.609.940.
+_:registration_company_1010.609.940 a adms:Identifier;
+    skos:notation "1010.609.940";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

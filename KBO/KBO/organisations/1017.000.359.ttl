@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Entretien et réparation général d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45201".
+<http://vocab.belgif.be/auth/nace2008/45204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Carrosserieherstelling"@nl, "Réparations de carrosseries"@fr;
+    skos:prefLabel "45204".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<https://data.vlaanderen.be/id/onderneming/1017.000.359> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1017.000.359;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47811>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95314>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2008/45204>, <http://vocab.belgif.be/auth/nace2008/45201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_1017.000.359;
+    reorg:legalName "GARAGE-CARROSSERIE DE L'ALIENAU"@fr, "GCA"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.367.347.851>.
+<https://data.vlaanderen.be/id/vestiging/2.367.347.851> a org:Site;
+    dcterms:created "05-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.367.347.851.
+_:address_contact_1017.000.359 a locn:Address;
+    locn:thoroughfare "Recogne, L'Aliénau"@nl, "Recogne, L'Aliénau"@fr;
+    rdfs:label "30";
+    locn:postCode "6800";
+    adres:gemeentenaam "Libramont-Chevigny"@nl, "Libramont-Chevigny"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1017.000.359 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "gca.huard@gmail.com";
+    schema:telephone "+3261415450";
+    locn:address _:address_contact_1017.000.359.
+_:registration_company_1017.000.359 a adms:Identifier;
+    skos:notation "1017.000.359";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.367.347.851 a adms:Identifier;
+    skos:notation "2.367.347.851";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-12-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/1028.897.014> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_1028.897.014;
+    schema:contactinfo _:contact_1028.897.014;
+    reorg:legalName "Belgium Vovinam VietVoDao Association"@fr, "BVVA"@fr.
+_:address_contact_1028.897.014 a locn:Address;
+    locn:thoroughfare "Avenue du Bois Impérial Rognac(N)"@nl, "Avenue du Bois Impérial Rognac(N)"@fr;
+    rdfs:label "51";
+    locn:postCode "4121";
+    adres:gemeentenaam "Neupré"@nl, "Neupré"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_1028.897.014 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "lehuudai@yahoo.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.vietvodao.net";
+    locn:address _:address_contact_1028.897.014.
+_:registration_company_1028.897.014 a adms:Identifier;
+    skos:notation "1028.897.014";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
