@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4763>, <http://vocab.belgif.be/auth/nace2008/4763>;
+    skos:definition "Detailhandel in audio- en video-opnamen in gespecialiseerde winkels"@nl, "Commerce de détail d'enregistrements musicaux et vidéo en magasin spécialisé"@fr;
+    skos:prefLabel "47630".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/90023> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Beheer van stortplaatsen en definitieve opslagplaatsen van afval"@nl, "Gestion des décharges et des sites définitifs de stockage"@fr;
+    skos:prefLabel "90023".
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0745.850.024> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.850.024;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/47690>, <http://vocab.belgif.be/auth/nace2025/90393>, <http://vocab.belgif.be/auth/nace2008/90023>, <http://vocab.belgif.be/auth/nace2008/47630>, <http://vocab.belgif.be/auth/nace2008/90021>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0745.850.024;
+    reorg:legalName "A toi l'Artiste"@fr, "ASBL A toi l'Artiste"@fr.
+_:address_contact_0745.850.024 a locn:Address;
+    locn:thoroughfare "Rue de Binche(B)"@nl, "Rue de Binche(B)"@fr;
+    rdfs:label "454";
+    locn:postCode "7300";
+    adres:gemeentenaam "Boussu"@nl, "Boussu"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0745.850.024 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sofia.macaluso@hotmail.com";
+    locn:address _:address_contact_0745.850.024.
+_:registration_company_0745.850.024 a adms:Identifier;
+    skos:notation "0745.850.024";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

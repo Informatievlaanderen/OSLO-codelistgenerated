@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/74102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van industriële designers"@nl, "Activités de design industriel"@fr;
+    skos:prefLabel "74102".
+<http://vocab.belgif.be/auth/nace2008/74909> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Overige gespecialiseerde wetenschappelijke en technische activiteiten"@nl, "Autres activités spécialisées, scientifiques et techniques"@fr;
+    skos:prefLabel "74909".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/74112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Notariskantoor"@nl, "Étude de notaire"@fr;
+    skos:prefLabel "74112".
+<http://vocab.belgif.be/auth/nace2025/74999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Overige activiteiten van vrije beroepen en andere wetenschappelijke en technische activiteiten, neg"@nl, "Autres activités des professions libérales et autres activités scientifiques et techniques, nca"@fr;
+    skos:prefLabel "74999".
+<https://data.vlaanderen.be/id/onderneming/0740.455.933> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0740.455.933;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43212>, <http://vocab.belgif.be/auth/nace2025/74999>, <http://vocab.belgif.be/auth/nace2025/74112>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2008/74102>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/33200>, <http://vocab.belgif.be/auth/nace2008/74909>, <http://vocab.belgif.be/auth/nace2008/43212>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0740.455.933;
+    reorg:legalName "SD-MATIC"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.297.853.091>.
+<https://data.vlaanderen.be/id/vestiging/2.297.853.091> a org:Site;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.297.853.091.
+_:address_contact_0740.455.933 a locn:Address;
+    locn:thoroughfare "Route d'Andenne"@nl, "Route d'Andenne"@fr;
+    rdfs:label "49";
+    locn:postCode "5340";
+    adres:gemeentenaam "Gesves"@nl, "Gesves"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0740.455.933 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sd-matic@outlook.com";
+    schema:telephone "+32472231639";
+    locn:address _:address_contact_0740.455.933.
+_:registration_company_0740.455.933 a adms:Identifier;
+    skos:notation "0740.455.933";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.297.853.091 a adms:Identifier;
+    skos:notation "2.297.853.091";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

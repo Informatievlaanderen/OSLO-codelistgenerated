@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2008/42990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4299>, <http://vocab.belgif.be/auth/nace2008/4299>;
+    skos:definition "Bouw van andere civieltechnische werken, n.e.g."@nl, "Construction d'autres ouvrages de génie civil n.c.a."@fr;
+    skos:prefLabel "42990".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2025/42990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4299>, <http://vocab.belgif.be/auth/nace2025/4299>;
+    skos:definition "Bouw van andere civieltechnische werken, n.e.g."@nl, "Construction d'autres ouvrages de génie civil n.c.a."@fr;
+    skos:prefLabel "42990".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<https://data.vlaanderen.be/id/onderneming/0745.320.977> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "05-03-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.320.977;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/42990>, _:nace_2003_45422, <http://vocab.belgif.be/auth/nace2008/42990>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/42919>, <http://vocab.belgif.be/auth/nace2008/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Decker, Luc";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.100.521.439>.
+<https://data.vlaanderen.be/id/vestiging/2.100.521.439> a org:Site;
+    dcterms:created "05-03-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.100.521.439.
+_:nace_2003_45422 a skos:Concept;
+    skos:definition "Metaalschrijnwerk"@nl, "Menuiserie métallique"@fr;
+    skos:prefLabel "45422".
+_:registration_company_0745.320.977 a adms:Identifier;
+    skos:notation "0745.320.977";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-03-2002"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.100.521.439 a adms:Identifier;
+    skos:notation "2.100.521.439";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-03-2002"^^<http://www.w3.org/2001/XMLSchema#date>.

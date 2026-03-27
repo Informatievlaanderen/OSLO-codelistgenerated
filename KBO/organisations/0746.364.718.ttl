@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/46423> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4642>, <http://vocab.belgif.be/auth/nace2025/4642>;
+    skos:definition "Groothandel in kleding, met uitzondering van werk- en onderkleding"@nl, "Commerce de gros de vêtements, autres que vêtements de travail et sous-vêtements"@fr;
+    skos:prefLabel "46423".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0746.364.718> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.364.718;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/46423>, <http://vocab.belgif.be/auth/nace2025/81300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0746.364.718;
+    reorg:legalName "Smeets, Gert";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.331.699.757>.
+<https://data.vlaanderen.be/id/vestiging/2.331.699.757> a org:Site;
+    dcterms:created "28-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.331.699.757.
+_:contact_0746.364.718 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "smeetsgert@hotmail.com";
+    schema:telephone "0470274191".
+_:registration_company_0746.364.718 a adms:Identifier;
+    skos:notation "0746.364.718";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.331.699.757 a adms:Identifier;
+    skos:notation "2.331.699.757";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

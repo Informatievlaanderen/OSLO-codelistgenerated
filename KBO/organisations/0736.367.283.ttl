@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2008/25501> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2550>, <http://vocab.belgif.be/auth/nace2008/2550>;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "25501".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/46739> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46739".
+<http://vocab.belgif.be/auth/nace2008/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2008/77291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77291".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/25401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2540>, <http://vocab.belgif.be/auth/nace2025/2540>;
+    skos:definition "Smeden van metaal"@nl, "Forgeage de métal"@fr;
+    skos:prefLabel "25401".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/46839> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46839".
+<http://vocab.belgif.be/auth/nace2025/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2025/77221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77221".
+<https://data.vlaanderen.be/id/onderneming/0736.367.283> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0736.367.283;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01620>, <http://vocab.belgif.be/auth/nace2025/46839>, <http://vocab.belgif.be/auth/nace2025/77221>, <http://vocab.belgif.be/auth/nace2025/25401>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/47522>, <http://vocab.belgif.be/auth/nace2008/01620>, <http://vocab.belgif.be/auth/nace2008/46739>, <http://vocab.belgif.be/auth/nace2008/47522>, <http://vocab.belgif.be/auth/nace2008/25501>, <http://vocab.belgif.be/auth/nace2008/77291>, <http://vocab.belgif.be/auth/nace2008/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0736.367.283;
+    reorg:legalName "SAUVELON METAL CONCEPT"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.294.781.458>.
+<https://data.vlaanderen.be/id/vestiging/2.294.781.458> a org:Site;
+    dcterms:created "14-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.294.781.458.
+_:address_contact_0736.367.283 a locn:Address;
+    locn:thoroughfare "Hardigny"@nl, "Hardigny"@fr;
+    rdfs:label "24";
+    locn:postCode "6600";
+    adres:gemeentenaam "Bastogne"@nl, "Bastogne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0736.367.283 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "sauvelon.francois@outlook.be";
+    schema:telephone "+32475502562";
+    locn:address _:address_contact_0736.367.283.
+_:registration_company_0736.367.283 a adms:Identifier;
+    skos:notation "0736.367.283";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.294.781.458 a adms:Identifier;
+    skos:notation "2.294.781.458";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

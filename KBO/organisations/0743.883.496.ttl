@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0143>, <http://vocab.belgif.be/auth/nace2008/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/96095> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Pensions voor huisdieren"@nl, "Hébergement d'animaux de compagnie"@fr;
+    skos:prefLabel "96095".
+<http://vocab.belgif.be/auth/nace2025/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0143>, <http://vocab.belgif.be/auth/nace2025/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/96995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Pensions voor huisdieren"@nl, "Hébergement d'animaux de compagnie"@fr;
+    skos:prefLabel "96995".
+<https://data.vlaanderen.be/id/onderneming/0743.883.496> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "20-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0743.883.496;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96995>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/01430>, <http://vocab.belgif.be/auth/nace2008/96095>, <http://vocab.belgif.be/auth/nace2008/01430>, <http://vocab.belgif.be/auth/nace2008/01490>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Conrardy, Julie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.304.647.051>.
+<https://data.vlaanderen.be/id/vestiging/2.304.647.051> a org:Site;
+    dcterms:created "20-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.304.647.051.
+_:registration_company_0743.883.496 a adms:Identifier;
+    skos:notation "0743.883.496";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.304.647.051 a adms:Identifier;
+    skos:notation "2.304.647.051";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

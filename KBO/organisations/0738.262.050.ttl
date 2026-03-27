@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1813>, <http://vocab.belgif.be/auth/nace2008/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2008/25710> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2571>, <http://vocab.belgif.be/auth/nace2008/2571>;
+    skos:definition "Vervaardiging van scharen, messen, bestekken, enz."@nl, "Fabrication de coutellerie"@fr;
+    skos:prefLabel "25710".
+<http://vocab.belgif.be/auth/nace2008/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<http://vocab.belgif.be/auth/nace2008/74103> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van grafische designers"@nl, "Activités de design graphique"@fr;
+    skos:prefLabel "74103".
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2561>, <http://vocab.belgif.be/auth/nace2025/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/32124> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van edelsmeedwerk"@nl, "Fabrication d'articles d'orfèvrerie"@fr;
+    skos:prefLabel "32124".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<https://data.vlaanderen.be/id/onderneming/0738.262.050> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "30-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0738.262.050;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2025/25610>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/32124>, <http://vocab.belgif.be/auth/nace2008/74103>, <http://vocab.belgif.be/auth/nace2008/25710>, <http://vocab.belgif.be/auth/nace2008/32124>, <http://vocab.belgif.be/auth/nace2008/18130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Loocke, Antoine";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.324.431.784>.
+<https://data.vlaanderen.be/id/vestiging/2.324.431.784> a org:Site;
+    dcterms:created "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.431.784.
+_:registration_company_0738.262.050 a adms:Identifier;
+    skos:notation "0738.262.050";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.431.784 a adms:Identifier;
+    skos:notation "2.324.431.784";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

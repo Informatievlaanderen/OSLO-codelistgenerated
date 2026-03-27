@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1624>, <http://vocab.belgif.be/auth/nace2008/1624>;
+    skos:definition "Vervaardiging van houten emballage"@nl, "Fabrication d'emballages en bois"@fr;
+    skos:prefLabel "16240".
+<http://vocab.belgif.be/auth/nace2008/46732> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46732".
+<http://vocab.belgif.be/auth/nace2008/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2025/16240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1624>, <http://vocab.belgif.be/auth/nace2025/1624>;
+    skos:definition "Vervaardiging van houten emballage"@nl, "Fabrication d'emballages en bois"@fr;
+    skos:prefLabel "16240".
+<http://vocab.belgif.be/auth/nace2025/46832> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46832".
+<http://vocab.belgif.be/auth/nace2025/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<https://data.vlaanderen.be/id/onderneming/0742.744.737> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0742.744.737;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16240>, <http://vocab.belgif.be/auth/nace2025/46832>, <http://vocab.belgif.be/auth/nace2025/47522>, <http://vocab.belgif.be/auth/nace2008/16240>, <http://vocab.belgif.be/auth/nace2008/46732>, <http://vocab.belgif.be/auth/nace2008/47522>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0742.744.737;
+    reorg:legalName "Palethandel Van Troys"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.298.548.325>.
+<https://data.vlaanderen.be/id/vestiging/2.298.548.325> a org:Site;
+    dcterms:created "30-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.548.325.
+_:address_contact_0742.744.737 a locn:Address;
+    locn:thoroughfare "Deinsesteenweg"@nl, "Deinsesteenweg"@fr;
+    rdfs:label "21B";
+    locn:postCode "8700";
+    adres:gemeentenaam "Tielt"@nl, "Tielt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0742.744.737 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "vantroys.didier@telenet.be";
+    locn:address _:address_contact_0742.744.737.
+_:registration_company_0742.744.737 a adms:Identifier;
+    skos:notation "0742.744.737";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.548.325 a adms:Identifier;
+    skos:notation "2.298.548.325";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

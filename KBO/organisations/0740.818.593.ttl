@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0161>, <http://vocab.belgif.be/auth/nace2008/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3311>, <http://vocab.belgif.be/auth/nace2008/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4661>, <http://vocab.belgif.be/auth/nace2008/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<http://vocab.belgif.be/auth/nace2025/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0161>, <http://vocab.belgif.be/auth/nace2025/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4661>, <http://vocab.belgif.be/auth/nace2025/4661>;
+    skos:definition "Groothandel in machines, werktuigen en toebehoren voor de  landbouw"@nl, "Commerce de gros de matériel agricole"@fr;
+    skos:prefLabel "46610".
+<https://data.vlaanderen.be/id/onderneming/0740.818.593> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "13-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0740.818.593;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01610>, <http://vocab.belgif.be/auth/nace2025/46610>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/33110>, <http://vocab.belgif.be/auth/nace2008/01610>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/46610>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Leuven, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.297.332.756>.
+<https://data.vlaanderen.be/id/vestiging/2.297.332.756> a org:Site;
+    dcterms:created "13-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.297.332.756.
+_:registration_company_0740.818.593 a adms:Identifier;
+    skos:notation "0740.818.593";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.297.332.756 a adms:Identifier;
+    skos:notation "2.297.332.756";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

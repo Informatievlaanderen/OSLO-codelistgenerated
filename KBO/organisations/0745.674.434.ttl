@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/38221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3822>, <http://vocab.belgif.be/auth/nace2008/3822>;
+    skos:definition "Voorbehandeling van gevaarlijk afval met het oog op verwijdering"@nl, "Prétraitement avant élimination des déchets  dangereux"@fr;
+    skos:prefLabel "38221".
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8110>, <http://vocab.belgif.be/auth/nace2008/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2025/38230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3823>, <http://vocab.belgif.be/auth/nace2025/3823>;
+    skos:definition "Andere terugwinning uit afval"@nl, "Autre valorisation des déchets"@fr;
+    skos:prefLabel "38230".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8110>, <http://vocab.belgif.be/auth/nace2025/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<https://data.vlaanderen.be/id/onderneming/0745.674.434> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "27-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.674.434;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/81100>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/38230>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/38221>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/81100>, <http://vocab.belgif.be/auth/nace2008/43120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0745.674.434;
+    reorg:legalName "RENE 1954"@nl.
+_:address_contact_0745.674.434 a locn:Address;
+    locn:thoroughfare "Karreweg"@nl, "Karreweg"@fr;
+    rdfs:label "28";
+    adres:busnummer "2";
+    locn:postCode "9870";
+    adres:gemeentenaam "Zulte"@nl, "Zulte"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0745.674.434 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0745.674.434.
+_:registration_company_0745.674.434 a adms:Identifier;
+    skos:notation "0745.674.434";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

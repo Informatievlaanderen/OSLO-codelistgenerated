@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0739.929.955> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0739.929.955;
+    schema:contactinfo _:contact_0739.929.955;
+    reorg:legalName "ARTSENPRAKTIJK MOLENHOEK"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.297.711.848>.
+<https://data.vlaanderen.be/id/vestiging/2.297.711.848> a org:Site;
+    dcterms:created "23-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.297.711.848.
+_:address_contact_0739.929.955 a locn:Address;
+    locn:thoroughfare "Bovenhoekstraat"@nl, "Bovenhoekstraat"@fr;
+    rdfs:label "58";
+    locn:postCode "9406";
+    adres:gemeentenaam "Ninove"@nl, "Ninove"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0739.929.955 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0739.929.955.
+_:registration_company_0739.929.955 a adms:Identifier;
+    skos:notation "0739.929.955";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.297.711.848 a adms:Identifier;
+    skos:notation "2.297.711.848";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2052>, <http://vocab.belgif.be/auth/nace2008/2052>;
+    skos:definition "Vervaardiging van artikelen van kurk en riet en van vlechtwerk"@nl, "Fabrication d'objets en liège, vannerie ou sparterie"@fr;
+    skos:prefLabel "20520".
+<http://vocab.belgif.be/auth/nace2008/23430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2343>, <http://vocab.belgif.be/auth/nace2008/2343>;
+    skos:definition "Vervaardiging van isolatoren en isolatiemateriaal, van keramische  stoffen"@nl, "Fabrication d'isolateurs et de pièces isolantes en céramique"@fr;
+    skos:prefLabel "23430".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/20590> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2059>, <http://vocab.belgif.be/auth/nace2025/2059>;
+    skos:definition "Vervaardiging van andere chemische producten, n.e.g."@nl, "Fabrication d'autres produits chimiques n.c.a."@fr;
+    skos:prefLabel "20590".
+<http://vocab.belgif.be/auth/nace2025/23430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2343>, <http://vocab.belgif.be/auth/nace2025/2343>;
+    skos:definition "Vervaardiging van isolatoren en isolatiemateriaal, van keramische  stoffen"@nl, "Fabrication d'isolateurs et de pièces isolantes en céramique"@fr;
+    skos:prefLabel "23430".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<https://data.vlaanderen.be/id/onderneming/0745.848.143> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.848.143;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/71121>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20590>, <http://vocab.belgif.be/auth/nace2025/23430>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/23430>, <http://vocab.belgif.be/auth/nace2008/71209>, <http://vocab.belgif.be/auth/nace2008/20520>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0745.848.143;
+    reorg:legalName "AEROBEL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.301.304.511>.
+<https://data.vlaanderen.be/id/vestiging/2.301.304.511> a org:Site;
+    dcterms:created "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.301.304.511.
+_:address_contact_0745.848.143 a locn:Address;
+    locn:thoroughfare "Woudstraat"@nl, "Woudstraat"@fr;
+    rdfs:label "9";
+    locn:postCode "3600";
+    adres:gemeentenaam "Genk"@nl, "Genk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0745.848.143 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    <http://xmlns.com/foaf/0.1/homepage> "www.aerobel.tech";
+    locn:address _:address_contact_0745.848.143.
+_:registration_company_0745.848.143 a adms:Identifier;
+    skos:notation "0745.848.143";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.301.304.511 a adms:Identifier;
+    skos:notation "2.301.304.511";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2008/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2025/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<https://data.vlaanderen.be/id/onderneming/0735.863.576> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "09-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0735.863.576;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42212>, <http://vocab.belgif.be/auth/nace2025/42219>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/42212>, <http://vocab.belgif.be/auth/nace2008/42219>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/43999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0735.863.576;
+    reorg:legalName "Mesut & Zonen"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.295.309.812>.
+<https://data.vlaanderen.be/id/vestiging/2.295.309.812> a org:Site;
+    dcterms:created "09-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.295.309.812.
+_:address_contact_0735.863.576 a locn:Address;
+    locn:thoroughfare "Oude Kouterdreef"@nl, "Oude Kouterdreef"@fr;
+    rdfs:label "38";
+    locn:postCode "9240";
+    adres:gemeentenaam "Zele"@nl, "Zele"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0735.863.576 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0735.863.576.
+_:registration_company_0735.863.576 a adms:Identifier;
+    skos:notation "0735.863.576";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.295.309.812 a adms:Identifier;
+    skos:notation "2.295.309.812";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

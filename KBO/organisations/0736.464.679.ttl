@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/46520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4652>, <http://vocab.belgif.be/auth/nace2008/4652>;
+    skos:definition "Groothandel in elektronische en telecommunicatieapparatuur en delen  daarvan"@nl, "Commerce de gros de composants et d'équipements électroniques et de télécommunication"@fr;
+    skos:prefLabel "46520".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<https://data.vlaanderen.be/id/onderneming/0736.464.679> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "07-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0736.464.679;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/82300>, <http://vocab.belgif.be/auth/nace2008/46520>, <http://vocab.belgif.be/auth/nace2008/46140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0736.464.679;
+    reorg:legalName "LenTor Energy"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.296.585.955>.
+<https://data.vlaanderen.be/id/vestiging/2.296.585.955> a org:Site;
+    dcterms:created "07-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.296.585.955.
+_:address_contact_0736.464.679 a locn:Address;
+    locn:thoroughfare "Antoine De Preterlaan (Heide)"@nl, "Antoine De Preterlaan (Heide)"@fr;
+    rdfs:label "43";
+    locn:postCode "2920";
+    adres:gemeentenaam "Kalmthout"@nl, "Kalmthout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0736.464.679 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "steve@horizonta.be";
+    locn:address _:address_contact_0736.464.679.
+_:registration_company_0736.464.679 a adms:Identifier;
+    skos:notation "0736.464.679";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.296.585.955 a adms:Identifier;
+    skos:notation "2.296.585.955";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

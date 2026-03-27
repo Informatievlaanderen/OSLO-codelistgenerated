@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<https://data.vlaanderen.be/id/onderneming/0742.922.406> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-02-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0742.922.406;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2008/88999>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0742.922.406;
+    reorg:legalName "ON TRACK"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.299.266.224>.
+<https://data.vlaanderen.be/id/vestiging/2.299.266.224> a org:Site;
+    dcterms:created "05-02-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.299.266.224.
+_:address_contact_0742.922.406 a locn:Address;
+    locn:thoroughfare "Groene-Swaenlaan"@nl, "Groene-Swaenlaan"@fr;
+    rdfs:label "45";
+    locn:postCode "2940";
+    adres:gemeentenaam "Stabroek"@nl, "Stabroek"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0742.922.406 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0742.922.406.
+_:registration_company_0742.922.406 a adms:Identifier;
+    skos:notation "0742.922.406";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-02-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.299.266.224 a adms:Identifier;
+    skos:notation "2.299.266.224";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-02-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

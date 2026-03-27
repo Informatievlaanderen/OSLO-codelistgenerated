@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0124>, <http://vocab.belgif.be/auth/nace2008/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2008/01250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0125>, <http://vocab.belgif.be/auth/nace2008/0125>;
+    skos:definition "Overige dierenfokkerijen"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01250".
+<http://vocab.belgif.be/auth/nace2025/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0124>, <http://vocab.belgif.be/auth/nace2025/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2025/01250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0125>, <http://vocab.belgif.be/auth/nace2025/0125>;
+    skos:definition "Overige dierenfokkerijen"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01250".
+<https://data.vlaanderen.be/id/onderneming/0741.362.882> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0741.362.882;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01240>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01250>, <http://vocab.belgif.be/auth/nace2008/01240>, <http://vocab.belgif.be/auth/nace2008/01250>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Dupae, Liliane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.297.463.410>.
+<https://data.vlaanderen.be/id/vestiging/2.297.463.410> a org:Site;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.297.463.410.
+_:registration_company_0741.362.882 a adms:Identifier;
+    skos:notation "0741.362.882";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.297.463.410 a adms:Identifier;
+    skos:notation "2.297.463.410";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

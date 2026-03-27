@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1413>, <http://vocab.belgif.be/auth/nace2008/1413>;
+    skos:definition "Winning van leisteen"@nl, "Extraction d'ardoise"@fr;
+    skos:prefLabel "14130".
+<http://vocab.belgif.be/auth/nace2008/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4776>, <http://vocab.belgif.be/auth/nace2008/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/74104> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van interieurdecorateurs"@nl, "Décoration d'intérieur"@fr;
+    skos:prefLabel "74104".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/47761> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4776>, <http://vocab.belgif.be/auth/nace2025/4776>;
+    skos:definition "Detailhandel in bloemen, planten, zaden en kunstmeststoffen in gespecialiseerde winkels"@nl, "Commerce de détail de fleurs, de plantes, de graines et d'engrais en magasin spécialisé"@fr;
+    skos:prefLabel "47761".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/74130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7413>, <http://vocab.belgif.be/auth/nace2025/7413>;
+    skos:definition "Interieurontwerp"@nl, "Activités de design d’intérieur"@fr;
+    skos:prefLabel "74130".
+<https://data.vlaanderen.be/id/onderneming/0737.411.123> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "05-11-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0737.411.123;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/74130>, <http://vocab.belgif.be/auth/nace2025/47761>, <http://vocab.belgif.be/auth/nace2025/14210>, <http://vocab.belgif.be/auth/nace2008/14130>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/47761>, <http://vocab.belgif.be/auth/nace2008/74104>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bos, Eva";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.295.194.204>.
+<https://data.vlaanderen.be/id/vestiging/2.295.194.204> a org:Site;
+    dcterms:created "05-11-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.295.194.204.
+_:registration_company_0737.411.123 a adms:Identifier;
+    skos:notation "0737.411.123";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-11-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.295.194.204 a adms:Identifier;
+    skos:notation "2.295.194.204";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-11-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

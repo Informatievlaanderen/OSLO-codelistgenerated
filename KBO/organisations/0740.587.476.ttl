@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/52230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5223>, <http://vocab.belgif.be/auth/nace2008/5223>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren"@nl, "Commerce de détail de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "52230".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2008/90011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90011".
+<http://vocab.belgif.be/auth/nace2025/52230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5223>, <http://vocab.belgif.be/auth/nace2025/5223>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren"@nl, "Commerce de détail de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "52230".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<https://data.vlaanderen.be/id/onderneming/0740.587.476> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0740.587.476;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/52230>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2008/52230>, <http://vocab.belgif.be/auth/nace2008/74201>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/90011>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Wallaert, Tim";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.298.356.107>.
+<https://data.vlaanderen.be/id/vestiging/2.298.356.107> a org:Site;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.356.107.
+_:registration_company_0740.587.476 a adms:Identifier;
+    skos:notation "0740.587.476";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.356.107 a adms:Identifier;
+    skos:notation "2.298.356.107";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2008/95240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9524>, <http://vocab.belgif.be/auth/nace2008/9524>;
+    skos:definition "Reparatie van meubelen en stoffering"@nl, "Réparation de meubles et d'équipements du foyer"@fr;
+    skos:prefLabel "95240".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/71111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Bouwarchitecten"@nl, "Activités d'architecture de construction"@fr;
+    skos:prefLabel "71111".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<http://vocab.belgif.be/auth/nace2025/95240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9524>, <http://vocab.belgif.be/auth/nace2025/9524>;
+    skos:definition "Reparatie van meubelen en stoffering"@nl, "Réparation de meubles et d'équipements du foyer"@fr;
+    skos:prefLabel "95240".
+<https://data.vlaanderen.be/id/onderneming/0744.719.478> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "04-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0744.719.478;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/71111>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/95240>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2008/95240>, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/71111>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/90031>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0744.719.478;
+    reorg:legalName "Huisstijl"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.301.238.688>.
+<https://data.vlaanderen.be/id/vestiging/2.301.238.688> a org:Site;
+    dcterms:created "04-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.301.238.688.
+_:address_contact_0744.719.478 a locn:Address;
+    locn:thoroughfare "Fortstraat"@nl, "Rue du Fort"@fr;
+    rdfs:label "113";
+    locn:postCode "1060";
+    adres:gemeentenaam "Sint-Gillis (bij-Brussel)"@nl, "Saint-Gilles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0744.719.478 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "anton.maertens@gmail.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.pom-pon.be";
+    locn:address _:address_contact_0744.719.478.
+_:registration_company_0744.719.478 a adms:Identifier;
+    skos:notation "0744.719.478";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.301.238.688 a adms:Identifier;
+    skos:notation "2.301.238.688";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

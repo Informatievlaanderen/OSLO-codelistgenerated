@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<https://data.vlaanderen.be/id/onderneming/0739.286.488> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-08-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0739.286.488;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0739.286.488;
+    reorg:legalName "Lanneau, Werner";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.233.503.885>.
+<https://data.vlaanderen.be/id/vestiging/2.233.503.885> a org:Site;
+    dcterms:created "01-08-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.233.503.885.
+_:contact_0739.286.488 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "werner.lanneau@gmail.com";
+    schema:telephone "0474 52 15 52".
+_:registration_company_0739.286.488 a adms:Identifier;
+    skos:notation "0739.286.488";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2014"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.233.503.885 a adms:Identifier;
+    skos:notation "2.233.503.885";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2014"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/85207> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8520>, <http://vocab.belgif.be/auth/nace2008/8520>;
+    skos:definition "Alfabetiseringsprogramma's ten behoeve van volwassenen"@nl, "Alphabétisation des adultes"@fr;
+    skos:prefLabel "85207".
+<http://vocab.belgif.be/auth/nace2008/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2008/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/85207> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8520>, <http://vocab.belgif.be/auth/nace2025/8520>;
+    skos:definition "Alfabetiseringsprogramma's ten behoeve van volwassenen"@nl, "Alphabétisation des adultes"@fr;
+    skos:prefLabel "85207".
+<http://vocab.belgif.be/auth/nace2025/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/94999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Overige verenigingen, n.e.g."@nl, "Autres associations n.c.a."@fr;
+    skos:prefLabel "94999".
+<https://data.vlaanderen.be/id/onderneming/0745.363.836> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.363.836;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/94999>, <http://vocab.belgif.be/auth/nace2025/85207>, <http://vocab.belgif.be/auth/nace2025/85593>, <http://vocab.belgif.be/auth/nace2008/85593>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/94999>, <http://vocab.belgif.be/auth/nace2008/85207>, <http://vocab.belgif.be/auth/nace2008/82300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0745.363.836;
+    reorg:legalName "les dunes pour developpement, education et culture"@fr, "addec"@fr.
+_:address_contact_0745.363.836 a locn:Address;
+    locn:thoroughfare "Vorstse Steenweg"@nl, "Chaussée de Forest"@fr;
+    rdfs:label "116";
+    locn:postCode "1060";
+    adres:gemeentenaam "Sint-Gillis (bij-Brussel)"@nl, "Saint-Gilles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0745.363.836 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "nori2469.job@gmail.com";
+    locn:address _:address_contact_0745.363.836.
+_:registration_company_0745.363.836 a adms:Identifier;
+    skos:notation "0745.363.836";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-03-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

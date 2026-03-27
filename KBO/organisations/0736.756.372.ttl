@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/50200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5020>, <http://vocab.belgif.be/auth/nace2008/5020>;
+    skos:definition "Onderhoud en reparatie van auto's"@nl, "Entretien et réparation de véhicules automobiles"@fr;
+    skos:prefLabel "50200".
+<http://vocab.belgif.be/auth/nace2008/51210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5121>, <http://vocab.belgif.be/auth/nace2008/5121>;
+    skos:definition "Groothandel in granen, zaden en diervoeders"@nl, "Commerce de gros de céréales, semences et aliments pour le bétail"@fr;
+    skos:prefLabel "51210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/50200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5020>, <http://vocab.belgif.be/auth/nace2025/5020>;
+    skos:definition "Onderhoud en reparatie van auto's"@nl, "Entretien et réparation de véhicules automobiles"@fr;
+    skos:prefLabel "50200".
+<http://vocab.belgif.be/auth/nace2025/51210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5121>, <http://vocab.belgif.be/auth/nace2025/5121>;
+    skos:definition "Groothandel in granen, zaden en diervoeders"@nl, "Commerce de gros de céréales, semences et aliments pour le bétail"@fr;
+    skos:prefLabel "51210".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0736.756.372> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0736.756.372;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/50200>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/51210>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/51210>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/50200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0736.756.372;
+    reorg:legalName "EDT BE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.302.254.715>, <https://data.vlaanderen.be/id/vestiging/2.314.440.487>.
+<https://data.vlaanderen.be/id/vestiging/2.302.254.715> a org:Site;
+    dcterms:created "24-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.302.254.715.
+<https://data.vlaanderen.be/id/vestiging/2.314.440.487> a org:Site;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.314.440.487.
+_:address_contact_0736.756.372 a locn:Address;
+    locn:thoroughfare "Rue de l'Aéroport"@nl, "Rue de l'Aéroport"@fr;
+    rdfs:label "50";
+    locn:postCode "4460";
+    adres:gemeentenaam "Grâce-Hollogne"@nl, "Grâce-Hollogne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0736.756.372 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email " kaizhou.wang@edtexpress.fr";
+    schema:telephone "33 6 62.20.22.77";
+    <http://xmlns.com/foaf/0.1/homepage> "www.edtexpress.eu";
+    locn:address _:address_contact_0736.756.372.
+_:registration_company_0736.756.372 a adms:Identifier;
+    skos:notation "0736.756.372";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.302.254.715 a adms:Identifier;
+    skos:notation "2.302.254.715";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.314.440.487 a adms:Identifier;
+    skos:notation "2.314.440.487";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

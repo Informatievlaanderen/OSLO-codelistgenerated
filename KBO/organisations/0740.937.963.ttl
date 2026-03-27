@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/66300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6630>, <http://vocab.belgif.be/auth/nace2008/6630>;
+    skos:definition "Vermogensbeheer"@nl, "Gestion de fonds"@fr;
+    skos:prefLabel "66300".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/66300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6630>, <http://vocab.belgif.be/auth/nace2025/6630>;
+    skos:definition "Vermogensbeheer"@nl, "Gestion de fonds"@fr;
+    skos:prefLabel "66300".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<https://data.vlaanderen.be/id/onderneming/0740.937.963> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0740.937.963;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/66300>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/66300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0740.937.963;
+    reorg:legalName "ESCOBEL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.299.088.060>.
+<https://data.vlaanderen.be/id/vestiging/2.299.088.060> a org:Site;
+    dcterms:created "08-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.299.088.060.
+_:address_contact_0740.937.963 a locn:Address;
+    locn:thoroughfare "Eikenlaan"@nl, "Eikenlaan"@fr;
+    rdfs:label "25";
+    locn:postCode "9150";
+    adres:gemeentenaam "Kruibeke"@nl, "Kruibeke"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0740.937.963 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "jefbauwens@ttctransport.be";
+    schema:telephone "0495/292949";
+    locn:address _:address_contact_0740.937.963.
+_:registration_company_0740.937.963 a adms:Identifier;
+    skos:notation "0740.937.963";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.299.088.060 a adms:Identifier;
+    skos:notation "2.299.088.060";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

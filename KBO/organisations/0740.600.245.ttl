@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8552>, <http://vocab.belgif.be/auth/nace2008/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/85520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8552>, <http://vocab.belgif.be/auth/nace2025/8552>;
+    skos:definition "Cultureel onderwijs"@nl, "Enseignement culturel"@fr;
+    skos:prefLabel "85520".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/0740.600.245> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "30-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0740.600.245;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85520>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/85520>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0740.600.245;
+    reorg:legalName "Rojo en si bémol"@fr, "Rojo en si b"@fr, "Rojo en si bémol"@nl, "Rojo en si b"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.605.452>.
+<https://data.vlaanderen.be/id/vestiging/2.307.605.452> a org:Site;
+    dcterms:created "30-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.605.452.
+_:address_contact_0740.600.245 a locn:Address;
+    locn:thoroughfare "Centauruslaan"@nl, "Avenue du Centaure"@fr;
+    rdfs:label "7";
+    locn:postCode "1200";
+    adres:gemeentenaam "Sint-Lambrechts-Woluwe"@nl, "Woluwe-Saint-Lambert"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0740.600.245 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "rojoensib@gmail.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.rojoensibemol.com";
+    locn:address _:address_contact_0740.600.245.
+_:registration_company_0740.600.245 a adms:Identifier;
+    skos:notation "0740.600.245";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.605.452 a adms:Identifier;
+    skos:notation "2.307.605.452";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

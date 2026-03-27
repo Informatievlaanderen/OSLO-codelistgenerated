@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2120>, <http://vocab.belgif.be/auth/nace2008/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2025/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2120>, <http://vocab.belgif.be/auth/nace2025/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<https://data.vlaanderen.be/id/onderneming/0745.771.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-03-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.771.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/21201>, <http://vocab.belgif.be/auth/nace2008/21201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0745.771.533;
+    reorg:legalName "ACROTECH BIOPHARMA LLC"@nl.
+_:address_contact_0745.771.533 a locn:Address;
+    locn:thoroughfare "PRINCETON HIGHSTOWN RD"@nl, "PRINCETON HIGHSTOWN RD"@fr;
+    rdfs:label "279";
+    locn:postCode "NJ 08520";
+    adres:gemeentenaam "EAST WINDSOR - NEW JERSEY"@nl, "EAST WINDSOR - NEW JERSEY"@fr;
+    adres:land "Verenigde Staten van Amerika"@nl, "Etats-Unis d'Amérique"@fr.
+_:contact_0745.771.533 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0745.771.533.
+_:registration_company_0745.771.533 a adms:Identifier;
+    skos:notation "0745.771.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/80300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8030>, <http://vocab.belgif.be/auth/nace2008/8030>;
+    skos:definition "Opsporingsdiensten"@nl, "Activités d'enquête"@fr;
+    skos:prefLabel "80300".
+<http://vocab.belgif.be/auth/nace2025/80010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8001>, <http://vocab.belgif.be/auth/nace2025/8001>;
+    skos:definition "Opsporings- en particuliere beveiligingsdiensten"@nl, "Activités d’investigation et de sécurité privée"@fr;
+    skos:prefLabel "80010".
+<https://data.vlaanderen.be/id/onderneming/0742.488.676> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0742.488.676;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/80010>, _:nace_2003_74602, <http://vocab.belgif.be/auth/nace2008/80300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Herbert, Jürgen";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.131.452.759>.
+<https://data.vlaanderen.be/id/vestiging/2.131.452.759> a org:Site;
+    dcterms:created "06-05-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.131.452.759.
+_:nace_2003_74602 a skos:Concept;
+    skos:definition "Opsporingsdiensten en detectivebureaus"@nl, "Service de recherches et bureau de détective"@fr;
+    skos:prefLabel "74602".
+_:registration_company_0742.488.676 a adms:Identifier;
+    skos:notation "0742.488.676";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2003"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.131.452.759 a adms:Identifier;
+    skos:notation "2.131.452.759";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2003"^^<http://www.w3.org/2001/XMLSchema#date>.

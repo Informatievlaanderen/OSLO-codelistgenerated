@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<http://vocab.belgif.be/auth/nace2025/90393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Gespecialiseerde beeld-, verlichtings- en geluidstechnieken"@nl, "Services spécialisés du son, de l'image et de l'éclairage"@fr;
+    skos:prefLabel "90393".
+<https://data.vlaanderen.be/id/onderneming/0739.644.202> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0739.644.202;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2025/90393>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0739.644.202;
+    reorg:legalName "Ralliard, Gauthier";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.296.564.575>.
+<https://data.vlaanderen.be/id/vestiging/2.296.564.575> a org:Site;
+    dcterms:created "01-01-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.296.564.575.
+_:contact_0739.644.202 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "gauthier.ralliard@icloud.com";
+    schema:telephone "+32478095780".
+_:registration_company_0739.644.202 a adms:Identifier;
+    skos:notation "0739.644.202";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.296.564.575 a adms:Identifier;
+    skos:notation "2.296.564.575";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

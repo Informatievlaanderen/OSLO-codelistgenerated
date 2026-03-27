@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01440> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0144>, <http://vocab.belgif.be/auth/nace2008/0144>;
+    skos:definition "Fokken van kamelen en andere kameelachtigen"@nl, "Élevage de chameaux et d'autres camélidés"@fr;
+    skos:prefLabel "01440".
+<http://vocab.belgif.be/auth/nace2008/46110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4611>, <http://vocab.belgif.be/auth/nace2008/4611>;
+    skos:definition "Handelsbemiddeling in landbouwproducten, levende dieren en textielgrondstoffen en halffabrikaten"@nl, "Intermédiaires du commerce en matières premières agricoles, animaux vivants, matières premières textiles et produits semi-finis"@fr;
+    skos:prefLabel "46110".
+<http://vocab.belgif.be/auth/nace2008/47513> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in breigarens, handwerken en fournituren in gespecialiseerde winkels"@nl, "Commerce de détail de fils à tricoter et d'articles de mercerie en magasin spécialisé"@fr;
+    skos:prefLabel "47513".
+<http://vocab.belgif.be/auth/nace2025/01440> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0144>, <http://vocab.belgif.be/auth/nace2025/0144>;
+    skos:definition "Fokken van kamelen en andere kameelachtigen"@nl, "Élevage de chameaux et d'autres camélidés"@fr;
+    skos:prefLabel "01440".
+<http://vocab.belgif.be/auth/nace2025/46110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4611>, <http://vocab.belgif.be/auth/nace2025/4611>;
+    skos:definition "Handelsbemiddeling in landbouwproducten, levende dieren en textielgrondstoffen en halffabrikaten"@nl, "Intermédiaires du commerce en matières premières agricoles, animaux vivants, matières premières textiles et produits semi-finis"@fr;
+    skos:prefLabel "46110".
+<http://vocab.belgif.be/auth/nace2025/47513> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in breigarens, handwerken en fournituren in gespecialiseerde winkels"@nl, "Commerce de détail de fils à tricoter et d'articles de mercerie en magasin spécialisé"@fr;
+    skos:prefLabel "47513".
+<http://vocab.belgif.be/auth/nace2025/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7810>, <http://vocab.belgif.be/auth/nace2025/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0745.957.912> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "09-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0745.957.912;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47513>, <http://vocab.belgif.be/auth/nace2025/46110>, <http://vocab.belgif.be/auth/nace2025/01440>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/78100>, <http://vocab.belgif.be/auth/nace2008/01440>, <http://vocab.belgif.be/auth/nace2008/46110>, <http://vocab.belgif.be/auth/nace2008/47513>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "van der Vleut, Renate";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.301.027.268>.
+<https://data.vlaanderen.be/id/vestiging/2.301.027.268> a org:Site;
+    dcterms:created "09-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.301.027.268.
+_:registration_company_0745.957.912 a adms:Identifier;
+    skos:notation "0745.957.912";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.301.027.268 a adms:Identifier;
+    skos:notation "2.301.027.268";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

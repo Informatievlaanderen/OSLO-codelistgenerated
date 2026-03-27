@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3240>, <http://vocab.belgif.be/auth/nace2008/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>;
+    skos:definition "Groothandel in computers, randapparatuur en software"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "46510".
+<http://vocab.belgif.be/auth/nace2008/58210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5821>, <http://vocab.belgif.be/auth/nace2008/5821>;
+    skos:definition "Uitgeverijen van computerspellen"@nl, "Édition de jeux électroniques"@fr;
+    skos:prefLabel "58210".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2008/93212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9321>, <http://vocab.belgif.be/auth/nace2008/9321>;
+    skos:definition "Exploitatie van pret- en themaparken"@nl, "Activités des parcs d'attractions et des parcs à thèmes"@fr;
+    skos:prefLabel "93212".
+<http://vocab.belgif.be/auth/nace2008/93292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93292".
+<http://vocab.belgif.be/auth/nace2025/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3240>, <http://vocab.belgif.be/auth/nace2025/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/58210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5821>, <http://vocab.belgif.be/auth/nace2025/5821>;
+    skos:definition "Uitgeverijen van computerspellen"@nl, "Édition de jeux électroniques"@fr;
+    skos:prefLabel "58210".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9321>, <http://vocab.belgif.be/auth/nace2025/9321>;
+    skos:definition "Activiteiten van pret- en themaparken"@nl, "Activités des parcs d’attractions et parcs à thèmes"@fr;
+    skos:prefLabel "93210".
+<http://vocab.belgif.be/auth/nace2025/93293> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Exploitatie van recreatiedomeinen"@nl, "Exploitation de domaines récréatifs"@fr;
+    skos:prefLabel "93293".
+<https://data.vlaanderen.be/id/onderneming/0746.367.785> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.367.785;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2025/58210>, <http://vocab.belgif.be/auth/nace2025/93293>, <http://vocab.belgif.be/auth/nace2025/93210>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2025/32400>, <http://vocab.belgif.be/auth/nace2008/93212>, <http://vocab.belgif.be/auth/nace2008/93292>, <http://vocab.belgif.be/auth/nace2008/93110>, <http://vocab.belgif.be/auth/nace2008/32400>, <http://vocab.belgif.be/auth/nace2008/58210>, <http://vocab.belgif.be/auth/nace2008/46510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0746.367.785;
+    reorg:legalName "KINETOMATICS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.301.821.876>.
+<https://data.vlaanderen.be/id/vestiging/2.301.821.876> a org:Site;
+    dcterms:created "17-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.301.821.876.
+_:address_contact_0746.367.785 a locn:Address;
+    locn:thoroughfare "Smidsstraat"@nl, "Smidsstraat"@fr;
+    rdfs:label "18";
+    locn:postCode "2580";
+    adres:gemeentenaam "Putte"@nl, "Putte"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0746.367.785 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0746.367.785.
+_:registration_company_0746.367.785 a adms:Identifier;
+    skos:notation "0746.367.785";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.301.821.876 a adms:Identifier;
+    skos:notation "2.301.821.876";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-04-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

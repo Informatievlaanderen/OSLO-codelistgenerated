@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1623>, <http://vocab.belgif.be/auth/nace2008/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2008/32200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3220>, <http://vocab.belgif.be/auth/nace2008/3220>;
+    skos:definition "Vervaardiging van muziekinstrumenten"@nl, "Fabrication d'instruments de musique"@fr;
+    skos:prefLabel "32200".
+<http://vocab.belgif.be/auth/nace2008/43995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Restaureren van bouwwerken"@nl, "Travaux de restauration des bâtiments"@fr;
+    skos:prefLabel "43995".
+<http://vocab.belgif.be/auth/nace2008/90012> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90012".
+<http://vocab.belgif.be/auth/nace2008/90042> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9004>, <http://vocab.belgif.be/auth/nace2008/9004>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90042".
+<http://vocab.belgif.be/auth/nace2008/94995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van ontwikkelingssamenwerking"@nl, "Associations pour la coopération au développement"@fr;
+    skos:prefLabel "94995".
+<http://vocab.belgif.be/auth/nace2025/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1623>, <http://vocab.belgif.be/auth/nace2025/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2025/32200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3220>, <http://vocab.belgif.be/auth/nace2025/3220>;
+    skos:definition "Vervaardiging van muziekinstrumenten"@nl, "Fabrication d'instruments de musique"@fr;
+    skos:prefLabel "32200".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/90202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door artistieke ensembles"@nl, "Réalisation de spectacles par des ensembles artistiques"@fr;
+    skos:prefLabel "90202".
+<http://vocab.belgif.be/auth/nace2025/90312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9031>, <http://vocab.belgif.be/auth/nace2025/9031>;
+    skos:definition "Exploitatie van culturele centra en multifunctionele zalen ten behoeve van culturele activiteiten"@nl, "Gestion de centres culturels et de salles multifonctionnelles à vocation culturelle"@fr;
+    skos:prefLabel "90312".
+<http://vocab.belgif.be/auth/nace2025/94995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van ontwikkelingssamenwerking"@nl, "Associations pour la coopération au développement"@fr;
+    skos:prefLabel "94995".
+<https://data.vlaanderen.be/id/onderneming/0736.458.642> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "25-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0736.458.642;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90202>, <http://vocab.belgif.be/auth/nace2025/16230>, <http://vocab.belgif.be/auth/nace2025/94995>, <http://vocab.belgif.be/auth/nace2025/90312>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/32200>, <http://vocab.belgif.be/auth/nace2008/16230>, <http://vocab.belgif.be/auth/nace2008/32200>, <http://vocab.belgif.be/auth/nace2008/43995>, <http://vocab.belgif.be/auth/nace2008/90012>, <http://vocab.belgif.be/auth/nace2008/90042>, <http://vocab.belgif.be/auth/nace2008/94995>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0736.458.642;
+    reorg:legalName "SONG OF THE EARTH"@nl.
+_:address_contact_0736.458.642 a locn:Address;
+    locn:thoroughfare "Vlaamsekaai"@nl, "Vlaamsekaai"@fr;
+    rdfs:label "71";
+    adres:busnummer "1";
+    locn:postCode "2000";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0736.458.642 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0736.458.642.
+_:registration_company_0736.458.642 a adms:Identifier;
+    skos:notation "0736.458.642";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

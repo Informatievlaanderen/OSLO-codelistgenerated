@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1039>, <http://vocab.belgif.be/auth/nace2008/1039>;
+    skos:definition "Verwerking en conservering van groenten, exclusief productie van diepgevroren groenten"@nl, "Transformation et conservation de légumes, sauf fabrication de légumes surgelés"@fr;
+    skos:prefLabel "10391".
+<http://vocab.belgif.be/auth/nace2008/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1039>, <http://vocab.belgif.be/auth/nace2008/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/74101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Ontwerpen van textielpatronen, kleding, juwelen, meubels en decoratieartikelen"@nl, "Création de modèles pour les biens personnels et domestiques"@fr;
+    skos:prefLabel "74101".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2025/10391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1039>, <http://vocab.belgif.be/auth/nace2025/1039>;
+    skos:definition "Verwerking en conservering van groenten, exclusief productie van diepgevroren groenten"@nl, "Transformation et conservation de légumes, sauf fabrication de légumes surgelés"@fr;
+    skos:prefLabel "10391".
+<http://vocab.belgif.be/auth/nace2025/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1039>, <http://vocab.belgif.be/auth/nace2025/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0746.332.450> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.332.450;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/10391>, <http://vocab.belgif.be/auth/nace2025/10392>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2008/10392>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/74101>, <http://vocab.belgif.be/auth/nace2008/10391>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Raskin, Gaël";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.323.845.529>.
+<https://data.vlaanderen.be/id/vestiging/2.323.845.529> a org:Site;
+    dcterms:created "08-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.323.845.529.
+_:registration_company_0746.332.450 a adms:Identifier;
+    skos:notation "0746.332.450";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.323.845.529 a adms:Identifier;
+    skos:notation "2.323.845.529";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
