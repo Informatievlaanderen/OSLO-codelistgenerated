@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0143>, <http://vocab.belgif.be/auth/nace2008/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/93127> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9312>, <http://vocab.belgif.be/auth/nace2008/9312>;
+    skos:definition "Activiteiten van paardensportclubs"@nl, "Activités de clubs équestres"@fr;
+    skos:prefLabel "93127".
+<http://vocab.belgif.be/auth/nace2008/93192> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Zelfstandig werkende sportbeoefenaars"@nl, "Activités des sportifs indépendants"@fr;
+    skos:prefLabel "93192".
+<http://vocab.belgif.be/auth/nace2025/01430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0143>, <http://vocab.belgif.be/auth/nace2025/0143>;
+    skos:definition "Fokken van paarden en andere paardachtigen"@nl, "Élevage de chevaux et d'autres équidés"@fr;
+    skos:prefLabel "01430".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93127> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9312>, <http://vocab.belgif.be/auth/nace2025/9312>;
+    skos:definition "Activiteiten van paardensportclubs"@nl, "Activités de clubs équestres"@fr;
+    skos:prefLabel "93127".
+<http://vocab.belgif.be/auth/nace2025/93192> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Zelfstandig werkende sportbeoefenaars"@nl, "Activités des sportifs indépendants"@fr;
+    skos:prefLabel "93192".
+<https://data.vlaanderen.be/id/onderneming/0746.779.046> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.779.046;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93127>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/01430>, <http://vocab.belgif.be/auth/nace2025/93192>, <http://vocab.belgif.be/auth/nace2008/93127>, <http://vocab.belgif.be/auth/nace2008/93192>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/01430>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0746.779.046;
+    reorg:legalName "CYRIL COOLS SPORT HORSES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.302.549.871>.
+<https://data.vlaanderen.be/id/vestiging/2.302.549.871> a org:Site;
+    dcterms:created "08-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.302.549.871.
+_:address_contact_0746.779.046 a locn:Address;
+    locn:thoroughfare "Rue du Progrès(L)"@nl, "Rue du Progrès(L)"@fr;
+    rdfs:label "18";
+    locn:postCode "7860";
+    adres:gemeentenaam "Lessines"@nl, "Lessines"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0746.779.046 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0746.779.046.
+_:registration_company_0746.779.046 a adms:Identifier;
+    skos:notation "0746.779.046";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.302.549.871 a adms:Identifier;
+    skos:notation "2.302.549.871";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

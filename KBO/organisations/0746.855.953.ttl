@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/29202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2920>, <http://vocab.belgif.be/auth/nace2008/2920>;
+    skos:definition "Vervaardiging van aanhangwagens, caravans en opleggers"@nl, "Fabrication de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "29202".
+<http://vocab.belgif.be/auth/nace2008/45194> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4519>, <http://vocab.belgif.be/auth/nace2008/4519>;
+    skos:definition "Handel in aanhangwagens, opleggers en caravans"@nl, "Commerce de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "45194".
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2025/29202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2920>, <http://vocab.belgif.be/auth/nace2025/2920>;
+    skos:definition "Vervaardiging van aanhangwagens, caravans en opleggers"@nl, "Fabrication de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "29202".
+<http://vocab.belgif.be/auth/nace2025/46713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in aanhangwagens, opleggers en caravans"@nl, "Commerce de gros de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "46713".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<https://data.vlaanderen.be/id/onderneming/0746.855.953> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "12-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.855.953;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/29202>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46713>, <http://vocab.belgif.be/auth/nace2025/46720>, <http://vocab.belgif.be/auth/nace2008/29202>, <http://vocab.belgif.be/auth/nace2008/45310>, <http://vocab.belgif.be/auth/nace2008/45194>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0746.855.953;
+    reorg:legalName "HALLCO INDUSTRIES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.305.076.425>.
+<https://data.vlaanderen.be/id/vestiging/2.305.076.425> a org:Site;
+    dcterms:created "08-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.305.076.425.
+_:address_contact_0746.855.953 a locn:Address;
+    locn:thoroughfare "Rue du Mont d'Orcq(FRY)"@nl, "Rue du Mont d'Orcq(FRY)"@fr;
+    rdfs:label "14";
+    locn:postCode "7503";
+    adres:gemeentenaam "Tournai"@nl, "Tournai"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0746.855.953 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "arran@hallco.eu";
+    locn:address _:address_contact_0746.855.953.
+_:registration_company_0746.855.953 a adms:Identifier;
+    skos:notation "0746.855.953";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.305.076.425 a adms:Identifier;
+    skos:notation "2.305.076.425";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

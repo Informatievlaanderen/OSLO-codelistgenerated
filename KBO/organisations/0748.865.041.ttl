@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3311>, <http://vocab.belgif.be/auth/nace2008/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2008/43222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Installatie van verwarming, klimaatregeling en ventilatie"@nl, "Installation de chauffage, de ventilation et de conditionnement d'air"@fr;
+    skos:prefLabel "43222".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8122>, <http://vocab.belgif.be/auth/nace2008/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/33110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3311>, <http://vocab.belgif.be/auth/nace2025/3311>;
+    skos:definition "Reparatie van producten van metaal"@nl, "Réparation d'ouvrages en métaux"@fr;
+    skos:prefLabel "33110".
+<http://vocab.belgif.be/auth/nace2025/43222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Installatie van verwarming, klimaatregeling en ventilatie"@nl, "Installation de chauffage, de ventilation et de conditionnement d'air"@fr;
+    skos:prefLabel "43222".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<https://data.vlaanderen.be/id/onderneming/0748.865.041> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0748.865.041;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/43222>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33110>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2008/43222>, <http://vocab.belgif.be/auth/nace2008/33110>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/81220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0748.865.041;
+    reorg:legalName "ADT SERVICES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.308.243.474>.
+<https://data.vlaanderen.be/id/vestiging/2.308.243.474> a org:Site;
+    dcterms:created "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.308.243.474.
+_:address_contact_0748.865.041 a locn:Address;
+    locn:thoroughfare "François Musstraat"@nl, "Rue François Mus"@fr;
+    rdfs:label "24";
+    locn:postCode "1080";
+    adres:gemeentenaam "Sint-Jans-Molenbeek"@nl, "Molenbeek-Saint-Jean"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0748.865.041 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0748.865.041.
+_:registration_company_0748.865.041 a adms:Identifier;
+    skos:notation "0748.865.041";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.308.243.474 a adms:Identifier;
+    skos:notation "2.308.243.474";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

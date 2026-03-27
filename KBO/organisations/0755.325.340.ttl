@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46691> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in machines voor de productie van voedings- en genotmiddelen"@nl, "Commerce de gros de machines pour la production d'aliments, de boissons et de tabac"@fr;
+    skos:prefLabel "46691".
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2025/46641> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in machines voor de productie van voedings- en genotmiddelen"@nl, "Commerce de gros de machines pour la production d'aliments, de boissons et de tabac"@fr;
+    skos:prefLabel "46641".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<https://data.vlaanderen.be/id/onderneming/0755.325.340> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.325.340;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/46641>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/46691>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0755.325.340;
+    reorg:legalName "B-Commerce"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.672.560>.
+<https://data.vlaanderen.be/id/vestiging/2.307.672.560> a org:Site;
+    dcterms:created "28-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.672.560.
+_:address_contact_0755.325.340 a locn:Address;
+    locn:thoroughfare "Tennislaan"@nl, "Tennislaan"@fr;
+    rdfs:label "10";
+    locn:postCode "3900";
+    adres:gemeentenaam "Pelt"@nl, "Pelt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0755.325.340 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0755.325.340.
+_:registration_company_0755.325.340 a adms:Identifier;
+    skos:notation "0755.325.340";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.672.560 a adms:Identifier;
+    skos:notation "2.307.672.560";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

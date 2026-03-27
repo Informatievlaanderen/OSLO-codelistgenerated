@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Uitvoeren van metsel- en voegwerken"@nl, "Travaux de maçonnerie et de rejointoiement"@fr;
+    skos:prefLabel "43994".
+<http://vocab.belgif.be/auth/nace2025/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4391>, <http://vocab.belgif.be/auth/nace2025/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<https://data.vlaanderen.be/id/onderneming/0757.322.847> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-04-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0757.322.847;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43910>, _:nace_2003_45250, <http://vocab.belgif.be/auth/nace2008/43994>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Lecomte, Michel".
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:registration_company_0757.322.847 a adms:Identifier;
+    skos:notation "0757.322.847";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-04-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

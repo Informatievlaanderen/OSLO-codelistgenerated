@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47632> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in fietsen"@nl, "Commerce de détail de cycles"@fr;
+    skos:prefLabel "47632".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<http://vocab.belgif.be/auth/nace2025/47791> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in antiquiteiten in winkels"@nl, "Commerce de détail d'antiquités en magasin"@fr;
+    skos:prefLabel "47791".
+<http://vocab.belgif.be/auth/nace2025/91300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9130>, <http://vocab.belgif.be/auth/nace2025/9130>;
+    skos:definition "Instandhouding, restauratie en andere ondersteunende activiteiten voor cultureel erfgoed"@nl, "Conservation, restauration et autres activités de soutien pour la préservation du patrimoine culturel"@fr;
+    skos:prefLabel "91300".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0748.740.921> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0748.740.921;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47632>, <http://vocab.belgif.be/auth/nace2025/47791>, <http://vocab.belgif.be/auth/nace2025/47716>, <http://vocab.belgif.be/auth/nace2025/91300>, <http://vocab.belgif.be/auth/nace2025/95290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Braem, Robby";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.867.709>.
+<https://data.vlaanderen.be/id/vestiging/2.376.867.709> a org:Site;
+    dcterms:created "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.867.709.
+_:registration_company_0748.740.921 a adms:Identifier;
+    skos:notation "0748.740.921";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.867.709 a adms:Identifier;
+    skos:notation "2.376.867.709";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-08-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

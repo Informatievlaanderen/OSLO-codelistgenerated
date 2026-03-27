@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<https://data.vlaanderen.be/id/onderneming/0753.323.081> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "31-03-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.323.081;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52210>, _:nace_2003_63210, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Vio, Eddy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.086.199.685>.
+<https://data.vlaanderen.be/id/vestiging/2.086.199.685> a org:Site;
+    dcterms:created "31-03-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.086.199.685.
+_:nace_2003_63210 a skos:Concept;
+    skos:definition "Overige ondersteunende activiteiten i.v.m. het vervoer te land"@nl, "Services annexes des transports terrestres"@fr;
+    skos:prefLabel "63210".
+_:registration_company_0753.323.081 a adms:Identifier;
+    skos:notation "0753.323.081";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-03-1998"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.086.199.685 a adms:Identifier;
+    skos:notation "2.086.199.685";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "31-03-1998"^^<http://www.w3.org/2001/XMLSchema#date>.

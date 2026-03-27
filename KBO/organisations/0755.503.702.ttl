@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/66120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6612>, <http://vocab.belgif.be/auth/nace2008/6612>;
+    skos:definition "Effecten- en goederenhandel"@nl, "Courtage de valeurs mobilières et de marchandises"@fr;
+    skos:prefLabel "66120".
+<http://vocab.belgif.be/auth/nace2008/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6619>, <http://vocab.belgif.be/auth/nace2008/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2025/66129> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6612>, <http://vocab.belgif.be/auth/nace2025/6612>;
+    skos:definition "Overige bemiddeling in effecten- en goederencontracten, muv crowdfunding"@nl, "Autre courtage de valeurs mobilières et de matières premières, à l’exception du financement participatif (crowdfunding)"@fr;
+    skos:prefLabel "66129".
+<http://vocab.belgif.be/auth/nace2025/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6619>, <http://vocab.belgif.be/auth/nace2025/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<https://data.vlaanderen.be/id/onderneming/0755.503.702> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.503.702;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/66199>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/66129>, <http://vocab.belgif.be/auth/nace2008/66199>, <http://vocab.belgif.be/auth/nace2008/66120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0755.503.702;
+    reorg:legalName "QUINTET PRIVATE BANK (EUROPE)"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.308.615.143>, <https://data.vlaanderen.be/id/vestiging/2.312.633.616>, <https://data.vlaanderen.be/id/vestiging/2.312.633.715>, <https://data.vlaanderen.be/id/vestiging/2.312.633.814>, <https://data.vlaanderen.be/id/vestiging/2.312.633.913>, <https://data.vlaanderen.be/id/vestiging/2.312.634.012>, <https://data.vlaanderen.be/id/vestiging/2.312.634.111>, _:branch_9.001.349.778.
+<https://data.vlaanderen.be/id/vestiging/2.308.615.143> a org:Site;
+    dcterms:created "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.308.615.143.
+<https://data.vlaanderen.be/id/vestiging/2.312.633.616> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.633.616.
+<https://data.vlaanderen.be/id/vestiging/2.312.633.715> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.633.715.
+<https://data.vlaanderen.be/id/vestiging/2.312.633.814> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.633.814.
+<https://data.vlaanderen.be/id/vestiging/2.312.633.913> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.633.913.
+<https://data.vlaanderen.be/id/vestiging/2.312.634.012> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.634.012.
+<https://data.vlaanderen.be/id/vestiging/2.312.634.111> a org:Site;
+    dcterms:created "16-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.634.111.
+_:address_contact_0755.503.702 a locn:Address;
+    locn:thoroughfare "BOULEVARD ROYAL"@nl, "BOULEVARD ROYAL"@fr;
+    rdfs:label "43";
+    locn:postCode "2955";
+    adres:gemeentenaam "LUXEMBOURG"@nl, "LUXEMBOURG"@fr;
+    adres:land "Luxemburg (Groot-Hertogdom)"@nl, "Luxembourg (Grand-Duché)"@fr.
+_:branch_9.001.349.778 a org:Site;
+    dcterms:created "26-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_branch_9.001.349.778.
+_:contact_0755.503.702 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0755.503.702.
+_:registration_branch_9.001.349.778 a adms:Identifier;
+    skos:notation "9.001.349.778";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_company_0755.503.702 a adms:Identifier;
+    skos:notation "0755.503.702";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.308.615.143 a adms:Identifier;
+    skos:notation "2.308.615.143";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.633.616 a adms:Identifier;
+    skos:notation "2.312.633.616";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.633.715 a adms:Identifier;
+    skos:notation "2.312.633.715";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.633.814 a adms:Identifier;
+    skos:notation "2.312.633.814";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.633.913 a adms:Identifier;
+    skos:notation "2.312.633.913";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.634.012 a adms:Identifier;
+    skos:notation "2.312.634.012";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.634.111 a adms:Identifier;
+    skos:notation "2.312.634.111";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-05-1949"^^<http://www.w3.org/2001/XMLSchema#date>.

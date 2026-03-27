@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2008/46736> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in sanitair"@nl, "Commerce de gros d'équipements sanitaires"@fr;
+    skos:prefLabel "46736".
+<http://vocab.belgif.be/auth/nace2008/46742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46742".
+<http://vocab.belgif.be/auth/nace2008/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/46836> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in sanitair"@nl, "Commerce de gros d'équipements sanitaires"@fr;
+    skos:prefLabel "46836".
+<http://vocab.belgif.be/auth/nace2025/46842> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46842".
+<http://vocab.belgif.be/auth/nace2025/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<https://data.vlaanderen.be/id/onderneming/0748.892.359> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0748.892.359;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46842>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/46836>, <http://vocab.belgif.be/auth/nace2025/47527>, <http://vocab.belgif.be/auth/nace2008/46130>, <http://vocab.belgif.be/auth/nace2008/46736>, <http://vocab.belgif.be/auth/nace2008/47527>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/46742>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0748.892.359;
+    reorg:legalName "MOZITO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.304.009.722>.
+<https://data.vlaanderen.be/id/vestiging/2.304.009.722> a org:Site;
+    dcterms:created "01-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.304.009.722.
+_:address_contact_0748.892.359 a locn:Address;
+    locn:thoroughfare "Rue Grihanster"@nl, "Rue Grihanster"@fr;
+    rdfs:label "8";
+    locn:postCode "4870";
+    adres:gemeentenaam "Trooz"@nl, "Trooz"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0748.892.359 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "valerianne.laszlo@gmail.com";
+    schema:telephone "+32473408635";
+    locn:address _:address_contact_0748.892.359.
+_:registration_company_0748.892.359 a adms:Identifier;
+    skos:notation "0748.892.359";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.304.009.722 a adms:Identifier;
+    skos:notation "2.304.009.722";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

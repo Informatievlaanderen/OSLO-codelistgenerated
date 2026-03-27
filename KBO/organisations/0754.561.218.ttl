@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2611>, <http://vocab.belgif.be/auth/nace2008/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2008/27900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2790>, <http://vocab.belgif.be/auth/nace2008/2790>;
+    skos:definition "Vervaardiging van andere elektrische apparatuur"@nl, "Fabrication d'autres matériels électriques"@fr;
+    skos:prefLabel "27900".
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2025/26110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2611>, <http://vocab.belgif.be/auth/nace2025/2611>;
+    skos:definition "Vervaardiging van vlakglas"@nl, "Fabrication de verre plat"@fr;
+    skos:prefLabel "26110".
+<http://vocab.belgif.be/auth/nace2025/27900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2790>, <http://vocab.belgif.be/auth/nace2025/2790>;
+    skos:definition "Vervaardiging van andere elektrische apparatuur"@nl, "Fabrication d'autres matériels électriques"@fr;
+    skos:prefLabel "27900".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<https://data.vlaanderen.be/id/onderneming/0754.561.218> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.561.218;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/29320>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/26110>, <http://vocab.belgif.be/auth/nace2025/27900>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2008/29320>, <http://vocab.belgif.be/auth/nace2008/26110>, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/27900>, <http://vocab.belgif.be/auth/nace2008/68100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0754.561.218;
+    reorg:legalName "Stellantis e-Transmissions"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.308.090.749>.
+<https://data.vlaanderen.be/id/vestiging/2.308.090.749> a org:Site;
+    dcterms:created "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.308.090.749.
+_:address_contact_0754.561.218 a locn:Address;
+    locn:thoroughfare "Bourgetlaan"@nl, "Avenue du Bourget"@fr;
+    rdfs:label "20";
+    locn:postCode "1130";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0754.561.218 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0754.561.218.
+_:registration_company_0754.561.218 a adms:Identifier;
+    skos:notation "0754.561.218";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.308.090.749 a adms:Identifier;
+    skos:notation "2.308.090.749";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

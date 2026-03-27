@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1310>, <http://vocab.belgif.be/auth/nace2008/1310>;
+    skos:definition "Winning van ijzererts"@nl, "Extraction de minerais de fer"@fr;
+    skos:prefLabel "13100".
+<http://vocab.belgif.be/auth/nace2008/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1320>, <http://vocab.belgif.be/auth/nace2008/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2008/14390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1439>, <http://vocab.belgif.be/auth/nace2008/1439>;
+    skos:definition "Vervaardiging van andere gebreide en gehaakte kleding"@nl, "Fabrication d'autres articles à mailles"@fr;
+    skos:prefLabel "14390".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2025/13100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1310>, <http://vocab.belgif.be/auth/nace2025/1310>;
+    skos:definition "Winning van ijzererts"@nl, "Extraction de minerais de fer"@fr;
+    skos:prefLabel "13100".
+<http://vocab.belgif.be/auth/nace2025/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1320>, <http://vocab.belgif.be/auth/nace2025/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2025/14100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1410>, <http://vocab.belgif.be/auth/nace2025/1410>;
+    skos:definition "Vervaardiging van gebreide en gehaakte kleding"@nl, "Fabrication d'articles à mailles"@fr;
+    skos:prefLabel "14100".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/0751.442.667> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-08-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0751.442.667;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13100>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/13200>, <http://vocab.belgif.be/auth/nace2025/14100>, <http://vocab.belgif.be/auth/nace2008/13200>, <http://vocab.belgif.be/auth/nace2008/14390>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/13100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dohet, Patricia";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.266.438.058>.
+<https://data.vlaanderen.be/id/vestiging/2.266.438.058> a org:Site;
+    dcterms:created "14-08-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.266.438.058.
+_:registration_company_0751.442.667 a adms:Identifier;
+    skos:notation "0751.442.667";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2017"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.266.438.058 a adms:Identifier;
+    skos:notation "2.266.438.058";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2017"^^<http://www.w3.org/2001/XMLSchema#date>.

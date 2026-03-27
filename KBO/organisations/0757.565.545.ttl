@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/27402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2740>, <http://vocab.belgif.be/auth/nace2008/2740>;
+    skos:definition "Vervaardiging van verlichtingsapparaten"@nl, "Fabrication d'appareils d'éclairage électrique"@fr;
+    skos:prefLabel "27402".
+<http://vocab.belgif.be/auth/nace2008/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3314>, <http://vocab.belgif.be/auth/nace2008/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2008/95120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9512>, <http://vocab.belgif.be/auth/nace2008/9512>;
+    skos:definition "Reparatie van communicatieapparatuur"@nl, "Réparation d'équipements de communication"@fr;
+    skos:prefLabel "95120".
+<http://vocab.belgif.be/auth/nace2008/95210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9521>, <http://vocab.belgif.be/auth/nace2008/9521>;
+    skos:definition "Reparatie van consumentenelektronica"@nl, "Réparation de produits électroniques grand public"@fr;
+    skos:prefLabel "95210".
+<http://vocab.belgif.be/auth/nace2025/27402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2740>, <http://vocab.belgif.be/auth/nace2025/2740>;
+    skos:definition "Vervaardiging van verlichtingsapparaten"@nl, "Fabrication d'appareils d'éclairage électrique"@fr;
+    skos:prefLabel "27402".
+<http://vocab.belgif.be/auth/nace2025/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3314>, <http://vocab.belgif.be/auth/nace2025/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<http://vocab.belgif.be/auth/nace2025/95210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9521>, <http://vocab.belgif.be/auth/nace2025/9521>;
+    skos:definition "Reparatie van consumentenelektronica"@nl, "Réparation de produits électroniques grand public"@fr;
+    skos:prefLabel "95210".
+<https://data.vlaanderen.be/id/onderneming/0757.565.545> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0757.565.545;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/95210>, <http://vocab.belgif.be/auth/nace2025/43221>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/27402>, <http://vocab.belgif.be/auth/nace2025/33140>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/95210>, <http://vocab.belgif.be/auth/nace2008/95120>, <http://vocab.belgif.be/auth/nace2008/43221>, <http://vocab.belgif.be/auth/nace2008/33140>, <http://vocab.belgif.be/auth/nace2008/27402>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0757.565.545;
+    reorg:legalName "THESLAU"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.327.758.092>.
+<https://data.vlaanderen.be/id/vestiging/2.327.758.092> a org:Site;
+    dcterms:created "28-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.327.758.092.
+_:address_contact_0757.565.545 a locn:Address;
+    locn:thoroughfare "chemin de la Croix Denis,Chanly"@nl, "chemin de la Croix Denis,Chanly"@fr;
+    rdfs:label "5";
+    locn:postCode "6921";
+    adres:gemeentenaam "Wellin"@nl, "Wellin"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0757.565.545 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0757.565.545.
+_:registration_company_0757.565.545 a adms:Identifier;
+    skos:notation "0757.565.545";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.327.758.092 a adms:Identifier;
+    skos:notation "2.327.758.092";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2530>, <http://vocab.belgif.be/auth/nace2008/2530>;
+    skos:definition "Vervaardiging van stoomketels, exclusief warmwaterketels voor centrale verwarming"@nl, "Fabrication de générateurs de vapeur, à l'exception des chaudières pour le chauffage central"@fr;
+    skos:prefLabel "25300".
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/43996> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Chapewerken"@nl, "Pose de chapes"@fr;
+    skos:prefLabel "43996".
+<http://vocab.belgif.be/auth/nace2025/25210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2521>, <http://vocab.belgif.be/auth/nace2025/2521>;
+    skos:definition "Vervaardiging van platen, vellen, buizen en profielen van kunststof"@nl, "Fabrication de plaques, feuilles, tubes et profilés en matières plastiques"@fr;
+    skos:prefLabel "25210".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/43422> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Chapewerken"@nl, "Pose de chapes"@fr;
+    skos:prefLabel "43422".
+<https://data.vlaanderen.be/id/onderneming/0754.861.423> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.861.423;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/25210>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2025/43422>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/25300>, <http://vocab.belgif.be/auth/nace2008/43996>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0754.861.423;
+    reorg:legalName "YRG"@fr.
+_:address_contact_0754.861.423 a locn:Address;
+    locn:thoroughfare "Roodebeeklaan"@nl, "Avenue de Roodebeek"@fr;
+    rdfs:label "44";
+    locn:postCode "1030";
+    adres:gemeentenaam "Schaarbeek"@nl, "Schaerbeek"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0754.861.423 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0754.861.423.
+_:registration_company_0754.861.423 a adms:Identifier;
+    skos:notation "0754.861.423";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

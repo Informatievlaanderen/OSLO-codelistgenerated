@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/26700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2670>, <http://vocab.belgif.be/auth/nace2008/2670>;
+    skos:definition "Houwen, bewerken en afwerken van bouw- en siersteen"@nl, "Taille, façonnage et finissage de pierres ornementales et de construction"@fr;
+    skos:prefLabel "26700".
+<http://vocab.belgif.be/auth/nace2008/47782> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fotografische en optische artikelen en in precisieinstrumenten in gespecialiseerde winkels"@nl, "Commerce de détail de matériel photographique, d'optique et de précision en magasin spécialisé"@fr;
+    skos:prefLabel "47782".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/26700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2670>, <http://vocab.belgif.be/auth/nace2025/2670>;
+    skos:definition "Houwen, bewerken en afwerken van bouw- en siersteen"@nl, "Taille, façonnage et finissage de pierres ornementales et de construction"@fr;
+    skos:prefLabel "26700".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47742".
+<https://data.vlaanderen.be/id/onderneming/0747.368.964> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "22-11-1996"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0747.368.964;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47742>, <http://vocab.belgif.be/auth/nace2025/26700>, _:nace_2003_33402, <http://vocab.belgif.be/auth/nace2008/26700>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47782>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Vroman, Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.079.207.767>.
+<https://data.vlaanderen.be/id/vestiging/2.079.207.767> a org:Site;
+    dcterms:created "22-11-1996"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.079.207.767.
+_:nace_2003_33402 a skos:Concept;
+    skos:definition "Vervaardiging van optische instrumenten en fotografische apparatuur"@nl, "Fabrication d'instruments d'optique et de matériel photographique"@fr;
+    skos:prefLabel "33402".
+_:registration_company_0747.368.964 a adms:Identifier;
+    skos:notation "0747.368.964";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-11-1996"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.079.207.767 a adms:Identifier;
+    skos:notation "2.079.207.767";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-11-1996"^^<http://www.w3.org/2001/XMLSchema#date>.

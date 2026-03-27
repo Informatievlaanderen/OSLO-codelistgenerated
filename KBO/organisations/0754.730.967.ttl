@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/69202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>;
+    skos:definition "Boekhouders en boekhouders-fiscalisten"@nl, "Activités des comptables et des comptables-fiscalistes"@fr;
+    skos:prefLabel "69202".
+<http://vocab.belgif.be/auth/nace2025/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6920>, <http://vocab.belgif.be/auth/nace2025/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<https://data.vlaanderen.be/id/onderneming/0754.730.967> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.730.967;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/69201>, <http://vocab.belgif.be/auth/nace2008/69202>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Belbe-Rus, Mariana";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.131.934>.
+<https://data.vlaanderen.be/id/vestiging/2.307.131.934> a org:Site;
+    dcterms:created "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.131.934.
+_:registration_company_0754.730.967 a adms:Identifier;
+    skos:notation "0754.730.967";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.131.934 a adms:Identifier;
+    skos:notation "2.307.131.934";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/22230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2223>, <http://vocab.belgif.be/auth/nace2008/2223>;
+    skos:definition "Boekbinden"@nl, "Reliure"@fr;
+    skos:prefLabel "22230".
+<http://vocab.belgif.be/auth/nace2008/23130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2313>, <http://vocab.belgif.be/auth/nace2008/2313>;
+    skos:definition "Vervaardiging van holglas"@nl, "Fabrication de verre creux"@fr;
+    skos:prefLabel "23130".
+<http://vocab.belgif.be/auth/nace2008/23190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2319>, <http://vocab.belgif.be/auth/nace2008/2319>;
+    skos:definition "Vervaardiging en bewerking van ander glas (inclusief technisch glaswerk)"@nl, "Fabrication et façonnage d'autres articles en verre, y compris verre technique"@fr;
+    skos:prefLabel "23190".
+<http://vocab.belgif.be/auth/nace2008/25501> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2550>, <http://vocab.belgif.be/auth/nace2008/2550>;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "25501".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2025/22240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2224>, <http://vocab.belgif.be/auth/nace2025/2224>;
+    skos:definition "Prepress-activiteiten"@nl, "Activités de pré-presse"@fr;
+    skos:prefLabel "22240".
+<http://vocab.belgif.be/auth/nace2025/23130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2313>, <http://vocab.belgif.be/auth/nace2025/2313>;
+    skos:definition "Vervaardiging van holglas"@nl, "Fabrication de verre creux"@fr;
+    skos:prefLabel "23130".
+<http://vocab.belgif.be/auth/nace2025/23150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2315>, <http://vocab.belgif.be/auth/nace2025/2315>;
+    skos:definition "Vervaardiging en bewerking van overig glas, inclusief technisch glaswerk"@nl, "Fabrication et façonnage d’autres articles en verre, y compris verre technique"@fr;
+    skos:prefLabel "23150".
+<http://vocab.belgif.be/auth/nace2025/25401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2540>, <http://vocab.belgif.be/auth/nace2025/2540>;
+    skos:definition "Smeden van metaal"@nl, "Forgeage de métal"@fr;
+    skos:prefLabel "25401".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<https://data.vlaanderen.be/id/onderneming/0754.567.156> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.567.156;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/23150>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/22240>, <http://vocab.belgif.be/auth/nace2025/23130>, <http://vocab.belgif.be/auth/nace2025/25401>, <http://vocab.belgif.be/auth/nace2008/25501>, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/23130>, <http://vocab.belgif.be/auth/nace2008/46731>, <http://vocab.belgif.be/auth/nace2008/23190>, <http://vocab.belgif.be/auth/nace2008/22230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0754.567.156;
+    reorg:legalName "UNIVERRE METAL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.308.166.567>.
+<https://data.vlaanderen.be/id/vestiging/2.308.166.567> a org:Site;
+    dcterms:created "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.308.166.567.
+_:address_contact_0754.567.156 a locn:Address;
+    locn:thoroughfare "Rue de l'Alliance"@nl, "Rue de l'Alliance"@fr;
+    rdfs:label "60";
+    locn:postCode "7170";
+    adres:gemeentenaam "Manage"@nl, "Manage"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0754.567.156 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@univerre-metal.be";
+    schema:telephone "+32485464204";
+    locn:address _:address_contact_0754.567.156.
+_:registration_company_0754.567.156 a adms:Identifier;
+    skos:notation "0754.567.156";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.308.166.567 a adms:Identifier;
+    skos:notation "2.308.166.567";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

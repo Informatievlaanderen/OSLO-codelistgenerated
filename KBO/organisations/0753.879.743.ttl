@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/47241> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4724>, <http://vocab.belgif.be/auth/nace2025/4724>;
+    skos:definition "Detailhandel in brood en banketbakkerswerk in gespecialiseerde winkels (koude bakkers)"@nl, "Commerce de détail de pain et de pâtisserie en magasin spécialisé (dépôt)"@fr;
+    skos:prefLabel "47241".
+<http://vocab.belgif.be/auth/nace2025/47242> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4724>, <http://vocab.belgif.be/auth/nace2025/4724>;
+    skos:definition "Detailhandel in chocolade en suikerwerk in gespecialiseerde winkels"@nl, "Commerce de détail de chocolat et de confiserie en magasin spécialisé"@fr;
+    skos:prefLabel "47242".
+<http://vocab.belgif.be/auth/nace2025/47271> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Detailhandel in zuivelproducten en eieren"@nl, "Commerce de détail de produits laitiers et d'oeufs"@fr;
+    skos:prefLabel "47271".
+<http://vocab.belgif.be/auth/nace2025/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5310>, <http://vocab.belgif.be/auth/nace2025/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9200>, <http://vocab.belgif.be/auth/nace2025/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<https://data.vlaanderen.be/id/onderneming/0753.879.743> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.879.743;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/47271>, <http://vocab.belgif.be/auth/nace2025/47242>, <http://vocab.belgif.be/auth/nace2025/47241>, <http://vocab.belgif.be/auth/nace2025/92000>, <http://vocab.belgif.be/auth/nace2025/53100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Jabbari, Qasim";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.371.234.779>.
+<https://data.vlaanderen.be/id/vestiging/2.371.234.779> a org:Site;
+    dcterms:created "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.371.234.779.
+_:registration_company_0753.879.743 a adms:Identifier;
+    skos:notation "0753.879.743";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.371.234.779 a adms:Identifier;
+    skos:notation "2.371.234.779";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

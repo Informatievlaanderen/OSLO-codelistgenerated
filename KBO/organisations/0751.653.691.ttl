@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4742>, <http://vocab.belgif.be/auth/nace2008/4742>;
+    skos:definition "Detailhandel in telecommunicatieapparatuur in gespecialiseerde winkels"@nl, "Commerce de détail de matériels de télécommunication en magasin spécialisé"@fr;
+    skos:prefLabel "47420".
+<http://vocab.belgif.be/auth/nace2008/47430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4743>, <http://vocab.belgif.be/auth/nace2008/4743>;
+    skos:definition "Detailhandel in audio- en videoapparatuur in gespecialiseerde winkels"@nl, "Commerce de détail de matériels audio-vidéo en magasin spécialisé"@fr;
+    skos:prefLabel "47430".
+<http://vocab.belgif.be/auth/nace2008/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4754>, <http://vocab.belgif.be/auth/nace2008/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/47540> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4754>, <http://vocab.belgif.be/auth/nace2025/4754>;
+    skos:definition "Detailhandel in elektrische huishoudapparaten in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils électroménagers en magasin spécialisé"@fr;
+    skos:prefLabel "47540".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/0751.653.691> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0751.653.691;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/47540>, <http://vocab.belgif.be/auth/nace2008/47540>, <http://vocab.belgif.be/auth/nace2008/47420>, <http://vocab.belgif.be/auth/nace2008/47430>, <http://vocab.belgif.be/auth/nace2008/95110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0751.653.691;
+    reorg:legalName "ORBITE DIGITAL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.338.595.566>.
+<https://data.vlaanderen.be/id/vestiging/2.338.595.566> a org:Site;
+    dcterms:created "01-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.338.595.566.
+_:address_contact_0751.653.691 a locn:Address;
+    locn:thoroughfare "Windmolenstraat(HA)"@nl, "Windmolenstraat(HA)"@fr;
+    rdfs:label "54";
+    locn:postCode "9450";
+    adres:gemeentenaam "Haaltert"@nl, "Haaltert"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0751.653.691 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "magikil@hotmail.com";
+    locn:address _:address_contact_0751.653.691.
+_:registration_company_0751.653.691 a adms:Identifier;
+    skos:notation "0751.653.691";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.338.595.566 a adms:Identifier;
+    skos:notation "2.338.595.566";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

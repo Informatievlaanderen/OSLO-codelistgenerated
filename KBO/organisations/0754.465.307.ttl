@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "41101".
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/77299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van andere consumentenartikelen, n.e.g."@nl, "Location et location-bail d'autres biens personnels et domestiques n.c.a."@fr;
+    skos:prefLabel "77299".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/77229> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van andere huishoudelijke of persoonlijke artikelen, neg"@nl, "Location et location-bail d'autres biens personnels et domestiques nca"@fr;
+    skos:prefLabel "77229".
+<https://data.vlaanderen.be/id/onderneming/0754.465.307> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "16-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.465.307;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/77229>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/77299>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/41101>, <http://vocab.belgif.be/auth/nace2008/41102>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0754.465.307;
+    reorg:legalName "Heavy Diesel Power Europe"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.267.140>.
+<https://data.vlaanderen.be/id/vestiging/2.307.267.140> a org:Site;
+    dcterms:created "16-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.267.140.
+_:address_contact_0754.465.307 a locn:Address;
+    locn:thoroughfare "Arendstraat"@nl, "Arendstraat"@fr;
+    rdfs:label "56";
+    locn:postCode "2018";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0754.465.307 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0754.465.307.
+_:registration_company_0754.465.307 a adms:Identifier;
+    skos:notation "0754.465.307";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.267.140 a adms:Identifier;
+    skos:notation "2.307.267.140";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

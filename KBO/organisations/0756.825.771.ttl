@@ -1,0 +1,348 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "41101".
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/41202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van kantoorgebouwen"@nl, "Construction générale d'immeubles de bureaux"@fr;
+    skos:prefLabel "41202".
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46471> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4647>, <http://vocab.belgif.be/auth/nace2008/4647>;
+    skos:definition "Groothandel in huismeubilair"@nl, "Commerce de gros de mobilier domestique"@fr;
+    skos:prefLabel "46471".
+<http://vocab.belgif.be/auth/nace2008/46472> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4647>, <http://vocab.belgif.be/auth/nace2008/4647>;
+    skos:definition "Groothandel in tapijten"@nl, "Commerce de gros de tapis"@fr;
+    skos:prefLabel "46472".
+<http://vocab.belgif.be/auth/nace2008/46473> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4647>, <http://vocab.belgif.be/auth/nace2008/4647>;
+    skos:definition "Groothandel in verlichtingsapparatuur"@nl, "Commerce de gros d'appareils d'éclairage"@fr;
+    skos:prefLabel "46473".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/46732> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46732".
+<http://vocab.belgif.be/auth/nace2008/46733> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46733".
+<http://vocab.belgif.be/auth/nace2008/46735> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in vloer- en wandtegels"@nl, "Commerce de gros de carrelages"@fr;
+    skos:prefLabel "46735".
+<http://vocab.belgif.be/auth/nace2008/46736> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in sanitair"@nl, "Commerce de gros d'équipements sanitaires"@fr;
+    skos:prefLabel "46736".
+<http://vocab.belgif.be/auth/nace2008/46739> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46739".
+<http://vocab.belgif.be/auth/nace2008/46741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in ijzerwaren"@nl, "Commerce de gros de quincaillerie"@fr;
+    skos:prefLabel "46741".
+<http://vocab.belgif.be/auth/nace2008/46742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4674>, <http://vocab.belgif.be/auth/nace2008/4674>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46742".
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2008/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2008/47523> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in wand- en vloertegels in gespecialiseerde winkels"@nl, "Commerce de détail de carrelages de sols et de murs en magasin spécialisé"@fr;
+    skos:prefLabel "47523".
+<http://vocab.belgif.be/auth/nace2008/47524> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in parket-, laminaat- en kurkvloeren in gespecialiseerde winkels"@nl, "Commerce de détail de parquet, de laminés et de revêtement en liège en magasin spécialisé"@fr;
+    skos:prefLabel "47524".
+<http://vocab.belgif.be/auth/nace2008/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<http://vocab.belgif.be/auth/nace2008/47526> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in verf en verfwaren in gespecialiseerde winkels"@nl, "Commerce de détail de peinture et de vernis en magasin spécialisé"@fr;
+    skos:prefLabel "47526".
+<http://vocab.belgif.be/auth/nace2008/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2008/47529> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in overige bouwmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail d'autres matériaux de construction en magasin spécialisé"@fr;
+    skos:prefLabel "47529".
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2008/47599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen in gespecialiseerde winkels, n.e.g."@nl, "Commerce de détail d'autres articles de ménage en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47599".
+<http://vocab.belgif.be/auth/nace2008/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/68204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van terreinen"@nl, "Location et exploitation de terrains"@fr;
+    skos:prefLabel "68204".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/41002> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van kantoorgebouwen"@nl, "Construction générale d'immeubles de bureaux"@fr;
+    skos:prefLabel "41002".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46471> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4647>, <http://vocab.belgif.be/auth/nace2025/4647>;
+    skos:definition "Groothandel in huismeubilair"@nl, "Commerce de gros de mobilier domestique"@fr;
+    skos:prefLabel "46471".
+<http://vocab.belgif.be/auth/nace2025/46473> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4647>, <http://vocab.belgif.be/auth/nace2025/4647>;
+    skos:definition "Groothandel in verlichtingsapparatuur"@nl, "Commerce de gros d'appareils d'éclairage"@fr;
+    skos:prefLabel "46473".
+<http://vocab.belgif.be/auth/nace2025/46474> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4647>, <http://vocab.belgif.be/auth/nace2025/4647>;
+    skos:definition "Groothandel in verlichtingsapparatuur"@nl, "Commerce de gros d'appareils d'éclairage"@fr;
+    skos:prefLabel "46474".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/46832> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46832".
+<http://vocab.belgif.be/auth/nace2025/46833> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46833".
+<http://vocab.belgif.be/auth/nace2025/46835> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in vloer- en wandtegels"@nl, "Commerce de gros de carrelages"@fr;
+    skos:prefLabel "46835".
+<http://vocab.belgif.be/auth/nace2025/46836> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in sanitair"@nl, "Commerce de gros d'équipements sanitaires"@fr;
+    skos:prefLabel "46836".
+<http://vocab.belgif.be/auth/nace2025/46839> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46839".
+<http://vocab.belgif.be/auth/nace2025/46841> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in ijzerwaren"@nl, "Commerce de gros de quincaillerie"@fr;
+    skos:prefLabel "46841".
+<http://vocab.belgif.be/auth/nace2025/46842> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4684>, <http://vocab.belgif.be/auth/nace2025/4684>;
+    skos:definition "Groothandel in installatiemateriaal voor loodgieterswerk en verwarming"@nl, "Commerce de gros de fournitures pour plomberie et chauffage"@fr;
+    skos:prefLabel "46842".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/47522> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in houten bouw- en tuinmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail de matériaux de construction et de matériaux de jardin en bois en magasin spécialisé"@fr;
+    skos:prefLabel "47522".
+<http://vocab.belgif.be/auth/nace2025/47523> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in wand- en vloertegels in gespecialiseerde winkels"@nl, "Commerce de détail de carrelages de sols et de murs en magasin spécialisé"@fr;
+    skos:prefLabel "47523".
+<http://vocab.belgif.be/auth/nace2025/47524> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in parket-, laminaat- en kurkvloeren in gespecialiseerde winkels"@nl, "Commerce de détail de parquet, de laminés et de revêtement en liège en magasin spécialisé"@fr;
+    skos:prefLabel "47524".
+<http://vocab.belgif.be/auth/nace2025/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<http://vocab.belgif.be/auth/nace2025/47526> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in verf en verfwaren in gespecialiseerde winkels"@nl, "Commerce de détail de peinture et de vernis en magasin spécialisé"@fr;
+    skos:prefLabel "47526".
+<http://vocab.belgif.be/auth/nace2025/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2025/47529> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in overige bouwmaterialen in gespecialiseerde winkels"@nl, "Commerce de détail d'autres matériaux de construction en magasin spécialisé"@fr;
+    skos:prefLabel "47529".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/68204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van terreinen"@nl, "Location et exploitation de terrains"@fr;
+    skos:prefLabel "68204".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0756.825.771> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0756.825.771;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/46471>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/46473>, <http://vocab.belgif.be/auth/nace2025/46474>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2025/46494>, <http://vocab.belgif.be/auth/nace2025/46839>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/46841>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/46842>, <http://vocab.belgif.be/auth/nace2025/46833>, <http://vocab.belgif.be/auth/nace2025/46832>, <http://vocab.belgif.be/auth/nace2025/46836>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/46835>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/41002>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2025/47527>, <http://vocab.belgif.be/auth/nace2025/47525>, <http://vocab.belgif.be/auth/nace2025/68204>, <http://vocab.belgif.be/auth/nace2025/47529>, <http://vocab.belgif.be/auth/nace2025/47526>, <http://vocab.belgif.be/auth/nace2025/47524>, <http://vocab.belgif.be/auth/nace2025/47522>, <http://vocab.belgif.be/auth/nace2025/47521>, <http://vocab.belgif.be/auth/nace2025/47523>, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/47990>, <http://vocab.belgif.be/auth/nace2008/47522>, <http://vocab.belgif.be/auth/nace2008/46736>, <http://vocab.belgif.be/auth/nace2008/46735>, <http://vocab.belgif.be/auth/nace2008/46620>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/47789>, <http://vocab.belgif.be/auth/nace2008/46742>, <http://vocab.belgif.be/auth/nace2008/46741>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/68204>, <http://vocab.belgif.be/auth/nace2008/46140>, <http://vocab.belgif.be/auth/nace2008/47524>, <http://vocab.belgif.be/auth/nace2008/47525>, <http://vocab.belgif.be/auth/nace2008/47526>, <http://vocab.belgif.be/auth/nace2008/46130>, <http://vocab.belgif.be/auth/nace2008/47523>, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/46494>, <http://vocab.belgif.be/auth/nace2008/47529>, <http://vocab.belgif.be/auth/nace2008/47527>, <http://vocab.belgif.be/auth/nace2008/46150>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/46472>, <http://vocab.belgif.be/auth/nace2008/46473>, <http://vocab.belgif.be/auth/nace2008/46471>, <http://vocab.belgif.be/auth/nace2008/47592>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/41202>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/47599>, <http://vocab.belgif.be/auth/nace2008/46739>, <http://vocab.belgif.be/auth/nace2008/46733>, <http://vocab.belgif.be/auth/nace2008/41101>, <http://vocab.belgif.be/auth/nace2008/41102>, <http://vocab.belgif.be/auth/nace2008/46732>, <http://vocab.belgif.be/auth/nace2008/46731>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0756.825.771;
+    reorg:legalName "SMARTBOUW"@fr.
+_:address_contact_0756.825.771 a locn:Address;
+    locn:thoroughfare "Wolvenstraat"@nl, "Rue des Loups"@fr;
+    rdfs:label "15";
+    locn:postCode "1070";
+    adres:gemeentenaam "Anderlecht"@nl, "Anderlecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0756.825.771 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0756.825.771.
+_:registration_company_0756.825.771 a adms:Identifier;
+    skos:notation "0756.825.771";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/16100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1610>, <http://vocab.belgif.be/auth/nace2008/1610>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16100".
+<http://vocab.belgif.be/auth/nace2008/23610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2361>, <http://vocab.belgif.be/auth/nace2008/2361>;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "23610".
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2025/16110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1611>, <http://vocab.belgif.be/auth/nace2025/1611>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16110".
+<http://vocab.belgif.be/auth/nace2025/23610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2361>, <http://vocab.belgif.be/auth/nace2025/2361>;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "23610".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<https://data.vlaanderen.be/id/onderneming/0746.931.177> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "18-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0746.931.177;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23610>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/16110>, <http://vocab.belgif.be/auth/nace2008/23610>, <http://vocab.belgif.be/auth/nace2008/41102>, <http://vocab.belgif.be/auth/nace2008/16100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Iran, Aydin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.302.427.137>.
+<https://data.vlaanderen.be/id/vestiging/2.302.427.137> a org:Site;
+    dcterms:created "18-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.302.427.137.
+_:registration_company_0746.931.177 a adms:Identifier;
+    skos:notation "0746.931.177";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.302.427.137 a adms:Identifier;
+    skos:notation "2.302.427.137";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

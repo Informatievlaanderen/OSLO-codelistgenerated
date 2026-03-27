@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8121>, <http://vocab.belgif.be/auth/nace2025/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<https://data.vlaanderen.be/id/onderneming/0748.594.728> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0748.594.728;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/81210>, <http://vocab.belgif.be/auth/nace2025/43221>, <http://vocab.belgif.be/auth/nace2008/46140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Verheyden, Iljano";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.303.277.371>.
+<https://data.vlaanderen.be/id/vestiging/2.303.277.371> a org:Site;
+    dcterms:created "08-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.303.277.371.
+_:registration_company_0748.594.728 a adms:Identifier;
+    skos:notation "0748.594.728";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.303.277.371 a adms:Identifier;
+    skos:notation "2.303.277.371";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

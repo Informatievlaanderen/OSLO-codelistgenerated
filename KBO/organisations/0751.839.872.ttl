@@ -1,0 +1,98 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/46510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4651>, <http://vocab.belgif.be/auth/nace2008/4651>;
+    skos:definition "Groothandel in computers, randapparatuur en software"@nl, "Commerce de gros d'ordinateurs, d'équipements informatiques périphériques et de logiciels"@fr;
+    skos:prefLabel "46510".
+<http://vocab.belgif.be/auth/nace2008/46660> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4666>, <http://vocab.belgif.be/auth/nace2008/4666>;
+    skos:definition "Groothandel in andere kantoormachines en kantoorbenodigdheden, met uitzondering van computers en randapparatuur"@nl, "Commerce de gros d'autres machines et équipements de bureau"@fr;
+    skos:prefLabel "46660".
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/80200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8020>, <http://vocab.belgif.be/auth/nace2008/8020>;
+    skos:definition "Diensten in verband met beveiligingssystemen"@nl, "Activités liées aux systèmes de sécurité"@fr;
+    skos:prefLabel "80200".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/80090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8009>, <http://vocab.belgif.be/auth/nace2025/8009>;
+    skos:definition "Beveiligingsactiviteiten, neg"@nl, "Activités de sécurité nca"@fr;
+    skos:prefLabel "80090".
+<https://data.vlaanderen.be/id/onderneming/0751.839.872> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0751.839.872;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/62200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/80090>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/80200>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/46510>, <http://vocab.belgif.be/auth/nace2008/47410>, <http://vocab.belgif.be/auth/nace2008/46660>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0751.839.872;
+    reorg:legalName "Unity Group"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.367.308>, <https://data.vlaanderen.be/id/vestiging/2.307.772.530>.
+<https://data.vlaanderen.be/id/vestiging/2.307.367.308> a org:Site;
+    dcterms:created "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.367.308.
+<https://data.vlaanderen.be/id/vestiging/2.307.772.530> a org:Site;
+    dcterms:created "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.772.530.
+_:address_contact_0751.839.872 a locn:Address;
+    locn:thoroughfare "Louizalaan"@nl, "Avenue Louise"@fr;
+    rdfs:label "231";
+    locn:postCode "1050";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0751.839.872 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@unitygroup.be";
+    locn:address _:address_contact_0751.839.872.
+_:registration_company_0751.839.872 a adms:Identifier;
+    skos:notation "0751.839.872";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.367.308 a adms:Identifier;
+    skos:notation "2.307.367.308";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.772.530 a adms:Identifier;
+    skos:notation "2.307.772.530";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

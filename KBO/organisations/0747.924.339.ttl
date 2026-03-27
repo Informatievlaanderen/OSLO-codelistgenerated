@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<https://data.vlaanderen.be/id/onderneming/0747.924.339> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "02-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0747.924.339;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2008/42919>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0747.924.339;
+    reorg:legalName "SSM BESIX - FRANKI / LANAYE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.302.898.873>.
+<https://data.vlaanderen.be/id/vestiging/2.302.898.873> a org:Site;
+    dcterms:created "02-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.302.898.873.
+_:address_contact_0747.924.339 a locn:Address;
+    locn:thoroughfare "Chemin des Moissons"@nl, "Chemin des Moissons"@fr;
+    rdfs:label "10";
+    locn:postCode "4400";
+    adres:gemeentenaam "Flémalle"@nl, "Flémalle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0747.924.339 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "042509470";
+    locn:address _:address_contact_0747.924.339.
+_:registration_company_0747.924.339 a adms:Identifier;
+    skos:notation "0747.924.339";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.302.898.873 a adms:Identifier;
+    skos:notation "2.302.898.873";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

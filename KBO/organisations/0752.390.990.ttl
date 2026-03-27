@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Slopen van gebouwen"@nl, "Démolition d'immeubles"@fr;
+    skos:prefLabel "45111".
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2008/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<https://data.vlaanderen.be/id/onderneming/0752.390.990> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-08-1995"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0752.390.990;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/46711>, <http://vocab.belgif.be/auth/nace2025/46720>, _:nace_2003_50101, _:nace_2003_50301, _:nace_2003_52481, <http://vocab.belgif.be/auth/nace2008/45310>, <http://vocab.belgif.be/auth/nace2008/47781>, <http://vocab.belgif.be/auth/nace2008/45111>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Fourneau, Claude";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.072.814.081>.
+<https://data.vlaanderen.be/id/vestiging/2.072.814.081> a org:Site;
+    dcterms:created "28-08-1995"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.072.814.081.
+_:nace_2003_50101 a skos:Concept;
+    skos:definition "Groothandel in motorvoertuigen"@nl, "Commerce de gros des véhicules automobiles"@fr;
+    skos:prefLabel "50101".
+_:nace_2003_50301 a skos:Concept;
+    skos:definition "Groothandel in onderdelen en accessoires van auto's"@nl, "Commerce de gros de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50301".
+_:nace_2003_52481 a skos:Concept;
+    skos:definition "Gespecialiseerde detailhandel in vaste en vloeibare brandstoffen"@nl, "Commerce de détail spécialisé de combustibles solides et liquides"@fr;
+    skos:prefLabel "52481".
+_:registration_company_0752.390.990 a adms:Identifier;
+    skos:notation "0752.390.990";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-08-1995"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.072.814.081 a adms:Identifier;
+    skos:notation "2.072.814.081";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-08-1995"^^<http://www.w3.org/2001/XMLSchema#date>.

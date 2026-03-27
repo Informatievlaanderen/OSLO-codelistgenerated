@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4638>, <http://vocab.belgif.be/auth/nace2008/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2008/96093> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, m.u.v. veterinaire diensten"@nl, "Services de soins pour animaux de compagnie, sauf soins vétérinaires"@fr;
+    skos:prefLabel "96093".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/96993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, muv veterinaire diensten"@nl, "Services de soins autres que vétérinaires pour animaux de compagnie"@fr;
+    skos:prefLabel "96993".
+<https://data.vlaanderen.be/id/onderneming/0753.954.472> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.954.472;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96993>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2025/46389>, <http://vocab.belgif.be/auth/nace2008/96093>, <http://vocab.belgif.be/auth/nace2008/46389>, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/01490>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0753.954.472;
+    reorg:legalName "Delbrouck, Delphine";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.348.205>.
+<https://data.vlaanderen.be/id/vestiging/2.307.348.205> a org:Site;
+    dcterms:created "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.348.205.
+_:contact_0753.954.472 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "delphinelouise@gmail.com";
+    schema:telephone "+32490405226".
+_:registration_company_0753.954.472 a adms:Identifier;
+    skos:notation "0753.954.472";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.348.205 a adms:Identifier;
+    skos:notation "2.307.348.205";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

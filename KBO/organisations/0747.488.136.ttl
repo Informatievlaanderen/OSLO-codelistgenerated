@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2120>, <http://vocab.belgif.be/auth/nace2008/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2008/21209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2120>, <http://vocab.belgif.be/auth/nace2008/2120>;
+    skos:definition "Vervaardiging van overige farmaceutische producten"@nl, "Fabrication d'autres produits pharmaceutiques"@fr;
+    skos:prefLabel "21209".
+<http://vocab.belgif.be/auth/nace2008/46460> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4646>, <http://vocab.belgif.be/auth/nace2008/4646>;
+    skos:definition "Groothandel in farmaceutische producten"@nl, "Commerce de gros de produits pharmaceutiques"@fr;
+    skos:prefLabel "46460".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2120>, <http://vocab.belgif.be/auth/nace2025/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2025/21209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2120>, <http://vocab.belgif.be/auth/nace2025/2120>;
+    skos:definition "Vervaardiging van overige farmaceutische producten"@nl, "Fabrication d'autres produits pharmaceutiques"@fr;
+    skos:prefLabel "21209".
+<http://vocab.belgif.be/auth/nace2025/46460> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4646>, <http://vocab.belgif.be/auth/nace2025/4646>;
+    skos:definition "Groothandel in farmaceutische producten"@nl, "Commerce de gros de produits pharmaceutiques"@fr;
+    skos:prefLabel "46460".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/0747.488.136> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "19-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0747.488.136;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46460>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/21209>, <http://vocab.belgif.be/auth/nace2025/21201>, <http://vocab.belgif.be/auth/nace2008/46460>, <http://vocab.belgif.be/auth/nace2008/21201>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/21209>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0747.488.136;
+    reorg:legalName "DJB MEDICAL"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.303.284.004>.
+<https://data.vlaanderen.be/id/vestiging/2.303.284.004> a org:Site;
+    dcterms:created "19-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.303.284.004.
+_:address_contact_0747.488.136 a locn:Address;
+    locn:thoroughfare "Varkensmarkt"@nl, "Varkensmarkt"@fr;
+    rdfs:label "10";
+    locn:postCode "1785";
+    adres:gemeentenaam "Merchtem"@nl, "Merchtem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0747.488.136 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0747.488.136.
+_:registration_company_0747.488.136 a adms:Identifier;
+    skos:notation "0747.488.136";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.303.284.004 a adms:Identifier;
+    skos:notation "2.303.284.004";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-05-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

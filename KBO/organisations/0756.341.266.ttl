@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0220>, <http://vocab.belgif.be/auth/nace2008/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2008/95210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9521>, <http://vocab.belgif.be/auth/nace2008/9521>;
+    skos:definition "Reparatie van consumentenelektronica"@nl, "Réparation de produits électroniques grand public"@fr;
+    skos:prefLabel "95210".
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/95210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9521>, <http://vocab.belgif.be/auth/nace2025/9521>;
+    skos:definition "Reparatie van consumentenelektronica"@nl, "Réparation de produits électroniques grand public"@fr;
+    skos:prefLabel "95210".
+<https://data.vlaanderen.be/id/onderneming/0756.341.266> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "27-11-1995"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0756.341.266;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/95210>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/42110>, _:nace_2003_45310, _:nace_2003_01410, _:nace_2003_52720, _:nace_2003_02012, _:nace_2003_45112, _:nace_2003_45230, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/02200>, <http://vocab.belgif.be/auth/nace2008/95210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Privot, Dany";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.074.036.875>.
+<https://data.vlaanderen.be/id/vestiging/2.074.036.875> a org:Site;
+    dcterms:created "27-11-1995"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.074.036.875.
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_02012 a skos:Concept;
+    skos:definition "Exploitation forestière"@fr, "Bosexploitatie"@nl;
+    skos:prefLabel "02012".
+_:nace_2003_45112 a skos:Concept;
+    skos:definition "Grondverzet"@nl, "Terrassements"@fr;
+    skos:prefLabel "45112".
+_:nace_2003_45230 a skos:Concept;
+    skos:definition "Bouw van autowegen en andere wegen, vliegvelden en sportfaciliteiten"@nl, "Construction d'autoroutes, de routes, d'aérodromes et d'installations sportives"@fr;
+    skos:prefLabel "45230".
+_:nace_2003_45310 a skos:Concept;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+_:nace_2003_52720 a skos:Concept;
+    skos:definition "Reparatie van elektrische huishoudapparaten"@nl, "Réparation d'appareils électriques à usage domestique"@fr;
+    skos:prefLabel "52720".
+_:registration_company_0756.341.266 a adms:Identifier;
+    skos:notation "0756.341.266";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-11-1995"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.074.036.875 a adms:Identifier;
+    skos:notation "2.074.036.875";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-11-1995"^^<http://www.w3.org/2001/XMLSchema#date>.

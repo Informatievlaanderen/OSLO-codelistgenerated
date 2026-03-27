@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/0755.136.387> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "21-02-1989"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.136.387;
+    reorg:legalName "MARAITE RONY";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.129.999.838>.
+<https://data.vlaanderen.be/id/vestiging/2.129.999.838> a org:Site;
+    dcterms:created "29-08-1989"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.129.999.838.
+_:registration_company_0755.136.387 a adms:Identifier;
+    skos:notation "0755.136.387";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-02-1989"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.129.999.838 a adms:Identifier;
+    skos:notation "2.129.999.838";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-02-1989"^^<http://www.w3.org/2001/XMLSchema#date>.

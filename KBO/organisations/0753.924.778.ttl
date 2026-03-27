@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<https://data.vlaanderen.be/id/onderneming/0753.924.778> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.924.778;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47252>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/47990>, <http://vocab.belgif.be/auth/nace2008/46349>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0753.924.778;
+    reorg:legalName "Drinks Supply"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.319.195.665>, <https://data.vlaanderen.be/id/vestiging/2.332.825.848>, <https://data.vlaanderen.be/id/vestiging/2.348.945.961>, <https://data.vlaanderen.be/id/vestiging/2.363.507.146>, <https://data.vlaanderen.be/id/vestiging/2.377.718.834>.
+<https://data.vlaanderen.be/id/vestiging/2.319.195.665> a org:Site;
+    dcterms:created "01-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.319.195.665.
+<https://data.vlaanderen.be/id/vestiging/2.332.825.848> a org:Site;
+    dcterms:created "27-06-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.332.825.848.
+<https://data.vlaanderen.be/id/vestiging/2.348.945.961> a org:Site;
+    dcterms:created "05-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.348.945.961.
+<https://data.vlaanderen.be/id/vestiging/2.363.507.146> a org:Site;
+    dcterms:created "09-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.363.507.146.
+<https://data.vlaanderen.be/id/vestiging/2.377.718.834> a org:Site;
+    dcterms:created "09-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.718.834.
+_:address_contact_0753.924.778 a locn:Address;
+    locn:thoroughfare "Industrieweg(BOR)"@nl, "Industrieweg(BOR)"@fr;
+    rdfs:label "24";
+    locn:postCode "2880";
+    adres:gemeentenaam "Bornem"@nl, "Bornem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0753.924.778 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0753.924.778.
+_:registration_company_0753.924.778 a adms:Identifier;
+    skos:notation "0753.924.778";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.319.195.665 a adms:Identifier;
+    skos:notation "2.319.195.665";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.332.825.848 a adms:Identifier;
+    skos:notation "2.332.825.848";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.348.945.961 a adms:Identifier;
+    skos:notation "2.348.945.961";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.363.507.146 a adms:Identifier;
+    skos:notation "2.363.507.146";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.718.834 a adms:Identifier;
+    skos:notation "2.377.718.834";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

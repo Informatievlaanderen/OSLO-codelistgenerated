@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7721>, <http://vocab.belgif.be/auth/nace2008/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<https://data.vlaanderen.be/id/onderneming/0755.096.203> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "25-07-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.096.203;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/77210>, <http://vocab.belgif.be/auth/nace2025/47252>, _:nace_2003_51340, _:nace_2003_52250, _:nace_2003_71406, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/77210>, <http://vocab.belgif.be/auth/nace2008/46349>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Johanns, Reiner";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.027.500.433>.
+<https://data.vlaanderen.be/id/vestiging/2.027.500.433> a org:Site;
+    dcterms:created "25-07-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.027.500.433.
+_:nace_2003_51340 a skos:Concept;
+    skos:definition "Groothandel in dranken"@nl, "Commerce de gros de boissons"@fr;
+    skos:prefLabel "51340".
+_:nace_2003_52250 a skos:Concept;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+_:nace_2003_71406 a skos:Concept;
+    skos:definition "Verhuur van sport- en kampeerartikelen"@nl, "Location d'articles de sport et de camping"@fr;
+    skos:prefLabel "71406".
+_:registration_company_0755.096.203 a adms:Identifier;
+    skos:notation "0755.096.203";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-07-1985"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.027.500.433 a adms:Identifier;
+    skos:notation "2.027.500.433";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-07-1985"^^<http://www.w3.org/2001/XMLSchema#date>.

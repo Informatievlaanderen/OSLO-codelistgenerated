@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01440> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0144>, <http://vocab.belgif.be/auth/nace2008/0144>;
+    skos:definition "Fokken van kamelen en andere kameelachtigen"@nl, "Élevage de chameaux et d'autres camélidés"@fr;
+    skos:prefLabel "01440".
+<http://vocab.belgif.be/auth/nace2008/01450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0145>, <http://vocab.belgif.be/auth/nace2008/0145>;
+    skos:definition "Fokken van schapen en geiten"@nl, "Élevage d'ovins et de caprins"@fr;
+    skos:prefLabel "01450".
+<http://vocab.belgif.be/auth/nace2008/13100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1310>, <http://vocab.belgif.be/auth/nace2008/1310>;
+    skos:definition "Winning van ijzererts"@nl, "Extraction de minerais de fer"@fr;
+    skos:prefLabel "13100".
+<http://vocab.belgif.be/auth/nace2008/46232> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4623>, <http://vocab.belgif.be/auth/nace2008/4623>;
+    skos:definition "Groothandel in levende dieren, m.u.v. levend vee"@nl, "Commerce de gros d'animaux vivants, sauf bétail"@fr;
+    skos:prefLabel "46232".
+<http://vocab.belgif.be/auth/nace2008/47513> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in breigarens, handwerken en fournituren in gespecialiseerde winkels"@nl, "Commerce de détail de fils à tricoter et d'articles de mercerie en magasin spécialisé"@fr;
+    skos:prefLabel "47513".
+<http://vocab.belgif.be/auth/nace2025/01440> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0144>, <http://vocab.belgif.be/auth/nace2025/0144>;
+    skos:definition "Fokken van kamelen en andere kameelachtigen"@nl, "Élevage de chameaux et d'autres camélidés"@fr;
+    skos:prefLabel "01440".
+<http://vocab.belgif.be/auth/nace2025/01450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0145>, <http://vocab.belgif.be/auth/nace2025/0145>;
+    skos:definition "Fokken van schapen en geiten"@nl, "Élevage d'ovins et de caprins"@fr;
+    skos:prefLabel "01450".
+<http://vocab.belgif.be/auth/nace2025/13100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1310>, <http://vocab.belgif.be/auth/nace2025/1310>;
+    skos:definition "Winning van ijzererts"@nl, "Extraction de minerais de fer"@fr;
+    skos:prefLabel "13100".
+<http://vocab.belgif.be/auth/nace2025/46232> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4623>, <http://vocab.belgif.be/auth/nace2025/4623>;
+    skos:definition "Groothandel in levende dieren, m.u.v. levend vee"@nl, "Commerce de gros d'animaux vivants, sauf bétail"@fr;
+    skos:prefLabel "46232".
+<http://vocab.belgif.be/auth/nace2025/47513> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in breigarens, handwerken en fournituren in gespecialiseerde winkels"@nl, "Commerce de détail de fils à tricoter et d'articles de mercerie en magasin spécialisé"@fr;
+    skos:prefLabel "47513".
+<https://data.vlaanderen.be/id/onderneming/0757.656.607> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0757.656.607;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13100>, <http://vocab.belgif.be/auth/nace2025/47513>, <http://vocab.belgif.be/auth/nace2025/46232>, <http://vocab.belgif.be/auth/nace2025/01450>, <http://vocab.belgif.be/auth/nace2025/01440>, <http://vocab.belgif.be/auth/nace2008/01440>, <http://vocab.belgif.be/auth/nace2008/01450>, <http://vocab.belgif.be/auth/nace2008/46232>, <http://vocab.belgif.be/auth/nace2008/47513>, <http://vocab.belgif.be/auth/nace2008/13100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0757.656.607;
+    reorg:legalName "SWILDENS MANAGEMENT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.309.522.686>.
+<https://data.vlaanderen.be/id/vestiging/2.309.522.686> a org:Site;
+    dcterms:created "30-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.309.522.686.
+_:address_contact_0757.656.607 a locn:Address;
+    locn:thoroughfare "Houterstraat"@nl, "Houterstraat"@fr;
+    rdfs:label "38";
+    locn:postCode "3620";
+    adres:gemeentenaam "Lanaken"@nl, "Lanaken"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0757.656.607 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0757.656.607.
+_:registration_company_0757.656.607 a adms:Identifier;
+    skos:notation "0757.656.607";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.309.522.686 a adms:Identifier;
+    skos:notation "2.309.522.686";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-10-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

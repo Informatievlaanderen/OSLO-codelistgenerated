@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1073>, <http://vocab.belgif.be/auth/nace2008/1073>;
+    skos:definition "Vervaardiging van macaroni, noedels, koeskoes en dergelijke deegwaren"@nl, "Fabrication de pâtes alimentaires"@fr;
+    skos:prefLabel "10730".
+<http://vocab.belgif.be/auth/nace2008/87209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8720>, <http://vocab.belgif.be/auth/nace2008/8720>;
+    skos:definition "Andere instellingen met huisvesting voor personen met een mentale handicap of psychiatrische problemen en voor drugs- en alcoholverslaafden"@nl, "Autres activités de soins résidentiels pour personnes avec un handicap mental, un problème psychiatrique ou toxicodépendantes"@fr;
+    skos:prefLabel "87209".
+<http://vocab.belgif.be/auth/nace2008/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/10730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1073>, <http://vocab.belgif.be/auth/nace2025/1073>;
+    skos:definition "Vervaardiging van macaroni, noedels, koeskoes en dergelijke deegwaren"@nl, "Fabrication de pâtes alimentaires"@fr;
+    skos:prefLabel "10730".
+<http://vocab.belgif.be/auth/nace2025/47210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4721>, <http://vocab.belgif.be/auth/nace2025/4721>;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210".
+<http://vocab.belgif.be/auth/nace2025/87209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8720>, <http://vocab.belgif.be/auth/nace2025/8720>;
+    skos:definition "Andere instellingen met huisvesting voor personen met een mentale handicap of psychiatrische problemen en voor drugs- en alcoholverslaafden"@nl, "Autres activités de soins résidentiels pour personnes avec un handicap mental, un problème psychiatrique ou toxicodépendantes"@fr;
+    skos:prefLabel "87209".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<https://data.vlaanderen.be/id/onderneming/0752.603.303> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "14-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0752.603.303;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10730>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/47210>, <http://vocab.belgif.be/auth/nace2025/87209>, <http://vocab.belgif.be/auth/nace2008/88999>, <http://vocab.belgif.be/auth/nace2008/10730>, <http://vocab.belgif.be/auth/nace2008/87209>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0752.603.303;
+    reorg:legalName "LA TABLE CARREE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.729.750>, <https://data.vlaanderen.be/id/vestiging/2.378.334.090>.
+<https://data.vlaanderen.be/id/vestiging/2.320.729.750> a org:Site;
+    dcterms:created "27-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.729.750.
+<https://data.vlaanderen.be/id/vestiging/2.378.334.090> a org:Site;
+    dcterms:created "01-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.378.334.090.
+_:address_contact_0752.603.303 a locn:Address;
+    locn:thoroughfare "Rue de Seneffe(OB)"@nl, "Rue de Seneffe(OB)"@fr;
+    rdfs:label "1F";
+    locn:postCode "6230";
+    adres:gemeentenaam "Pont-à-Celles"@nl, "Pont-à-Celles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0752.603.303 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@latablecaree.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.latablecarree.be";
+    locn:address _:address_contact_0752.603.303.
+_:registration_company_0752.603.303 a adms:Identifier;
+    skos:notation "0752.603.303";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.729.750 a adms:Identifier;
+    skos:notation "2.320.729.750";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.378.334.090 a adms:Identifier;
+    skos:notation "2.378.334.090";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46216> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in akkerbouwproducten en veevoeders, algemeen assortiment"@nl, "Commerce de gros d'aliments pour le bétail et de produits agricoles, assortiment général"@fr;
+    skos:prefLabel "46216".
+<http://vocab.belgif.be/auth/nace2008/46732> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46732".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/46216> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in akkerbouwproducten en veevoeders, algemeen assortiment"@nl, "Commerce de gros d'aliments pour le bétail et de produits agricoles, assortiment général"@fr;
+    skos:prefLabel "46216".
+<http://vocab.belgif.be/auth/nace2025/46832> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46832".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<https://data.vlaanderen.be/id/onderneming/0755.205.673> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "30-03-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.205.673;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46216>, <http://vocab.belgif.be/auth/nace2025/46832>, <http://vocab.belgif.be/auth/nace2025/49410>, _:nace_2003_51210, _:nace_2003_60242, _:nace_2003_51531, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/46732>, <http://vocab.belgif.be/auth/nace2008/46216>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dahner, Jean-Marie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.066.167.207>.
+<https://data.vlaanderen.be/id/vestiging/2.066.167.207> a org:Site;
+    dcterms:created "30-03-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.066.167.207.
+_:nace_2003_51210 a skos:Concept;
+    skos:definition "Groothandel in granen, zaden en diervoeders"@nl, "Commerce de gros de céréales, semences et aliments pour le bétail"@fr;
+    skos:prefLabel "51210".
+_:nace_2003_51531 a skos:Concept;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "51531".
+_:nace_2003_60242 a skos:Concept;
+    skos:definition "Goederenvervoer over de weg"@nl, "Transports routiers de marchandises"@fr;
+    skos:prefLabel "60242".
+_:registration_company_0755.205.673 a adms:Identifier;
+    skos:notation "0755.205.673";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-03-1994"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.066.167.207 a adms:Identifier;
+    skos:notation "2.066.167.207";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-03-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

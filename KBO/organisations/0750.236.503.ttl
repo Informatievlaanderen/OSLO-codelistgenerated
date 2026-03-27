@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/20300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2030>, <http://vocab.belgif.be/auth/nace2008/2030>;
+    skos:definition "Vervaardiging van schrijn- en timmerwerk"@nl, "Fabrication de charpentes et de menuiseries"@fr;
+    skos:prefLabel "20300".
+<http://vocab.belgif.be/auth/nace2008/22230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2223>, <http://vocab.belgif.be/auth/nace2008/2223>;
+    skos:definition "Boekbinden"@nl, "Reliure"@fr;
+    skos:prefLabel "22230".
+<http://vocab.belgif.be/auth/nace2008/25290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2529>, <http://vocab.belgif.be/auth/nace2008/2529>;
+    skos:definition "Vervaardiging van andere tanks, reservoirs en bergingsmiddelen, van metaal"@nl, "Fabrication d'autres réservoirs, citernes et conteneurs métalliques"@fr;
+    skos:prefLabel "25290".
+<http://vocab.belgif.be/auth/nace2008/38120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3812>, <http://vocab.belgif.be/auth/nace2008/3812>;
+    skos:definition "Inzameling van gevaarlijk afval"@nl, "Collecte des déchets dangereux"@fr;
+    skos:prefLabel "38120".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4779>, <http://vocab.belgif.be/auth/nace2008/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<http://vocab.belgif.be/auth/nace2025/20300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2030>, <http://vocab.belgif.be/auth/nace2025/2030>;
+    skos:definition "Vervaardiging van schrijn- en timmerwerk"@nl, "Fabrication de charpentes et de menuiseries"@fr;
+    skos:prefLabel "20300".
+<http://vocab.belgif.be/auth/nace2025/22240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2224>, <http://vocab.belgif.be/auth/nace2025/2224>;
+    skos:definition "Prepress-activiteiten"@nl, "Activités de pré-presse"@fr;
+    skos:prefLabel "22240".
+<http://vocab.belgif.be/auth/nace2025/25220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2522>, <http://vocab.belgif.be/auth/nace2025/2522>;
+    skos:definition "Vervaardiging van verpakkingsmateriaal van kunststof"@nl, "Fabrication d'emballages en matières plastiques"@fr;
+    skos:prefLabel "25220".
+<http://vocab.belgif.be/auth/nace2025/38120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3812>, <http://vocab.belgif.be/auth/nace2025/3812>;
+    skos:definition "Inzameling van gevaarlijk afval"@nl, "Collecte des déchets dangereux"@fr;
+    skos:prefLabel "38120".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<https://data.vlaanderen.be/id/onderneming/0750.236.503> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-06-1991"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0750.236.503;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/38120>, <http://vocab.belgif.be/auth/nace2025/25220>, <http://vocab.belgif.be/auth/nace2025/47792>, <http://vocab.belgif.be/auth/nace2025/22240>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/20300>, _:nace_2003_52502, _:nace_2003_24300, <http://vocab.belgif.be/auth/nace2008/47792>, <http://vocab.belgif.be/auth/nace2008/22230>, <http://vocab.belgif.be/auth/nace2008/20300>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/38120>, <http://vocab.belgif.be/auth/nace2008/25290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0750.236.503;
+    reorg:legalName "Dellis, Emmanuel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.053.242.550>.
+<https://data.vlaanderen.be/id/vestiging/2.053.242.550> a org:Site;
+    dcterms:created "01-07-1999"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.053.242.550.
+_:contact_0750.236.503 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0485/805792".
+_:nace_2003_24300 a skos:Concept;
+    skos:definition "Vervaardiging van verf, vernis e.d., drukinkt en mastiek"@nl, "Fabrication de peintures, vernis, encres d'imprimerie et mastics"@fr;
+    skos:prefLabel "24300".
+_:nace_2003_52502 a skos:Concept;
+    skos:definition "Detailhandel in tweedehandsgoederen"@nl, "Commerce de détail de biens d'occasion"@fr;
+    skos:prefLabel "52502".
+_:registration_company_0750.236.503 a adms:Identifier;
+    skos:notation "0750.236.503";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-1991"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.053.242.550 a adms:Identifier;
+    skos:notation "2.053.242.550";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-1991"^^<http://www.w3.org/2001/XMLSchema#date>.

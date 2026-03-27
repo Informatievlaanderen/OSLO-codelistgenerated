@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2008/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0748.850.391> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0748.850.391;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/55203>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2008/68321>, <http://vocab.belgif.be/auth/nace2008/55203>, <http://vocab.belgif.be/auth/nace2008/96099>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0748.850.391;
+    reorg:legalName "ZOUTE EXCLUSIVE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.304.472.253>.
+<https://data.vlaanderen.be/id/vestiging/2.304.472.253> a org:Site;
+    dcterms:created "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.304.472.253.
+_:address_contact_0748.850.391 a locn:Address;
+    locn:thoroughfare "Pijnbomenweg"@nl, "Chemin des Pins"@fr;
+    rdfs:label "10b";
+    locn:postCode "1180";
+    adres:gemeentenaam "Ukkel"@nl, "Uccle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0748.850.391 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@zoute-exclusive.be";
+    locn:address _:address_contact_0748.850.391.
+_:registration_company_0748.850.391 a adms:Identifier;
+    skos:notation "0748.850.391";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.304.472.253 a adms:Identifier;
+    skos:notation "2.304.472.253";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

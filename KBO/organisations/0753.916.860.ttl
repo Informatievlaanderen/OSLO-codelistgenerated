@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1083>, <http://vocab.belgif.be/auth/nace2008/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2008/20411> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2041>, <http://vocab.belgif.be/auth/nace2008/2041>;
+    skos:definition "Vervaardiging van zeep en wasmiddelen"@nl, "Fabrication de savons et de détergents"@fr;
+    skos:prefLabel "20411".
+<http://vocab.belgif.be/auth/nace2008/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2042>, <http://vocab.belgif.be/auth/nace2008/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2008/20530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2053>, <http://vocab.belgif.be/auth/nace2008/2053>;
+    skos:definition "Vervaardiging van etherische oliën"@nl, "Fabrication d'huiles essentielles"@fr;
+    skos:prefLabel "20530".
+<http://vocab.belgif.be/auth/nace2008/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2120>, <http://vocab.belgif.be/auth/nace2008/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1083>, <http://vocab.belgif.be/auth/nace2025/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2025/20411> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2041>, <http://vocab.belgif.be/auth/nace2025/2041>;
+    skos:definition "Vervaardiging van zeep en wasmiddelen"@nl, "Fabrication de savons et de détergents"@fr;
+    skos:prefLabel "20411".
+<http://vocab.belgif.be/auth/nace2025/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2042>, <http://vocab.belgif.be/auth/nace2025/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2025/20590> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2059>, <http://vocab.belgif.be/auth/nace2025/2059>;
+    skos:definition "Vervaardiging van andere chemische producten, n.e.g."@nl, "Fabrication d'autres produits chimiques n.c.a."@fr;
+    skos:prefLabel "20590".
+<http://vocab.belgif.be/auth/nace2025/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2120>, <http://vocab.belgif.be/auth/nace2025/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/0753.916.860> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "11-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.916.860;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20420>, <http://vocab.belgif.be/auth/nace2025/20590>, <http://vocab.belgif.be/auth/nace2025/10830>, <http://vocab.belgif.be/auth/nace2025/20411>, <http://vocab.belgif.be/auth/nace2025/21201>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2008/21201>, <http://vocab.belgif.be/auth/nace2008/20411>, <http://vocab.belgif.be/auth/nace2008/10830>, <http://vocab.belgif.be/auth/nace2008/20530>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/20420>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0753.916.860;
+    reorg:legalName "Gielis, Aline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.307.065.024>.
+<https://data.vlaanderen.be/id/vestiging/2.307.065.024> a org:Site;
+    dcterms:created "11-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.307.065.024.
+_:contact_0753.916.860 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "gielisaline@gmail.com";
+    schema:telephone "0479355116".
+_:registration_company_0753.916.860 a adms:Identifier;
+    skos:notation "0753.916.860";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.307.065.024 a adms:Identifier;
+    skos:notation "2.307.065.024";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

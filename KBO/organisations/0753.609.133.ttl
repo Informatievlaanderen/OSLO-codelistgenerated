@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2008/47251> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in wijnen en geestrijke dranken in gespecialiseerde winkels"@nl, "Commerce de détail de vins et de spiritueux en magasin spécialisé"@fr;
+    skos:prefLabel "47251".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2025/47251> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in wijnen en geestrijke dranken in gespecialiseerde winkels"@nl, "Commerce de détail de vins et de spiritueux en magasin spécialisé"@fr;
+    skos:prefLabel "47251".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0753.609.133> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0753.609.133;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47251>, <http://vocab.belgif.be/auth/nace2025/46341>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2008/47251>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/46341>, <http://vocab.belgif.be/auth/nace2008/46150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0753.609.133;
+    reorg:legalName "Lacroix, Thomas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.306.337.920>.
+<https://data.vlaanderen.be/id/vestiging/2.306.337.920> a org:Site;
+    dcterms:created "04-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.306.337.920.
+_:contact_0753.609.133 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "thomas.lacroix@icloud.com";
+    schema:telephone "+32494267996".
+_:registration_company_0753.609.133 a adms:Identifier;
+    skos:notation "0753.609.133";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.306.337.920 a adms:Identifier;
+    skos:notation "2.306.337.920";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

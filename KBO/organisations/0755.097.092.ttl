@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/66220> a skos:Concept;
+    skos:definition "Verzekeringsagenten en -makelaars"@nl, "Activités des agents et courtiers d'assurances"@fr;
+    skos:prefLabel "66220";
+    skos:broader <http://data.europa.eu/ux2/nace2/6622>, <http://vocab.belgif.be/auth/nace2008/6622>.
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311";
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>.
+<http://vocab.belgif.be/auth/nace2008/69202> a skos:Concept;
+    skos:definition "Boekhouders en boekhouders-fiscalisten"@nl, "Activités des comptables et des comptables-fiscalistes"@fr;
+    skos:prefLabel "69202";
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>.
+<http://vocab.belgif.be/auth/nace2025/66220> a skos:Concept;
+    skos:definition "Verzekeringsagenten en -makelaars"@nl, "Activités des agents et courtiers d'assurances"@fr;
+    skos:prefLabel "66220";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6622>, <http://vocab.belgif.be/auth/nace2025/6622>.
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>.
+<http://vocab.belgif.be/auth/nace2025/69209> a skos:Concept;
+    skos:definition "Overige fiscale dienstverlening"@nl, "Autres activités fiscales"@fr;
+    skos:prefLabel "69209";
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6920>, <http://vocab.belgif.be/auth/nace2025/6920>.
+<https://data.vlaanderen.be/id/onderneming/0755.097.092> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0755.097.092;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, _:nace_2003_67201, <http://vocab.belgif.be/auth/nace2025/66220>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/69209>, <http://vocab.belgif.be/auth/nace2025/68310>, _:nace_2003_70311, _:nace_2003_74121, <http://vocab.belgif.be/auth/nace2008/66220>, <http://vocab.belgif.be/auth/nace2008/69202>, <http://vocab.belgif.be/auth/nace2008/68311>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Wirtz, Friedrich";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.027.707.695>.
+<https://data.vlaanderen.be/id/vestiging/2.027.707.695> a org:Site;
+    dcterms:created "01-09-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.027.707.695.
+_:nace_2003_67201 a skos:Concept;
+    skos:definition "Verzekeringsmakelaars en -agenten"@nl, "Agents et courtiers d'assurances"@fr;
+    skos:prefLabel "67201".
+_:nace_2003_70311 a skos:Concept;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed"@nl, "Agences immobilières et intermédiaires en achat, vente et location de biens immobiliers"@fr;
+    skos:prefLabel "70311".
+_:nace_2003_74121 a skos:Concept;
+    skos:definition "Boekhouders"@nl, "Comptables"@fr;
+    skos:prefLabel "74121".
+_:registration_company_0755.097.092 a adms:Identifier;
+    skos:notation "0755.097.092";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1985"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.027.707.695 a adms:Identifier;
+    skos:notation "2.027.707.695";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1985"^^<http://www.w3.org/2001/XMLSchema#date>.

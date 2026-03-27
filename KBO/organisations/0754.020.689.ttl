@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4730>, <http://vocab.belgif.be/auth/nace2008/4730>;
+    skos:definition "Detailhandel in motorbrandstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de carburants automobiles en magasin spécialisé"@fr;
+    skos:prefLabel "47300".
+<http://vocab.belgif.be/auth/nace2025/47300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4730>, <http://vocab.belgif.be/auth/nace2025/4730>;
+    skos:definition "Detailhandel in motorbrandstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de carburants automobiles en magasin spécialisé"@fr;
+    skos:prefLabel "47300".
+<https://data.vlaanderen.be/id/onderneming/0754.020.689> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-06-1977"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0754.020.689;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47300>, _:nace_2003_50500, <http://vocab.belgif.be/auth/nace2008/47300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bozet, Philippe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.013.579.448>.
+<https://data.vlaanderen.be/id/vestiging/2.013.579.448> a org:Site;
+    dcterms:created "24-06-1977"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.013.579.448.
+_:nace_2003_50500 a skos:Concept;
+    skos:definition "Detailhandel in motorbrandstoffen"@nl, "Commerce de détail de carburants"@fr;
+    skos:prefLabel "50500".
+_:registration_company_0754.020.689 a adms:Identifier;
+    skos:notation "0754.020.689";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-1977"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.013.579.448 a adms:Identifier;
+    skos:notation "2.013.579.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-1977"^^<http://www.w3.org/2001/XMLSchema#date>.

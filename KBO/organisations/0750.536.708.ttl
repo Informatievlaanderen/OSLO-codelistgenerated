@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/82400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8240>, <http://vocab.belgif.be/auth/nace2025/8240>;
+    skos:definition "Bemiddelingsactiviteiten in verband met zakelijke dienstverlening, neg"@nl, "Activités de service d’intermédiation pour des services de soutien aux entreprises nca"@fr;
+    skos:prefLabel "82400".
+<https://data.vlaanderen.be/id/onderneming/0750.536.708> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0750.536.708;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/82400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0750.536.708;
+    reorg:legalName "Bayoudh, Seif";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.305.195.694>.
+<https://data.vlaanderen.be/id/vestiging/2.305.195.694> a org:Site;
+    dcterms:created "01-07-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.305.195.694.
+_:contact_0750.536.708 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "info@sehto.com";
+    <http://xmlns.com/foaf/0.1/homepage> "sehto.com".
+_:registration_company_0750.536.708 a adms:Identifier;
+    skos:notation "0750.536.708";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.305.195.694 a adms:Identifier;
+    skos:notation "2.305.195.694";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

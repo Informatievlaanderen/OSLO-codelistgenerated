@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/45201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Entretien et réparation général d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45201".
+<http://vocab.belgif.be/auth/nace2008/47300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4730>, <http://vocab.belgif.be/auth/nace2008/4730>;
+    skos:definition "Detailhandel in motorbrandstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de carburants automobiles en magasin spécialisé"@fr;
+    skos:prefLabel "47300".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/47300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4730>, <http://vocab.belgif.be/auth/nace2025/4730>;
+    skos:definition "Detailhandel in motorbrandstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de carburants automobiles en magasin spécialisé"@fr;
+    skos:prefLabel "47300".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<https://data.vlaanderen.be/id/onderneming/0756.172.111> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-02-1974"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0756.172.111;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47300>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2025/47811>, _:nace_2003_50200, _:nace_2003_50500, _:nace_2003_50103, _:nace_2003_45250, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/47300>, <http://vocab.belgif.be/auth/nace2008/45201>, <http://vocab.belgif.be/auth/nace2008/43999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bottelberghe, Jean".
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:nace_2003_50103 a skos:Concept;
+    skos:definition "Detailhandel in motorvoertuigen"@nl, "Commerce de détail de véhicules automobiles"@fr;
+    skos:prefLabel "50103".
+_:nace_2003_50200 a skos:Concept;
+    skos:definition "Onderhoud en reparatie van auto's"@nl, "Entretien et réparation de véhicules automobiles"@fr;
+    skos:prefLabel "50200".
+_:nace_2003_50500 a skos:Concept;
+    skos:definition "Detailhandel in motorbrandstoffen"@nl, "Commerce de détail de carburants"@fr;
+    skos:prefLabel "50500".
+_:registration_company_0756.172.111 a adms:Identifier;
+    skos:notation "0756.172.111";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-02-1974"^^<http://www.w3.org/2001/XMLSchema#date>.
