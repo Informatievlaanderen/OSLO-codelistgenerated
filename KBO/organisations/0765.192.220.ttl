@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "41101".
+<http://vocab.belgif.be/auth/nace2008/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/68121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van residentiële bouwprojecten"@nl, "Promotion immobilière résidentielle"@fr;
+    skos:prefLabel "68121".
+<http://vocab.belgif.be/auth/nace2025/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/0765.192.220> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "15-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.192.220;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/68121>, <http://vocab.belgif.be/auth/nace2025/71113>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/71113>, <http://vocab.belgif.be/auth/nace2008/82300>, <http://vocab.belgif.be/auth/nace2008/41101>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0765.192.220;
+    reorg:legalName "MIN-KA ECO HOUSING"@fr.
+_:address_contact_0765.192.220 a locn:Address;
+    locn:thoroughfare "Rue Mathieu-Laensbergh"@nl, "Rue Mathieu-Laensbergh"@fr;
+    rdfs:label "46";
+    adres:busnummer "1";
+    locn:postCode "4000";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0765.192.220 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@min-ka.be";
+    <http://xmlns.com/foaf/0.1/homepage> "min-ka.be";
+    locn:address _:address_contact_0765.192.220.
+_:registration_company_0765.192.220 a adms:Identifier;
+    skos:notation "0765.192.220";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

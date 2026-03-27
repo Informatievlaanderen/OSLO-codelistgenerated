@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Grondverzet"@nl, "Terrassements"@fr;
+    skos:prefLabel "45112".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<https://data.vlaanderen.be/id/onderneming/0766.881.505> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "19-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.881.505;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/45112>, <http://vocab.belgif.be/auth/nace2008/68100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0766.881.505;
+    reorg:legalName "LOMAN INVESTMENTS BELGIUM"@fr.
+_:address_contact_0766.881.505 a locn:Address;
+    locn:thoroughfare "Jaargetijdenlaan"@nl, "Avenue des Saisons"@fr;
+    rdfs:label "100-102";
+    adres:busnummer "30";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.881.505 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0766.881.505.
+_:registration_company_0766.881.505 a adms:Identifier;
+    skos:notation "0766.881.505";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

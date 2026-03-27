@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46751> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4675>, <http://vocab.belgif.be/auth/nace2008/4675>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques industriels"@fr;
+    skos:prefLabel "46751".
+<http://vocab.belgif.be/auth/nace2025/46851> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4685>, <http://vocab.belgif.be/auth/nace2025/4685>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques à usage industriel"@fr;
+    skos:prefLabel "46851".
+<https://data.vlaanderen.be/id/onderneming/0764.760.470> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-06-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.760.470;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46851>, <http://vocab.belgif.be/auth/nace2008/46751>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0764.760.470;
+    reorg:legalName "MEXICHEM UK LTD"@nl.
+_:address_contact_0764.760.470 a locn:Address;
+    locn:thoroughfare "THE HEATH BUSINESS & TECHNICAL PARK"@nl, "THE HEATH BUSINESS & TECHNICAL PARK"@fr;
+    rdfs:label "1";
+    locn:postCode "WA7 4QX";
+    adres:gemeentenaam "RUNCORN"@nl, "RUNCORN"@fr;
+    adres:land "Groot-Brittannië"@nl, "Grande-Bretagne"@fr.
+_:contact_0764.760.470 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0764.760.470.
+_:registration_company_0764.760.470 a adms:Identifier;
+    skos:notation "0764.760.470";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

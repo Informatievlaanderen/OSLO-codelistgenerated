@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in glas-, porselein- en aardewerk en in niet-elektrische huishoudelijke artikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils ménagers non électriques, de vaisselle, de verrerie, de porcelaine et de poterie en magasin spécialisé"@fr;
+    skos:prefLabel "47593".
+<http://vocab.belgif.be/auth/nace2008/47599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen in gespecialiseerde winkels, n.e.g."@nl, "Commerce de détail d'autres articles de ménage en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47599".
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/47553> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in glas-, porselein- en aardewerk en in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de détail d'appareils ménagers non électriques, de vaisselle, de verrerie, de porcelaine et de poterie"@fr;
+    skos:prefLabel "47553".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<https://data.vlaanderen.be/id/onderneming/0763.528.372> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0763.528.372;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/47553>, <http://vocab.belgif.be/auth/nace2008/47750>, <http://vocab.belgif.be/auth/nace2008/47599>, <http://vocab.belgif.be/auth/nace2008/47593>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Demedts, Laurence";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.313.012.708>.
+<https://data.vlaanderen.be/id/vestiging/2.313.012.708> a org:Site;
+    dcterms:created "12-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.313.012.708.
+_:registration_company_0763.528.372 a adms:Identifier;
+    skos:notation "0763.528.372";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.313.012.708 a adms:Identifier;
+    skos:notation "2.313.012.708";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

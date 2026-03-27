@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2008/47786> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in souvenirs en religieuze artikelen in gespecialiseerde winkels"@nl, "Commerce de détail de souvenirs et d'articles religieux en magasin spécialisé"@fr;
+    skos:prefLabel "47786".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/74104> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van interieurdecorateurs"@nl, "Décoration d'intérieur"@fr;
+    skos:prefLabel "74104".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/47784> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in drogisterijartikelen en onderhoudsproducten in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de droguerie et de produits d'entretien en magasin spécialisé"@fr;
+    skos:prefLabel "47784".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/74130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7413>, <http://vocab.belgif.be/auth/nace2025/7413>;
+    skos:definition "Interieurontwerp"@nl, "Activités de design d’intérieur"@fr;
+    skos:prefLabel "74130".
+<https://data.vlaanderen.be/id/onderneming/0758.524.360> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0758.524.360;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74130>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/47784>, <http://vocab.belgif.be/auth/nace2008/47750>, <http://vocab.belgif.be/auth/nace2008/46150>, <http://vocab.belgif.be/auth/nace2008/74104>, <http://vocab.belgif.be/auth/nace2008/47786>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0758.524.360;
+    reorg:legalName "K EXPERTISE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.310.430.726>, <https://data.vlaanderen.be/id/vestiging/2.358.630.026>.
+<https://data.vlaanderen.be/id/vestiging/2.310.430.726> a org:Site;
+    dcterms:created "18-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.310.430.726.
+<https://data.vlaanderen.be/id/vestiging/2.358.630.026> a org:Site;
+    dcterms:created "01-05-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.358.630.026.
+_:address_contact_0758.524.360 a locn:Address;
+    locn:thoroughfare "Champellaan"@nl, "Avenue Champel"@fr;
+    rdfs:label "2";
+    locn:postCode "1640";
+    adres:gemeentenaam "Sint-Genesius-Rode"@nl, "Sint-Genesius-Rode"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0758.524.360 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@kexpertise.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.kexpertise.com";
+    locn:address _:address_contact_0758.524.360.
+_:registration_company_0758.524.360 a adms:Identifier;
+    skos:notation "0758.524.360";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.310.430.726 a adms:Identifier;
+    skos:notation "2.310.430.726";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.358.630.026 a adms:Identifier;
+    skos:notation "2.358.630.026";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

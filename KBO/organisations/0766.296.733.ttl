@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/32300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3230>, <http://vocab.belgif.be/auth/nace2008/3230>;
+    skos:definition "Vervaardiging van audio- en videoapparatuur"@nl, "Fabrication d'appareils de réception, enregistrement ou reproduction du son et de l'image"@fr;
+    skos:prefLabel "32300".
+<http://vocab.belgif.be/auth/nace2008/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4764>, <http://vocab.belgif.be/auth/nace2008/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2008/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7912>, <http://vocab.belgif.be/auth/nace2008/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2008/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2025/32300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3230>, <http://vocab.belgif.be/auth/nace2025/3230>;
+    skos:definition "Vervaardiging van audio- en videoapparatuur"@nl, "Fabrication d'appareils de réception, enregistrement ou reproduction du son et de l'image"@fr;
+    skos:prefLabel "32300".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<http://vocab.belgif.be/auth/nace2025/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7912>, <http://vocab.belgif.be/auth/nace2025/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<https://data.vlaanderen.be/id/onderneming/0766.296.733> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "02-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.296.733;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/79120>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/32300>, <http://vocab.belgif.be/auth/nace2025/93199>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2025/47639>, <http://vocab.belgif.be/auth/nace2008/32300>, <http://vocab.belgif.be/auth/nace2008/79120>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/93110>, <http://vocab.belgif.be/auth/nace2008/47640>, <http://vocab.belgif.be/auth/nace2008/93199>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0766.296.733;
+    reorg:legalName "Do IT"@nl.
+_:address_contact_0766.296.733 a locn:Address;
+    locn:thoroughfare "Kleine steenweg"@nl, "Kleine steenweg"@fr;
+    rdfs:label "66";
+    adres:busnummer "B";
+    locn:postCode "2221";
+    adres:gemeentenaam "Heist-op-den-Berg"@nl, "Heist-op-den-Berg"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.296.733 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0766.296.733.
+_:registration_company_0766.296.733 a adms:Identifier;
+    skos:notation "0766.296.733";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

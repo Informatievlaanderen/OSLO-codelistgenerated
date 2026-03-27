@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2042>, <http://vocab.belgif.be/auth/nace2008/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2008/46450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4645>, <http://vocab.belgif.be/auth/nace2008/4645>;
+    skos:definition "Groothandel in parfumerieën en cosmetica"@nl, "Commerce de gros de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "46450".
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2042>, <http://vocab.belgif.be/auth/nace2025/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2025/46450> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4645>, <http://vocab.belgif.be/auth/nace2025/4645>;
+    skos:definition "Groothandel in parfumerieën en cosmetica"@nl, "Commerce de gros de parfumerie et de produits de beauté"@fr;
+    skos:prefLabel "46450".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<https://data.vlaanderen.be/id/onderneming/0765.502.620> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "22-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.502.620;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20420>, <http://vocab.belgif.be/auth/nace2025/46450>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2008/46450>, <http://vocab.belgif.be/auth/nace2008/20420>, <http://vocab.belgif.be/auth/nace2008/47750>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0765.502.620;
+    reorg:legalName "ODYSKIN"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.315.447.210>, <https://data.vlaanderen.be/id/vestiging/2.353.506.644>.
+<https://data.vlaanderen.be/id/vestiging/2.315.447.210> a org:Site;
+    dcterms:created "22-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.315.447.210.
+<https://data.vlaanderen.be/id/vestiging/2.353.506.644> a org:Site;
+    dcterms:created "01-12-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.353.506.644.
+_:address_contact_0765.502.620 a locn:Address;
+    locn:thoroughfare "Grenadierslaan"@nl, "Avenue des Grenadiers"@fr;
+    rdfs:label "59";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0765.502.620 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0765.502.620.
+_:registration_company_0765.502.620 a adms:Identifier;
+    skos:notation "0765.502.620";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.315.447.210 a adms:Identifier;
+    skos:notation "2.315.447.210";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.353.506.644 a adms:Identifier;
+    skos:notation "2.353.506.644";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/77299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van andere consumentenartikelen, n.e.g."@nl, "Location et location-bail d'autres biens personnels et domestiques n.c.a."@fr;
+    skos:prefLabel "77299".
+<http://vocab.belgif.be/auth/nace2025/77229> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van andere huishoudelijke of persoonlijke artikelen, neg"@nl, "Location et location-bail d'autres biens personnels et domestiques nca"@fr;
+    skos:prefLabel "77229".
+<https://data.vlaanderen.be/id/onderneming/0764.025.250> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "08-11-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.025.250;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77229>, _:nace_2003_71408, <http://vocab.belgif.be/auth/nace2008/77299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Maheux, Philippe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.027.516.764>.
+<https://data.vlaanderen.be/id/vestiging/2.027.516.764> a org:Site;
+    dcterms:created "08-11-1985"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.027.516.764.
+_:nace_2003_71408 a skos:Concept;
+    skos:definition "Verhuur van overige roerende goederen voor persoonlijk of huishoudelijk gebruik, n.e.g."@nl, "Location d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "71408".
+_:registration_company_0764.025.250 a adms:Identifier;
+    skos:notation "0764.025.250";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-1985"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.027.516.764 a adms:Identifier;
+    skos:notation "2.027.516.764";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-11-1985"^^<http://www.w3.org/2001/XMLSchema#date>.

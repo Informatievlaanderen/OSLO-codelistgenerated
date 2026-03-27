@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/47191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4719>, <http://vocab.belgif.be/auth/nace2008/4719>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen niet overheersen (verkoopoppervlakte < 2500 m²)"@nl, "Commerce de détail en magasin non spécialisé sans prédominance alimentaire (surface de vente < 2500m²)"@fr;
+    skos:prefLabel "47191".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0760.500.982> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0760.500.982;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46649>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/47191>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0760.500.982;
+    reorg:legalName "EASTBRIDGE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.311.873.551>.
+<https://data.vlaanderen.be/id/vestiging/2.311.873.551> a org:Site;
+    dcterms:created "23-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.311.873.551.
+_:address_contact_0760.500.982 a locn:Address;
+    locn:thoroughfare "Vilvoordsesteenweg"@nl, "Vilvoordsesteenweg"@fr;
+    rdfs:label "252";
+    locn:postCode "1850";
+    adres:gemeentenaam "Grimbergen"@nl, "Grimbergen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0760.500.982 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0760.500.982.
+_:registration_company_0760.500.982 a adms:Identifier;
+    skos:notation "0760.500.982";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.311.873.551 a adms:Identifier;
+    skos:notation "2.311.873.551";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

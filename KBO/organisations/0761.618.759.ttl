@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/90011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90011".
+<http://vocab.belgif.be/auth/nace2008/90029> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Overige ondersteunende activiteiten voor de uitvoerende kunsten"@nl, "Autres activités de soutien au spectacle vivant"@fr;
+    skos:prefLabel "90029".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<http://vocab.belgif.be/auth/nace2025/90399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Andere ondersteunende activiteiten voor scheppende en uitvoerende kunst, neg"@nl, "Autres activités de soutien à la création artistique et aux spectacles, nca"@fr;
+    skos:prefLabel "90399".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0761.618.759> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0761.618.759;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/90399>, <http://vocab.belgif.be/auth/nace2008/90011>, <http://vocab.belgif.be/auth/nace2008/90029>, <http://vocab.belgif.be/auth/nace2008/93299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0761.618.759;
+    reorg:legalName "Herrijgers, Steve";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.311.713.896>.
+<https://data.vlaanderen.be/id/vestiging/2.311.713.896> a org:Site;
+    dcterms:created "14-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.311.713.896.
+_:contact_0761.618.759 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "steveherrijgers@icloud.com".
+_:registration_company_0761.618.759 a adms:Identifier;
+    skos:notation "0761.618.759";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.311.713.896 a adms:Identifier;
+    skos:notation "2.311.713.896";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

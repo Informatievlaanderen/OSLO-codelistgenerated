@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<https://data.vlaanderen.be/id/onderneming/0766.722.147> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.722.147;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/62100>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/62010>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0766.722.147;
+    reorg:legalName "MARCANDO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.315.942.801>.
+<https://data.vlaanderen.be/id/vestiging/2.315.942.801> a org:Site;
+    dcterms:created "14-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.315.942.801.
+_:address_contact_0766.722.147 a locn:Address;
+    locn:thoroughfare "Keibergstraat"@nl, "Keibergstraat"@fr;
+    rdfs:label "112";
+    locn:postCode "8820";
+    adres:gemeentenaam "Torhout"@nl, "Torhout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.722.147 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "050/96.06.20";
+    locn:address _:address_contact_0766.722.147.
+_:registration_company_0766.722.147 a adms:Identifier;
+    skos:notation "0766.722.147";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.315.942.801 a adms:Identifier;
+    skos:notation "2.315.942.801";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7810>, <http://vocab.belgif.be/auth/nace2008/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7810>, <http://vocab.belgif.be/auth/nace2025/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<https://data.vlaanderen.be/id/onderneming/0765.732.252> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.732.252;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/70200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/78100>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/78100>, <http://vocab.belgif.be/auth/nace2008/82300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0765.732.252;
+    reorg:legalName "Institute for Sales And Marketing (ISAM)"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.315.306.361>.
+<https://data.vlaanderen.be/id/vestiging/2.315.306.361> a org:Site;
+    dcterms:created "26-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.315.306.361.
+_:address_contact_0765.732.252 a locn:Address;
+    locn:thoroughfare "Paul Smekensplein"@nl, "Paul Smekensplein"@fr;
+    rdfs:label "4";
+    adres:busnummer "102";
+    locn:postCode "2000";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0765.732.252 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@instituteforsales.eu";
+    <http://xmlns.com/foaf/0.1/homepage> "www.instituteforsales.eu";
+    locn:address _:address_contact_0765.732.252.
+_:registration_company_0765.732.252 a adms:Identifier;
+    skos:notation "0765.732.252";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.315.306.361 a adms:Identifier;
+    skos:notation "2.315.306.361";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

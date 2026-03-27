@@ -1,0 +1,165 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01309> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0130>, <http://vocab.belgif.be/auth/nace2008/0130>;
+    skos:definition "Overige plantenvermeerdering"@nl, "Autre reproduction de plantes"@fr;
+    skos:prefLabel "01309".
+<http://vocab.belgif.be/auth/nace2008/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0161>, <http://vocab.belgif.be/auth/nace2008/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2008/01630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0163>, <http://vocab.belgif.be/auth/nace2008/0163>;
+    skos:definition "Activiteiten met betrekking tot gewassen na de oogst"@nl, "Traitement primaire des récoltes"@fr;
+    skos:prefLabel "01630".
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0220>, <http://vocab.belgif.be/auth/nace2008/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2008/02300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0230>, <http://vocab.belgif.be/auth/nace2008/0230>;
+    skos:definition "Verzamelen van in het wild groeiende producten met uitzondering van hout"@nl, "Récolte de produits forestiers non ligneux poussant à l'état sauvage"@fr;
+    skos:prefLabel "02300".
+<http://vocab.belgif.be/auth/nace2008/55900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5590>, <http://vocab.belgif.be/auth/nace2008/5590>;
+    skos:definition "Overige accommodatie"@nl, "Autres hébergements"@fr;
+    skos:prefLabel "55900".
+<http://vocab.belgif.be/auth/nace2008/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2008/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6820>, <http://vocab.belgif.be/auth/nace2008/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/01309> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0130>, <http://vocab.belgif.be/auth/nace2025/0130>;
+    skos:definition "Overige plantenvermeerdering"@nl, "Autre reproduction de plantes"@fr;
+    skos:prefLabel "01309".
+<http://vocab.belgif.be/auth/nace2025/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0161>, <http://vocab.belgif.be/auth/nace2025/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/01630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0163>, <http://vocab.belgif.be/auth/nace2025/0163>;
+    skos:definition "Activiteiten met betrekking tot gewassen na de oogst"@nl, "Traitement primaire des récoltes"@fr;
+    skos:prefLabel "01630".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/02300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0230>, <http://vocab.belgif.be/auth/nace2025/0230>;
+    skos:definition "Verzamelen van in het wild groeiende producten met uitzondering van hout"@nl, "Récolte de produits forestiers non ligneux poussant à l'état sauvage"@fr;
+    skos:prefLabel "02300".
+<http://vocab.belgif.be/auth/nace2025/55900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5590>, <http://vocab.belgif.be/auth/nace2025/5590>;
+    skos:definition "Overige accommodatie"@nl, "Autres hébergements"@fr;
+    skos:prefLabel "55900".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/68203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd niet-residentieel onroerend goed, exclusief terreinen"@nl, "Location et exploitation de biens immobiliers non résidentiels propres ou loués, sauf terrains"@fr;
+    skos:prefLabel "68203".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0760.954.013> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0760.954.013;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/02300>, <http://vocab.belgif.be/auth/nace2025/01610>, <http://vocab.belgif.be/auth/nace2025/68203>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/01620>, <http://vocab.belgif.be/auth/nace2025/01630>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/01309>, <http://vocab.belgif.be/auth/nace2025/93199>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/55900>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2008/93199>, <http://vocab.belgif.be/auth/nace2008/90021>, <http://vocab.belgif.be/auth/nace2008/02100>, <http://vocab.belgif.be/auth/nace2008/68203>, <http://vocab.belgif.be/auth/nace2008/01620>, <http://vocab.belgif.be/auth/nace2008/02300>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/01309>, <http://vocab.belgif.be/auth/nace2008/01630>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/68201>, <http://vocab.belgif.be/auth/nace2008/01610>, <http://vocab.belgif.be/auth/nace2008/02200>, <http://vocab.belgif.be/auth/nace2008/55900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0760.954.013;
+    reorg:legalName "FERME AGROFORESTIERE DE RENAL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.312.659.845>.
+<https://data.vlaanderen.be/id/vestiging/2.312.659.845> a org:Site;
+    dcterms:created "07-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.659.845.
+_:address_contact_0760.954.013 a locn:Address;
+    locn:thoroughfare "Renal"@nl, "Renal"@fr;
+    rdfs:label "1";
+    locn:postCode "4590";
+    adres:gemeentenaam "Ouffet"@nl, "Ouffet"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0760.954.013 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0760.954.013.
+_:registration_company_0760.954.013 a adms:Identifier;
+    skos:notation "0760.954.013";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.659.845 a adms:Identifier;
+    skos:notation "2.312.659.845";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

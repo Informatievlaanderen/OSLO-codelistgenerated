@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0113>, <http://vocab.belgif.be/auth/nace2008/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2008/01410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0141>, <http://vocab.belgif.be/auth/nace2008/0141>;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+<http://vocab.belgif.be/auth/nace2008/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0146>, <http://vocab.belgif.be/auth/nace2008/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0113>, <http://vocab.belgif.be/auth/nace2025/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2025/01410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0141>, <http://vocab.belgif.be/auth/nace2025/0141>;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+<http://vocab.belgif.be/auth/nace2025/01462> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0146>, <http://vocab.belgif.be/auth/nace2025/0146>;
+    skos:definition "Varkensvetmesterijen"@nl, "Élevage de porcs à l'engrais"@fr;
+    skos:prefLabel "01462".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<https://data.vlaanderen.be/id/onderneming/0766.658.207> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "16-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.658.207;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/01130>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01462>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/01620>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2025/01410>, <http://vocab.belgif.be/auth/nace2008/01130>, <http://vocab.belgif.be/auth/nace2008/01462>, <http://vocab.belgif.be/auth/nace2008/01620>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/01490>, <http://vocab.belgif.be/auth/nace2008/01410>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0766.658.207;
+    reorg:legalName "Theunynck Joris, Jeroen en Kevin"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.316.318.923>.
+<https://data.vlaanderen.be/id/vestiging/2.316.318.923> a org:Site;
+    dcterms:created "16-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.316.318.923.
+_:address_contact_0766.658.207 a locn:Address;
+    locn:thoroughfare "Warandestraat"@nl, "Warandestraat"@fr;
+    rdfs:label "26";
+    locn:postCode "8978";
+    adres:gemeentenaam "Poperinge"@nl, "Poperinge"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.658.207 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0766.658.207.
+_:registration_company_0766.658.207 a adms:Identifier;
+    skos:notation "0766.658.207";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.316.318.923 a adms:Identifier;
+    skos:notation "2.316.318.923";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

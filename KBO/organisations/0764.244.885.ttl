@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9200>, <http://vocab.belgif.be/auth/nace2008/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<http://vocab.belgif.be/auth/nace2025/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9200>, <http://vocab.belgif.be/auth/nace2025/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<http://vocab.belgif.be/auth/nace2025/96993> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Diensten in verband met de verzorging van huisdieren, muv veterinaire diensten"@nl, "Services de soins autres que vétérinaires pour animaux de compagnie"@fr;
+    skos:prefLabel "96993".
+<https://data.vlaanderen.be/id/onderneming/0764.244.885> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "22-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.244.885;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/92000>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96993>, <http://vocab.belgif.be/auth/nace2008/92000>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Paci, Sandina";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.345.653.406>.
+<https://data.vlaanderen.be/id/vestiging/2.345.653.406> a org:Site;
+    dcterms:created "22-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.345.653.406.
+_:registration_company_0764.244.885 a adms:Identifier;
+    skos:notation "0764.244.885";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.345.653.406 a adms:Identifier;
+    skos:notation "2.345.653.406";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

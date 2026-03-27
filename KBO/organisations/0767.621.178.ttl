@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<https://data.vlaanderen.be/id/onderneming/0767.621.178> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "28-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0767.621.178;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2025/95319>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/46711>, <http://vocab.belgif.be/auth/nace2025/95314>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0767.621.178;
+    reorg:legalName "WRPM"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.372.201.316>.
+<https://data.vlaanderen.be/id/vestiging/2.372.201.316> a org:Site;
+    dcterms:created "14-03-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.372.201.316.
+_:address_contact_0767.621.178 a locn:Address;
+    locn:thoroughfare "Eindeke"@nl, "Eindeke"@fr;
+    rdfs:label "17a";
+    locn:postCode "2221";
+    adres:gemeentenaam "Heist-op-den-Berg"@nl, "Heist-op-den-Berg"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0767.621.178 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@b-beazt.com";
+    <http://xmlns.com/foaf/0.1/homepage> "b-beazt.com/";
+    locn:address _:address_contact_0767.621.178.
+_:registration_company_0767.621.178 a adms:Identifier;
+    skos:notation "0767.621.178";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.372.201.316 a adms:Identifier;
+    skos:notation "2.372.201.316";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

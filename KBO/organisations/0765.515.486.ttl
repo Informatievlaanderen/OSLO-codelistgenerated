@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01280> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0128>, <http://vocab.belgif.be/auth/nace2008/0128>;
+    skos:definition "Teelt van specerijgewassen en van aromatische en medicinale gewassen"@nl, "Culture de plantes à épices, aromatiques, médicinales et pharmaceutiques"@fr;
+    skos:prefLabel "01280".
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1039>, <http://vocab.belgif.be/auth/nace2008/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2008/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1089>, <http://vocab.belgif.be/auth/nace2008/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2008/11010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1101>, <http://vocab.belgif.be/auth/nace2008/1101>;
+    skos:definition "Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"@nl, "Production de boissons alcooliques distillées"@fr;
+    skos:prefLabel "11010".
+<http://vocab.belgif.be/auth/nace2008/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2042>, <http://vocab.belgif.be/auth/nace2008/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<http://vocab.belgif.be/auth/nace2025/01280> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0128>, <http://vocab.belgif.be/auth/nace2025/0128>;
+    skos:definition "Teelt van specerijgewassen en van aromatische en medicinale gewassen"@nl, "Culture de plantes à épices, aromatiques, médicinales et pharmaceutiques"@fr;
+    skos:prefLabel "01280".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1039>, <http://vocab.belgif.be/auth/nace2025/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/11010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1101>, <http://vocab.belgif.be/auth/nace2025/1101>;
+    skos:definition "Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"@nl, "Production de boissons alcooliques distillées"@fr;
+    skos:prefLabel "11010".
+<http://vocab.belgif.be/auth/nace2025/20420> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2042>, <http://vocab.belgif.be/auth/nace2025/2042>;
+    skos:definition "Vervaardiging van parfums en toiletartikelen"@nl, "Fabrication de parfums et de produits de toilette"@fr;
+    skos:prefLabel "20420".
+<https://data.vlaanderen.be/id/onderneming/0765.515.486> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.515.486;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/20420>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/11010>, <http://vocab.belgif.be/auth/nace2025/10392>, <http://vocab.belgif.be/auth/nace2025/01280>, <http://vocab.belgif.be/auth/nace2008/10890>, <http://vocab.belgif.be/auth/nace2008/20420>, <http://vocab.belgif.be/auth/nace2008/11010>, <http://vocab.belgif.be/auth/nace2008/10392>, <http://vocab.belgif.be/auth/nace2008/01490>, <http://vocab.belgif.be/auth/nace2008/01280>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0765.515.486;
+    reorg:legalName "Le Safran du Mont Panisel"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.315.966.951>.
+<https://data.vlaanderen.be/id/vestiging/2.315.966.951> a org:Site;
+    dcterms:created "14-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.315.966.951.
+_:address_contact_0765.515.486 a locn:Address;
+    locn:thoroughfare "Chemin Saint Pierre"@nl, "Chemin Saint Pierre"@fr;
+    rdfs:label "67";
+    locn:postCode "7030";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0765.515.486 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@safrandumontpanisel.be";
+    schema:telephone "+32494875424";
+    locn:address _:address_contact_0765.515.486.
+_:registration_company_0765.515.486 a adms:Identifier;
+    skos:notation "0765.515.486";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.315.966.951 a adms:Identifier;
+    skos:notation "2.315.966.951";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

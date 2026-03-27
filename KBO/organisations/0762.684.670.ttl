@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/22190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2219>, <http://vocab.belgif.be/auth/nace2008/2219>;
+    skos:definition "Vervaardiging van andere producten van rubber"@nl, "Fabrication d'autres articles en caoutchouc"@fr;
+    skos:prefLabel "22190".
+<http://vocab.belgif.be/auth/nace2008/46696> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in meet-, controle- en navigatieinstrumenten"@nl, "Commerce de gros d'instruments de mesure, de contrôle et de navigation"@fr;
+    skos:prefLabel "46696".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2025/22120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2212>, <http://vocab.belgif.be/auth/nace2025/2212>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "22120".
+<http://vocab.belgif.be/auth/nace2025/46646> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in meet-, controle- en navigatieinstrumenten"@nl, "Commerce de gros d'instruments de mesure, de contrôle et de navigation"@fr;
+    skos:prefLabel "46646".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<https://data.vlaanderen.be/id/onderneming/0762.684.670> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0762.684.670;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/22120>, <http://vocab.belgif.be/auth/nace2025/46646>, <http://vocab.belgif.be/auth/nace2025/46649>, <http://vocab.belgif.be/auth/nace2008/46696>, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/22190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0762.684.670;
+    reorg:legalName "Diflex"@nl.
+_:address_contact_0762.684.670 a locn:Address;
+    locn:thoroughfare "Belcrownlaan"@nl, "Belcrownlaan"@fr;
+    rdfs:label "14";
+    locn:postCode "2100";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0762.684.670 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "jt.wondergem@rubaflex.nl";
+    schema:telephone "03/64426.62";
+    locn:address _:address_contact_0762.684.670.
+_:registration_company_0762.684.670 a adms:Identifier;
+    skos:notation "0762.684.670";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1623>, <http://vocab.belgif.be/auth/nace2008/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2008/31010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3101>, <http://vocab.belgif.be/auth/nace2008/3101>;
+    skos:definition "Vervaardiging van kantoor- en winkelmeubelen"@nl, "Fabrication de meubles de bureau et de magasin"@fr;
+    skos:prefLabel "31010".
+<http://vocab.belgif.be/auth/nace2008/31091> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de salles à manger, de salons, de chambres à coucher et de salles de bain"@fr;
+    skos:prefLabel "31091".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/95240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9524>, <http://vocab.belgif.be/auth/nace2008/9524>;
+    skos:definition "Reparatie van meubelen en stoffering"@nl, "Réparation de meubles et d'équipements du foyer"@fr;
+    skos:prefLabel "95240".
+<http://vocab.belgif.be/auth/nace2025/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1623>, <http://vocab.belgif.be/auth/nace2025/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2025/31001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van kantoor- en winkelmeubelen"@nl, "Fabrication de meubles de bureau et de magasin"@fr;
+    skos:prefLabel "31001".
+<http://vocab.belgif.be/auth/nace2025/31004> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van eetkamer-, zitkamer-, slaapkamer- en badkamermeubelen"@nl, "Fabrication de meubles de salle à manger, de salon, de chambre à coucher et de salle de bain"@fr;
+    skos:prefLabel "31004".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/95240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9524>, <http://vocab.belgif.be/auth/nace2025/9524>;
+    skos:definition "Reparatie van meubelen en stoffering"@nl, "Réparation de meubles et d'équipements du foyer"@fr;
+    skos:prefLabel "95240".
+<https://data.vlaanderen.be/id/onderneming/0764.661.193> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "04-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.661.193;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16230>, <http://vocab.belgif.be/auth/nace2025/31004>, <http://vocab.belgif.be/auth/nace2025/95240>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2025/31001>, <http://vocab.belgif.be/auth/nace2008/31010>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/16230>, <http://vocab.belgif.be/auth/nace2008/31091>, <http://vocab.belgif.be/auth/nace2008/95240>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0764.661.193;
+    reorg:legalName "BITWERK"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.314.048.529>, <https://data.vlaanderen.be/id/vestiging/2.334.115.453>.
+<https://data.vlaanderen.be/id/vestiging/2.314.048.529> a org:Site;
+    dcterms:created "04-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.314.048.529.
+<https://data.vlaanderen.be/id/vestiging/2.334.115.453> a org:Site;
+    dcterms:created "08-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.334.115.453.
+_:address_contact_0764.661.193 a locn:Address;
+    locn:thoroughfare "Saffelstraat"@nl, "Saffelstraat"@fr;
+    rdfs:label "19";
+    locn:postCode "9620";
+    adres:gemeentenaam "Zottegem"@nl, "Zottegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0764.661.193 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "kbo@bitwerk.be";
+    locn:address _:address_contact_0764.661.193.
+_:registration_company_0764.661.193 a adms:Identifier;
+    skos:notation "0764.661.193";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.314.048.529 a adms:Identifier;
+    skos:notation "2.314.048.529";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.334.115.453 a adms:Identifier;
+    skos:notation "2.334.115.453";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

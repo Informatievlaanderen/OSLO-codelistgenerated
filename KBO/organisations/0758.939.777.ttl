@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8292>, <http://vocab.belgif.be/auth/nace2008/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/82920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8292>, <http://vocab.belgif.be/auth/nace2025/8292>;
+    skos:definition "Verpakkingsbedrijven"@nl, "Activités de conditionnement"@fr;
+    skos:prefLabel "82920".
+<https://data.vlaanderen.be/id/onderneming/0758.939.777> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0758.939.777;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46180>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/82920>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/82920>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/52290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0758.939.777;
+    reorg:legalName "M-PACKAGING"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.310.079.447>.
+<https://data.vlaanderen.be/id/vestiging/2.310.079.447> a org:Site;
+    dcterms:created "01-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.310.079.447.
+_:address_contact_0758.939.777 a locn:Address;
+    locn:thoroughfare "Den Isomo"@nl, "Den Isomo"@fr;
+    rdfs:label "9A";
+    locn:postCode "2990";
+    adres:gemeentenaam "Wuustwezel"@nl, "Wuustwezel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0758.939.777 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0758.939.777.
+_:registration_company_0758.939.777 a adms:Identifier;
+    skos:notation "0758.939.777";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.310.079.447 a adms:Identifier;
+    skos:notation "2.310.079.447";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

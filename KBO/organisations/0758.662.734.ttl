@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1011>, <http://vocab.belgif.be/auth/nace2008/1011>;
+    skos:definition "Verwerking en conservering van vlees, exclusief vlees van gevogelte"@nl, "Transformation et conservation de la viande de boucherie, à l'exclusion de la viande de volaille"@fr;
+    skos:prefLabel "10110".
+<http://vocab.belgif.be/auth/nace2008/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4632>, <http://vocab.belgif.be/auth/nace2008/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<http://vocab.belgif.be/auth/nace2025/10111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Activiteiten van slachthuizen"@nl, "Activités des abattoirs"@fr;
+    skos:prefLabel "10111".
+<http://vocab.belgif.be/auth/nace2025/46321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4632>, <http://vocab.belgif.be/auth/nace2025/4632>;
+    skos:definition "Groothandel in vlees en vleesproducten, uitgezonderd vlees van wild en van gevogelte"@nl, "Commerce de gros de viandes et de produits à base de viande, sauf viande de volaille et de gibier"@fr;
+    skos:prefLabel "46321".
+<https://data.vlaanderen.be/id/onderneming/0758.662.734> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0758.662.734;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/10111>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46321>, <http://vocab.belgif.be/auth/nace2008/10110>, <http://vocab.belgif.be/auth/nace2008/46321>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0758.662.734;
+    reorg:legalName "ESRO VLEES BV"@nl.
+_:address_contact_0758.662.734 a locn:Address;
+    locn:thoroughfare "DE HUUFKES"@nl, "DE HUUFKES"@fr;
+    rdfs:label "18";
+    locn:postCode "5674TM";
+    adres:gemeentenaam "NUENEN"@nl, "NUENEN"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:contact_0758.662.734 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0758.662.734.
+_:registration_company_0758.662.734 a adms:Identifier;
+    skos:notation "0758.662.734";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

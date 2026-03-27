@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01490> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0149>, <http://vocab.belgif.be/auth/nace2008/0149>;
+    skos:definition "Élevage d'autres animaux"@fr, "Fokken van andere dieren"@nl;
+    skos:prefLabel "01490".
+<http://vocab.belgif.be/auth/nace2008/49390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4939>, <http://vocab.belgif.be/auth/nace2008/4939>;
+    skos:definition "Overig personenvervoer te land, n.e.g."@nl, "Autres transports terrestres de voyageurs n.c.a."@fr;
+    skos:prefLabel "49390".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2008/93192> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Zelfstandig werkende sportbeoefenaars"@nl, "Activités des sportifs indépendants"@fr;
+    skos:prefLabel "93192".
+<http://vocab.belgif.be/auth/nace2025/01480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0148>, <http://vocab.belgif.be/auth/nace2025/0148>;
+    skos:definition "Fokken en houden van andere dieren"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01480".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93192> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Zelfstandig werkende sportbeoefenaars"@nl, "Activités des sportifs indépendants"@fr;
+    skos:prefLabel "93192".
+<https://data.vlaanderen.be/id/onderneming/0765.589.029> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.589.029;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01480>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2025/93192>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2008/93192>, <http://vocab.belgif.be/auth/nace2008/01490>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/93110>, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/49390>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0765.589.029;
+    reorg:legalName "Ivens, Stephane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.314.746.137>.
+<https://data.vlaanderen.be/id/vestiging/2.314.746.137> a org:Site;
+    dcterms:created "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.314.746.137.
+_:contact_0765.589.029 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "stephaneivens@gmail.com";
+    schema:telephone "0476901925".
+_:registration_company_0765.589.029 a adms:Identifier;
+    skos:notation "0765.589.029";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.314.746.137 a adms:Identifier;
+    skos:notation "2.314.746.137";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

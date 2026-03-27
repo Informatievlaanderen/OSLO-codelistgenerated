@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46491> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in kranten, boeken en tijdschriften"@nl, "Commerce de gros de journaux, de livres et de périodiques"@fr;
+    skos:prefLabel "46491".
+<http://vocab.belgif.be/auth/nace2008/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4779>, <http://vocab.belgif.be/auth/nace2008/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<http://vocab.belgif.be/auth/nace2008/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4779>, <http://vocab.belgif.be/auth/nace2008/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2008/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<http://vocab.belgif.be/auth/nace2025/46491> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in kranten, boeken en tijdschriften"@nl, "Commerce de gros de journaux, de livres et de périodiques"@fr;
+    skos:prefLabel "46491".
+<http://vocab.belgif.be/auth/nace2025/47792> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in tweedehandskleding in winkels"@nl, "Commerce de détail de vêtements d'occasion en magasin"@fr;
+    skos:prefLabel "47792".
+<http://vocab.belgif.be/auth/nace2025/47793> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in andere tweedehandsgoederen in winkels, m.u.v. tweedehandskleding"@nl, "Commerce de détail de biens d'occasion en magasin, sauf vêtements d'occasion"@fr;
+    skos:prefLabel "47793".
+<http://vocab.belgif.be/auth/nace2025/88999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Andere vormen van maatschappelijke dienstverlening zonder huisvesting, n.e.g."@nl, "Autres formes d'action sociale sans hébergement n.c.a."@fr;
+    skos:prefLabel "88999".
+<https://data.vlaanderen.be/id/onderneming/0764.552.515> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "02-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.552.515;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47793>, <http://vocab.belgif.be/auth/nace2025/88999>, <http://vocab.belgif.be/auth/nace2025/47792>, <http://vocab.belgif.be/auth/nace2025/46491>, <http://vocab.belgif.be/auth/nace2008/46491>, <http://vocab.belgif.be/auth/nace2008/47793>, <http://vocab.belgif.be/auth/nace2008/47792>, <http://vocab.belgif.be/auth/nace2008/88999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0764.552.515;
+    reorg:legalName "CHIFFON ROUGE"@fr.
+_:address_contact_0764.552.515 a locn:Address;
+    locn:thoroughfare "Rue Ernest Solvay"@nl, "Rue Ernest Solvay"@fr;
+    rdfs:label "6";
+    locn:postCode "1430";
+    adres:gemeentenaam "Rebecq"@nl, "Rebecq"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0764.552.515 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "valerie@dimitrilegasse.be";
+    locn:address _:address_contact_0764.552.515.
+_:registration_company_0764.552.515 a adms:Identifier;
+    skos:notation "0764.552.515";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2008/47512> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in huishoudtextiel en beddengoed in gespecialiseerde winkels"@nl, "Commerce de détail de linge de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47512".
+<http://vocab.belgif.be/auth/nace2008/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4782>, <http://vocab.belgif.be/auth/nace2008/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/47512> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in huishoudtextiel en beddengoed in gespecialiseerde winkels"@nl, "Commerce de détail de linge de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47512".
+<http://vocab.belgif.be/auth/nace2025/47716> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in dames-, heren-, baby- en kinderboven- en onderkleding en kledingaccessoires in gespecialiseerde winkels (algemeen assortiment)"@nl, "Commerce de détail de vêtements, de sous-vêtements et d'accessoires pour dame, homme, enfant et bébé en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47716".
+<https://data.vlaanderen.be/id/onderneming/0760.197.413> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "27-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0760.197.413;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2025/47512>, <http://vocab.belgif.be/auth/nace2025/47716>, _:nace_2003_52622, _:nace_2003_52410, _:nace_2003_51410, <http://vocab.belgif.be/auth/nace2008/47512>, <http://vocab.belgif.be/auth/nace2008/46412>, <http://vocab.belgif.be/auth/nace2008/47820>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Ledegen, Ann";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.069.481.538>.
+<https://data.vlaanderen.be/id/vestiging/2.069.481.538> a org:Site;
+    dcterms:created "27-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.069.481.538.
+_:nace_2003_51410 a skos:Concept;
+    skos:definition "Groothandel in textiel"@nl, "Commerce de gros de textiles"@fr;
+    skos:prefLabel "51410".
+_:nace_2003_52410 a skos:Concept;
+    skos:definition "Detailhandel in textiel"@nl, "Commerce de détail de textiles"@fr;
+    skos:prefLabel "52410".
+_:nace_2003_52622 a skos:Concept;
+    skos:definition "Markt- en straathandel in kleding en textielwaren"@nl, "Commerce de détail d'habillement et d'articles textiles sur marchés et éventaires"@fr;
+    skos:prefLabel "52622".
+_:registration_company_0760.197.413 a adms:Identifier;
+    skos:notation "0760.197.413";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.069.481.538 a adms:Identifier;
+    skos:notation "2.069.481.538";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

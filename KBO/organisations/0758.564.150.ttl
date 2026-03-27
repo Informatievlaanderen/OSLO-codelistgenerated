@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0758.564.150> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "19-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0758.564.150;
+    schema:contactinfo _:contact_0758.564.150;
+    reorg:legalName "ASSOCIATION GNOSTIQUE d'ETUDES de l'ANTHROPOLOGIE, la CULTURE, l'ART et la SCIENCESamuel Aun Weor - Belgique"@fr, "AGEACAC SAW - Belgique"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.145.689>.
+<https://data.vlaanderen.be/id/vestiging/2.318.145.689> a org:Site;
+    dcterms:created "27-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.145.689.
+_:address_contact_0758.564.150 a locn:Address;
+    locn:thoroughfare "Keuredreef"@nl, "Drève de la Charte"@fr;
+    rdfs:label "17";
+    locn:postCode "1083";
+    adres:gemeentenaam "Ganshoren"@nl, "Ganshoren"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0758.564.150 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "gnosisbelgique@gmail.com";
+    <http://xmlns.com/foaf/0.1/homepage> "www.gnosis.is/fr";
+    locn:address _:address_contact_0758.564.150.
+_:registration_company_0758.564.150 a adms:Identifier;
+    skos:notation "0758.564.150";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.145.689 a adms:Identifier;
+    skos:notation "2.318.145.689";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-11-2020"^^<http://www.w3.org/2001/XMLSchema#date>.

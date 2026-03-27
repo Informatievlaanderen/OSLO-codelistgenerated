@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4799>, <http://vocab.belgif.be/auth/nace2008/4799>;
+    skos:definition "Overige detailhandel, niet in winkels en exclusief markt- en straathandel"@nl, "Autres commerces de détail hors magasin, éventaires ou marchés"@fr;
+    skos:prefLabel "47990".
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/55209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Vakantieverblijven en andere accommodatie voor kort verblijf, n.e.g."@nl, "Hébergement touristique et autre hébergement de courte durée n.c.a."@fr;
+    skos:prefLabel "55209".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/55209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Vakantieverblijven en andere accommodatie voor kort verblijf, n.e.g."@nl, "Hébergement touristique et autre hébergement de courte durée n.c.a."@fr;
+    skos:prefLabel "55209".
+<https://data.vlaanderen.be/id/onderneming/0763.126.714> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-01-1991"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0763.126.714;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/55209>, <http://vocab.belgif.be/auth/nace2025/52250>, <http://vocab.belgif.be/auth/nace2025/47781>, _:nace_2003_63406, <http://vocab.belgif.be/auth/nace2008/47990>, <http://vocab.belgif.be/auth/nace2008/55209>, <http://vocab.belgif.be/auth/nace2008/52290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Moens, Bruno";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.051.038.868>, <https://data.vlaanderen.be/id/vestiging/2.267.576.720>, <https://data.vlaanderen.be/id/vestiging/2.272.376.636>.
+<https://data.vlaanderen.be/id/vestiging/2.051.038.868> a org:Site;
+    dcterms:created "17-09-1993"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.051.038.868.
+<https://data.vlaanderen.be/id/vestiging/2.267.576.720> a org:Site;
+    dcterms:created "01-10-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.267.576.720.
+<https://data.vlaanderen.be/id/vestiging/2.272.376.636> a org:Site;
+    dcterms:created "31-01-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.272.376.636.
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:registration_company_0763.126.714 a adms:Identifier;
+    skos:notation "0763.126.714";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-1991"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.051.038.868 a adms:Identifier;
+    skos:notation "2.051.038.868";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-1991"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.267.576.720 a adms:Identifier;
+    skos:notation "2.267.576.720";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-1991"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.272.376.636 a adms:Identifier;
+    skos:notation "2.272.376.636";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-1991"^^<http://www.w3.org/2001/XMLSchema#date>.

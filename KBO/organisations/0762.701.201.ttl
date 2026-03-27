@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7312>, <http://vocab.belgif.be/auth/nace2008/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2008/79110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7911>, <http://vocab.belgif.be/auth/nace2008/7911>;
+    skos:definition "Reisbureaus"@nl, "Activités des agences de voyage"@fr;
+    skos:prefLabel "79110".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7312>, <http://vocab.belgif.be/auth/nace2025/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2025/79110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7911>, <http://vocab.belgif.be/auth/nace2025/7911>;
+    skos:definition "Reisbureaus"@nl, "Activités des agences de voyage"@fr;
+    skos:prefLabel "79110".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<https://data.vlaanderen.be/id/onderneming/0762.701.201> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "29-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0762.701.201;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/79110>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/73120>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2008/73120>, <http://vocab.belgif.be/auth/nace2008/79110>, <http://vocab.belgif.be/auth/nace2008/90021>, <http://vocab.belgif.be/auth/nace2008/93110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0762.701.201;
+    reorg:legalName "Samen Actief"@nl, "SamAc vzw"@nl.
+_:address_contact_0762.701.201 a locn:Address;
+    locn:thoroughfare "Emile Vanderveldestraat"@nl, "Emile Vanderveldestraat"@fr;
+    rdfs:label "80";
+    locn:postCode "3290";
+    adres:gemeentenaam "Diest"@nl, "Diest"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0762.701.201 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@samac.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.samac.be";
+    locn:address _:address_contact_0762.701.201.
+_:registration_company_0762.701.201 a adms:Identifier;
+    skos:notation "0762.701.201";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

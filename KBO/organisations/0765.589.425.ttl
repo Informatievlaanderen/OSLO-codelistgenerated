@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4311>, <http://vocab.belgif.be/auth/nace2008/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4311>, <http://vocab.belgif.be/auth/nace2025/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/0765.589.425> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.589.425;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/43110>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2008/43110>, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/43291>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Damme, Killian";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.314.745.840>.
+<https://data.vlaanderen.be/id/vestiging/2.314.745.840> a org:Site;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.314.745.840.
+_:registration_company_0765.589.425 a adms:Identifier;
+    skos:notation "0765.589.425";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.314.745.840 a adms:Identifier;
+    skos:notation "2.314.745.840";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

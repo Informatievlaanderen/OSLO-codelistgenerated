@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/49330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4933>, <http://vocab.belgif.be/auth/nace2025/4933>;
+    skos:definition "Diensten voor personenvervoer op aanvraag per voertuig met chauffeur"@nl, "Activités de service de transport de voyageurs sur demande par véhicule avec chauffeur"@fr;
+    skos:prefLabel "49330".
+<http://vocab.belgif.be/auth/nace2025/95315> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Bandenservicebedrijven"@nl, "Services spécialisés relatifs au pneu"@fr;
+    skos:prefLabel "95315".
+<https://data.vlaanderen.be/id/onderneming/0765.293.970> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0765.293.970;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/95315>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/49330>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/45113>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Mirzada, Mir";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.314.443.952>.
+<https://data.vlaanderen.be/id/vestiging/2.314.443.952> a org:Site;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.314.443.952.
+_:registration_company_0765.293.970 a adms:Identifier;
+    skos:notation "0765.293.970";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.314.443.952 a adms:Identifier;
+    skos:notation "2.314.443.952";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

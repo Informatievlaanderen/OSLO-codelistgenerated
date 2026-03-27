@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45206> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "45206".
+<http://vocab.belgif.be/auth/nace2008/47112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4711>, <http://vocab.belgif.be/auth/nace2008/4711>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen overheersen (verkoopsoppervlakte < 100 m²)"@nl, "Commerce de détail en magasin non spécialisé à prédominance alimentaire (surface de vente < 100m²)"@fr;
+    skos:prefLabel "47112".
+<http://vocab.belgif.be/auth/nace2008/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4726>, <http://vocab.belgif.be/auth/nace2008/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2008/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9200>, <http://vocab.belgif.be/auth/nace2008/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<http://vocab.belgif.be/auth/nace2025/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4726>, <http://vocab.belgif.be/auth/nace2025/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2025/92000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9200>, <http://vocab.belgif.be/auth/nace2025/9200>;
+    skos:definition "Loterijen en kansspelen"@nl, "Organisation de jeux de hasard et d'argent"@fr;
+    skos:prefLabel "92000".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<https://data.vlaanderen.be/id/onderneming/0763.499.668> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0763.499.668;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/92000>, <http://vocab.belgif.be/auth/nace2025/47260>, <http://vocab.belgif.be/auth/nace2025/95316>, <http://vocab.belgif.be/auth/nace2025/47110>, <http://vocab.belgif.be/auth/nace2008/45206>, <http://vocab.belgif.be/auth/nace2008/92000>, <http://vocab.belgif.be/auth/nace2008/47112>, <http://vocab.belgif.be/auth/nace2008/47260>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0763.499.668;
+    reorg:legalName "SHAYEST"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.317.203.207>, <https://data.vlaanderen.be/id/vestiging/2.317.203.306>, <https://data.vlaanderen.be/id/vestiging/2.317.203.405>.
+<https://data.vlaanderen.be/id/vestiging/2.317.203.207> a org:Site;
+    dcterms:created "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.203.207.
+<https://data.vlaanderen.be/id/vestiging/2.317.203.306> a org:Site;
+    dcterms:created "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.203.306.
+<https://data.vlaanderen.be/id/vestiging/2.317.203.405> a org:Site;
+    dcterms:created "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.203.405.
+_:address_contact_0763.499.668 a locn:Address;
+    locn:thoroughfare "Rue de la Madeleine"@nl, "Rue de la Madeleine"@fr;
+    rdfs:label "6";
+    locn:postCode "6041";
+    adres:gemeentenaam "Charleroi"@nl, "Charleroi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0763.499.668 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "gecofisc.bureauconseil@gmail.com";
+    locn:address _:address_contact_0763.499.668.
+_:registration_company_0763.499.668 a adms:Identifier;
+    skos:notation "0763.499.668";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.203.207 a adms:Identifier;
+    skos:notation "2.317.203.207";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.203.306 a adms:Identifier;
+    skos:notation "2.317.203.306";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.203.405 a adms:Identifier;
+    skos:notation "2.317.203.405";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-02-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

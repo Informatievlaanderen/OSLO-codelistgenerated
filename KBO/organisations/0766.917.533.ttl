@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4391>, <http://vocab.belgif.be/auth/nace2008/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2008/43994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Uitvoeren van metsel- en voegwerken"@nl, "Travaux de maçonnerie et de rejointoiement"@fr;
+    skos:prefLabel "43994".
+<http://vocab.belgif.be/auth/nace2008/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2025/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4341>, <http://vocab.belgif.be/auth/nace2025/4341>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43410".
+<http://vocab.belgif.be/auth/nace2025/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4391>, <http://vocab.belgif.be/auth/nace2025/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2025/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<https://data.vlaanderen.be/id/onderneming/0766.917.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "20-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.917.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/43410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43910>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/47527>, <http://vocab.belgif.be/auth/nace2025/43221>, <http://vocab.belgif.be/auth/nace2008/43910>, <http://vocab.belgif.be/auth/nace2008/43994>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/43221>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/47527>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0766.917.533;
+    reorg:legalName "BUSINOX-IMPORT"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.331.631.956>.
+<https://data.vlaanderen.be/id/vestiging/2.331.631.956> a org:Site;
+    dcterms:created "01-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.331.631.956.
+_:address_contact_0766.917.533 a locn:Address;
+    locn:thoroughfare "Rue de la Station"@nl, "Rue de la Station"@fr;
+    rdfs:label "91";
+    locn:postCode "4340";
+    adres:gemeentenaam "Awans"@nl, "Awans"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.917.533 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email " info@businox-import.be ";
+    schema:telephone "0478 55 67 60";
+    <http://xmlns.com/foaf/0.1/homepage> "businox-import.be";
+    locn:address _:address_contact_0766.917.533.
+_:registration_company_0766.917.533 a adms:Identifier;
+    skos:notation "0766.917.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.331.631.956 a adms:Identifier;
+    skos:notation "2.331.631.956";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

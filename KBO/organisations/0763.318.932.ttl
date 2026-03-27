@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0220>, <http://vocab.belgif.be/auth/nace2008/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2008/46732> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46732".
+<http://vocab.belgif.be/auth/nace2008/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2008/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/46832> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in hout"@nl, "Commerce de gros de bois"@fr;
+    skos:prefLabel "46832".
+<http://vocab.belgif.be/auth/nace2025/47781> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in vaste, vloeibare en gasvormige brandstoffen in gespecialiseerde winkels, m.u.v. motorbrandstoffen"@nl, "Commerce de détail de combustibles en magasin spécialisé, à l'exclusion des carburants automobiles"@fr;
+    skos:prefLabel "47781".
+<http://vocab.belgif.be/auth/nace2025/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<https://data.vlaanderen.be/id/onderneming/0763.318.932> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "25-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0763.318.932;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46832>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/47781>, <http://vocab.belgif.be/auth/nace2025/71113>, <http://vocab.belgif.be/auth/nace2008/02200>, <http://vocab.belgif.be/auth/nace2008/46732>, <http://vocab.belgif.be/auth/nace2008/47781>, <http://vocab.belgif.be/auth/nace2008/71113>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Gillart, Romuald";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.312.762.189>.
+<https://data.vlaanderen.be/id/vestiging/2.312.762.189> a org:Site;
+    dcterms:created "25-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.762.189.
+_:registration_company_0763.318.932 a adms:Identifier;
+    skos:notation "0763.318.932";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.762.189 a adms:Identifier;
+    skos:notation "2.312.762.189";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

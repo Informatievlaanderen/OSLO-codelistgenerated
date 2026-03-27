@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/52290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5229>, <http://vocab.belgif.be/auth/nace2008/5229>;
+    skos:definition "Overige vervoerondersteunende activiteiten"@nl, "Autres services auxiliaires des transports"@fr;
+    skos:prefLabel "52290".
+<http://vocab.belgif.be/auth/nace2008/82190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8219>, <http://vocab.belgif.be/auth/nace2008/8219>;
+    skos:definition "Fotokopiëren, documentvoorbereiding en andere gespecialiseerde ondersteunende activiteiten ten behoeve van kantoren"@nl, "Photocopie, préparation de documents et autres activités spécialisées de soutien de bureau"@fr;
+    skos:prefLabel "82190".
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<https://data.vlaanderen.be/id/onderneming/0762.376.646> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-05-1999"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0762.376.646;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/52250>, _:nace_2003_74851, _:nace_2003_63406, <http://vocab.belgif.be/auth/nace2008/52290>, <http://vocab.belgif.be/auth/nace2008/82190>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Scohy, Philippe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.091.122.931>.
+<https://data.vlaanderen.be/id/vestiging/2.091.122.931> a org:Site;
+    dcterms:created "26-05-1999"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.091.122.931.
+_:nace_2003_63406 a skos:Concept;
+    skos:definition "Overige activiteiten i.v.m. de organisatie van het vrachtvervoer"@nl, "Autres activités annexes de l'organisation du transport de fret"@fr;
+    skos:prefLabel "63406".
+_:nace_2003_74851 a skos:Concept;
+    skos:definition "Secretariaten"@nl, "Secrétariats"@fr;
+    skos:prefLabel "74851".
+_:registration_company_0762.376.646 a adms:Identifier;
+    skos:notation "0762.376.646";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-1999"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.091.122.931 a adms:Identifier;
+    skos:notation "2.091.122.931";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-05-1999"^^<http://www.w3.org/2001/XMLSchema#date>.

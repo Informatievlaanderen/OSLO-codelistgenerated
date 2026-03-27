@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/62090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6209>, <http://vocab.belgif.be/auth/nace2008/6209>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités informatiques"@fr;
+    skos:prefLabel "62090".
+<http://vocab.belgif.be/auth/nace2008/63120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6312>, <http://vocab.belgif.be/auth/nace2008/6312>;
+    skos:definition "Webportalen"@nl, "Portails Internet"@fr;
+    skos:prefLabel "63120".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2008/74101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Ontwerpen van textielpatronen, kleding, juwelen, meubels en decoratieartikelen"@nl, "Création de modèles pour les biens personnels et domestiques"@fr;
+    skos:prefLabel "74101".
+<http://vocab.belgif.be/auth/nace2008/74104> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van interieurdecorateurs"@nl, "Décoration d'intérieur"@fr;
+    skos:prefLabel "74104".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2025/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/62900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6290>, <http://vocab.belgif.be/auth/nace2025/6290>;
+    skos:definition "Overige diensten op het gebied van informatietechnologie en computer"@nl, "Autres activités de service informatique"@fr;
+    skos:prefLabel "62900".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<http://vocab.belgif.be/auth/nace2025/74130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7413>, <http://vocab.belgif.be/auth/nace2025/7413>;
+    skos:definition "Interieurontwerp"@nl, "Activités de design d’intérieur"@fr;
+    skos:prefLabel "74130".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/0764.940.614> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "11-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0764.940.614;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/62900>, <http://vocab.belgif.be/auth/nace2025/74130>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/55203>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/74104>, <http://vocab.belgif.be/auth/nace2008/62090>, <http://vocab.belgif.be/auth/nace2008/63120>, <http://vocab.belgif.be/auth/nace2008/74101>, <http://vocab.belgif.be/auth/nace2008/74109>, <http://vocab.belgif.be/auth/nace2008/55203>, <http://vocab.belgif.be/auth/nace2008/62020>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0764.940.614;
+    reorg:legalName "Wayne"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.317.055.826>.
+<https://data.vlaanderen.be/id/vestiging/2.317.055.826> a org:Site;
+    dcterms:created "11-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.055.826.
+_:address_contact_0764.940.614 a locn:Address;
+    locn:thoroughfare "Avenue du Hadja"@nl, "Avenue du Hadja"@fr;
+    rdfs:label "1";
+    locn:postCode "6980";
+    adres:gemeentenaam "La Roche-en-Ardenne"@nl, "La Roche-en-Ardenne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0764.940.614 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0764.940.614.
+_:registration_company_0764.940.614 a adms:Identifier;
+    skos:notation "0764.940.614";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.055.826 a adms:Identifier;
+    skos:notation "2.317.055.826";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-03-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4764>, <http://vocab.belgif.be/auth/nace2008/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9311>, <http://vocab.belgif.be/auth/nace2008/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2008/93191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Activiteiten van sportbonden en -federaties"@nl, "Activités des ligues et des fédérations sportives"@fr;
+    skos:prefLabel "93191".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9311>, <http://vocab.belgif.be/auth/nace2025/9311>;
+    skos:definition "Exploitatie van sportaccommodaties"@nl, "Gestion d'installations sportives"@fr;
+    skos:prefLabel "93110".
+<http://vocab.belgif.be/auth/nace2025/93191> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Activiteiten van sportbonden en -federaties"@nl, "Activités des ligues et des fédérations sportives"@fr;
+    skos:prefLabel "93191".
+<https://data.vlaanderen.be/id/onderneming/0767.629.393> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "29-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0767.629.393;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/71121>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47639>, <http://vocab.belgif.be/auth/nace2025/93191>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/93110>, <http://vocab.belgif.be/auth/nace2008/47640>, <http://vocab.belgif.be/auth/nace2008/93110>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/93191>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0767.629.393;
+    reorg:legalName "BOUNCE SPORTS INTERNATIONAL"@fr, "Bounce"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.316.733.647>, <https://data.vlaanderen.be/id/vestiging/2.361.024.243>.
+<https://data.vlaanderen.be/id/vestiging/2.316.733.647> a org:Site;
+    dcterms:created "29-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.316.733.647.
+<https://data.vlaanderen.be/id/vestiging/2.361.024.243> a org:Site;
+    dcterms:created "28-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.361.024.243.
+_:address_contact_0767.629.393 a locn:Address;
+    locn:thoroughfare "Clos du Verger"@nl, "Clos du Verger"@fr;
+    rdfs:label "15";
+    locn:postCode "1330";
+    adres:gemeentenaam "Rixensart"@nl, "Rixensart"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0767.629.393 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "hello@bouncesports.co";
+    locn:address _:address_contact_0767.629.393.
+_:registration_company_0767.629.393 a adms:Identifier;
+    skos:notation "0767.629.393";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.316.733.647 a adms:Identifier;
+    skos:notation "2.316.733.647";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.361.024.243 a adms:Identifier;
+    skos:notation "2.361.024.243";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

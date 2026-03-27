@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/77291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77291".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/77221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van machines, apparatuur en handgereedschap voor doe-het-zelvers"@nl, "Location et location-bail de machines-outils, de matériel et d'outils à main pour le bricolage"@fr;
+    skos:prefLabel "77221".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0766.670.875> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0766.670.875;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/77221>, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/77291>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0766.670.875;
+    reorg:legalName "RT Rent"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.316.196.385>.
+<https://data.vlaanderen.be/id/vestiging/2.316.196.385> a org:Site;
+    dcterms:created "01-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.316.196.385.
+_:address_contact_0766.670.875 a locn:Address;
+    locn:thoroughfare "Darmstraat"@nl, "Darmstraat"@fr;
+    rdfs:label "13";
+    locn:postCode "8531";
+    adres:gemeentenaam "Harelbeke"@nl, "Harelbeke"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0766.670.875 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@RTRent.be";
+    schema:telephone "0480/666.444";
+    <http://xmlns.com/foaf/0.1/homepage> "www.RTRent.be";
+    locn:address _:address_contact_0766.670.875.
+_:registration_company_0766.670.875 a adms:Identifier;
+    skos:notation "0766.670.875";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.316.196.385 a adms:Identifier;
+    skos:notation "2.316.196.385";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

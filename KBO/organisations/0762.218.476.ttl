@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Slopen van gebouwen"@nl, "Démolition d'immeubles"@fr;
+    skos:prefLabel "45111".
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46442> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4644>, <http://vocab.belgif.be/auth/nace2008/4644>;
+    skos:definition "Groothandel in reinigingsmiddelen"@nl, "Commerce de gros de produits d'entretien"@fr;
+    skos:prefLabel "46442".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46442> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4644>, <http://vocab.belgif.be/auth/nace2025/4644>;
+    skos:definition "Groothandel in reinigingsmiddelen"@nl, "Commerce de gros de produits d'entretien"@fr;
+    skos:prefLabel "46442".
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<https://data.vlaanderen.be/id/onderneming/0762.218.476> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "25-09-1991"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0762.218.476;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46711>, <http://vocab.belgif.be/auth/nace2025/46720>, <http://vocab.belgif.be/auth/nace2025/46442>, <http://vocab.belgif.be/auth/nace2025/46180>, _:nace_2003_51180, _:nace_2003_51442, _:nace_2003_50101, _:nace_2003_50301, <http://vocab.belgif.be/auth/nace2008/45310>, <http://vocab.belgif.be/auth/nace2008/45111>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/46442>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Fardella, Vincenzo";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.054.260.555>.
+<https://data.vlaanderen.be/id/vestiging/2.054.260.555> a org:Site;
+    dcterms:created "25-09-1991"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.054.260.555.
+_:nace_2003_50101 a skos:Concept;
+    skos:definition "Groothandel in motorvoertuigen"@nl, "Commerce de gros des véhicules automobiles"@fr;
+    skos:prefLabel "50101".
+_:nace_2003_50301 a skos:Concept;
+    skos:definition "Groothandel in onderdelen en accessoires van auto's"@nl, "Commerce de gros de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50301".
+_:nace_2003_51180 a skos:Concept;
+    skos:definition "Handelsbemiddeling gespecialiseerd in overige goederen, n.e.g."@nl, "Autres intermédiaires spécialisés du commerce"@fr;
+    skos:prefLabel "51180".
+_:nace_2003_51442 a skos:Concept;
+    skos:definition "Groothandel in behang en onderhoudsproducten"@nl, "Commerce de gros de papiers peints et de produits d'entretien"@fr;
+    skos:prefLabel "51442".
+_:registration_company_0762.218.476 a adms:Identifier;
+    skos:notation "0762.218.476";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-09-1991"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.054.260.555 a adms:Identifier;
+    skos:notation "2.054.260.555";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-09-1991"^^<http://www.w3.org/2001/XMLSchema#date>.

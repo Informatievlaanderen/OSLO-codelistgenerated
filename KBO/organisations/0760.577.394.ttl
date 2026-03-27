@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1083>, <http://vocab.belgif.be/auth/nace2008/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2008/14199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van andere kleding en toebehoren, n.e.g."@nl, "Fabrication d'autres vêtements et accessoires n.c.a."@fr;
+    skos:prefLabel "14199".
+<http://vocab.belgif.be/auth/nace2008/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2008/47519> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in overig textiel in gespecialiseerde winkels"@nl, "Commerce de détail d'autres textiles en magasin spécialisé"@fr;
+    skos:prefLabel "47519".
+<http://vocab.belgif.be/auth/nace2008/96021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Haarverzorging"@nl, "Coiffure"@fr;
+    skos:prefLabel "96021".
+<http://vocab.belgif.be/auth/nace2025/10830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1083>, <http://vocab.belgif.be/auth/nace2025/1083>;
+    skos:definition "Verwerking van thee en koffie"@nl, "Transformation du thé et du café"@fr;
+    skos:prefLabel "10830".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/32123> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van sieraden"@nl, "Fabrication d'articles de joaillerie et de bijouterie"@fr;
+    skos:prefLabel "32123".
+<http://vocab.belgif.be/auth/nace2025/47519> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in overig textiel in gespecialiseerde winkels"@nl, "Commerce de détail d'autres textiles en magasin spécialisé"@fr;
+    skos:prefLabel "47519".
+<http://vocab.belgif.be/auth/nace2025/96210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9621>, <http://vocab.belgif.be/auth/nace2025/9621>;
+    skos:definition "Kappers- en barbiersactiviteiten"@nl, "Coiffure et activités de barbier"@fr;
+    skos:prefLabel "96210".
+<https://data.vlaanderen.be/id/onderneming/0760.577.394> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0760.577.394;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96210>, <http://vocab.belgif.be/auth/nace2025/32123>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/47519>, <http://vocab.belgif.be/auth/nace2025/10830>, <http://vocab.belgif.be/auth/nace2008/32123>, <http://vocab.belgif.be/auth/nace2008/10830>, <http://vocab.belgif.be/auth/nace2008/47519>, <http://vocab.belgif.be/auth/nace2008/14199>, <http://vocab.belgif.be/auth/nace2008/96021>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bocquet, Shelly".
+_:registration_company_0760.577.394 a adms:Identifier;
+    skos:notation "0760.577.394";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
