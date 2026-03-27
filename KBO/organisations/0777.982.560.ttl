@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<http://vocab.belgif.be/auth/nace2025/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6920>, <http://vocab.belgif.be/auth/nace2025/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<https://data.vlaanderen.be/id/onderneming/0777.982.560> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0777.982.560;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/69201>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/69201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0777.982.560;
+    reorg:legalName "ADFINTRA"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.324.896.691>, <https://data.vlaanderen.be/id/vestiging/2.324.896.790>, <https://data.vlaanderen.be/id/vestiging/2.324.896.889>, <https://data.vlaanderen.be/id/vestiging/2.324.896.988>, <https://data.vlaanderen.be/id/vestiging/2.324.897.087>.
+<https://data.vlaanderen.be/id/vestiging/2.324.896.691> a org:Site;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.896.691.
+<https://data.vlaanderen.be/id/vestiging/2.324.896.790> a org:Site;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.896.790.
+<https://data.vlaanderen.be/id/vestiging/2.324.896.889> a org:Site;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.896.889.
+<https://data.vlaanderen.be/id/vestiging/2.324.896.988> a org:Site;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.896.988.
+<https://data.vlaanderen.be/id/vestiging/2.324.897.087> a org:Site;
+    dcterms:created "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.897.087.
+_:address_contact_0777.982.560 a locn:Address;
+    locn:thoroughfare "Staatsbaan"@nl, "Staatsbaan"@fr;
+    rdfs:label "73 A";
+    locn:postCode "3545";
+    adres:gemeentenaam "Halen"@nl, "Halen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0777.982.560 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@adfintra.be";
+    schema:telephone "013696867";
+    <http://xmlns.com/foaf/0.1/homepage> "www.adfintra.be";
+    locn:address _:address_contact_0777.982.560.
+_:registration_company_0777.982.560 a adms:Identifier;
+    skos:notation "0777.982.560";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.896.691 a adms:Identifier;
+    skos:notation "2.324.896.691";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.896.790 a adms:Identifier;
+    skos:notation "2.324.896.790";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.896.889 a adms:Identifier;
+    skos:notation "2.324.896.889";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.896.988 a adms:Identifier;
+    skos:notation "2.324.896.988";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.897.087 a adms:Identifier;
+    skos:notation "2.324.897.087";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

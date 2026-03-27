@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3250>, <http://vocab.belgif.be/auth/nace2008/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2008/47782> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fotografische en optische artikelen en in precisieinstrumenten in gespecialiseerde winkels"@nl, "Commerce de détail de matériel photographique, d'optique et de précision en magasin spécialisé"@fr;
+    skos:prefLabel "47782".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/95250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9525>, <http://vocab.belgif.be/auth/nace2008/9525>;
+    skos:definition "Reparatie van uurwerken en sieraden"@nl, "Réparation d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "95250".
+<http://vocab.belgif.be/auth/nace2025/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3250>, <http://vocab.belgif.be/auth/nace2025/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47742".
+<http://vocab.belgif.be/auth/nace2025/95250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9525>, <http://vocab.belgif.be/auth/nace2025/9525>;
+    skos:definition "Reparatie van uurwerken en sieraden"@nl, "Réparation d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "95250".
+<https://data.vlaanderen.be/id/onderneming/0771.883.933> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.883.933;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47742>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/32500>, <http://vocab.belgif.be/auth/nace2025/95250>, <http://vocab.belgif.be/auth/nace2008/47782>, <http://vocab.belgif.be/auth/nace2008/32500>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/95250>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0771.883.933;
+    reorg:legalName "AN-EYES"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.438.552>.
+<https://data.vlaanderen.be/id/vestiging/2.320.438.552> a org:Site;
+    dcterms:created "01-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.438.552.
+_:address_contact_0771.883.933 a locn:Address;
+    locn:thoroughfare "Sint-Stefaanstraat"@nl, "Sint-Stefaanstraat"@fr;
+    rdfs:label "15";
+    locn:postCode "1910";
+    adres:gemeentenaam "Kampenhout"@nl, "Kampenhout"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0771.883.933 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0771.883.933.
+_:registration_company_0771.883.933 a adms:Identifier;
+    skos:notation "0771.883.933";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.438.552 a adms:Identifier;
+    skos:notation "2.320.438.552";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

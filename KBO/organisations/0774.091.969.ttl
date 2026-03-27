@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/38322> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3832>, <http://vocab.belgif.be/auth/nace2008/3832>;
+    skos:definition "Terugwinning van metaalafval"@nl, "Récupération de déchets métalliques"@fr;
+    skos:prefLabel "38322".
+<http://vocab.belgif.be/auth/nace2008/45320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4532>, <http://vocab.belgif.be/auth/nace2008/4532>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "45320".
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890".
+<http://vocab.belgif.be/auth/nace2008/93211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9321>, <http://vocab.belgif.be/auth/nace2008/9321>;
+    skos:definition "Exploitatie van kermisattracties"@nl, "Activités foraines"@fr;
+    skos:prefLabel "93211".
+<http://vocab.belgif.be/auth/nace2025/38210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3821>, <http://vocab.belgif.be/auth/nace2025/3821>;
+    skos:definition "Terugwinning van materialen uit afval"@nl, "Récupération de matériaux provenant de déchets"@fr;
+    skos:prefLabel "38210".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/47820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4782>, <http://vocab.belgif.be/auth/nace2025/4782>;
+    skos:definition "Markt- en straathandel in textiel, kleding en schoeisel"@nl, "Commerce de détail de textiles, d'habillement et de chaussures sur éventaires et marchés"@fr;
+    skos:prefLabel "47820".
+<http://vocab.belgif.be/auth/nace2025/93291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Exploitatie van snooker- en biljartenzalen"@nl, "Exploitation de salles de billard et de snooker"@fr;
+    skos:prefLabel "93291".
+<https://data.vlaanderen.be/id/onderneming/0774.091.969> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "09-01-1990"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0774.091.969;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47820>, <http://vocab.belgif.be/auth/nace2025/93291>, <http://vocab.belgif.be/auth/nace2025/38210>, <http://vocab.belgif.be/auth/nace2025/47789>, _:nace_2003_52623, _:nace_2003_50302, _:nace_2003_37100, _:nace_2003_92331, <http://vocab.belgif.be/auth/nace2008/38322>, <http://vocab.belgif.be/auth/nace2008/93211>, <http://vocab.belgif.be/auth/nace2008/45320>, <http://vocab.belgif.be/auth/nace2008/47890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bairolle, Freddy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.046.448.194>.
+<https://data.vlaanderen.be/id/vestiging/2.046.448.194> a org:Site;
+    dcterms:created "09-01-1990"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.046.448.194.
+_:nace_2003_37100 a skos:Concept;
+    skos:definition "Recycling van metaalafval"@nl, "Récupération des matières métalliques recyclables"@fr;
+    skos:prefLabel "37100".
+_:nace_2003_50302 a skos:Concept;
+    skos:definition "Kleinhandel in onderdelen en accessoires van auto's"@nl, "Commerce de détail de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50302".
+_:nace_2003_52623 a skos:Concept;
+    skos:definition "Overige markt- en straathandel"@nl, "Autres commerces de détail sur marchés et éventaires"@fr;
+    skos:prefLabel "52623".
+_:nace_2003_92331 a skos:Concept;
+    skos:definition "Kermisattracties"@nl, "Attractions foraines"@fr;
+    skos:prefLabel "92331".
+_:registration_company_0774.091.969 a adms:Identifier;
+    skos:notation "0774.091.969";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-01-1990"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.046.448.194 a adms:Identifier;
+    skos:notation "2.046.448.194";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-01-1990"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/22110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2211>, <http://vocab.belgif.be/auth/nace2008/2211>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "22110".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/45201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Entretien et réparation général d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45201".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/45205> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Bandenservicebedrijven"@nl, "Services spécialisés relatifs au pneu"@fr;
+    skos:prefLabel "45205".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/22110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2211>, <http://vocab.belgif.be/auth/nace2025/2211>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "22110".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<http://vocab.belgif.be/auth/nace2025/95315> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Bandenservicebedrijven"@nl, "Services spécialisés relatifs au pneu"@fr;
+    skos:prefLabel "95315".
+<https://data.vlaanderen.be/id/onderneming/0769.654.418> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.654.418;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95315>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/22110>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2008/45205>, <http://vocab.belgif.be/auth/nace2008/22110>, <http://vocab.belgif.be/auth/nace2008/77110>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/45201>, <http://vocab.belgif.be/auth/nace2008/45203>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bleus, Bjorn";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.300.394>.
+<https://data.vlaanderen.be/id/vestiging/2.318.300.394> a org:Site;
+    dcterms:created "01-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.300.394.
+_:registration_company_0769.654.418 a adms:Identifier;
+    skos:notation "0769.654.418";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.300.394 a adms:Identifier;
+    skos:notation "2.318.300.394";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

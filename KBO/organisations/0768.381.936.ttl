@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<http://vocab.belgif.be/auth/nace2025/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<https://data.vlaanderen.be/id/onderneming/0768.381.936> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "12-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0768.381.936;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/94991>, <http://vocab.belgif.be/auth/nace2008/94991>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0768.381.936;
+    reorg:legalName "Jeugdhuis NYX"@nl, "JH NYX"@nl.
+_:address_contact_0768.381.936 a locn:Address;
+    locn:thoroughfare "Dr. Vanderhoeydonckstraat"@nl, "Dr. Vanderhoeydonckstraat"@fr;
+    rdfs:label "56";
+    locn:postCode "3560";
+    adres:gemeentenaam "Lummen"@nl, "Lummen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0768.381.936 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "benmechelmans@gmail.com";
+    locn:address _:address_contact_0768.381.936.
+_:registration_company_0768.381.936 a adms:Identifier;
+    skos:notation "0768.381.936";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8121>, <http://vocab.belgif.be/auth/nace2008/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8121>, <http://vocab.belgif.be/auth/nace2025/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<https://data.vlaanderen.be/id/onderneming/0771.761.296> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.761.296;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/41001>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81210>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/81210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0771.761.296;
+    reorg:legalName "LORIN 1 3 6"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.345.543.736>.
+<https://data.vlaanderen.be/id/vestiging/2.345.543.736> a org:Site;
+    dcterms:created "27-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.345.543.736.
+_:address_contact_0771.761.296 a locn:Address;
+    locn:thoroughfare "Lageweg"@nl, "Lageweg"@fr;
+    rdfs:label "421";
+    locn:postCode "2660";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0771.761.296 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0771.761.296.
+_:registration_company_0771.761.296 a adms:Identifier;
+    skos:notation "0771.761.296";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.345.543.736 a adms:Identifier;
+    skos:notation "2.345.543.736";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

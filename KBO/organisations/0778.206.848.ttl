@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5210>, <http://vocab.belgif.be/auth/nace2008/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5210>, <http://vocab.belgif.be/auth/nace2025/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<https://data.vlaanderen.be/id/onderneming/0778.206.848> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0778.206.848;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/52100>, _:nace_2003_51140, <http://vocab.belgif.be/auth/nace2008/46140>, <http://vocab.belgif.be/auth/nace2008/52100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Herman, Stéphane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.095.111.215>.
+<https://data.vlaanderen.be/id/vestiging/2.095.111.215> a org:Site;
+    dcterms:created "28-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.095.111.215.
+_:nace_2003_51140 a skos:Concept;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels et commerciaux, navires et avions"@fr;
+    skos:prefLabel "51140".
+_:registration_company_0778.206.848 a adms:Identifier;
+    skos:notation "0778.206.848";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.095.111.215 a adms:Identifier;
+    skos:notation "2.095.111.215";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>.

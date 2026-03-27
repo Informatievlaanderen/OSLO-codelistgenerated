@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2008/63120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6312>, <http://vocab.belgif.be/auth/nace2008/6312>;
+    skos:definition "Webportalen"@nl, "Portails Internet"@fr;
+    skos:prefLabel "63120".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7312>, <http://vocab.belgif.be/auth/nace2008/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7312>, <http://vocab.belgif.be/auth/nace2025/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<https://data.vlaanderen.be/id/onderneming/0777.415.705> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "22-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0777.415.705;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/73120>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/63120>, <http://vocab.belgif.be/auth/nace2008/73120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Denys, Edith";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.326.269.440>.
+<https://data.vlaanderen.be/id/vestiging/2.326.269.440> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.326.269.440.
+_:registration_company_0777.415.705 a adms:Identifier;
+    skos:notation "0777.415.705";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.326.269.440 a adms:Identifier;
+    skos:notation "2.326.269.440";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

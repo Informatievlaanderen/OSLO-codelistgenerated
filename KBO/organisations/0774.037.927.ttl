@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4711>, <http://vocab.belgif.be/auth/nace2008/4711>;
+    skos:definition "Detailhandel in niet-gespecialiseerde winkels waarbij voedings- en genotmiddelen overheersen (verkoopsoppervlakte < 100 m²)"@nl, "Commerce de détail en magasin non spécialisé à prédominance alimentaire (surface de vente < 100m²)"@fr;
+    skos:prefLabel "47112".
+<http://vocab.belgif.be/auth/nace2008/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4722>, <http://vocab.belgif.be/auth/nace2008/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/47110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4711>, <http://vocab.belgif.be/auth/nace2025/4711>;
+    skos:definition "Niet-gespecialiseerde detailhandel waarbij voedings- en genotmiddelen overheersen"@nl, "Commerce de détail non spécialisé dans lequel les produits alimentaires et le tabac prédominent"@fr;
+    skos:prefLabel "47110".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<https://data.vlaanderen.be/id/onderneming/0774.037.927> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-1987"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0774.037.927;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/47110>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/77120>, _:nace_2003_55522, _:nace_2003_52112, _:nace_2003_52220, _:nace_2003_71210, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/47221>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/47112>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Mordant, Justin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.030.510.403>, <https://data.vlaanderen.be/id/vestiging/2.203.183.170>.
+<https://data.vlaanderen.be/id/vestiging/2.030.510.403> a org:Site;
+    dcterms:created "17-09-1987"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.030.510.403.
+<https://data.vlaanderen.be/id/vestiging/2.203.183.170> a org:Site;
+    dcterms:created "17-10-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.203.183.170.
+_:nace_2003_52112 a skos:Concept;
+    skos:definition "Niet-gespecialiseerde detailhandel in algemene voedingsmiddelen (verkoopsoppervlakte minder dan 100 m2)"@nl, "Commerce de détail non spécialisé d'alimentation générale (surface de vente inférieure à 100 m2)"@fr;
+    skos:prefLabel "52112".
+_:nace_2003_52220 a skos:Concept;
+    skos:definition "Detailhandel in vlees en vleeswaren"@nl, "Commerce de détail de viandes et produits à base de viande"@fr;
+    skos:prefLabel "52220".
+_:nace_2003_55522 a skos:Concept;
+    skos:definition "Uitzendkoks en verzorgen van feesten en recepties"@nl, "Traiteurs et organisation de réceptions"@fr;
+    skos:prefLabel "55522".
+_:nace_2003_71210 a skos:Concept;
+    skos:definition "Verhuur van overige transportmiddelen voor vervoer te land"@nl, "Location d'autres matériels de transport terrestre"@fr;
+    skos:prefLabel "71210".
+_:registration_company_0774.037.927 a adms:Identifier;
+    skos:notation "0774.037.927";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1987"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.030.510.403 a adms:Identifier;
+    skos:notation "2.030.510.403";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1987"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.203.183.170 a adms:Identifier;
+    skos:notation "2.203.183.170";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1987"^^<http://www.w3.org/2001/XMLSchema#date>.

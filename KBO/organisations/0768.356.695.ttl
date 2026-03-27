@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0768.356.695> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/070>;
+    dcterms:created "30-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0768.356.695;
+    schema:contactinfo _:contact_0768.356.695;
+    reorg:legalName "Deelvereniging van Mede-eigenaars van het gebouw Residentie Parhove - Gebouw B Kapelstraat 98 te Hove"@nl, "Residentie Parkhove - Gebouw B"@nl.
+_:address_contact_0768.356.695 a locn:Address;
+    locn:thoroughfare "Kapelstraat"@nl, "Kapelstraat"@fr;
+    rdfs:label "98";
+    locn:postCode "2540";
+    adres:gemeentenaam "Hove"@nl, "Hove"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0768.356.695 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0768.356.695.
+_:registration_company_0768.356.695 a adms:Identifier;
+    skos:notation "0768.356.695";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5811>, <http://vocab.belgif.be/auth/nace2008/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2008/85609> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8560>, <http://vocab.belgif.be/auth/nace2008/8560>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85609".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2008/90032> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Sanering en dergelijke activiteiten"@nl, "Dépollution et activités similaires"@fr;
+    skos:prefLabel "90032".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/58110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5811>, <http://vocab.belgif.be/auth/nace2025/5811>;
+    skos:definition "Uitgeverijen van boeken"@nl, "Édition de livres"@fr;
+    skos:prefLabel "58110".
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0769.405.285> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.405.285;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/85699>, <http://vocab.belgif.be/auth/nace2025/58110>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/58110>, <http://vocab.belgif.be/auth/nace2008/85609>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/90032>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Remy, Catheline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.317.805.595>.
+<https://data.vlaanderen.be/id/vestiging/2.317.805.595> a org:Site;
+    dcterms:created "01-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.805.595.
+_:registration_company_0769.405.285 a adms:Identifier;
+    skos:notation "0769.405.285";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.805.595 a adms:Identifier;
+    skos:notation "2.317.805.595";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

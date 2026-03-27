@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/23700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2370>, <http://vocab.belgif.be/auth/nace2008/2370>;
+    skos:definition "Houwen, bewerken en afwerken van natuursteen"@nl, "Taille, façonnage et finissage de pierres"@fr;
+    skos:prefLabel "23700".
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/47523> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in wand- en vloertegels in gespecialiseerde winkels"@nl, "Commerce de détail de carrelages de sols et de murs en magasin spécialisé"@fr;
+    skos:prefLabel "47523".
+<http://vocab.belgif.be/auth/nace2008/47786> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in souvenirs en religieuze artikelen in gespecialiseerde winkels"@nl, "Commerce de détail de souvenirs et d'articles religieux en magasin spécialisé"@fr;
+    skos:prefLabel "47786".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/23700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2370>, <http://vocab.belgif.be/auth/nace2025/2370>;
+    skos:definition "Houwen, bewerken en afwerken van natuursteen"@nl, "Taille, façonnage et finissage de pierres"@fr;
+    skos:prefLabel "23700".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/47523> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in wand- en vloertegels in gespecialiseerde winkels"@nl, "Commerce de détail de carrelages de sols et de murs en magasin spécialisé"@fr;
+    skos:prefLabel "47523".
+<http://vocab.belgif.be/auth/nace2025/47784> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in drogisterijartikelen en onderhoudsproducten in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de droguerie et de produits d'entretien en magasin spécialisé"@fr;
+    skos:prefLabel "47784".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0780.443.687> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0780.443.687;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/23700>, <http://vocab.belgif.be/auth/nace2025/47784>, <http://vocab.belgif.be/auth/nace2025/47523>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/47786>, <http://vocab.belgif.be/auth/nace2008/23700>, <http://vocab.belgif.be/auth/nace2008/47523>, <http://vocab.belgif.be/auth/nace2008/41201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0780.443.687;
+    reorg:legalName "Stonetec"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.327.471.448>.
+<https://data.vlaanderen.be/id/vestiging/2.327.471.448> a org:Site;
+    dcterms:created "14-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.327.471.448.
+_:address_contact_0780.443.687 a locn:Address;
+    locn:thoroughfare "Acacialaan (STG)"@nl, "Acacialaan (STG)"@fr;
+    rdfs:label "14";
+    locn:postCode "9200";
+    adres:gemeentenaam "Dendermonde"@nl, "Dendermonde"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0780.443.687 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@stonetec.be";
+    locn:address _:address_contact_0780.443.687.
+_:registration_company_0780.443.687 a adms:Identifier;
+    skos:notation "0780.443.687";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.327.471.448 a adms:Identifier;
+    skos:notation "2.327.471.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

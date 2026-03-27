@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1813>, <http://vocab.belgif.be/auth/nace2008/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2008/23130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2313>, <http://vocab.belgif.be/auth/nace2008/2313>;
+    skos:definition "Vervaardiging van holglas"@nl, "Fabrication de verre creux"@fr;
+    skos:prefLabel "23130".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/32129> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3212>, <http://vocab.belgif.be/auth/nace2008/3212>;
+    skos:definition "Vervaardiging van overige artikelen van edele metalen"@nl, "Fabrication d'autres articles en métaux précieux"@fr;
+    skos:prefLabel "32129".
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/23130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2313>, <http://vocab.belgif.be/auth/nace2025/2313>;
+    skos:definition "Vervaardiging van holglas"@nl, "Fabrication de verre creux"@fr;
+    skos:prefLabel "23130".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/32129> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3212>, <http://vocab.belgif.be/auth/nace2025/3212>;
+    skos:definition "Vervaardiging van overige artikelen van edele metalen"@nl, "Fabrication d'autres articles en métaux précieux"@fr;
+    skos:prefLabel "32129".
+<https://data.vlaanderen.be/id/onderneming/0775.399.786> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "06-10-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0775.399.786;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/32129>, <http://vocab.belgif.be/auth/nace2025/23130>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2008/18130>, <http://vocab.belgif.be/auth/nace2008/32129>, <http://vocab.belgif.be/auth/nace2008/23130>, <http://vocab.belgif.be/auth/nace2008/25620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van den Heuvel, Guy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.322.452.786>.
+<https://data.vlaanderen.be/id/vestiging/2.322.452.786> a org:Site;
+    dcterms:created "06-10-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.322.452.786.
+_:registration_company_0775.399.786 a adms:Identifier;
+    skos:notation "0775.399.786";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-10-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.322.452.786 a adms:Identifier;
+    skos:notation "2.322.452.786";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-10-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

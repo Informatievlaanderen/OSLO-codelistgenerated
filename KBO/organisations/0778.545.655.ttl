@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2008/98200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9820>, <http://vocab.belgif.be/auth/nace2008/9820>;
+    skos:definition "Niet-gedifferentieerde productie van diensten door particuliere huis-houdens voor eigen gebruik"@nl, "Activités indifférenciées des ménages en tant que producteurs de services pour usage propre"@fr;
+    skos:prefLabel "98200".
+<http://vocab.belgif.be/auth/nace2025/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2025/98200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9820>, <http://vocab.belgif.be/auth/nace2025/9820>;
+    skos:definition "Niet-gedifferentieerde productie van diensten door particuliere huis-houdens voor eigen gebruik"@nl, "Activités indifférenciées des ménages en tant que producteurs de services pour usage propre"@fr;
+    skos:prefLabel "98200".
+<https://data.vlaanderen.be/id/onderneming/0778.545.655> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "13-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0778.545.655;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85593>, <http://vocab.belgif.be/auth/nace2025/98200>, <http://vocab.belgif.be/auth/nace2008/98200>, <http://vocab.belgif.be/auth/nace2008/85593>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0778.545.655;
+    reorg:legalName "BELLE AFRICA"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.328.949.709>.
+<https://data.vlaanderen.be/id/vestiging/2.328.949.709> a org:Site;
+    dcterms:created "13-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.328.949.709.
+_:address_contact_0778.545.655 a locn:Address;
+    locn:thoroughfare "Rue Arthur Decoux"@nl, "Rue Arthur Decoux"@fr;
+    rdfs:label "118";
+    adres:busnummer "B";
+    locn:postCode "6020";
+    adres:gemeentenaam "Charleroi"@nl, "Charleroi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0778.545.655 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0778.545.655.
+_:registration_company_0778.545.655 a adms:Identifier;
+    skos:notation "0778.545.655";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.328.949.709 a adms:Identifier;
+    skos:notation "2.328.949.709";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/60100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6010>, <http://vocab.belgif.be/auth/nace2008/6010>;
+    skos:definition "Vervoer per spoor"@nl, "Transports ferroviaires"@fr;
+    skos:prefLabel "60100".
+<http://vocab.belgif.be/auth/nace2008/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8412>, <http://vocab.belgif.be/auth/nace2008/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<http://vocab.belgif.be/auth/nace2008/85609> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8560>, <http://vocab.belgif.be/auth/nace2008/8560>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85609".
+<http://vocab.belgif.be/auth/nace2008/88996> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Algemeen welzijnswerk zonder huisvesting"@nl, "Services sociaux généraux sans hébergement"@fr;
+    skos:prefLabel "88996".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/60100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6010>, <http://vocab.belgif.be/auth/nace2025/6010>;
+    skos:definition "Vervoer per spoor"@nl, "Transports ferroviaires"@fr;
+    skos:prefLabel "60100".
+<http://vocab.belgif.be/auth/nace2025/84120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8412>, <http://vocab.belgif.be/auth/nace2025/8412>;
+    skos:definition "Openbaar bestuur op het gebied van gezondheidszorg, onderwijs, cultuur en andere sociale dienstverlening, m.u.v. sociale verzekeringen"@nl, "Administration publique (tutelle) de la santé, de la formation, de la culture et des autres services sociaux, à l'exclusion de la sécurité sociale"@fr;
+    skos:prefLabel "84120".
+<http://vocab.belgif.be/auth/nace2025/85699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8569>, <http://vocab.belgif.be/auth/nace2025/8569>;
+    skos:definition "Overige onderwijsondersteunende dienstverlening"@nl, "Autres services de soutien à l'enseignement"@fr;
+    skos:prefLabel "85699".
+<http://vocab.belgif.be/auth/nace2025/88994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Integrale jeugdhulp zonder huisvesting"@nl, "Services d'aide à la jeunesse sans hébergement"@fr;
+    skos:prefLabel "88994".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0769.691.931> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.691.931;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/85699>, <http://vocab.belgif.be/auth/nace2025/60100>, <http://vocab.belgif.be/auth/nace2025/88994>, <http://vocab.belgif.be/auth/nace2025/84120>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/85609>, <http://vocab.belgif.be/auth/nace2008/60100>, <http://vocab.belgif.be/auth/nace2008/84120>, <http://vocab.belgif.be/auth/nace2008/88996>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Paul, Caroline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.107.384>.
+<https://data.vlaanderen.be/id/vestiging/2.318.107.384> a org:Site;
+    dcterms:created "01-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.107.384.
+_:registration_company_0769.691.931 a adms:Identifier;
+    skos:notation "0769.691.931";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.107.384 a adms:Identifier;
+    skos:notation "2.318.107.384";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/71122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Landmeters"@nl, "Activités des géomètres"@fr;
+    skos:prefLabel "71122".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2008/74102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van industriële designers"@nl, "Activités de design industriel"@fr;
+    skos:prefLabel "74102".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2008/74909> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Overige gespecialiseerde wetenschappelijke en technische activiteiten"@nl, "Autres activités spécialisées, scientifiques et techniques"@fr;
+    skos:prefLabel "74909".
+<http://vocab.belgif.be/auth/nace2025/71122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Landmeters"@nl, "Activités des géomètres"@fr;
+    skos:prefLabel "71122".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/74112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Notariskantoor"@nl, "Étude de notaire"@fr;
+    skos:prefLabel "74112".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<http://vocab.belgif.be/auth/nace2025/74999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Overige activiteiten van vrije beroepen en andere wetenschappelijke en technische activiteiten, neg"@nl, "Autres activités des professions libérales et autres activités scientifiques et techniques, nca"@fr;
+    skos:prefLabel "74999".
+<https://data.vlaanderen.be/id/onderneming/0767.739.855> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0767.739.855;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74999>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/71122>, <http://vocab.belgif.be/auth/nace2025/74112>, <http://vocab.belgif.be/auth/nace2008/71122>, <http://vocab.belgif.be/auth/nace2008/74109>, <http://vocab.belgif.be/auth/nace2008/74909>, <http://vocab.belgif.be/auth/nace2008/74102>, <http://vocab.belgif.be/auth/nace2008/71209>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0767.739.855;
+    reorg:legalName "Mahiels, Pauline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.316.501.045>.
+<https://data.vlaanderen.be/id/vestiging/2.316.501.045> a org:Site;
+    dcterms:created "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.316.501.045.
+_:contact_0767.739.855 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "paulinemahiels@gmail.Com";
+    schema:telephone "+32493991958".
+_:registration_company_0767.739.855 a adms:Identifier;
+    skos:notation "0767.739.855";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.316.501.045 a adms:Identifier;
+    skos:notation "2.316.501.045";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

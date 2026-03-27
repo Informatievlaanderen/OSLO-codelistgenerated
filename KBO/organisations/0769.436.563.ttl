@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01309> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0130>, <http://vocab.belgif.be/auth/nace2008/0130>;
+    skos:definition "Overige plantenvermeerdering"@nl, "Autre reproduction de plantes"@fr;
+    skos:prefLabel "01309".
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/01309> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0130>, <http://vocab.belgif.be/auth/nace2025/0130>;
+    skos:definition "Overige plantenvermeerdering"@nl, "Autre reproduction de plantes"@fr;
+    skos:prefLabel "01309".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0769.436.563> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.436.563;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/81300>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01309>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/01309>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/02100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0769.436.563;
+    reorg:legalName "Tuinwerken Thomas"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.070.366>.
+<https://data.vlaanderen.be/id/vestiging/2.318.070.366> a org:Site;
+    dcterms:created "08-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.070.366.
+_:address_contact_0769.436.563 a locn:Address;
+    locn:thoroughfare "Liersesteenweg"@nl, "Liersesteenweg"@fr;
+    rdfs:label "36";
+    locn:postCode "2221";
+    adres:gemeentenaam "Heist-op-den-Berg"@nl, "Heist-op-den-Berg"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0769.436.563 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0769.436.563.
+_:registration_company_0769.436.563 a adms:Identifier;
+    skos:notation "0769.436.563";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.070.366 a adms:Identifier;
+    skos:notation "2.318.070.366";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

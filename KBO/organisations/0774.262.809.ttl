@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7731>, <http://vocab.belgif.be/auth/nace2008/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/77310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7731>, <http://vocab.belgif.be/auth/nace2025/7731>;
+    skos:definition "Verhuur en lease van landbouwmachines en -werktuigen"@nl, "Location et location-bail de machines et d'équipements agricoles"@fr;
+    skos:prefLabel "77310".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0774.262.809> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "24-12-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0774.262.809;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/77310>, <http://vocab.belgif.be/auth/nace2025/77320>, _:nace_2003_71310, _:nace_2003_71320, _:nace_2003_33300, _:nace_2003_01410, _:nace_2003_29322, _:nace_2003_74203, <http://vocab.belgif.be/auth/nace2008/77310>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/33200>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Lennerts, Hubert";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.123.399.086>.
+<https://data.vlaanderen.be/id/vestiging/2.123.399.086> a org:Site;
+    dcterms:created "24-12-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.123.399.086.
+_:nace_2003_01410 a skos:Concept;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+_:nace_2003_29322 a skos:Concept;
+    skos:definition "Herstelling van landbouwmachines"@nl, "Réparation de matériel agricole"@fr;
+    skos:prefLabel "29322".
+_:nace_2003_33300 a skos:Concept;
+    skos:definition "Vervaardiging van apparaten voor de bewaking van industriële processen"@nl, "Fabrication d'équipements de contrôle des processus industriels"@fr;
+    skos:prefLabel "33300".
+_:nace_2003_71310 a skos:Concept;
+    skos:definition "Verhuur van landbouwmachines en -werktuigen"@nl, "Location de matériel agricole"@fr;
+    skos:prefLabel "71310".
+_:nace_2003_71320 a skos:Concept;
+    skos:definition "Verhuur van machines en installaties voor de bouwnijverheid"@nl, "Location de machines et équipements pour la construction"@fr;
+    skos:prefLabel "71320".
+_:nace_2003_74203 a skos:Concept;
+    skos:definition "Technische studiën en ingenieursactiviteiten"@nl, "Études techniques et activités d'ingénierie"@fr;
+    skos:prefLabel "74203".
+_:registration_company_0774.262.809 a adms:Identifier;
+    skos:notation "0774.262.809";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-12-2002"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.123.399.086 a adms:Identifier;
+    skos:notation "2.123.399.086";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-12-2002"^^<http://www.w3.org/2001/XMLSchema#date>.

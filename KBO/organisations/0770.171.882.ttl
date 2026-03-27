@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1392>, <http://vocab.belgif.be/auth/nace2008/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<https://data.vlaanderen.be/id/onderneming/0770.171.882> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0770.171.882;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2025/13921>, _:nace_2003_51410, _:nace_2003_17401, <http://vocab.belgif.be/auth/nace2008/46412>, <http://vocab.belgif.be/auth/nace2008/13921>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dujardin, Claude";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.088.711.886>.
+<https://data.vlaanderen.be/id/vestiging/2.088.711.886> a org:Site;
+    dcterms:created "08-10-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.088.711.886.
+_:nace_2003_17401 a skos:Concept;
+    skos:definition "Confectie van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Confection de linge de lit et de table, d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "17401".
+_:nace_2003_51410 a skos:Concept;
+    skos:definition "Groothandel in textiel"@nl, "Commerce de gros de textiles"@fr;
+    skos:prefLabel "51410".
+_:registration_company_0770.171.882 a adms:Identifier;
+    skos:notation "0770.171.882";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-1998"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.088.711.886 a adms:Identifier;
+    skos:notation "2.088.711.886";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-1998"^^<http://www.w3.org/2001/XMLSchema#date>.

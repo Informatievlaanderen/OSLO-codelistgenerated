@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4672>, <http://vocab.belgif.be/auth/nace2008/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/46820> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4682>, <http://vocab.belgif.be/auth/nace2025/4682>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais métalliques et de métaux"@fr;
+    skos:prefLabel "46820".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<https://data.vlaanderen.be/id/onderneming/0771.376.563> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "14-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.376.563;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/46820>, <http://vocab.belgif.be/auth/nace2008/46720>, <http://vocab.belgif.be/auth/nace2008/41102>, <http://vocab.belgif.be/auth/nace2008/43299>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0771.376.563;
+    reorg:legalName "LOCASTAND"@fr.
+_:address_contact_0771.376.563 a locn:Address;
+    locn:thoroughfare "Rue de la Révision"@nl, "Rue de la Révision"@fr;
+    rdfs:label "87";
+    locn:postCode "4032";
+    adres:gemeentenaam "Liège"@nl, "Liège"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0771.376.563 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0771.376.563.
+_:registration_company_0771.376.563 a adms:Identifier;
+    skos:notation "0771.376.563";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

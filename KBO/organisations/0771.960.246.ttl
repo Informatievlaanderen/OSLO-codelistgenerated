@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43995> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Restaureren van bouwwerken"@nl, "Travaux de restauration des bâtiments"@fr;
+    skos:prefLabel "43995".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4639>, <http://vocab.belgif.be/auth/nace2008/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in niet-diepgevroren voedingsmiddelen, dranken en genotmiddelen"@nl, "Commerce de gros non spécialisé de denrées non-surgelées, boissons et tabac"@fr;
+    skos:prefLabel "46392".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4639>, <http://vocab.belgif.be/auth/nace2025/4639>;
+    skos:definition "Niet-gespecialiseerde groothandel in niet-diepgevroren voedingsmiddelen, dranken en genotmiddelen"@nl, "Commerce de gros non spécialisé de denrées non-surgelées, boissons et tabac"@fr;
+    skos:prefLabel "46392".
+<https://data.vlaanderen.be/id/onderneming/0771.960.246> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "03-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.960.246;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46392>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2008/46392>, <http://vocab.belgif.be/auth/nace2008/43995>, <http://vocab.belgif.be/auth/nace2008/46150>, <http://vocab.belgif.be/auth/nace2008/46130>, <http://vocab.belgif.be/auth/nace2008/46140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0771.960.246;
+    reorg:legalName "BC RETAILPROJECT"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.215.056>.
+<https://data.vlaanderen.be/id/vestiging/2.320.215.056> a org:Site;
+    dcterms:created "03-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.215.056.
+_:address_contact_0771.960.246 a locn:Address;
+    locn:thoroughfare "Leuvensesteenweg"@nl, "Leuvensesteenweg"@fr;
+    rdfs:label "510";
+    locn:postCode "1930";
+    adres:gemeentenaam "Zaventem"@nl, "Zaventem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0771.960.246 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0771.960.246.
+_:registration_company_0771.960.246 a adms:Identifier;
+    skos:notation "0771.960.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.215.056 a adms:Identifier;
+    skos:notation "2.320.215.056";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2011>, <http://vocab.belgif.be/auth/nace2008/2011>;
+    skos:definition "Vervaardiging van industriële gassen"@nl, "Fabrication de gaz industriels"@fr;
+    skos:prefLabel "20110".
+<http://vocab.belgif.be/auth/nace2008/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3511>, <http://vocab.belgif.be/auth/nace2008/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2008/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3530>, <http://vocab.belgif.be/auth/nace2008/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<http://vocab.belgif.be/auth/nace2008/38110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3811>, <http://vocab.belgif.be/auth/nace2008/3811>;
+    skos:definition "Inzameling van ongevaarlijk afval"@nl, "Collecte des déchets non dangereux"@fr;
+    skos:prefLabel "38110".
+<http://vocab.belgif.be/auth/nace2008/38219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3821>, <http://vocab.belgif.be/auth/nace2008/3821>;
+    skos:definition "Overige verwerking en verwijdering van ongevaarlijk afval"@nl, "Autre traitement et élimination des déchets non dangereux"@fr;
+    skos:prefLabel "38219".
+<http://vocab.belgif.be/auth/nace2008/42211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van water- en gasdistributienetten"@nl, "Construction de réseaux de distribution d'eau et de gaz"@fr;
+    skos:prefLabel "42211".
+<http://vocab.belgif.be/auth/nace2025/20110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2011>, <http://vocab.belgif.be/auth/nace2025/2011>;
+    skos:definition "Vervaardiging van industriële gassen"@nl, "Fabrication de gaz industriels"@fr;
+    skos:prefLabel "20110".
+<http://vocab.belgif.be/auth/nace2025/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3511>, <http://vocab.belgif.be/auth/nace2025/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2025/35300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3530>, <http://vocab.belgif.be/auth/nace2025/3530>;
+    skos:definition "Vervaardiging van lucht- en ruimtevaartuigen"@nl, "Construction aéronautique et spatiale"@fr;
+    skos:prefLabel "35300".
+<http://vocab.belgif.be/auth/nace2025/38110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3811>, <http://vocab.belgif.be/auth/nace2025/3811>;
+    skos:definition "Inzameling van ongevaarlijk afval"@nl, "Collecte des déchets non dangereux"@fr;
+    skos:prefLabel "38110".
+<http://vocab.belgif.be/auth/nace2025/38330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3833>, <http://vocab.belgif.be/auth/nace2025/3833>;
+    skos:definition "Andere afvalverwijdering"@nl, "Autre élimination des déchets"@fr;
+    skos:prefLabel "38330".
+<http://vocab.belgif.be/auth/nace2025/42211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van water- en gasdistributienetten"@nl, "Construction de réseaux de distribution d'eau et de gaz"@fr;
+    skos:prefLabel "42211".
+<https://data.vlaanderen.be/id/onderneming/0779.520.605> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "30-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0779.520.605;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/35300>, <http://vocab.belgif.be/auth/nace2025/38330>, <http://vocab.belgif.be/auth/nace2025/42211>, <http://vocab.belgif.be/auth/nace2025/35110>, <http://vocab.belgif.be/auth/nace2025/38110>, <http://vocab.belgif.be/auth/nace2025/20110>, <http://vocab.belgif.be/auth/nace2008/35110>, <http://vocab.belgif.be/auth/nace2008/42211>, <http://vocab.belgif.be/auth/nace2008/20110>, <http://vocab.belgif.be/auth/nace2008/38110>, <http://vocab.belgif.be/auth/nace2008/35300>, <http://vocab.belgif.be/auth/nace2008/38219>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0779.520.605;
+    reorg:legalName "WALVERT METTET"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.358.617.059>.
+<https://data.vlaanderen.be/id/vestiging/2.358.617.059> a org:Site;
+    dcterms:created "31-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.358.617.059.
+_:address_contact_0779.520.605 a locn:Address;
+    locn:thoroughfare "Rue Odon Godart"@nl, "Rue Odon Godart"@fr;
+    rdfs:label "8";
+    locn:postCode "6240";
+    adres:gemeentenaam "Farciennes"@nl, "Farciennes"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0779.520.605 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0779.520.605.
+_:registration_company_0779.520.605 a adms:Identifier;
+    skos:notation "0779.520.605";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.358.617.059 a adms:Identifier;
+    skos:notation "2.358.617.059";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

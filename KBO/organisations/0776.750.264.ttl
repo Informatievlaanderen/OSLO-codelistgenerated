@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3314>, <http://vocab.belgif.be/auth/nace2008/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2008/95220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9522>, <http://vocab.belgif.be/auth/nace2008/9522>;
+    skos:definition "Reparatie van huishoudapparaten en van werktuigen voor gebruik in huis en tuin"@nl, "Réparation d'appareils électroménagers et d'équipements pour la maison et le jardin"@fr;
+    skos:prefLabel "95220".
+<http://vocab.belgif.be/auth/nace2025/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3314>, <http://vocab.belgif.be/auth/nace2025/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/95220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9522>, <http://vocab.belgif.be/auth/nace2025/9522>;
+    skos:definition "Reparatie van huishoudapparaten en van werktuigen voor gebruik in huis en tuin"@nl, "Réparation d'appareils électroménagers et d'équipements pour la maison et le jardin"@fr;
+    skos:prefLabel "95220".
+<https://data.vlaanderen.be/id/onderneming/0776.750.264> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "02-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0776.750.264;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/95220>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/43212>, <http://vocab.belgif.be/auth/nace2025/33140>, <http://vocab.belgif.be/auth/nace2008/33140>, <http://vocab.belgif.be/auth/nace2008/33200>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/95220>, <http://vocab.belgif.be/auth/nace2008/43212>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0776.750.264;
+    reorg:legalName "BELECO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.323.736.651>.
+<https://data.vlaanderen.be/id/vestiging/2.323.736.651> a org:Site;
+    dcterms:created "02-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.323.736.651.
+_:address_contact_0776.750.264 a locn:Address;
+    locn:thoroughfare "Rue Basse"@nl, "Rue Basse"@fr;
+    rdfs:label "26";
+    locn:postCode "1460";
+    adres:gemeentenaam "Ittre"@nl, "Ittre"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0776.750.264 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@beleco.be";
+    schema:telephone "0471233736";
+    locn:address _:address_contact_0776.750.264.
+_:registration_company_0776.750.264 a adms:Identifier;
+    skos:notation "0776.750.264";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.323.736.651 a adms:Identifier;
+    skos:notation "2.323.736.651";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-11-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

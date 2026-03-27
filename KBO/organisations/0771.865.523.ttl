@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/86931> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychologie"@nl, "Activités de psychologie"@fr;
+    skos:prefLabel "86931".
+<http://vocab.belgif.be/auth/nace2025/86932> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychotherapie"@nl, "Activités de psychothérapie"@fr;
+    skos:prefLabel "86932".
+<http://vocab.belgif.be/auth/nace2025/86933> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten van centra voor geestelijke gezondheidszorg"@nl, "Activités des centres de santé mentale"@fr;
+    skos:prefLabel "86933".
+<https://data.vlaanderen.be/id/onderneming/0771.865.523> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.865.523;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/86933>, <http://vocab.belgif.be/auth/nace2025/86932>, <http://vocab.belgif.be/auth/nace2025/86931>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Wesolowska, Karolina";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.341.342.943>.
+<https://data.vlaanderen.be/id/vestiging/2.341.342.943> a org:Site;
+    dcterms:created "01-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.341.342.943.
+_:registration_company_0771.865.523 a adms:Identifier;
+    skos:notation "0771.865.523";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.341.342.943 a adms:Identifier;
+    skos:notation "2.341.342.943";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

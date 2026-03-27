@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/47591> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in huismeubilair in gespecialiseerde winkels"@nl, "Commerce de détail de mobilier de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47591".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/47551> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in huismeubilair"@nl, "Commerce de détail de mobilier de maison"@fr;
+    skos:prefLabel "47551".
+<https://data.vlaanderen.be/id/onderneming/0770.433.782> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0770.433.782;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/47551>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/47591>, <http://vocab.belgif.be/auth/nace2008/46731>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/46150>, <http://vocab.belgif.be/auth/nace2008/46130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Beauclaire, Virginie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.688.295>.
+<https://data.vlaanderen.be/id/vestiging/2.318.688.295> a org:Site;
+    dcterms:created "28-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.688.295.
+_:registration_company_0770.433.782 a adms:Identifier;
+    skos:notation "0770.433.782";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.688.295 a adms:Identifier;
+    skos:notation "2.318.688.295";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

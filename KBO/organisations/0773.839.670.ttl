@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/45111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Slopen van gebouwen"@nl, "Démolition d'immeubles"@fr;
+    skos:prefLabel "45111".
+<http://vocab.belgif.be/auth/nace2008/45204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Carrosserieherstelling"@nl, "Réparations de carrosseries"@fr;
+    skos:prefLabel "45204".
+<http://vocab.belgif.be/auth/nace2008/66210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6621>, <http://vocab.belgif.be/auth/nace2008/6621>;
+    skos:definition "Risicoanalisten en schadetaxateurs"@nl, "Évaluation des risques et dommages"@fr;
+    skos:prefLabel "66210".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/66210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6621>, <http://vocab.belgif.be/auth/nace2025/6621>;
+    skos:definition "Risicoanalisten en schadetaxateurs"@nl, "Évaluation des risques et dommages"@fr;
+    skos:prefLabel "66210".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<https://data.vlaanderen.be/id/onderneming/0773.839.670> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0773.839.670;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95314>, <http://vocab.belgif.be/auth/nace2025/66210>, <http://vocab.belgif.be/auth/nace2025/29320>, <http://vocab.belgif.be/auth/nace2025/46711>, <http://vocab.belgif.be/auth/nace2008/66210>, <http://vocab.belgif.be/auth/nace2008/45111>, <http://vocab.belgif.be/auth/nace2008/45204>, <http://vocab.belgif.be/auth/nace2008/29320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0773.839.670;
+    reorg:legalName "Alterwise"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.323.997.264>.
+<https://data.vlaanderen.be/id/vestiging/2.323.997.264> a org:Site;
+    dcterms:created "14-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.323.997.264.
+_:address_contact_0773.839.670 a locn:Address;
+    locn:thoroughfare "Adolf Reydamslaan"@nl, "Adolf Reydamslaan"@fr;
+    rdfs:label "3";
+    locn:postCode "2400";
+    adres:gemeentenaam "Mol"@nl, "Mol"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0773.839.670 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0773.839.670.
+_:registration_company_0773.839.670 a adms:Identifier;
+    skos:notation "0773.839.670";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.323.997.264 a adms:Identifier;
+    skos:notation "2.323.997.264";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

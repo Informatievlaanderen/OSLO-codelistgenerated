@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0162>, <http://vocab.belgif.be/auth/nace2008/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2008/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8551>, <http://vocab.belgif.be/auth/nace2008/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2008/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2025/01620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0162>, <http://vocab.belgif.be/auth/nace2025/0162>;
+    skos:definition "Ondersteunende activiteiten in verband met de veeteelt"@nl, "Activités de soutien à la production animale"@fr;
+    skos:prefLabel "01620".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<https://data.vlaanderen.be/id/onderneming/0772.872.739> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0772.872.739;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01620>, <http://vocab.belgif.be/auth/nace2025/93199>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/77120>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/85510>, <http://vocab.belgif.be/auth/nace2008/93199>, <http://vocab.belgif.be/auth/nace2008/01620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "de Bel, Joyce";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.663.929>.
+<https://data.vlaanderen.be/id/vestiging/2.320.663.929> a org:Site;
+    dcterms:created "23-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.663.929.
+_:registration_company_0772.872.739 a adms:Identifier;
+    skos:notation "0772.872.739";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.663.929 a adms:Identifier;
+    skos:notation "2.320.663.929";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

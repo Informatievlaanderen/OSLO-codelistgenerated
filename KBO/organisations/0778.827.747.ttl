@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/29310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2931>, <http://vocab.belgif.be/auth/nace2008/2931>;
+    skos:definition "Vervaardiging van landbouwtractoren"@nl, "Fabrication de tracteurs agricoles"@fr;
+    skos:prefLabel "29310".
+<http://vocab.belgif.be/auth/nace2008/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2932>, <http://vocab.belgif.be/auth/nace2008/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2008/45201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Entretien et réparation général d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45201".
+<http://vocab.belgif.be/auth/nace2008/45202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles ( > 3,5 tonnes )"@fr;
+    skos:prefLabel "45202".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/29310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2931>, <http://vocab.belgif.be/auth/nace2025/2931>;
+    skos:definition "Vervaardiging van landbouwtractoren"@nl, "Fabrication de tracteurs agricoles"@fr;
+    skos:prefLabel "29310".
+<http://vocab.belgif.be/auth/nace2025/29320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2932>, <http://vocab.belgif.be/auth/nace2025/2932>;
+    skos:definition "Vervaardiging van andere delen en toebehoren van motorvoertuigen"@nl, "Fabrication d'autres équipements pour véhicules automobiles"@fr;
+    skos:prefLabel "29320".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/95311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Entretien et réparation général de voitures et de véhicules légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "95311".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<https://data.vlaanderen.be/id/onderneming/0778.827.747> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "20-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0778.827.747;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/29310>, <http://vocab.belgif.be/auth/nace2025/29320>, <http://vocab.belgif.be/auth/nace2025/95311>, <http://vocab.belgif.be/auth/nace2025/52210>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2008/29320>, <http://vocab.belgif.be/auth/nace2008/29310>, <http://vocab.belgif.be/auth/nace2008/45202>, <http://vocab.belgif.be/auth/nace2008/45203>, <http://vocab.belgif.be/auth/nace2008/45201>, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0778.827.747;
+    reorg:legalName "Lepage"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.326.509.861>.
+<https://data.vlaanderen.be/id/vestiging/2.326.509.861> a org:Site;
+    dcterms:created "20-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.326.509.861.
+_:address_contact_0778.827.747 a locn:Address;
+    locn:thoroughfare "Vijverlaan"@nl, "Vijverlaan"@fr;
+    rdfs:label "29";
+    locn:postCode "2970";
+    adres:gemeentenaam "Schilde"@nl, "Schilde"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0778.827.747 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0778.827.747.
+_:registration_company_0778.827.747 a adms:Identifier;
+    skos:notation "0778.827.747";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.326.509.861 a adms:Identifier;
+    skos:notation "2.326.509.861";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/52250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5225>, <http://vocab.belgif.be/auth/nace2025/5225>;
+    skos:definition "Detailhandel in alcoholische en andere dranken"@nl, "Commerce de détail de boissons"@fr;
+    skos:prefLabel "52250".
+<http://vocab.belgif.be/auth/nace2025/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5320>, <http://vocab.belgif.be/auth/nace2025/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<https://data.vlaanderen.be/id/onderneming/0769.520.202> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "09-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.520.202;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/53200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52250>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0769.520.202;
+    reorg:legalName "Delivery Family & CO"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.158.062>.
+<https://data.vlaanderen.be/id/vestiging/2.318.158.062> a org:Site;
+    dcterms:created "09-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.158.062.
+_:address_contact_0769.520.202 a locn:Address;
+    locn:thoroughfare "Chaussée de Binche"@nl, "Chaussée de Binche"@fr;
+    rdfs:label "92/5";
+    locn:postCode "7000";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0769.520.202 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0769.520.202.
+_:registration_company_0769.520.202 a adms:Identifier;
+    skos:notation "0769.520.202";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.158.062 a adms:Identifier;
+    skos:notation "2.318.158.062";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

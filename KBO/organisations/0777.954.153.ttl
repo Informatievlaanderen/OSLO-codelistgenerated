@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10860> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1086>, <http://vocab.belgif.be/auth/nace2008/1086>;
+    skos:definition "Vervaardiging van gehomogeniseerde voedingspreparaten en dieetvoeding"@nl, "Fabrication d'aliments homogénéisés et diététiques"@fr;
+    skos:prefLabel "10860".
+<http://vocab.belgif.be/auth/nace2008/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2120>, <http://vocab.belgif.be/auth/nace2008/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2025/10860> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1086>, <http://vocab.belgif.be/auth/nace2025/1086>;
+    skos:definition "Vervaardiging van gehomogeniseerde voedingspreparaten en dieetvoeding"@nl, "Fabrication d'aliments homogénéisés et diététiques"@fr;
+    skos:prefLabel "10860".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/20590> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2059>, <http://vocab.belgif.be/auth/nace2025/2059>;
+    skos:definition "Vervaardiging van andere chemische producten, n.e.g."@nl, "Fabrication d'autres produits chimiques n.c.a."@fr;
+    skos:prefLabel "20590".
+<http://vocab.belgif.be/auth/nace2025/21201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2120>, <http://vocab.belgif.be/auth/nace2025/2120>;
+    skos:definition "Vervaardiging van geneesmiddelen"@nl, "Fabrication de médicaments"@fr;
+    skos:prefLabel "21201".
+<http://vocab.belgif.be/auth/nace2025/96230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9623>, <http://vocab.belgif.be/auth/nace2025/9623>;
+    skos:definition "Activiteiten van kuuroorden, sauna’s en stoombaden"@nl, "Activités de spa de jour, de sauna et de bain de vapeur"@fr;
+    skos:prefLabel "96230".
+<https://data.vlaanderen.be/id/onderneming/0777.954.153> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0777.954.153;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96230>, <http://vocab.belgif.be/auth/nace2025/10860>, <http://vocab.belgif.be/auth/nace2025/21201>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/20590>, <http://vocab.belgif.be/auth/nace2008/10860>, <http://vocab.belgif.be/auth/nace2008/21201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Brabanter, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.324.617.470>.
+<https://data.vlaanderen.be/id/vestiging/2.324.617.470> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.617.470.
+_:registration_company_0777.954.153 a adms:Identifier;
+    skos:notation "0777.954.153";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.617.470 a adms:Identifier;
+    skos:notation "2.324.617.470";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/23510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2351>, <http://vocab.belgif.be/auth/nace2008/2351>;
+    skos:definition "Vervaardiging van cement"@nl, "Fabrication de ciment"@fr;
+    skos:prefLabel "23510".
+<http://vocab.belgif.be/auth/nace2008/23650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2365>, <http://vocab.belgif.be/auth/nace2008/2365>;
+    skos:definition "Vervaardiging van producten van vezelcement"@nl, "Fabrication d'ouvrages en fibre-ciment"@fr;
+    skos:prefLabel "23650".
+<http://vocab.belgif.be/auth/nace2008/23690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2369>, <http://vocab.belgif.be/auth/nace2008/2369>;
+    skos:definition "Vervaardiging van andere artikelen van beton, gips en cement"@nl, "Fabrication d'autres ouvrages en béton, en ciment ou en plâtre"@fr;
+    skos:prefLabel "23690".
+<http://vocab.belgif.be/auth/nace2008/43310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4331>, <http://vocab.belgif.be/auth/nace2008/4331>;
+    skos:definition "Stukadoorswerk"@nl, "Travaux de plâtrerie"@fr;
+    skos:prefLabel "43310".
+<http://vocab.belgif.be/auth/nace2008/43996> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Chapewerken"@nl, "Pose de chapes"@fr;
+    skos:prefLabel "43996".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2025/23510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2351>, <http://vocab.belgif.be/auth/nace2025/2351>;
+    skos:definition "Vervaardiging van cement"@nl, "Fabrication de ciment"@fr;
+    skos:prefLabel "23510".
+<http://vocab.belgif.be/auth/nace2025/23650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2365>, <http://vocab.belgif.be/auth/nace2025/2365>;
+    skos:definition "Vervaardiging van producten van vezelcement"@nl, "Fabrication d'ouvrages en fibre-ciment"@fr;
+    skos:prefLabel "23650".
+<http://vocab.belgif.be/auth/nace2025/23660> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2366>, <http://vocab.belgif.be/auth/nace2025/2366>;
+    skos:definition "Vervaardiging van andere artikelen van beton, cement en gips"@nl, "Fabrication d’autres ouvrages en béton, en ciment ou en plâtre"@fr;
+    skos:prefLabel "23660".
+<http://vocab.belgif.be/auth/nace2025/43310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4331>, <http://vocab.belgif.be/auth/nace2025/4331>;
+    skos:definition "Stukadoorswerk"@nl, "Travaux de plâtrerie"@fr;
+    skos:prefLabel "43310".
+<http://vocab.belgif.be/auth/nace2025/43422> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Chapewerken"@nl, "Pose de chapes"@fr;
+    skos:prefLabel "43422".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<https://data.vlaanderen.be/id/onderneming/0771.360.430> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.360.430;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/23510>, <http://vocab.belgif.be/auth/nace2025/43310>, <http://vocab.belgif.be/auth/nace2025/23660>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/43422>, <http://vocab.belgif.be/auth/nace2025/23650>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/43310>, <http://vocab.belgif.be/auth/nace2008/23690>, <http://vocab.belgif.be/auth/nace2008/23650>, <http://vocab.belgif.be/auth/nace2008/43996>, <http://vocab.belgif.be/auth/nace2008/23510>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0771.360.430;
+    reorg:legalName "H&M PLAFONNAGE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.371.246>.
+<https://data.vlaanderen.be/id/vestiging/2.320.371.246> a org:Site;
+    dcterms:created "13-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.371.246.
+_:address_contact_0771.360.430 a locn:Address;
+    locn:thoroughfare "Rue des Stations"@nl, "Rue des Stations"@fr;
+    rdfs:label "38";
+    locn:postCode "7191";
+    adres:gemeentenaam "Ecaussinnes"@nl, "Ecaussinnes"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0771.360.430 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0771.360.430.
+_:registration_company_0771.360.430 a adms:Identifier;
+    skos:notation "0771.360.430";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.371.246 a adms:Identifier;
+    skos:notation "2.320.371.246";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-07-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

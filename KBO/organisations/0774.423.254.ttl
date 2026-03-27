@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2008/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2025/28220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2822>, <http://vocab.belgif.be/auth/nace2025/2822>;
+    skos:definition "Vervaardiging van radiatoren en ketels voor centrale verwarming"@nl, "Fabrication de radiateurs et de chaudières pour le chauffage central"@fr;
+    skos:prefLabel "28220".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<https://data.vlaanderen.be/id/onderneming/0774.423.254> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "22-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0774.423.254;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/28220>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43212>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/43212>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0774.423.254;
+    reorg:legalName "Olmaco Solutions"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.321.840.104>.
+<https://data.vlaanderen.be/id/vestiging/2.321.840.104> a org:Site;
+    dcterms:created "22-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.321.840.104.
+_:address_contact_0774.423.254 a locn:Address;
+    locn:thoroughfare "Koning Albert I-laan"@nl, "Koning Albert I-laan"@fr;
+    rdfs:label "50";
+    locn:postCode "8200";
+    adres:gemeentenaam "Brugge"@nl, "Brugge"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0774.423.254 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "thibault.olivier@outlook.be";
+    locn:address _:address_contact_0774.423.254.
+_:registration_company_0774.423.254 a adms:Identifier;
+    skos:notation "0774.423.254";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.321.840.104 a adms:Identifier;
+    skos:notation "2.321.840.104";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-09-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2572>, <http://vocab.belgif.be/auth/nace2008/2572>;
+    skos:definition "Vervaardiging van hang- en sluitwerk"@nl, "Fabrication de serrures et de ferrures"@fr;
+    skos:prefLabel "25720".
+<http://vocab.belgif.be/auth/nace2025/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2562>, <http://vocab.belgif.be/auth/nace2025/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<https://data.vlaanderen.be/id/onderneming/0778.889.214> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0778.889.214;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25620>, <http://vocab.belgif.be/auth/nace2008/25720>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0778.889.214;
+    reorg:legalName "STEELUX Sa"@fr.
+_:address_contact_0778.889.214 a locn:Address;
+    locn:thoroughfare "Zone Industrielle Zare Est"@nl, "Zone Industrielle Zare Est"@fr;
+    rdfs:label "s. N°";
+    locn:postCode "4385";
+    adres:gemeentenaam "EHLERANGE"@nl, "EHLERANGE"@fr;
+    adres:land "Luxemburg (Groot-Hertogdom)"@nl, "Luxembourg (Grand-Duché)"@fr.
+_:contact_0778.889.214 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@steelux.lu";
+    schema:telephone "+352-26 55 601";
+    <http://xmlns.com/foaf/0.1/homepage> "steelux.lu/fr";
+    locn:address _:address_contact_0778.889.214.
+_:registration_company_0778.889.214 a adms:Identifier;
+    skos:notation "0778.889.214";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

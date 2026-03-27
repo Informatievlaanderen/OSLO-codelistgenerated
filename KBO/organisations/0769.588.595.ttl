@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5630>, <http://vocab.belgif.be/auth/nace2008/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2008/77392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van tenten"@nl, "Location et location-bail de tentes"@fr;
+    skos:prefLabel "77392".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/90021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9002>, <http://vocab.belgif.be/auth/nace2008/9002>;
+    skos:definition "Verzamelen, storten en verwerken van huisvuil, industrieel afval, landbouwafval en bouw- en sloopafval"@nl, "Ramassage, déversement et traitement des déchets des ménages et des entreprises, des déchets agricoles et des débris de construction ou de démolition"@fr;
+    skos:prefLabel "90021".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<http://vocab.belgif.be/auth/nace2025/77392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van tenten"@nl, "Location et location-bail de tentes"@fr;
+    skos:prefLabel "77392".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/90391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9039>, <http://vocab.belgif.be/auth/nace2025/9039>;
+    skos:definition "Promotie en organisatie van scheppende en uitvoerende kunstevenementen"@nl, "Promotion et organisation de créations artistiques et de spectacles"@fr;
+    skos:prefLabel "90391".
+<https://data.vlaanderen.be/id/onderneming/0769.588.595> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "17-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0769.588.595;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90391>, <http://vocab.belgif.be/auth/nace2025/77392>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/56301>, <http://vocab.belgif.be/auth/nace2008/56301>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/63990>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/77392>, <http://vocab.belgif.be/auth/nace2008/90021>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Stoop, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.318.200.624>.
+<https://data.vlaanderen.be/id/vestiging/2.318.200.624> a org:Site;
+    dcterms:created "17-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.318.200.624.
+_:registration_company_0769.588.595 a adms:Identifier;
+    skos:notation "0769.588.595";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.318.200.624 a adms:Identifier;
+    skos:notation "2.318.200.624";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-06-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

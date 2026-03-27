@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/46216> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in akkerbouwproducten en veevoeders, algemeen assortiment"@nl, "Commerce de gros d'aliments pour le bétail et de produits agricoles, assortiment général"@fr;
+    skos:prefLabel "46216".
+<http://vocab.belgif.be/auth/nace2008/81290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8129>, <http://vocab.belgif.be/auth/nace2008/8129>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81290".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/46216> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in akkerbouwproducten en veevoeders, algemeen assortiment"@nl, "Commerce de gros d'aliments pour le bétail et de produits agricoles, assortiment général"@fr;
+    skos:prefLabel "46216".
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0771.744.074> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0771.744.074;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/46216>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/81230>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/81290>, <http://vocab.belgif.be/auth/nace2008/46216>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/81300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0771.744.074;
+    reorg:legalName "Hattiez, Xavier";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.323.258.084>.
+<https://data.vlaanderen.be/id/vestiging/2.323.258.084> a org:Site;
+    dcterms:created "01-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.323.258.084.
+_:contact_0771.744.074 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "xavhatt137@gmail.com";
+    schema:telephone "0479357730".
+_:registration_company_0771.744.074 a adms:Identifier;
+    skos:notation "0771.744.074";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.323.258.084 a adms:Identifier;
+    skos:notation "2.323.258.084";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

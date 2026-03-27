@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1512>, <http://vocab.belgif.be/auth/nace2008/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2008/93127> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9312>, <http://vocab.belgif.be/auth/nace2008/9312>;
+    skos:definition "Activiteiten van paardensportclubs"@nl, "Activités de clubs équestres"@fr;
+    skos:prefLabel "93127".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/15120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1512>, <http://vocab.belgif.be/auth/nace2025/1512>;
+    skos:definition "Vervaardiging van koffers, tassen en dergelijke en van zadel- en  tuigmakerswerk"@nl, "Fabrication d'articles de voyage, de maroquinerie et de sellerie"@fr;
+    skos:prefLabel "15120".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/93127> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9312>, <http://vocab.belgif.be/auth/nace2025/9312>;
+    skos:definition "Activiteiten van paardensportclubs"@nl, "Activités de clubs équestres"@fr;
+    skos:prefLabel "93127".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0768.428.159> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0768.428.159;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/93127>, <http://vocab.belgif.be/auth/nace2025/15120>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2008/77399>, <http://vocab.belgif.be/auth/nace2008/15120>, <http://vocab.belgif.be/auth/nace2008/93127>, <http://vocab.belgif.be/auth/nace2008/96099>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0768.428.159;
+    reorg:legalName "BD MAINTENANCE & CONSULTING"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.317.730.866>.
+<https://data.vlaanderen.be/id/vestiging/2.317.730.866> a org:Site;
+    dcterms:created "17-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.317.730.866.
+_:address_contact_0768.428.159 a locn:Address;
+    locn:thoroughfare "Molenveld"@nl, "Molenveld"@fr;
+    rdfs:label "31";
+    locn:postCode "1840";
+    adres:gemeentenaam "Londerzeel"@nl, "Londerzeel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0768.428.159 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0768.428.159.
+_:registration_company_0768.428.159 a adms:Identifier;
+    skos:notation "0768.428.159";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.317.730.866 a adms:Identifier;
+    skos:notation "2.317.730.866";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

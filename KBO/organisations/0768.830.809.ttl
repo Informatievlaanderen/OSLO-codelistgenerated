@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4110>, <http://vocab.belgif.be/auth/nace2008/4110>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "41102".
+<http://vocab.belgif.be/auth/nace2008/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2025/42219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van civieltechnische werken voor vloeistoffen, n.e.g."@nl, "Construction de réseaux pour fluides n.c.a."@fr;
+    skos:prefLabel "42219".
+<http://vocab.belgif.be/auth/nace2025/68122> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6812>, <http://vocab.belgif.be/auth/nace2025/6812>;
+    skos:definition "Ontwikkeling van niet-residentiële bouwprojecten"@nl, "Promotion immobilière non résidentielle"@fr;
+    skos:prefLabel "68122".
+<https://data.vlaanderen.be/id/onderneming/0768.830.809> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "18-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0768.830.809;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68122>, <http://vocab.belgif.be/auth/nace2025/42219>, <http://vocab.belgif.be/auth/nace2008/41102>, <http://vocab.belgif.be/auth/nace2008/42219>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0768.830.809;
+    reorg:legalName "ASSOCIATION MOMENTANEE JOHN COCKERILL BALTEAU WUST ESSITY"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.320.212.086>.
+<https://data.vlaanderen.be/id/vestiging/2.320.212.086> a org:Site;
+    dcterms:created "18-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.320.212.086.
+_:address_contact_0768.830.809 a locn:Address;
+    locn:thoroughfare "Rue de la Légende"@nl, "Rue de la Légende"@fr;
+    rdfs:label "63";
+    locn:postCode "4141";
+    adres:gemeentenaam "Sprimont"@nl, "Sprimont"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0768.830.809 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "steve.habran@johncockerill.com";
+    schema:telephone "042283007";
+    locn:address _:address_contact_0768.830.809.
+_:registration_company_0768.830.809 a adms:Identifier;
+    skos:notation "0768.830.809";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.320.212.086 a adms:Identifier;
+    skos:notation "2.320.212.086";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-05-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

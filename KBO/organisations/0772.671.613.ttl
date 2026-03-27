@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen in gespecialiseerde winkels, n.e.g."@nl, "Commerce de détail d'autres articles de ménage en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47599".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<https://data.vlaanderen.be/id/onderneming/0772.671.613> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/612>;
+    dcterms:created "19-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0772.671.613;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2008/47599>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/74109>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0772.671.613;
+    reorg:legalName "BLOOM IN BELGIUM"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.321.048.761>.
+<https://data.vlaanderen.be/id/vestiging/2.321.048.761> a org:Site;
+    dcterms:created "19-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.321.048.761.
+_:address_contact_0772.671.613 a locn:Address;
+    locn:thoroughfare "Rue du Monument"@nl, "Rue du Monument"@fr;
+    rdfs:label "4";
+    locn:postCode "6560";
+    adres:gemeentenaam "Erquelinnes"@nl, "Erquelinnes"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0772.671.613 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "camille.delafontaine@hotmail.com";
+    schema:telephone "+32491878730";
+    locn:address _:address_contact_0772.671.613.
+_:registration_company_0772.671.613 a adms:Identifier;
+    skos:notation "0772.671.613";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.321.048.761 a adms:Identifier;
+    skos:notation "2.321.048.761";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "19-08-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

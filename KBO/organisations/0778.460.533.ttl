@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van andere kleding en toebehoren, n.e.g."@nl, "Fabrication d'autres vêtements et accessoires n.c.a."@fr;
+    skos:prefLabel "14199".
+<http://vocab.belgif.be/auth/nace2008/47599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen in gespecialiseerde winkels, n.e.g."@nl, "Commerce de détail d'autres articles de ménage en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47599".
+<http://vocab.belgif.be/auth/nace2008/47786> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in souvenirs en religieuze artikelen in gespecialiseerde winkels"@nl, "Commerce de détail de souvenirs et d'articles religieux en magasin spécialisé"@fr;
+    skos:prefLabel "47786".
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/74101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Ontwerpen van textielpatronen, kleding, juwelen, meubels en decoratieartikelen"@nl, "Création de modèles pour les biens personnels et domestiques"@fr;
+    skos:prefLabel "74101".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47559> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in andere huishoudelijke artikelen, neg"@nl, "Commerce de détail d'autres articles de ménage nca"@fr;
+    skos:prefLabel "47559".
+<http://vocab.belgif.be/auth/nace2025/47784> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in drogisterijartikelen en onderhoudsproducten in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de droguerie et de produits d'entretien en magasin spécialisé"@fr;
+    skos:prefLabel "47784".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<https://data.vlaanderen.be/id/onderneming/0778.460.533> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0778.460.533;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/47559>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/47784>, <http://vocab.belgif.be/auth/nace2008/14199>, <http://vocab.belgif.be/auth/nace2008/47786>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47890>, <http://vocab.belgif.be/auth/nace2008/47599>, <http://vocab.belgif.be/auth/nace2008/74101>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0778.460.533;
+    reorg:legalName "Dumont, Vanessa";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.324.802.661>.
+<https://data.vlaanderen.be/id/vestiging/2.324.802.661> a org:Site;
+    dcterms:created "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.802.661.
+_:contact_0778.460.533 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "van_dumont@yahoo.fr";
+    schema:telephone "+32478280048".
+_:registration_company_0778.460.533 a adms:Identifier;
+    skos:notation "0778.460.533";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.802.661 a adms:Identifier;
+    skos:notation "2.324.802.661";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

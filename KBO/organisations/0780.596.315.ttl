@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4540>, <http://vocab.belgif.be/auth/nace2008/4540>;
+    skos:definition "Detailhandel in en onderhoud en reparatie van motorfietsen en delen en toebehoren van motorfietsen"@nl, "Entretien, réparation et commerce de détail de motocycles, y compris les pièces et accessoires"@fr;
+    skos:prefLabel "45402".
+<http://vocab.belgif.be/auth/nace2008/47785> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fietsen in gespecialiseerde winkels"@nl, "Commerce de détail de cycles en magasin spécialisé"@fr;
+    skos:prefLabel "47785".
+<http://vocab.belgif.be/auth/nace2025/47632> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in fietsen"@nl, "Commerce de détail de cycles"@fr;
+    skos:prefLabel "47632".
+<http://vocab.belgif.be/auth/nace2025/47830> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4783>, <http://vocab.belgif.be/auth/nace2025/4783>;
+    skos:definition "Detailhandel in motorrijwielen, delen en toebehoren van motorrijwielen"@nl, "Commerce de détail de motocycles et de pièces et accessoires de motocycles"@fr;
+    skos:prefLabel "47830".
+<https://data.vlaanderen.be/id/onderneming/0780.596.315> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0780.596.315;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47632>, <http://vocab.belgif.be/auth/nace2025/47830>, <http://vocab.belgif.be/auth/nace2008/47785>, <http://vocab.belgif.be/auth/nace2008/45402>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Van Laer, Hilde";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.326.400.488>.
+<https://data.vlaanderen.be/id/vestiging/2.326.400.488> a org:Site;
+    dcterms:created "02-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.326.400.488.
+_:registration_company_0780.596.315 a adms:Identifier;
+    skos:notation "0780.596.315";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.326.400.488 a adms:Identifier;
+    skos:notation "2.326.400.488";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
