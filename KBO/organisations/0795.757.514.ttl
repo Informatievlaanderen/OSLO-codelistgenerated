@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/77391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van speel-, amusement-, en verkoopautomaten"@nl, "Location et location-bail de machines à sous, de machines de jeux et de machines automatiques de vente de produits"@fr;
+    skos:prefLabel "77391".
+<http://vocab.belgif.be/auth/nace2008/77392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van tenten"@nl, "Location et location-bail de tentes"@fr;
+    skos:prefLabel "77392".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/55209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Vakantieverblijven en andere accommodatie voor kort verblijf, n.e.g."@nl, "Hébergement touristique et autre hébergement de courte durée n.c.a."@fr;
+    skos:prefLabel "55209".
+<http://vocab.belgif.be/auth/nace2025/55300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5530>, <http://vocab.belgif.be/auth/nace2025/5530>;
+    skos:definition "Kampeerterreinen en kampeerauto- en caravanterreinen"@nl, "Terrains de camping et parcs pour caravanes ou véhicules de loisirs"@fr;
+    skos:prefLabel "55300".
+<http://vocab.belgif.be/auth/nace2025/77391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van speel-, amusement-, en verkoopautomaten"@nl, "Location et location-bail de machines à sous, de machines de jeux et de machines automatiques de vente de produits"@fr;
+    skos:prefLabel "77391".
+<http://vocab.belgif.be/auth/nace2025/77392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van tenten"@nl, "Location et location-bail de tentes"@fr;
+    skos:prefLabel "77392".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0795.757.514> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "02-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0795.757.514;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/55300>, <http://vocab.belgif.be/auth/nace2025/77391>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/77392>, <http://vocab.belgif.be/auth/nace2025/55209>, <http://vocab.belgif.be/auth/nace2008/77392>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/77391>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Gheenens, Elien";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.339.634.258>.
+<https://data.vlaanderen.be/id/vestiging/2.339.634.258> a org:Site;
+    dcterms:created "02-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.339.634.258.
+_:registration_company_0795.757.514 a adms:Identifier;
+    skos:notation "0795.757.514";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.339.634.258 a adms:Identifier;
+    skos:notation "2.339.634.258";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "02-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

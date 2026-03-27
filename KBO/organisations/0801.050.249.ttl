@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1071>, <http://vocab.belgif.be/auth/nace2008/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2008/88919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8891>, <http://vocab.belgif.be/auth/nace2008/8891>;
+    skos:definition "Overige kinderopvang"@nl, "Autre action sociale sans hébergement pour jeunes enfants"@fr;
+    skos:prefLabel "88919".
+<http://vocab.belgif.be/auth/nace2025/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1071>, <http://vocab.belgif.be/auth/nace2025/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/88919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8891>, <http://vocab.belgif.be/auth/nace2025/8891>;
+    skos:definition "Overige kinderopvang"@nl, "Autre action sociale sans hébergement pour jeunes enfants"@fr;
+    skos:prefLabel "88919".
+<https://data.vlaanderen.be/id/onderneming/0801.050.249> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0801.050.249;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/88919>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2025/10712>, <http://vocab.belgif.be/auth/nace2008/88919>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/10712>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Wils, Isabelle";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.263.039>.
+<https://data.vlaanderen.be/id/vestiging/2.344.263.039> a org:Site;
+    dcterms:created "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.263.039.
+_:registration_company_0801.050.249 a adms:Identifier;
+    skos:notation "0801.050.249";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.263.039 a adms:Identifier;
+    skos:notation "2.344.263.039";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

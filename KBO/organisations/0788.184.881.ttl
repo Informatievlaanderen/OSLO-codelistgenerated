@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3240>, <http://vocab.belgif.be/auth/nace2008/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2008/69109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6910>, <http://vocab.belgif.be/auth/nace2008/6910>;
+    skos:definition "Overige rechtskundige dienstverlening"@nl, "Autres activités juridiques"@fr;
+    skos:prefLabel "69109".
+<http://vocab.belgif.be/auth/nace2008/69201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6920>, <http://vocab.belgif.be/auth/nace2008/6920>;
+    skos:definition "Accountants en belastingconsulenten"@nl, "Activités des experts-comptables et des conseils fiscaux"@fr;
+    skos:prefLabel "69201".
+<http://vocab.belgif.be/auth/nace2025/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3240>, <http://vocab.belgif.be/auth/nace2025/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2025/69109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6910>, <http://vocab.belgif.be/auth/nace2025/6910>;
+    skos:definition "Overige rechtskundige dienstverlening"@nl, "Autres activités juridiques"@fr;
+    skos:prefLabel "69109".
+<http://vocab.belgif.be/auth/nace2025/69202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6920>, <http://vocab.belgif.be/auth/nace2025/6920>;
+    skos:definition "Boekhouders en boekhouders-fiscalisten"@nl, "Activités des comptables et des comptables-fiscalistes"@fr;
+    skos:prefLabel "69202".
+<https://data.vlaanderen.be/id/onderneming/0788.184.881> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0788.184.881;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/69109>, <http://vocab.belgif.be/auth/nace2025/32400>, <http://vocab.belgif.be/auth/nace2025/69202>, <http://vocab.belgif.be/auth/nace2008/32400>, <http://vocab.belgif.be/auth/nace2008/69201>, <http://vocab.belgif.be/auth/nace2008/69109>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0788.184.881;
+    reorg:legalName "Kestemont, Thierry";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.332.760.225>, <https://data.vlaanderen.be/id/vestiging/2.364.406.078>, <https://data.vlaanderen.be/id/vestiging/2.379.126.324>.
+<https://data.vlaanderen.be/id/vestiging/2.332.760.225> a org:Site;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.332.760.225.
+<https://data.vlaanderen.be/id/vestiging/2.364.406.078> a org:Site;
+    dcterms:created "24-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.364.406.078.
+<https://data.vlaanderen.be/id/vestiging/2.379.126.324> a org:Site;
+    dcterms:created "01-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.379.126.324.
+_:contact_0788.184.881 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "tkt@skynet.be";
+    schema:telephone "+41764793377".
+_:registration_company_0788.184.881 a adms:Identifier;
+    skos:notation "0788.184.881";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.332.760.225 a adms:Identifier;
+    skos:notation "2.332.760.225";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.364.406.078 a adms:Identifier;
+    skos:notation "2.364.406.078";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.379.126.324 a adms:Identifier;
+    skos:notation "2.379.126.324";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1392>, <http://vocab.belgif.be/auth/nace2008/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2008/13929> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1392>, <http://vocab.belgif.be/auth/nace2008/1392>;
+    skos:definition "Vervaardiging van overige geconfectioneerde artikelen van textiel, m.u.v. kleding"@nl, "Fabrication d'autres articles textiles confectionnés, sauf habillement"@fr;
+    skos:prefLabel "13929".
+<http://vocab.belgif.be/auth/nace2008/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1396>, <http://vocab.belgif.be/auth/nace2008/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2008/14120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1412>, <http://vocab.belgif.be/auth/nace2008/1412>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14120".
+<http://vocab.belgif.be/auth/nace2008/14130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1413>, <http://vocab.belgif.be/auth/nace2008/1413>;
+    skos:definition "Winning van leisteen"@nl, "Extraction d'ardoise"@fr;
+    skos:prefLabel "14130".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2025/13929> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van overige geconfectioneerde artikelen van textiel, m.u.v. kleding"@nl, "Fabrication d'autres articles textiles confectionnés, sauf habillement"@fr;
+    skos:prefLabel "13929".
+<http://vocab.belgif.be/auth/nace2025/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1396>, <http://vocab.belgif.be/auth/nace2025/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/14230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1423>, <http://vocab.belgif.be/auth/nace2025/1423>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14230".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/0804.832.160> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "16-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0804.832.160;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13929>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/14230>, <http://vocab.belgif.be/auth/nace2025/13921>, <http://vocab.belgif.be/auth/nace2025/14210>, <http://vocab.belgif.be/auth/nace2025/13960>, <http://vocab.belgif.be/auth/nace2008/14120>, <http://vocab.belgif.be/auth/nace2008/13921>, <http://vocab.belgif.be/auth/nace2008/14130>, <http://vocab.belgif.be/auth/nace2008/13929>, <http://vocab.belgif.be/auth/nace2008/13960>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0804.832.160;
+    reorg:legalName "NPCONCEPT"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.349.273.286>.
+<https://data.vlaanderen.be/id/vestiging/2.349.273.286> a org:Site;
+    dcterms:created "16-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.349.273.286.
+_:address_contact_0804.832.160 a locn:Address;
+    locn:thoroughfare "Clos du Blautier(GOU)"@nl, "Clos du Blautier(GOU)"@fr;
+    rdfs:label "7";
+    locn:postCode "6280";
+    adres:gemeentenaam "Gerpinnes"@nl, "Gerpinnes"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0804.832.160 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0804.832.160.
+_:registration_company_0804.832.160 a adms:Identifier;
+    skos:notation "0804.832.160";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.349.273.286 a adms:Identifier;
+    skos:notation "2.349.273.286";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

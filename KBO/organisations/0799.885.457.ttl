@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0220>, <http://vocab.belgif.be/auth/nace2008/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2008/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0240>, <http://vocab.belgif.be/auth/nace2008/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2008/16291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1629>, <http://vocab.belgif.be/auth/nace2008/1629>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16291".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0240>, <http://vocab.belgif.be/auth/nace2025/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0799.885.457> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0799.885.457;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/02400>, <http://vocab.belgif.be/auth/nace2025/16281>, <http://vocab.belgif.be/auth/nace2008/02200>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/02100>, <http://vocab.belgif.be/auth/nace2008/16291>, <http://vocab.belgif.be/auth/nace2008/02400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0799.885.457;
+    reorg:legalName "Marion, Erwan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.342.988.082>.
+<https://data.vlaanderen.be/id/vestiging/2.342.988.082> a org:Site;
+    dcterms:created "01-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.342.988.082.
+_:contact_0799.885.457 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "marionerwan@hotmail.be";
+    schema:telephone "0478636614".
+_:registration_company_0799.885.457 a adms:Identifier;
+    skos:notation "0799.885.457";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.342.988.082 a adms:Identifier;
+    skos:notation "2.342.988.082";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

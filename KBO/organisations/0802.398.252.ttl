@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5520>, <http://vocab.belgif.be/auth/nace2008/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<http://vocab.belgif.be/auth/nace2025/55203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5520>, <http://vocab.belgif.be/auth/nace2025/5520>;
+    skos:definition "Gites, vakantiewoningen en -appartementen"@nl, "Gîtes de vacances, appartements et meublés de vacances"@fr;
+    skos:prefLabel "55203".
+<https://data.vlaanderen.be/id/onderneming/0802.398.252> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0802.398.252;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/55203>, <http://vocab.belgif.be/auth/nace2008/55203>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0802.398.252;
+    reorg:legalName "Devos, Youri".
+_:contact_0802.398.252 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0488/099006".
+_:registration_company_0802.398.252 a adms:Identifier;
+    skos:notation "0802.398.252";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

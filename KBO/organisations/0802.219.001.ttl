@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890".
+<http://vocab.belgif.be/auth/nace2008/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2008/96040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9604>, <http://vocab.belgif.be/auth/nace2008/9604>;
+    skos:definition "Sauna's, solaria, baden enz."@nl, "Entretien corporel"@fr;
+    skos:prefLabel "96040".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<http://vocab.belgif.be/auth/nace2025/85593> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Sociaal-cultureel vormingswerk"@nl, "Formation socio-culturelle"@fr;
+    skos:prefLabel "85593".
+<http://vocab.belgif.be/auth/nace2025/96230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9623>, <http://vocab.belgif.be/auth/nace2025/9623>;
+    skos:definition "Activiteiten van kuuroorden, sauna’s en stoombaden"@nl, "Activités de spa de jour, de sauna et de bain de vapeur"@fr;
+    skos:prefLabel "96230".
+<https://data.vlaanderen.be/id/onderneming/0802.219.001> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0802.219.001;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/96230>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/85593>, <http://vocab.belgif.be/auth/nace2008/47750>, <http://vocab.belgif.be/auth/nace2008/85593>, <http://vocab.belgif.be/auth/nace2008/96040>, <http://vocab.belgif.be/auth/nace2008/47890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0802.219.001;
+    reorg:legalName "Bassanello, Virginie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.345.479.301>.
+<https://data.vlaanderen.be/id/vestiging/2.345.479.301> a org:Site;
+    dcterms:created "15-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.345.479.301.
+_:contact_0802.219.001 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "vbassanello@ecomail.be";
+    schema:telephone "+32499502236".
+_:registration_company_0802.219.001 a adms:Identifier;
+    skos:notation "0802.219.001";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.345.479.301 a adms:Identifier;
+    skos:notation "2.345.479.301";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

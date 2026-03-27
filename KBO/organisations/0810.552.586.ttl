@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/25501> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2550>, <http://vocab.belgif.be/auth/nace2008/2550>;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "25501".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/25401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2540>, <http://vocab.belgif.be/auth/nace2025/2540>;
+    skos:definition "Smeden van metaal"@nl, "Forgeage de métal"@fr;
+    skos:prefLabel "25401".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<https://data.vlaanderen.be/id/onderneming/0810.552.586> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0810.552.586;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/25401>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2008/25501>, <http://vocab.belgif.be/auth/nace2008/25999>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/25620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0810.552.586;
+    reorg:legalName "Blanchez, Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.176.870.931>.
+<https://data.vlaanderen.be/id/vestiging/2.176.870.931> a org:Site;
+    dcterms:created "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.176.870.931.
+_:contact_0810.552.586 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0479/204448".
+_:registration_company_0810.552.586 a adms:Identifier;
+    skos:notation "0810.552.586";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.176.870.931 a adms:Identifier;
+    skos:notation "2.176.870.931";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

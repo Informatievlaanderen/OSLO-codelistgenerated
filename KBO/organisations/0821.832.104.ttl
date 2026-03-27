@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/24200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2420>, <http://vocab.belgif.be/auth/nace2008/2420>;
+    skos:definition "Vervaardiging van verdelgingsmiddelen en van andere chemische producten voor de landbouw"@nl, "Fabrication de produits agrochimiques"@fr;
+    skos:prefLabel "24200".
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2512>, <http://vocab.belgif.be/auth/nace2008/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2008/25290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2529>, <http://vocab.belgif.be/auth/nace2008/2529>;
+    skos:definition "Vervaardiging van andere tanks, reservoirs en bergingsmiddelen, van metaal"@nl, "Fabrication d'autres réservoirs, citernes et conteneurs métalliques"@fr;
+    skos:prefLabel "25290".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/28110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2811>, <http://vocab.belgif.be/auth/nace2008/2811>;
+    skos:definition "Vervaardiging van metalen constructiewerken en onderdelen daarvan"@nl, "Fabrication de constructions métalliques et de leurs parties"@fr;
+    skos:prefLabel "28110".
+<http://vocab.belgif.be/auth/nace2025/24200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2420>, <http://vocab.belgif.be/auth/nace2025/2420>;
+    skos:definition "Vervaardiging van verdelgingsmiddelen en van andere chemische producten voor de landbouw"@nl, "Fabrication de produits agrochimiques"@fr;
+    skos:prefLabel "24200".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2512>, <http://vocab.belgif.be/auth/nace2025/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2025/25220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2522>, <http://vocab.belgif.be/auth/nace2025/2522>;
+    skos:definition "Vervaardiging van verpakkingsmateriaal van kunststof"@nl, "Fabrication d'emballages en matières plastiques"@fr;
+    skos:prefLabel "25220".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/28110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2811>, <http://vocab.belgif.be/auth/nace2025/2811>;
+    skos:definition "Vervaardiging van metalen constructiewerken en onderdelen daarvan"@nl, "Fabrication de constructions métalliques et de leurs parties"@fr;
+    skos:prefLabel "28110".
+<https://data.vlaanderen.be/id/onderneming/0821.832.104> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0821.832.104;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/25220>, <http://vocab.belgif.be/auth/nace2025/24200>, <http://vocab.belgif.be/auth/nace2025/28110>, <http://vocab.belgif.be/auth/nace2025/25120>, <http://vocab.belgif.be/auth/nace2008/25120>, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/24200>, <http://vocab.belgif.be/auth/nace2008/25290>, <http://vocab.belgif.be/auth/nace2008/28110>, <http://vocab.belgif.be/auth/nace2008/25110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Renders, Dries";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.183.557.102>.
+<https://data.vlaanderen.be/id/vestiging/2.183.557.102> a org:Site;
+    dcterms:created "01-01-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.183.557.102.
+_:registration_company_0821.832.104 a adms:Identifier;
+    skos:notation "0821.832.104";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.183.557.102 a adms:Identifier;
+    skos:notation "2.183.557.102";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

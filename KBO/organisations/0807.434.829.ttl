@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311".
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310".
+<https://data.vlaanderen.be/id/onderneming/0807.434.829> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0807.434.829;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/68310>, <http://vocab.belgif.be/auth/nace2008/68311>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Birnfeld, Steeve";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.173.908.075>.
+<https://data.vlaanderen.be/id/vestiging/2.173.908.075> a org:Site;
+    dcterms:created "03-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.173.908.075.
+_:registration_company_0807.434.829 a adms:Identifier;
+    skos:notation "0807.434.829";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.173.908.075 a adms:Identifier;
+    skos:notation "2.173.908.075";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

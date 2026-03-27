@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1392>, <http://vocab.belgif.be/auth/nace2008/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2008/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3240>, <http://vocab.belgif.be/auth/nace2008/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/13921> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van beddengoed, tafellinnen en textielwaren voor huishoudelijk gebruik"@nl, "Fabrication de linge de lit et de table et d'articles textiles à usage domestique"@fr;
+    skos:prefLabel "13921".
+<http://vocab.belgif.be/auth/nace2025/32400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3240>, <http://vocab.belgif.be/auth/nace2025/3240>;
+    skos:definition "Vervaardiging van spellen en speelgoed"@nl, "Fabrication de jeux et de jouets"@fr;
+    skos:prefLabel "32400".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<https://data.vlaanderen.be/id/onderneming/0787.230.125> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0787.230.125;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/32400>, <http://vocab.belgif.be/auth/nace2025/13921>, <http://vocab.belgif.be/auth/nace2008/32400>, <http://vocab.belgif.be/auth/nace2008/13921>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Nélisse, Lizzy".
+_:registration_company_0787.230.125 a adms:Identifier;
+    skos:notation "0787.230.125";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

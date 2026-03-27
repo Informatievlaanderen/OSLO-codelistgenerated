@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2008/43222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4322>, <http://vocab.belgif.be/auth/nace2008/4322>;
+    skos:definition "Installatie van verwarming, klimaatregeling en ventilatie"@nl, "Installation de chauffage, de ventilation et de conditionnement d'air"@fr;
+    skos:prefLabel "43222".
+<http://vocab.belgif.be/auth/nace2008/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4333>, <http://vocab.belgif.be/auth/nace2008/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<http://vocab.belgif.be/auth/nace2008/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/43221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Loodgieterswerk"@nl, "Travaux de plomberie"@fr;
+    skos:prefLabel "43221".
+<http://vocab.belgif.be/auth/nace2025/43222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4322>, <http://vocab.belgif.be/auth/nace2025/4322>;
+    skos:definition "Installatie van verwarming, klimaatregeling en ventilatie"@nl, "Installation de chauffage, de ventilation et de conditionnement d'air"@fr;
+    skos:prefLabel "43222".
+<http://vocab.belgif.be/auth/nace2025/43331> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4333>, <http://vocab.belgif.be/auth/nace2025/4333>;
+    skos:definition "Plaatsen van vloer- en wandtegels"@nl, "Pose de carrelages de sols et de murs"@fr;
+    skos:prefLabel "43331".
+<http://vocab.belgif.be/auth/nace2025/47527> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in sanitaire artikelen en sanitair installatiemateriaal in gespecialiseerde winkels"@nl, "Commerce de détail d'articles et de matériels d'installations sanitaires en magasin spécialisé"@fr;
+    skos:prefLabel "47527".
+<http://vocab.belgif.be/auth/nace2025/68201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6820>, <http://vocab.belgif.be/auth/nace2025/6820>;
+    skos:definition "Verhuur en exploitatie van eigen of geleasd residentieel onroerend goed, exclusief sociale woningen"@nl, "Location et exploitation de biens immobiliers résidentiels propres ou loués, sauf logements sociaux"@fr;
+    skos:prefLabel "68201".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0799.202.202> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0799.202.202;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/43331>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43221>, <http://vocab.belgif.be/auth/nace2025/47527>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/68201>, <http://vocab.belgif.be/auth/nace2025/43222>, <http://vocab.belgif.be/auth/nace2008/43331>, <http://vocab.belgif.be/auth/nace2008/47527>, <http://vocab.belgif.be/auth/nace2008/43222>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/43221>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0799.202.202;
+    reorg:legalName "VB Technics"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.343.379.448>.
+<https://data.vlaanderen.be/id/vestiging/2.343.379.448> a org:Site;
+    dcterms:created "06-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.343.379.448.
+_:address_contact_0799.202.202 a locn:Address;
+    locn:thoroughfare "Wakkensteenweg(S.B.V.)"@nl, "Wakkensteenweg(S.B.V.)"@fr;
+    rdfs:label "156";
+    locn:postCode "8710";
+    adres:gemeentenaam "Wielsbeke"@nl, "Wielsbeke"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0799.202.202 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0799.202.202.
+_:registration_company_0799.202.202 a adms:Identifier;
+    skos:notation "0799.202.202";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.343.379.448 a adms:Identifier;
+    skos:notation "2.343.379.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

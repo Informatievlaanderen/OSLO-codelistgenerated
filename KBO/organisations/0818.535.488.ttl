@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4643>, <http://vocab.belgif.be/auth/nace2008/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2008/47730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4773>, <http://vocab.belgif.be/auth/nace2008/4773>;
+    skos:definition "Apotheken"@nl, "Commerce de détail de produits pharmaceutiques en magasin spécialisé"@fr;
+    skos:prefLabel "47730".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/77292> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7729>, <http://vocab.belgif.be/auth/nace2008/7729>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77292".
+<http://vocab.belgif.be/auth/nace2025/46431> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4643>, <http://vocab.belgif.be/auth/nace2025/4643>;
+    skos:definition "Groothandel in elektrische huishoudelijke apparaten en audio- en videoapparatuur"@nl, "Commerce de gros d'appareils électroménagers et audio-vidéo"@fr;
+    skos:prefLabel "46431".
+<http://vocab.belgif.be/auth/nace2025/47730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4773>, <http://vocab.belgif.be/auth/nace2025/4773>;
+    skos:definition "Apotheken"@nl, "Commerce de détail de produits pharmaceutiques en magasin spécialisé"@fr;
+    skos:prefLabel "47730".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/77222> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7722>, <http://vocab.belgif.be/auth/nace2025/7722>;
+    skos:definition "Verhuur en lease van televisietoestellen en andere audio- en videoapparatuur"@nl, "Location et location-bail de téléviseurs et d'autres appareils audiovisuels"@fr;
+    skos:prefLabel "77222".
+<https://data.vlaanderen.be/id/onderneming/0818.535.488> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0818.535.488;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47730>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46431>, <http://vocab.belgif.be/auth/nace2025/77222>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2008/47730>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/77292>, <http://vocab.belgif.be/auth/nace2008/46431>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0818.535.488;
+    reorg:legalName "DE RUYCK PHARMA"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.182.081.712>, <https://data.vlaanderen.be/id/vestiging/2.257.121.605>.
+<https://data.vlaanderen.be/id/vestiging/2.182.081.712> a org:Site;
+    dcterms:created "07-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.182.081.712.
+<https://data.vlaanderen.be/id/vestiging/2.257.121.605> a org:Site;
+    dcterms:created "20-09-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.257.121.605.
+_:address_contact_0818.535.488 a locn:Address;
+    locn:thoroughfare "Aarseleweg"@nl, "Aarseleweg"@fr;
+    rdfs:label "2";
+    locn:postCode "9800";
+    adres:gemeentenaam "Deinze"@nl, "Deinze"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0818.535.488 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0818.535.488.
+_:registration_company_0818.535.488 a adms:Identifier;
+    skos:notation "0818.535.488";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.182.081.712 a adms:Identifier;
+    skos:notation "2.182.081.712";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.257.121.605 a adms:Identifier;
+    skos:notation "2.257.121.605";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

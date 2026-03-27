@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46499> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in andere consumentenartikelen, n.e.g."@nl, "Commerce de gros d'autres biens domestiques n.c.a."@fr;
+    skos:prefLabel "46499".
+<http://vocab.belgif.be/auth/nace2008/46520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4652>, <http://vocab.belgif.be/auth/nace2008/4652>;
+    skos:definition "Groothandel in elektronische en telecommunicatieapparatuur en delen  daarvan"@nl, "Commerce de gros de composants et d'équipements électroniques et de télécommunication"@fr;
+    skos:prefLabel "46520".
+<http://vocab.belgif.be/auth/nace2008/46769> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4676>, <http://vocab.belgif.be/auth/nace2008/4676>;
+    skos:definition "Groothandel in andere intermediaire producten, n.e.g."@nl, "Commerce de gros d'autres produits intermédiaires n.c.a."@fr;
+    skos:prefLabel "46769".
+<http://vocab.belgif.be/auth/nace2008/80200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8020>, <http://vocab.belgif.be/auth/nace2008/8020>;
+    skos:definition "Diensten in verband met beveiligingssystemen"@nl, "Activités liées aux systèmes de sécurité"@fr;
+    skos:prefLabel "80200".
+<http://vocab.belgif.be/auth/nace2025/46499> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in andere consumentenartikelen, n.e.g."@nl, "Commerce de gros d'autres biens domestiques n.c.a."@fr;
+    skos:prefLabel "46499".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/46869> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4686>, <http://vocab.belgif.be/auth/nace2025/4686>;
+    skos:definition "Groothandel in andere intermediaire producten, neg"@nl, "Commerce de gros d'autres produits intermédiaires nca"@fr;
+    skos:prefLabel "46869".
+<http://vocab.belgif.be/auth/nace2025/80090> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8009>, <http://vocab.belgif.be/auth/nace2025/8009>;
+    skos:definition "Beveiligingsactiviteiten, neg"@nl, "Activités de sécurité nca"@fr;
+    skos:prefLabel "80090".
+<https://data.vlaanderen.be/id/onderneming/0830.104.521> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0830.104.521;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46499>, <http://vocab.belgif.be/auth/nace2025/46869>, <http://vocab.belgif.be/auth/nace2025/80090>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2008/46520>, <http://vocab.belgif.be/auth/nace2008/46499>, <http://vocab.belgif.be/auth/nace2008/80200>, <http://vocab.belgif.be/auth/nace2008/46769>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0830.104.521;
+    reorg:legalName "DNC TAG"@fr, "DNCT"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.192.717.761>.
+<https://data.vlaanderen.be/id/vestiging/2.192.717.761> a org:Site;
+    dcterms:created "08-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.192.717.761.
+_:address_contact_0830.104.521 a locn:Address;
+    locn:thoroughfare "Rue de Moriensart"@nl, "Rue de Moriensart"@fr;
+    rdfs:label "8";
+    locn:postCode "1341";
+    adres:gemeentenaam "Ottignies-Louvain-la-Neuve"@nl, "Ottignies-Louvain-la-Neuve"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0830.104.521 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0830.104.521.
+_:registration_company_0830.104.521 a adms:Identifier;
+    skos:notation "0830.104.521";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.192.717.761 a adms:Identifier;
+    skos:notation "2.192.717.761";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

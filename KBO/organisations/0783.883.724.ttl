@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3900>, <http://vocab.belgif.be/auth/nace2008/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2008/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4211>, <http://vocab.belgif.be/auth/nace2008/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2008/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4221>, <http://vocab.belgif.be/auth/nace2008/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2008/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4311>, <http://vocab.belgif.be/auth/nace2008/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2025/39000> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3900>, <http://vocab.belgif.be/auth/nace2025/3900>;
+    skos:definition "Sanering en ander afvalbeheer"@nl, "Dépollution et autres services de gestion des déchets"@fr;
+    skos:prefLabel "39000".
+<http://vocab.belgif.be/auth/nace2025/42110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4211>, <http://vocab.belgif.be/auth/nace2025/4211>;
+    skos:definition "Bouw van autowegen en andere wegen"@nl, "Construction de routes et d'autoroutes"@fr;
+    skos:prefLabel "42110".
+<http://vocab.belgif.be/auth/nace2025/42212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4221>, <http://vocab.belgif.be/auth/nace2025/4221>;
+    skos:definition "Bouw van rioleringen"@nl, "Construction de réseaux d'évacuation des eaux usées"@fr;
+    skos:prefLabel "42212".
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2025/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4311>, <http://vocab.belgif.be/auth/nace2025/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<https://data.vlaanderen.be/id/onderneming/0783.883.724> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "04-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0783.883.724;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2025/42110>, <http://vocab.belgif.be/auth/nace2025/39000>, <http://vocab.belgif.be/auth/nace2025/42212>, <http://vocab.belgif.be/auth/nace2025/43110>, <http://vocab.belgif.be/auth/nace2008/43110>, <http://vocab.belgif.be/auth/nace2008/42212>, <http://vocab.belgif.be/auth/nace2008/42919>, <http://vocab.belgif.be/auth/nace2008/42110>, <http://vocab.belgif.be/auth/nace2008/39000>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0783.883.724;
+    reorg:legalName "T.M. VDK \"Paalsteenlaan Lanaken\""@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.329.222.495>.
+<https://data.vlaanderen.be/id/vestiging/2.329.222.495> a org:Site;
+    dcterms:created "04-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.329.222.495.
+_:address_contact_0783.883.724 a locn:Address;
+    locn:thoroughfare "Thor Park"@nl, "Thor Park"@fr;
+    rdfs:label "8080";
+    adres:busnummer "2";
+    locn:postCode "3600";
+    adres:gemeentenaam "Genk"@nl, "Genk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0783.883.724 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0783.883.724.
+_:registration_company_0783.883.724 a adms:Identifier;
+    skos:notation "0783.883.724";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.329.222.495 a adms:Identifier;
+    skos:notation "2.329.222.495";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

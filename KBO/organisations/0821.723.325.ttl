@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9491>, <http://vocab.belgif.be/auth/nace2008/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<http://vocab.belgif.be/auth/nace2025/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9491>, <http://vocab.belgif.be/auth/nace2025/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<https://data.vlaanderen.be/id/onderneming/0821.723.325> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0821.723.325;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/94910>, <http://vocab.belgif.be/auth/nace2008/94910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0821.723.325;
+    reorg:legalName "Simeon"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.138.315.807>, <https://data.vlaanderen.be/id/vestiging/2.138.316.104>, <https://data.vlaanderen.be/id/vestiging/2.194.487.418>, <https://data.vlaanderen.be/id/vestiging/2.375.645.113>.
+<https://data.vlaanderen.be/id/vestiging/2.138.315.807> a org:Site;
+    dcterms:created "01-01-1923"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.138.315.807.
+<https://data.vlaanderen.be/id/vestiging/2.138.316.104> a org:Site;
+    dcterms:created "01-01-1923"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.138.316.104.
+<https://data.vlaanderen.be/id/vestiging/2.194.487.418> a org:Site;
+    dcterms:created "01-01-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.194.487.418.
+<https://data.vlaanderen.be/id/vestiging/2.375.645.113> a org:Site;
+    dcterms:created "01-01-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.375.645.113.
+_:address_contact_0821.723.325 a locn:Address;
+    locn:thoroughfare "Ninoofse Steenweg"@nl, "Chaussée de Ninove"@fr;
+    rdfs:label "548";
+    locn:postCode "1070";
+    adres:gemeentenaam "Anderlecht"@nl, "Anderlecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0821.723.325 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0821.723.325.
+_:registration_company_0821.723.325 a adms:Identifier;
+    skos:notation "0821.723.325";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.138.315.807 a adms:Identifier;
+    skos:notation "2.138.315.807";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.138.316.104 a adms:Identifier;
+    skos:notation "2.138.316.104";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.194.487.418 a adms:Identifier;
+    skos:notation "2.194.487.418";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.375.645.113 a adms:Identifier;
+    skos:notation "2.375.645.113";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2512>, <http://vocab.belgif.be/auth/nace2008/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/47787> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in nieuwe kunstvoorwerpen in gespecialiseerde winkels"@nl, "Commerce de détail d'objets d'art neufs en magasin spécialisé"@fr;
+    skos:prefLabel "47787".
+<http://vocab.belgif.be/auth/nace2008/90032> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Sanering en dergelijke activiteiten"@nl, "Dépollution et activités similaires"@fr;
+    skos:prefLabel "90032".
+<http://vocab.belgif.be/auth/nace2025/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2512>, <http://vocab.belgif.be/auth/nace2025/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/90120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9012>, <http://vocab.belgif.be/auth/nace2025/9012>;
+    skos:definition "Creatie van beeldende kunsten"@nl, "Activités de création en arts visuels"@fr;
+    skos:prefLabel "90120".
+<https://data.vlaanderen.be/id/onderneming/0797.659.704> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "26-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0797.659.704;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/25120>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/90120>, <http://vocab.belgif.be/auth/nace2025/47690>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2008/25120>, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/47787>, <http://vocab.belgif.be/auth/nace2008/90032>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0797.659.704;
+    reorg:legalName "Architectural Metals"@nl, "Armetals"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.341.076.291>.
+<https://data.vlaanderen.be/id/vestiging/2.341.076.291> a org:Site;
+    dcterms:created "26-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.341.076.291.
+_:address_contact_0797.659.704 a locn:Address;
+    locn:thoroughfare "Engelhoekstraat"@nl, "Engelhoekstraat"@fr;
+    rdfs:label "38";
+    locn:postCode "9800";
+    adres:gemeentenaam "Deinze"@nl, "Deinze"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0797.659.704 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0797.659.704.
+_:registration_company_0797.659.704 a adms:Identifier;
+    skos:notation "0797.659.704";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.341.076.291 a adms:Identifier;
+    skos:notation "2.341.076.291";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

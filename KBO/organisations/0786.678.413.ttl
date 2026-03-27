@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2008/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8110>, <http://vocab.belgif.be/auth/nace2008/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2008/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8121>, <http://vocab.belgif.be/auth/nace2008/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2008/81290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8129>, <http://vocab.belgif.be/auth/nace2008/8129>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81290".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/71113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Stedebouwkundige en tuin- en landschapsarchitecten"@nl, "Activités d'architecture d'urbanisme, de paysage et de jardin"@fr;
+    skos:prefLabel "71113".
+<http://vocab.belgif.be/auth/nace2025/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8110>, <http://vocab.belgif.be/auth/nace2025/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2025/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8121>, <http://vocab.belgif.be/auth/nace2025/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/81230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8123>, <http://vocab.belgif.be/auth/nace2025/8123>;
+    skos:definition "Andere reinigingsactiviteiten"@nl, "Autres activités de nettoyage"@fr;
+    skos:prefLabel "81230".
+<https://data.vlaanderen.be/id/onderneming/0786.678.413> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0786.678.413;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/81100>, <http://vocab.belgif.be/auth/nace2025/81230>, <http://vocab.belgif.be/auth/nace2025/71113>, <http://vocab.belgif.be/auth/nace2025/81210>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2008/81210>, <http://vocab.belgif.be/auth/nace2008/81290>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/43291>, <http://vocab.belgif.be/auth/nace2008/81100>, <http://vocab.belgif.be/auth/nace2008/71113>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Butnari, Serghei";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.331.586.921>.
+<https://data.vlaanderen.be/id/vestiging/2.331.586.921> a org:Site;
+    dcterms:created "15-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.331.586.921.
+_:registration_company_0786.678.413 a adms:Identifier;
+    skos:notation "0786.678.413";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.331.586.921 a adms:Identifier;
+    skos:notation "2.331.586.921";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

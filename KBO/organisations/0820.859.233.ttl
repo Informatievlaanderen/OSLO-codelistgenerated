@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/85329> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8532>, <http://vocab.belgif.be/auth/nace2008/8532>;
+    skos:definition "Technisch, beroeps- en buitengewoon secundair onderwijs, n.e.g."@nl, "Enseignement secondaire technique, professionnel et spécialisé n.c.a."@fr;
+    skos:prefLabel "85329".
+<http://vocab.belgif.be/auth/nace2025/85329> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8532>, <http://vocab.belgif.be/auth/nace2025/8532>;
+    skos:definition "Technisch, beroeps- en buitengewoon secundair onderwijs, n.e.g."@nl, "Enseignement secondaire technique, professionnel et spécialisé n.c.a."@fr;
+    skos:prefLabel "85329".
+<https://data.vlaanderen.be/id/onderneming/0820.859.233> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0820.859.233;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85329>, <http://vocab.belgif.be/auth/nace2008/85329>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0820.859.233;
+    reorg:legalName "Van Ruyssevelt, Johan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.182.691.921>, <https://data.vlaanderen.be/id/vestiging/2.221.803.212>.
+<https://data.vlaanderen.be/id/vestiging/2.182.691.921> a org:Site;
+    dcterms:created "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.182.691.921.
+<https://data.vlaanderen.be/id/vestiging/2.221.803.212> a org:Site;
+    dcterms:created "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.221.803.212.
+_:contact_0820.859.233 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0495/623085".
+_:registration_company_0820.859.233 a adms:Identifier;
+    skos:notation "0820.859.233";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.182.691.921 a adms:Identifier;
+    skos:notation "2.182.691.921";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.221.803.212 a adms:Identifier;
+    skos:notation "2.221.803.212";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5819>, <http://vocab.belgif.be/auth/nace2008/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2008/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5829>, <http://vocab.belgif.be/auth/nace2008/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/62020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6202>, <http://vocab.belgif.be/auth/nace2008/6202>;
+    skos:definition "Computerconsultancy-activiteiten"@nl, "Conseil informatique"@fr;
+    skos:prefLabel "62020".
+<http://vocab.belgif.be/auth/nace2008/63110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6311>, <http://vocab.belgif.be/auth/nace2008/6311>;
+    skos:definition "Gegevensverwerking, webhosting en aanverwante activiteiten"@nl, "Traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63110".
+<http://vocab.belgif.be/auth/nace2008/63120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6312>, <http://vocab.belgif.be/auth/nace2008/6312>;
+    skos:definition "Webportalen"@nl, "Portails Internet"@fr;
+    skos:prefLabel "63120".
+<http://vocab.belgif.be/auth/nace2025/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5819>, <http://vocab.belgif.be/auth/nace2025/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2025/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5829>, <http://vocab.belgif.be/auth/nace2025/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/62200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6220>, <http://vocab.belgif.be/auth/nace2025/6220>;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+<http://vocab.belgif.be/auth/nace2025/63100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6310>, <http://vocab.belgif.be/auth/nace2025/6310>;
+    skos:definition "Computerinfrastructuur, gegevensverwerking, hosting en aanverwante activiteiten"@nl, "Infrastructure informatique, traitement de données, hébergement et activités connexes"@fr;
+    skos:prefLabel "63100".
+<http://vocab.belgif.be/auth/nace2025/63910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6391>, <http://vocab.belgif.be/auth/nace2025/6391>;
+    skos:definition "Persagentschappen"@nl, "Activités des agences de presse"@fr;
+    skos:prefLabel "63910".
+<https://data.vlaanderen.be/id/onderneming/0812.010.853> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0812.010.853;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/63100>, <http://vocab.belgif.be/auth/nace2025/58190>, <http://vocab.belgif.be/auth/nace2025/63910>, <http://vocab.belgif.be/auth/nace2025/58290>, <http://vocab.belgif.be/auth/nace2025/62200>, <http://vocab.belgif.be/auth/nace2008/58190>, <http://vocab.belgif.be/auth/nace2008/58290>, <http://vocab.belgif.be/auth/nace2008/63110>, <http://vocab.belgif.be/auth/nace2008/63120>, <http://vocab.belgif.be/auth/nace2008/62020>, <http://vocab.belgif.be/auth/nace2008/62010>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Verhoeven, Vincent";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.312.353.405>.
+<https://data.vlaanderen.be/id/vestiging/2.312.353.405> a org:Site;
+    dcterms:created "01-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.312.353.405.
+_:registration_company_0812.010.853 a adms:Identifier;
+    skos:notation "0812.010.853";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.312.353.405 a adms:Identifier;
+    skos:notation "2.312.353.405";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

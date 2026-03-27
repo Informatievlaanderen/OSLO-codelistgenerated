@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van andere kleding en toebehoren, n.e.g."@nl, "Fabrication d'autres vêtements et accessoires n.c.a."@fr;
+    skos:prefLabel "14199".
+<http://vocab.belgif.be/auth/nace2008/15110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1511>, <http://vocab.belgif.be/auth/nace2008/1511>;
+    skos:definition "Looien en bereiden van leer; bereiden en verven van bont"@nl, "Apprêt et tannage des cuirs; préparation et teinture des fourrures"@fr;
+    skos:prefLabel "15110".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/90011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9001>, <http://vocab.belgif.be/auth/nace2008/9001>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90011".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/15110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1511>, <http://vocab.belgif.be/auth/nace2025/1511>;
+    skos:definition "Looien en bereiden van leer; bereiden en verven van bont"@nl, "Apprêt et tannage des cuirs; préparation et teinture des fourrures"@fr;
+    skos:prefLabel "15110".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/90201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9020>, <http://vocab.belgif.be/auth/nace2025/9020>;
+    skos:definition "Beoefening van uitvoerende kunsten door zelfstandig werkende artiesten"@nl, "Réalisation de spectacles par des artistes indépendants"@fr;
+    skos:prefLabel "90201".
+<https://data.vlaanderen.be/id/onderneming/0797.506.284> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0797.506.284;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/15110>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/90201>, <http://vocab.belgif.be/auth/nace2008/15110>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/14199>, <http://vocab.belgif.be/auth/nace2008/90011>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Monsieurs, Ann";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.340.453.711>.
+<https://data.vlaanderen.be/id/vestiging/2.340.453.711> a org:Site;
+    dcterms:created "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.340.453.711.
+_:registration_company_0797.506.284 a adms:Identifier;
+    skos:notation "0797.506.284";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.340.453.711 a adms:Identifier;
+    skos:notation "2.340.453.711";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

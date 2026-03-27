@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/41202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van kantoorgebouwen"@nl, "Construction générale d'immeubles de bureaux"@fr;
+    skos:prefLabel "41202".
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4222>, <http://vocab.belgif.be/auth/nace2008/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2008/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4311>, <http://vocab.belgif.be/auth/nace2008/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2008/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/41002> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van kantoorgebouwen"@nl, "Construction générale d'immeubles de bureaux"@fr;
+    skos:prefLabel "41002".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4311>, <http://vocab.belgif.be/auth/nace2025/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2025/43211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken aan gebouwen"@nl, "Travaux d'installation électrotechnique de bâtiment"@fr;
+    skos:prefLabel "43211".
+<https://data.vlaanderen.be/id/onderneming/0798.529.239> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "16-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0798.529.239;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/41002>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2025/42220>, <http://vocab.belgif.be/auth/nace2025/43211>, <http://vocab.belgif.be/auth/nace2025/43110>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2008/43211>, <http://vocab.belgif.be/auth/nace2008/43110>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/41202>, <http://vocab.belgif.be/auth/nace2008/42220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0798.529.239;
+    reorg:legalName "Gommers Bouwwerken"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.342.561.876>.
+<https://data.vlaanderen.be/id/vestiging/2.342.561.876> a org:Site;
+    dcterms:created "16-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.342.561.876.
+_:address_contact_0798.529.239 a locn:Address;
+    locn:thoroughfare "Neervenbaan"@nl, "Neervenbaan"@fr;
+    rdfs:label "1";
+    locn:postCode "2960";
+    adres:gemeentenaam "Brecht"@nl, "Brecht"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0798.529.239 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@gommersbouwwerken.be";
+    schema:telephone "0478 22 73 18";
+    locn:address _:address_contact_0798.529.239.
+_:registration_company_0798.529.239 a adms:Identifier;
+    skos:notation "0798.529.239";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.342.561.876 a adms:Identifier;
+    skos:notation "2.342.561.876";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

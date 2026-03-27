@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2008/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6619>, <http://vocab.belgif.be/auth/nace2008/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2008/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<http://vocab.belgif.be/auth/nace2025/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6619>, <http://vocab.belgif.be/auth/nace2025/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0792.534.936> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0792.534.936;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/66199>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/68321>, <http://vocab.belgif.be/auth/nace2008/68100>, <http://vocab.belgif.be/auth/nace2008/66199>, <http://vocab.belgif.be/auth/nace2008/64200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0792.534.936;
+    reorg:legalName "KALONE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.376.662.128>.
+<https://data.vlaanderen.be/id/vestiging/2.376.662.128> a org:Site;
+    dcterms:created "17-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.376.662.128.
+_:address_contact_0792.534.936 a locn:Address;
+    locn:thoroughfare "Gentsesteenweg(HEF)"@nl, "Gentsesteenweg(HEF)"@fr;
+    rdfs:label "197D";
+    locn:postCode "2801";
+    adres:gemeentenaam "Mechelen"@nl, "Mechelen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0792.534.936 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0792.534.936.
+_:registration_company_0792.534.936 a adms:Identifier;
+    skos:notation "0792.534.936";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.376.662.128 a adms:Identifier;
+    skos:notation "2.376.662.128";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4741>, <http://vocab.belgif.be/auth/nace2008/4741>;
+    skos:definition "Detailhandel in computers, randapparatuur en software in gespecialiseerde winkels"@nl, "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"@fr;
+    skos:prefLabel "47410".
+<http://vocab.belgif.be/auth/nace2008/62010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6201>, <http://vocab.belgif.be/auth/nace2008/6201>;
+    skos:definition "Ontwerpen en programmeren van computerprogramma's"@nl, "Programmation informatique"@fr;
+    skos:prefLabel "62010".
+<http://vocab.belgif.be/auth/nace2008/73200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7320>, <http://vocab.belgif.be/auth/nace2008/7320>;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2008/96011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9601>, <http://vocab.belgif.be/auth/nace2008/9601>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96011".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/62100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6210>, <http://vocab.belgif.be/auth/nace2025/6210>;
+    skos:definition "Luchtvaart volgens dienstregeling"@nl, "Transports aériens réguliers"@fr;
+    skos:prefLabel "62100".
+<http://vocab.belgif.be/auth/nace2025/73200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7320>, <http://vocab.belgif.be/auth/nace2025/7320>;
+    skos:definition "Speur- en ontwikkelingswerk op het gebied van maatschappij- en geesteswetenschappen"@nl, "Recherche et développement en sciences humaines et sociales"@fr;
+    skos:prefLabel "73200".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<http://vocab.belgif.be/auth/nace2025/96101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9610>, <http://vocab.belgif.be/auth/nace2025/9610>;
+    skos:definition "Activiteiten van industriële wasserijen"@nl, "Activités des blanchisseries industrielles"@fr;
+    skos:prefLabel "96101".
+<https://data.vlaanderen.be/id/onderneming/0810.758.266> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-03-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0810.758.266;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/62100>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/73200>, <http://vocab.belgif.be/auth/nace2025/47400>, <http://vocab.belgif.be/auth/nace2025/96101>, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/73200>, <http://vocab.belgif.be/auth/nace2008/62010>, <http://vocab.belgif.be/auth/nace2008/47410>, <http://vocab.belgif.be/auth/nace2008/96011>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0810.758.266;
+    reorg:legalName "B2C Concept"@fr.
+_:address_contact_0810.758.266 a locn:Address;
+    locn:thoroughfare "Clos du marronnier(BT)"@nl, "Clos du marronnier(BT)"@fr;
+    rdfs:label "5";
+    locn:postCode "6500";
+    adres:gemeentenaam "Beaumont"@nl, "Beaumont"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0810.758.266 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0810.758.266.
+_:registration_company_0810.758.266 a adms:Identifier;
+    skos:notation "0810.758.266";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-03-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

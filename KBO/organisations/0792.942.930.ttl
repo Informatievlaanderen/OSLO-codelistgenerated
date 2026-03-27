@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/31099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3109>, <http://vocab.belgif.be/auth/nace2008/3109>;
+    skos:definition "Vervaardiging van andere meubelen, n.e.g."@nl, "Fabrication d'autres meubles n.c.a."@fr;
+    skos:prefLabel "31099".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/31009> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3100>, <http://vocab.belgif.be/auth/nace2025/3100>;
+    skos:definition "Vervaardiging van andere meubelen, neg"@nl, "Fabrication d'autres meubles nca"@fr;
+    skos:prefLabel "31009".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<https://data.vlaanderen.be/id/onderneming/0792.942.930> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0792.942.930;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/31009>, <http://vocab.belgif.be/auth/nace2025/77120>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/31099>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0792.942.930;
+    reorg:legalName "ZD artmebel 2009"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.338.347.029>.
+<https://data.vlaanderen.be/id/vestiging/2.338.347.029> a org:Site;
+    dcterms:created "27-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.338.347.029.
+_:address_contact_0792.942.930 a locn:Address;
+    locn:thoroughfare "Kroonstraat"@nl, "Kroonstraat"@fr;
+    rdfs:label "3";
+    locn:postCode "9830";
+    adres:gemeentenaam "Sint-Martens-Latem"@nl, "Sint-Martens-Latem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0792.942.930 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0792.942.930.
+_:registration_company_0792.942.930 a adms:Identifier;
+    skos:notation "0792.942.930";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.338.347.029 a adms:Identifier;
+    skos:notation "2.338.347.029";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

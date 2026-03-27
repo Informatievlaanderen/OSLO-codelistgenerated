@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/86210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8621>, <http://vocab.belgif.be/auth/nace2008/8621>;
+    skos:definition "Huisartspraktijken"@nl, "Activités des médecins généralistes"@fr;
+    skos:prefLabel "86210".
+<http://vocab.belgif.be/auth/nace2008/86220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8622>, <http://vocab.belgif.be/auth/nace2008/8622>;
+    skos:definition "Praktijken van specialisten"@nl, "Activités des médecins spécialistes"@fr;
+    skos:prefLabel "86220".
+<http://vocab.belgif.be/auth/nace2025/86210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8621>, <http://vocab.belgif.be/auth/nace2025/8621>;
+    skos:definition "Huisartspraktijken"@nl, "Activités des médecins généralistes"@fr;
+    skos:prefLabel "86210".
+<http://vocab.belgif.be/auth/nace2025/86220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8622>, <http://vocab.belgif.be/auth/nace2025/8622>;
+    skos:definition "Praktijken van specialisten"@nl, "Activités des médecins spécialistes"@fr;
+    skos:prefLabel "86220".
+<https://data.vlaanderen.be/id/onderneming/0821.344.134> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0821.344.134;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/86210>, <http://vocab.belgif.be/auth/nace2008/86210>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/003>, <http://vocab.belgif.be/auth/nace2008/86220>, <http://vocab.belgif.be/auth/nace2025/86220>, _:nace_2003_85120;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Delongueil, Laurence".
+_:nace_2003_85120 a skos:Concept;
+    skos:definition "Medische praktijken"@nl, "Pratique médicale"@fr;
+    skos:prefLabel "85120".
+_:registration_company_0821.344.134 a adms:Identifier;
+    skos:notation "0821.344.134";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2002"^^<http://www.w3.org/2001/XMLSchema#date>.

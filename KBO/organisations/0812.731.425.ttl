@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4313>, <http://vocab.belgif.be/auth/nace2008/4313>;
+    skos:definition "Proefboren en boren"@nl, "Forages d'essai et sondages"@fr;
+    skos:prefLabel "43130".
+<http://vocab.belgif.be/auth/nace2025/43130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4313>, <http://vocab.belgif.be/auth/nace2025/4313>;
+    skos:definition "Proefboren en boren"@nl, "Forages d'essai et sondages"@fr;
+    skos:prefLabel "43130".
+<https://data.vlaanderen.be/id/onderneming/0812.731.425> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "23-06-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0812.731.425;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43130>, <http://vocab.belgif.be/auth/nace2008/43130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0812.731.425;
+    reorg:legalName "efco-forodia   exploitation sarl"@fr.
+_:address_contact_0812.731.425 a locn:Address;
+    locn:thoroughfare "BREEDEWUES"@nl, "BREEDEWUES"@fr;
+    rdfs:label "1";
+    locn:postCode "1259";
+    adres:gemeentenaam "SENNINGERBERG"@nl, "SENNINGERBERG"@fr;
+    adres:land "Luxemburg (Groot-Hertogdom)"@nl, "Luxembourg (Grand-Duché)"@fr.
+_:contact_0812.731.425 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "+352 584988";
+    schema:faxNumber "+352 583610";
+    locn:address _:address_contact_0812.731.425.
+_:registration_company_0812.731.425 a adms:Identifier;
+    skos:notation "0812.731.425";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-06-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

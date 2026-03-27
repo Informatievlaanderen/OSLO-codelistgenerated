@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0113>, <http://vocab.belgif.be/auth/nace2008/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/46220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4622>, <http://vocab.belgif.be/auth/nace2008/4622>;
+    skos:definition "Groothandel in bloemen en planten"@nl, "Commerce de gros de fleurs et de plantes"@fr;
+    skos:prefLabel "46220".
+<http://vocab.belgif.be/auth/nace2008/46311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4631>, <http://vocab.belgif.be/auth/nace2008/4631>;
+    skos:definition "Groothandel in consumptieaardappelen"@nl, "Commerce de gros de pommes de terre de consommation"@fr;
+    skos:prefLabel "46311".
+<http://vocab.belgif.be/auth/nace2008/47210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4721>, <http://vocab.belgif.be/auth/nace2008/4721>;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0113>, <http://vocab.belgif.be/auth/nace2025/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/46220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4622>, <http://vocab.belgif.be/auth/nace2025/4622>;
+    skos:definition "Groothandel in bloemen en planten"@nl, "Commerce de gros de fleurs et de plantes"@fr;
+    skos:prefLabel "46220".
+<http://vocab.belgif.be/auth/nace2025/46311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4631>, <http://vocab.belgif.be/auth/nace2025/4631>;
+    skos:definition "Groothandel in consumptieaardappelen"@nl, "Commerce de gros de pommes de terre de consommation"@fr;
+    skos:prefLabel "46311".
+<http://vocab.belgif.be/auth/nace2025/47210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4721>, <http://vocab.belgif.be/auth/nace2025/4721>;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210".
+<https://data.vlaanderen.be/id/onderneming/0793.640.637> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0793.640.637;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46311>, <http://vocab.belgif.be/auth/nace2025/01130>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/46220>, <http://vocab.belgif.be/auth/nace2025/47210>, <http://vocab.belgif.be/auth/nace2008/01110>, <http://vocab.belgif.be/auth/nace2008/01130>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/46311>, <http://vocab.belgif.be/auth/nace2008/46220>, <http://vocab.belgif.be/auth/nace2008/47210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0793.640.637;
+    reorg:legalName "Lust, Sarah";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.337.767.306>.
+<https://data.vlaanderen.be/id/vestiging/2.337.767.306> a org:Site;
+    dcterms:created "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.337.767.306.
+_:contact_0793.640.637 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "lustsarah@gmail.com";
+    schema:telephone "+32477395109".
+_:registration_company_0793.640.637 a adms:Identifier;
+    skos:notation "0793.640.637";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.337.767.306 a adms:Identifier;
+    skos:notation "2.337.767.306";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

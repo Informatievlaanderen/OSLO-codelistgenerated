@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0825.200.279> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "21-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0825.200.279;
+    schema:contactinfo _:contact_0825.200.279;
+    reorg:legalName "Association des Oeuvres Paroissiales de l'Unité Pastorale de Tournai-Est"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.245.002.939>.
+<https://data.vlaanderen.be/id/vestiging/2.245.002.939> a org:Site;
+    dcterms:created "07-09-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.245.002.939.
+_:address_contact_0825.200.279 a locn:Address;
+    locn:thoroughfare "Place de Ramecroix(G-R)"@nl, "Place de Ramecroix(G-R)"@fr;
+    rdfs:label "14";
+    locn:postCode "7530";
+    adres:gemeentenaam "Tournai"@nl, "Tournai"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0825.200.279 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "asbl@uptournaiest.org";
+    <http://xmlns.com/foaf/0.1/homepage> "www.uptournaiest.org";
+    locn:address _:address_contact_0825.200.279.
+_:registration_company_0825.200.279 a adms:Identifier;
+    skos:notation "0825.200.279";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.245.002.939 a adms:Identifier;
+    skos:notation "2.245.002.939";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

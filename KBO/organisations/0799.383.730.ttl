@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4773>, <http://vocab.belgif.be/auth/nace2008/4773>;
+    skos:definition "Apotheken"@nl, "Commerce de détail de produits pharmaceutiques en magasin spécialisé"@fr;
+    skos:prefLabel "47730".
+<http://vocab.belgif.be/auth/nace2025/47730> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4773>, <http://vocab.belgif.be/auth/nace2025/4773>;
+    skos:definition "Apotheken"@nl, "Commerce de détail de produits pharmaceutiques en magasin spécialisé"@fr;
+    skos:prefLabel "47730".
+<https://data.vlaanderen.be/id/onderneming/0799.383.730> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "10-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0799.383.730;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47730>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2008/47730>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0799.383.730;
+    reorg:legalName "MaPharma"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.392.109>.
+<https://data.vlaanderen.be/id/vestiging/2.344.392.109> a org:Site;
+    dcterms:created "10-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.392.109.
+_:address_contact_0799.383.730 a locn:Address;
+    locn:thoroughfare "Rue Robesse"@nl, "Rue Robesse"@fr;
+    rdfs:label "36";
+    adres:busnummer "B";
+    locn:postCode "6041";
+    adres:gemeentenaam "Charleroi"@nl, "Charleroi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0799.383.730 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@ma-pharma.be";
+    schema:telephone "+32470040736";
+    locn:address _:address_contact_0799.383.730.
+_:registration_company_0799.383.730 a adms:Identifier;
+    skos:notation "0799.383.730";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.392.109 a adms:Identifier;
+    skos:notation "2.344.392.109";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-03-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

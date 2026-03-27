@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0113>, <http://vocab.belgif.be/auth/nace2008/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2008/10391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1039>, <http://vocab.belgif.be/auth/nace2008/1039>;
+    skos:definition "Verwerking en conservering van groenten, exclusief productie van diepgevroren groenten"@nl, "Transformation et conservation de légumes, sauf fabrication de légumes surgelés"@fr;
+    skos:prefLabel "10391".
+<http://vocab.belgif.be/auth/nace2008/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1071>, <http://vocab.belgif.be/auth/nace2008/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2008/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1089>, <http://vocab.belgif.be/auth/nace2008/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0113>, <http://vocab.belgif.be/auth/nace2025/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2025/10391> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1039>, <http://vocab.belgif.be/auth/nace2025/1039>;
+    skos:definition "Verwerking en conservering van groenten, exclusief productie van diepgevroren groenten"@nl, "Transformation et conservation de légumes, sauf fabrication de légumes surgelés"@fr;
+    skos:prefLabel "10391".
+<http://vocab.belgif.be/auth/nace2025/10712> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1071>, <http://vocab.belgif.be/auth/nace2025/1071>;
+    skos:definition "Ambachtelijke vervaardiging van brood en van vers banketbakkerswerk"@nl, "Fabrication artisanale de pain et de pâtisserie fraîche"@fr;
+    skos:prefLabel "10712".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0784.226.192> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "30-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0784.226.192;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/10391>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/10712>, <http://vocab.belgif.be/auth/nace2025/01130>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/01130>, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/10391>, <http://vocab.belgif.be/auth/nace2008/10712>, <http://vocab.belgif.be/auth/nace2008/10890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0784.226.192;
+    reorg:legalName "Fondus de balades"@fr.
+_:address_contact_0784.226.192 a locn:Address;
+    locn:thoroughfare "Baclain"@nl, "Baclain"@fr;
+    rdfs:label "5";
+    locn:postCode "6674";
+    adres:gemeentenaam "Gouvy"@nl, "Gouvy"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0784.226.192 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0784.226.192.
+_:registration_company_0784.226.192 a adms:Identifier;
+    skos:notation "0784.226.192";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "30-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

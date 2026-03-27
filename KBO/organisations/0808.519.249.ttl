@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2511>, <http://vocab.belgif.be/auth/nace2008/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/46751> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4675>, <http://vocab.belgif.be/auth/nace2008/4675>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques industriels"@fr;
+    skos:prefLabel "46751".
+<http://vocab.belgif.be/auth/nace2008/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5210>, <http://vocab.belgif.be/auth/nace2008/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/46851> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4685>, <http://vocab.belgif.be/auth/nace2025/4685>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques à usage industriel"@fr;
+    skos:prefLabel "46851".
+<http://vocab.belgif.be/auth/nace2025/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5210>, <http://vocab.belgif.be/auth/nace2025/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<https://data.vlaanderen.be/id/onderneming/0808.519.249> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-01-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0808.519.249;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/46851>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/52100>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2008/25620>, <http://vocab.belgif.be/auth/nace2008/52100>, <http://vocab.belgif.be/auth/nace2008/43291>, <http://vocab.belgif.be/auth/nace2008/46751>, <http://vocab.belgif.be/auth/nace2008/25110>, <http://vocab.belgif.be/auth/nace2008/25999>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0808.519.249;
+    reorg:legalName "BTW-Groep LW p/a Laborex BVBA"@nl.
+_:address_contact_0808.519.249 a locn:Address;
+    locn:thoroughfare "Hagelberg"@nl, "Hagelberg"@fr;
+    rdfs:label "15";
+    locn:postCode "2250";
+    adres:gemeentenaam "Olen"@nl, "Olen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0808.519.249 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0808.519.249.
+_:registration_company_0808.519.249 a adms:Identifier;
+    skos:notation "0808.519.249";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

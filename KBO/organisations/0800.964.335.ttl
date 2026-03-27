@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/41203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41203".
+<http://vocab.belgif.be/auth/nace2008/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4321>, <http://vocab.belgif.be/auth/nace2008/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/41003> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van andere niet-residentiële gebouwen"@nl, "Construction générale d'autres bâtiments non résidentiels"@fr;
+    skos:prefLabel "41003".
+<http://vocab.belgif.be/auth/nace2025/43212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Elektrotechnische installatiewerken, uitgezonderd aan gebouwen"@nl, "Travaux d'installation électrotechnique autres que de bâtiment"@fr;
+    skos:prefLabel "43212".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<https://data.vlaanderen.be/id/onderneming/0800.964.335> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "20-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0800.964.335;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/43212>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/41003>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2008/41203>, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/43299>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/43212>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0800.964.335;
+    reorg:legalName "PV SunGreen"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.986.579>.
+<https://data.vlaanderen.be/id/vestiging/2.344.986.579> a org:Site;
+    dcterms:created "20-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.986.579.
+_:address_contact_0800.964.335 a locn:Address;
+    locn:thoroughfare "Louis Marcelisstraat"@nl, "Rue Louis Marcelis"@fr;
+    rdfs:label "23A";
+    adres:busnummer "bus 1";
+    locn:postCode "1970";
+    adres:gemeentenaam "Wezembeek-Oppem"@nl, "Wezembeek-Oppem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0800.964.335 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0800.964.335.
+_:registration_company_0800.964.335 a adms:Identifier;
+    skos:notation "0800.964.335";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.986.579 a adms:Identifier;
+    skos:notation "2.344.986.579";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4312>, <http://vocab.belgif.be/auth/nace2008/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2008/43130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4313>, <http://vocab.belgif.be/auth/nace2008/4313>;
+    skos:definition "Proefboren en boren"@nl, "Forages d'essai et sondages"@fr;
+    skos:prefLabel "43130".
+<http://vocab.belgif.be/auth/nace2008/43992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Gevelreiniging"@nl, "Ravalement des façades"@fr;
+    skos:prefLabel "43992".
+<http://vocab.belgif.be/auth/nace2008/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8121>, <http://vocab.belgif.be/auth/nace2008/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/43120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4312>, <http://vocab.belgif.be/auth/nace2025/4312>;
+    skos:definition "Bouwrijp maken van terreinen"@nl, "Travaux de préparation des sites"@fr;
+    skos:prefLabel "43120".
+<http://vocab.belgif.be/auth/nace2025/43130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4313>, <http://vocab.belgif.be/auth/nace2025/4313>;
+    skos:definition "Proefboren en boren"@nl, "Forages d'essai et sondages"@fr;
+    skos:prefLabel "43130".
+<http://vocab.belgif.be/auth/nace2025/81210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8121>, <http://vocab.belgif.be/auth/nace2025/8121>;
+    skos:definition "Algemene reiniging van gebouwen"@nl, "Nettoyage courant des bâtiments"@fr;
+    skos:prefLabel "81210".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0805.791.272> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "13-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0805.791.272;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81300>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/43130>, <http://vocab.belgif.be/auth/nace2025/81210>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/43120>, <http://vocab.belgif.be/auth/nace2008/43120>, <http://vocab.belgif.be/auth/nace2008/43130>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/43992>, <http://vocab.belgif.be/auth/nace2008/81210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0805.791.272;
+    reorg:legalName "DROUET Entreprise"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.349.578.738>.
+<https://data.vlaanderen.be/id/vestiging/2.349.578.738> a org:Site;
+    dcterms:created "13-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.349.578.738.
+_:address_contact_0805.791.272 a locn:Address;
+    locn:thoroughfare "Domaine-de-Tchession"@nl, "Domaine-de-Tchession"@fr;
+    rdfs:label "12";
+    locn:postCode "6980";
+    adres:gemeentenaam "La Roche-en-Ardenne"@nl, "La Roche-en-Ardenne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0805.791.272 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0805.791.272.
+_:registration_company_0805.791.272 a adms:Identifier;
+    skos:notation "0805.791.272";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.349.578.738 a adms:Identifier;
+    skos:notation "2.349.578.738";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

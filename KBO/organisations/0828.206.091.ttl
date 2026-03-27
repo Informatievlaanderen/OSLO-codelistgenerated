@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/96022> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Schoonheidsverzorging"@nl, "Soins de beauté"@fr;
+    skos:prefLabel "96022".
+<http://vocab.belgif.be/auth/nace2025/96220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9622>, <http://vocab.belgif.be/auth/nace2025/9622>;
+    skos:definition "Schoonheidsverzorging en andere schoonheidsbehandelingen"@nl, "Soins esthétiques et autres activités de traitement esthétique"@fr;
+    skos:prefLabel "96220".
+<https://data.vlaanderen.be/id/onderneming/0828.206.091> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "05-06-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0828.206.091;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96220>, <http://vocab.belgif.be/auth/nace2008/96022>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Wallez, Héloïse";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.290.138.623>, <https://data.vlaanderen.be/id/vestiging/2.355.762.982>.
+<https://data.vlaanderen.be/id/vestiging/2.290.138.623> a org:Site;
+    dcterms:created "05-06-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.290.138.623.
+<https://data.vlaanderen.be/id/vestiging/2.355.762.982> a org:Site;
+    dcterms:created "15-06-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.355.762.982.
+_:registration_company_0828.206.091 a adms:Identifier;
+    skos:notation "0828.206.091";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-06-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.290.138.623 a adms:Identifier;
+    skos:notation "2.290.138.623";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-06-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.355.762.982 a adms:Identifier;
+    skos:notation "2.355.762.982";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-06-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

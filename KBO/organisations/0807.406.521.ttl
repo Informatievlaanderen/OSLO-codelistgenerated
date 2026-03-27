@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2008/46211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in granen en zaden"@nl, "Commerce de gros de céréales et de semences"@fr;
+    skos:prefLabel "46211".
+<http://vocab.belgif.be/auth/nace2008/46212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4621>, <http://vocab.belgif.be/auth/nace2008/4621>;
+    skos:definition "Groothandel in veevoeders"@nl, "Commerce de gros d'aliments pour le bétail"@fr;
+    skos:prefLabel "46212".
+<http://vocab.belgif.be/auth/nace2008/64300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6430>, <http://vocab.belgif.be/auth/nace2008/6430>;
+    skos:definition "Beleggingstrusts en -fondsen en vergelijkbare financiële instellingen"@nl, "Fonds de placement et entités financières similaires"@fr;
+    skos:prefLabel "64300".
+<http://vocab.belgif.be/auth/nace2008/68100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6810>, <http://vocab.belgif.be/auth/nace2008/6810>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Activités des marchands de biens immobiliers"@fr;
+    skos:prefLabel "68100".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/46211> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in granen en zaden"@nl, "Commerce de gros de céréales et de semences"@fr;
+    skos:prefLabel "46211".
+<http://vocab.belgif.be/auth/nace2025/46212> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4621>, <http://vocab.belgif.be/auth/nace2025/4621>;
+    skos:definition "Groothandel in veevoeders"@nl, "Commerce de gros d'aliments pour le bétail"@fr;
+    skos:prefLabel "46212".
+<http://vocab.belgif.be/auth/nace2025/64310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6431>, <http://vocab.belgif.be/auth/nace2025/6431>;
+    skos:definition "Activiteiten van geldmarkt- en niet-geldmarktbeleggingsfondsen"@nl, "Activités de fonds d’investissement sur le marché monétaire ou non monétaire"@fr;
+    skos:prefLabel "64310".
+<http://vocab.belgif.be/auth/nace2025/68110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6811>, <http://vocab.belgif.be/auth/nace2025/6811>;
+    skos:definition "Handel in eigen onroerend goed"@nl, "Achat et vente de biens propres"@fr;
+    skos:prefLabel "68110".
+<https://data.vlaanderen.be/id/onderneming/0807.406.521> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "28-10-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0807.406.521;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64310>, <http://vocab.belgif.be/auth/nace2025/68110>, <http://vocab.belgif.be/auth/nace2025/46211>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2025/46212>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2008/01110>, <http://vocab.belgif.be/auth/nace2008/64300>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/46211>, <http://vocab.belgif.be/auth/nace2008/46212>, <http://vocab.belgif.be/auth/nace2008/68100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0807.406.521;
+    reorg:legalName "DE GRONDELEER"@nl.
+_:address_contact_0807.406.521 a locn:Address;
+    locn:thoroughfare "Rijckerstraat"@nl, "Rijckerstraat"@fr;
+    rdfs:label "98";
+    locn:postCode "3770";
+    adres:gemeentenaam "Riemst"@nl, "Riemst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0807.406.521 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0807.406.521.
+_:registration_company_0807.406.521 a adms:Identifier;
+    skos:notation "0807.406.521";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-10-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

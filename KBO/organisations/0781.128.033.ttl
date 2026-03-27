@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1011>, <http://vocab.belgif.be/auth/nace2008/1011>;
+    skos:definition "Verwerking en conservering van vlees, exclusief vlees van gevogelte"@nl, "Transformation et conservation de la viande de boucherie, à l'exclusion de la viande de volaille"@fr;
+    skos:prefLabel "10110".
+<http://vocab.belgif.be/auth/nace2025/10111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Activiteiten van slachthuizen"@nl, "Activités des abattoirs"@fr;
+    skos:prefLabel "10111".
+<https://data.vlaanderen.be/id/onderneming/0781.128.033> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "28-09-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0781.128.033;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10111>, _:nace_2003_15111, <http://vocab.belgif.be/auth/nace2008/10110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dossche, Hans";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.068.346.638>.
+<https://data.vlaanderen.be/id/vestiging/2.068.346.638> a org:Site;
+    dcterms:created "28-09-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.068.346.638.
+_:nace_2003_15111 a skos:Concept;
+    skos:definition "Productie van vers vlees"@nl, "Production de viande fraîche"@fr;
+    skos:prefLabel "15111".
+_:registration_company_0781.128.033 a adms:Identifier;
+    skos:notation "0781.128.033";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-09-1994"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.068.346.638 a adms:Identifier;
+    skos:notation "2.068.346.638";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "28-09-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

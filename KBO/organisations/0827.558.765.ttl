@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1320>, <http://vocab.belgif.be/auth/nace2008/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2008/13929> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1392>, <http://vocab.belgif.be/auth/nace2008/1392>;
+    skos:definition "Vervaardiging van overige geconfectioneerde artikelen van textiel, m.u.v. kleding"@nl, "Fabrication d'autres articles textiles confectionnés, sauf habillement"@fr;
+    skos:prefLabel "13929".
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2008/68322> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6832>, <http://vocab.belgif.be/auth/nace2008/6832>;
+    skos:definition "Beheer van niet-residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers non résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68322".
+<http://vocab.belgif.be/auth/nace2025/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1320>, <http://vocab.belgif.be/auth/nace2025/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2025/13929> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1392>, <http://vocab.belgif.be/auth/nace2025/1392>;
+    skos:definition "Vervaardiging van overige geconfectioneerde artikelen van textiel, m.u.v. kleding"@nl, "Fabrication d'autres articles textiles confectionnés, sauf habillement"@fr;
+    skos:prefLabel "13929".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/68321> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6832>, <http://vocab.belgif.be/auth/nace2025/6832>;
+    skos:definition "Beheer van residentieel onroerend goed voor een vast bedrag of op contractbasis"@nl, "Administration de biens immobiliers résidentiels pour compte de tiers"@fr;
+    skos:prefLabel "68321".
+<https://data.vlaanderen.be/id/onderneming/0827.558.765> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-08-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0827.558.765;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13929>, <http://vocab.belgif.be/auth/nace2025/68321>, <http://vocab.belgif.be/auth/nace2025/13200>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2008/13200>, <http://vocab.belgif.be/auth/nace2008/68322>, <http://vocab.belgif.be/auth/nace2008/13929>, <http://vocab.belgif.be/auth/nace2008/46412>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0827.558.765;
+    reorg:legalName "DE MUNSTER - DE GRYSE"@nl.
+_:address_contact_0827.558.765 a locn:Address;
+    locn:thoroughfare "Kortrijkse heerweg"@nl, "Kortrijkse heerweg"@fr;
+    rdfs:label "209";
+    locn:postCode "8540";
+    adres:gemeentenaam "Deerlijk"@nl, "Deerlijk"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0827.558.765 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "jo@muvantex.com";
+    schema:telephone "056/71 32 01";
+    schema:faxNumber "056/70 31 30";
+    locn:address _:address_contact_0827.558.765.
+_:registration_company_0827.558.765 a adms:Identifier;
+    skos:notation "0827.558.765";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

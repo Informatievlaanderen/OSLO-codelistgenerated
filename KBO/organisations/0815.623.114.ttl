@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/14230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1423>, <http://vocab.belgif.be/auth/nace2025/1423>;
+    skos:definition "Vervaardiging van werkkleding"@nl, "Fabrication de vêtements de travail"@fr;
+    skos:prefLabel "14230".
+<http://vocab.belgif.be/auth/nace2025/47513> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in breigarens, handwerken en fournituren in gespecialiseerde winkels"@nl, "Commerce de détail de fils à tricoter et d'articles de mercerie en magasin spécialisé"@fr;
+    skos:prefLabel "47513".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<http://vocab.belgif.be/auth/nace2025/86965> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8696>, <http://vocab.belgif.be/auth/nace2025/8696>;
+    skos:definition "Activiteiten op het gebied van acupunctuur"@nl, "Activités d'acupuncture"@fr;
+    skos:prefLabel "86965".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0815.623.114> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-1996"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0815.623.114;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47513>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/86965>, <http://vocab.belgif.be/auth/nace2025/95290>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2025/14230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Naif, Véronique";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.343.182.082>.
+<https://data.vlaanderen.be/id/vestiging/2.343.182.082> a org:Site;
+    dcterms:created "01-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.343.182.082.
+_:registration_company_0815.623.114 a adms:Identifier;
+    skos:notation "0815.623.114";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1996"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.343.182.082 a adms:Identifier;
+    skos:notation "2.343.182.082";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1996"^^<http://www.w3.org/2001/XMLSchema#date>.

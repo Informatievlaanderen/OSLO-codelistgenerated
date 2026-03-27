@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4616>, <http://vocab.belgif.be/auth/nace2008/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7111>, <http://vocab.belgif.be/auth/nace2008/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4616>, <http://vocab.belgif.be/auth/nace2025/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/71112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7111>, <http://vocab.belgif.be/auth/nace2025/7111>;
+    skos:definition "Interieurarchitecten"@nl, "Activités d'architecture d'intérieur"@fr;
+    skos:prefLabel "71112".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<https://data.vlaanderen.be/id/onderneming/0817.787.303> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0817.787.303;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/71112>, <http://vocab.belgif.be/auth/nace2025/46160>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/46150>, <http://vocab.belgif.be/auth/nace2008/71112>, <http://vocab.belgif.be/auth/nace2008/82300>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/46160>, <http://vocab.belgif.be/auth/nace2008/46150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0817.787.303;
+    reorg:legalName "Labile, Samuel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.286.621.283>.
+<https://data.vlaanderen.be/id/vestiging/2.286.621.283> a org:Site;
+    dcterms:created "01-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.286.621.283.
+_:contact_0817.787.303 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "lbile.samuel@gmail.com";
+    schema:telephone "0495/15.31.20".
+_:registration_company_0817.787.303 a adms:Identifier;
+    skos:notation "0817.787.303";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.286.621.283 a adms:Identifier;
+    skos:notation "2.286.621.283";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

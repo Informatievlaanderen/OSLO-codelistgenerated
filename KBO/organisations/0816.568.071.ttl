@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Overige bouwinstallatie, n.e.g."@nl, "Autres travaux d'installation n.c.a."@fr;
+    skos:prefLabel "43299".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/43994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Uitvoeren van metsel- en voegwerken"@nl, "Travaux de maçonnerie et de rejointoiement"@fr;
+    skos:prefLabel "43994".
+<http://vocab.belgif.be/auth/nace2008/63990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6399>, <http://vocab.belgif.be/auth/nace2008/6399>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie, n.e. g."@nl, "Autres services d'information n.c.a."@fr;
+    skos:prefLabel "63990".
+<http://vocab.belgif.be/auth/nace2008/74300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7430>, <http://vocab.belgif.be/auth/nace2008/7430>;
+    skos:definition "Vertalers en tolken"@nl, "Traduction et interprétation"@fr;
+    skos:prefLabel "74300".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/43240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4324>, <http://vocab.belgif.be/auth/nace2025/4324>;
+    skos:definition "Overige bouwinstallatie"@nl, "Autres travaux d’installation"@fr;
+    skos:prefLabel "43240".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/43910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4391>, <http://vocab.belgif.be/auth/nace2025/4391>;
+    skos:definition "Dakwerkzaamheden"@nl, "Travaux de couverture"@fr;
+    skos:prefLabel "43910".
+<http://vocab.belgif.be/auth/nace2025/63920> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6392>, <http://vocab.belgif.be/auth/nace2025/6392>;
+    skos:definition "Overige dienstverlenende activiteiten op het gebied van informatie"@nl, "Autres activités de service d'information"@fr;
+    skos:prefLabel "63920".
+<http://vocab.belgif.be/auth/nace2025/74301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7430>, <http://vocab.belgif.be/auth/nace2025/7430>;
+    skos:definition "Automobielinspectie en overige diagnosecentra voor auto's"@nl, "Contrôle technique automobile et autres centres de diagnostic pour véhicules automobiles"@fr;
+    skos:prefLabel "74301".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<https://data.vlaanderen.be/id/onderneming/0816.568.071> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "29-06-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0816.568.071;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2025/43910>, <http://vocab.belgif.be/auth/nace2025/43240>, <http://vocab.belgif.be/auth/nace2025/74301>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/63920>, <http://vocab.belgif.be/auth/nace2008/43299>, <http://vocab.belgif.be/auth/nace2008/63990>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/43994>, <http://vocab.belgif.be/auth/nace2008/74300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0816.568.071;
+    reorg:legalName "Translations"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.280.908.874>.
+<https://data.vlaanderen.be/id/vestiging/2.280.908.874> a org:Site;
+    dcterms:created "12-09-2017"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.280.908.874.
+_:address_contact_0816.568.071 a locn:Address;
+    locn:thoroughfare "Laarsebaan"@nl, "Laarsebaan"@fr;
+    rdfs:label "18";
+    locn:postCode "2170";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0816.568.071 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0816.568.071.
+_:registration_company_0816.568.071 a adms:Identifier;
+    skos:notation "0816.568.071";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-06-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.280.908.874 a adms:Identifier;
+    skos:notation "2.280.908.874";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-06-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4652>, <http://vocab.belgif.be/auth/nace2008/4652>;
+    skos:definition "Groothandel in elektronische en telecommunicatieapparatuur en delen  daarvan"@nl, "Commerce de gros de composants et d'équipements électroniques et de télécommunication"@fr;
+    skos:prefLabel "46520".
+<http://vocab.belgif.be/auth/nace2008/46696> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in meet-, controle- en navigatieinstrumenten"@nl, "Commerce de gros d'instruments de mesure, de contrôle et de navigation"@fr;
+    skos:prefLabel "46696".
+<http://vocab.belgif.be/auth/nace2008/46699> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in andere machines en werktuigen, n.e.g."@nl, "Commerce de gros d'autres machines et équipements n.c.a."@fr;
+    skos:prefLabel "46699".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/46500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4650>, <http://vocab.belgif.be/auth/nace2025/4650>;
+    skos:definition "Groothandel in informatie- en communicatieapparatuur"@nl, "Commerce de gros d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "46500".
+<http://vocab.belgif.be/auth/nace2025/46646> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in meet-, controle- en navigatieinstrumenten"@nl, "Commerce de gros d'instruments de mesure, de contrôle et de navigation"@fr;
+    skos:prefLabel "46646".
+<http://vocab.belgif.be/auth/nace2025/46649> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in andere machines en werktuigen, neg"@nl, "Commerce de gros d'autres machines et équipements nca"@fr;
+    skos:prefLabel "46649".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0800.563.962> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0800.563.962;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/46646>, <http://vocab.belgif.be/auth/nace2025/46649>, <http://vocab.belgif.be/auth/nace2025/46500>, <http://vocab.belgif.be/auth/nace2008/46699>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/46520>, <http://vocab.belgif.be/auth/nace2008/46696>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0800.563.962;
+    reorg:legalName "TETRAEDRE SOLUTIONS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.431.602>.
+<https://data.vlaanderen.be/id/vestiging/2.344.431.602> a org:Site;
+    dcterms:created "07-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.431.602.
+_:address_contact_0800.563.962 a locn:Address;
+    locn:thoroughfare "Rue de la Chapelle"@nl, "Rue de la Chapelle"@fr;
+    rdfs:label "43";
+    locn:postCode "4550";
+    adres:gemeentenaam "Nandrin"@nl, "Nandrin"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0800.563.962 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "ewts@skynet.be";
+    schema:telephone "+32478363652";
+    locn:address _:address_contact_0800.563.962.
+_:registration_company_0800.563.962 a adms:Identifier;
+    skos:notation "0800.563.962";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.431.602 a adms:Identifier;
+    skos:notation "2.344.431.602";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

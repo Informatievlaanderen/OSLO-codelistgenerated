@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/49390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4939>, <http://vocab.belgif.be/auth/nace2008/4939>;
+    skos:definition "Overig personenvervoer te land, n.e.g."@nl, "Autres transports terrestres de voyageurs n.c.a."@fr;
+    skos:prefLabel "49390".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0781.182.471> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "10-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0781.182.471;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2025/93299>, _:nace_2003_92723, _:nace_2003_92340, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/49390>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Blauwe, Marnick";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.155.267.249>.
+<https://data.vlaanderen.be/id/vestiging/2.155.267.249> a org:Site;
+    dcterms:created "10-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.155.267.249.
+_:nace_2003_92340 a skos:Concept;
+    skos:definition "Overig amusement, n.e.g."@nl, "Autres activités de spectacle et d'amusement n.d.a."@fr;
+    skos:prefLabel "92340".
+_:nace_2003_92723 a skos:Concept;
+    skos:definition "Exploitatie van strandfaciliteiten, fietsen, waterfietsen, pony's en dergelijke"@nl, "Exploitation d'infrastructures de plage, de bicyclettes, pédalos, poneys et similaires"@fr;
+    skos:prefLabel "92723".
+_:registration_company_0781.182.471 a adms:Identifier;
+    skos:notation "0781.182.471";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.155.267.249 a adms:Identifier;
+    skos:notation "2.155.267.249";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-07-2006"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4775>, <http://vocab.belgif.be/auth/nace2008/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2008/47786> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in souvenirs en religieuze artikelen in gespecialiseerde winkels"@nl, "Commerce de détail de souvenirs et d'articles religieux en magasin spécialisé"@fr;
+    skos:prefLabel "47786".
+<http://vocab.belgif.be/auth/nace2008/96021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Haarverzorging"@nl, "Coiffure"@fr;
+    skos:prefLabel "96021".
+<http://vocab.belgif.be/auth/nace2008/96022> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Schoonheidsverzorging"@nl, "Soins de beauté"@fr;
+    skos:prefLabel "96022".
+<http://vocab.belgif.be/auth/nace2025/47750> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4775>, <http://vocab.belgif.be/auth/nace2025/4775>;
+    skos:definition "Detailhandel in cosmetica en toiletartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de parfumerie et de produits de beauté en magasin spécialisé"@fr;
+    skos:prefLabel "47750".
+<http://vocab.belgif.be/auth/nace2025/47784> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Detailhandel in drogisterijartikelen en onderhoudsproducten in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de droguerie et de produits d'entretien en magasin spécialisé"@fr;
+    skos:prefLabel "47784".
+<http://vocab.belgif.be/auth/nace2025/96210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9621>, <http://vocab.belgif.be/auth/nace2025/9621>;
+    skos:definition "Kappers- en barbiersactiviteiten"@nl, "Coiffure et activités de barbier"@fr;
+    skos:prefLabel "96210".
+<http://vocab.belgif.be/auth/nace2025/96220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9622>, <http://vocab.belgif.be/auth/nace2025/9622>;
+    skos:definition "Schoonheidsverzorging en andere schoonheidsbehandelingen"@nl, "Soins esthétiques et autres activités de traitement esthétique"@fr;
+    skos:prefLabel "96220".
+<https://data.vlaanderen.be/id/onderneming/0797.526.476> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0797.526.476;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96220>, <http://vocab.belgif.be/auth/nace2025/96210>, <http://vocab.belgif.be/auth/nace2025/47750>, <http://vocab.belgif.be/auth/nace2025/47784>, <http://vocab.belgif.be/auth/nace2008/47786>, <http://vocab.belgif.be/auth/nace2008/96021>, <http://vocab.belgif.be/auth/nace2008/47750>, <http://vocab.belgif.be/auth/nace2008/96022>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Krunkelsven, Tessa";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.340.661.666>.
+<https://data.vlaanderen.be/id/vestiging/2.340.661.666> a org:Site;
+    dcterms:created "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.340.661.666.
+_:registration_company_0797.526.476 a adms:Identifier;
+    skos:notation "0797.526.476";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.340.661.666 a adms:Identifier;
+    skos:notation "2.340.661.666";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

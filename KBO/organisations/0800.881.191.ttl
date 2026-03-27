@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/11050> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1105>, <http://vocab.belgif.be/auth/nace2008/1105>;
+    skos:definition "Vervaardiging van bier"@nl, "Fabrication de bière"@fr;
+    skos:prefLabel "11050".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/47810> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4781>, <http://vocab.belgif.be/auth/nace2008/4781>;
+    skos:definition "Markt- en straathandel in voedings- en genotmiddelen"@nl, "Commerce de détail alimentaire sur éventaires et marchés"@fr;
+    skos:prefLabel "47810".
+<http://vocab.belgif.be/auth/nace2025/11050> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1105>, <http://vocab.belgif.be/auth/nace2025/1105>;
+    skos:definition "Vervaardiging van bier"@nl, "Fabrication de bière"@fr;
+    skos:prefLabel "11050".
+<http://vocab.belgif.be/auth/nace2025/47210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4721>, <http://vocab.belgif.be/auth/nace2025/4721>;
+    skos:definition "Detailhandel in groenten en fruit in gespecialiseerde winkels"@nl, "Commerce de détail de fruits et de légumes en magasin spécialisé"@fr;
+    skos:prefLabel "47210".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<https://data.vlaanderen.be/id/onderneming/0800.881.191> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "18-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0800.881.191;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/11050>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/47210>, <http://vocab.belgif.be/auth/nace2008/11050>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/47810>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0800.881.191;
+    reorg:legalName "Brasserie des Indécis?"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.896.311>.
+<https://data.vlaanderen.be/id/vestiging/2.344.896.311> a org:Site;
+    dcterms:created "18-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.896.311.
+_:address_contact_0800.881.191 a locn:Address;
+    locn:thoroughfare "Rue Jean Dufour(VSA)"@nl, "Rue Jean Dufour(VSA)"@fr;
+    rdfs:label "14";
+    locn:postCode "7812";
+    adres:gemeentenaam "Ath"@nl, "Ath"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0800.881.191 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0800.881.191.
+_:registration_company_0800.881.191 a adms:Identifier;
+    skos:notation "0800.881.191";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.896.311 a adms:Identifier;
+    skos:notation "2.344.896.311";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "18-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

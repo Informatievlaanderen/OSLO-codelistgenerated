@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1062>, <http://vocab.belgif.be/auth/nace2008/1062>;
+    skos:definition "Vervaardiging van zetmeel en zetmeelproducten"@nl, "Fabrication de produits amylacés"@fr;
+    skos:prefLabel "10620".
+<http://vocab.belgif.be/auth/nace2008/10910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1091>, <http://vocab.belgif.be/auth/nace2008/1091>;
+    skos:definition "Vervaardiging van veevoeders"@nl, "Fabrication d'aliments pour animaux de ferme"@fr;
+    skos:prefLabel "10910".
+<http://vocab.belgif.be/auth/nace2008/38219> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3821>, <http://vocab.belgif.be/auth/nace2008/3821>;
+    skos:definition "Overige verwerking en verwijdering van ongevaarlijk afval"@nl, "Autre traitement et élimination des déchets non dangereux"@fr;
+    skos:prefLabel "38219".
+<http://vocab.belgif.be/auth/nace2025/10620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1062>, <http://vocab.belgif.be/auth/nace2025/1062>;
+    skos:definition "Vervaardiging van zetmeel en zetmeelproducten"@nl, "Fabrication de produits amylacés"@fr;
+    skos:prefLabel "10620".
+<http://vocab.belgif.be/auth/nace2025/10910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1091>, <http://vocab.belgif.be/auth/nace2025/1091>;
+    skos:definition "Vervaardiging van veevoeders"@nl, "Fabrication d'aliments pour animaux de ferme"@fr;
+    skos:prefLabel "10910".
+<http://vocab.belgif.be/auth/nace2025/38330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3833>, <http://vocab.belgif.be/auth/nace2025/3833>;
+    skos:definition "Andere afvalverwijdering"@nl, "Autre élimination des déchets"@fr;
+    skos:prefLabel "38330".
+<https://data.vlaanderen.be/id/onderneming/0807.995.845> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "26-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0807.995.845;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10620>, <http://vocab.belgif.be/auth/nace2025/38330>, <http://vocab.belgif.be/auth/nace2025/10910>, <http://vocab.belgif.be/auth/nace2008/38219>, <http://vocab.belgif.be/auth/nace2008/10620>, <http://vocab.belgif.be/auth/nace2008/10910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0807.995.845;
+    reorg:legalName "Duynie Ingredients BV"@nl.
+_:address_contact_0807.995.845 a locn:Address;
+    locn:thoroughfare "HANDELSWEG"@nl, "HANDELSWEG"@fr;
+    rdfs:label "36-38";
+    locn:postCode "6541 CT";
+    adres:gemeentenaam "NIJMEGEN"@nl, "NIJMEGEN"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:contact_0807.995.845 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0807.995.845.
+_:registration_company_0807.995.845 a adms:Identifier;
+    skos:notation "0807.995.845";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-11-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/56101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Restauration à service complet"@fr, "Eetgelegenheden met volledige bediening"@nl;
+    skos:prefLabel "56101".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/10119> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Overige verwerking en conservering van vlees, met uitzondering van vlees van gevogelte"@nl, "Autre transformation et conservation de la viande, à l’exception de la viande de volaille"@fr;
+    skos:prefLabel "10119".
+<http://vocab.belgif.be/auth/nace2025/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1013>, <http://vocab.belgif.be/auth/nace2025/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2025/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1085>, <http://vocab.belgif.be/auth/nace2025/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/56111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met volledige bediening"@nl, "Restauration à service complet"@fr;
+    skos:prefLabel "56111".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/93126> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9312>, <http://vocab.belgif.be/auth/nace2025/9312>;
+    skos:definition "Activiteiten van watersportclubs"@nl, "Activités de clubs de sports nautiques"@fr;
+    skos:prefLabel "93126".
+<https://data.vlaanderen.be/id/onderneming/0820.029.189> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0820.029.189;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/93126>, <http://vocab.belgif.be/auth/nace2025/56111>, <http://vocab.belgif.be/auth/nace2025/10119>, <http://vocab.belgif.be/auth/nace2025/10850>, <http://vocab.belgif.be/auth/nace2025/10130>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2008/56101>, <http://vocab.belgif.be/auth/nace2008/56210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0820.029.189;
+    reorg:legalName "Bouyard, Christophe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.181.903.944>.
+<https://data.vlaanderen.be/id/vestiging/2.181.903.944> a org:Site;
+    dcterms:created "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.181.903.944.
+_:contact_0820.029.189 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:telephone "0477/601.637".
+_:registration_company_0820.029.189 a adms:Identifier;
+    skos:notation "0820.029.189";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.181.903.944 a adms:Identifier;
+    skos:notation "2.181.903.944";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

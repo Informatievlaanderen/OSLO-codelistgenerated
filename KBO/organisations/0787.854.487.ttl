@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47241> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4724>, <http://vocab.belgif.be/auth/nace2008/4724>;
+    skos:definition "Detailhandel in brood en banketbakkerswerk in gespecialiseerde winkels (koude bakkers)"@nl, "Commerce de détail de pain et de pâtisserie en magasin spécialisé (dépôt)"@fr;
+    skos:prefLabel "47241".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5630>, <http://vocab.belgif.be/auth/nace2008/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2025/47241> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4724>, <http://vocab.belgif.be/auth/nace2025/4724>;
+    skos:definition "Detailhandel in brood en banketbakkerswerk in gespecialiseerde winkels (koude bakkers)"@nl, "Commerce de détail de pain et de pâtisserie en magasin spécialisé (dépôt)"@fr;
+    skos:prefLabel "47241".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<https://data.vlaanderen.be/id/onderneming/0787.854.487> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/721>;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0787.854.487;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/56301>, <http://vocab.belgif.be/auth/nace2025/47241>, <http://vocab.belgif.be/auth/nace2008/47241>, <http://vocab.belgif.be/auth/nace2008/56301>, <http://vocab.belgif.be/auth/nace2008/56102>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0787.854.487;
+    reorg:legalName "VILLA DES LAPINS (VDL) PREVOO-ANDRE"@fr.
+_:address_contact_0787.854.487 a locn:Address;
+    locn:thoroughfare "Rue de la Molignée, Warnant"@nl, "Rue de la Molignée, Warnant"@fr;
+    rdfs:label "115";
+    locn:postCode "5537";
+    adres:gemeentenaam "Anhée"@nl, "Anhée"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0787.854.487 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "lavilladeslapins@gmail.com";
+    schema:telephone "+32491938760";
+    locn:address _:address_contact_0787.854.487.
+_:registration_company_0787.854.487 a adms:Identifier;
+    skos:notation "0787.854.487";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

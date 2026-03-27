@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45194> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4519>, <http://vocab.belgif.be/auth/nace2008/4519>;
+    skos:definition "Handel in aanhangwagens, opleggers en caravans"@nl, "Commerce de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "45194".
+<http://vocab.belgif.be/auth/nace2008/45202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles ( > 3,5 tonnes )"@fr;
+    skos:prefLabel "45202".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2008/45209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, n.e.g."@nl, "Entretien et réparation de véhicules automobiles n.c.a."@fr;
+    skos:prefLabel "45209".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/46713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in aanhangwagens, opleggers en caravans"@nl, "Commerce de gros de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "46713".
+<http://vocab.belgif.be/auth/nace2025/95312> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Algemeen onderhoud en reparatie van overige motorvoertuigen (> 3,5 ton)"@nl, "Entretien et réparation général d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "95312".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<http://vocab.belgif.be/auth/nace2025/95319> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Onderhoud en reparatie van motorvoertuigen, neg"@nl, "Entretien et réparation de véhicules automobiles nca"@fr;
+    skos:prefLabel "95319".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0832.094.110> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "21-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0832.094.110;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95319>, <http://vocab.belgif.be/auth/nace2025/46713>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/95312>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2008/45202>, <http://vocab.belgif.be/auth/nace2008/45203>, <http://vocab.belgif.be/auth/nace2008/45209>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/45194>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0832.094.110;
+    reorg:legalName "Houben Robin Depannage"@nl, "HRD"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.194.904.914>.
+<https://data.vlaanderen.be/id/vestiging/2.194.904.914> a org:Site;
+    dcterms:created "21-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.194.904.914.
+_:address_contact_0832.094.110 a locn:Address;
+    locn:thoroughfare "Industrieterrein Kanaal-Noord"@nl, "Industrieterrein Kanaal-Noord"@fr;
+    rdfs:label "1705";
+    locn:postCode "3960";
+    adres:gemeentenaam "Bree"@nl, "Bree"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0832.094.110 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0832.094.110.
+_:registration_company_0832.094.110 a adms:Identifier;
+    skos:notation "0832.094.110";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.194.904.914 a adms:Identifier;
+    skos:notation "2.194.904.914";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "21-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

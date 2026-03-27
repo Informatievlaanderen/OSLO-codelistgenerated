@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/29201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2920>, <http://vocab.belgif.be/auth/nace2008/2920>;
+    skos:definition "Vervaardiging van carrosserieën voor motorvoertuigen"@nl, "Fabrication de carrosseries de véhicules automobiles"@fr;
+    skos:prefLabel "29201".
+<http://vocab.belgif.be/auth/nace2008/29202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2920>, <http://vocab.belgif.be/auth/nace2008/2920>;
+    skos:definition "Vervaardiging van aanhangwagens, caravans en opleggers"@nl, "Fabrication de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "29202".
+<http://vocab.belgif.be/auth/nace2008/45194> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4519>, <http://vocab.belgif.be/auth/nace2008/4519>;
+    skos:definition "Handel in aanhangwagens, opleggers en caravans"@nl, "Commerce de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "45194".
+<http://vocab.belgif.be/auth/nace2008/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4764>, <http://vocab.belgif.be/auth/nace2008/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/29201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2920>, <http://vocab.belgif.be/auth/nace2025/2920>;
+    skos:definition "Vervaardiging van carrosserieën voor motorvoertuigen"@nl, "Fabrication de carrosseries de véhicules automobiles"@fr;
+    skos:prefLabel "29201".
+<http://vocab.belgif.be/auth/nace2025/29202> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2920>, <http://vocab.belgif.be/auth/nace2025/2920>;
+    skos:definition "Vervaardiging van aanhangwagens, caravans en opleggers"@nl, "Fabrication de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "29202".
+<http://vocab.belgif.be/auth/nace2025/46713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in aanhangwagens, opleggers en caravans"@nl, "Commerce de gros de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "46713".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<https://data.vlaanderen.be/id/onderneming/0820.957.322> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0820.957.322;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47639>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/46713>, <http://vocab.belgif.be/auth/nace2025/29202>, <http://vocab.belgif.be/auth/nace2025/29201>, <http://vocab.belgif.be/auth/nace2008/47640>, <http://vocab.belgif.be/auth/nace2008/29202>, <http://vocab.belgif.be/auth/nace2008/45194>, <http://vocab.belgif.be/auth/nace2008/29201>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0820.957.322;
+    reorg:legalName "JUGA"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.256.586.917>.
+<https://data.vlaanderen.be/id/vestiging/2.256.586.917> a org:Site;
+    dcterms:created "19-09-2016"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.256.586.917.
+_:address_contact_0820.957.322 a locn:Address;
+    locn:thoroughfare "Zillekesstraat"@nl, "Zillekesstraat"@fr;
+    rdfs:label "11";
+    locn:postCode "3980";
+    adres:gemeentenaam "Tessenderlo-Ham"@nl, "Tessenderlo-Ham"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0820.957.322 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@juga.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.juga.be";
+    locn:address _:address_contact_0820.957.322.
+_:registration_company_0820.957.322 a adms:Identifier;
+    skos:notation "0820.957.322";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.256.586.917 a adms:Identifier;
+    skos:notation "2.256.586.917";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2599>, <http://vocab.belgif.be/auth/nace2008/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2008/28220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2822>, <http://vocab.belgif.be/auth/nace2008/2822>;
+    skos:definition "Vervaardiging van radiatoren en ketels voor centrale verwarming"@nl, "Fabrication de radiateurs et de chaudières pour le chauffage central"@fr;
+    skos:prefLabel "28220".
+<http://vocab.belgif.be/auth/nace2008/30990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3099>, <http://vocab.belgif.be/auth/nace2008/3099>;
+    skos:definition "Vervaardiging van andere transportmiddelen, n.e.g."@nl, "Fabrication d'autres équipements de transport n.c.a."@fr;
+    skos:prefLabel "30990".
+<http://vocab.belgif.be/auth/nace2008/46694> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in hijs-, hef- en transportwerktuigen"@nl, "Commerce de gros de matériel de levage et de manutention"@fr;
+    skos:prefLabel "46694".
+<http://vocab.belgif.be/auth/nace2025/25999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2599>, <http://vocab.belgif.be/auth/nace2025/2599>;
+    skos:definition "Vervaardiging van overige artikelen van metaal, n.e.g."@nl, "Fabrication d'autres articles métalliques n.c.a."@fr;
+    skos:prefLabel "25999".
+<http://vocab.belgif.be/auth/nace2025/28220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2822>, <http://vocab.belgif.be/auth/nace2025/2822>;
+    skos:definition "Vervaardiging van radiatoren en ketels voor centrale verwarming"@nl, "Fabrication de radiateurs et de chaudières pour le chauffage central"@fr;
+    skos:prefLabel "28220".
+<http://vocab.belgif.be/auth/nace2025/30990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3099>, <http://vocab.belgif.be/auth/nace2025/3099>;
+    skos:definition "Vervaardiging van andere transportmiddelen, n.e.g."@nl, "Fabrication d'autres équipements de transport n.c.a."@fr;
+    skos:prefLabel "30990".
+<http://vocab.belgif.be/auth/nace2025/46644> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in hijs-, hef- en transportwerktuigen"@nl, "Commerce de gros de matériel de levage et de manutention"@fr;
+    skos:prefLabel "46644".
+<https://data.vlaanderen.be/id/onderneming/0829.684.154> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "24-09-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0829.684.154;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/28220>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25999>, <http://vocab.belgif.be/auth/nace2025/46644>, <http://vocab.belgif.be/auth/nace2025/30990>, <http://vocab.belgif.be/auth/nace2008/28220>, <http://vocab.belgif.be/auth/nace2008/25999>, <http://vocab.belgif.be/auth/nace2008/30990>, <http://vocab.belgif.be/auth/nace2008/46694>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0829.684.154;
+    reorg:legalName "Flemac"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.193.306.887>.
+<https://data.vlaanderen.be/id/vestiging/2.193.306.887> a org:Site;
+    dcterms:created "01-10-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.193.306.887.
+_:address_contact_0829.684.154 a locn:Address;
+    locn:thoroughfare "Knotwilgenweg"@nl, "Knotwilgenweg"@fr;
+    rdfs:label "7";
+    locn:postCode "2220";
+    adres:gemeentenaam "Heist-op-den-Berg"@nl, "Heist-op-den-Berg"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0829.684.154 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0829.684.154.
+_:registration_company_0829.684.154 a adms:Identifier;
+    skos:notation "0829.684.154";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-09-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.193.306.887 a adms:Identifier;
+    skos:notation "2.193.306.887";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-09-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

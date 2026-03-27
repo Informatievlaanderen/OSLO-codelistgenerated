@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2008/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<http://vocab.belgif.be/auth/nace2025/47521> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Bouwmarkten en andere doe-het-zelfzaken in bouwmaterialen, algemeen assortiment"@nl, "Commerce de détail de matériaux de construction en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47521".
+<http://vocab.belgif.be/auth/nace2025/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<https://data.vlaanderen.be/id/onderneming/0782.219.777> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0782.219.777;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47521>, <http://vocab.belgif.be/auth/nace2025/47525>, <http://vocab.belgif.be/auth/nace2008/47521>, <http://vocab.belgif.be/auth/nace2008/47525>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0782.219.777;
+    reorg:legalName "RAMALEC"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.328.819.253>.
+<https://data.vlaanderen.be/id/vestiging/2.328.819.253> a org:Site;
+    dcterms:created "15-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.328.819.253.
+_:address_contact_0782.219.777 a locn:Address;
+    locn:thoroughfare "Chaussée de Fleurus"@nl, "Chaussée de Fleurus"@fr;
+    rdfs:label "139";
+    locn:postCode "6060";
+    adres:gemeentenaam "Charleroi"@nl, "Charleroi"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0782.219.777 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0782.219.777.
+_:registration_company_0782.219.777 a adms:Identifier;
+    skos:notation "0782.219.777";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.328.819.253 a adms:Identifier;
+    skos:notation "2.328.819.253";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

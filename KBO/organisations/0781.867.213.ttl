@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/26700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2670>, <http://vocab.belgif.be/auth/nace2008/2670>;
+    skos:definition "Houwen, bewerken en afwerken van bouw- en siersteen"@nl, "Taille, façonnage et finissage de pierres ornementales et de construction"@fr;
+    skos:prefLabel "26700".
+<http://vocab.belgif.be/auth/nace2008/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3250>, <http://vocab.belgif.be/auth/nace2008/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2008/47782> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4778>, <http://vocab.belgif.be/auth/nace2008/4778>;
+    skos:definition "Detailhandel in fotografische en optische artikelen en in precisieinstrumenten in gespecialiseerde winkels"@nl, "Commerce de détail de matériel photographique, d'optique et de précision en magasin spécialisé"@fr;
+    skos:prefLabel "47782".
+<http://vocab.belgif.be/auth/nace2025/26700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2670>, <http://vocab.belgif.be/auth/nace2025/2670>;
+    skos:definition "Houwen, bewerken en afwerken van bouw- en siersteen"@nl, "Taille, façonnage et finissage de pierres ornementales et de construction"@fr;
+    skos:prefLabel "26700".
+<http://vocab.belgif.be/auth/nace2025/32500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3250>, <http://vocab.belgif.be/auth/nace2025/3250>;
+    skos:definition "Vervaardiging van medische en tandheelkundige instrumenten en benodigdheden"@nl, "Fabrication d'instruments et de fournitures à usage médical et dentaire"@fr;
+    skos:prefLabel "32500".
+<http://vocab.belgif.be/auth/nace2025/47742> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47742".
+<https://data.vlaanderen.be/id/onderneming/0781.867.213> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "04-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0781.867.213;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47742>, <http://vocab.belgif.be/auth/nace2025/32500>, <http://vocab.belgif.be/auth/nace2025/26700>, <http://vocab.belgif.be/auth/nace2008/32500>, <http://vocab.belgif.be/auth/nace2008/47782>, <http://vocab.belgif.be/auth/nace2008/26700>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Siaud, Julie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.327.486.789>.
+<https://data.vlaanderen.be/id/vestiging/2.327.486.789> a org:Site;
+    dcterms:created "04-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.327.486.789.
+_:registration_company_0781.867.213 a adms:Identifier;
+    skos:notation "0781.867.213";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.327.486.789 a adms:Identifier;
+    skos:notation "2.327.486.789";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

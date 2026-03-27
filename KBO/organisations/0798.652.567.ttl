@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/46497> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in spellen en speelgoed"@nl, "Commerce de gros de jeux et de jouets"@fr;
+    skos:prefLabel "46497".
+<http://vocab.belgif.be/auth/nace2025/47512> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in huishoudtextiel en beddengoed in gespecialiseerde winkels"@nl, "Commerce de détail de linge de maison en magasin spécialisé"@fr;
+    skos:prefLabel "47512".
+<http://vocab.belgif.be/auth/nace2025/47554> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in babyartikelen (algemeen assortiment)"@nl, "Commerce de détail d'articles de puériculture (assortiment général)"@fr;
+    skos:prefLabel "47554".
+<http://vocab.belgif.be/auth/nace2025/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4764>, <http://vocab.belgif.be/auth/nace2025/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/47713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in baby- en kinderbovenkleding in gespecialiseerde winkels"@nl, "Commerce de détail de vêtements pour bébé et enfant en magasin spécialisé"@fr;
+    skos:prefLabel "47713".
+<https://data.vlaanderen.be/id/onderneming/0798.652.567> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0798.652.567;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47640>, <http://vocab.belgif.be/auth/nace2025/47713>, <http://vocab.belgif.be/auth/nace2025/46497>, <http://vocab.belgif.be/auth/nace2025/47512>, <http://vocab.belgif.be/auth/nace2025/47554>, <http://vocab.belgif.be/auth/nace2025/47690>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Lardinois, Tamara";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.385.582.861>.
+<https://data.vlaanderen.be/id/vestiging/2.385.582.861> a org:Site;
+    dcterms:created "27-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.385.582.861.
+_:registration_company_0798.652.567 a adms:Identifier;
+    skos:notation "0798.652.567";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.385.582.861 a adms:Identifier;
+    skos:notation "2.385.582.861";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-02-2026"^^<http://www.w3.org/2001/XMLSchema#date>.

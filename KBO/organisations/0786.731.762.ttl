@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/23610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2361>, <http://vocab.belgif.be/auth/nace2025/2361>;
+    skos:definition "Vervaardiging van artikelen van beton voor de bouw"@nl, "Fabrication d'éléments en béton pour la construction"@fr;
+    skos:prefLabel "23610".
+<http://vocab.belgif.be/auth/nace2025/23650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2365>, <http://vocab.belgif.be/auth/nace2025/2365>;
+    skos:definition "Vervaardiging van producten van vezelcement"@nl, "Fabrication d'ouvrages en fibre-ciment"@fr;
+    skos:prefLabel "23650".
+<http://vocab.belgif.be/auth/nace2025/23660> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2366>, <http://vocab.belgif.be/auth/nace2025/2366>;
+    skos:definition "Vervaardiging van andere artikelen van beton, cement en gips"@nl, "Fabrication d’autres ouvrages en béton, en ciment ou en plâtre"@fr;
+    skos:prefLabel "23660".
+<http://vocab.belgif.be/auth/nace2025/25110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2511>, <http://vocab.belgif.be/auth/nace2025/2511>;
+    skos:definition "Vervaardiging van binnen- en buitenbanden van rubber"@nl, "Fabrication de pneumatiques et de chambres à air"@fr;
+    skos:prefLabel "25110".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43429> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4342>, <http://vocab.belgif.be/auth/nace2025/4342>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten in de constructie van gebouwen, neg"@nl, "Autres travaux de construction spécialisés dans la construction de bâtiments, nca"@fr;
+    skos:prefLabel "43429".
+<https://data.vlaanderen.be/id/onderneming/0786.731.762> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "16-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0786.731.762;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25110>, <http://vocab.belgif.be/auth/nace2025/23650>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/23610>, <http://vocab.belgif.be/auth/nace2025/43429>, <http://vocab.belgif.be/auth/nace2025/23660>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Basica, Constantin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.331.643.438>.
+<https://data.vlaanderen.be/id/vestiging/2.331.643.438> a org:Site;
+    dcterms:created "16-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.331.643.438.
+_:registration_company_0786.731.762 a adms:Identifier;
+    skos:notation "0786.731.762";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.331.643.438 a adms:Identifier;
+    skos:notation "2.331.643.438";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "16-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

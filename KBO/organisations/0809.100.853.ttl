@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0113>, <http://vocab.belgif.be/auth/nace2008/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2008/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0124>, <http://vocab.belgif.be/auth/nace2008/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2008/01250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0125>, <http://vocab.belgif.be/auth/nace2008/0125>;
+    skos:definition "Overige dierenfokkerijen"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01250".
+<http://vocab.belgif.be/auth/nace2008/01410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0141>, <http://vocab.belgif.be/auth/nace2008/0141>;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+<http://vocab.belgif.be/auth/nace2008/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0150>, <http://vocab.belgif.be/auth/nace2008/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<http://vocab.belgif.be/auth/nace2025/01130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0113>, <http://vocab.belgif.be/auth/nace2025/0113>;
+    skos:definition "Fruitteelt"@nl, "Culture de fruits"@fr;
+    skos:prefLabel "01130".
+<http://vocab.belgif.be/auth/nace2025/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0124>, <http://vocab.belgif.be/auth/nace2025/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2025/01250> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0125>, <http://vocab.belgif.be/auth/nace2025/0125>;
+    skos:definition "Overige dierenfokkerijen"@nl, "Élevage d'autres animaux"@fr;
+    skos:prefLabel "01250".
+<http://vocab.belgif.be/auth/nace2025/01410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0141>, <http://vocab.belgif.be/auth/nace2025/0141>;
+    skos:definition "Diensten in verband met de landbouw; aanleg en onderhoud van tuinen en parken"@nl, "Services annexes à la culture; aménagement des paysages"@fr;
+    skos:prefLabel "01410".
+<http://vocab.belgif.be/auth/nace2025/01500> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0150>, <http://vocab.belgif.be/auth/nace2025/0150>;
+    skos:definition "Jacht, zetten van vallen en fokken van wild, alsmede diensten in verband met deze activiteiten"@nl, "Chasse; capture d'animaux, repeuplement en gibier et services annexes"@fr;
+    skos:prefLabel "01500".
+<https://data.vlaanderen.be/id/onderneming/0809.100.853> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0809.100.853;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01410>, <http://vocab.belgif.be/auth/nace2025/01240>, <http://vocab.belgif.be/auth/nace2025/01250>, <http://vocab.belgif.be/auth/nace2025/01130>, <http://vocab.belgif.be/auth/nace2025/01500>, <http://vocab.belgif.be/auth/nace2008/01250>, <http://vocab.belgif.be/auth/nace2008/01240>, <http://vocab.belgif.be/auth/nace2008/01500>, <http://vocab.belgif.be/auth/nace2008/01130>, <http://vocab.belgif.be/auth/nace2008/01410>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "van Outryve d'Ydewalle, Tanguy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.324.784.746>.
+<https://data.vlaanderen.be/id/vestiging/2.324.784.746> a org:Site;
+    dcterms:created "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.324.784.746.
+_:registration_company_0809.100.853 a adms:Identifier;
+    skos:notation "0809.100.853";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.324.784.746 a adms:Identifier;
+    skos:notation "2.324.784.746";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2021"^^<http://www.w3.org/2001/XMLSchema#date>.

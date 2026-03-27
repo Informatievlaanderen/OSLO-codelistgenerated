@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2512>, <http://vocab.belgif.be/auth/nace2008/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3314>, <http://vocab.belgif.be/auth/nace2008/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2025/25120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2512>, <http://vocab.belgif.be/auth/nace2025/2512>;
+    skos:definition "Loopvlakvernieuwing"@nl, "Rechapage de pneumatiques"@fr;
+    skos:prefLabel "25120".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3314>, <http://vocab.belgif.be/auth/nace2025/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<https://data.vlaanderen.be/id/onderneming/0786.201.430> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "04-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0786.201.430;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/25120>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/33140>, <http://vocab.belgif.be/auth/nace2008/25120>, <http://vocab.belgif.be/auth/nace2008/33140>, <http://vocab.belgif.be/auth/nace2008/33120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0786.201.430;
+    reorg:legalName "Muyle Electro Machinery Production"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.332.066.575>, <https://data.vlaanderen.be/id/vestiging/2.332.066.971>, _:branch_9.001.750.448.
+<https://data.vlaanderen.be/id/vestiging/2.332.066.575> a org:Site;
+    dcterms:created "13-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.332.066.575.
+<https://data.vlaanderen.be/id/vestiging/2.332.066.971> a org:Site;
+    dcterms:created "13-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.332.066.971.
+_:address_contact_0786.201.430 a locn:Address;
+    locn:thoroughfare "Miron Costin"@nl, "Miron Costin"@fr;
+    rdfs:label "2";
+    adres:busnummer "10/2";
+    locn:postCode "510001";
+    adres:gemeentenaam "Alba Iulia"@nl, "Alba Iulia"@fr;
+    adres:land "Roemenië"@nl, "Roumanie"@fr.
+_:branch_9.001.750.448 a org:Site;
+    dcterms:created "13-05-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_branch_9.001.750.448.
+_:contact_0786.201.430 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0786.201.430.
+_:registration_branch_9.001.750.448 a adms:Identifier;
+    skos:notation "9.001.750.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_company_0786.201.430 a adms:Identifier;
+    skos:notation "0786.201.430";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.332.066.575 a adms:Identifier;
+    skos:notation "2.332.066.575";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.332.066.971 a adms:Identifier;
+    skos:notation "2.332.066.971";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-03-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

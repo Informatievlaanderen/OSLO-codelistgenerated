@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4222>, <http://vocab.belgif.be/auth/nace2008/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2008/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4311>, <http://vocab.belgif.be/auth/nace2008/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4339>, <http://vocab.belgif.be/auth/nace2008/4339>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43390".
+<http://vocab.belgif.be/auth/nace2008/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8122>, <http://vocab.belgif.be/auth/nace2008/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/42220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4222>, <http://vocab.belgif.be/auth/nace2025/4222>;
+    skos:definition "Bouw van civieltechnische werken voor elektriciteit en telecommunicatie"@nl, "Construction de réseaux électriques et de télécommunications"@fr;
+    skos:prefLabel "42220".
+<http://vocab.belgif.be/auth/nace2025/43110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4311>, <http://vocab.belgif.be/auth/nace2025/4311>;
+    skos:definition "Slopen"@nl, "Travaux de démolition"@fr;
+    skos:prefLabel "43110".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43350> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4335>, <http://vocab.belgif.be/auth/nace2025/4335>;
+    skos:definition "Overige werkzaamheden in verband met de afwerking van gebouwen"@nl, "Autres travaux de finition"@fr;
+    skos:prefLabel "43350".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<https://data.vlaanderen.be/id/onderneming/0805.042.491> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "23-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0805.042.491;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/42220>, <http://vocab.belgif.be/auth/nace2025/43110>, <http://vocab.belgif.be/auth/nace2025/43350>, <http://vocab.belgif.be/auth/nace2008/42220>, <http://vocab.belgif.be/auth/nace2008/43390>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/41201>, <http://vocab.belgif.be/auth/nace2008/81220>, <http://vocab.belgif.be/auth/nace2008/43110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0805.042.491;
+    reorg:legalName "TANKOO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.538.039>.
+<https://data.vlaanderen.be/id/vestiging/2.351.538.039> a org:Site;
+    dcterms:created "08-11-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.538.039.
+_:address_contact_0805.042.491 a locn:Address;
+    locn:thoroughfare "Beke Tuinwijk"@nl, "Beke Tuinwijk"@fr;
+    rdfs:label "8";
+    locn:postCode "9950";
+    adres:gemeentenaam "Lievegem"@nl, "Lievegem"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0805.042.491 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@tankoobv.be";
+    <http://xmlns.com/foaf/0.1/homepage> "www.tankoobv.be";
+    locn:address _:address_contact_0805.042.491.
+_:registration_company_0805.042.491 a adms:Identifier;
+    skos:notation "0805.042.491";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.538.039 a adms:Identifier;
+    skos:notation "2.351.538.039";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "23-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

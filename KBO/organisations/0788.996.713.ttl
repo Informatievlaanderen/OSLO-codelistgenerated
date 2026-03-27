@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1623>, <http://vocab.belgif.be/auth/nace2008/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/95110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9511>, <http://vocab.belgif.be/auth/nace2008/9511>;
+    skos:definition "Reparatie van computers en randapparatuur"@nl, "Réparation d'ordinateurs et d'équipements périphériques"@fr;
+    skos:prefLabel "95110".
+<http://vocab.belgif.be/auth/nace2025/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1623>, <http://vocab.belgif.be/auth/nace2025/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/95100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9510>, <http://vocab.belgif.be/auth/nace2025/9510>;
+    skos:definition "Reparatie en onderhoud van computers en communicatieapparatuur"@nl, "Réparation et entretien d’ordinateurs et d’équipements de communication"@fr;
+    skos:prefLabel "95100".
+<https://data.vlaanderen.be/id/onderneming/0788.996.713> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0788.996.713;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95100>, <http://vocab.belgif.be/auth/nace2025/16230>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2008/95110>, <http://vocab.belgif.be/auth/nace2008/16230>, <http://vocab.belgif.be/auth/nace2008/43320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Dewaele, Sven";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.333.728.938>.
+<https://data.vlaanderen.be/id/vestiging/2.333.728.938> a org:Site;
+    dcterms:created "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.333.728.938.
+_:registration_company_0788.996.713 a adms:Identifier;
+    skos:notation "0788.996.713";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.333.728.938 a adms:Identifier;
+    skos:notation "2.333.728.938";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

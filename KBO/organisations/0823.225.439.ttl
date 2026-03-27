@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5210>, <http://vocab.belgif.be/auth/nace2008/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/52100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5210>, <http://vocab.belgif.be/auth/nace2025/5210>;
+    skos:definition "Opslag in koelpakhuizen en overige opslag"@nl, "Entreposage et stockage, y compris frigorifique"@fr;
+    skos:prefLabel "52100".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<https://data.vlaanderen.be/id/onderneming/0823.225.439> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/014>;
+    dcterms:created "15-02-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0823.225.439;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/52100>, <http://vocab.belgif.be/auth/nace2025/52210>, <http://vocab.belgif.be/auth/nace2008/49410>, <http://vocab.belgif.be/auth/nace2008/52100>, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0823.225.439;
+    reorg:legalName "HAINAUT TRANSPORT & TRADING"@fr, "HT&T"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.186.161.254>.
+<https://data.vlaanderen.be/id/vestiging/2.186.161.254> a org:Site;
+    dcterms:created "17-02-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.186.161.254.
+_:address_contact_0823.225.439 a locn:Address;
+    locn:thoroughfare "Rue des Vaches"@nl, "Rue des Vaches"@fr;
+    rdfs:label "77";
+    locn:postCode "7390";
+    adres:gemeentenaam "Quaregnon"@nl, "Quaregnon"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0823.225.439 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0823.225.439.
+_:registration_company_0823.225.439 a adms:Identifier;
+    skos:notation "0823.225.439";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.186.161.254 a adms:Identifier;
+    skos:notation "2.186.161.254";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-02-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

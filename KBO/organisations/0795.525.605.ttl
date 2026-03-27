@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47650> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4765>, <http://vocab.belgif.be/auth/nace2008/4765>;
+    skos:definition "Detailhandel in spellen en speelgoed in gespecialiseerde winkels"@nl, "Commerce de détail de jeux et de jouets en magasin spécialisé"@fr;
+    skos:prefLabel "47650".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/91011> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9101>, <http://vocab.belgif.be/auth/nace2008/9101>;
+    skos:definition "Bibliotheken,mediatheken en ludotheken"@nl, "Gestion des bibliothèques, des médiathèques et des ludothèques"@fr;
+    skos:prefLabel "91011".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4764>, <http://vocab.belgif.be/auth/nace2025/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/91110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9111>, <http://vocab.belgif.be/auth/nace2025/9111>;
+    skos:definition "Bedrijfs- en werkgeversorganisaties"@nl, "Activités d'organisations économiques et patronales"@fr;
+    skos:prefLabel "91110".
+<https://data.vlaanderen.be/id/onderneming/0795.525.605> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0795.525.605;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/91110>, <http://vocab.belgif.be/auth/nace2025/47640>, <http://vocab.belgif.be/auth/nace2008/91011>, <http://vocab.belgif.be/auth/nace2008/47650>, <http://vocab.belgif.be/auth/nace2008/47910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0795.525.605;
+    reorg:legalName "Pena, Miguel";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.339.363.252>.
+<https://data.vlaanderen.be/id/vestiging/2.339.363.252> a org:Site;
+    dcterms:created "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.339.363.252.
+_:contact_0795.525.605 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "info@ecokidsland.be";
+    schema:telephone "0471522352";
+    <http://xmlns.com/foaf/0.1/homepage> "www.ecokidsland.be".
+_:registration_company_0795.525.605 a adms:Identifier;
+    skos:notation "0795.525.605";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.339.363.252 a adms:Identifier;
+    skos:notation "2.339.363.252";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

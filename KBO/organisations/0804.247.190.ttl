@@ -1,0 +1,213 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/18110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1811>, <http://vocab.belgif.be/auth/nace2008/1811>;
+    skos:definition "Krantendrukkerijen"@nl, "Imprimerie de journaux"@fr;
+    skos:prefLabel "18110".
+<http://vocab.belgif.be/auth/nace2008/18120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1812>, <http://vocab.belgif.be/auth/nace2008/1812>;
+    skos:definition "Overige drukkerijen"@nl, "Autre imprimerie (labeur)"@fr;
+    skos:prefLabel "18120".
+<http://vocab.belgif.be/auth/nace2008/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1813>, <http://vocab.belgif.be/auth/nace2008/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2008/20590> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2059>, <http://vocab.belgif.be/auth/nace2008/2059>;
+    skos:definition "Vervaardiging van andere chemische producten, n.e.g."@nl, "Fabrication d'autres produits chimiques n.c.a."@fr;
+    skos:prefLabel "20590".
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/47620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4762>, <http://vocab.belgif.be/auth/nace2008/4762>;
+    skos:definition "Detailhandel in kranten en kantoorbehoeften in gespecialiseerde  winkels"@nl, "Commerce de détail de journaux et de papeterie en magasin spécialisé"@fr;
+    skos:prefLabel "47620".
+<http://vocab.belgif.be/auth/nace2008/47791> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4779>, <http://vocab.belgif.be/auth/nace2008/4779>;
+    skos:definition "Detailhandel in antiquiteiten in winkels"@nl, "Commerce de détail d'antiquités en magasin"@fr;
+    skos:prefLabel "47791".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/58140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5814>, <http://vocab.belgif.be/auth/nace2008/5814>;
+    skos:definition "Uitgeverijen van tijdschriften"@nl, "Édition de revues et de périodiques"@fr;
+    skos:prefLabel "58140".
+<http://vocab.belgif.be/auth/nace2008/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5819>, <http://vocab.belgif.be/auth/nace2008/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2008/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5829>, <http://vocab.belgif.be/auth/nace2008/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/74103> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van grafische designers"@nl, "Activités de design graphique"@fr;
+    skos:prefLabel "74103".
+<http://vocab.belgif.be/auth/nace2008/74109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Autres activités spécialisées de design"@fr, "Overige activiteiten van gespecialiseerde designers"@nl;
+    skos:prefLabel "74109".
+<http://vocab.belgif.be/auth/nace2008/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2008/74209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Overige fotografische activiteiten"@nl, "Autres activités photographiques"@fr;
+    skos:prefLabel "74209".
+<http://vocab.belgif.be/auth/nace2008/82110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8211>, <http://vocab.belgif.be/auth/nace2008/8211>;
+    skos:definition "Diverse administratieve activiteiten ten behoeve van kantoren"@nl, "Services administratifs combinés de bureau"@fr;
+    skos:prefLabel "82110".
+<http://vocab.belgif.be/auth/nace2008/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8230>, <http://vocab.belgif.be/auth/nace2008/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2008/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9329>, <http://vocab.belgif.be/auth/nace2008/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<http://vocab.belgif.be/auth/nace2025/18110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1811>, <http://vocab.belgif.be/auth/nace2025/1811>;
+    skos:definition "Krantendrukkerijen"@nl, "Imprimerie de journaux"@fr;
+    skos:prefLabel "18110".
+<http://vocab.belgif.be/auth/nace2025/18120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1812>, <http://vocab.belgif.be/auth/nace2025/1812>;
+    skos:definition "Overige drukkerijen"@nl, "Autre imprimerie (labeur)"@fr;
+    skos:prefLabel "18120".
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/20590> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2059>, <http://vocab.belgif.be/auth/nace2025/2059>;
+    skos:definition "Vervaardiging van andere chemische producten, n.e.g."@nl, "Fabrication d'autres produits chimiques n.c.a."@fr;
+    skos:prefLabel "20590".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47621> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4762>, <http://vocab.belgif.be/auth/nace2025/4762>;
+    skos:definition "Detailhandel in kranten en andere tijdschriften"@nl, "Commerce de détail de journaux et autres publications périodiques"@fr;
+    skos:prefLabel "47621".
+<http://vocab.belgif.be/auth/nace2025/47791> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4779>, <http://vocab.belgif.be/auth/nace2025/4779>;
+    skos:definition "Detailhandel in antiquiteiten in winkels"@nl, "Commerce de détail d'antiquités en magasin"@fr;
+    skos:prefLabel "47791".
+<http://vocab.belgif.be/auth/nace2025/56112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5611>, <http://vocab.belgif.be/auth/nace2025/5611>;
+    skos:definition "Activiteiten van eetgelegenheden met beperkte bediening, muv mobiele eetgelegenheden"@nl, "Restauration à service restreint, à l'exclusion de restauration mobile"@fr;
+    skos:prefLabel "56112".
+<http://vocab.belgif.be/auth/nace2025/58130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5813>, <http://vocab.belgif.be/auth/nace2025/5813>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "58130".
+<http://vocab.belgif.be/auth/nace2025/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5819>, <http://vocab.belgif.be/auth/nace2025/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2025/58290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5829>, <http://vocab.belgif.be/auth/nace2025/5829>;
+    skos:definition "Overige uitgeverijen van software"@nl, "Édition d'autres logiciels"@fr;
+    skos:prefLabel "58290".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<http://vocab.belgif.be/auth/nace2025/74120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7412>, <http://vocab.belgif.be/auth/nace2025/7412>;
+    skos:definition "Grafisch ontwerp en visuele communicatie"@nl, "Activités de design graphique et de communication visuelle"@fr;
+    skos:prefLabel "74120".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2025/74209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Overige fotografische activiteiten"@nl, "Autres activités photographiques"@fr;
+    skos:prefLabel "74209".
+<http://vocab.belgif.be/auth/nace2025/82100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8210>, <http://vocab.belgif.be/auth/nace2025/8210>;
+    skos:definition "Administratieve en ondersteunende activiteiten ten behoeve van kantoren"@nl, "Activités de service de bureau et de soutien administratif"@fr;
+    skos:prefLabel "82100".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<http://vocab.belgif.be/auth/nace2025/93299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9329>, <http://vocab.belgif.be/auth/nace2025/9329>;
+    skos:definition "Overige recreatie- en ontspanningsactiviteiten, n.e.g."@nl, "Autres activités récréatives et de loisirs n.c.a."@fr;
+    skos:prefLabel "93299".
+<https://data.vlaanderen.be/id/onderneming/0804.247.190> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "25-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0804.247.190;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82100>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/58190>, <http://vocab.belgif.be/auth/nace2025/56112>, <http://vocab.belgif.be/auth/nace2025/18110>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/47621>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2025/47791>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/18120>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/20590>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/93299>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/58290>, <http://vocab.belgif.be/auth/nace2025/58130>, <http://vocab.belgif.be/auth/nace2025/74120>, <http://vocab.belgif.be/auth/nace2025/74209>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2008/47791>, <http://vocab.belgif.be/auth/nace2008/82110>, <http://vocab.belgif.be/auth/nace2008/74109>, <http://vocab.belgif.be/auth/nace2008/74201>, <http://vocab.belgif.be/auth/nace2008/47620>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/58140>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/58290>, <http://vocab.belgif.be/auth/nace2008/74209>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/20590>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/58190>, <http://vocab.belgif.be/auth/nace2008/93299>, <http://vocab.belgif.be/auth/nace2008/82300>, <http://vocab.belgif.be/auth/nace2008/18130>, <http://vocab.belgif.be/auth/nace2008/18110>, <http://vocab.belgif.be/auth/nace2008/74103>, <http://vocab.belgif.be/auth/nace2008/18120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0804.247.190;
+    reorg:legalName "MOREPUBLISHERS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.348.125.520>.
+<https://data.vlaanderen.be/id/vestiging/2.348.125.520> a org:Site;
+    dcterms:created "25-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.348.125.520.
+_:address_contact_0804.247.190 a locn:Address;
+    locn:thoroughfare "Chemin du Croly"@nl, "Chemin du Croly"@fr;
+    rdfs:label "59";
+    locn:postCode "1430";
+    adres:gemeentenaam "Rebecq"@nl, "Rebecq"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0804.247.190 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0804.247.190.
+_:registration_company_0804.247.190 a adms:Identifier;
+    skos:notation "0804.247.190";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.348.125.520 a adms:Identifier;
+    skos:notation "2.348.125.520";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "25-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

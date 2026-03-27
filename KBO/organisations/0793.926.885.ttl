@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3511>, <http://vocab.belgif.be/auth/nace2008/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2008/35120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3512>, <http://vocab.belgif.be/auth/nace2008/3512>;
+    skos:definition "Bouw en reparatie van plezier- en sportvaartuigen"@nl, "Construction et réparation de bâteaux de plaisance et de sport"@fr;
+    skos:prefLabel "35120".
+<http://vocab.belgif.be/auth/nace2008/64200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6420>, <http://vocab.belgif.be/auth/nace2008/6420>;
+    skos:definition "Telecommunicatie"@nl, "Télécommunications"@fr;
+    skos:prefLabel "64200".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/35110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3511>, <http://vocab.belgif.be/auth/nace2025/3511>;
+    skos:definition "Bouw en reparatie van schepen"@nl, "Construction et réparation de navires"@fr;
+    skos:prefLabel "35110".
+<http://vocab.belgif.be/auth/nace2025/35130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3513>, <http://vocab.belgif.be/auth/nace2025/3513>;
+    skos:definition "Distributie van elektriciteit"@nl, "Distribution d'électricité"@fr;
+    skos:prefLabel "35130".
+<http://vocab.belgif.be/auth/nace2025/64210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6421>, <http://vocab.belgif.be/auth/nace2025/6421>;
+    skos:definition "Activiteiten van holdings"@nl, "Activités de société holding"@fr;
+    skos:prefLabel "64210".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0793.926.885> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "24-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0793.926.885;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/64210>, <http://vocab.belgif.be/auth/nace2025/35130>, <http://vocab.belgif.be/auth/nace2025/35110>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2008/64200>, <http://vocab.belgif.be/auth/nace2008/35120>, <http://vocab.belgif.be/auth/nace2008/35110>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0793.926.885;
+    reorg:legalName "Aurinko Herent"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.340.966.227>.
+<https://data.vlaanderen.be/id/vestiging/2.340.966.227> a org:Site;
+    dcterms:created "24-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.340.966.227.
+_:address_contact_0793.926.885 a locn:Address;
+    locn:thoroughfare "Pastoor Van de Wouwerstraat"@nl, "Pastoor Van de Wouwerstraat"@fr;
+    rdfs:label "20";
+    adres:busnummer "1";
+    locn:postCode "2600";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0793.926.885 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0793.926.885.
+_:registration_company_0793.926.885 a adms:Identifier;
+    skos:notation "0793.926.885";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.340.966.227 a adms:Identifier;
+    skos:notation "2.340.966.227";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

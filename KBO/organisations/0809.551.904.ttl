@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4763>, <http://vocab.belgif.be/auth/nace2008/4763>;
+    skos:definition "Detailhandel in audio- en video-opnamen in gespecialiseerde winkels"@nl, "Commerce de détail d'enregistrements musicaux et vidéo en magasin spécialisé"@fr;
+    skos:prefLabel "47630".
+<http://vocab.belgif.be/auth/nace2008/74901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7490>, <http://vocab.belgif.be/auth/nace2008/7490>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende pesonaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres personnalités publiques"@fr;
+    skos:prefLabel "74901".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2025/47690> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4769>, <http://vocab.belgif.be/auth/nace2025/4769>;
+    skos:definition "Detailhandel in cultuur- en recreatieartikelen, neg"@nl, "Commerce de détail de biens culturels et de loisirs nca"@fr;
+    skos:prefLabel "47690".
+<http://vocab.belgif.be/auth/nace2025/74991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7499>, <http://vocab.belgif.be/auth/nace2025/7499>;
+    skos:definition "Activiteiten van managers van artiesten, sportlui en overige bekende personaliteiten"@nl, "Activités des agents et représentants d'artistes, de sportifs et d'autres, personnalités publiques"@fr;
+    skos:prefLabel "74991".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/0809.551.904> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "03-02-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0809.551.904;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/47690>, <http://vocab.belgif.be/auth/nace2025/74991>, <http://vocab.belgif.be/auth/nace2008/47630>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/74901>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0809.551.904;
+    reorg:legalName "1ère Pression à froid"@fr.
+_:address_contact_0809.551.904 a locn:Address;
+    locn:thoroughfare "Henri Jasparlaan"@nl, "Avenue Henri Jaspar"@fr;
+    rdfs:label "123";
+    locn:postCode "1060";
+    adres:gemeentenaam "Sint-Gillis (bij-Brussel)"@nl, "Saint-Gilles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0809.551.904 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0809.551.904.
+_:registration_company_0809.551.904 a adms:Identifier;
+    skos:notation "0809.551.904";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

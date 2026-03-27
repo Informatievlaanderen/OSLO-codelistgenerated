@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46733> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46733".
+<http://vocab.belgif.be/auth/nace2025/46833> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46833".
+<https://data.vlaanderen.be/id/onderneming/0789.613.652> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0789.613.652;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46833>, <http://vocab.belgif.be/auth/nace2008/46733>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0789.613.652;
+    reorg:legalName "AKZO NOBEL CAR REFINISHES"@nl.
+_:address_contact_0789.613.652 a locn:Address;
+    locn:thoroughfare "RIJKSSTRAATWEG"@nl, "RIJKSSTRAATWEG"@fr;
+    rdfs:label "31";
+    locn:postCode "2171 AJ";
+    adres:gemeentenaam "SASSENHEIM"@nl, "SASSENHEIM"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:contact_0789.613.652 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "+31713086944";
+    locn:address _:address_contact_0789.613.652.
+_:registration_company_0789.613.652 a adms:Identifier;
+    skos:notation "0789.613.652";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-08-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/79110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7911>, <http://vocab.belgif.be/auth/nace2008/7911>;
+    skos:definition "Reisbureaus"@nl, "Activités des agences de voyage"@fr;
+    skos:prefLabel "79110".
+<http://vocab.belgif.be/auth/nace2008/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7912>, <http://vocab.belgif.be/auth/nace2008/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<http://vocab.belgif.be/auth/nace2008/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7990>, <http://vocab.belgif.be/auth/nace2008/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<http://vocab.belgif.be/auth/nace2025/79110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7911>, <http://vocab.belgif.be/auth/nace2025/7911>;
+    skos:definition "Reisbureaus"@nl, "Activités des agences de voyage"@fr;
+    skos:prefLabel "79110".
+<http://vocab.belgif.be/auth/nace2025/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7912>, <http://vocab.belgif.be/auth/nace2025/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<http://vocab.belgif.be/auth/nace2025/79901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7990>, <http://vocab.belgif.be/auth/nace2025/7990>;
+    skos:definition "Toeristische informatiediensten"@nl, "Services d'information touristique"@fr;
+    skos:prefLabel "79901".
+<https://data.vlaanderen.be/id/onderneming/0805.876.592> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "15-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0805.876.592;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/79110>, <http://vocab.belgif.be/auth/nace2025/79120>, <http://vocab.belgif.be/auth/nace2025/79901>, <http://vocab.belgif.be/auth/nace2008/79110>, <http://vocab.belgif.be/auth/nace2008/79901>, <http://vocab.belgif.be/auth/nace2008/79120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0805.876.592;
+    reorg:legalName "Go Camino"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.351.143.804>.
+<https://data.vlaanderen.be/id/vestiging/2.351.143.804> a org:Site;
+    dcterms:created "01-10-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.351.143.804.
+_:address_contact_0805.876.592 a locn:Address;
+    locn:thoroughfare "Aaigemstraat"@nl, "Aaigemstraat"@fr;
+    rdfs:label "123";
+    locn:postCode "9000";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0805.876.592 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    <http://xmlns.com/foaf/0.1/homepage> "www.go-camino.be";
+    locn:address _:address_contact_0805.876.592.
+_:registration_company_0805.876.592 a adms:Identifier;
+    skos:notation "0805.876.592";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.351.143.804 a adms:Identifier;
+    skos:notation "2.351.143.804";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

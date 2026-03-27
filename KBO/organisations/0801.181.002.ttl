@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47640> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4764>, <http://vocab.belgif.be/auth/nace2008/4764>;
+    skos:definition "Detailhandel in sport- en kampeerartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles de sport en magasin spécialisé"@fr;
+    skos:prefLabel "47640".
+<http://vocab.belgif.be/auth/nace2025/03300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0330>, <http://vocab.belgif.be/auth/nace2025/0330>;
+    skos:definition "Ondersteunende activiteiten voor visserij en aquacultuur"@nl, "Activités de soutien à la pêche et l’aquaculture"@fr;
+    skos:prefLabel "03300".
+<http://vocab.belgif.be/auth/nace2025/13960> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1396>, <http://vocab.belgif.be/auth/nace2025/1396>;
+    skos:definition "Vervaardiging van ander technisch en industrieel textiel"@nl, "Fabrication d'autres textiles techniques et industriels"@fr;
+    skos:prefLabel "13960".
+<http://vocab.belgif.be/auth/nace2025/16270> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1627>, <http://vocab.belgif.be/auth/nace2025/1627>;
+    skos:definition "Afwerking van houten producten"@nl, "Finition de produits en bois"@fr;
+    skos:prefLabel "16270".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<http://vocab.belgif.be/auth/nace2025/32300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3230>, <http://vocab.belgif.be/auth/nace2025/3230>;
+    skos:definition "Vervaardiging van audio- en videoapparatuur"@nl, "Fabrication d'appareils de réception, enregistrement ou reproduction du son et de l'image"@fr;
+    skos:prefLabel "32300".
+<http://vocab.belgif.be/auth/nace2025/47639> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4763>, <http://vocab.belgif.be/auth/nace2025/4763>;
+    skos:definition "Detailhandel in overige sportartikelen"@nl, "Commerce de détail d’autres articles de sport"@fr;
+    skos:prefLabel "47639".
+<http://vocab.belgif.be/auth/nace2025/90130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9013>, <http://vocab.belgif.be/auth/nace2025/9013>;
+    skos:definition "Andere vormen van creatie van kunst"@nl, "Autres activités de création artistique"@fr;
+    skos:prefLabel "90130".
+<https://data.vlaanderen.be/id/onderneming/0801.181.002> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0801.181.002;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47639>, <http://vocab.belgif.be/auth/nace2025/16270>, <http://vocab.belgif.be/auth/nace2025/03300>, <http://vocab.belgif.be/auth/nace2025/32300>, <http://vocab.belgif.be/auth/nace2025/13960>, <http://vocab.belgif.be/auth/nace2025/90130>, <http://vocab.belgif.be/auth/nace2025/16281>, <http://vocab.belgif.be/auth/nace2008/47640>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "David, Quentin";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.533.748>.
+<https://data.vlaanderen.be/id/vestiging/2.344.533.748> a org:Site;
+    dcterms:created "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.533.748.
+_:registration_company_0801.181.002 a adms:Identifier;
+    skos:notation "0801.181.002";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.533.748 a adms:Identifier;
+    skos:notation "2.344.533.748";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-05-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

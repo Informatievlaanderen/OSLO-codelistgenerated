@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2008/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8299>, <http://vocab.belgif.be/auth/nace2008/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2008/94120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9412>, <http://vocab.belgif.be/auth/nace2008/9412>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités des organisations professionnelles"@fr;
+    skos:prefLabel "94120".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/94120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9412>, <http://vocab.belgif.be/auth/nace2025/9412>;
+    skos:definition "Beroepsorganisaties"@nl, "Activités des organisations professionnelles"@fr;
+    skos:prefLabel "94120".
+<https://data.vlaanderen.be/id/onderneming/0787.952.774> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0787.952.774;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/94120>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2008/82990>, <http://vocab.belgif.be/auth/nace2008/33200>, <http://vocab.belgif.be/auth/nace2008/94120>, <http://vocab.belgif.be/auth/nace2008/71209>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Azzi, Khalil";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.332.700.441>.
+<https://data.vlaanderen.be/id/vestiging/2.332.700.441> a org:Site;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.332.700.441.
+_:registration_company_0787.952.774 a adms:Identifier;
+    skos:notation "0787.952.774";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.332.700.441 a adms:Identifier;
+    skos:notation "2.332.700.441";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

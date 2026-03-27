@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/50100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5010>, <http://vocab.belgif.be/auth/nace2008/5010>;
+    skos:definition "Personenvervoer over zee- en kustwateren"@nl, "Transports maritimes et côtiers de passagers"@fr;
+    skos:prefLabel "50100".
+<http://vocab.belgif.be/auth/nace2008/50300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5030>, <http://vocab.belgif.be/auth/nace2008/5030>;
+    skos:definition "Personenvervoer over binnenwateren"@nl, "Transports fluviaux de passagers"@fr;
+    skos:prefLabel "50300".
+<http://vocab.belgif.be/auth/nace2008/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7721>, <http://vocab.belgif.be/auth/nace2008/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2008/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9319>, <http://vocab.belgif.be/auth/nace2008/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2008/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<http://vocab.belgif.be/auth/nace2025/50100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5010>, <http://vocab.belgif.be/auth/nace2025/5010>;
+    skos:definition "Personenvervoer over zee- en kustwateren"@nl, "Transports maritimes et côtiers de passagers"@fr;
+    skos:prefLabel "50100".
+<http://vocab.belgif.be/auth/nace2025/50300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5030>, <http://vocab.belgif.be/auth/nace2025/5030>;
+    skos:definition "Personenvervoer over binnenwateren"@nl, "Transports fluviaux de passagers"@fr;
+    skos:prefLabel "50300".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/93199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9319>, <http://vocab.belgif.be/auth/nace2025/9319>;
+    skos:definition "Overige sportactiviteiten, n.e.g."@nl, "Autres activités sportives n.c.a."@fr;
+    skos:prefLabel "93199".
+<http://vocab.belgif.be/auth/nace2025/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<https://data.vlaanderen.be/id/onderneming/0787.640.295> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "24-06-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0787.640.295;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77210>, <http://vocab.belgif.be/auth/nace2025/50100>, <http://vocab.belgif.be/auth/nace2025/93199>, <http://vocab.belgif.be/auth/nace2025/50300>, <http://vocab.belgif.be/auth/nace2025/94991>, <http://vocab.belgif.be/auth/nace2008/93199>, <http://vocab.belgif.be/auth/nace2008/94991>, <http://vocab.belgif.be/auth/nace2008/77210>, <http://vocab.belgif.be/auth/nace2008/50300>, <http://vocab.belgif.be/auth/nace2008/50100>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0787.640.295;
+    reorg:legalName "Vloot van het Koninklijk Marine Kadettenkorps Geel"@nl, "Vloot KMK Geel"@nl.
+_:address_contact_0787.640.295 a locn:Address;
+    locn:thoroughfare "Ganzenstraat"@nl, "Ganzenstraat"@fr;
+    rdfs:label "135";
+    adres:busnummer "A";
+    locn:postCode "2440";
+    adres:gemeentenaam "Geel"@nl, "Geel"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0787.640.295 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "vloot.kmk.geel@gmail.com";
+    locn:address _:address_contact_0787.640.295.
+_:registration_company_0787.640.295 a adms:Identifier;
+    skos:notation "0787.640.295";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "24-06-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

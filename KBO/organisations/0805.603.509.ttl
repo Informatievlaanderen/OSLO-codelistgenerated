@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/20300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2030>, <http://vocab.belgif.be/auth/nace2008/2030>;
+    skos:definition "Vervaardiging van schrijn- en timmerwerk"@nl, "Fabrication de charpentes et de menuiseries"@fr;
+    skos:prefLabel "20300".
+<http://vocab.belgif.be/auth/nace2008/25610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2561>, <http://vocab.belgif.be/auth/nace2008/2561>;
+    skos:definition "Oppervlaktebehandeling van metalen"@nl, "Traitement et revêtement des métaux"@fr;
+    skos:prefLabel "25610".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46733> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46733".
+<http://vocab.belgif.be/auth/nace2008/46751> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4675>, <http://vocab.belgif.be/auth/nace2008/4675>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques industriels"@fr;
+    skos:prefLabel "46751".
+<http://vocab.belgif.be/auth/nace2025/20300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2030>, <http://vocab.belgif.be/auth/nace2025/2030>;
+    skos:definition "Vervaardiging van schrijn- en timmerwerk"@nl, "Fabrication de charpentes et de menuiseries"@fr;
+    skos:prefLabel "20300".
+<http://vocab.belgif.be/auth/nace2025/25510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2551>, <http://vocab.belgif.be/auth/nace2025/2551>;
+    skos:definition "Coating van metalen"@nl, "Revêtement des métaux"@fr;
+    skos:prefLabel "25510".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46833> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in behang, verf en woningtextiel"@nl, "Commerce de gros de papiers peints, de peintures et de tissus d'ameublement"@fr;
+    skos:prefLabel "46833".
+<http://vocab.belgif.be/auth/nace2025/46851> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4685>, <http://vocab.belgif.be/auth/nace2025/4685>;
+    skos:definition "Groothandel in chemische producten voor industrieel gebruik"@nl, "Commerce de gros de produits chimiques à usage industriel"@fr;
+    skos:prefLabel "46851".
+<https://data.vlaanderen.be/id/onderneming/0805.603.509> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0805.603.509;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/46833>, <http://vocab.belgif.be/auth/nace2025/46851>, <http://vocab.belgif.be/auth/nace2025/25510>, <http://vocab.belgif.be/auth/nace2025/20300>, <http://vocab.belgif.be/auth/nace2008/46130>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/46751>, <http://vocab.belgif.be/auth/nace2008/46733>, <http://vocab.belgif.be/auth/nace2008/25610>, <http://vocab.belgif.be/auth/nace2008/20300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0805.603.509;
+    reorg:legalName "Hydro Coatings Invest"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.352.298.597>.
+<https://data.vlaanderen.be/id/vestiging/2.352.298.597> a org:Site;
+    dcterms:created "07-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.352.298.597.
+_:address_contact_0805.603.509 a locn:Address;
+    locn:thoroughfare "Z. 1 Researchpark"@nl, "Z. 1 Researchpark"@fr;
+    rdfs:label "130";
+    locn:postCode "1731";
+    adres:gemeentenaam "Asse"@nl, "Asse"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0805.603.509 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0805.603.509.
+_:registration_company_0805.603.509 a adms:Identifier;
+    skos:notation "0805.603.509";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.352.298.597 a adms:Identifier;
+    skos:notation "2.352.298.597";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

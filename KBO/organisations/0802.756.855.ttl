@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0111>, <http://vocab.belgif.be/auth/nace2008/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<http://vocab.belgif.be/auth/nace2025/01110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0111>, <http://vocab.belgif.be/auth/nace2025/0111>;
+    skos:definition "Teelt van granen en andere akkerbouwgewassen, n.e.g"@nl, "Culture de céréales et cultures industrielles"@fr;
+    skos:prefLabel "01110".
+<https://data.vlaanderen.be/id/onderneming/0802.756.855> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0802.756.855;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01110>, <http://vocab.belgif.be/auth/nace2008/01110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0802.756.855;
+    reorg:legalName "MAATSCHAP LAARAKKER"@nl.
+_:address_contact_0802.756.855 a locn:Address;
+    locn:thoroughfare "SCHEPERSWEIJER"@nl, "SCHEPERSWEIJER"@fr;
+    rdfs:label "5";
+    locn:postCode "5541 NN";
+    adres:gemeentenaam "REUSEL"@nl, "REUSEL"@fr;
+    adres:land "Nederland"@nl, "Pays-Bas"@fr.
+_:contact_0802.756.855 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:telephone "0031497644383";
+    locn:address _:address_contact_0802.756.855.
+_:registration_company_0802.756.855 a adms:Identifier;
+    skos:notation "0802.756.855";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-06-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

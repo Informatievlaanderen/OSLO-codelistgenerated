@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46769> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4676>, <http://vocab.belgif.be/auth/nace2008/4676>;
+    skos:definition "Groothandel in andere intermediaire producten, n.e.g."@nl, "Commerce de gros d'autres produits intermédiaires n.c.a."@fr;
+    skos:prefLabel "46769".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46869> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4686>, <http://vocab.belgif.be/auth/nace2025/4686>;
+    skos:definition "Groothandel in andere intermediaire producten, neg"@nl, "Commerce de gros d'autres produits intermédiaires nca"@fr;
+    skos:prefLabel "46869".
+<https://data.vlaanderen.be/id/onderneming/0792.600.064> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0792.600.064;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46869>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2008/46180>, <http://vocab.belgif.be/auth/nace2008/46769>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0792.600.064;
+    reorg:legalName "Ghani, Mohamed";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.336.742.767>.
+<https://data.vlaanderen.be/id/vestiging/2.336.742.767> a org:Site;
+    dcterms:created "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.336.742.767.
+_:contact_0792.600.064 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "b.ghani.1973@gmail.com";
+    schema:telephone "+32487127161".
+_:registration_company_0792.600.064 a adms:Identifier;
+    skos:notation "0792.600.064";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.336.742.767 a adms:Identifier;
+    skos:notation "2.336.742.767";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

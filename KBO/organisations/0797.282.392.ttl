@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1011>, <http://vocab.belgif.be/auth/nace2008/1011>;
+    skos:definition "Verwerking en conservering van vlees, exclusief vlees van gevogelte"@nl, "Transformation et conservation de la viande de boucherie, à l'exclusion de la viande de volaille"@fr;
+    skos:prefLabel "10110".
+<http://vocab.belgif.be/auth/nace2008/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1013>, <http://vocab.belgif.be/auth/nace2008/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2008/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1085>, <http://vocab.belgif.be/auth/nace2008/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2008/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4722>, <http://vocab.belgif.be/auth/nace2008/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/10111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Activiteiten van slachthuizen"@nl, "Activités des abattoirs"@fr;
+    skos:prefLabel "10111".
+<http://vocab.belgif.be/auth/nace2025/10130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1013>, <http://vocab.belgif.be/auth/nace2025/1013>;
+    skos:definition "Vervaardiging van producten van vlees of van vlees van gevogelte"@nl, "Préparation de produits à base de viande ou de viande de volaille"@fr;
+    skos:prefLabel "10130".
+<http://vocab.belgif.be/auth/nace2025/10850> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1085>, <http://vocab.belgif.be/auth/nace2025/1085>;
+    skos:definition "Vervaardiging van bereide maaltijden en schotels"@nl, "Fabrication de plats préparés"@fr;
+    skos:prefLabel "10850".
+<http://vocab.belgif.be/auth/nace2025/47221> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4722>, <http://vocab.belgif.be/auth/nace2025/4722>;
+    skos:definition "Detailhandel in vlees en vleesproducten in gespecialiseerde winkels, m.u.v. vlees van wild  en van gevogelte"@nl, "Commerce de détail de viandes et de produits à base de viande en magasin spécialisé, sauf viande de gibier et de volaille"@fr;
+    skos:prefLabel "47221".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<https://data.vlaanderen.be/id/onderneming/0797.282.392> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "17-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0797.282.392;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/49410>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10111>, <http://vocab.belgif.be/auth/nace2025/10130>, <http://vocab.belgif.be/auth/nace2025/47221>, <http://vocab.belgif.be/auth/nace2025/10850>, <http://vocab.belgif.be/auth/nace2008/10130>, <http://vocab.belgif.be/auth/nace2008/10850>, <http://vocab.belgif.be/auth/nace2008/47221>, <http://vocab.belgif.be/auth/nace2008/10110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0797.282.392;
+    reorg:legalName "Meat Love"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.341.105.391>.
+<https://data.vlaanderen.be/id/vestiging/2.341.105.391> a org:Site;
+    dcterms:created "17-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.341.105.391.
+_:address_contact_0797.282.392 a locn:Address;
+    locn:thoroughfare "Buizenstraat"@nl, "Buizenstraat"@fr;
+    rdfs:label "3";
+    locn:postCode "8020";
+    adres:gemeentenaam "Oostkamp"@nl, "Oostkamp"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0797.282.392 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0797.282.392.
+_:registration_company_0797.282.392 a adms:Identifier;
+    skos:notation "0797.282.392";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.341.105.391 a adms:Identifier;
+    skos:notation "2.341.105.391";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

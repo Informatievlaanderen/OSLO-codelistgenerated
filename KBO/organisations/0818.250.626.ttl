@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/47610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4761>, <http://vocab.belgif.be/auth/nace2008/4761>;
+    skos:definition "Detailhandel in boeken in gespecialiseerde winkels"@nl, "Commerce de détail de livres en magasin spécialisé"@fr;
+    skos:prefLabel "47610".
+<http://vocab.belgif.be/auth/nace2008/74101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Ontwerpen van textielpatronen, kleding, juwelen, meubels en decoratieartikelen"@nl, "Création de modèles pour les biens personnels et domestiques"@fr;
+    skos:prefLabel "74101".
+<http://vocab.belgif.be/auth/nace2008/74105> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van decorateur-etalagisten"@nl, "Décoration d'étalage"@fr;
+    skos:prefLabel "74105".
+<http://vocab.belgif.be/auth/nace2008/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8559>, <http://vocab.belgif.be/auth/nace2008/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2008/90031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9003>, <http://vocab.belgif.be/auth/nace2008/9003>;
+    skos:definition "Straatreiniging en sneeuwruimen"@nl, "Nettoyage de la voirie"@fr;
+    skos:prefLabel "90031".
+<http://vocab.belgif.be/auth/nace2025/47610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4761>, <http://vocab.belgif.be/auth/nace2025/4761>;
+    skos:definition "Detailhandel in boeken in gespecialiseerde winkels"@nl, "Commerce de détail de livres en magasin spécialisé"@fr;
+    skos:prefLabel "47610".
+<http://vocab.belgif.be/auth/nace2025/74111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Advocatenkantoor en juridische adviseurs"@nl, "Cabinets d'avocats et conseillers juridiques"@fr;
+    skos:prefLabel "74111".
+<http://vocab.belgif.be/auth/nace2025/74140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7414>, <http://vocab.belgif.be/auth/nace2025/7414>;
+    skos:definition "Overige gespecialiseerde ontwerpactiviteiten"@nl, "Autres activités spécialisées de design"@fr;
+    skos:prefLabel "74140".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/90111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9011>, <http://vocab.belgif.be/auth/nace2025/9011>;
+    skos:definition "Literaire creatie"@nl, "Activités de création littéraire"@fr;
+    skos:prefLabel "90111".
+<https://data.vlaanderen.be/id/onderneming/0818.250.626> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0818.250.626;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47610>, <http://vocab.belgif.be/auth/nace2025/90111>, <http://vocab.belgif.be/auth/nace2025/74140>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/74111>, <http://vocab.belgif.be/auth/nace2008/85599>, <http://vocab.belgif.be/auth/nace2008/90031>, <http://vocab.belgif.be/auth/nace2008/74105>, <http://vocab.belgif.be/auth/nace2008/47610>, <http://vocab.belgif.be/auth/nace2008/74101>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0818.250.626;
+    reorg:legalName "L'ATELIER"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.182.454.468>, <https://data.vlaanderen.be/id/vestiging/2.310.216.039>, <https://data.vlaanderen.be/id/vestiging/2.381.962.781>.
+<https://data.vlaanderen.be/id/vestiging/2.182.454.468> a org:Site;
+    dcterms:created "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.182.454.468.
+<https://data.vlaanderen.be/id/vestiging/2.310.216.039> a org:Site;
+    dcterms:created "01-11-2011"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.310.216.039.
+<https://data.vlaanderen.be/id/vestiging/2.381.962.781> a org:Site;
+    dcterms:created "01-01-2026"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.381.962.781.
+_:address_contact_0818.250.626 a locn:Address;
+    locn:thoroughfare "Voorzittersstraat"@nl, "Rue du Président"@fr;
+    rdfs:label "10";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0818.250.626 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0818.250.626.
+_:registration_company_0818.250.626 a adms:Identifier;
+    skos:notation "0818.250.626";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.182.454.468 a adms:Identifier;
+    skos:notation "2.182.454.468";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.310.216.039 a adms:Identifier;
+    skos:notation "2.310.216.039";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.381.962.781 a adms:Identifier;
+    skos:notation "2.381.962.781";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

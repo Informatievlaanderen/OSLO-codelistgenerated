@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/25501> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2550>, <http://vocab.belgif.be/auth/nace2008/2550>;
+    skos:definition "Smeden van metaal"@nl, "Forge"@fr;
+    skos:prefLabel "25501".
+<http://vocab.belgif.be/auth/nace2008/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2562>, <http://vocab.belgif.be/auth/nace2008/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2008/29201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2920>, <http://vocab.belgif.be/auth/nace2008/2920>;
+    skos:definition "Vervaardiging van carrosserieën voor motorvoertuigen"@nl, "Fabrication de carrosseries de véhicules automobiles"@fr;
+    skos:prefLabel "29201".
+<http://vocab.belgif.be/auth/nace2008/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7112>, <http://vocab.belgif.be/auth/nace2008/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2008/74102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van industriële designers"@nl, "Activités de design industriel"@fr;
+    skos:prefLabel "74102".
+<http://vocab.belgif.be/auth/nace2025/25401> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2540>, <http://vocab.belgif.be/auth/nace2025/2540>;
+    skos:definition "Smeden van metaal"@nl, "Forgeage de métal"@fr;
+    skos:prefLabel "25401".
+<http://vocab.belgif.be/auth/nace2025/25530> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2553>, <http://vocab.belgif.be/auth/nace2025/2553>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage des métaux"@fr;
+    skos:prefLabel "25530".
+<http://vocab.belgif.be/auth/nace2025/29201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2920>, <http://vocab.belgif.be/auth/nace2025/2920>;
+    skos:definition "Vervaardiging van carrosserieën voor motorvoertuigen"@nl, "Fabrication de carrosseries de véhicules automobiles"@fr;
+    skos:prefLabel "29201".
+<http://vocab.belgif.be/auth/nace2025/71121> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7112>, <http://vocab.belgif.be/auth/nace2025/7112>;
+    skos:definition "Ingenieurs en aanverwante technische adviseurs, exclusief landmeters"@nl, "Activités d'ingénierie et de conseils techniques, sauf activités des géomètres"@fr;
+    skos:prefLabel "71121".
+<http://vocab.belgif.be/auth/nace2025/74112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Notariskantoor"@nl, "Étude de notaire"@fr;
+    skos:prefLabel "74112".
+<https://data.vlaanderen.be/id/onderneming/0792.350.339> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "13-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0792.350.339;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/25530>, <http://vocab.belgif.be/auth/nace2025/74112>, <http://vocab.belgif.be/auth/nace2025/71121>, <http://vocab.belgif.be/auth/nace2025/29201>, <http://vocab.belgif.be/auth/nace2025/25401>, <http://vocab.belgif.be/auth/nace2008/29201>, <http://vocab.belgif.be/auth/nace2008/71121>, <http://vocab.belgif.be/auth/nace2008/74102>, <http://vocab.belgif.be/auth/nace2008/25501>, <http://vocab.belgif.be/auth/nace2008/25620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0792.350.339;
+    reorg:legalName "Jowa, Adrien";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.336.464.338>.
+<https://data.vlaanderen.be/id/vestiging/2.336.464.338> a org:Site;
+    dcterms:created "13-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.336.464.338.
+_:contact_0792.350.339 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "adrien.jowa@hotmail.fr";
+    schema:telephone "+32478361846".
+_:registration_company_0792.350.339 a adms:Identifier;
+    skos:notation "0792.350.339";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.336.464.338 a adms:Identifier;
+    skos:notation "2.336.464.338";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "13-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

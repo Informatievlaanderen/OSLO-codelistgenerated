@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/46492> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in kantoor- en schoolbenodigdheden"@nl, "Commerce de gros de fournitures scolaires et de bureau"@fr;
+    skos:prefLabel "46492".
+<http://vocab.belgif.be/auth/nace2025/72109> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7210>, <http://vocab.belgif.be/auth/nace2025/7210>;
+    skos:definition "Overig speur- en ontwikkelingswerk op natuurwetenschappelijk gebied"@nl, "Recherche-développement en autres sciences physiques et naturelles"@fr;
+    skos:prefLabel "72109".
+<http://vocab.belgif.be/auth/nace2025/82300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8230>, <http://vocab.belgif.be/auth/nace2025/8230>;
+    skos:definition "Organisatie van congressen en beurzen"@nl, "Organisation de salons professionnels et de congrès"@fr;
+    skos:prefLabel "82300".
+<http://vocab.belgif.be/auth/nace2025/85599> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8559>, <http://vocab.belgif.be/auth/nace2025/8559>;
+    skos:definition "Overige vormen van onderwijs"@nl, "Autres formes d'enseignement"@fr;
+    skos:prefLabel "85599".
+<http://vocab.belgif.be/auth/nace2025/86931> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychologie"@nl, "Activités de psychologie"@fr;
+    skos:prefLabel "86931".
+<http://vocab.belgif.be/auth/nace2025/86932> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8693>, <http://vocab.belgif.be/auth/nace2025/8693>;
+    skos:definition "Activiteiten op het gebied van psychotherapie"@nl, "Activités de psychothérapie"@fr;
+    skos:prefLabel "86932".
+<https://data.vlaanderen.be/id/onderneming/0794.483.349> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "07-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0794.483.349;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82300>, <http://vocab.belgif.be/auth/nace2025/86932>, <http://vocab.belgif.be/auth/nace2025/85599>, <http://vocab.belgif.be/auth/nace2025/72109>, <http://vocab.belgif.be/auth/nace2025/86931>, <http://vocab.belgif.be/auth/nace2025/46492>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0794.483.349;
+    reorg:legalName "ÉCOLE du Clean Language"@fr.
+_:address_contact_0794.483.349 a locn:Address;
+    locn:thoroughfare "Jean Van Volsemstraat"@nl, "Rue Jean Van Volsem"@fr;
+    rdfs:label "55";
+    adres:busnummer "2ème étage";
+    locn:postCode "1050";
+    adres:gemeentenaam "Elsene"@nl, "Ixelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0794.483.349 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "taniakorsak.clean@gmail.com";
+    locn:address _:address_contact_0794.483.349.
+_:registration_company_0794.483.349 a adms:Identifier;
+    skos:notation "0794.483.349";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "07-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

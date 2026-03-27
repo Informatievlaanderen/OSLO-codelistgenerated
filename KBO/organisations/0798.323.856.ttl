@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/68311> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6831>, <http://vocab.belgif.be/auth/nace2008/6831>;
+    skos:definition "Bemiddeling bij de aankoop, verkoop en verhuur van onroerend goed voor een vast bedrag of op contractbasis"@nl, "Intermédiation en achat, vente et location de biens immobiliers pour compte de tiers"@fr;
+    skos:prefLabel "68311".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7120>, <http://vocab.belgif.be/auth/nace2008/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2008/80300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8030>, <http://vocab.belgif.be/auth/nace2008/8030>;
+    skos:definition "Opsporingsdiensten"@nl, "Activités d'enquête"@fr;
+    skos:prefLabel "80300".
+<http://vocab.belgif.be/auth/nace2008/96099> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9609>, <http://vocab.belgif.be/auth/nace2008/9609>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96099".
+<http://vocab.belgif.be/auth/nace2025/68310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6831>, <http://vocab.belgif.be/auth/nace2025/6831>;
+    skos:definition "Bemiddeling in verband met exploitatie van en handel in onroerend goed"@nl, "Activités de service d’intermédiation pour les activités immobilières"@fr;
+    skos:prefLabel "68310".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/71209> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7120>, <http://vocab.belgif.be/auth/nace2025/7120>;
+    skos:definition "Overige technische testen en toetsen"@nl, "Autres activités de contrôle et analyses techniques"@fr;
+    skos:prefLabel "71209".
+<http://vocab.belgif.be/auth/nace2025/80010> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8001>, <http://vocab.belgif.be/auth/nace2025/8001>;
+    skos:definition "Opsporings- en particuliere beveiligingsdiensten"@nl, "Activités d’investigation et de sécurité privée"@fr;
+    skos:prefLabel "80010".
+<http://vocab.belgif.be/auth/nace2025/96999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9699>, <http://vocab.belgif.be/auth/nace2025/9699>;
+    skos:definition "Overige persoonlijke diensten"@nl, "Autres services personnels"@fr;
+    skos:prefLabel "96999".
+<https://data.vlaanderen.be/id/onderneming/0798.323.856> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "10-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0798.323.856;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/80010>, <http://vocab.belgif.be/auth/nace2025/71209>, <http://vocab.belgif.be/auth/nace2025/96999>, <http://vocab.belgif.be/auth/nace2025/68310>, <http://vocab.belgif.be/auth/nace2008/96099>, <http://vocab.belgif.be/auth/nace2008/80300>, <http://vocab.belgif.be/auth/nace2008/71209>, <http://vocab.belgif.be/auth/nace2008/68311>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0798.323.856;
+    reorg:legalName "BELIMMEX"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.342.677.385>.
+<https://data.vlaanderen.be/id/vestiging/2.342.677.385> a org:Site;
+    dcterms:created "01-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.342.677.385.
+_:address_contact_0798.323.856 a locn:Address;
+    locn:thoroughfare "Quai du Rieu(POM)"@nl, "Quai du Rieu(POM)"@fr;
+    rdfs:label "16";
+    locn:postCode "7322";
+    adres:gemeentenaam "Bernissart"@nl, "Bernissart"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0798.323.856 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0798.323.856.
+_:registration_company_0798.323.856 a adms:Identifier;
+    skos:notation "0798.323.856";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.342.677.385 a adms:Identifier;
+    skos:notation "2.342.677.385";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "10-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

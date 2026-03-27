@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4663>, <http://vocab.belgif.be/auth/nace2008/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/46739> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46739".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4663>, <http://vocab.belgif.be/auth/nace2025/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/46839> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in overige bouwmaterialen"@nl, "Commerce de gros d'autres matériaux de construction"@fr;
+    skos:prefLabel "46839".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/0827.647.154> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-07-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0827.647.154;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46839>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/46630>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2008/46731>, <http://vocab.belgif.be/auth/nace2008/46630>, <http://vocab.belgif.be/auth/nace2008/77320>, <http://vocab.belgif.be/auth/nace2008/46739>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0827.647.154;
+    reorg:legalName "GG BE"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.214.094.482>, <https://data.vlaanderen.be/id/vestiging/2.247.735.468>.
+<https://data.vlaanderen.be/id/vestiging/2.214.094.482> a org:Site;
+    dcterms:created "01-07-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.214.094.482.
+<https://data.vlaanderen.be/id/vestiging/2.247.735.468> a org:Site;
+    dcterms:created "01-02-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.247.735.468.
+_:address_contact_0827.647.154 a locn:Address;
+    locn:thoroughfare "Messidorlaan"@nl, "Avenue de Messidor"@fr;
+    rdfs:label "210";
+    adres:busnummer "2";
+    locn:postCode "1180";
+    adres:gemeentenaam "Ukkel"@nl, "Uccle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0827.647.154 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0827.647.154.
+_:registration_company_0827.647.154 a adms:Identifier;
+    skos:notation "0827.647.154";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.214.094.482 a adms:Identifier;
+    skos:notation "2.214.094.482";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.247.735.468 a adms:Identifier;
+    skos:notation "2.247.735.468";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-07-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/49390> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4939>, <http://vocab.belgif.be/auth/nace2008/4939>;
+    skos:definition "Overig personenvervoer te land, n.e.g."@nl, "Autres transports terrestres de voyageurs n.c.a."@fr;
+    skos:prefLabel "49390".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2008/96031> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9603>, <http://vocab.belgif.be/auth/nace2008/9603>;
+    skos:definition "Uitvaartverzorging"@nl, "Soins funéraires"@fr;
+    skos:prefLabel "96031".
+<http://vocab.belgif.be/auth/nace2025/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4932>, <http://vocab.belgif.be/auth/nace2025/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/96301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9630>, <http://vocab.belgif.be/auth/nace2025/9630>;
+    skos:definition "Uitvaartverzorging"@nl, "Soins funéraires"@fr;
+    skos:prefLabel "96301".
+<https://data.vlaanderen.be/id/onderneming/0789.137.956> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-08-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0789.137.956;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/49320>, <http://vocab.belgif.be/auth/nace2025/96301>, _:nace_2003_93031, _:nace_2003_71100, _:nace_2003_60230, <http://vocab.belgif.be/auth/nace2008/96031>, <http://vocab.belgif.be/auth/nace2008/49390>, <http://vocab.belgif.be/auth/nace2008/77110>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Schoonbaert, Patrick";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.087.984.287>.
+<https://data.vlaanderen.be/id/vestiging/2.087.984.287> a org:Site;
+    dcterms:created "12-08-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.087.984.287.
+_:nace_2003_60230 a skos:Concept;
+    skos:definition "Overig vervoer van personen te land"@nl, "Autres transports terrestres de voyageurs"@fr;
+    skos:prefLabel "60230".
+_:nace_2003_71100 a skos:Concept;
+    skos:definition "Verhuur van auto's"@nl, "Location de véhicules automobiles"@fr;
+    skos:prefLabel "71100".
+_:nace_2003_93031 a skos:Concept;
+    skos:definition "Begrafenisentiteiten"@nl, "Entreprises de pompes funèbres"@fr;
+    skos:prefLabel "93031".
+_:registration_company_0789.137.956 a adms:Identifier;
+    skos:notation "0789.137.956";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-08-1998"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.087.984.287 a adms:Identifier;
+    skos:notation "2.087.984.287";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-08-1998"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<https://data.vlaanderen.be/id/onderneming/0792.684.988> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "03-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0792.684.988;
+    reorg:legalName "Devos, Soline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.336.842.341>.
+<https://data.vlaanderen.be/id/vestiging/2.336.842.341> a org:Site;
+    dcterms:created "03-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.336.842.341.
+_:registration_company_0792.684.988 a adms:Identifier;
+    skos:notation "0792.684.988";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.336.842.341 a adms:Identifier;
+    skos:notation "2.336.842.341";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-10-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

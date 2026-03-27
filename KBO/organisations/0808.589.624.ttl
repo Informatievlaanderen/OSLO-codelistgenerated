@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/13300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1330>, <http://vocab.belgif.be/auth/nace2008/1330>;
+    skos:definition "Textielveredeling"@nl, "Ennoblissement textile"@fr;
+    skos:prefLabel "13300".
+<http://vocab.belgif.be/auth/nace2008/13930> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1393>, <http://vocab.belgif.be/auth/nace2008/1393>;
+    skos:definition "Vervaardiging van vloerkleden en tapijt"@nl, "Fabrication de tapis et de moquettes"@fr;
+    skos:prefLabel "13930".
+<http://vocab.belgif.be/auth/nace2008/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7810>, <http://vocab.belgif.be/auth/nace2008/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<http://vocab.belgif.be/auth/nace2025/13300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1330>, <http://vocab.belgif.be/auth/nace2025/1330>;
+    skos:definition "Textielveredeling"@nl, "Ennoblissement textile"@fr;
+    skos:prefLabel "13300".
+<http://vocab.belgif.be/auth/nace2025/13930> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1393>, <http://vocab.belgif.be/auth/nace2025/1393>;
+    skos:definition "Vervaardiging van vloerkleden en tapijt"@nl, "Fabrication de tapis et de moquettes"@fr;
+    skos:prefLabel "13930".
+<http://vocab.belgif.be/auth/nace2025/78100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7810>, <http://vocab.belgif.be/auth/nace2025/7810>;
+    skos:definition "Arbeidsbemiddeling"@nl, "Activités des agences de placement de main-d'oeuvre"@fr;
+    skos:prefLabel "78100".
+<https://data.vlaanderen.be/id/onderneming/0808.589.624> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/003>;
+    dcterms:created "01-01-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0808.589.624;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13930>, <http://vocab.belgif.be/auth/nace2025/78100>, <http://vocab.belgif.be/auth/nace2025/13300>, <http://vocab.belgif.be/auth/nace2008/13300>, <http://vocab.belgif.be/auth/nace2008/78100>, <http://vocab.belgif.be/auth/nace2008/13930>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0808.589.624;
+    reorg:legalName "VANNESTE"@nl.
+_:address_contact_0808.589.624 a locn:Address;
+    locn:thoroughfare "Heirweg"@nl, "Heirweg"@fr;
+    rdfs:label "72";
+    locn:postCode "8520";
+    adres:gemeentenaam "Kuurne"@nl, "Kuurne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0808.589.624 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@meubinex.be";
+    schema:telephone "056/35.37.30";
+    schema:faxNumber "056/35.14.87";
+    locn:address _:address_contact_0808.589.624.
+_:registration_company_0808.589.624 a adms:Identifier;
+    skos:notation "0808.589.624";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

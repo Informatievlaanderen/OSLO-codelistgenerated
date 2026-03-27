@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46772> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4677>, <http://vocab.belgif.be/auth/nace2008/4677>;
+    skos:definition "Groothandel in ijzer- en staalschroot en in oude non-ferrometalen"@nl, "Commerce de gros de déchets et de débris métalliques et non-métalliques"@fr;
+    skos:prefLabel "46772".
+<http://vocab.belgif.be/auth/nace2008/46779> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4677>, <http://vocab.belgif.be/auth/nace2008/4677>;
+    skos:definition "Groothandel in afval en schroot, n.e.g."@nl, "Commerce de gros de déchets et débris n.c.a."@fr;
+    skos:prefLabel "46779".
+<http://vocab.belgif.be/auth/nace2008/47890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4789>, <http://vocab.belgif.be/auth/nace2008/4789>;
+    skos:definition "Markt- en straathandel in andere artikelen"@nl, "Autres commerces de détail sur éventaires et marchés"@fr;
+    skos:prefLabel "47890".
+<http://vocab.belgif.be/auth/nace2025/46872> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4687>, <http://vocab.belgif.be/auth/nace2025/4687>;
+    skos:definition "Groothandel in ijzer- en staalschroot en in oude non-ferrometalen"@nl, "Commerce de gros de déchets de fer et d'acier et de déchets métalliques non ferreux"@fr;
+    skos:prefLabel "46872".
+<http://vocab.belgif.be/auth/nace2025/46879> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4687>, <http://vocab.belgif.be/auth/nace2025/4687>;
+    skos:definition "Groothandel in afval en schroot, neg"@nl, "Commerce de gros de déchets et débris nca"@fr;
+    skos:prefLabel "46879".
+<http://vocab.belgif.be/auth/nace2025/47789> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4778>, <http://vocab.belgif.be/auth/nace2025/4778>;
+    skos:definition "Overige detailhandel in nieuwe artikelen in gespecialiseerde winkels, n.e.g."@nl, "Autre commerce de détail de biens neufs en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47789".
+<https://data.vlaanderen.be/id/onderneming/0788.295.541> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0788.295.541;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46872>, <http://vocab.belgif.be/auth/nace2025/47789>, <http://vocab.belgif.be/auth/nace2025/46879>, <http://vocab.belgif.be/auth/nace2008/46779>, <http://vocab.belgif.be/auth/nace2008/46772>, <http://vocab.belgif.be/auth/nace2008/47890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Schmitz, Angelo";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.333.094.973>.
+<https://data.vlaanderen.be/id/vestiging/2.333.094.973> a org:Site;
+    dcterms:created "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.333.094.973.
+_:registration_company_0788.295.541 a adms:Identifier;
+    skos:notation "0788.295.541";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.333.094.973 a adms:Identifier;
+    skos:notation "2.333.094.973";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

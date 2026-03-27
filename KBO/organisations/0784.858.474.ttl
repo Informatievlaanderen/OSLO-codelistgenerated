@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/01210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0121>, <http://vocab.belgif.be/auth/nace2008/0121>;
+    skos:definition "Rundveehouderij"@nl, "Élevage de bovins"@fr;
+    skos:prefLabel "01210".
+<http://vocab.belgif.be/auth/nace2008/11020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1102>, <http://vocab.belgif.be/auth/nace2008/1102>;
+    skos:definition "Vervaardiging van wijn uit druiven"@nl, "Production de vin (de raisin)"@fr;
+    skos:prefLabel "11020".
+<http://vocab.belgif.be/auth/nace2008/11040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1104>, <http://vocab.belgif.be/auth/nace2008/1104>;
+    skos:definition "Vervaardiging van andere niet-gedistilleerde gegiste dranken"@nl, "Production d'autres boissons fermentées non distillées"@fr;
+    skos:prefLabel "11040".
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4618>, <http://vocab.belgif.be/auth/nace2008/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2008/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<http://vocab.belgif.be/auth/nace2025/01210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0121>, <http://vocab.belgif.be/auth/nace2025/0121>;
+    skos:definition "Rundveehouderij"@nl, "Élevage de bovins"@fr;
+    skos:prefLabel "01210".
+<http://vocab.belgif.be/auth/nace2025/11020> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1102>, <http://vocab.belgif.be/auth/nace2025/1102>;
+    skos:definition "Vervaardiging van wijn uit druiven"@nl, "Production de vin (de raisin)"@fr;
+    skos:prefLabel "11020".
+<http://vocab.belgif.be/auth/nace2025/11040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1104>, <http://vocab.belgif.be/auth/nace2025/1104>;
+    skos:definition "Vervaardiging van andere niet-gedistilleerde gegiste dranken"@nl, "Production d'autres boissons fermentées non distillées"@fr;
+    skos:prefLabel "11040".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/46180> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4618>, <http://vocab.belgif.be/auth/nace2025/4618>;
+    skos:definition "Handelsbemiddeling gespecialiseerd in andere goederen"@nl, "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"@fr;
+    skos:prefLabel "46180".
+<http://vocab.belgif.be/auth/nace2025/46341> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in wijnen en geestrijke dranken"@nl, "Commerce de gros de vin et de spiritueux"@fr;
+    skos:prefLabel "46341".
+<https://data.vlaanderen.be/id/onderneming/0784.858.474> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/011>;
+    dcterms:created "14-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0784.858.474;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46180>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/11040>, <http://vocab.belgif.be/auth/nace2025/11020>, <http://vocab.belgif.be/auth/nace2025/01210>, <http://vocab.belgif.be/auth/nace2025/46341>, <http://vocab.belgif.be/auth/nace2008/11020>, <http://vocab.belgif.be/auth/nace2008/46170>, <http://vocab.belgif.be/auth/nace2008/46341>, <http://vocab.belgif.be/auth/nace2008/11040>, <http://vocab.belgif.be/auth/nace2008/01210>, <http://vocab.belgif.be/auth/nace2008/46180>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0784.858.474;
+    reorg:legalName "LES RIVES DE L'ORNEAU"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.336.529.268>.
+<https://data.vlaanderen.be/id/vestiging/2.336.529.268> a org:Site;
+    dcterms:created "14-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.336.529.268.
+_:address_contact_0784.858.474 a locn:Address;
+    locn:thoroughfare "Rue Sous-le-Bois, V.-lez-Heest"@nl, "Rue Sous-le-Bois, V.-lez-Heest"@fr;
+    rdfs:label "26";
+    locn:postCode "5080";
+    adres:gemeentenaam "La Bruyère"@nl, "La Bruyère"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0784.858.474 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0784.858.474.
+_:registration_company_0784.858.474 a adms:Identifier;
+    skos:notation "0784.858.474";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.336.529.268 a adms:Identifier;
+    skos:notation "2.336.529.268";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-04-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

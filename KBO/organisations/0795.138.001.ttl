@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<https://data.vlaanderen.be/id/onderneming/0795.138.001> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "20-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0795.138.001;
+    schema:contactinfo _:contact_0795.138.001;
+    reorg:legalName "KELLO"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.339.829.644>, <https://data.vlaanderen.be/id/vestiging/2.380.181.941>.
+<https://data.vlaanderen.be/id/vestiging/2.339.829.644> a org:Site;
+    dcterms:created "20-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.339.829.644.
+<https://data.vlaanderen.be/id/vestiging/2.380.181.941> a org:Site;
+    dcterms:created "22-10-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.380.181.941.
+_:address_contact_0795.138.001 a locn:Address;
+    locn:thoroughfare "Oud-Strijdersstraat"@nl, "Oud-Strijdersstraat"@fr;
+    rdfs:label "115";
+    locn:postCode "3020";
+    adres:gemeentenaam "Herent"@nl, "Herent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0795.138.001 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0795.138.001.
+_:registration_company_0795.138.001 a adms:Identifier;
+    skos:notation "0795.138.001";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.339.829.644 a adms:Identifier;
+    skos:notation "2.339.829.644";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.380.181.941 a adms:Identifier;
+    skos:notation "2.380.181.941";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

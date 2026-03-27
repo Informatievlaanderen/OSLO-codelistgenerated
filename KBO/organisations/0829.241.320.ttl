@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8110>, <http://vocab.belgif.be/auth/nace2008/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2008/84114> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8411>, <http://vocab.belgif.be/auth/nace2008/8411>;
+    skos:definition "Gemeentelijke overheid, met uitzondering van het O.C.M.W."@nl, "Administration publique communale, sauf Centres Publics d'Action Sociale (C.P.A.S.)"@fr;
+    skos:prefLabel "84114".
+<http://vocab.belgif.be/auth/nace2008/84130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8413>, <http://vocab.belgif.be/auth/nace2008/8413>;
+    skos:definition "Openbaar bestuur op het gebied van het bedrijfsleven; stimuleren van het bedrijfsleven"@nl, "Administration publique (tutelle) des activités économiques"@fr;
+    skos:prefLabel "84130".
+<http://vocab.belgif.be/auth/nace2025/81100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8110>, <http://vocab.belgif.be/auth/nace2025/8110>;
+    skos:definition "Diverse ondersteunende activiteiten ten behoeve van voorzieningen"@nl, "Activités combinées de soutien lié aux bâtiments"@fr;
+    skos:prefLabel "81100".
+<http://vocab.belgif.be/auth/nace2025/84114> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8411>, <http://vocab.belgif.be/auth/nace2025/8411>;
+    skos:definition "Gemeentelijke overheid, met uitzondering van het O.C.M.W."@nl, "Administration publique communale, sauf Centres Publics d'Action Sociale (C.P.A.S.)"@fr;
+    skos:prefLabel "84114".
+<http://vocab.belgif.be/auth/nace2025/84130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8413>, <http://vocab.belgif.be/auth/nace2025/8413>;
+    skos:definition "Openbaar bestuur op het gebied van het bedrijfsleven; stimuleren van het bedrijfsleven"@nl, "Administration publique (tutelle) des activités économiques"@fr;
+    skos:prefLabel "84130".
+<https://data.vlaanderen.be/id/onderneming/0829.241.320> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/418>;
+    dcterms:created "27-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0829.241.320;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/84114>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/81100>, <http://vocab.belgif.be/auth/nace2025/84130>, <http://vocab.belgif.be/auth/nace2008/84114>, <http://vocab.belgif.be/auth/nace2008/81100>, <http://vocab.belgif.be/auth/nace2008/84130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0829.241.320;
+    reorg:legalName "Autonoom gemeentebedrijf voor stadsontwikkeling"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.257.573.545>.
+<https://data.vlaanderen.be/id/vestiging/2.257.573.545> a org:Site;
+    dcterms:created "20-11-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.257.573.545.
+_:address_contact_0829.241.320 a locn:Address;
+    locn:thoroughfare "Werf"@nl, "Werf"@fr;
+    rdfs:label "9";
+    locn:postCode "9300";
+    adres:gemeentenaam "Aalst"@nl, "Aalst"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0829.241.320 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "info@agsa.aalst.be";
+    schema:telephone "053/73.24.96";
+    schema:faxNumber "053/73.24.96";
+    <http://xmlns.com/foaf/0.1/homepage> "www.stadsontwikkeling-aalst.be";
+    locn:address _:address_contact_0829.241.320.
+_:registration_company_0829.241.320 a adms:Identifier;
+    skos:notation "0829.241.320";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.257.573.545 a adms:Identifier;
+    skos:notation "2.257.573.545";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-04-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

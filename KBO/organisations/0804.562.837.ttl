@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2711>, <http://vocab.belgif.be/auth/nace2008/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2008/27330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2733>, <http://vocab.belgif.be/auth/nace2008/2733>;
+    skos:definition "Koudvervormen en koudfelsen"@nl, "Profilage à froid par formage ou pliage"@fr;
+    skos:prefLabel "27330".
+<http://vocab.belgif.be/auth/nace2008/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3320>, <http://vocab.belgif.be/auth/nace2008/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2008/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4614>, <http://vocab.belgif.be/auth/nace2008/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2008/74102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7410>, <http://vocab.belgif.be/auth/nace2008/7410>;
+    skos:definition "Activiteiten van industriële designers"@nl, "Activités de design industriel"@fr;
+    skos:prefLabel "74102".
+<http://vocab.belgif.be/auth/nace2025/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2711>, <http://vocab.belgif.be/auth/nace2025/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2025/27330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2733>, <http://vocab.belgif.be/auth/nace2025/2733>;
+    skos:definition "Koudvervormen en koudfelsen"@nl, "Profilage à froid par formage ou pliage"@fr;
+    skos:prefLabel "27330".
+<http://vocab.belgif.be/auth/nace2025/33200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3320>, <http://vocab.belgif.be/auth/nace2025/3320>;
+    skos:definition "Installatie van industriële machines, toestellen en werktuigen"@nl, "Installation de machines et d'équipements industriels"@fr;
+    skos:prefLabel "33200".
+<http://vocab.belgif.be/auth/nace2025/46140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4614>, <http://vocab.belgif.be/auth/nace2025/4614>;
+    skos:definition "Handelsbemiddeling in machines, apparaten en werktuigen voor de industrie en in schepen en luchtvaartuigen"@nl, "Intermédiaires du commerce en machines, équipements industriels, navires et avions"@fr;
+    skos:prefLabel "46140".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/74112> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7411>, <http://vocab.belgif.be/auth/nace2025/7411>;
+    skos:definition "Notariskantoor"@nl, "Étude de notaire"@fr;
+    skos:prefLabel "74112".
+<https://data.vlaanderen.be/id/onderneming/0804.562.837> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "04-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0804.562.837;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46140>, <http://vocab.belgif.be/auth/nace2025/27330>, <http://vocab.belgif.be/auth/nace2025/33200>, <http://vocab.belgif.be/auth/nace2025/74112>, <http://vocab.belgif.be/auth/nace2025/27110>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2008/27110>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/27330>, <http://vocab.belgif.be/auth/nace2008/46140>, <http://vocab.belgif.be/auth/nace2008/74102>, <http://vocab.belgif.be/auth/nace2008/33200>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0804.562.837;
+    reorg:legalName "BDS Technics"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.348.347.432>.
+<https://data.vlaanderen.be/id/vestiging/2.348.347.432> a org:Site;
+    dcterms:created "04-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.348.347.432.
+_:address_contact_0804.562.837 a locn:Address;
+    locn:thoroughfare "Bosstraat"@nl, "Bosstraat"@fr;
+    rdfs:label "174 B";
+    locn:postCode "9240";
+    adres:gemeentenaam "Zele"@nl, "Zele"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0804.562.837 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0804.562.837.
+_:registration_company_0804.562.837 a adms:Identifier;
+    skos:notation "0804.562.837";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.348.347.432 a adms:Identifier;
+    skos:notation "2.348.347.432";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "04-08-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

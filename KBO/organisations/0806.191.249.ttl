@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/43213> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4321>, <http://vocab.belgif.be/auth/nace2025/4321>;
+    skos:definition "Installatie van duurzame elektrische installaties"@nl, "Installation d'installations électriques durables"@fr;
+    skos:prefLabel "43213".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/85510> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8551>, <http://vocab.belgif.be/auth/nace2025/8551>;
+    skos:definition "Sport- en recreatieonderwijs"@nl, "Enseignement de disciplines sportives et d'activités de loisirs"@fr;
+    skos:prefLabel "85510".
+<http://vocab.belgif.be/auth/nace2025/86997> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8699>, <http://vocab.belgif.be/auth/nace2025/8699>;
+    skos:definition "Activiteiten van shiatsu, thai massage , watsu, tuina qigong"@nl, "Activités de shiatsu, massage thaïlandais, watsu, qigong tuina"@fr;
+    skos:prefLabel "86997".
+<https://data.vlaanderen.be/id/onderneming/0806.191.249> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-2008"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0806.191.249;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/85510>, <http://vocab.belgif.be/auth/nace2025/43213>, <http://vocab.belgif.be/auth/nace2025/41001>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/86997>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Vuylsteke, Olivier";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.231.530.035>.
+<https://data.vlaanderen.be/id/vestiging/2.231.530.035> a org:Site;
+    dcterms:created "15-06-2014"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.231.530.035.
+_:registration_company_0806.191.249 a adms:Identifier;
+    skos:notation "0806.191.249";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2008"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.231.530.035 a adms:Identifier;
+    skos:notation "2.231.530.035";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2008"^^<http://www.w3.org/2001/XMLSchema#date>.

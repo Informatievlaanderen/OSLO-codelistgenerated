@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/32300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3230>, <http://vocab.belgif.be/auth/nace2025/3230>;
+    skos:definition "Vervaardiging van audio- en videoapparatuur"@nl, "Fabrication d'appareils de réception, enregistrement ou reproduction du son et de l'image"@fr;
+    skos:prefLabel "32300".
+<http://vocab.belgif.be/auth/nace2025/47722> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4772>, <http://vocab.belgif.be/auth/nace2025/4772>;
+    skos:definition "Detailhandel in lederwaren en reisartikelen in gespecialiseerde winkels"@nl, "Commerce de détail de maroquinerie et d'articles de voyage en magasin spécialisé"@fr;
+    skos:prefLabel "47722".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<http://vocab.belgif.be/auth/nace2025/95230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9523>, <http://vocab.belgif.be/auth/nace2025/9523>;
+    skos:definition "Reparatie van schoeisel en lederwaren"@nl, "Réparation de chaussures et d'articles en cuir"@fr;
+    skos:prefLabel "95230".
+<https://data.vlaanderen.be/id/onderneming/0803.474.061> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0803.474.061;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95230>, <http://vocab.belgif.be/auth/nace2025/47722>, <http://vocab.belgif.be/auth/nace2025/82990>, <http://vocab.belgif.be/auth/nace2025/32300>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Bax, Tim";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.347.333.583>.
+<https://data.vlaanderen.be/id/vestiging/2.347.333.583> a org:Site;
+    dcterms:created "01-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.347.333.583.
+_:registration_company_0803.474.061 a adms:Identifier;
+    skos:notation "0803.474.061";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.347.333.583 a adms:Identifier;
+    skos:notation "2.347.333.583";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

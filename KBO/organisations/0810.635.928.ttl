@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5310>, <http://vocab.belgif.be/auth/nace2008/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2008/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8122>, <http://vocab.belgif.be/auth/nace2008/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<http://vocab.belgif.be/auth/nace2025/53100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5310>, <http://vocab.belgif.be/auth/nace2025/5310>;
+    skos:definition "Postdiensten in het kader van de universele dienstverplichting"@nl, "Activités de poste dans le cadre d'une obligation de service universel"@fr;
+    skos:prefLabel "53100".
+<http://vocab.belgif.be/auth/nace2025/81220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8122>, <http://vocab.belgif.be/auth/nace2025/8122>;
+    skos:definition "Overige reiniging van gebouwen; industriële reiniging"@nl, "Autres activités de nettoyage des bâtiments; nettoyage industriel"@fr;
+    skos:prefLabel "81220".
+<https://data.vlaanderen.be/id/onderneming/0810.635.928> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0810.635.928;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/53100>, <http://vocab.belgif.be/auth/nace2025/81220>, <http://vocab.belgif.be/auth/nace2008/53100>, <http://vocab.belgif.be/auth/nace2008/81220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Caron, Caroline";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.176.944.175>.
+<https://data.vlaanderen.be/id/vestiging/2.176.944.175> a org:Site;
+    dcterms:created "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.176.944.175.
+_:registration_company_0810.635.928 a adms:Identifier;
+    skos:notation "0810.635.928";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.176.944.175 a adms:Identifier;
+    skos:notation "2.176.944.175";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

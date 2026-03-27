@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/26120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2612>, <http://vocab.belgif.be/auth/nace2008/2612>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+<http://vocab.belgif.be/auth/nace2008/45203> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "45203".
+<http://vocab.belgif.be/auth/nace2025/26120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2612>, <http://vocab.belgif.be/auth/nace2025/2612>;
+    skos:definition "Vormen en bewerken van vlakglas"@nl, "Façonnage et transformation du verre plat"@fr;
+    skos:prefLabel "26120".
+<http://vocab.belgif.be/auth/nace2025/95313> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Reparatie en montage van specifieke auto-onderdelen"@nl, "Réparation et montage de parties spécifiques de véhicules automobiles"@fr;
+    skos:prefLabel "95313".
+<https://data.vlaanderen.be/id/onderneming/0800.532.585> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0800.532.585;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95313>, <http://vocab.belgif.be/auth/nace2025/26120>, <http://vocab.belgif.be/auth/nace2008/26120>, <http://vocab.belgif.be/auth/nace2008/45203>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0800.532.585;
+    reorg:legalName "WELDZONE MOTORSPORTS"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.344.987.371>.
+<https://data.vlaanderen.be/id/vestiging/2.344.987.371> a org:Site;
+    dcterms:created "06-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.344.987.371.
+_:address_contact_0800.532.585 a locn:Address;
+    locn:thoroughfare "Route de Philippeville(Tar)"@nl, "Route de Philippeville(Tar)"@fr;
+    rdfs:label "57";
+    locn:postCode "5651";
+    adres:gemeentenaam "Walcourt"@nl, "Walcourt"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0800.532.585 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "dario.demarteau@gmail.com";
+    schema:telephone "+32497268386";
+    locn:address _:address_contact_0800.532.585.
+_:registration_company_0800.532.585 a adms:Identifier;
+    skos:notation "0800.532.585";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.344.987.371 a adms:Identifier;
+    skos:notation "2.344.987.371";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-04-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

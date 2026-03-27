@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7912>, <http://vocab.belgif.be/auth/nace2008/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<http://vocab.belgif.be/auth/nace2025/79120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7912>, <http://vocab.belgif.be/auth/nace2025/7912>;
+    skos:definition "Reisorganisatoren"@nl, "Activités des voyagistes"@fr;
+    skos:prefLabel "79120".
+<https://data.vlaanderen.be/id/onderneming/0818.358.811> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0818.358.811;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/79120>, <http://vocab.belgif.be/auth/nace2008/79120>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0818.358.811;
+    reorg:legalName "Paulussen, Helena";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.180.496.256>.
+<https://data.vlaanderen.be/id/vestiging/2.180.496.256> a org:Site;
+    dcterms:created "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.180.496.256.
+_:contact_0818.358.811 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "uschi.p@travelexperts.be";
+    schema:telephone "089/732337".
+_:registration_company_0818.358.811 a adms:Identifier;
+    skos:notation "0818.358.811";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.180.496.256 a adms:Identifier;
+    skos:notation "2.180.496.256";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

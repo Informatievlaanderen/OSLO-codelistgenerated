@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45206> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "45206".
+<http://vocab.belgif.be/auth/nace2008/61900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6190>, <http://vocab.belgif.be/auth/nace2008/6190>;
+    skos:definition "Overige telecommunicatie"@nl, "Autres activités de télécommunication"@fr;
+    skos:prefLabel "61900".
+<http://vocab.belgif.be/auth/nace2025/61200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6120>, <http://vocab.belgif.be/auth/nace2025/6120>;
+    skos:definition "Binnenvaart"@nl, "Transports fluviaux"@fr;
+    skos:prefLabel "61200".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<https://data.vlaanderen.be/id/onderneming/0823.729.245> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "08-03-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0823.729.245;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/61200>, <http://vocab.belgif.be/auth/nace2025/95316>, <http://vocab.belgif.be/auth/nace2008/45206>, <http://vocab.belgif.be/auth/nace2008/61900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0823.729.245;
+    reorg:legalName "LATHI SERVICES"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.187.501.240>.
+<https://data.vlaanderen.be/id/vestiging/2.187.501.240> a org:Site;
+    dcterms:created "08-03-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.187.501.240.
+_:address_contact_0823.729.245 a locn:Address;
+    locn:thoroughfare "Rue de Marbaix"@nl, "Rue de Marbaix"@fr;
+    rdfs:label "123";
+    locn:postCode "6110";
+    adres:gemeentenaam "Montigny-le-Tilleul"@nl, "Montigny-le-Tilleul"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0823.729.245 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0823.729.245.
+_:registration_company_0823.729.245 a adms:Identifier;
+    skos:notation "0823.729.245";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-03-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.187.501.240 a adms:Identifier;
+    skos:notation "2.187.501.240";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-03-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

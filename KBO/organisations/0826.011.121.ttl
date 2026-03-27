@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/23700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2370>, <http://vocab.belgif.be/auth/nace2008/2370>;
+    skos:definition "Houwen, bewerken en afwerken van natuursteen"@nl, "Taille, façonnage et finissage de pierres"@fr;
+    skos:prefLabel "23700".
+<http://vocab.belgif.be/auth/nace2008/46731> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46731".
+<http://vocab.belgif.be/auth/nace2008/46734> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4673>, <http://vocab.belgif.be/auth/nace2008/4673>;
+    skos:definition "Groothandel in vlakglas"@nl, "Commerce de gros de verre plat"@fr;
+    skos:prefLabel "46734".
+<http://vocab.belgif.be/auth/nace2025/23700> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2370>, <http://vocab.belgif.be/auth/nace2025/2370>;
+    skos:definition "Houwen, bewerken en afwerken van natuursteen"@nl, "Taille, façonnage et finissage de pierres"@fr;
+    skos:prefLabel "23700".
+<http://vocab.belgif.be/auth/nace2025/46831> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in bouwmaterialen, algemeen assortiment"@nl, "Commerce de gros de matériaux de construction, assortiment général"@fr;
+    skos:prefLabel "46831".
+<http://vocab.belgif.be/auth/nace2025/46834> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4683>, <http://vocab.belgif.be/auth/nace2025/4683>;
+    skos:definition "Groothandel in vlakglas"@nl, "Commerce de gros de verre plat"@fr;
+    skos:prefLabel "46834".
+<https://data.vlaanderen.be/id/onderneming/0826.011.121> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "20-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0826.011.121;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46834>, <http://vocab.belgif.be/auth/nace2025/46831>, <http://vocab.belgif.be/auth/nace2025/23700>, <http://vocab.belgif.be/auth/nace2008/23700>, <http://vocab.belgif.be/auth/nace2008/46734>, <http://vocab.belgif.be/auth/nace2008/46731>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0826.011.121;
+    reorg:legalName "BNO Belgium"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.188.159.058>.
+<https://data.vlaanderen.be/id/vestiging/2.188.159.058> a org:Site;
+    dcterms:created "10-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.188.159.058.
+_:address_contact_0826.011.121 a locn:Address;
+    locn:thoroughfare "Ophemstraat(Voo)"@nl, "Ophemstraat(Voo)"@fr;
+    rdfs:label "136";
+    locn:postCode "9400";
+    adres:gemeentenaam "Ninove"@nl, "Ninove"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0826.011.121 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0826.011.121.
+_:registration_company_0826.011.121 a adms:Identifier;
+    skos:notation "0826.011.121";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.188.159.058 a adms:Identifier;
+    skos:notation "2.188.159.058";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

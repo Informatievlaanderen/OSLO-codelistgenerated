@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45206> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "45206".
+<http://vocab.belgif.be/auth/nace2008/49320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4932>, <http://vocab.belgif.be/auth/nace2008/4932>;
+    skos:definition "Exploitatie van taxi's"@nl, "Transports de voyageurs par taxis"@fr;
+    skos:prefLabel "49320".
+<http://vocab.belgif.be/auth/nace2008/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7711>, <http://vocab.belgif.be/auth/nace2008/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2008/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7712>, <http://vocab.belgif.be/auth/nace2008/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2008/77393> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van caravans en motorhomes"@nl, "Location et location-bail de caravanes et de motorhomes"@fr;
+    skos:prefLabel "77393".
+<http://vocab.belgif.be/auth/nace2025/49330> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4933>, <http://vocab.belgif.be/auth/nace2025/4933>;
+    skos:definition "Diensten voor personenvervoer op aanvraag per voertuig met chauffeur"@nl, "Activités de service de transport de voyageurs sur demande par véhicule avec chauffeur"@fr;
+    skos:prefLabel "49330".
+<http://vocab.belgif.be/auth/nace2025/77110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7711>, <http://vocab.belgif.be/auth/nace2025/7711>;
+    skos:definition "Verhuur en lease van personenauto's en lichte bestelwagens (< 3,5 ton)"@nl, "Location et location-bail d'automobiles et d'autres véhicules automobiles légers (< 3,5 tonnes)"@fr;
+    skos:prefLabel "77110".
+<http://vocab.belgif.be/auth/nace2025/77120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7712>, <http://vocab.belgif.be/auth/nace2025/7712>;
+    skos:definition "Verhuur en lease van vrachtwagens en overige motorvoertuigen (> 3,5 ton)"@nl, "Location et location-bail de camions et d'autres véhicules automobiles lourds (> 3,5 ton)"@fr;
+    skos:prefLabel "77120".
+<http://vocab.belgif.be/auth/nace2025/95316> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Wassen en poetsen van motorvoertuigen"@nl, "Lavage de véhicules automobiles"@fr;
+    skos:prefLabel "95316".
+<https://data.vlaanderen.be/id/onderneming/0781.710.528> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "08-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0781.710.528;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77110>, <http://vocab.belgif.be/auth/nace2025/95316>, <http://vocab.belgif.be/auth/nace2025/77120>, <http://vocab.belgif.be/auth/nace2025/49330>, <http://vocab.belgif.be/auth/nace2008/45206>, <http://vocab.belgif.be/auth/nace2008/77110>, <http://vocab.belgif.be/auth/nace2008/77120>, <http://vocab.belgif.be/auth/nace2008/77393>, <http://vocab.belgif.be/auth/nace2008/49320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0781.710.528;
+    reorg:legalName "BIAGIMAT RENTAL"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.327.670.990>.
+<https://data.vlaanderen.be/id/vestiging/2.327.670.990> a org:Site;
+    dcterms:created "08-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.327.670.990.
+_:address_contact_0781.710.528 a locn:Address;
+    locn:thoroughfare "Rue de la Vieille Fontaine"@nl, "Rue de la Vieille Fontaine"@fr;
+    rdfs:label "38";
+    locn:postCode "7020";
+    adres:gemeentenaam "Mons"@nl, "Mons"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0781.710.528 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0781.710.528.
+_:registration_company_0781.710.528 a adms:Identifier;
+    skos:notation "0781.710.528";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.327.670.990 a adms:Identifier;
+    skos:notation "2.327.670.990";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "08-02-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

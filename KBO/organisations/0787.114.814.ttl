@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4615>, <http://vocab.belgif.be/auth/nace2008/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2008/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4616>, <http://vocab.belgif.be/auth/nace2008/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2008/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4641>, <http://vocab.belgif.be/auth/nace2008/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2008/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4649>, <http://vocab.belgif.be/auth/nace2008/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<http://vocab.belgif.be/auth/nace2025/46150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4615>, <http://vocab.belgif.be/auth/nace2025/4615>;
+    skos:definition "Handelsbemiddeling in meubelen, huishoudelijke artikelen en ijzerwaren"@nl, "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr;
+    skos:prefLabel "46150".
+<http://vocab.belgif.be/auth/nace2025/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4616>, <http://vocab.belgif.be/auth/nace2025/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2025/46412> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4641>, <http://vocab.belgif.be/auth/nace2025/4641>;
+    skos:definition "Groothandel in huishoudtextiel en beddengoed"@nl, "Commerce de gros de linge de maison et de literie"@fr;
+    skos:prefLabel "46412".
+<http://vocab.belgif.be/auth/nace2025/46494> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4649>, <http://vocab.belgif.be/auth/nace2025/4649>;
+    skos:definition "Groothandel in niet-elektrische huishoudelijke artikelen"@nl, "Commerce de gros d'articles ménagers non électriques"@fr;
+    skos:prefLabel "46494".
+<https://data.vlaanderen.be/id/onderneming/0787.114.814> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "29-05-2000"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0787.114.814;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46494>, <http://vocab.belgif.be/auth/nace2025/46160>, <http://vocab.belgif.be/auth/nace2025/46412>, <http://vocab.belgif.be/auth/nace2025/46150>, _:nace_2003_51471, _:nace_2003_51150, _:nace_2003_51160, _:nace_2003_51410, <http://vocab.belgif.be/auth/nace2008/46160>, <http://vocab.belgif.be/auth/nace2008/46150>, <http://vocab.belgif.be/auth/nace2008/46412>, <http://vocab.belgif.be/auth/nace2008/46494>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Van Praet, Frank";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.094.954.035>.
+<https://data.vlaanderen.be/id/vestiging/2.094.954.035> a org:Site;
+    dcterms:created "29-05-2000"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.094.954.035.
+_:nace_2003_51150 a skos:Concept;
+    skos:definition "Intermédiaires du commerce en meubles, articles de ménage et quincaillerie"@fr, "Handelsbemiddeling in meubels, huishoudelijke artikelen en ijzerwaren"@nl;
+    skos:prefLabel "51150".
+_:nace_2003_51160 a skos:Concept;
+    skos:definition "Handelsbemiddeling in textiel, kleding, schoeisel en artikelen van leer"@nl, "Intermédiaires du commerce en textiles, habillement, chaussures et articles en cuir"@fr;
+    skos:prefLabel "51160".
+_:nace_2003_51410 a skos:Concept;
+    skos:definition "Groothandel in textiel"@nl, "Commerce de gros de textiles"@fr;
+    skos:prefLabel "51410".
+_:nace_2003_51471 a skos:Concept;
+    skos:definition "Groothandel in meubels, niet-elektrische huishoudapparaten en vloerbedekking inclusief tapijten"@nl, "Commerce de gros de meubles, d'appareils ménagers non électriques et de revêtements de sol, y compris les tapis"@fr;
+    skos:prefLabel "51471".
+_:registration_company_0787.114.814 a adms:Identifier;
+    skos:notation "0787.114.814";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-05-2000"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.094.954.035 a adms:Identifier;
+    skos:notation "2.094.954.035";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "29-05-2000"^^<http://www.w3.org/2001/XMLSchema#date>.

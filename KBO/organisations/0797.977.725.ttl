@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1020>, <http://vocab.belgif.be/auth/nace2008/1020>;
+    skos:definition "Winning van bruinkool en vervaardiging van bruinkoolbriketten"@nl, "Extraction et agglomération du lignite"@fr;
+    skos:prefLabel "10200".
+<http://vocab.belgif.be/auth/nace2008/46381> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4638>, <http://vocab.belgif.be/auth/nace2008/4638>;
+    skos:definition "Groothandel in vis en schaal- en weekdieren"@nl, "Commerce de gros de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "46381".
+<http://vocab.belgif.be/auth/nace2008/47230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4723>, <http://vocab.belgif.be/auth/nace2008/4723>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren in gespecialiseerde winkels"@nl, "Commerce de détail de poissons, crustacés et mollusques en magasin spécialisé"@fr;
+    skos:prefLabel "47230".
+<http://vocab.belgif.be/auth/nace2025/10200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1020>, <http://vocab.belgif.be/auth/nace2025/1020>;
+    skos:definition "Winning van bruinkool en vervaardiging van bruinkoolbriketten"@nl, "Extraction et agglomération du lignite"@fr;
+    skos:prefLabel "10200".
+<http://vocab.belgif.be/auth/nace2025/46323> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4632>, <http://vocab.belgif.be/auth/nace2025/4632>;
+    skos:definition "Groothandel in vis en schaal- en weekdieren"@nl, "Commerce de gros de poissons, crustacés et mollusques"@fr;
+    skos:prefLabel "46323".
+<http://vocab.belgif.be/auth/nace2025/47230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4723>, <http://vocab.belgif.be/auth/nace2025/4723>;
+    skos:definition "Detailhandel in vis en schaal- en weekdieren in gespecialiseerde winkels"@nl, "Commerce de détail de poissons, crustacés et mollusques en magasin spécialisé"@fr;
+    skos:prefLabel "47230".
+<https://data.vlaanderen.be/id/onderneming/0797.977.725> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "03-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0797.977.725;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/10200>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47230>, <http://vocab.belgif.be/auth/nace2025/46323>, <http://vocab.belgif.be/auth/nace2008/10200>, <http://vocab.belgif.be/auth/nace2008/46381>, <http://vocab.belgif.be/auth/nace2008/47230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0797.977.725;
+    reorg:legalName "KOJIN SALMON SMOKERS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.341.283.258>.
+<https://data.vlaanderen.be/id/vestiging/2.341.283.258> a org:Site;
+    dcterms:created "03-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.341.283.258.
+_:address_contact_0797.977.725 a locn:Address;
+    locn:thoroughfare "Groenstraat"@nl, "Groenstraat"@fr;
+    rdfs:label "1";
+    locn:postCode "8860";
+    adres:gemeentenaam "Lendelede"@nl, "Lendelede"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0797.977.725 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0797.977.725.
+_:registration_company_0797.977.725 a adms:Identifier;
+    skos:notation "0797.977.725";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.341.283.258 a adms:Identifier;
+    skos:notation "2.341.283.258";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "03-02-2023"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4662>, <http://vocab.belgif.be/auth/nace2008/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2008/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4663>, <http://vocab.belgif.be/auth/nace2008/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2008/46693> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46693".
+<http://vocab.belgif.be/auth/nace2025/46620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4662>, <http://vocab.belgif.be/auth/nace2025/4662>;
+    skos:definition "Groothandel in gereedschapswerktuigen"@nl, "Commerce de gros de machines-outils"@fr;
+    skos:prefLabel "46620".
+<http://vocab.belgif.be/auth/nace2025/46630> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4663>, <http://vocab.belgif.be/auth/nace2025/4663>;
+    skos:definition "Groothandel in machines voor de mijnbouw, de bouwnijverheid en de weg- en waterbouw"@nl, "Commerce de gros de machines pour l'extraction, la construction et le génie civil"@fr;
+    skos:prefLabel "46630".
+<http://vocab.belgif.be/auth/nace2025/46643> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46643".
+<https://data.vlaanderen.be/id/onderneming/0832.429.452> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0832.429.452;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46620>, <http://vocab.belgif.be/auth/nace2025/46630>, <http://vocab.belgif.be/auth/nace2025/46643>, <http://vocab.belgif.be/auth/nace2008/46693>, <http://vocab.belgif.be/auth/nace2008/46630>, <http://vocab.belgif.be/auth/nace2008/46620>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0832.429.452;
+    reorg:legalName "AC DIAMONDS"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.194.905.112>.
+<https://data.vlaanderen.be/id/vestiging/2.194.905.112> a org:Site;
+    dcterms:created "30-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.194.905.112.
+_:address_contact_0832.429.452 a locn:Address;
+    locn:thoroughfare "Breestraat"@nl, "Breestraat"@fr;
+    rdfs:label "18";
+    adres:busnummer "A";
+    locn:postCode "8710";
+    adres:gemeentenaam "Wielsbeke"@nl, "Wielsbeke"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0832.429.452 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0832.429.452.
+_:registration_company_0832.429.452 a adms:Identifier;
+    skos:notation "0832.429.452";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.194.905.112 a adms:Identifier;
+    skos:notation "2.194.905.112";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-12-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

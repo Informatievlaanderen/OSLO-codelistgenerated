@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/22230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2223>, <http://vocab.belgif.be/auth/nace2008/2223>;
+    skos:definition "Boekbinden"@nl, "Reliure"@fr;
+    skos:prefLabel "22230".
+<http://vocab.belgif.be/auth/nace2008/25720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2572>, <http://vocab.belgif.be/auth/nace2008/2572>;
+    skos:definition "Vervaardiging van hang- en sluitwerk"@nl, "Fabrication de serrures et de ferrures"@fr;
+    skos:prefLabel "25720".
+<http://vocab.belgif.be/auth/nace2008/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2711>, <http://vocab.belgif.be/auth/nace2008/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2008/27402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2740>, <http://vocab.belgif.be/auth/nace2008/2740>;
+    skos:definition "Vervaardiging van verlichtingsapparaten"@nl, "Fabrication d'appareils d'éclairage électrique"@fr;
+    skos:prefLabel "27402".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3314>, <http://vocab.belgif.be/auth/nace2008/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<http://vocab.belgif.be/auth/nace2025/22240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2224>, <http://vocab.belgif.be/auth/nace2025/2224>;
+    skos:definition "Prepress-activiteiten"@nl, "Activités de pré-presse"@fr;
+    skos:prefLabel "22240".
+<http://vocab.belgif.be/auth/nace2025/25620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2562>, <http://vocab.belgif.be/auth/nace2025/2562>;
+    skos:definition "Verspanend bewerken van metalen"@nl, "Usinage"@fr;
+    skos:prefLabel "25620".
+<http://vocab.belgif.be/auth/nace2025/27110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2711>, <http://vocab.belgif.be/auth/nace2025/2711>;
+    skos:definition "Vervaardiging van elektromotoren en van elektrische generatoren en transformatoren"@nl, "Fabrication de moteurs, de génératrices et de transformateurs électriques"@fr;
+    skos:prefLabel "27110".
+<http://vocab.belgif.be/auth/nace2025/27402> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2740>, <http://vocab.belgif.be/auth/nace2025/2740>;
+    skos:definition "Vervaardiging van verlichtingsapparaten"@nl, "Fabrication d'appareils d'éclairage électrique"@fr;
+    skos:prefLabel "27402".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/33140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3314>, <http://vocab.belgif.be/auth/nace2025/3314>;
+    skos:definition "Reparatie van elektrische apparatuur"@nl, "Réparation d'équipements électriques"@fr;
+    skos:prefLabel "33140".
+<https://data.vlaanderen.be/id/onderneming/0812.048.663> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "27-05-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0812.048.663;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2025/27110>, <http://vocab.belgif.be/auth/nace2025/33140>, <http://vocab.belgif.be/auth/nace2025/27402>, <http://vocab.belgif.be/auth/nace2025/22240>, <http://vocab.belgif.be/auth/nace2025/25620>, <http://vocab.belgif.be/auth/nace2008/25720>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/27110>, <http://vocab.belgif.be/auth/nace2008/33140>, <http://vocab.belgif.be/auth/nace2008/22230>, <http://vocab.belgif.be/auth/nace2008/27402>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Özer, Yasar";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.178.379.181>.
+<https://data.vlaanderen.be/id/vestiging/2.178.379.181> a org:Site;
+    dcterms:created "27-05-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.178.379.181.
+_:registration_company_0812.048.663 a adms:Identifier;
+    skos:notation "0812.048.663";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-05-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.178.379.181 a adms:Identifier;
+    skos:notation "2.178.379.181";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-05-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

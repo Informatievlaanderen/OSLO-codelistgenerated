@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4726>, <http://vocab.belgif.be/auth/nace2008/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2008/47620> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4762>, <http://vocab.belgif.be/auth/nace2008/4762>;
+    skos:definition "Detailhandel in kranten en kantoorbehoeften in gespecialiseerde  winkels"@nl, "Commerce de détail de journaux et de papeterie en magasin spécialisé"@fr;
+    skos:prefLabel "47620".
+<http://vocab.belgif.be/auth/nace2025/47260> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4726>, <http://vocab.belgif.be/auth/nace2025/4726>;
+    skos:definition "Detailhandel in tabaksproducten in gespecialiseerde winkels"@nl, "Commerce de détail de produits à base de tabac en magasin spécialisé"@fr;
+    skos:prefLabel "47260".
+<http://vocab.belgif.be/auth/nace2025/47621> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4762>, <http://vocab.belgif.be/auth/nace2025/4762>;
+    skos:definition "Detailhandel in kranten en andere tijdschriften"@nl, "Commerce de détail de journaux et autres publications périodiques"@fr;
+    skos:prefLabel "47621".
+<https://data.vlaanderen.be/id/onderneming/0794.065.358> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "14-03-2000"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0794.065.358;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/47621>, _:nace_2003_52470, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, _:nace_2003_52260, <http://vocab.belgif.be/auth/nace2025/47260>, <http://vocab.belgif.be/auth/nace2008/47620>, <http://vocab.belgif.be/auth/nace2008/47260>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Mordant, Charlotte";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.093.696.894>.
+<https://data.vlaanderen.be/id/vestiging/2.093.696.894> a org:Site;
+    dcterms:created "14-03-2000"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.093.696.894.
+_:nace_2003_52260 a skos:Concept;
+    skos:definition "Detailhandel in tabaksproducten"@nl, "Commerce de détail de tabac"@fr;
+    skos:prefLabel "52260".
+_:nace_2003_52470 a skos:Concept;
+    skos:definition "Detailhandel in boeken, kranten, tijdschriften en kantoorbehoeften"@nl, "Commerce de détail de livres, journaux et papeterie"@fr;
+    skos:prefLabel "52470".
+_:registration_company_0794.065.358 a adms:Identifier;
+    skos:notation "0794.065.358";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-03-2000"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.093.696.894 a adms:Identifier;
+    skos:notation "2.093.696.894";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-03-2000"^^<http://www.w3.org/2001/XMLSchema#date>.

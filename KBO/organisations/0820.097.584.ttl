@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9491>, <http://vocab.belgif.be/auth/nace2008/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<http://vocab.belgif.be/auth/nace2025/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9491>, <http://vocab.belgif.be/auth/nace2025/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<https://data.vlaanderen.be/id/onderneming/0820.097.584> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/124>;
+    dcterms:created "01-01-1968"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0820.097.584;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/94910>, <http://vocab.belgif.be/auth/nace2008/94910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0820.097.584;
+    reorg:legalName "Conseil d'Etablissement Saint-Denis"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.232.569.717>.
+<https://data.vlaanderen.be/id/vestiging/2.232.569.717> a org:Site;
+    dcterms:created "01-09-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.232.569.717.
+_:address_contact_0820.097.584 a locn:Address;
+    locn:thoroughfare "Victor Rousseaulaan"@nl, "Av Victor Rousseau"@fr;
+    rdfs:label "157";
+    locn:postCode "1190";
+    adres:gemeentenaam "Vorst"@nl, "Forest"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0820.097.584 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0820.097.584.
+_:registration_company_0820.097.584 a adms:Identifier;
+    skos:notation "0820.097.584";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1968"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.232.569.717 a adms:Identifier;
+    skos:notation "2.232.569.717";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1968"^^<http://www.w3.org/2001/XMLSchema#date>.

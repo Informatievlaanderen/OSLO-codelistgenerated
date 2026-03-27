@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2025/46110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4611>, <http://vocab.belgif.be/auth/nace2025/4611>;
+    skos:definition "Handelsbemiddeling in landbouwproducten, levende dieren en textielgrondstoffen en halffabrikaten"@nl, "Intermédiaires du commerce en matières premières agricoles, animaux vivants, matières premières textiles et produits semi-finis"@fr;
+    skos:prefLabel "46110".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/82990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8299>, <http://vocab.belgif.be/auth/nace2025/8299>;
+    skos:definition "Overige zakelijke dienstverlening, n.e.g."@nl, "Autres activités de soutien aux entreprises n.c.a."@fr;
+    skos:prefLabel "82990".
+<https://data.vlaanderen.be/id/onderneming/0818.531.332> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "11-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0818.531.332;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/46110>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/82990>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Buntinx, Jean-Philippe";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.377.803.857>.
+<https://data.vlaanderen.be/id/vestiging/2.377.803.857> a org:Site;
+    dcterms:created "11-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.377.803.857.
+_:registration_company_0818.531.332 a adms:Identifier;
+    skos:notation "0818.531.332";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.377.803.857 a adms:Identifier;
+    skos:notation "2.377.803.857";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "11-09-2025"^^<http://www.w3.org/2001/XMLSchema#date>.

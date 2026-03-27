@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2025/86230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8623>, <http://vocab.belgif.be/auth/nace2025/8623>;
+    skos:definition "Tandartspraktijken"@nl, "Pratique dentaire"@fr;
+    skos:prefLabel "86230".
+<https://data.vlaanderen.be/id/onderneming/0791.447.843> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "27-09-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0791.447.843;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/86230>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0791.447.843;
+    reorg:legalName "Tandartsenpraktijk Elyf"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.335.779.893>, <https://data.vlaanderen.be/id/vestiging/2.379.511.156>.
+<https://data.vlaanderen.be/id/vestiging/2.335.779.893> a org:Site;
+    dcterms:created "27-09-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.335.779.893.
+<https://data.vlaanderen.be/id/vestiging/2.379.511.156> a org:Site;
+    dcterms:created "01-11-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.379.511.156.
+_:address_contact_0791.447.843 a locn:Address;
+    locn:thoroughfare "Dokter Haubenlaan(M)"@nl, "Dokter Haubenlaan(M)"@fr;
+    rdfs:label "17";
+    locn:postCode "3630";
+    adres:gemeentenaam "Maasmechelen"@nl, "Maasmechelen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0791.447.843 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "elkcmn@gmail.com";
+    locn:address _:address_contact_0791.447.843.
+_:registration_company_0791.447.843 a adms:Identifier;
+    skos:notation "0791.447.843";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.335.779.893 a adms:Identifier;
+    skos:notation "2.335.779.893";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2022"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.379.511.156 a adms:Identifier;
+    skos:notation "2.379.511.156";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "27-09-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/46692> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in verpakkingsmachines en weegtoestellen"@nl, "Commerce de gros de machines d'emballage et d'appareils de pesage"@fr;
+    skos:prefLabel "46692".
+<http://vocab.belgif.be/auth/nace2008/46693> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4669>, <http://vocab.belgif.be/auth/nace2008/4669>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46693".
+<http://vocab.belgif.be/auth/nace2008/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4690>, <http://vocab.belgif.be/auth/nace2008/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<http://vocab.belgif.be/auth/nace2025/46642> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in verpakkingsmachines en weegtoestellen"@nl, "Commerce de gros de machines d'emballage et d'appareils de pesage"@fr;
+    skos:prefLabel "46642".
+<http://vocab.belgif.be/auth/nace2025/46643> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4664>, <http://vocab.belgif.be/auth/nace2025/4664>;
+    skos:definition "Groothandel in elektrisch materiaal, inclusief installatiemateriaal"@nl, "Commerce de gros de matériel électrique, y compris le matériel d'installation"@fr;
+    skos:prefLabel "46643".
+<http://vocab.belgif.be/auth/nace2025/46900> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4690>, <http://vocab.belgif.be/auth/nace2025/4690>;
+    skos:definition "Niet-gespecialiseerde groothandel"@nl, "Commerce de gros non spécialisé"@fr;
+    skos:prefLabel "46900".
+<https://data.vlaanderen.be/id/onderneming/0822.892.174> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2015"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0822.892.174;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46642>, <http://vocab.belgif.be/auth/nace2025/46900>, <http://vocab.belgif.be/auth/nace2025/46643>, <http://vocab.belgif.be/auth/nace2008/46693>, <http://vocab.belgif.be/auth/nace2008/46692>, <http://vocab.belgif.be/auth/nace2008/46900>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Termonia, Peter";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.184.646.272>.
+<https://data.vlaanderen.be/id/vestiging/2.184.646.272> a org:Site;
+    dcterms:created "01-01-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.184.646.272.
+_:registration_company_0822.892.174 a adms:Identifier;
+    skos:notation "0822.892.174";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2015"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.184.646.272 a adms:Identifier;
+    skos:notation "2.184.646.272";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2015"^^<http://www.w3.org/2001/XMLSchema#date>.

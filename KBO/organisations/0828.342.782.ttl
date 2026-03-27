@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/14199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1419>, <http://vocab.belgif.be/auth/nace2008/1419>;
+    skos:definition "Vervaardiging van andere kleding en toebehoren, n.e.g."@nl, "Fabrication d'autres vêtements et accessoires n.c.a."@fr;
+    skos:prefLabel "14199".
+<http://vocab.belgif.be/auth/nace2008/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3213>, <http://vocab.belgif.be/auth/nace2008/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2008/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4771>, <http://vocab.belgif.be/auth/nace2008/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<http://vocab.belgif.be/auth/nace2025/14299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1429>, <http://vocab.belgif.be/auth/nace2025/1429>;
+    skos:definition "Vervaardiging van overige kleding en toebehoren, neg"@nl, "Fabrication d'autres vêtements et accessoires nca"@fr;
+    skos:prefLabel "14299".
+<http://vocab.belgif.be/auth/nace2025/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3213>, <http://vocab.belgif.be/auth/nace2025/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2025/47715> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4771>, <http://vocab.belgif.be/auth/nace2025/4771>;
+    skos:definition "Detailhandel in kledingaccessoires in gespecialiseerde winkels"@nl, "Commerce de détail d'accessoires du vêtement en magasin spécialisé"@fr;
+    skos:prefLabel "47715".
+<https://data.vlaanderen.be/id/onderneming/0828.342.782> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0828.342.782;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/14299>, <http://vocab.belgif.be/auth/nace2025/32130>, <http://vocab.belgif.be/auth/nace2025/47715>, <http://vocab.belgif.be/auth/nace2008/32130>, <http://vocab.belgif.be/auth/nace2008/47715>, <http://vocab.belgif.be/auth/nace2008/14199>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0828.342.782;
+    reorg:legalName "Galeote Rodriguez, Sophie";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.272.238.163>, <https://data.vlaanderen.be/id/vestiging/2.339.427.192>, <https://data.vlaanderen.be/id/vestiging/2.339.427.291>, <https://data.vlaanderen.be/id/vestiging/2.365.328.667>.
+<https://data.vlaanderen.be/id/vestiging/2.272.238.163> a org:Site;
+    dcterms:created "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.272.238.163.
+<https://data.vlaanderen.be/id/vestiging/2.339.427.192> a org:Site;
+    dcterms:created "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.339.427.192.
+<https://data.vlaanderen.be/id/vestiging/2.339.427.291> a org:Site;
+    dcterms:created "01-01-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.339.427.291.
+<https://data.vlaanderen.be/id/vestiging/2.365.328.667> a org:Site;
+    dcterms:created "01-02-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.328.667.
+_:contact_0828.342.782 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "so.galeote@widnell.eu";
+    schema:telephone "+32495921662".
+_:registration_company_0828.342.782 a adms:Identifier;
+    skos:notation "0828.342.782";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.272.238.163 a adms:Identifier;
+    skos:notation "2.272.238.163";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.339.427.192 a adms:Identifier;
+    skos:notation "2.339.427.192";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.339.427.291 a adms:Identifier;
+    skos:notation "2.339.427.291";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.328.667 a adms:Identifier;
+    skos:notation "2.365.328.667";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-02-2018"^^<http://www.w3.org/2001/XMLSchema#date>.

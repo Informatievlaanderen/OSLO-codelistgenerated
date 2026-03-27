@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0220>, <http://vocab.belgif.be/auth/nace2008/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2008/10110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1011>, <http://vocab.belgif.be/auth/nace2008/1011>;
+    skos:definition "Verwerking en conservering van vlees, exclusief vlees van gevogelte"@nl, "Transformation et conservation de la viande de boucherie, à l'exclusion de la viande de volaille"@fr;
+    skos:prefLabel "10110".
+<http://vocab.belgif.be/auth/nace2008/16100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1610>, <http://vocab.belgif.be/auth/nace2008/1610>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16100".
+<http://vocab.belgif.be/auth/nace2008/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1623>, <http://vocab.belgif.be/auth/nace2008/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2008/43291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4329>, <http://vocab.belgif.be/auth/nace2008/4329>;
+    skos:definition "Isolatiewerkzaamheden"@nl, "Travaux d'isolation"@fr;
+    skos:prefLabel "43291".
+<http://vocab.belgif.be/auth/nace2008/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8130>, <http://vocab.belgif.be/auth/nace2008/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<http://vocab.belgif.be/auth/nace2025/02200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0220>, <http://vocab.belgif.be/auth/nace2025/0220>;
+    skos:definition "Exploitatie van bossen"@nl, "Exploitation forestière"@fr;
+    skos:prefLabel "02200".
+<http://vocab.belgif.be/auth/nace2025/10111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1011>, <http://vocab.belgif.be/auth/nace2025/1011>;
+    skos:definition "Activiteiten van slachthuizen"@nl, "Activités des abattoirs"@fr;
+    skos:prefLabel "10111".
+<http://vocab.belgif.be/auth/nace2025/16110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1611>, <http://vocab.belgif.be/auth/nace2025/1611>;
+    skos:definition "Zagen en schaven van hout"@nl, "Sciage et rabotage du bois"@fr;
+    skos:prefLabel "16110".
+<http://vocab.belgif.be/auth/nace2025/16230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1623>, <http://vocab.belgif.be/auth/nace2025/1623>;
+    skos:definition "Vervaardiging van ander schrijn- en timmerwerk"@nl, "Fabrication de charpentes et d'autres menuiseries"@fr;
+    skos:prefLabel "16230".
+<http://vocab.belgif.be/auth/nace2025/43230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4323>, <http://vocab.belgif.be/auth/nace2025/4323>;
+    skos:definition "Installatie van isolatie"@nl, "Mise en place de l’isolation"@fr;
+    skos:prefLabel "43230".
+<http://vocab.belgif.be/auth/nace2025/81300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8130>, <http://vocab.belgif.be/auth/nace2025/8130>;
+    skos:definition "Landschapsverzorging"@nl, "Services d'aménagement paysager"@fr;
+    skos:prefLabel "81300".
+<https://data.vlaanderen.be/id/onderneming/0826.398.527> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "05-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0826.398.527;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/81300>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/16110>, <http://vocab.belgif.be/auth/nace2025/43230>, <http://vocab.belgif.be/auth/nace2025/16230>, <http://vocab.belgif.be/auth/nace2025/02200>, <http://vocab.belgif.be/auth/nace2025/10111>, <http://vocab.belgif.be/auth/nace2008/81300>, <http://vocab.belgif.be/auth/nace2008/10110>, <http://vocab.belgif.be/auth/nace2008/16100>, <http://vocab.belgif.be/auth/nace2008/02200>, <http://vocab.belgif.be/auth/nace2008/16230>, <http://vocab.belgif.be/auth/nace2008/43291>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Mathieu, Stéphane";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.188.394.432>, <https://data.vlaanderen.be/id/vestiging/2.350.087.393>.
+<https://data.vlaanderen.be/id/vestiging/2.188.394.432> a org:Site;
+    dcterms:created "05-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.188.394.432.
+<https://data.vlaanderen.be/id/vestiging/2.350.087.393> a org:Site;
+    dcterms:created "01-11-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.350.087.393.
+_:registration_company_0826.398.527 a adms:Identifier;
+    skos:notation "0826.398.527";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.188.394.432 a adms:Identifier;
+    skos:notation "2.188.394.432";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.350.087.393 a adms:Identifier;
+    skos:notation "2.350.087.393";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-05-2010"^^<http://www.w3.org/2001/XMLSchema#date>.

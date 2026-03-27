@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/87901> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8790>, <http://vocab.belgif.be/auth/nace2008/8790>;
+    skos:definition "Integrale jeugdhulp met huisvesting"@nl, "Services d'aide à la jeunesse avec hébergement"@fr;
+    skos:prefLabel "87901".
+<http://vocab.belgif.be/auth/nace2008/88994> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8899>, <http://vocab.belgif.be/auth/nace2008/8899>;
+    skos:definition "Integrale jeugdhulp zonder huisvesting"@nl, "Services d'aide à la jeunesse sans hébergement"@fr;
+    skos:prefLabel "88994".
+<http://vocab.belgif.be/auth/nace2008/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9491>, <http://vocab.belgif.be/auth/nace2008/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<http://vocab.belgif.be/auth/nace2008/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9499>, <http://vocab.belgif.be/auth/nace2008/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<http://vocab.belgif.be/auth/nace2025/87991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8799>, <http://vocab.belgif.be/auth/nace2025/8799>;
+    skos:definition "Integrale jeugdhulp met huisvesting"@nl, "Services d'aide à la jeunesse avec hébergement"@fr;
+    skos:prefLabel "87991".
+<http://vocab.belgif.be/auth/nace2025/88992> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8899>, <http://vocab.belgif.be/auth/nace2025/8899>;
+    skos:definition "Activiteiten van dagcentra voor volwassenen met een mentale handicap, met inbegrip van ambulante hulpverlening"@nl, "Activités des centres de jour pour adultes avec un handicap mental, y compris les services ambulatoires"@fr;
+    skos:prefLabel "88992".
+<http://vocab.belgif.be/auth/nace2025/94910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9491>, <http://vocab.belgif.be/auth/nace2025/9491>;
+    skos:definition "Religieuze organisaties"@nl, "Activités des organisations religieuses et philosophiques"@fr;
+    skos:prefLabel "94910".
+<http://vocab.belgif.be/auth/nace2025/94991> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9499>, <http://vocab.belgif.be/auth/nace2025/9499>;
+    skos:definition "Verenigingen op het vlak van jeugdwerk"@nl, "Associations de jeunesse"@fr;
+    skos:prefLabel "94991".
+<https://data.vlaanderen.be/id/onderneming/0794.291.626> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/017>;
+    dcterms:created "01-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0794.291.626;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/94910>, <http://vocab.belgif.be/auth/nace2025/87991>, <http://vocab.belgif.be/auth/nace2025/94991>, <http://vocab.belgif.be/auth/nace2025/88992>, <http://vocab.belgif.be/auth/nace2008/87901>, <http://vocab.belgif.be/auth/nace2008/88994>, <http://vocab.belgif.be/auth/nace2008/94991>, <http://vocab.belgif.be/auth/nace2008/94910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0794.291.626;
+    reorg:legalName "Jesus Revolution Belgium"@fr, "JRBe"@fr.
+_:address_contact_0794.291.626 a locn:Address;
+    locn:thoroughfare "Chaussée de Tervuren"@nl, "Chaussée de Tervuren"@fr;
+    rdfs:label "106";
+    locn:postCode "1410";
+    adres:gemeentenaam "Waterloo"@nl, "Waterloo"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0794.291.626 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "administration@jesusrevolution.be";
+    <http://xmlns.com/foaf/0.1/homepage> "jesusrevolution.be";
+    locn:address _:address_contact_0794.291.626.
+_:registration_company_0794.291.626 a adms:Identifier;
+    skos:notation "0794.291.626";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/45111> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Slopen van gebouwen"@nl, "Démolition d'immeubles"@fr;
+    skos:prefLabel "45111".
+<http://vocab.belgif.be/auth/nace2008/45193> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4519>, <http://vocab.belgif.be/auth/nace2008/4519>;
+    skos:definition "Detailhandel in andere motorvoertuigen (> 3,5 ton)"@nl, "Commerce de détail d'autres véhicules automobiles ( > 3,5 tonnes )"@fr;
+    skos:prefLabel "45193".
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2008/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5320>, <http://vocab.belgif.be/auth/nace2008/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<http://vocab.belgif.be/auth/nace2025/46711> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de gros de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "46711".
+<http://vocab.belgif.be/auth/nace2025/47812> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in andere motorvoertuigen (> 3,5 ton)"@nl, "Commerce de détail d'autres véhicules automobiles (> 3,5 tonnes)"@fr;
+    skos:prefLabel "47812".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/53200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5320>, <http://vocab.belgif.be/auth/nace2025/5320>;
+    skos:definition "Overige posterijen en koeriers"@nl, "Autres activités de poste et de courrier"@fr;
+    skos:prefLabel "53200".
+<https://data.vlaanderen.be/id/onderneming/0820.745.407> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "20-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0820.745.407;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/46711>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/53200>, <http://vocab.belgif.be/auth/nace2025/47812>, <http://vocab.belgif.be/auth/nace2025/52210>, <http://vocab.belgif.be/auth/nace2008/45193>, <http://vocab.belgif.be/auth/nace2008/53200>, <http://vocab.belgif.be/auth/nace2008/45111>, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0820.745.407;
+    reorg:legalName "Euro Delivery Express"@nl, "EDE"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.242.567.744>, <https://data.vlaanderen.be/id/vestiging/2.338.890.031>.
+<https://data.vlaanderen.be/id/vestiging/2.242.567.744> a org:Site;
+    dcterms:created "20-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.242.567.744.
+<https://data.vlaanderen.be/id/vestiging/2.338.890.031> a org:Site;
+    dcterms:created "01-12-2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.338.890.031.
+_:address_contact_0820.745.407 a locn:Address;
+    locn:thoroughfare "Oscar Colbrandtstraat"@nl, "Oscar Colbrandtstraat"@fr;
+    rdfs:label "12";
+    locn:postCode "9040";
+    adres:gemeentenaam "Gent"@nl, "Gent"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0820.745.407 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "edebvba@gmail.com";
+    schema:telephone "+32487460950";
+    locn:address _:address_contact_0820.745.407.
+_:registration_company_0820.745.407 a adms:Identifier;
+    skos:notation "0820.745.407";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.242.567.744 a adms:Identifier;
+    skos:notation "2.242.567.744";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.338.890.031 a adms:Identifier;
+    skos:notation "2.338.890.031";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-11-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

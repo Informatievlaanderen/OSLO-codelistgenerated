@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/46480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4648>, <http://vocab.belgif.be/auth/nace2008/4648>;
+    skos:definition "Groothandel in uurwerken en sieraden"@nl, "Commerce de gros d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "46480".
+<http://vocab.belgif.be/auth/nace2008/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4777>, <http://vocab.belgif.be/auth/nace2008/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2008/64999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6499>, <http://vocab.belgif.be/auth/nace2008/6499>;
+    skos:definition "Overige financiële dienstverlening"@nl, "Autres activités des services financiers"@fr;
+    skos:prefLabel "64999".
+<http://vocab.belgif.be/auth/nace2025/46480> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4648>, <http://vocab.belgif.be/auth/nace2025/4648>;
+    skos:definition "Groothandel in uurwerken en sieraden"@nl, "Commerce de gros d'articles d'horlogerie et de bijouterie"@fr;
+    skos:prefLabel "46480".
+<http://vocab.belgif.be/auth/nace2025/47770> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4777>, <http://vocab.belgif.be/auth/nace2025/4777>;
+    skos:definition "Detailhandel in uurwerken en sieraden in gespecialiseerde winkels"@nl, "Commerce de détail d'articles d'horlogerie et de bijouterie en magasin spécialisé"@fr;
+    skos:prefLabel "47770".
+<http://vocab.belgif.be/auth/nace2025/64999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6499>, <http://vocab.belgif.be/auth/nace2025/6499>;
+    skos:definition "Overige financiële dienstverlening"@nl, "Autres activités des services financiers"@fr;
+    skos:prefLabel "64999".
+<https://data.vlaanderen.be/id/onderneming/0817.811.750> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "14-08-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0817.811.750;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/64999>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46480>, <http://vocab.belgif.be/auth/nace2025/47770>, <http://vocab.belgif.be/auth/nace2008/64999>, <http://vocab.belgif.be/auth/nace2008/46480>, <http://vocab.belgif.be/auth/nace2008/47770>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0817.811.750;
+    reorg:legalName "ANTWERPEN-GOUDBANK"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.180.333.930>.
+<https://data.vlaanderen.be/id/vestiging/2.180.333.930> a org:Site;
+    dcterms:created "11-08-2009"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.180.333.930.
+_:address_contact_0817.811.750 a locn:Address;
+    locn:thoroughfare "Abdijstraat"@nl, "Abdijstraat"@fr;
+    rdfs:label "86";
+    locn:postCode "2020";
+    adres:gemeentenaam "Antwerpen"@nl, "Antwerpen"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0817.811.750 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0817.811.750.
+_:registration_company_0817.811.750 a adms:Identifier;
+    skos:notation "0817.811.750";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2009"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.180.333.930 a adms:Identifier;
+    skos:notation "2.180.333.930";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "14-08-2009"^^<http://www.w3.org/2001/XMLSchema#date>.

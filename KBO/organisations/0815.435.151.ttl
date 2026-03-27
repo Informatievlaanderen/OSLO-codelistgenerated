@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/86905> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8690>, <http://vocab.belgif.be/auth/nace2008/8690>;
+    skos:definition "Ambulante revalidatieactiviteiten"@nl, "Activités de revalidation ambulatoire"@fr;
+    skos:prefLabel "86905".
+<http://vocab.belgif.be/auth/nace2025/86951> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8695>, <http://vocab.belgif.be/auth/nace2025/8695>;
+    skos:definition "Activiteiten op het gebied van kinesitherapie"@nl, "Activités de kinésithérapie"@fr;
+    skos:prefLabel "86951".
+<https://data.vlaanderen.be/id/onderneming/0815.435.151> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0815.435.151;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/003>, <http://vocab.belgif.be/auth/nace2008/86905>, <http://vocab.belgif.be/auth/nace2025/86951>, _:nace_2003_85144;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Devaux, Pascal".
+_:nace_2003_85144 a skos:Concept;
+    skos:definition "Kinesitherapeuten (fysiotherapeuten)"@nl, "Kinésithérapeutes"@fr;
+    skos:prefLabel "85144".
+_:registration_company_0815.435.151 a adms:Identifier;
+    skos:notation "0815.435.151";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
