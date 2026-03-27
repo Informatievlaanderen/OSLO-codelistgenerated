@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/58140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5814>, <http://vocab.belgif.be/auth/nace2008/5814>;
+    skos:definition "Uitgeverijen van tijdschriften"@nl, "Édition de revues et de périodiques"@fr;
+    skos:prefLabel "58140".
+<http://vocab.belgif.be/auth/nace2008/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5819>, <http://vocab.belgif.be/auth/nace2008/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2008/70210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7021>, <http://vocab.belgif.be/auth/nace2008/7021>;
+    skos:definition "Adviesbureaus op het gebied van public relations en communicatie"@nl, "Conseil en relations publiques et en communication"@fr;
+    skos:prefLabel "70210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/58130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5813>, <http://vocab.belgif.be/auth/nace2025/5813>;
+    skos:definition "Uitgeverijen van kranten"@nl, "Édition de journaux"@fr;
+    skos:prefLabel "58130".
+<http://vocab.belgif.be/auth/nace2025/58190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5819>, <http://vocab.belgif.be/auth/nace2025/5819>;
+    skos:definition "Overige uitgeverijen"@nl, "Autres activités d'édition"@fr;
+    skos:prefLabel "58190".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<http://vocab.belgif.be/auth/nace2025/73300> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7330>, <http://vocab.belgif.be/auth/nace2025/7330>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van public relations en communicatie"@nl, "Activités de conseil en relations publiques et communication"@fr;
+    skos:prefLabel "73300".
+<https://data.vlaanderen.be/id/onderneming/0734.416.296> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0734.416.296;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/58190>, <http://vocab.belgif.be/auth/nace2025/73300>, <http://vocab.belgif.be/auth/nace2025/58130>, <http://vocab.belgif.be/auth/nace2008/58190>, <http://vocab.belgif.be/auth/nace2008/70210>, <http://vocab.belgif.be/auth/nace2008/70220>, <http://vocab.belgif.be/auth/nace2008/58140>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Baeten, Laurence";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.293.074.555>.
+<https://data.vlaanderen.be/id/vestiging/2.293.074.555> a org:Site;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.293.074.555.
+_:registration_company_0734.416.296 a adms:Identifier;
+    skos:notation "0734.416.296";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.293.074.555 a adms:Identifier;
+    skos:notation "2.293.074.555";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

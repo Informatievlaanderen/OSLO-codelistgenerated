@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4752>, <http://vocab.belgif.be/auth/nace2008/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<http://vocab.belgif.be/auth/nace2008/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9529>, <http://vocab.belgif.be/auth/nace2008/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<http://vocab.belgif.be/auth/nace2025/47525> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4752>, <http://vocab.belgif.be/auth/nace2025/4752>;
+    skos:definition "Detailhandel in ijzerwaren en gereedschappen in gespecialiseerde winkels"@nl, "Commerce de détail de quincaillerie et d'outils en magasin spécialisé"@fr;
+    skos:prefLabel "47525".
+<http://vocab.belgif.be/auth/nace2025/95290> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9529>, <http://vocab.belgif.be/auth/nace2025/9529>;
+    skos:definition "Reparatie van andere consumentenartikelen"@nl, "Réparation d'autres biens personnels et domestiques"@fr;
+    skos:prefLabel "95290".
+<https://data.vlaanderen.be/id/onderneming/0734.681.661> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0734.681.661;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/95290>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47525>, <http://vocab.belgif.be/auth/nace2008/47525>, <http://vocab.belgif.be/auth/nace2008/95290>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Pankowski, Grégory";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.359.806.397>, <https://data.vlaanderen.be/id/vestiging/2.365.416.561>, <https://data.vlaanderen.be/id/vestiging/2.365.416.660>, <https://data.vlaanderen.be/id/vestiging/2.365.416.759>, <https://data.vlaanderen.be/id/vestiging/2.366.506.525>, <https://data.vlaanderen.be/id/vestiging/2.374.639.875>, <https://data.vlaanderen.be/id/vestiging/2.381.563.893>.
+<https://data.vlaanderen.be/id/vestiging/2.359.806.397> a org:Site;
+    dcterms:created "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.359.806.397.
+<https://data.vlaanderen.be/id/vestiging/2.365.416.561> a org:Site;
+    dcterms:created "01-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.416.561.
+<https://data.vlaanderen.be/id/vestiging/2.365.416.660> a org:Site;
+    dcterms:created "01-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.416.660.
+<https://data.vlaanderen.be/id/vestiging/2.365.416.759> a org:Site;
+    dcterms:created "01-09-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.365.416.759.
+<https://data.vlaanderen.be/id/vestiging/2.366.506.525> a org:Site;
+    dcterms:created "01-11-2024"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.366.506.525.
+<https://data.vlaanderen.be/id/vestiging/2.374.639.875> a org:Site;
+    dcterms:created "12-06-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.374.639.875.
+<https://data.vlaanderen.be/id/vestiging/2.381.563.893> a org:Site;
+    dcterms:created "01-12-2025"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.381.563.893.
+_:registration_company_0734.681.661 a adms:Identifier;
+    skos:notation "0734.681.661";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.359.806.397 a adms:Identifier;
+    skos:notation "2.359.806.397";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.416.561 a adms:Identifier;
+    skos:notation "2.365.416.561";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.416.660 a adms:Identifier;
+    skos:notation "2.365.416.660";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.365.416.759 a adms:Identifier;
+    skos:notation "2.365.416.759";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.366.506.525 a adms:Identifier;
+    skos:notation "2.366.506.525";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.374.639.875 a adms:Identifier;
+    skos:notation "2.374.639.875";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.381.563.893 a adms:Identifier;
+    skos:notation "2.381.563.893";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-06-2024"^^<http://www.w3.org/2001/XMLSchema#date>.

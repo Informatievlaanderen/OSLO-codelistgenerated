@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/47592> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4759>, <http://vocab.belgif.be/auth/nace2008/4759>;
+    skos:definition "Detailhandel in verlichtingsartikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'appareils d'éclairage en magasin spécialisé"@fr;
+    skos:prefLabel "47592".
+<http://vocab.belgif.be/auth/nace2008/47740> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4774>, <http://vocab.belgif.be/auth/nace2008/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen in gespecialiseerde winkels"@nl, "Commerce de détail d'articles médicaux et orthopédiques en magasin spécialisé"@fr;
+    skos:prefLabel "47740".
+<http://vocab.belgif.be/auth/nace2025/47552> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4755>, <http://vocab.belgif.be/auth/nace2025/4755>;
+    skos:definition "Detailhandel in verlichtingsartikelen"@nl, "Commerce de détail d'appareils d'éclairage"@fr;
+    skos:prefLabel "47552".
+<http://vocab.belgif.be/auth/nace2025/47741> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4774>, <http://vocab.belgif.be/auth/nace2025/4774>;
+    skos:definition "Detailhandel in medische en orthopedische artikelen, muv corrigerende brillen, lenzen en zonnebrillen"@nl, "Commerce de détail d'articles médicaux et orthopédiques, à l'exception de lunettes de correction, de lentilles et de lunettes de soleil"@fr;
+    skos:prefLabel "47741".
+<https://data.vlaanderen.be/id/onderneming/0731.248.059> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "22-02-1988"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0731.248.059;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47552>, <http://vocab.belgif.be/auth/nace2025/47741>, _:nace_2003_52442, _:nace_2003_52320, <http://vocab.belgif.be/auth/nace2008/47592>, <http://vocab.belgif.be/auth/nace2008/47740>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "van den Oever, Maria";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.034.306.170>.
+<https://data.vlaanderen.be/id/vestiging/2.034.306.170> a org:Site;
+    dcterms:created "22-02-1988"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.034.306.170.
+_:nace_2003_52320 a skos:Concept;
+    skos:definition "Detailhandel in medische en orthopedische artikelen"@nl, "Commerce de détail d'articles médicaux et orthopédiques"@fr;
+    skos:prefLabel "52320".
+_:nace_2003_52442 a skos:Concept;
+    skos:definition "Detailhandel in artikelen voor verlichting en woninginrichting"@nl, "Commerce de détail d'appareils d'éclairage et d'équipements du foyer"@fr;
+    skos:prefLabel "52442".
+_:registration_company_0731.248.059 a adms:Identifier;
+    skos:notation "0731.248.059";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-02-1988"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.034.306.170 a adms:Identifier;
+    skos:notation "2.034.306.170";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "22-02-1988"^^<http://www.w3.org/2001/XMLSchema#date>.

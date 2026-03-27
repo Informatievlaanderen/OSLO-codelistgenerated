@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4941>, <http://vocab.belgif.be/auth/nace2008/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2008/51100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5110>, <http://vocab.belgif.be/auth/nace2008/5110>;
+    skos:definition "Personenvervoer door de lucht"@nl, "Transports aériens de passagers"@fr;
+    skos:prefLabel "51100".
+<http://vocab.belgif.be/auth/nace2008/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8553>, <http://vocab.belgif.be/auth/nace2008/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<http://vocab.belgif.be/auth/nace2025/49410> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4941>, <http://vocab.belgif.be/auth/nace2025/4941>;
+    skos:definition "Goederenvervoer over de weg, m.u.v. verhuisbedrijven"@nl, "Transports routiers de fret, sauf services de déménagement"@fr;
+    skos:prefLabel "49410".
+<http://vocab.belgif.be/auth/nace2025/51100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5110>, <http://vocab.belgif.be/auth/nace2025/5110>;
+    skos:definition "Personenvervoer door de lucht"@nl, "Transports aériens de passagers"@fr;
+    skos:prefLabel "51100".
+<http://vocab.belgif.be/auth/nace2025/85532> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8553>, <http://vocab.belgif.be/auth/nace2025/8553>;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Enseignement de la conduite d'aéronefs et de bateaux"@fr;
+    skos:prefLabel "85532".
+<https://data.vlaanderen.be/id/onderneming/0728.372.604> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-01-2018"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0728.372.604;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/49410>, <http://vocab.belgif.be/auth/nace2025/51100>, <http://vocab.belgif.be/auth/nace2025/85532>, _:nace_2003_62200, _:nace_2003_80412, <http://vocab.belgif.be/auth/nace2008/51100>, <http://vocab.belgif.be/auth/nace2008/85532>, <http://vocab.belgif.be/auth/nace2008/49410>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Verboven, Joël";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.125.742.033>.
+<https://data.vlaanderen.be/id/vestiging/2.125.742.033> a org:Site;
+    dcterms:created "24-03-2003"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.125.742.033.
+_:nace_2003_62200 a skos:Concept;
+    skos:definition "Luchtvaart zonder dienstregeling"@nl, "Transports aériens non réguliers"@fr;
+    skos:prefLabel "62200".
+_:nace_2003_80412 a skos:Concept;
+    skos:definition "Vlieg- en vaaronderricht"@nl, "Écoles de pilotage de bateaux et d'avions"@fr;
+    skos:prefLabel "80412".
+_:registration_company_0728.372.604 a adms:Identifier;
+    skos:notation "0728.372.604";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2018"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.125.742.033 a adms:Identifier;
+    skos:notation "2.125.742.033";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-01-2018"^^<http://www.w3.org/2001/XMLSchema#date>.

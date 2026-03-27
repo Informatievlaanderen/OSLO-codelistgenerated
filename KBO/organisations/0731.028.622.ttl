@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/41201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4120>, <http://vocab.belgif.be/auth/nace2008/4120>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41201".
+<http://vocab.belgif.be/auth/nace2008/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4291>, <http://vocab.belgif.be/auth/nace2008/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4613>, <http://vocab.belgif.be/auth/nace2008/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<http://vocab.belgif.be/auth/nace2025/41001> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4100>, <http://vocab.belgif.be/auth/nace2025/4100>;
+    skos:definition "Algemene bouw van residentiële gebouwen"@nl, "Construction générale de bâtiments résidentiels"@fr;
+    skos:prefLabel "41001".
+<http://vocab.belgif.be/auth/nace2025/42919> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4291>, <http://vocab.belgif.be/auth/nace2025/4291>;
+    skos:definition "Waterbouw, m.u.v. baggerwerken"@nl, "Construction d'ouvrages maritimes et fluviaux, sauf travaux de dragage"@fr;
+    skos:prefLabel "42919".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/46130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4613>, <http://vocab.belgif.be/auth/nace2025/4613>;
+    skos:definition "Handelsbemiddeling in hout en bouwmaterialen"@nl, "Intermédiaires du commerce en bois et matériaux de construction"@fr;
+    skos:prefLabel "46130".
+<https://data.vlaanderen.be/id/onderneming/0731.028.622> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-01-1977"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0731.028.622;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/42919>, <http://vocab.belgif.be/auth/nace2025/46130>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/41001>, _:nace_2003_45250, _:nace_2003_45242, <http://vocab.belgif.be/auth/nace2008/42919>, <http://vocab.belgif.be/auth/nace2008/46130>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/41201>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Vocht, Jan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.013.013.482>.
+<https://data.vlaanderen.be/id/vestiging/2.013.013.482> a org:Site;
+    dcterms:created "01-01-1977"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.013.013.482.
+_:nace_2003_45242 a skos:Concept;
+    skos:definition "Overige waterbouw"@nl, "Autres travaux maritimes et fluviaux"@fr;
+    skos:prefLabel "45242".
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:registration_company_0731.028.622 a adms:Identifier;
+    skos:notation "0731.028.622";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1977"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.013.013.482 a adms:Identifier;
+    skos:notation "2.013.013.482";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-01-1977"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/45194> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4519>, <http://vocab.belgif.be/auth/nace2008/4519>;
+    skos:definition "Handel in aanhangwagens, opleggers en caravans"@nl, "Commerce de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "45194".
+<http://vocab.belgif.be/auth/nace2025/46713> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4671>, <http://vocab.belgif.be/auth/nace2025/4671>;
+    skos:definition "Groothandel in aanhangwagens, opleggers en caravans"@nl, "Commerce de gros de remorques, de semi-remorques et de caravanes"@fr;
+    skos:prefLabel "46713".
+<https://data.vlaanderen.be/id/onderneming/0729.262.925> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "12-09-1990"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0729.262.925;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46713>, _:nace_2003_50104, <http://vocab.belgif.be/auth/nace2008/45194>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Leclere, Guy";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.049.456.283>.
+<https://data.vlaanderen.be/id/vestiging/2.049.456.283> a org:Site;
+    dcterms:created "12-09-1990"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.049.456.283.
+_:nace_2003_50104 a skos:Concept;
+    skos:definition "Handel in aanhangwagens, opleggers, caravans en dergelijke"@nl, "Commerce de remorques, semi-remorques, caravanes et similaires"@fr;
+    skos:prefLabel "50104".
+_:registration_company_0729.262.925 a adms:Identifier;
+    skos:notation "0729.262.925";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-09-1990"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.049.456.283 a adms:Identifier;
+    skos:notation "2.049.456.283";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "12-09-1990"^^<http://www.w3.org/2001/XMLSchema#date>.

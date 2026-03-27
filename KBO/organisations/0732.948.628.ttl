@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1813>, <http://vocab.belgif.be/auth/nace2008/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2008/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3299>, <http://vocab.belgif.be/auth/nace2008/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2008/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4616>, <http://vocab.belgif.be/auth/nace2008/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2008/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4617>, <http://vocab.belgif.be/auth/nace2008/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7311>, <http://vocab.belgif.be/auth/nace2008/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<http://vocab.belgif.be/auth/nace2025/18130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1813>, <http://vocab.belgif.be/auth/nace2025/1813>;
+    skos:definition "Prepress- en premediadiensten"@nl, "Activités de prépresse"@fr;
+    skos:prefLabel "18130".
+<http://vocab.belgif.be/auth/nace2025/32990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3299>, <http://vocab.belgif.be/auth/nace2025/3299>;
+    skos:definition "Overige industrie, n.e.g."@nl, "Autres activités manufacturières n.c.a."@fr;
+    skos:prefLabel "32990".
+<http://vocab.belgif.be/auth/nace2025/46160> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4616>, <http://vocab.belgif.be/auth/nace2025/4616>;
+    skos:definition "Handelsbemiddeling in textiel, kleding, bont, schoeisel en lederwaren"@nl, "Intermédiaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir"@fr;
+    skos:prefLabel "46160".
+<http://vocab.belgif.be/auth/nace2025/46170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4617>, <http://vocab.belgif.be/auth/nace2025/4617>;
+    skos:definition "Handelsbemiddeling in voedings- en genotmiddelen"@nl, "Intermédiaires du commerce en denrées, boissons et tabac"@fr;
+    skos:prefLabel "46170".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/73110> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7311>, <http://vocab.belgif.be/auth/nace2025/7311>;
+    skos:definition "Reclamebureaus"@nl, "Activités des agences de publicité"@fr;
+    skos:prefLabel "73110".
+<https://data.vlaanderen.be/id/onderneming/0732.948.628> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0732.948.628;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46170>, <http://vocab.belgif.be/auth/nace2025/46160>, <http://vocab.belgif.be/auth/nace2025/32990>, <http://vocab.belgif.be/auth/nace2025/73110>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2025/18130>, <http://vocab.belgif.be/auth/nace2008/32990>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/18130>, <http://vocab.belgif.be/auth/nace2008/46160>, <http://vocab.belgif.be/auth/nace2008/73110>, <http://vocab.belgif.be/auth/nace2008/46170>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0732.948.628;
+    reorg:legalName "Pary, Valentine";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.292.419.410>.
+<https://data.vlaanderen.be/id/vestiging/2.292.419.410> a org:Site;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.292.419.410.
+_:contact_0732.948.628 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "valentinepary@yahoo.com";
+    schema:telephone "+32475960801".
+_:registration_company_0732.948.628 a adms:Identifier;
+    skos:notation "0732.948.628";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.292.419.410 a adms:Identifier;
+    skos:notation "2.292.419.410";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

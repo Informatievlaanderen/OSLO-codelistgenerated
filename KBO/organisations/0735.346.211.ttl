@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/45113> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4511>, <http://vocab.belgif.be/auth/nace2008/4511>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (= 3,5 ton)"@nl, "Commerce de détail d'automobiles et d'autres véhicules automobiles légers ( = 3,5 tonnes )"@fr;
+    skos:prefLabel "45113".
+<http://vocab.belgif.be/auth/nace2008/45204> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4520>, <http://vocab.belgif.be/auth/nace2008/4520>;
+    skos:definition "Carrosserieherstelling"@nl, "Réparations de carrosseries"@fr;
+    skos:prefLabel "45204".
+<http://vocab.belgif.be/auth/nace2008/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5221>, <http://vocab.belgif.be/auth/nace2008/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/47811> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4781>, <http://vocab.belgif.be/auth/nace2025/4781>;
+    skos:definition "Detailhandel in auto's en lichte bestelwagens (<= 3,5 ton)"@nl, "Commerce de détail de voitures et de véhicules automobiles légers (<= 3,5 tonnes)"@fr;
+    skos:prefLabel "47811".
+<http://vocab.belgif.be/auth/nace2025/52210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5221>, <http://vocab.belgif.be/auth/nace2025/5221>;
+    skos:definition "Detailhandel in groenten en fruit"@nl, "Commerce de détail de fruits et légumes frais"@fr;
+    skos:prefLabel "52210".
+<http://vocab.belgif.be/auth/nace2025/95314> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9531>, <http://vocab.belgif.be/auth/nace2025/9531>;
+    skos:definition "Carrosserieherstelling (inclusief spuiten en verven)"@nl, "Réparation de carrosseries (y compris la peinture)"@fr;
+    skos:prefLabel "95314".
+<https://data.vlaanderen.be/id/onderneming/0735.346.211> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0735.346.211;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/95314>, <http://vocab.belgif.be/auth/nace2025/52210>, <http://vocab.belgif.be/auth/nace2025/47811>, <http://vocab.belgif.be/auth/nace2025/33120>, <http://vocab.belgif.be/auth/nace2008/45204>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/45113>, <http://vocab.belgif.be/auth/nace2008/52210>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "De Smet, Jonas";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.293.618.052>.
+<https://data.vlaanderen.be/id/vestiging/2.293.618.052> a org:Site;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.293.618.052.
+_:registration_company_0735.346.211 a adms:Identifier;
+    skos:notation "0735.346.211";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.293.618.052 a adms:Identifier;
+    skos:notation "2.293.618.052";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

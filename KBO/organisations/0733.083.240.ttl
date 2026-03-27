@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/26400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2640>, <http://vocab.belgif.be/auth/nace2008/2640>;
+    skos:definition "Vervaardiging van consumentenelektronica"@nl, "Fabrication de produits électroniques grand public"@fr;
+    skos:prefLabel "26400".
+<http://vocab.belgif.be/auth/nace2008/47430> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4743>, <http://vocab.belgif.be/auth/nace2008/4743>;
+    skos:definition "Detailhandel in audio- en videoapparatuur in gespecialiseerde winkels"@nl, "Commerce de détail de matériels audio-vidéo en magasin spécialisé"@fr;
+    skos:prefLabel "47430".
+<http://vocab.belgif.be/auth/nace2008/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7420>, <http://vocab.belgif.be/auth/nace2008/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<http://vocab.belgif.be/auth/nace2025/26400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2640>, <http://vocab.belgif.be/auth/nace2025/2640>;
+    skos:definition "Vervaardiging van consumentenelektronica"@nl, "Fabrication de produits électroniques grand public"@fr;
+    skos:prefLabel "26400".
+<http://vocab.belgif.be/auth/nace2025/47400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4740>, <http://vocab.belgif.be/auth/nace2025/4740>;
+    skos:definition "Detailhandel in ICT-apparatuur"@nl, "Commerce de détail d’équipements de l’information et de la communication"@fr;
+    skos:prefLabel "47400".
+<http://vocab.belgif.be/auth/nace2025/74201> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7420>, <http://vocab.belgif.be/auth/nace2025/7420>;
+    skos:definition "Architecten"@nl, "Bureau d'architecte"@fr;
+    skos:prefLabel "74201".
+<https://data.vlaanderen.be/id/onderneming/0733.083.240> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-09-1981"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0733.083.240;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/26400>, <http://vocab.belgif.be/auth/nace2025/74201>, <http://vocab.belgif.be/auth/nace2025/47400>, _:nace_2003_32300, _:nace_2003_74811, <http://vocab.belgif.be/auth/nace2008/47430>, <http://vocab.belgif.be/auth/nace2008/74201>, <http://vocab.belgif.be/auth/nace2008/26400>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0733.083.240;
+    reorg:legalName "Vanderstraeten, Willem";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.019.137.944>.
+<https://data.vlaanderen.be/id/vestiging/2.019.137.944> a org:Site;
+    dcterms:created "01-09-1981"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.019.137.944.
+_:contact_0733.083.240 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "info@link-audio.be";
+    schema:telephone "0495520831";
+    <http://xmlns.com/foaf/0.1/homepage> "www.link-audio.be".
+_:nace_2003_32300 a skos:Concept;
+    skos:definition "Vervaardiging van audio- en videoapparatuur"@nl, "Fabrication d'appareils de réception, enregistrement ou reproduction du son et de l'image"@fr;
+    skos:prefLabel "32300".
+_:nace_2003_74811 a skos:Concept;
+    skos:definition "Fotostudio's en overige fotografische activiteiten"@nl, "Studios et autres activités photographiques"@fr;
+    skos:prefLabel "74811".
+_:registration_company_0733.083.240 a adms:Identifier;
+    skos:notation "0733.083.240";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1981"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.019.137.944 a adms:Identifier;
+    skos:notation "2.019.137.944";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-1981"^^<http://www.w3.org/2001/XMLSchema#date>.

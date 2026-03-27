@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/96021> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/9602>, <http://vocab.belgif.be/auth/nace2008/9602>;
+    skos:definition "Haarverzorging"@nl, "Coiffure"@fr;
+    skos:prefLabel "96021".
+<http://vocab.belgif.be/auth/nace2025/96210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/9621>, <http://vocab.belgif.be/auth/nace2025/9621>;
+    skos:definition "Kappers- en barbiersactiviteiten"@nl, "Coiffure et activités de barbier"@fr;
+    skos:prefLabel "96210".
+<https://data.vlaanderen.be/id/onderneming/0729.334.981> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "20-06-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0729.334.981;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/96210>, _:nace_2003_93021, <http://vocab.belgif.be/auth/nace2008/96021>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Bronckaers, Nadia";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.067.214.609>.
+<https://data.vlaanderen.be/id/vestiging/2.067.214.609> a org:Site;
+    dcterms:created "20-06-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.067.214.609.
+_:nace_2003_93021 a skos:Concept;
+    skos:definition "Kapsalons"@nl, "Salons de coiffure"@fr;
+    skos:prefLabel "93021".
+_:registration_company_0729.334.981 a adms:Identifier;
+    skos:notation "0729.334.981";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-06-1994"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.067.214.609 a adms:Identifier;
+    skos:notation "2.067.214.609";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "20-06-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

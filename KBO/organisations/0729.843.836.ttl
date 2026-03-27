@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1032>, <http://vocab.belgif.be/auth/nace2008/1032>;
+    skos:definition "Vervaardiging van groente- en fruitsappen"@nl, "Préparation de jus de fruits et de légumes"@fr;
+    skos:prefLabel "10320".
+<http://vocab.belgif.be/auth/nace2008/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1039>, <http://vocab.belgif.be/auth/nace2008/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2008/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4638>, <http://vocab.belgif.be/auth/nace2008/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<http://vocab.belgif.be/auth/nace2025/10320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1032>, <http://vocab.belgif.be/auth/nace2025/1032>;
+    skos:definition "Vervaardiging van groente- en fruitsappen"@nl, "Préparation de jus de fruits et de légumes"@fr;
+    skos:prefLabel "10320".
+<http://vocab.belgif.be/auth/nace2025/10392> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1039>, <http://vocab.belgif.be/auth/nace2025/1039>;
+    skos:definition "Verwerking en conservering van fruit, exclusief productie van diepgevroren fruit"@nl, "Transformation et conservation de fruits, sauf fabrication de fruits surgelés"@fr;
+    skos:prefLabel "10392".
+<http://vocab.belgif.be/auth/nace2025/46389> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4638>, <http://vocab.belgif.be/auth/nace2025/4638>;
+    skos:definition "Groothandel in andere voedingsmiddelen, n.e.g."@nl, "Commerce de gros d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "46389".
+<https://data.vlaanderen.be/id/onderneming/0729.843.836> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "05-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0729.843.836;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/10320>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46389>, <http://vocab.belgif.be/auth/nace2025/10392>, <http://vocab.belgif.be/auth/nace2008/10320>, <http://vocab.belgif.be/auth/nace2008/46389>, <http://vocab.belgif.be/auth/nace2008/10392>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0729.843.836;
+    reorg:legalName "Siroperie Delvaux"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.291.799.402>.
+<https://data.vlaanderen.be/id/vestiging/2.291.799.402> a org:Site;
+    dcterms:created "05-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.291.799.402.
+_:address_contact_0729.843.836 a locn:Address;
+    locn:thoroughfare "Rue de la Siroperie"@nl, "Rue de la Siroperie"@fr;
+    rdfs:label "2";
+    locn:postCode "4460";
+    adres:gemeentenaam "Grâce-Hollogne"@nl, "Grâce-Hollogne"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0729.843.836 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0729.843.836.
+_:registration_company_0729.843.836 a adms:Identifier;
+    skos:notation "0729.843.836";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.291.799.402 a adms:Identifier;
+    skos:notation "2.291.799.402";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "05-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/87101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8710>, <http://vocab.belgif.be/auth/nace2008/8710>;
+    skos:definition "Rust- en verzorgingstehuizen (R.V.T.)"@nl, "Activités des maisons de repos et de soins (M.R.S.)"@fr;
+    skos:prefLabel "87101".
+<http://vocab.belgif.be/auth/nace2008/88911> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8891>, <http://vocab.belgif.be/auth/nace2008/8891>;
+    skos:definition "Kinderdagverblijven en crèches"@nl, "Activités des crèches et des garderies d'enfants"@fr;
+    skos:prefLabel "88911".
+<http://vocab.belgif.be/auth/nace2025/87101> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8710>, <http://vocab.belgif.be/auth/nace2025/8710>;
+    skos:definition "Rust- en verzorgingstehuizen (R.V.T.)"@nl, "Activités des maisons de repos et de soins (M.R.S.)"@fr;
+    skos:prefLabel "87101".
+<http://vocab.belgif.be/auth/nace2025/88911> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8891>, <http://vocab.belgif.be/auth/nace2025/8891>;
+    skos:definition "Kinderdagverblijven en crèches"@nl, "Activités des crèches et des garderies d'enfants"@fr;
+    skos:prefLabel "88911".
+<https://data.vlaanderen.be/id/onderneming/0734.919.015> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/706>;
+    dcterms:created "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0734.919.015;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/87101>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/88911>, <http://vocab.belgif.be/auth/nace2008/87101>, <http://vocab.belgif.be/auth/nace2008/88911>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0734.919.015;
+    reorg:legalName "Association Intercommunale Générations THIERACHE"@fr, "AIGT"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.293.755.832>, <https://data.vlaanderen.be/id/vestiging/2.298.321.760>, <https://data.vlaanderen.be/id/vestiging/2.298.322.156>, <https://data.vlaanderen.be/id/vestiging/2.298.322.849>, <https://data.vlaanderen.be/id/vestiging/2.301.896.904>.
+<https://data.vlaanderen.be/id/vestiging/2.293.755.832> a org:Site;
+    dcterms:created "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.293.755.832.
+<https://data.vlaanderen.be/id/vestiging/2.298.321.760> a org:Site;
+    dcterms:created "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.321.760.
+<https://data.vlaanderen.be/id/vestiging/2.298.322.156> a org:Site;
+    dcterms:created "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.322.156.
+<https://data.vlaanderen.be/id/vestiging/2.298.322.849> a org:Site;
+    dcterms:created "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.322.849.
+<https://data.vlaanderen.be/id/vestiging/2.301.896.904> a org:Site;
+    dcterms:created "26-09-2020"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.301.896.904.
+_:address_contact_0734.919.015 a locn:Address;
+    locn:thoroughfare "Avenue du Châlon(CH)"@nl, "Avenue du Châlon(CH)"@fr;
+    rdfs:label "2";
+    locn:postCode "6460";
+    adres:gemeentenaam "Chimay"@nl, "Chimay"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0734.919.015 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "officiel.ic-aigt@aigt.be";
+    locn:address _:address_contact_0734.919.015.
+_:registration_company_0734.919.015 a adms:Identifier;
+    skos:notation "0734.919.015";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.293.755.832 a adms:Identifier;
+    skos:notation "2.293.755.832";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.321.760 a adms:Identifier;
+    skos:notation "2.298.321.760";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.322.156 a adms:Identifier;
+    skos:notation "2.298.322.156";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.322.849 a adms:Identifier;
+    skos:notation "2.298.322.849";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.301.896.904 a adms:Identifier;
+    skos:notation "2.301.896.904";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

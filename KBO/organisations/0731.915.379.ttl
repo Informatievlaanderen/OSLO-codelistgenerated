@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/28120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2812>, <http://vocab.belgif.be/auth/nace2008/2812>;
+    skos:definition "Vervaardiging van metalen ramen, deuren, wanden en dergelijke"@nl, "Fabrication de charpentes et menuiseries métalliques"@fr;
+    skos:prefLabel "28120".
+<http://vocab.belgif.be/auth/nace2008/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/2899>, <http://vocab.belgif.be/auth/nace2008/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2008/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3312>, <http://vocab.belgif.be/auth/nace2008/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2008/33150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3315>, <http://vocab.belgif.be/auth/nace2008/3315>;
+    skos:definition "Reparatie en onderhoud van schepen"@nl, "Réparation et maintenance navale"@fr;
+    skos:prefLabel "33150".
+<http://vocab.belgif.be/auth/nace2008/33170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3317>, <http://vocab.belgif.be/auth/nace2008/3317>;
+    skos:definition "Reparatie en onderhoud van andere transportmiddelen"@nl, "Réparation et maintenance d'autres équipements de transport"@fr;
+    skos:prefLabel "33170".
+<http://vocab.belgif.be/auth/nace2025/28120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2812>, <http://vocab.belgif.be/auth/nace2025/2812>;
+    skos:definition "Vervaardiging van metalen ramen, deuren, wanden en dergelijke"@nl, "Fabrication de charpentes et menuiseries métalliques"@fr;
+    skos:prefLabel "28120".
+<http://vocab.belgif.be/auth/nace2025/28990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/2899>, <http://vocab.belgif.be/auth/nace2025/2899>;
+    skos:definition "Vervaardiging van andere machines, apparaten en werktuigen voor  specifieke doeleinden, n.e.g."@nl, "Fabrication d'autres machines d'usage spécifique n.c.a."@fr;
+    skos:prefLabel "28990".
+<http://vocab.belgif.be/auth/nace2025/33120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3312>, <http://vocab.belgif.be/auth/nace2025/3312>;
+    skos:definition "Reparatie van machines"@nl, "Réparation de machines"@fr;
+    skos:prefLabel "33120".
+<http://vocab.belgif.be/auth/nace2025/33150> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3315>, <http://vocab.belgif.be/auth/nace2025/3315>;
+    skos:definition "Reparatie en onderhoud van schepen"@nl, "Réparation et maintenance navale"@fr;
+    skos:prefLabel "33150".
+<http://vocab.belgif.be/auth/nace2025/33170> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3317>, <http://vocab.belgif.be/auth/nace2025/3317>;
+    skos:definition "Reparatie en onderhoud van andere transportmiddelen"@nl, "Réparation et maintenance d'autres équipements de transport"@fr;
+    skos:prefLabel "33170".
+<https://data.vlaanderen.be/id/onderneming/0731.915.379> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "06-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0731.915.379;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/006>, <http://vocab.belgif.be/auth/nace2025/33120>, <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/33170>, <http://vocab.belgif.be/auth/nace2025/28120>, <http://vocab.belgif.be/auth/nace2025/33150>, <http://vocab.belgif.be/auth/nace2025/28990>, <http://vocab.belgif.be/auth/nace2008/33120>, <http://vocab.belgif.be/auth/nace2008/33170>, <http://vocab.belgif.be/auth/nace2008/28120>, <http://vocab.belgif.be/auth/nace2008/28990>, <http://vocab.belgif.be/auth/nace2008/33150>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0731.915.379;
+    reorg:legalName "Melis & Van Rompay Oost-Vlaanderen"@nl, "Pirtek Gent"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.292.238.573>.
+<https://data.vlaanderen.be/id/vestiging/2.292.238.573> a org:Site;
+    dcterms:created "06-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.292.238.573.
+_:address_contact_0731.915.379 a locn:Address;
+    locn:thoroughfare "Akkerstraat"@nl, "Akkerstraat"@fr;
+    rdfs:label "8D";
+    locn:postCode "9090";
+    adres:gemeentenaam "Merelbeke-Melle"@nl, "Merelbeke-Melle"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0731.915.379 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0731.915.379.
+_:registration_company_0731.915.379 a adms:Identifier;
+    skos:notation "0731.915.379";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.292.238.573 a adms:Identifier;
+    skos:notation "2.292.238.573";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "06-08-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/45310> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4531>, <http://vocab.belgif.be/auth/nace2008/4531>;
+    skos:definition "Elektrische installatie"@nl, "Travaux d'installation électrique"@fr;
+    skos:prefLabel "45310".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/46720> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4672>, <http://vocab.belgif.be/auth/nace2025/4672>;
+    skos:definition "Groothandel in metalen en metaalertsen"@nl, "Commerce de gros de minerais et de métaux"@fr;
+    skos:prefLabel "46720".
+<https://data.vlaanderen.be/id/onderneming/0731.395.242> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "15-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0731.395.242;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/46720>, <http://vocab.belgif.be/auth/nace2025/43990>, _:nace_2003_50301, _:nace_2003_45250, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/45310>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "Dehouwer, Eric";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.069.382.063>.
+<https://data.vlaanderen.be/id/vestiging/2.069.382.063> a org:Site;
+    dcterms:created "15-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.069.382.063.
+_:nace_2003_45250 a skos:Concept;
+    skos:definition "Overige gespecialiseerde werkzaamheden in de bouw"@nl, "Autres travaux de construction spécialisés"@fr;
+    skos:prefLabel "45250".
+_:nace_2003_50301 a skos:Concept;
+    skos:definition "Groothandel in onderdelen en accessoires van auto's"@nl, "Commerce de gros de pièces détachées et accessoires pour véhicules automobiles"@fr;
+    skos:prefLabel "50301".
+_:registration_company_0731.395.242 a adms:Identifier;
+    skos:notation "0731.395.242";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.069.382.063 a adms:Identifier;
+    skos:notation "2.069.382.063";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "15-12-1994"^^<http://www.w3.org/2001/XMLSchema#date>.

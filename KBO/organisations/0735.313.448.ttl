@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/6619>, <http://vocab.belgif.be/auth/nace2008/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2008/82910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/8291>, <http://vocab.belgif.be/auth/nace2008/8291>;
+    skos:definition "Incasso- en kredietbureaus"@nl, "Activités des agences de recouvrement de factures et des sociétés d'information financière sur la clientèle"@fr;
+    skos:prefLabel "82910".
+<http://vocab.belgif.be/auth/nace2025/66199> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/6619>, <http://vocab.belgif.be/auth/nace2025/6619>;
+    skos:definition "Overige ondersteunende activiteiten in verband met financiële diensten, exclusief verzekeringen en pensioenfondsen, n.e.g."@nl, "Autres activités auxiliaires de services financiers n.c.a., hors assurance et caisses de retraite"@fr;
+    skos:prefLabel "66199".
+<http://vocab.belgif.be/auth/nace2025/82910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/8291>, <http://vocab.belgif.be/auth/nace2025/8291>;
+    skos:definition "Incasso- en kredietbureaus"@nl, "Activités des agences de recouvrement de factures et des sociétés d'information financière sur la clientèle"@fr;
+    skos:prefLabel "82910".
+<https://data.vlaanderen.be/id/onderneming/0735.313.448> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "26-01-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0735.313.448;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/82910>, <http://vocab.belgif.be/auth/nace2025/66199>, _:nace_2003_67130, _:nace_2003_74873, <http://vocab.belgif.be/auth/nace2008/66199>, <http://vocab.belgif.be/auth/nace2008/82910>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    reorg:legalName "De Turck, Cary";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.085.124.866>.
+<https://data.vlaanderen.be/id/vestiging/2.085.124.866> a org:Site;
+    dcterms:created "26-01-1998"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.085.124.866.
+_:nace_2003_67130 a skos:Concept;
+    skos:definition "Ondersteunende activiteiten i.v.m. financiële instellingen, n.e.g."@nl, "Autres auxiliaires financiers"@fr;
+    skos:prefLabel "67130".
+_:nace_2003_74873 a skos:Concept;
+    skos:definition "Incassobureaus en onderzoek naar de kredietwaardigheid"@nl, "Recouvrement de factures et évoluation de la solvabilité"@fr;
+    skos:prefLabel "74873".
+_:registration_company_0735.313.448 a adms:Identifier;
+    skos:notation "0735.313.448";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-01-1998"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.085.124.866 a adms:Identifier;
+    skos:notation "2.085.124.866";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "26-01-1998"^^<http://www.w3.org/2001/XMLSchema#date>.

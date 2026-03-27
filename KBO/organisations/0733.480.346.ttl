@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/3213>, <http://vocab.belgif.be/auth/nace2008/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<http://vocab.belgif.be/auth/nace2025/32130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/3213>, <http://vocab.belgif.be/auth/nace2025/3213>;
+    skos:definition "Vervaardiging van imitatiesieraden en dergelijke artikelen"@nl, "Fabrication d'articles de bijouterie de fantaisie et d'articles similaires"@fr;
+    skos:prefLabel "32130".
+<https://data.vlaanderen.be/id/onderneming/0733.480.346> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-04-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0733.480.346;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/32130>, _:nace_2003_36610, <http://vocab.belgif.be/auth/nace2008/32130>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Klewais, Anne";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.096.007.177>.
+<https://data.vlaanderen.be/id/vestiging/2.096.007.177> a org:Site;
+    dcterms:created "27-05-2002"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.096.007.177.
+_:nace_2003_36610 a skos:Concept;
+    skos:definition "Vervaardiging van imitatiesieraden"@nl, "Fabrication de bijoux de fantaisie"@fr;
+    skos:prefLabel "36610".
+_:registration_company_0733.480.346 a adms:Identifier;
+    skos:notation "0733.480.346";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2002"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.096.007.177 a adms:Identifier;
+    skos:notation "2.096.007.177";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-04-2002"^^<http://www.w3.org/2001/XMLSchema#date>.

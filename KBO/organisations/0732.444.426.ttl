@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0210>, <http://vocab.belgif.be/auth/nace2008/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2008/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0240>, <http://vocab.belgif.be/auth/nace2008/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2008/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7312>, <http://vocab.belgif.be/auth/nace2008/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2008/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7721>, <http://vocab.belgif.be/auth/nace2008/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2008/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7739>, <http://vocab.belgif.be/auth/nace2008/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<http://vocab.belgif.be/auth/nace2025/02100> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0210>, <http://vocab.belgif.be/auth/nace2025/0210>;
+    skos:definition "Bosbouw"@nl, "Sylviculture et autres activités forestières"@fr;
+    skos:prefLabel "02100".
+<http://vocab.belgif.be/auth/nace2025/02400> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0240>, <http://vocab.belgif.be/auth/nace2025/0240>;
+    skos:definition "Ondersteunende diensten in verband met de bosbouw"@nl, "Services de soutien à l'exploitation forestière"@fr;
+    skos:prefLabel "02400".
+<http://vocab.belgif.be/auth/nace2025/73120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7312>, <http://vocab.belgif.be/auth/nace2025/7312>;
+    skos:definition "Mediarepresentatie"@nl, "Régie publicitaire de médias"@fr;
+    skos:prefLabel "73120".
+<http://vocab.belgif.be/auth/nace2025/77210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7721>, <http://vocab.belgif.be/auth/nace2025/7721>;
+    skos:definition "Verhuur en lease van sport- en recreatieartikelen"@nl, "Location et location-bail d'articles de loisirs et de sport"@fr;
+    skos:prefLabel "77210".
+<http://vocab.belgif.be/auth/nace2025/77399> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7739>, <http://vocab.belgif.be/auth/nace2025/7739>;
+    skos:definition "Verhuur en lease van andere machines en werktuigen en andere materiële goederen"@nl, "Location et location-bail d'autres machines, équipements et biens matériels"@fr;
+    skos:prefLabel "77399".
+<https://data.vlaanderen.be/id/onderneming/0732.444.426> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0732.444.426;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/77210>, <http://vocab.belgif.be/auth/nace2025/77399>, <http://vocab.belgif.be/auth/nace2025/02100>, <http://vocab.belgif.be/auth/nace2025/02400>, <http://vocab.belgif.be/auth/nace2025/73120>, _:nace_2003_71340, _:nace_2003_74402, _:nace_2003_02020, _:nace_2003_02011, _:nace_2003_71406, <http://vocab.belgif.be/auth/nace2008/02100>, <http://vocab.belgif.be/auth/nace2008/02400>, <http://vocab.belgif.be/auth/nace2008/77210>, <http://vocab.belgif.be/auth/nace2008/73120>, <http://vocab.belgif.be/auth/nace2008/77399>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Gentens, Germain";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.162.123.070>.
+<https://data.vlaanderen.be/id/vestiging/2.162.123.070> a org:Site;
+    dcterms:created "01-01-2007"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.162.123.070.
+_:nace_2003_02011 a skos:Concept;
+    skos:definition "Bosbouw"@nl, "Sylviculture"@fr;
+    skos:prefLabel "02011".
+_:nace_2003_02020 a skos:Concept;
+    skos:definition "Diensten verwant aan de bosbouw en de bosexploitatie"@nl, "Services annexes à la sylviculture et à l'exploitation forestière"@fr;
+    skos:prefLabel "02020".
+_:nace_2003_71340 a skos:Concept;
+    skos:definition "Verhuur van overige machines en werktuigen, n.e.g."@nl, "Location d'autres machines et équipements"@fr;
+    skos:prefLabel "71340".
+_:nace_2003_71406 a skos:Concept;
+    skos:definition "Verhuur van sport- en kampeerartikelen"@nl, "Location d'articles de sport et de camping"@fr;
+    skos:prefLabel "71406".
+_:nace_2003_74402 a skos:Concept;
+    skos:definition "Beheer van publiciteitsdragers"@nl, "Gestion de supports de publicité"@fr;
+    skos:prefLabel "74402".
+_:registration_company_0732.444.426 a adms:Identifier;
+    skos:notation "0732.444.426";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.162.123.070 a adms:Identifier;
+    skos:notation "2.162.123.070";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-03-2001"^^<http://www.w3.org/2001/XMLSchema#date>.

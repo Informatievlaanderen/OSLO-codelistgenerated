@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/01210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0121>, <http://vocab.belgif.be/auth/nace2008/0121>;
+    skos:definition "Rundveehouderij"@nl, "Élevage de bovins"@fr;
+    skos:prefLabel "01210".
+<http://vocab.belgif.be/auth/nace2008/01220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0122>, <http://vocab.belgif.be/auth/nace2008/0122>;
+    skos:definition "Schapen-, geiten-, paarden-, ezel-, muildieren- of muilezelhouderij"@nl, "Élevage d'ovins, caprins et équidés"@fr;
+    skos:prefLabel "01220".
+<http://vocab.belgif.be/auth/nace2008/01230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0123>, <http://vocab.belgif.be/auth/nace2008/0123>;
+    skos:definition "Teelt van citrusvruchten"@nl, "Culture d'agrumes"@fr;
+    skos:prefLabel "01230".
+<http://vocab.belgif.be/auth/nace2008/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0124>, <http://vocab.belgif.be/auth/nace2008/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2008/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/0161>, <http://vocab.belgif.be/auth/nace2008/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<http://vocab.belgif.be/auth/nace2025/01210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0121>, <http://vocab.belgif.be/auth/nace2025/0121>;
+    skos:definition "Rundveehouderij"@nl, "Élevage de bovins"@fr;
+    skos:prefLabel "01210".
+<http://vocab.belgif.be/auth/nace2025/01220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0122>, <http://vocab.belgif.be/auth/nace2025/0122>;
+    skos:definition "Schapen-, geiten-, paarden-, ezel-, muildieren- of muilezelhouderij"@nl, "Élevage d'ovins, caprins et équidés"@fr;
+    skos:prefLabel "01220".
+<http://vocab.belgif.be/auth/nace2025/01230> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0123>, <http://vocab.belgif.be/auth/nace2025/0123>;
+    skos:definition "Teelt van citrusvruchten"@nl, "Culture d'agrumes"@fr;
+    skos:prefLabel "01230".
+<http://vocab.belgif.be/auth/nace2025/01240> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0124>, <http://vocab.belgif.be/auth/nace2025/0124>;
+    skos:definition "Teelt van pit- en steenvruchten"@nl, "Culture de fruits à pépins et à noyau"@fr;
+    skos:prefLabel "01240".
+<http://vocab.belgif.be/auth/nace2025/01610> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/0161>, <http://vocab.belgif.be/auth/nace2025/0161>;
+    skos:definition "Ondersteunende activiteiten in verband met de teelt van gewassen"@nl, "Activités de soutien aux cultures"@fr;
+    skos:prefLabel "01610".
+<https://data.vlaanderen.be/id/onderneming/0726.904.241> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "17-05-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0726.904.241;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/01240>, <http://vocab.belgif.be/auth/nace2025/01610>, <http://vocab.belgif.be/auth/nace2025/01230>, <http://vocab.belgif.be/auth/nace2025/01220>, <http://vocab.belgif.be/auth/nace2025/01210>, <http://vocab.belgif.be/auth/nace2008/01610>, <http://vocab.belgif.be/auth/nace2008/01220>, <http://vocab.belgif.be/auth/nace2008/01230>, <http://vocab.belgif.be/auth/nace2008/01210>, <http://vocab.belgif.be/auth/nace2008/01240>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Kersten, Niki";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.289.454.277>.
+<https://data.vlaanderen.be/id/vestiging/2.289.454.277> a org:Site;
+    dcterms:created "17-05-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.289.454.277.
+_:registration_company_0726.904.241 a adms:Identifier;
+    skos:notation "0726.904.241";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-05-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.289.454.277 a adms:Identifier;
+    skos:notation "2.289.454.277";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "17-05-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

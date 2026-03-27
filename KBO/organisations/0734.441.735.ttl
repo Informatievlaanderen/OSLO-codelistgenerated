@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1320>, <http://vocab.belgif.be/auth/nace2008/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2008/14130> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1413>, <http://vocab.belgif.be/auth/nace2008/1413>;
+    skos:definition "Winning van leisteen"@nl, "Extraction d'ardoise"@fr;
+    skos:prefLabel "14130".
+<http://vocab.belgif.be/auth/nace2008/14140> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1414>, <http://vocab.belgif.be/auth/nace2008/1414>;
+    skos:definition "Vervaardiging van onderkleding"@nl, "Fabrication de vêtements de dessous"@fr;
+    skos:prefLabel "14140".
+<http://vocab.belgif.be/auth/nace2008/16291> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1629>, <http://vocab.belgif.be/auth/nace2008/1629>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16291".
+<http://vocab.belgif.be/auth/nace2008/47511> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4751>, <http://vocab.belgif.be/auth/nace2008/4751>;
+    skos:definition "Detailhandel in kledingstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de tissus d'habillement en magasin spécialisé"@fr;
+    skos:prefLabel "47511".
+<http://vocab.belgif.be/auth/nace2008/47910> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4791>, <http://vocab.belgif.be/auth/nace2008/4791>;
+    skos:definition "Detailhandel via postorderbedrijven of via internet"@nl, "Commerce de détail par correspondance ou par Internet"@fr;
+    skos:prefLabel "47910".
+<http://vocab.belgif.be/auth/nace2025/13200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1320>, <http://vocab.belgif.be/auth/nace2025/1320>;
+    skos:definition "Winning van non-ferrometaalertsen, exclusief uranium- en thoriumerts"@nl, "Extraction de minerais de métaux non ferreux, à l'exclusion des minerais d'uranium et de thorium"@fr;
+    skos:prefLabel "13200".
+<http://vocab.belgif.be/auth/nace2025/14210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1421>, <http://vocab.belgif.be/auth/nace2025/1421>;
+    skos:definition "Vervaardiging van bovenkleding"@nl, "Fabrication de vêtements de dessus"@fr;
+    skos:prefLabel "14210".
+<http://vocab.belgif.be/auth/nace2025/14220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1422>, <http://vocab.belgif.be/auth/nace2025/1422>;
+    skos:definition "Winning van klei en kaolien"@nl, "Extraction d'argiles et de kaolin"@fr;
+    skos:prefLabel "14220".
+<http://vocab.belgif.be/auth/nace2025/16281> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1628>, <http://vocab.belgif.be/auth/nace2025/1628>;
+    skos:definition "Vervaardiging van andere artikelen van hout"@nl, "Fabrication d'objets divers en bois"@fr;
+    skos:prefLabel "16281".
+<http://vocab.belgif.be/auth/nace2025/47120> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4712>, <http://vocab.belgif.be/auth/nace2025/4712>;
+    skos:definition "Overige niet-gespecialiseerde detailhandel"@nl, "Autre commerce de détail non spécialisé"@fr;
+    skos:prefLabel "47120".
+<http://vocab.belgif.be/auth/nace2025/47511> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4751>, <http://vocab.belgif.be/auth/nace2025/4751>;
+    skos:definition "Detailhandel in kledingstoffen in gespecialiseerde winkels"@nl, "Commerce de détail de tissus d'habillement en magasin spécialisé"@fr;
+    skos:prefLabel "47511".
+<https://data.vlaanderen.be/id/onderneming/0734.441.735> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0734.441.735;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/13200>, <http://vocab.belgif.be/auth/nace2025/47120>, <http://vocab.belgif.be/auth/nace2025/47511>, <http://vocab.belgif.be/auth/nace2025/14220>, <http://vocab.belgif.be/auth/nace2025/14210>, <http://vocab.belgif.be/auth/nace2025/16281>, <http://vocab.belgif.be/auth/nace2008/13200>, <http://vocab.belgif.be/auth/nace2008/14130>, <http://vocab.belgif.be/auth/nace2008/47910>, <http://vocab.belgif.be/auth/nace2008/47511>, <http://vocab.belgif.be/auth/nace2008/14140>, <http://vocab.belgif.be/auth/nace2008/16291>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0734.441.735;
+    reorg:legalName "Laurent, Catherine";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.293.033.874>.
+<https://data.vlaanderen.be/id/vestiging/2.293.033.874> a org:Site;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.293.033.874.
+_:contact_0734.441.735 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>;
+    schema:email "catherinelaurent804@gmail.com";
+    schema:telephone "+32495246040".
+_:registration_company_0734.441.735 a adms:Identifier;
+    skos:notation "0734.441.735";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.293.033.874 a adms:Identifier;
+    skos:notation "2.293.033.874";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

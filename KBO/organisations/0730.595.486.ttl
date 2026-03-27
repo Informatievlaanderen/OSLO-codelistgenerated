@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+
+<http://vocab.belgif.be/auth/nace2008/10520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1052>, <http://vocab.belgif.be/auth/nace2008/1052>;
+    skos:definition "Vervaardiging van consumptie-ijs"@nl, "Fabrication de glaces de consommation"@fr;
+    skos:prefLabel "10520".
+<http://vocab.belgif.be/auth/nace2008/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1089>, <http://vocab.belgif.be/auth/nace2008/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/10520> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1052>, <http://vocab.belgif.be/auth/nace2025/1052>;
+    skos:definition "Vervaardiging van consumptie-ijs"@nl, "Fabrication de glaces de consommation"@fr;
+    skos:prefLabel "10520".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<https://data.vlaanderen.be/id/onderneming/0730.595.486> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/1>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/>;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0730.595.486;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/10520>, <http://vocab.belgif.be/auth/nace2008/10520>, <http://vocab.belgif.be/auth/nace2008/10890>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    reorg:legalName "Munteanu, Stefan";
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.290.963.420>.
+<https://data.vlaanderen.be/id/vestiging/2.290.963.420> a org:Site;
+    dcterms:created "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.290.963.420.
+_:registration_company_0730.595.486 a adms:Identifier;
+    skos:notation "0730.595.486";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.290.963.420 a adms:Identifier;
+    skos:notation "2.290.963.420";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-07-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

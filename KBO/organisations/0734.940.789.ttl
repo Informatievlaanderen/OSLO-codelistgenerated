@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4332>, <http://vocab.belgif.be/auth/nace2008/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2008/43999> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4399>, <http://vocab.belgif.be/auth/nace2008/4399>;
+    skos:definition "Overige gespecialiseerde bouwwerkzaamheden"@nl, "Autres activités de construction spécialisées"@fr;
+    skos:prefLabel "43999".
+<http://vocab.belgif.be/auth/nace2008/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7732>, <http://vocab.belgif.be/auth/nace2008/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<http://vocab.belgif.be/auth/nace2025/43320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4332>, <http://vocab.belgif.be/auth/nace2025/4332>;
+    skos:definition "Schrijnwerk"@nl, "Travaux de menuiserie"@fr;
+    skos:prefLabel "43320".
+<http://vocab.belgif.be/auth/nace2025/43990> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4399>, <http://vocab.belgif.be/auth/nace2025/4399>;
+    skos:definition "Overige gespecialiseerde bouwactiviteiten, neg"@nl, "Autres travaux de construction spécialisés nca"@fr;
+    skos:prefLabel "43990".
+<http://vocab.belgif.be/auth/nace2025/77320> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7732>, <http://vocab.belgif.be/auth/nace2025/7732>;
+    skos:definition "Verhuur en lease van machines en installaties voor de bouwnijverheid en de weg- en waterbouw"@nl, "Location et location-bail de machines et d'équipements pour la construction"@fr;
+    skos:prefLabel "77320".
+<https://data.vlaanderen.be/id/onderneming/0734.940.789> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/030>;
+    dcterms:created "01-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0734.940.789;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/43990>, <http://vocab.belgif.be/auth/nace2025/43320>, <http://vocab.belgif.be/auth/nace2025/77320>, <http://vocab.belgif.be/auth/nace2008/43320>, <http://vocab.belgif.be/auth/nace2008/43999>, <http://vocab.belgif.be/auth/nace2008/77320>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/MAIN>, <https://data.vlaanderen.be/id/concept/Classification/SECO>;
+    schema:contactinfo _:contact_0734.940.789;
+    reorg:legalName "SPA-Bau Lux s.à.r.l."@de.
+_:address_contact_0734.940.789 a locn:Address;
+    locn:thoroughfare "Kierchestrooss"@nl, "Kierchestrooss"@fr;
+    rdfs:label "10";
+    locn:postCode "9753";
+    adres:gemeentenaam "HEINERSCHEID"@nl, "HEINERSCHEID"@fr;
+    adres:land "Luxemburg (Groot-Hertogdom)"@nl, "Luxembourg (Grand-Duché)"@fr.
+_:contact_0734.940.789 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "spa-bau@pt.lu";
+    schema:telephone "+352-621 355 525";
+    locn:address _:address_contact_0734.940.789.
+_:registration_company_0734.940.789 a adms:Identifier;
+    skos:notation "0734.940.789";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-09-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

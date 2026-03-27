@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/11030> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1103>, <http://vocab.belgif.be/auth/nace2008/1103>;
+    skos:definition "Vervaardiging van cider en van andere vruchtenwijnen"@nl, "Fabrication de cidre et de vins d'autres fruits"@fr;
+    skos:prefLabel "11030".
+<http://vocab.belgif.be/auth/nace2008/11040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1104>, <http://vocab.belgif.be/auth/nace2008/1104>;
+    skos:definition "Vervaardiging van andere niet-gedistilleerde gegiste dranken"@nl, "Production d'autres boissons fermentées non distillées"@fr;
+    skos:prefLabel "11040".
+<http://vocab.belgif.be/auth/nace2008/11070> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1107>, <http://vocab.belgif.be/auth/nace2008/1107>;
+    skos:definition "Vervaardiging van frisdranken; productie van mineraalwater en ander gebotteld water"@nl, "Industrie des eaux minérales et autres eaux embouteillées et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "11070".
+<http://vocab.belgif.be/auth/nace2008/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4725>, <http://vocab.belgif.be/auth/nace2008/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2008/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5621>, <http://vocab.belgif.be/auth/nace2008/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2008/70220> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/7022>, <http://vocab.belgif.be/auth/nace2008/7022>;
+    skos:definition "Overige adviesbureaus op het gebied van bedrijfsbeheer; adviesbureaus  op het gebied van bedrijfsvoering"@nl, "Conseil pour les affaires et autres conseils de gestion"@fr;
+    skos:prefLabel "70220".
+<http://vocab.belgif.be/auth/nace2025/11030> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1103>, <http://vocab.belgif.be/auth/nace2025/1103>;
+    skos:definition "Vervaardiging van cider en van andere vruchtenwijnen"@nl, "Fabrication de cidre et de vins d'autres fruits"@fr;
+    skos:prefLabel "11030".
+<http://vocab.belgif.be/auth/nace2025/11040> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1104>, <http://vocab.belgif.be/auth/nace2025/1104>;
+    skos:definition "Vervaardiging van andere niet-gedistilleerde gegiste dranken"@nl, "Production d'autres boissons fermentées non distillées"@fr;
+    skos:prefLabel "11040".
+<http://vocab.belgif.be/auth/nace2025/11070> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1107>, <http://vocab.belgif.be/auth/nace2025/1107>;
+    skos:definition "Vervaardiging van frisdranken; productie van mineraalwater en ander gebotteld water"@nl, "Industrie des eaux minérales et autres eaux embouteillées et des boissons rafraîchissantes"@fr;
+    skos:prefLabel "11070".
+<http://vocab.belgif.be/auth/nace2025/47252> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4725>, <http://vocab.belgif.be/auth/nace2025/4725>;
+    skos:definition "Detailhandel in dranken in gespecialiseerde winkels, algemeen assortiment"@nl, "Commerce de détail de boissons en magasin spécialisé, assortiment général"@fr;
+    skos:prefLabel "47252".
+<http://vocab.belgif.be/auth/nace2025/56210> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5621>, <http://vocab.belgif.be/auth/nace2025/5621>;
+    skos:definition "Catering"@nl, "Services des traiteurs"@fr;
+    skos:prefLabel "56210".
+<http://vocab.belgif.be/auth/nace2025/70200> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/7020>, <http://vocab.belgif.be/auth/nace2025/7020>;
+    skos:definition "Activiteiten van adviesbureaus op het gebied van bedrijfsvoering en overig managementadvies"@nl, "Activités de conseil pour les affaires et autre conseil de gestion"@fr;
+    skos:prefLabel "70200".
+<https://data.vlaanderen.be/id/onderneming/0735.463.304> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/610>;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0735.463.304;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/11040>, <http://vocab.belgif.be/auth/nace2025/11030>, <http://vocab.belgif.be/auth/nace2025/47252>, <http://vocab.belgif.be/auth/nace2025/11070>, <http://vocab.belgif.be/auth/nace2025/70200>, <http://vocab.belgif.be/auth/nace2025/56210>, <http://vocab.belgif.be/auth/nace2008/11030>, <http://vocab.belgif.be/auth/nace2008/47252>, <http://vocab.belgif.be/auth/nace2008/56210>, <http://vocab.belgif.be/auth/nace2008/11040>, <http://vocab.belgif.be/auth/nace2008/11070>, <http://vocab.belgif.be/auth/nace2008/70220>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0735.463.304;
+    reorg:legalName "SCarfield"@nl;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.294.871.233>, <https://data.vlaanderen.be/id/vestiging/2.349.616.053>.
+<https://data.vlaanderen.be/id/vestiging/2.294.871.233> a org:Site;
+    dcterms:created "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.294.871.233.
+<https://data.vlaanderen.be/id/vestiging/2.349.616.053> a org:Site;
+    dcterms:created "11-09-2023"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.349.616.053.
+_:address_contact_0735.463.304 a locn:Address;
+    locn:thoroughfare "'s Herenweg"@nl, "'s Herenweg"@fr;
+    rdfs:label "20";
+    locn:postCode "1860";
+    adres:gemeentenaam "Meise"@nl, "Meise"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0735.463.304 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    schema:email "tom.peltyn@telenet.be";
+    locn:address _:address_contact_0735.463.304.
+_:registration_company_0735.463.304 a adms:Identifier;
+    skos:notation "0735.463.304";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.294.871.233 a adms:Identifier;
+    skos:notation "2.294.871.233";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.349.616.053 a adms:Identifier;
+    skos:notation "2.349.616.053";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "01-10-2019"^^<http://www.w3.org/2001/XMLSchema#date>.

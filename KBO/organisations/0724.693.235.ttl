@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix schema: <https://schema.org/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix reorg: <http://www.w3.org/ns/regorg#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+
+<http://vocab.belgif.be/auth/nace2008/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/1089>, <http://vocab.belgif.be/auth/nace2008/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2008/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4619>, <http://vocab.belgif.be/auth/nace2008/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2008/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4634>, <http://vocab.belgif.be/auth/nace2008/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2008/47299> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/4729>, <http://vocab.belgif.be/auth/nace2008/4729>;
+    skos:definition "Overige detailhandel in voedingsmiddelen in gespecialiseerde winkels, n.e.g."@nl, "Autres commerces de détail alimentaires en magasin spécialisé n.c.a."@fr;
+    skos:prefLabel "47299".
+<http://vocab.belgif.be/auth/nace2008/56102> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5610>, <http://vocab.belgif.be/auth/nace2008/5610>;
+    skos:definition "Eetgelegenheden met beperkte bediening"@nl, "Restauration à service restreint"@fr;
+    skos:prefLabel "56102".
+<http://vocab.belgif.be/auth/nace2008/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2/5630>, <http://vocab.belgif.be/auth/nace2008/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<http://vocab.belgif.be/auth/nace2025/10890> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/1089>, <http://vocab.belgif.be/auth/nace2025/1089>;
+    skos:definition "Vervaardiging van andere voedingsmiddelen, n.e.g."@nl, "Fabrication d'autres produits alimentaires n.c.a."@fr;
+    skos:prefLabel "10890".
+<http://vocab.belgif.be/auth/nace2025/46190> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4619>, <http://vocab.belgif.be/auth/nace2025/4619>;
+    skos:definition "Handelsbemiddeling in goederen, algemeen assortiment"@nl, "Intermédiaires du commerce en produits divers"@fr;
+    skos:prefLabel "46190".
+<http://vocab.belgif.be/auth/nace2025/46349> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4634>, <http://vocab.belgif.be/auth/nace2025/4634>;
+    skos:definition "Groothandel in dranken, algemeen assortiment"@nl, "Commerce de gros de boissons, assortiment général"@fr;
+    skos:prefLabel "46349".
+<http://vocab.belgif.be/auth/nace2025/47279> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/4727>, <http://vocab.belgif.be/auth/nace2025/4727>;
+    skos:definition "Overige detailhandel in voedingsmiddelen, neg"@nl, "Autres commerces de détail alimentaires nca"@fr;
+    skos:prefLabel "47279".
+<http://vocab.belgif.be/auth/nace2025/56301> a skos:Concept;
+    skos:broader <http://data.europa.eu/ux2/nace2.1/5630>, <http://vocab.belgif.be/auth/nace2025/5630>;
+    skos:definition "Cafés en bars"@nl, "Cafés et bars"@fr;
+    skos:prefLabel "56301".
+<https://data.vlaanderen.be/id/onderneming/0724.693.235> a reorg:RegisteredOrganization;
+    organisatie:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/TypeOfEnterprise/2>;
+    organisatie:rechtstoestand <https://data.vlaanderen.be/id/concept/JuridicalSituation/AC>;
+    organisatie:rechtsvorm <https://data.vlaanderen.be/id/concept/JuridicalForm/015>;
+    dcterms:created "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_company_0724.693.235;
+    reorg:orgActivity <https://data.vlaanderen.be/id/concept/ActivitityGroup/001>, <http://vocab.belgif.be/auth/nace2025/47279>, <http://vocab.belgif.be/auth/nace2025/10890>, <http://vocab.belgif.be/auth/nace2025/56301>, <http://vocab.belgif.be/auth/nace2025/46349>, <http://vocab.belgif.be/auth/nace2025/46190>, <http://vocab.belgif.be/auth/nace2008/56102>, <http://vocab.belgif.be/auth/nace2008/46349>, <http://vocab.belgif.be/auth/nace2008/10890>, <http://vocab.belgif.be/auth/nace2008/46190>, <http://vocab.belgif.be/auth/nace2008/47299>, <http://vocab.belgif.be/auth/nace2008/56301>;
+    org:classification <https://data.vlaanderen.be/id/concept/Classification/SECO>, <https://data.vlaanderen.be/id/concept/Classification/MAIN>;
+    schema:contactinfo _:contact_0724.693.235;
+    reorg:legalName "TREBOL DISTRIBUTION"@fr;
+    org:hasRegisteredSite <https://data.vlaanderen.be/id/vestiging/2.288.167.048>, <https://data.vlaanderen.be/id/vestiging/2.298.941.273>.
+<https://data.vlaanderen.be/id/vestiging/2.288.167.048> a org:Site;
+    dcterms:created "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.288.167.048.
+<https://data.vlaanderen.be/id/vestiging/2.298.941.273> a org:Site;
+    dcterms:created "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>;
+    reorg:registration _:registration_establishment_2.298.941.273.
+_:address_contact_0724.693.235 a locn:Address;
+    locn:thoroughfare "Kunstlaan"@nl, "Avenue des Arts"@fr;
+    rdfs:label "56";
+    locn:postCode "1000";
+    adres:gemeentenaam "Brussel"@nl, "Bruxelles"@fr;
+    adres:land "België"@nl, "Belgique"@fr.
+_:contact_0724.693.235 a schema:ContactPoint;
+    dcterms:type <https://data.vlaanderen.be/id/concept/EntityContact/ENT>, <https://data.vlaanderen.be/id/concept/TypeOfAddress/REGO>;
+    locn:address _:address_contact_0724.693.235.
+_:registration_company_0724.693.235 a adms:Identifier;
+    skos:notation "0724.693.235";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.288.167.048 a adms:Identifier;
+    skos:notation "2.288.167.048";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
+_:registration_establishment_2.298.941.273 a adms:Identifier;
+    skos:notation "2.298.941.273";
+    dcterms:creator <https://data.vlaanderen.be/id/organisatie/OVO027341>;
+    adms:schemaAgency "Kruispuntbank van Ondernemingen (KBO)"@nl;
+    dcterms:issued "09-04-2019"^^<http://www.w3.org/2001/XMLSchema#date>.
