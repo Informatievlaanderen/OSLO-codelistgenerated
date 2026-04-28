@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO057001>
+  a org:Organization ;
+  skos:prefLabel "96"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO057001" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2024-06-16"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1010397530" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2024-06-16"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/ad23e7bd-6bef-441c-9880-cbf8326c5e4f> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO057001/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO057001/contact/1> ;
+.
+
+<https://data.vlaanderen.be/id/organisatie/OVO057001/contact/0>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:gillaertsbrent@gmail.com" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO057001/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Telefoon"@nl ;
+  schema:telephone "+32471380384" .

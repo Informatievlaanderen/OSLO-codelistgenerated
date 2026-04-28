@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO057000>
+  a org:Organization ;
+  skos:prefLabel "Hooo Huhuh"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO057000" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2026-03-02"^^xsd:date
+  ],
+  [
+    a adms:Identifier ;
+    skos:notation "1035005638" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002734> ;
+    adms:schemaAgency "Kruispuntenbank van Ondernemingen"@nl ;
+    dct:issued "2026-03-02"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/52e0163f-abe5-4195-9b20-ef3f18ecffd3> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO057000/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO057000/contact/1> ;
+.
+
+<https://data.vlaanderen.be/id/organisatie/OVO057000/contact/0>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:stef.heeren@telenet.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO057000/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Telefoon"@nl ;
+  schema:telephone "+32494379029" .
