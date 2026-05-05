@@ -13,6 +13,7 @@
   a org:Organization ;
   skos:prefLabel "Mad Lady On Stage"@nl ;
   skos:altLabel "Mad Lady"@nl ;
+  dct:description "Mad Lady On Stage, opgericht in februari 2026, is een productiehuis dat zich specialiseert in een brede waaier van multidisciplinaire podiumkunsten."@nl ;
   adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
   adms:identifier
   [
@@ -30,15 +31,25 @@
     dct:issued "2026-02-09"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/d47e0543-707c-49cb-810d-3c2ffa5faa55> ;
-  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/2>, <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/3> ;
 .
 
 <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/0>
   a schema:ContactPoint ;
-  schema:contactType "Telefoon"@nl ;
-  schema:telephone "+32495113017" .
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:karen@madlady.be" .
 
 <https://data.vlaanderen.be/id/organisatie/OVO056727/contact/1>
   a schema:ContactPoint ;
-  schema:contactType "Email"@nl ;
-  schema:email "mailto:karen@madlady.be" .
+  schema:contactType "Website"@nl ;
+  schema:url <https://madlady.online/> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO056727/contact/2>
+  a schema:ContactPoint ;
+  schema:contactType "Contactformulier"@nl ;
+  rdfs:comment "Karen Feys"@nl .
+
+<https://data.vlaanderen.be/id/organisatie/OVO056727/contact/3>
+  a schema:ContactPoint ;
+  schema:contactType "Gsm"@nl ;
+  schema:telephone "+32495113017" .
