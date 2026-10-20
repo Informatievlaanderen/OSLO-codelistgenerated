@@ -11,19 +11,20 @@
 
 <https://data.vlaanderen.be/id/organisatie/OVO027500>
   a org:Organization ;
-  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn Brussel"@nl ;
+  skos:prefLabel "Openbaar Centrum voor Maatschappelijk Welzijn Brussel (dubbel)"@nl ;
   skos:altLabel "OCMW Brussel"@nl ;
-  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  dct:description "dubbel van OVO022380"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/nietactief> ;
   adms:identifier
   [
     a adms:Identifier ;
     skos:notation "OVO027500" ;
     dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
     adms:schemaAgency "Digitaal Vlaanderen"@nl ;
-    dct:issued "2026-10-13"^^xsd:date
+    dct:issued "2026-10-20"^^xsd:date
   ] ;
   rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/930314e1-0e7d-0fbd-627e-a1072635d392> ;
-  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/1> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/2> ;
 .
 
 <https://data.vlaanderen.be/id/organisatie/OVO027500/contact/0>
@@ -35,3 +36,8 @@
   a schema:ContactPoint ;
   schema:contactType "Website"@nl ;
   schema:url <http://ocmwbxl.brussels> .
+
+<https://data.vlaanderen.be/id/organisatie/OVO027500/contact/2>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:info@ocmwbxl.brussels" .

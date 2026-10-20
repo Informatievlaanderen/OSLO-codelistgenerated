@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+<https://data.vlaanderen.be/id/organisatie/OVO057501>
+  a org:Organization ;
+  skos:prefLabel "Algemene Directie Arbeidsrecht en juridische studiën"@nl ;
+  adms:status <http://data.vlaanderen.be/id/concept/organisatiestatus/actief> ;
+  adms:identifier
+  [
+    a adms:Identifier ;
+    skos:notation "OVO057501" ;
+    dct:creator <https://data.vlaanderen.be/id/organisatie/OVO002949> ;
+    adms:schemaAgency "Digitaal Vlaanderen"@nl ;
+    dct:issued "2026-10-20"^^xsd:date
+  ] ;
+  rdfs:seeAlso <https://wegwijs.vlaanderen.be/#/organisations/8054a455-c74c-5238-d1ae-8d970652a793> ;
+  schema:contactPoint <https://data.vlaanderen.be/id/organisatie/OVO057501/contact/0>, <https://data.vlaanderen.be/id/organisatie/OVO057501/contact/1>, <https://data.vlaanderen.be/id/organisatie/OVO057501/contact/2> ;
+.
+
+<https://data.vlaanderen.be/id/organisatie/OVO057501/contact/0>
+  a schema:ContactPoint ;
+  schema:contactType "Telefoon"@nl ;
+  schema:telephone "02 233 41 11" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO057501/contact/1>
+  a schema:ContactPoint ;
+  schema:contactType "Email"@nl ;
+  schema:email "mailto:ajs@werk.belgie.be" .
+
+<https://data.vlaanderen.be/id/organisatie/OVO057501/contact/2>
+  a schema:ContactPoint ;
+  schema:contactType "Website"@nl ;
+  schema:url <https://www.werk.belgie.be> .
